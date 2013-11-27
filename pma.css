@@ -1,0 +1,165 @@
+/*===============================================================
+//	Feuille de style
+//=============================================================*/
+
+/* Pour incorporer cette feuille de style dans un programme, rajouter
+	dans la section <HEAD> un tag <LINK>:
+	<LINK REL = "stylesheet TYPE = "text/css" HREF = "PMA.css">
+*/
+
+/* couleur du fond */
+
+BODY {background-color:white}
+
+/* Définition des ancres et des liens accepables: navy, teal maroon green black*/
+/*A {font: bold 12pt arial,sans-serif; color: navy; text-decoration: none}*/
+A {font: 10pt arial,sans-serif; color: navy; text-decoration: none}
+A:hover {color: blue; text-decoration: none}
+
+/* On utilise une couleur rouge pour les ancres et les entêtes  Khaki*/
+
+H1, H2, H3 {color: Blue}
+
+TABLE.A0 {background-color:palegreen}
+TABLE.A1 {background-color:yellow}
+TABLE.A2 {background-color:peachpuff}
+TABLE.A3 {background-color:LightGrey}
+TABLE.A4 {background-color:Gainsboro}
+TABLE.A5 {background-color:Khaki}
+TABLE.A6 {background-color:PaleGoldenrod}
+
+/* alternance des couleurs pour les lignes des tables */
+
+TR.A0 {background-color:lime}
+TR.A1 {background-color:yellow}
+TR.A2 {background-color:coral;font-family:sans-serif;font-size:10pt} /* couleur des menus principaux coral tomato */
+TR.A3 {background-color:LightGrey;font-size:10pt}
+TR.A4 {background-color:Gainsboro;font-size:10pt}
+
+TR.A5 {background-color:Khaki;font-family:sans-serif;font-size:10pt}
+TR.A6 {background-color:PaleGoldenrod;font-family:sans-serif;font-size:10pt}
+TR.A5:hover{color:orange;background:green;font-weight:bold;}
+TR.A6:hover{color:orange;background:green;font-weight:bold;}
+
+TR.A7 {background-color:F8F8F8;font-family:sans-serif;font-size:10pt}
+TR.A8 {background-color:F0F0F0 ;font-family:sans-serif;font-size:10pt}
+TR.A7:hover{color:red;background:LightGrey;font-size: 10pt;}
+TR.A8:hover{color:red;background:LightGrey;font-size: 10pt;}
+
+/* entete de tableau text-align:center; font: bold 10pt verdana, sans-cherif;color: black */
+TR.AW {background-color:Khaki;font-family:sans-serif;font-size:10pt}
+
+/* couleurs applicables aux cellules: <TD class="grise"> */
+.grise {
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	background-color:silver;
+	}
+
+.blue {
+	border-style:solid;
+	border-width:1px;
+	border-color:blue;
+	}
+.red {
+	border-style:solid;
+	border-width:1px;
+	border-color:red;
+	}
+.navy {
+	border-style:solid;
+	border-width:1px;
+	border-color:red;
+	}
+.none {
+	border-style:none;
+	}
+
+
+
+/* Pour le menu : le fond est rouge, les ancres ne sont pas soulignées
+ *  et apparaissent en blanc
+ */
+
+/*A.MENU {color:white;text-decoration:none;font-weight:bold;font-family:sans-serif;font-size:medium}*/
+
+/* Pour le titre : couleur rouge, police de grande taille */
+
+TD.TITRE {color:#ca0000;font-weight:bold;text-align:center;font-family:sans-serif;font-size:x-large}
+TD.TITREL {color:#ca0000;font-weight:bold;text-align:left;font-family:sans-serif;font-size:x-large}
+/* Alignement du contenu d'une cellule */
+
+TD.DROITE {text-align:right}
+TD.CENTRE {text-align:center}
+TD.GAUCHE {text-align:left}
+TD.A1 {background-color: yellow}
+
+/* Fontes*/
+/* P { font: italic bold 24pt/28pt Times, serif;} */
+
+.time{font: bold 10pt verdana, sans-cherif;color: navy;}
+.time_b{font: normal 10pt verdana, sans-cherif;color: blue;}
+.time_bb{font: bold 10pt verdana, sans-cherif;color: blue;}
+.time_r{font: bold 10pt verdana, sans-cherif;color: red;}
+.time_v{font: bold 10pt verdana, sans-cherif;color: green;}
+.time_n{font: bold 10pt verdana, sans-cherif;color: black;}
+.time_n2{font: normal 10pt verdana, sans-cherif;color: black;}
+
+.verda{font: normal 10pt verdana, sans-cherif;color: red;}
+.tel{font: normal 10pt verdana, sans-cherif;color: black;background-color: yellow;}
+
+.Style9 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: x-small; font-weight: bold; color: #FFFFFF; }
+.Style13 {font-family: Geneva, Arial, Helvetica, sans-serif;font-weight: bold;color: #FF9900;}
+.Style20 {font-family: Geneva, Arial, Helvetica, sans-serif; font-weight: bold; color: #000099; }
+.Style21 {font-family: "Century Gothic";font-size: 10px;}
+.Style22 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
+.Style25 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; }
+.time3{font-family: Helvetica,Verdana, Arial, Helvetica, sans-cherif;font-size: 10pt;font-weight: normal;color: navy;}
+.time2{font-family: Helvetica,Verdana, Arial, Helvetica, sans-cherif;font-size: 14pt;font-weight: normal;color: navy;}
+.Style23{font-family: verdana, sans-cherif;font-size: 10pt;font-weight: normal;color: black;}
+.Style24{font-family: verdana, sans-cherif;font-size: 10pt;font-weight: bold;color: black;}
+
+.bg1{background-color: yellow}
+
+.alerte {
+	text-decoration:blink;
+	background-color: red;
+	}
+
+ul#menu {
+	margin: 0;
+	padding: 0;
+	font: bold 1em Georgia, Times, serif;
+	list-style-type: none;
+}
+#menu li{
+	float: left;
+}
+#menu a{
+	display: block;
+	width: 120px;
+	border: 1px solid black;
+	color: green;
+	background: #fc0;
+	margin: 0 5px;
+	text-decoration: none;
+	text-align: center;
+}
+#menu a:hover, #menu a:focus{
+	color: orange;
+	background: green;	
+}
+div#cadre{
+	background: yellow;
+}
+
+body {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+	}
+P.normal{
+	font-size: 1.0em;
+}

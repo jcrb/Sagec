@@ -1,0 +1,170 @@
+BODY {
+	background-color : white;
+}
+
+A {
+	font : bold 10pt arial, sans-serif;
+	color : navy;
+	text-decoration : none;
+}
+
+A:hover {
+	color : blue;
+	text-decoration : none;
+}
+
+H1 , H2 , H3 {
+	color : blue;
+}
+
+TABLE.A1 {
+	background-color : yellow;
+}
+
+TR.A0 {
+	background-color : lime;
+}
+TR.A1 {
+	background-color : yellow;
+}
+TR.A5 {
+	font-family : sans-serif;
+	font-size : 10pt;
+}
+TR.A6 {
+	font-family : sans-serif;
+	font-size : 10pt;
+}
+TR.A2 {
+	font-family : sans-serif;
+	font-size : 10pt;
+}
+A.MENU {
+	color : white;
+	text-decoration : none;
+	font-weight : bold;
+	font-family : sans-serif;
+	font-size : medium;
+}
+TD.TITRE {
+	color : #ca0000;
+	font-weight : bold;
+	text-align : center;
+	font-family : sans-serif;
+	font-size : x-large;
+}
+TD.TITREL {
+	color : #ca0000;
+	font-weight : bold;
+	text-align : left;
+	font-family : sans-serif;
+	font-size : x-large;
+}
+TD.DROITE {
+	text-align : right;
+}
+TD.CENTRE {
+	text-align : center;
+}
+TD.GAUCHE {
+	text-align : left;
+}
+TD.A1 {
+	background-color : yellow;
+}
+P {
+	font : italic bold 24pt/28pt Times, serif;
+}
+.time {
+	font : bold 10pt verdana, sans-cherif;
+	color : navy;
+}
+.time_r {
+	font : bold 10pt verdana, sans-cherif;
+	color : red;
+}
+.time_v {
+	font : bold 10pt verdana, sans-cherif;
+	color : green;
+}
+.time_n {
+	font : bold 10pt verdana, sans-cherif;
+	color : black;
+}
+.verda {
+	font : normal 10pt verdana, sans-cherif;
+	color : red;
+}
+.Style9 {
+ 
+font-family : Verdana, Arial, Helvetica, sans-serif;
+ 
+font-size : x-small;
+ 
+font-weight : bold;
+ 
+color : #ffffff;
+ 
+}
+.Style13 {
+ 
+font-family : Geneva, Arial, Helvetica, sans-serif;
+ 
+font-weight : bold;
+ 
+color : #ff9900;
+ 
+}
+.Style20 {
+ 
+font-family : Geneva, Arial, Helvetica, sans-serif;
+ 
+font-weight : bold;
+ 
+color : #000099;
+ 
+}
+.Style21 {
+ 
+font-family : "Century Gothic";
+ 
+font-size : 10px;
+ 
+}
+.Style22 {
+ 
+font-family : Verdana, Arial, Helvetica, sans-serif;
+ 
+font-size : 10px;
+ 
+}
+.time2 {
+ 
+font-family : Helvetica, Verdana, Arial, Helvetica, sans-cherif;
+ 
+font-size : 14pt;
+ 
+font-weight : normal;
+ 
+color : navy;
+ 
+}
+.Style23 {
+ 
+font-family : verdana, sans-cherif;
+ 
+font-size : 10pt;
+ 
+font-weight : normal;
+ 
+color : black;
+ 
+}
+.Style24 {
+	font-family : verdana, sans-cherif;
+	font-size : 10pt;
+	font-weight : bold;
+	color : black;
+}
+.nombre{text-align:right; color: red;background-color:#D0E3FA;}
+.date{text-align:right; color: black;}

@@ -1,0 +1,23 @@
+SAGEC 67
+
+==============================
+Main Courante
+==============================
+
+30	2004-11-10 14:15:34	Bartier	message 1
+31	2004-11-10 14:15:43	Bartier	essai de sauvegarde du bloc-note
+32	2004-11-10 14:24:12	Bartier	modification de administrateur_menu.php
+33	2004-11-10 14:35:16	Bartier	sauve garde du bloc note: sp
+34	2004-11-10 15:36:16	Bartier	sauvegarde personnel et moyens  OK
+35	2004-11-10 16:35:34	Bartier	création de sauvegarde.php
+36	2004-11-10 16:36:19	Bartier	intervenant_saisie.php corrigé (l'adresse de retour était incorrecte)
+37	2004-11-10 16:36:59	Bartier	mofification de function entete_sagec dans HTML.php. L'adresse de l'image est mise en valeur absolue ce qui corrige les problèmes d'affichage
+38	2004-11-10 16:57:25	Bartier	Ajout dans login2.php de la variable $_SESSION[evenement]
+39	2004-11-11 12:34:15	Bartier	modification de organisme_saisie.php (pas parfait, à revoir, notamment pas de menu de retour)
+40	2004-11-11 12:34:59	Bartier	mise à jour du chapitre vecteur dans le mode d'emploi de sagec
+41	2004-11-11 12:48:21	Bartier	modification de document.php et du dossier DOCS: incorporation du mode d'emploi de SAGEC
+42	2004-11-13 15:49:10	Bartier	service_supprime.php corrigé. A mettre dans SAGEC HUS en priorité
+43	2004-11-13 16:04:30	Bartier	enregistre_victime.php modifié: à chaque victime est associé l'identifiant de l'évènement
+44	2004-11-17 16:26:04	Schaeffer	Wissembourg activé
+45	2004-11-17 16:27:08	Bartier	ok
+46	2004-11-17 16:27:08	Bartier	ok
