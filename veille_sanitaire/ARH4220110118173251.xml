@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<INVS>
+<ARH>
+<id_arh>42</id_arh>
+<date_trans>2011/01/18 17:32:51</date_trans>
+<nbEtab></nbEtab>
+<nbE_Urg></nbE_Urg>
+<nbSAMU>2</nbSAMU>
+<nbSMUR>7</nbSMUR>
+</ARH>
+<ENVOI>
+<ETAB_SERV><DESCSERV><id_etab></id_etab></DESCSERV><INDICATEURS></INDICATEURS></ETAB_SERV><ETAB_SERV><DESCSERV><id_etab></id_etab></DESCSERV><INDICATEURS></INDICATEURS></ETAB_SERV><ETAB_SERV><DESCSERV><id_etab></id_etab></DESCSERV><INDICATEURS></INDICATEURS></ETAB_SERV><ETAB_SERV><DESCSERV><id_etab></id_etab></DESCSERV><INDICATEURS></INDICATEURS></ETAB_SERV><ETAB_SERV><DESCSERV><id_etab></id_etab></DESCSERV><INDICATEURS></INDICATEURS></ETAB_SERV></ENVOI></INVS>

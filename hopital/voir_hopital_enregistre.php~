@@ -1,0 +1,22 @@
+<?php
+/**
+*	voir_hopital_enregistre.php
+*/
+session_start();
+//if(! $_SESSION['auto_sagec'])header("Location:logout.php");
+$langue = $_SESSION['langue'];
+$member_id = $_SESSION['member_id'];
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+$backPathToRoot = "../"; 
+include_once($backPathToRoot."dbConnection.php");
+$listeID = 3; //n°de la liste pour la table hopital_visible NB: NE PAS MODIFIER 
+//$listeID = $_REQUEST['noListe'];
+$action = $_REQUEST['action'];
+$value = $_REQUEST['value'];
+
+if($action == "insert")
+	$requete = "INSERT INTO hopital_visible VALUES('$value','$_SESSION[organisation]','$listeID')";
+else
+	$requete = "DELETE FROM hopital_visible WHERE hop_ID = '$value' AND org_ID = '$_SESSION[organisation]' AND liste_ID = '$listeID'   LIMIT 1";
+ExecRequete($requete,$connexion);
+?>

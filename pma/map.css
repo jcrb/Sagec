@@ -1,0 +1,62 @@
+/** map.css 
+ *
+ * @version $Id: map.css 38 2008-02-27 21:07:19Z jcb $
+ * @package Sagec
+ * @author JCB
+ * @copyright 2007
+ */
+
+/**
+* le code qui suit est indispensable pour microsoft
+* car incompatibilité IE6 et position: absolute
+*/
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#maps {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#toolbar{
+	position: absolute;
+	top: 25px;
+	right: 7px;
+	width: 188px;
+	padding: 5px;
+	background: white;
+	border: 1px solid black;
+}
+
+#mouseTrack{
+	position: absolute;
+	bottom: 25px;
+	right: 7px;
+	width: 188px;
+	padding: 5px;
+	background: white;
+	border: 1px solid black;
+	display: none;
+}
+
+.transp {
+   /*background-color:#ffffff;*/
+   background-image: "../images/rose_vent.png";
+   color:red;
+   position:absolute;
+   width:200px;
+   top:100px;
+   left:200px;
+   height:200px;
+   /* Pour IE, il faut absolument mettre une largeur, alors soit width=100%,
+      soit c'est un div positionné et dimensionné comme dans cet exemple.
+   filter:alpha(opacity=10);
+   -moz-opacity:0.1;
+   opacity: 0.1;*/
+}

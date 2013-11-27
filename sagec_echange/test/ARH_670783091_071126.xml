@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ARH_ALSACE>
+	<ETAB_SERV>
+		<DESCSERV>
+      	<id_etab>670783273</id_etab>
+    	</DESCSERV>
+    	<INDICATEURS>
+      	<JOURNEE>
+      		<jour>19-10-1956</jour>
+				<MORTALITE>
+	  				<deces>5</deces>
+	  				<deces75a>2</deces75a>
+				</MORTALITE>			</JOURNEE>
+		</INDICATEURS>
+		
+		<SAU>
+			<JOURNEE>
+				<jour>2006-10-23</jour>
+				<SERVICE>
+	  				<service_nom></service_nom>
+	  				<service_id>0810</service_id>
+
+	  				<UF>
+	    				<id_UF>0803</id_UF>
+	    				<nom_UF></nom_UF>
+	    				<urg>0</urg>
+	    				<urg1a>0</urg1a>
+	    				<urg75a>0</urg75a>
+	    				<hosp>0</hosp>
+	    				<uhcd>0</uhcd>
+	    				<transferts>0</transferts>
+	  				</UF>
+	  			</SERVICE>
+			</JOURNEE>
+		</SAU>
+		
+		<SAMU>			<JOURNEE>
+				<jour>19-10-1956</jour>
+	  			<affaires>100</affaires>
+	  			<sdis>10</sdis>
+	  			<ambu>20</ambu>
+	  			<interv>30</interv>
+	  			<primaire>25</primaire>
+	  			<secondaire>5</secondaire>
+	  			<conseil>30</conseil>
+	  			<envoi_med>15</envoi_med>
+	  			<tiih>2</tiih>
+	  			<neonat>1</neonat>
+	  		</JOURNEE>
+		</SAMU>
+    	<LITS>
+      	<JOURNEE>
+      	<jour>2006-10-24</jour>
+				<SERVICE>
+	  				<service_nom></service_nom>
+	  				<service_id>7135</service_id>
+	  				<UF>
+	    				<id_UF>7121</id_UF>
+	    				<nom_UF></nom_UF>
+	    				<type_invs></type_invs>
+	    				<lits_installes>20</lits_installes>
+	    				<lits_ouverts>20</lits_ouverts>
+	    				<lits_occupes>20</lits_occupes>
+	    				<lits_supplementaires>0</lits_supplementaires>
+	    				<lits_disponibles>0</lits_disponibles>
+	    				<lits_fermes>0</lits_fermes>
+	    				<places_disponibles></places_disponibles>
+	    				<permissions>0</permissions>
+	  				</UF>
+	  				<UF>
+	    				<id_UF>7122</id_UF>
+	    				<nom_UF></nom_UF>
+	    				<type_invs></type_invs>
+	    				<lits_installes>32</lits_installes>
+	    				<lits_ouverts>32</lits_ouverts>
+	    				<lits_occupes>32</lits_occupes>
+	    				<lits_supplementaires>0</lits_supplementaires>
+	    				<lits_disponibles>0</lits_disponibles>
+	    				<lits_fermes>0</lits_fermes>
+	    				<places_disponibles></places_disponibles>
+	    				<permissions>0</permissions>
+	  				</UF>
+				</SERVICE>
+      	</JOURNEE>
+    	</LITS>
+  </ETAB_SERV>
+</ARH_ALSACE>
+

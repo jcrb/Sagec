@@ -1,0 +1,159 @@
+
+body{text-align:center}
+p{margin:0 10px 10px}
+
+/* #######################
+	menu di navigazione 
+#######################*/
+.button{	
+	font-family: Verdana, Helvetica, sans-serif;
+	color: #fff;
+	padding: 3px;
+	text-decoration: none;
+	background-color: #000;
+}
+
+.button:hover {
+ background-color: #c00000;
+ font-weight: bold;
+}
+
+.selected {
+ background-color: #c00000;
+ border-bottom: none;
+}
+
+/*----------------------------------------------------------------*/
+
+
+/* #######################
+	Tabelle
+#######################*/
+table.bordercol{
+	border-collapse: collapse;
+}
+
+
+th.colored{
+	text-align:left;
+	font-family: Verdana;
+	color:#ffffff;
+	background-color:#3300FF;
+	font-size: 13px;
+}
+
+/*  ------------------------------------------ */
+
+
+
+
+/* #######################
+	Link
+#######################*/
+
+a.simple_l:link, a.simple_l:visited {
+	text-decoration: none; 
+	font-family: Verdana;
+}
+
+/*   uguale al precedente ma non link*/
+.simple_t {
+	text-decoration: none; 
+	font-family: Verdana;
+	color: #0000FF;
+}
+
+
+/* #######################
+	Vari
+#######################*/
+
+.asterisco{
+	font-weight: bold;
+	color: #FF0000;
+	font-size: 1.5em;
+}
+
+.titolone{
+	font-family: "Lucida Console", Tahoma, Latha, Verdana; 
+	color:#c00000;
+	font-size: 12px;
+	font-weight: bold;
+	/*letter-spacing: 1px;*/
+	word-spacing: -5px;
+	margin: 5px 1px 35px 1px;
+
+}
+
+/* Comune infowindow */
+.comune{
+	color:#ff0000;
+	font-weight: bold;
+	text-align: center;
+	font-size: 14px;
+}
+
+/*Infowindow della homepage*/
+.infow{
+	font-family: Verdana;
+	text-align:left;
+	line-height: 25px;
+	font-size: 12px;
+}
+
+
+.dati{
+	font-family: "Courier New"; 
+}
+
+.overl{
+	font-family: "Courier New";
+	text-align:left;
+	font-size:11px;
+
+}
+
+.IndexTitles{ 
+	font-family: Verdana, Arial, sans-serif; 
+	font-size: 14px; 
+	font-weight: bold; 
+	line-height: 20px; 
+	color: #FF0000; 
+	text-decoration: underline; 
+	text-align: left;
+}
+
+.IndexText{ 
+	font-family: Verdana, Arial, sans-serif; 
+	font-size: 12px; 
+	line-height: 20px; 
+	color:#000000; 
+	text-align: left;
+}
+
+
+/* #######################
+ testo colonna destra
+ ####################### */
+div.dx{
+	font-family: Helvetica, Arial;
+	font-size: 12px;
+	font-style: italic;
+	text-align: left;
+	/*text-align: justify;
+	font-weight: bold;*/
+}
+
+/* #######################
+ testo spiegazione fondo pagina
+ ####################### */
+div.spiega{
+	font-family: Verdana, Helvetica, Arial;
+	font-size: 10px;
+	font-style: italic;
+	text-align: left;
+}
+
+
+/*  ------------------------------------------ */
+

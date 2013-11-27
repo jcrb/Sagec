@@ -1,0 +1,139 @@
+body {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+	}
+	
+#intro {
+	margin-left: 100px;
+	color: navy;
+}
+#intro a{
+	display: block;
+	color: green;
+	text-decoration: none;
+	line-height: 25px;
+	width:120px;
+	border: 1px solid black;
+	background: #fc0;
+	margin: 5px 0;
+	text-align: center;
+}
+#intro a:hover,#intro a:focus{
+	color: orange;
+	background: green;
+}
+	
+/*positionnement de l'ensemble du formulaire*/
+#catalogue {	
+	width: 100%;
+	margin: auto;
+	
+	}
+
+/*alignement des zones de saisies*/	
+#coordonnees label { 
+	width: 20%;
+	float: left;
+	text-align: right;
+	line-height: 1.8em;
+	padding: 0 0.8em 0 0;
+	}
+
+/*marge pour espacer les zones de saisies des exemples*/	
+#coordonnees input {
+	margin-right: 1em;
+	}
+
+/*style pour les exemples de réponse*/
+#coordonnees .exemple, #typecat .exemple { 
+	font-style: italic; 
+	color: #fff;
+	}
+
+/*style du contenu du formulaire*/
+#content {	
+	background-color: #9999CC;
+	margin: 0;
+	padding: 2em;
+	border: 0.2em solid #666699;	
+	}
+	
+/*mise en gras du titre des zones de formulaire*/	
+#content legend {
+	font-weight: bold;
+	}
+	
+#content a.help img {
+	border: 0; /*pour supprimer le cadre bleu de l'image lien*/
+	position: absolute; /*pour aligner l'icone et le champ de saisie*/
+	}
+	
+/*modification de l'apparence du curseur de la souris au survol du lien*/	
+#content a.help:hover {
+	cursor: help;
+	}
+
+/*mise en forme de l'en-tête du formulaire*/
+#formtitle {	
+	background-color: #666699;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: bold;
+	height: 3em;
+	line-height: 3em;
+	text-align: center;	
+	}
+
+/*mise en forme du pied du formulaire*/
+#formfooter {	
+	background-color: #666699;
+	height: 3em;
+	margin: 0;
+	padding: 0.8em;
+	}
+
+/*positionnement des boutons d'action*/	
+#formfooter input {
+	float: right; 
+	margin-right: 1.8em;
+	}
+
+ul#menu
+{
+	margin: 0;
+	padding: 5;
+	font:bold 1.0em verdana, Times, serif;
+	list-style-type:none;
+}
+#menu a
+{
+	display: block;
+	margin: 5px 0;
+	color:black;
+	text-decoration: none;
+	line-height: 25px;
+	width: 180px;
+	/*border: 1px solid #CCFFCC;*/
+	/*background: #CCFFFF; */
+	background-image: url(images/btn_gris2.png);
+	text-align: center;
+}
+
+#menu a:hover
+{
+	color:white;
+	background: blue;
+}
+
+.Style9 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: x-small; font-weight: bold; color: #FFFFFF; }
+.Style13 {font-family: Geneva, Arial, Helvetica, sans-serif;font-weight: bold;color: #FF9900;}
+.Style20 {font-family: Geneva, Arial, Helvetica, sans-serif; font-weight: bold; color: #000099; }
+.Style21 {font-family: "Century Gothic";font-size: 10px;}
+.Style22 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
+.Style25 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; }
+.time3{font-family: Helvetica,Verdana, Arial, Helvetica, sans-cherif;font-size: 10pt;font-weight: normal;color: navy;}
+.time2{font-family: Helvetica,Verdana, Arial, Helvetica, sans-cherif;font-size: 14pt;font-weight: normal;color: navy;}
+.Style23{font-family: verdana, sans-cherif;font-size: 10pt;font-weight: normal;color: black;}
+.Style24{font-family: verdana, sans-cherif;font-size: 10pt;font-weight: bold;color: black;}

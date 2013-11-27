@@ -1,0 +1,13 @@
+\section{CDessin Namespace Reference}
+\label{namespaceCDessin}\index{CDessin@{CDessin}}
+
+
+
+
+\subsection{Detailed Description}
+La classe CDessin d\'{e}finit une zone de dessin capable de recevoir des coordoon\'{e}es dans le syst\`{e}me de mesure de l'utilisateur et de les afficher \`{a} la r\'{e}solution de l'\'{e}cran. programme: {\bf classe\_\-dessin.php}{\rm (p.\,\pageref{classe__dessin_8php})} date de cr\'{e}ation: 31/01/2004 \begin{Desc}
+\item[Author:]jcb \end{Desc}
+\begin{Desc}
+\item[Version:]1.4  le 29/07/2005\end{Desc}
+---------------------------------------------------------------------------------------------// 
+

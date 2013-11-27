@@ -1,0 +1,325 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+//
+// This file is part of SAGEC67 Copyright (C) 2003-2005 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//----------------------------------------- SAGEC --------------------------------
+/**
+//	programme: 		graphe_veille_samu.php
+//	date de cr�tion: 	28/03/2005
+//	@author:			jcb
+//	description:		Graphe de tendance de l'activit�du SAMU
+//	@version $Id$
+//	maj le:			9/06/2005
+* 	@package Sagec
+*/
+//-----------------------------------------------------------------------------
+session_start();
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+require_once "../classe_dessin.php";
+require("../date.php");
+//
+global $date1;
+global $nb_jour;
+global $orange;
+global $vert;
+//
+/** Dessine une grillehorizontale
+*@param $d adresse de la zone de dessin
+*@param $ymax ordonn� la plus haute
+*@param $ymin ordonn� la plus basse
+*@param $yinc incr�ent entre 2 lignes
+*@param $yinter ligne horizontale interm�iaire plus �aisse. 0 pour ne pas en mettre
+*@param $xmin abcisse minimale du trait
+*@param $xmax abcisse maximale du trait
+*@param $c1 couleur du trait usuel
+*@param $c2 couleur du trait �ais
+*/
+function grilleH($d,$ymax,$ymin,$yinc,$yinter,$xmin,$xmax,$c1,$c2)
+{
+	// lignes horizontales trac�s toutes les 10 points
+	for($i = $ymin;$i<$ymax;$i+=$yinc)
+	{
+		if($yinter !=0 && $i%$yinter ==0)
+		{
+			$d->couleur_courante = $c2;
+			$decal_x = -4;
+			$decal_y = 5;
+			$d->ecrire($i,$xmin,$i,$decal_x,$decal_y,$c2,10,'R');
+		}
+		else
+		{
+			$dfc->couleur_courante = $c1;
+		}
+		$d->line($xmin,$i,$xmax,$i);
+	}
+}
+function grilleV($d,$xmin,$xmax,$xinc,$xinter,$ymin,$ymax,$c1,$c2)
+{
+	$jour = 24*60*60;//secondes
+	$an = 365*$jour;
+	$mois = 31*$jour;
+	$d->couleur_courante = $c2;
+	// lignes verticales trac�s toutes les jours
+	$tmin = $xmin;
+	$tdepart = strtotime($tmin);
+	for($i=$xmin;$i<$xmax;$i+=$xinc)
+	{
+		if($i == $xmin)
+		{
+			$d->couleur_courante = $c1;
+			$t0 = date("M",$i);
+			$d->ecrire($t0,$i,$ymin,0,30,$c2,10,'C');
+			$t0 = date('j',$i);
+			$d->ecrire($t0,$i,$ymin,0,15,$c2,10,'C');
+			$d->line($i,$ymin,$i,$ymax);
+		}
+		if(date('j',$i)==1)
+		{
+			$d->couleur_courante = $c1;
+			$t0 = date("M",$i);
+			$d->ecrire($t0,$i,$ymin,0,30,$c2,10,'C');
+			$t0 = date('j',$i);
+			$d->ecrire($t0,$i,$ymin,0,15,$c2,10,'C');
+			$d->line($i,$ymin,$i,$ymax);
+		}
+		else if(date('j',$i)%$xinter==0)
+		{
+			$d->couleur_courante = $c2;
+			$t0 = date('j',$i);
+			$d->ecrire($t0,$i,$ymin,0,15,$c2,10,'C');
+			$d->line($i,$ymin,$i,$ymax);
+		}
+
+		$tmin += $xinc;
+		//if($tmin>$an)$tmin=1;
+		//$d->ecrire($t0,$i,$ymin,0,15,$c2,10,'C');
+	}
+}
+function affaires($resultat,$dfc,$couleur,$c2)
+{
+	global $date1;
+	global $nb_jour;
+	global $rouge;
+	$rub=mysql_fetch_array($resultat);
+	//$x = date("c",$rub['date']);
+	$x = $rub['date'];
+	$y = $rub['nb_affaires'];
+	$dfc->va_en($x,$y);
+	$dfc->couleur_courante = $couleur;
+	$day = array(7);//
+	$day2 = array(7);
+	$n = array(7);
+	$jour = array();//m�orise la date du jour au format INT11. Taille d�end de l'intervalle
+	$affaires = array();// m�orise le nb d'affaires pour le jour
+// Trac�de l'activit�r�lle pendant la p�iode d�inie
+	while($rub=mysql_fetch_array($resultat))
+	{
+		//$x = date("z",$rub['date']);
+		$x = $rub['date'];
+		$y = $rub['nb_affaires'];
+		if($_GET['valeur'])
+			$dfc->trace_vers($x,$y);
+		//calculs
+		if($rub['nb_affaires']>0)
+		{
+			$j = date("w",$rub['date']);// jour semaine, 0=dimanche
+			$day[$j] += $rub['nb_affaires'];//nb affaires pour un jour donn�			$day2[$j] += $rub['nb_affaires']*$rub['nb_affaires'];//carr�			$n[$j]++;//nb de jours de ce type
+		}
+		$jour[]=$rub['date'];
+		$affaires[]= $rub['nb_affaires'];
+	}
+
+// Trac�de la moyenne liss�. Compte tenu de l'aspect cycliqye de la courbe, 
+// la p�iode de lissage est fix� �7 jours et commence un lundi
+if($_GET['moyenne_lisse'])
+{
+	$lissage = $_GET['jour'];if($lissage < 0) $lissage = 7;
+	$date_depart_lissage = $lissage;
+	$m = sizeof($jour);
+	// calcul de la premi�e moyenne
+	$ml = 0;
+	$ml2 = 0;
+	for($i=$date_depart_lissage-$lissage;$i<$date_depart_lissage;$i++)
+	{
+		$ml += $affaires[$i];
+		$ml2 += $affaires[$i]*$affaires[$i];
+	}
+	$ecartype = sqrt(($ml2-$ml*$ml/$lissage)/($lissage-1));
+	$moyenne = $ml/$lissage;
+	$dfc->va_en($jour[$date_depart_lissage],$ml/$lissage);
+	$dfc->couleur_courante = $rouge;
+	//print($ml/$lissage."<br>");
+
+	for($i = $date_depart_lissage; $i < $m; $i++)
+	{
+		// calcul de la moyenne des 7 jours pr��ants
+		$ml = 0;
+		for($j=$i-$lissage;$j<$i;$j++)
+		{
+			$ml += $affaires[$j];
+		}
+		//print($ml/$lissage."<br>");
+		$dfc->trace_vers($jour[$i],$ml/$lissage);
+	}
+
+	// trac�de l'�art-type
+	$sigma = 1.96;
+	$dfc->va_en($jour[$date_depart_lissage],$moyenne + $sigma*$ecartype);
+	for($i = $date_depart_lissage; $i < $m; $i++)
+	{
+		// calcul de la moyenne des 7 jours pr��ants
+		$ml2 = 0;
+		$ml = 0;
+		for($j=$i-$lissage;$j<$i;$j++)
+		{
+			$ml2 += $affaires[$j]*$affaires[$j];
+			$ml += $affaires[$j];
+		}
+		$ecartype = sqrt(($ml2-$ml*$ml/$lissage)/($lissage-1));
+		$dfc->trace_vers($jour[$i],$ml/$lissage + $sigma*$ecartype);
+	}
+}
+
+
+// Trac�de la courbe moyenne observ�
+if($_GET['moyenne'])
+{
+	for($i=0;$i<7;$i++)
+	{
+		if($n[$i] != 0)
+		{
+			$moy[$i] = $day[$i]/$n[$i];
+			$var[$i] = ($n[$i]*$day2[$i]-$day[$i]*$day[$i]/$n[$i])/($n[$i]);
+		}
+	}
+	$j = $date1;
+	$jour = 60*60*24;
+	$dfc->writetxt(10,0,130,385,0,0,'',$jour_annee);
+	$dfc->va_en($date1,$moy[date("w",$date1)]);
+	$dfc->couleur_courante = $c2;
+	//moyenne th�rique
+	for($i=0;$i<$nb_jour;$i++)
+	{
+		$j = $i%6;
+		$date = $date1 +$i*$jour;
+		$dfc->trace_vers($date, $moy[date("w",$date)]);
+	}
+	// �art-type th�rique
+	$dfc->$couleur_courante = $c2;
+	$dfc->va_en($date1,$moy[date("w",$date1)] + 1.96*sqrt($var[date("w",$date1)]));
+	for($i=0;$i<$nb_jour;$i++)
+	{
+		$j = $i%6;
+		$date = $date1 +$i*$jour;
+		$dfc->trace_vers($date,$moy[date("w",$date)] + 1.96*sqrt($var[date("w",$date)]));
+	}
+	$dfc->va_en($date1,$moy[date("w",$date1)] - 1.96*sqrt($var[date("w",$date1)]));
+	for($i=0;$i<$nb_jour;$i++)
+	{
+		$j = $i%6;
+		$date = $date1 +$i*$jour;
+		$dfc->trace_vers($date,$moy[date("w",$date1)] - 1.96*sqrt($var[date("w",$date1)]));
+	}
+}
+}
+// zone r�erv� au dessin:
+$image_width = 1095;// 365 -730-1095
+$image_heigth = 600;//800 * 2;//$_GET[zoom];//800 553
+//Initialisation de la zone de dessin
+$jour = 24*60*60;//secondes
+$date1 = fDate2unix($_GET['date1'])-$jour;
+$date2 = fDate2unix($_GET['date2'])+$jour;
+$nb_jour =($date2-$date1)/$jour;
+$U_haut = 2000;
+$U_bas = 0;
+$U_gauche = $date1;
+$U_droit = $date2;// nb de jours, 1 ann� = 365 jours
+$dfc = new CDessin($image_heigth,$image_width,$U_haut,$U_gauche,$U_bas,$U_droit);
+//marges
+$haute = 20;
+$basse = 100;
+$gauche = 35;
+$droite = 20;
+$dfc->setMarges($haute,$basse,$gauche,$droite);
+// Allocation des couleurs
+$vert_clair = imagecolorAllocate($dfc->pic,0x99,0xff,0x66);
+$vert = imagecolorAllocate($dfc->pic,0x00,0xff,0x00);
+$orange = imagecolorAllocate($dfc->pic,0xff,0x66,0x00);
+$rouge = imagecolorAllocate($dfc->pic,0xff,0x00,0x00);
+$bleu = imagecolorAllocate($dfc->pic,0x00,0x66,0xff);
+// grille
+grilleH($dfc,$U_haut,$U_bas,100,200,$U_gauche,$U_droit,$vert_clair,$vert_clair);
+$xinc = 1*$jour;// 30jours
+$xinter = $nb_jour/30;//intervalle entre 2 graduations en jours
+grilleV($dfc,$U_gauche,$U_droit,$xinc,$xinter,$U_bas,$U_haut,$vert,$vert_clair);
+// s�ection des donn�s
+require("../pma_connect.php");
+require("../pma_connexion.php");
+require("../pma_requete.php");
+$connexion = Connexion(NOM,PASSE,BASE,SERVEUR);
+
+$samu = $_SESSION['service'];
+$requete = "SELECT service_nom FROM service WHERE service_ID='$samu'";
+$resultat = ExecRequete($requete,$connexion);
+$rub=mysql_fetch_array($resultat);
+$service_nom = $rub['service_nom'];
+
+$requete="SELECT date,nb_affaires
+		FROM veille_samu
+		WHERE service_ID = '$samu'
+		AND date BETWEEN '$date1' AND '$date2'
+		ORDER BY date ASC";
+$resultat = ExecRequete($requete,$connexion);
+
+if($_GET['affaire'])
+	affaires($resultat,$dfc,$orange,$bleu);
+/*
+//$j=strtotime("2005/01/01");
+$j = $date1;
+$dfc->va_en(0,$moy[date("w",$j)]);
+$dfc->$couleur_courante = "";
+
+//moyenne th�rique
+for($i=0;$i<$nb_jour;$i++)
+{
+	$j = $i%6;
+	$dfc->trace_vers($i,$moy[$j]);
+}
+*/
+// �art-type th�rique
+$dfc->$couleur_courante = $vert;
+//$j= date("w",strtotime("2005/01/01")) ;
+$j = $date1;
+$dfc->va_en(0,$moy[$j]+ 1.96*sqrt($var[$j]));
+for($i=0;$i<$nb_jour;$i++)
+{
+	$j = $i%6;
+	$dfc->trace_vers($i,$moy[$j] + 2*sqrt($var[$j]));
+}
+// affichage du dessin
+$titre = $service_nom." - Nombre d'affaires trait�s (P�iode du ".date('j/m/Y',$date1)." au ".date('j/m/Y',$date2).")";
+$dfc->writetxt(12,0,10,20,0,0,'',$titre);
+//$dfc->va_en(1,-280);
+//$dfc->trace_vers(10,-280);
+//$dfc->writetxt(10,0,130,355,0,0,'',"�art-type");
+
+// l�endes
+imageline ($dfc->pic ,85 ,365 ,115 ,365, $orange);
+$dfc->writetxt(10,0,130,370,0,0,'',"activit�observ�");
+imageline ($dfc->pic ,85 ,380 ,115 ,380, $bleu);
+$dfc->writetxt(10,0,130,385,0,0,'',"activit�moyenne");
+
+//$dfc->writetxt(10,0,130,385,0,0,'',$date1);
+$dfc->affiche_image();
+?>

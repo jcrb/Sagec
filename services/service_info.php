@@ -1,0 +1,133 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+//
+// This file is part of SAGEC67 Copyright (C) 2003 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//----------------------------------------- SAGEC --------------------------------------------------------
+//													//
+//	programme: 		service_info.php							//
+//	date de création: 	15/04/2004								//
+//	auteur:			jcb									//
+//	description:		Informations générales sur le service		//
+//	version:		1.2									//
+//	maj le:			3/09/2005								//
+//													//
+//--------------------------------------------------------------------------------------------------------
+// Variable transmise $_GET[service] = service_ID
+//--------------------------------------------------------------------------------------------------------
+session_start();
+if(!($_SESSION['auto_hopital']||$_SESSION['auto_service']||$_SESSION['auto_organisme']))header("Location:../logout.php");
+$langue = $_SESSION['langue'];
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+$backPathToRoot = "../";
+
+require($backPathToRoot."pma_connect.php");
+require($backPathToRoot."pma_connexion.php");
+require $backPathToRoot.'utilitaires/globals_string_lang.php';
+require $backPathToRoot."utilitairesHTML.php";
+include($backPathToRoot."/contact_main.php");
+
+print("<html>");
+print("<head>");
+print("<title> maj service </title>");
+print("<LINK REL=stylesheet HREF=\"../pma.css\" TYPE =\"text/css\">");
+print("</head>");
+
+print("<BODY>");
+print("<FORM name =\"taches\"  ACTION=\"service_saisie.php\" METHOD=\"post\">");
+
+//variables cachées
+print("<INPUT TYPE=\"HIDDEN\" name=\"service\" VALUE=\"$_GET[service]\">");
+print("<INPUT TYPE=\"HIDDEN\" name=\"back\" VALUE=\"service_modifie.php\">");
+
+$connexion = Connexion(NOM,PASSE,BASE,SERVEUR);
+
+$requete =	"SELECT service.service_ID,service_nom,service_code,service_tel,service_fax,service_etage,
+service_batiment,lits_sp,service_adulte, service_enfant,age_min
+		FROM service, lits
+		WHERE service.service_ID = $_GET[service]
+		AND service.service_ID = lits.service_ID
+		";
+$resultat = ExecRequete($requete,$connexion);
+//print($requete);
+$i = LigneSuivante($resultat);
+
+print("<TABLE WIDTH=\"100%\" BGCOLOR=\"wheat\">");
+//---------------------------------- lits disponibles ----------------------------------------------
+print("<TR BGCOLOR=\"yellow\">");
+	print("<TD>".$string_lang['SERVICE_NOM'][$langue]."</TD>");
+	print("<TD div align=\"right\">$i->service_nom </TD>");
+print("</TR>");
+print("<TR>");
+	print("<TD>".$string_lang['CODE_SERVICE'][$langue]."</TD>");
+	print("<TD div align=\"right\">$i->service_code </TD>");
+print("</TR>");
+/*
+print("<TR>");
+	print("<TD>".$string_lang['TEL'][$langue]."</TD>");
+	print("<TD div align=\"right\">$i->service_tel </TD>");
+print("</TR>");
+print("<TR>");
+	print("<TD>".$string_lang['FAX'][$langue]."</TD>");
+	print("<TD div align=\"right\">$i->service_fax </TD>");
+print("</TR>");
+*/
+print("<TR>");
+	print("<TD>".$string_lang['BATIMENT'][$langue]."</TD>");
+	print("<TD div align=\"right\">$i->service_batiment </TD>");
+print("</TR>");
+print("<TR>");
+	print("<TD>".$string_lang['ETAGE'][$langue]."</TD>");
+	print("<TD div align=\"right\">$i->service_etage </TD>");
+print("</TR>");
+print("<TR>");
+	print("<TD>".$string_lang['ADULTE_ACCEPTE'][$langue]."</TD>");
+	if($i->service_adulte=='o')$rep = $string_lang['OUI'][$langue];else $rep = $string_lang['NON'][$langue];
+	print("<TD div align=\"left\">$rep </TD>");
+print("</TR>");
+print("<TR>");
+	print("<TD>".$string_lang['ENFANT_ACCEPTE'][$langue]."</TD>");
+	if($i->service_enfant=='o')
+	{
+		$mot = $string_lang['OUI'][$langue].", ".$string_lang['A_PARTIR'][$langue]." ".$i->age_min.$string_lang['ANS'][$langue];
+		print("<TD div align=\"left\">$mot</TD>");
+	}
+	else
+		print("<TD div align=\"left\">".$string_lang['NON'][$langue]."</TD>");
+print("</TR>");
+
+print("<TR BGCOLOR=\"yellow\">");
+	print("<TD>".$string_lang['ERREUR'][$langue]."</TD>");
+	$mot=$string_lang['MODIFIER'][$langue];
+	print("<TD div align=\"right\"><INPUT TYPE=\"SUBMIT\" NAME=\"ok\" VALUE=\"$mot\" div align=\"center\"></TD>");
+print("</TR>");
+print("</TABLE>");
+
+$service_caracid= $_GET['service'];
+$type=0;//nouveau
+$nature=4;//service
+$back="services/service_info.php";//adresse de retour
+$variable="service";// variable de retour
+// le 'o' autoruise l'affichage des logos de modifivation 
+print("<FIELDSET>");
+print("<LEGEND class=\"time\">Contacts</LEGEND>");
+if($service_caracid)
+	contact($service_caracid,$type,$nature,$contact_id,$back,$variable,$_GET['tri'],'o',$backPathToRoot);
+//contact($contact,$type,$nature,$contact_id,$back,$variable_retour)
+print("</FIELDSET>");
+
+print("</FORM>");
+print("</BODY>");
+print("</html>");
+
+?>

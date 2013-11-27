@@ -1,0 +1,54 @@
+8
+
+dir
+44
+file:///home/jcb/svn/sagec/info_lits
+file:///home/jcb/svn/sagec
+
+
+
+2008-04-16T06:55:34.455992Z
+44
+jcb
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c9c9d45a-3d19-0410-aca5-b5182dfb4288
+
+xml2UF.php
+file
+
+
+
+
+2008-04-16T06:55:34.000000Z
+b0d1582748975493f6aaa8ec793edbed
+2008-04-16T06:55:34.455992Z
+44
+jcb
+has-props
+
+analyse_fichiers.php
+file
+
+
+
+
+2008-02-19T06:42:06.000000Z
+8fe67b7c25f0db5bd9abf724258e53b5
+2008-02-19T06:42:06.674694Z
+34
+jcb
+has-props
+

@@ -1,0 +1,104 @@
+/**
+*	normal.css
+*/
+
+body {
+	margin: 0px;
+  	padding: 0px;
+  	font-size: 100%;
+  	line-height: 1.6;
+  	font-family: tahoma,arial,helvetica,"bitstream vera sans",sans-serif;
+  	color: #000000;
+  	background-color: #ffffff;
+}
+
+#en-tete {
+ 	overflow: hidden;
+  	background-color: #dae0d2;
+  	background-image: url(../img/fond.png);
+  	background-position: bottom;
+  	background-repeat: repeat-x;
+}
+
+#en-tete ul {}
+
+#en-tete ul li#actif 
+{
+  float: left;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  background-image: url(../img/coin-gauche.png);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+}
+#en-tete ul li#actif span 
+{
+  float: left;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  padding-left: 0px;
+  background-image: url(../img/coin-droit.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  color: #333333;
+}
+
+#en-tete ul li a {
+	float: left;
+	text-decoration: none;
+  	letter-spacing: 1px;
+  	padding-left: 10px;
+  	background-image: url(../img/coin-gauche.png);
+  	background-repeat: no-repeat;
+	background-position: 0% -250px;
+}
+
+#en-tete ul li a span {
+	float: left;
+  	padding-right: 10px;
+  	padding-top: 4px;
+  	padding-bottom: 3px;
+  	padding-left: 0px;
+  	background-image: url(../img/coin-droit.png);
+  	background-repeat: no-repeat;
+  	background-position: 100% -250px;
+  	color: #ffffff;
+}
+
+#en-tete ul li a:hover {
+  background-position: 0% -500px;
+}
+#en-tete ul li a:focus {
+  background-position: 0% -500px;
+}
+#en-tete ul li a:hover span {
+  background-position: 100% -500px;
+}
+#en-tete ul li a:focus span {
+  background-position: 100% -500px;
+}
+
+div {}
+
+ul {
+	float: right;
+  	margin-top: 16px;
+  	margin-right: 16px;
+  	margin-bottom: 0px;
+  	margin-left: 0px;
+ 	 padding: 0px;
+  	list-style: none;
+}
+
+li {
+	float: left;
+ 	 margin-left: 3px;
+
+}
+
+a {
+}
+
+span {}

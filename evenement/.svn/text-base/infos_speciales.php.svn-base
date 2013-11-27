@@ -1,0 +1,111 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+//
+// This file is part of SAGEC67 Copyright (C) 2003 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//----------------------------------------- SAGEC --------------------------------
+//
+//	programme: 					infos_speciales.php
+//	date de création: 	18/12/2005
+//	auteur:							jcb
+//	description:				informations spécifiques sur la crise
+//	version:						1.2
+//	maj le:							18/12/2005
+//
+//--------------------------------------------------------------------------------
+//
+session_start();
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+if(!$_SESSION["autorisation"]>8) header("Location:logout.php");
+
+include("../html.php");
+require("../pma_connect.php");
+require("../pma_connexion.php");
+require '../utilitaires/requete.php';
+
+$langue = $_SESSION['langue'];
+
+// ENTETE
+print("<html>");
+print("<head>");
+print("<title> Evènement courant </title>");
+print("<meta name=\"author\" content=\"JCB\">");
+print("<LINK REL=stylesheet HREF=\"../pma.css\" TYPE =\"text/css\">");
+print("</head>");
+
+// CORPS
+print("<BODY>");
+print("<FORM ACTION =\"\" METHOD=\"POST\">");
+//entete_sagec("Evenement courant");
+print("<table>");
+
+$connect = Connexion(NOM,PASSE,BASE,SERVEUR);
+/*
+$requete = 	"";
+$resultat = ExecRequete($requete,$connect);
+$rub=mysql_fetch_array($resultat);
+*/
+print("<TR>");
+	print("<TD>Evènement courant</TD>");
+	print("<TD><input type=\"text\" name=\"titre\" value=\"$rub[evenement_nom]\" size=\"30\"></TD>");
+print("</TR>");
+print("<TR>");
+	print("<TD>Point de transit</TD>");
+	print("<TD><input type=\"text\" name=\"transit\" value=\"\" size=\"30\"></TD>");
+print("</TR>");
+print("<TR>");
+	print("<TD>Direction du vent (degré)</TD>");
+	print("<TD><input type=\"text\" name=\"dirvent\" value=\"\" size=\"30\"></TD>");
+print("</TR>");
+print("<TR>");
+	print("<TD>vitesse du vent (m/s)</TD>");
+	print("<TD><input type=\"text\" name=\"vitvent\" value=\"\" size=\"30\"></TD>");
+print("</TR>");
+print("<TR>");
+	print("<TD>Nébulosité</TD>");
+	print("<TD><input type=\"text\" name=\"nebul\" value=\"\" size=\"30\"></TD>");
+print("</TR>");
+
+print("<TR>");
+	print("<TD>DSM</TD>");
+	print("<TD><input type=\"text\" name=\"dsm\" value=\"\" size=\"30\"></TD>");
+print("</TR>");
+print("<TR>");
+	print("<TD>DOS</TD>");
+	print("<TD><input type=\"text\" name=\"dos\" value=\"\" size=\"30\"></TD>");
+print("</TR>");
+print("<TR>");
+	print("<TD>COS</TD>");
+	print("<TD><input type=\"text\" name=\"cos\" value=\"\" size=\"30\"></TD>");
+print("</TR>");
+
+$requete = 	"SELECT ts_nom,ts_localisation,ts_contact FROM temp_structure WHERE ts_active='o'";
+$resultat = ExecRequete($requete,$connect);
+while($rub=mysql_fetch_array($resultat))
+{
+	print("<TR>");
+		print("<TD>$rub[ts_nom]</TD>");
+		print("<TD>$rub[ts_localisation]</TD>");
+		print("<TD>$rub[ts_contact]</TD>");
+	print("</TR>");
+}
+
+//print("<p><font color=\"#FF0000\"><blink><big><strong>PLAN ROUGE EN COURS</strong></big></blink></font>");
+//print("<TD>");
+	//	print("<input type=\"submit\" name=\"ok\" value=\"Valider\">");
+	//print("</TD>");
+print("</table>");
+print("</form>");
+print("</body>");
+print("</html>");
+?>

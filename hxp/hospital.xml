@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><rXML>
+<Header>
+<From>
+<Credential domain="SAGEC67">
+<Identity>2000</Identity>
+<SharedSecret>string by default</SharedSecret>
+</Credential>
+</From>
+<To>
+<Credential domain="IES">
+<Identity>1001</Identity>
+<SharedSecret>string by default</SharedSecret>
+</Credential>
+</To>
+<Sender>
+<Credential domain="SAGEC67">
+<Identity>2001</Identity>
+<SharedSecret>string by default</SharedSecret>
+</Credential>
+</Sender>
+</Header>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670013150</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.61</Latitude>
+<Longitude mapDatum="ED50">7.75</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1>19 RUE Louis Pasteur</Street1>
+<Street2></Street2>
+<City>Schiltigheim</City>
+<PostalCode></PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+<Telephon_number1>03 88 62 83 00</Telephon_number1>
+<Telephon_number1>03 88 62 83 31</Telephon_number1>
+<Email>direction@sihcus.fr</Email>
+<Fax_number>03 88 62 83 70</Fax_number>
+<Fax_number>03 88 62 84 21</Fax_number>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>CMCO</Name>
+<HospitalGroup>CMCO</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>private subventioned</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670000397</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.2602777</Latitude>
+<Longitude mapDatum="ED50">7.45500000</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1> 23 AVENUE LOUIS PASTEUR</Street1>
+<Street2></Street2>
+<City>Selestat</City>
+<PostalCode></PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+<Telephon_number1>03 88 57 56 00</Telephon_number1>
+<Fax_number>03 88 57 55 56</Fax_number>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>CH de SÃ©lestat</Name>
+<HospitalGroup>CH de SÃ©lestat</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>public</Sponsorship><Helicopter>ground</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>680000627</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">47.752</Latitude>
+<Longitude mapDatum="ED50">7.344</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1>87 av.d'Altkirch</Street1>
+<Street2></Street2>
+<City>Mulhouse</City>
+<PostalCode>68070</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+<Telephon_number1>+33 (0)3 89 64 74 74</Telephon_number1>
+<Fax_number>+33 (0)3 89 64 70 26</Fax_number>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>CH de Mulhouse ( Hasenrain)</Name>
+<HospitalGroup>CH de Mulhouse</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>public</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>680000494</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">47.752</Latitude>
+<Longitude mapDatum="ED50">7.344</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1></Street1>
+<Street2></Street2>
+<City>Mulhouse</City>
+<PostalCode>68070</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>Clinique Diaconat Mulhouse</Name>
+<HospitalGroup>Clinique Diaconat Mulhouse</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>public</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>680001195</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.0816666</Latitude>
+<Longitude mapDatum="ED50">7.35555555</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1></Street1>
+<Street2></Street2>
+<City>COLMAR</City>
+<PostalCode>68000</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>Clinique St Joseph Colmar</Name>
+<HospitalGroup>Clinique St Joseph Colmar</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>public</Sponsorship><Helicopter>ground</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670000082</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.585</Latitude>
+<Longitude mapDatum="ED50">7.736</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1></Street1>
+<Street2></Street2>
+<City>Strasbourg</City>
+<PostalCode>67000</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>Clinique Adassa</Name>
+<HospitalGroup>Clinique Adassa</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>private subventioned</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670000090</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.585</Latitude>
+<Longitude mapDatum="ED50">7.736</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1>1 bd Jacques Preiss</Street1>
+<Street2></Street2>
+<City>Strasbourg</City>
+<PostalCode>67000</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+<Telephon_number1>03 88 56 70 00</Telephon_number1>
+<Email>bethesda@ghsv.org</Email>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>Clinique BETHESDA</Name>
+<HospitalGroup>Clinique BETHESDA</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>private subventioned</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670797539</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.585</Latitude>
+<Longitude mapDatum="ED50">7.736</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1></Street1>
+<Street2></Street2>
+<City>Strasbourg</City>
+<PostalCode>67000</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>Clinique de la Toussaint</Name>
+<HospitalGroup>Clinique de la Toussaint</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>private subventioned</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670780162</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.585</Latitude>
+<Longitude mapDatum="ED50">7.736</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1>2-4 rue Ste Elisabeth</Street1>
+<Street2></Street2>
+<City>Strasbourg</City>
+<PostalCode>67000</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+<Telephon_number1>+33 (0)3 88 14 42 42</Telephon_number1>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>Clinique des Diaconesses</Name>
+<HospitalGroup>Clinique des Diaconesses</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>private subventioned</Sponsorship><Helicopter>distant</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670780378</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48,8172222</Latitude>
+<Longitude mapDatum="ED50">7,78861111</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1></Street1>
+<Street2></Street2>
+<City>HAGUENAU</City>
+<PostalCode>67500</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>Clinique St François</Name>
+<HospitalGroup>Clinique St FranÃ§ois</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>private subventioned</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670798636</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.4794444</Latitude>
+<Longitude mapDatum="ED50">7.21972222</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1></Street1>
+<Street2></Street2>
+<City>Schirmeck</City>
+<PostalCode>67133</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>Clinique St Luc</Name>
+<HospitalGroup>Clinique St Luc</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>private subventioned</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670780188</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.585</Latitude>
+<Longitude mapDatum="ED50">7.736</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1></Street1>
+<Street2></Street2>
+<City>Strasbourg</City>
+<PostalCode>67000</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>Clinique Ste Barbe</Name>
+<HospitalGroup>Groupe  Hospitalier Saint Vincent</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>private subventioned</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670780386</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48,8172222</Latitude>
+<Longitude mapDatum="ED50">7,78861111</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1>6 rue des Pr?montr</Street1>
+<Street2></Street2>
+<City>HAGUENAU</City>
+<PostalCode>67500</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>Clinique Ste Odile (Hag)</Name>
+<HospitalGroup>Clinique Ste Odile (Hag)</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>public</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670000405</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.4630555</Latitude>
+<Longitude mapDatum="ED50">7.48277777</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1></Street1>
+<Street2></Street2>
+<City>Obernai</City>
+<PostalCode></PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>CH d'Obernai</Name>
+<HospitalGroup>CH d'Obernai</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>public</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670000306</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.7666666</Latitude>
+<Longitude mapDatum="ED50">7.85750000</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1></Street1>
+<Street2></Street2>
+<City>BISCHWILLER</City>
+<PostalCode>67240</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>CHD de Bischwiller</Name>
+<HospitalGroup>CHD de Bischwiller</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>public</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>680000577</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">47.7697222</Latitude>
+<Longitude mapDatum="ED50">7.30250000</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1></Street1>
+<Street2></Street2>
+<City>Pfastatt</City>
+<PostalCode>68120</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>CH de Pfastatt</Name>
+<HospitalGroup>CH de Pfastatt</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>public</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670790161</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.585</Latitude>
+<Longitude mapDatum="ED50">7.736</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1>15 rue Cranach</Street1>
+<Street2></Street2>
+<City>Strasbourg</City>
+<PostalCode>67000</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+<Telephon_number1>0388115900</Telephon_number1>
+<Fax_number>0388115939</Fax_number>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>Hopital de l\'Elsau</Name>
+<HospitalGroup>CHU de Strasbourg (HUS)</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>public</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>680001245</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.0816666</Latitude>
+<Longitude mapDatum="ED50">7.35555555</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1>48 rue du Stauffen</Street1>
+<Street2></Street2>
+<City>COLMAR</City>
+<PostalCode>68000</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+<Telephon_number1>+33(0) 389 124 000</Telephon_number1>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>CH de Colmar (CMC Le Parc)</Name>
+<HospitalGroup>CH de Colmar</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>public</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>680000346</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">47.8072222</Latitude>
+<Longitude mapDatum="ED50">7.17666666</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1>7 rue G Risler</Street1>
+<Street2></Street2>
+<City>Cernay</City>
+<PostalCode>68700</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+<Telephon_number1>03.89.38.54.06</Telephon_number1>
+<Fax_number>03.89.38.54.25</Fax_number>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>CH de Cernay</Name>
+<HospitalGroup>CH de Cernay</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>public</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670783133</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.585</Latitude>
+<Longitude mapDatum="ED50">7.736</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1></Street1>
+<Street2></Street2>
+<City>Strasbourg</City>
+<PostalCode>67000</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>Pavillon Schutzenberger</Name>
+<HospitalGroup>CHU de Strasbourg (HUS)</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>public</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670783240</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.585</Latitude>
+<Longitude mapDatum="ED50">7.736</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1></Street1>
+<Street2></Street2>
+<City>Strasbourg</City>
+<PostalCode>67000</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>Pavillon Emile Kuss</Name>
+<HospitalGroup>CHU de Strasbourg (HUS)</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>public</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+<Payload>
+<Ressources>
+<ResourceData>
+<ActionData date="2011-02-2T18:03:39+0100">
+<Action>UPDATE</Action>
+</ActionData>
+<Resource>
+<Hospital>
+<ResourceCommonData>
+<ResourceID>670783091</ResourceID>
+<Location>
+<Latitude mapDatum="ED50">48.585</Latitude>
+<Longitude mapDatum="ED50">7.736</Longitude>
+<Altitude mapDatum="ED50" unit="m"></Altitude>
+</Location>
+<Contact>
+<PostalAddress addressType="main">
+<Street1>21 rue david Richard</Street1>
+<Street2></Street2>
+<City>Strasbourg</City>
+<PostalCode>67000</PostalCode>
+<Country>FRANCE</Country>
+<POBox></POBox>
+<Region></Region>
+</PostalAddress>
+<Communication contactType="main">
+<EmergencyCallStation></EmergencyCallStation>
+</Communication>
+</Contact>
+</ResourceCommonData>
+<HospitalData>
+<Name>Hôpital de la Robertsau</Name>
+<HospitalGroup>CHU de Strasbourg (HUS)</HospitalGroup>
+<HospitalType></HospitalType><ServiceCategory></ServiceCategory><Sponsorship>public</Sponsorship><Helicopter>none</Helicopter><Airport>Strasbourg-Entzheim</Airport><Comments></Comments></HospitalData></Hospital>
+</Resource>
+</ResourceData>
+</Ressources>
+</Payload>
+</rXML>

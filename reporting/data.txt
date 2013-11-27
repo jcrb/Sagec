@@ -1,0 +1,6 @@
+options(echo = FALSE)
+lits_dispo<-c(13,6,1)
+summary(lits_dispo)
+print('variance: ');var(lits_dispo)
+boxplot(lits_dispo, main="Boxplot", xlab="Lits de réa")
+q(runLast=FALSE)

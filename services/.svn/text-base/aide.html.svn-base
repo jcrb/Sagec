@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+	<TITTLE> Aide en ligne </TITTLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+	<FONT size=+2>AIDE</FONT>&nbsp;&nbsp;&nbsp;
+	<A HREF=javascript:this.print()>Imprimer l'aide</A><p>
+	<i>Cette aide est contextuelle</i><br>
+	.....................<br>
+	.....................<br>
+	<hr><p>
+
+<table bgcolor="#d3dce3"><tr><td>
+	<a name = sujet1><font size=+1> Lit disponible </font></a><p>
+	Lit ouvert non occupé à l'instant T, utilisable immédiatement. Un lit disponible peut être également réservé.
+	</td></tr>
+</table>
+<table bgcolor="#f5f5f5"><tr><td>
+	<a name = sujet2><font size=+1> Lit Libérable </font></a><p>
+	Lit ouvert occupé à l'instant T, pouvant être rendu disponible rapidement ou dont la libération est programmée à brève échéance
+	</td></tr>
+</table>
+<table bgcolor="#d3dce3"><tr><td>
+	<a name = sujet3><font size=+1> Lit supplémentaire </font></a><p>
+	Lit ouvert en plus du nombre de lits autorisés. Il peut aussi s'agir de brancards.
+	</td></tr>
+</table>
+<table bgcolor="#f5f5f5"><tr><td>
+	<a name = sujet4><font size=+1> Lit autorisé </font></a><p>
+	Lit pour lequel une autorisation a été délivré par l'ARH dans le cadre de la carte sanitaire. Un lit autorisé n'est pas forcément installé. Cette notion devrait disparaitre avec la mise en application du SROS 3 (ordonnance du 4/09/03).
+	</td></tr>
+</table>
+<table bgcolor="#d3dce3"><tr><td>
+	<a name = sujet5><font size=+1> Lit installé </font></a><p>
+	Le nombre de lits installés au 31 décembre de l'année est égal, dans un grand groupe de disciplines, à la somme du nombre de lits en état d'accueillir des malades et du nombre de lits fermés temporairement pour cause de travaux, désinfection, etc. Il ne comprend pas les brancards, ni les lits supplémentaires montés en cas d'urgence.
+	</td></tr>
+</table>
+<table bgcolor="#f5f5f5"><tr><td>
+	<a name = sujet6><font size=+1> Lit fermé </font></a><p>
+	Lit fermé quelle qu'en soit la cause: pour travaux, par manque de personnel, pour désinfection...
+	</td></tr>
+</table>
+<table bgcolor="#d3dce3"><tr><td>
+	<a name = sujet7><font size=+1> Lit réservé </font></a><p>
+	Lit disponible dont l'occupation est prévue dans le cadre d'une activité programmée "à brêve échéance".
+	</td></tr>
+</table>
+<table bgcolor="#f5f5f5"><tr><td>
+	<a name = sujet8><font size=+1> Respirateurs disponibles </font></a><p>
+	Respirateur d'anesthésie ou de réanimation non affecté à un malade au temps T.
+	</td></tr>
+</table>
+<table bgcolor="#d3dce3"><tr><td>
+	<a name = sujet9><font size=+1> Lit en isolement </font></a><p>
+	Lit destiné à recevoir des malades hautement contagieux. Le lit est situé dans une chambre en pression négative, ou au minimum se trouve séparé du reste du service par un sas. Il peut y avoir plusieurs lits par chambre.
+	</td></tr>
+</table>
+
+</BODY>
+</HTML>

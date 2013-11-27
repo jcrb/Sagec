@@ -1,0 +1,110 @@
+<?php
+/**
+*	select_item.php
+*/
+session_start();
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+//indique que le type de la réponse renvoyée au client sera du Texte
+header("Content-Type: text/plain");
+//anti Cache pour HTTP/1.1
+header("Cache-Control: no-cache , private");
+//anti Cache pour HTTP/1.0
+header("Pragma: no-cache");
+$path = "../../";
+require($path."pma_connect.php");
+require($path."pma_connexion.php");
+require($path."pma_requete.php");
+$connexion = Connexion(NOM,PASSE,BASE,SERVEUR);
+$cible = $_REQUEST['cible'];// pharma
+$radio = $_REQUEST['option'];// quelle liste créer: région, département...
+
+
+//envoi de la réponse à la page HTML
+//echo $cible." ".$radio;
+
+if($radio == "entite")
+{
+	$requete="SELECT service_nom, service_ID FROM service,adresse,ville,hopital
+				WHERE Type_ID = '1'
+				AND service.Hop_ID = hopital.Hop_ID 
+				AND adresse_ID = ad_ID
+				AND adresse.ville_ID = ville.ville_ID
+				AND ville.region_ID = '42'
+				ORDER BY service_nom ASC";
+	$resultat = ExecRequete($requete,$connexion);
+	
+	$nbCol = mysql_num_fields($resultat);
+	$debut = true;
+	// écriture de la réponse  en format JSON 
+	echo  "{\"".$cible."\":[";
+	while($rep = mysql_fetch_array($resultat))
+	{
+		if($debut)
+		{
+			echo "{";
+			$debut = false;
+		}
+		else
+		{
+			echo ",{";
+		}// end if 
+		
+		echo "\"nom\":\"".stripslashes($rep[0])."\",";
+		echo "\"value\":\"".stripslashes($rep[1])."\"";
+		echo "}";
+	} // end while 
+	echo "]}";
+}
+else if($radio == "etablissement")
+{
+	$requete="SELECT Hop_nom, Hop_ID FROM hopital,adresse,ville
+				WHERE Hop_SAU = 'o' 
+				AND adresse_ID = ad_ID
+				AND adresse.ville_ID = ville.ville_ID
+				AND ville.region_ID = '42'
+				ORDER BY Hop_nom ASC";
+	$resultat = ExecRequete($requete,$connexion);
+	$nbCol = mysql_num_fields($resultat);
+	$debut = true;
+	// écriture de la réponse  en format JSON 
+	echo  "{\"".$cible."\":[";
+	while($rub=mysql_fetch_array($resultat))
+	{
+		if($debut)
+		{
+			echo "{";
+			$debut = false;
+		}
+		else
+		{
+			echo ",{";
+		}// end if
+		echo "\"nom\":\"".stripslashes($rep[0])."\",";
+		echo "\"value\":\"".stripslashes($rep[1])."\"";
+		echo "}";
+	}
+	echo "]}";
+}
+else if($radio == "departement")
+{
+	echo  "{\"".$cible."\":[";
+	echo "{";
+	echo "\"nom\":\""."Bas-Rhin"."\",";
+	echo "\"value\":\""."67"."\"";
+	echo "},{";
+	echo "\"nom\":\""."Haut-Rhin"."\",";
+	echo "\"value\":\""."68"."\"";
+	echo "}";
+	echo "]}";
+}
+else if($radio == "region")
+{
+	echo  "{\"".$cible."\":[";
+	echo "{";
+	echo "\"nom\":\""."Alsace"."\",";
+	echo "\"value\":\""."42"."\"";
+	echo "}";
+	echo "]}";
+}
+
+?>

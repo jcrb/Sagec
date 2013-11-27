@@ -1,0 +1,164 @@
+<?php
+/**
+*	plume.php
+*/
+
+class plume{
+	/** classe de stabilité de Pasquill */
+	var $pasquill;
+	var $debitSource;// grammes/s
+	var $hauteurSource;
+	var $vitesseVent;
+	
+	function plume($p,$v,$q,$h){
+		$this->pasquill = $p;
+		$this->vitesseVent = $v;
+		$this->debitSource = $q;
+		$this->hauteurSource = $h;
+	}
+	
+	/**
+	* calcul de la composante Z
+	* @data $x distance par rapport à la source en mètres
+	* nb: utilise la calsse de Pasquill stockée dans $pasquill
+	*/
+	function sigmaz($x){
+		switch ($this->pasquill){
+			case "A":
+				if($x < 100) {$a = 122.800; $b = 0.94470;}
+				else if($x < 150) {$a = 158.080; $b = 1.05420;}
+				else if($x < 200) {$a = 170.220; $b = 1.09320;}
+				else if($x < 250) {$a = 179.520; $b = 1.12620;}
+				else if($x < 300) {$a = 217.410; $b = 1.26440;}
+				else if($x < 400) {$a = 258.890; $b = 1.40940;}
+				else if($x < 500) {$a = 346.750; $b = 1.72830;}
+				else if($x > 500) {$a = 453.850; $b = 2.11660;}
+				break;
+			case "B":
+				if($x < 200) {$a = 90.6730; $b = 0.93198;}
+				else if($x < 400) {$a = 98.4830; $b = 0.98332;}
+				else if($x > 400) {$a = 109.300; $b = 1.09710;}
+				break;
+			case "C":
+				$a = 61.141; $b = 0.91465;
+				break;
+			case "D":
+				if($x < 300) {$a = 34.459 ; $b = 0.86974;}
+				else if($x < 1000){$a = 32.093; $b = 0.81066;}
+				else if($x < 3000) {$a = 32.093; $b = 0.64403;}
+				else if($x < 10000) {$a = 33.504; $b = 0.60486;}
+				else if($x < 30000) {$a = 36.650; $b = 0.56589;}
+				else if($x > 30000) {$a = 44.053; $b = 0.51179;}
+				break;
+			case "E":
+			case "F":break;
+		}
+		$x=$x/1000.0;
+		$s = $a * pow($x,$b);
+		if($s > 5000)$z = 5000;
+		return $s;
+	}
+	/**
+	* calcul de la composante Y
+	* @data $x distance par rapport à la source en mètres
+	* nb: utilise la calsse de Pasquill stockée dans $pasquill
+	*/
+	function sigmay($x){
+		$x = $x/1000; // transformation en km 
+		switch($this->pasquill){
+			case "A":$c = 24.1670; $d = 2.5334; break; 
+			case "B":$c = 18.3330; $d = 1.8096; break; 
+			case "C":$c = 12.5000; $d = 1.0857; break; 
+			case "D":$c = 8.3330; $d = 0.72382; break; 
+			case "E":$c = 6.2500; $d = 0.54287; break; 
+			case "F":$c = 4.1667; $d = 0.36191; break; 
+		}
+		$theta = 0.017453293 *($c-$d * log($x));// radians
+		$y = 465.11628 * $x * tan($theta);
+		return $y;
+	}
+	/**
+	* concentration au point x,y,z
+	*/
+	function main($x,$y,$z){
+		$sz = $this->sigmaz($x);
+		$sy = $this->sigmay($x);
+		$h = $this->hauteurSource;
+		$c = $this->debitSource/(2*3.14*$this->vitesseVent*$sz*$sy);
+		$expZ1 = exp(-($z-$h)*($z-$h)/(2 * $sz*$sz));
+		$expZ2 = exp(-($z+$h)*($z+$h)/(2 * $sz*$sz));
+		$expY = exp(-($y*$y)/(2 * $sy*$sy));
+		$cc = $c*($expZ1+$expZ2)*$expY;
+		return $cc;
+	}
+	/**
+	*	pour x et z donné, cherche y correspondant à la concentration c
+	*	affiche le détail des calculs sous forme de tableau
+	*/
+	function isocercle_debug($x,$z,$c)
+	{
+		$delta = 1E-8;
+		$y1 = 0;
+		$y2 = 1000000;
+		$y = $y2;
+		$cc = 0;
+		$compteur = 0;
+		print("<table border=\"1\">");
+		while(abs($c-$cc)>$delta && $compteur < 50)
+		//while($y1 != $y)
+		{
+			$y = ($y1+$y2)/2;
+			$cc = $this->main($x,$y,$z);
+			if($cc > $c){
+				$y1 = $y;
+			}
+			else{
+				$y2 = $y;
+			}
+			print("<tr>");
+				print("<td>$cc</td>");
+				print("<td>$c</td>");
+				print("<td>$y1</td>");
+				print("<td>$y</td>");
+				print("<td>$y2</td>");
+				print("<td>$compteur</td>");
+			print("</tr>");
+			$compteur++;
+		}// end while 
+		print("</table>");
+		return $y;
+	}                            
+
+	/**
+	*	pour x et z donné, cherche y correspondant à la concentration c
+	* procède par dichotomie jusqu'à ce que la différence entre cc concentration calculée
+	* et c la concentration de référence soit inférieure à delta
+	* @data x	distance horizontale
+	* @data z	distance verticale
+	* @data c	concentration de référence
+	* @return y distance à laquelle on mesure la concentration c, pour x et z donnés
+	*/
+	function isocercle($x,$z,$c)
+	{
+		$delta = 1E-7;
+		$y1 = 0;
+		$y2 = 1000000;
+		$y = $y2;
+		$cc = 0;
+		$compteur = 0;
+		while(abs($c-$cc)>$delta || $compteur < 50)
+		{
+			$y = ($y1+$y2)/2;
+			$cc = $this->main($x,$y,$z);
+			if($cc > $c){
+				$y1 = $y;
+			}
+			else{
+				$y2 = $y;
+			}
+			$compteur++;
+		}// end while 
+		return $y;
+	}                  
+}
+?>

@@ -1,0 +1,115 @@
+Date: Saturday 23 June 2012 � 12:34
+//================================= Ev�nement courant ================================
+Ev�nement courant: test 1  le 2012-06-23  , � 12:04:31
+Plans d�clench�s: 
+//================================= Structures Activ�es ================================
+ - PMA Offendorf  localisation: Salle polyvalente (150 personnes)
+et gymnase (100 personnes)
+Rue du cimetière OFFENDORF  contacts: 
+ - PMA Rohrwiller  localisation: Salle des fêtes (80 personnes) et gymnase (25 personnes)2 rue des Vergers ROHRWILLER  contacts: 
+ - PMA Gare  localisation: Gare de Strasbourg  contacts: 
+ - PMA Dow 1  localisation: 2 rue du collège
+67410 Drusenheim
+800 personnes  contacts: 03 88 53 32 75
+ - PMA Dow 2  localisation: Centre sportif, festif et de loisirs
+Rue de Lorraine - Rue de Dahlunden
+300 personnes  contacts: 
+ - PMA Dow 3  localisation: Maison des sports
+1a rue du gymnase
+Herrlisheim  contacts: 03 88 96 75 67
+ - PCO Wantzenau  localisation: PCO Wantzenau<br>Mairie 11-13 rue des Héros<br>03.88.59.22.59  contacts: 
+ - PCO Reichstett  localisation: PCO CRR<br>Raffinerie de Reischtett  contacts: 
+ - PC ZENIT  localisation:   contacts: 
+ - PCO Dow  localisation: Bâtiment administratif Dow  contacts: +33 388 53 5353
+ - PCO Vendenheim  localisation: Mairie de Vendenheim  contacts: 
+ - PRV Rohrwiller  localisation: Restaurant La Couronne
+24 grand\'Rue 67410 ROHRWILLER
+03 88 63 23 59  contacts: Maire
+ - PCFixe Préfecture  localisation: Hôtel du Préfet
+Petit Broglie
+67000 Strasbourg  contacts: SIDPC
+ - PPD Lanxess 5  localisation: Parking du \"Chalet\"  contacts: 
+ - PPD Lanxess 4  localisation: Bischheim
+Rue des trois maires  contacts:  
+ - PPD Lanxess 3  localisation: Reichstett
+Rue de la gravière  contacts: 
+ - PPD Lanxess 2  localisation: Wantzenau D468
+Parking de la gare  contacts: 
+
+		
+ - PT1 - sortie 52  localisation: A35 direction Lauterbourg sortie 52 Offendorf-Achern  contacts: 
+ - PT2 Haguenau-Rohrwiller  localisation: Carrefour D29/D37 Haguenau vers Rohrwiller  contacts: 
+ - PPD Lanxess 1  localisation: Parking PL raffinerie  contacts: 
+ - PS CRF  localisation: Wintzenheim  contacts: 
+ - PS CRF  localisation: Huseren  contacts: 
+ - PS CRF  localisation: Wintzenheim  contacts: 
+ - PS CRF  localisation: Labroque  contacts: 
+ - PS CRF  localisation: Plaine  contacts: 
+ - PS CRF  localisation: Plaine  contacts: 
+ - PS CRF  localisation: Bischwiller  contacts: 
+ - PS CRF  localisation: Belval  contacts: 
+ - PS CRF  localisation: Soultz-Wuenheim  contacts: 
+ - PS CRF  localisation: Mulhouse  contacts: 
+ - PS CRF  localisation: Mulhouse  contacts: 
+ - PS CRF  localisation: Mulhouse  contacts: 
+ - PS CRF  localisation: Bischwiller  contacts: 
+ - PS CRF  localisation: Gries  contacts: 
+ - PS CRF  localisation: Huseren  contacts: 
+ - PS CRF  localisation: Gueberschwihr  contacts: 
+ - PS CRF 286  localisation: Haguenau  contacts: 
+ - PS CRF 284  localisation: Haguenau  contacts: 
+ - PS CRF 275  localisation: Haguenau  contacts: 
+ - PS CRF  localisation: Luttenbach  contacts: 
+ - PS CRF  localisation: Luttenbach  contacts: 
+ - PS CRF  localisation: Sondernach  contacts: 
+ - PS CRF  localisation: Sondernach  contacts: 
+ - PS CRF  localisation: Geishouse  contacts: 
+ - PS CRF  localisation: Geishouse  contacts: 
+ - PS CRF  localisation: Soultz-Wuenheim  contacts: 
+ - PS CRF  localisation: Soultzmatt  contacts: 
+ - PS CRF  localisation: Osenbach  contacts: 
+ - PS CRF  localisation: Gueberschwihr  contacts: 
+ - PS CRF  localisation: Haguenau  contacts: 
+ - PS CRF  localisation: Rott  contacts: 
+ - PS CRF  localisation: Wissembourg  contacts: 
+ - PS CRF  localisation: Alb�  contacts: 
+ - PS CRF  localisation: Reichsfeld  contacts: 
+ - PS CRF  localisation: St Jean d'Ormon  contacts: 
+ - PS CRF  localisation: Denipaire  contacts: 
+ - PS CRF  localisation: Ban de Sapt  contacts: 
+ - PS CRF  localisation: Chatas  contacts: 
+ - PS CRF  localisation: Mesnil  contacts: 
+ - PS CRF  localisation: Le Puid  contacts: 
+ - PS CRF  localisation: Soultzmatt  contacts: 
+ - PS CRF  localisation: Nothalten  contacts: 
+ - PS CRF  localisation: Epfig  contacts: 
+ - PS CRF  localisation: Blienschwiller  contacts: 
+ - PS CRF  localisation: Steinseltz  contacts: 
+ - PS CRF  localisation: Steinseltz  contacts: 
+ - PS CRF  localisation: Steinseltz  contacts: 
+ - PS CRF  localisation: Rott  contacts: 
+ - PS CRF 289  localisation: Haguenau  contacts: 
+ - PS CRF  localisation: Gertwiller  contacts: 
+ - PS CRF  localisation: Heiligenstein  contacts: 
+ - PS CRF  localisation: Goxwiller  contacts: 
+ - PS CRF  localisation: Goxwiller  contacts: 
+ - Ecole Ill et Ried  localisation: 17 rue de périgueux
+67610 La Wantzenau  contacts: tel: 03 88 96 21 02
+tel: 03 88 96 22 90
+ - Collège André Malraux  localisation: 4 rue des jardins
+67610 La Wantzenau  contacts: tel: 03 88 96 63 33
+fax: 03 88 96 39 72
+ - Hotel Restaurant moulin de la Wantzenau  localisation: 3 impasse du moulin  contacts: 03 88 59 22 22
+ - Ecole maternelle Woerthel  localisation: 17 rue de Périgueux  contacts: 03 88 96 22 73
+ - SAU Ste Anne  localisation: 182 route de la Wantzenau
+67085 Strasbourg  contacts: Tél: 03 88 45 81 81
+Fax: 03 88 45 81 30
+Email:sainte-anne@ghsv.org
+Site internet :sainteanne.ghs
+ - PMA 2 Wantzenau  localisation: Gymnase, rue des vergers
+200 places  contacts: 
+ - PMA 1 Wantzenau  localisation: Gymnase, rue neuve
+115 places  contacts: tel: à compléter
+ - SAMU 67  localisation: 71 rue de l'Engelbreit  contacts: 112
+
+//================================= Missions ================================

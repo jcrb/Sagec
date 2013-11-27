@@ -1,0 +1,111 @@
+/** dossier_victime.css */
+
+textarea#styled {
+        width: 95%;
+        height: 120px;
+        border: 3px solid #cccccc;
+        padding: 0px;
+        font-family: Tahoma, "sans-serif";
+        font-size: 1.0em;
+        background: #C0C0C0;
+        height: 70px;
+        text-align: left;
+         vertical-align: top;
+        margin-left:1px;
+			margin-right:0px;
+        -moz-border-radius: 10px;
+}
+
+textarea#styled2 {
+        width: 95%;
+        height: 240px;
+        border: 3px solid #cccccc;
+        padding: 0px;
+        font-family: Tahoma, "sans-serif";
+        font-size: 1.0em;
+        background: #C0C0C0;
+        height: 70px;
+        text-align: left;
+        vertical-align: top;
+        margin-left:1px;
+		  margin-right:0px;
+        -moz-border-radius: 10px;
+}
+
+#dossier_div1 {
+	float:left;
+	width: 450px;
+	height: 700px;
+	color: white;
+	background: #E1E6FA;
+	-moz-border-radius: 10px;
+	margin: 5px 0px 0px 0px;
+}
+
+#dossier_div3 {
+	float:right;
+	width: 400px;
+	height: 700px;
+	color: white;
+	background: #E1E6FA;
+	-moz-border-radius: 10px;
+	margin: 5px 0px 0px 0px;
+}
+#dossier_div2 {
+	height: 700px;
+	background: #E1E6FA;
+	color:white;
+	-moz-border-radius: 10px;
+	margin: 5px 405px 0 455px;
+}
+
+/* description du fieldset */
+#field2 {
+	background-color: white;
+	margin-left:15px;
+	margin-right:30px;
+	border: 1px solid #C0C0C0;
+	color: #005fa1;
+	-moz-border-radius: 7px;
+}
+
+#field2 legend {
+	font-weight: bold ;
+	font-size: 1.1em;
+	color: #808080;
+}
+
+#field2 span {
+	font-weight: bold ;
+	font-size: 0.9em;
+	color: #808080;
+}
+
+#field2 select {
+	font-weight: italic ;
+	font-size: 0.9em;
+	color: black;
+}
+
+/*alignement des zones de saisies*/	
+#field2 label { 
+	width: 20%;
+	float: left;
+	text-align: right;
+	line-height: 1.8em;
+	padding: 0 0.8em 0 0;
+	}
+
+#footer {
+	background: #ABC8E2;
+	margin: 0 0 0 0;
+	clear: both;
+}
+
+#couleur{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	-moz-border-radius: 10px;
+}
+
+

@@ -1,0 +1,20 @@
+\section{utilitaires\-HTML::php Namespace Reference}
+\label{namespaceutilitairesHTML_1_1php}\index{utilitairesHTML::php@{utilitairesHTML::php}}
+
+
+
+
+\subsection{Detailed Description}
+Retourne la date et l'heure courante. L'heure est format\'{e}e en fonction du pays d'origine.
+
+\begin{Desc}
+\item[Returns:]string heure courante format\'{e}e \end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]langue ou pays courant. par d\'{e}faut la date est affich\'{e}e en fran\c{c}ais \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]1.0 \end{Desc}
+
+

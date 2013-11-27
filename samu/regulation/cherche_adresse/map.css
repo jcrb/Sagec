@@ -1,0 +1,127 @@
+/**
+*	div.css
+*/
+html {
+	font-size: 100%;
+	background-color:#fff;
+	background-image: url("arp_hg.png");
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+body {
+
+	font-family: Verdana, "Bitstream Vera Sans", Tahoma, Arial, sans-serif;
+	font-size: 75%;
+	margin: 0;
+	padding: 0;
+	color : #000;
+	background-image: url("arp_bd.png");
+   background-repeat: no-repeat;
+	background-position: right bottom;
+	height: 100%;
+}
+
+#div1 {
+	float:left;
+	width: 150px;
+	border: 1px dotted black;
+	color: white;
+	background: #C0C0C0;
+}
+
+#intertitre{
+	display: block;
+	line-height: 60px;
+	text-align: center;
+	color: #6699FF;
+	font: bold 1.4em verdana, Times, serif;
+}
+
+ul#menu{
+	margin: 0;
+	padding: 0;
+	font: bold 1em verdana, Times, serif;
+	list-style-type: none;
+}
+
+#menu a{
+	display: block;
+	margin: 5px 0;
+	color: white;
+	text-decoration: none;
+	line-height: 25px;
+	width: 149px;
+	background: #808080;
+	text-align: center;
+}
+
+#menu a:hover, #menu a:focus{
+	background-color:#000000;
+}
+
+
+
+#div2 {
+	float:left;
+	width: 300px;
+	border: 1px solid white;
+	height: 700%;
+	overflow:auto;
+	background-color: #F5F4F4;
+}
+
+/* description du fieldset */
+#field1 {
+	background-color: white;
+	margin-left:15px;
+	margin-right:30px;
+	border: 1px solid #C0C0C0;
+	color: #005fa1;
+	-moz-border-radius: 7px;
+}
+
+#field1 legend {
+	font-weight: bold ;
+	font-size: 1.1em;
+	color: #808080;
+}
+/*alignement des zones de saisies*/	
+#field1 label { 
+	width: 10%;
+	float: left;
+	text-align: right;
+	line-height: 1.8em;
+	padding: 0 0.8em 0 0;
+	}
+	
+#valider {
+	float: left;
+	margin-left:15px;
+	margin-top:10px;
+}
+
+#footer {
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid green;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	margin-top: 5px;
+	border-top: 1px solid #666;
+	position: absolute;
+	background: #0099CC;
+}
+
+#lat{
+	font-size: 0.8em;
+}
+
+#map {
+	border: 1px solid white;
+	height: 100%;
+	overflow:auto;
+	margin-left:300px;
+	background-color: #F5F4F4;
+}

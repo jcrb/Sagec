@@ -1,0 +1,632 @@
+<?php
+/*=======================================================================================
+Utilitaire gestion des médicaments
+utilitaires_MED.php
+=======================================================================================*/
+require("../pma_requete.php");
+//=======================================================================================
+//	Select_dci()		Crée une liste déroulante avec les DCI connues
+//					$connexion variable de connexion
+//					$item_select	dci_ID du médicament sélectionné
+//					Au retour $ID_dci contient la dci_ID du médicament sélectionné
+//=======================================================================================
+/**
+*Crée et affiche une liste déroulante avec une liste déroulante des DCI connues.
+*@package utilitaires_MED.php.
+*@return int $ID_dci contient l'hopital_ID de l'établissement sélectionné.
+*@param string variable de connexion.
+*@param int ID de la DCI courante.
+*@param string action à entreprendre si la sélection change (facultatif).
+*@version 1.0
+*/
+function select_dci($connexion,$item_select,$onChange="")
+{
+	$requete="SELECT dci_ID,dci_nom FROM med_dci ORDER BY dci_nom";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<select name=\"ID_dci\" size=\"1\" onChange='$onChange'>");
+	$mot = "aucune";
+	print("<OPTION VALUE = \"0\">$mot</OPTION> \n");
+
+	while($rub=mysql_fetch_array($resultat))
+	{
+			print("<OPTION VALUE=\"$rub[dci_ID]\" ");
+			if($item_select == $rub[dci_ID]) print(" SELECTED");
+			print("> $rub[dci_nom] </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+//=======================================================================================
+//	Select_presentation()		Crée une liste déroulante avec les présentations de
+//					médicaments
+//					$connexion variable de connexion
+//					$item_select	dci_ID du médicament sélectionné
+//					Au retour $ID_presentation contient la dci_ID du médicament sélectionné
+//=======================================================================================
+/**
+*Crée et affiche une liste déroulante avec une liste déroulante des presentation de médicaments.
+*@package utilitaires_MED.php.
+*@return int $ID_presentation contient l'presentation_ID de la presentation sélectionnée.
+*@param string variable de connexion.
+*@param int ID de la DCI courante.
+*@param string action à entreprendre si la sélection change (facultatif).
+*@version 1.0
+*/
+function select_presentation($connexion,$item_select,$onChange="")
+{
+	$requete="SELECT presentation_ID,presentation_nom FROM med_presentation ORDER BY presentation_nom";
+	$resultat = ExecRequete($requete,$connexion);
+	//print("item: ".$item_select."<br>");
+	print("<select name=\"present\" size=\"1\" onChange='$onChange'>");
+	$mot = "aucune";
+	print("<OPTION VALUE = \"0\">$mot</OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+			print("<OPTION VALUE=\"$rub[presentation_ID]\"");
+			if($item_select == $rub[presentation_ID])
+				print(" SELECTED");
+			print("> $rub[presentation_nom] </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+//=======================================================================================
+//	Select_unite()		Crée une liste déroulante avec les unités
+//					$connexion variable de connexion
+//					$item_select	unite_ID de l'unité sélectionnée
+//					Au retour $ID_presentation contient launite_ID de l'unité sélectionnée
+//=======================================================================================
+/**
+*Crée et affiche une liste déroulante avec une liste déroulante des presentation de médicaments.
+*@package utilitaires_MED.php.
+*@return int $ID_presentation contient l'presentation_ID de la presentation sélectionnée.
+*@param string variable de connexion.
+*@param int ID de la DCI courante.
+*@param string nom de l'objet liste. Par défaut vaut ID_unite. Peut être précisé à l'appel par
+*l'utilisateur, ce qui permet de l'utiliser plusieurs fois dans le même formulaire avec des noms différents.
+*@param string action à entreprendre si la sélection change (facultatif).
+*@version 1.1
+*/
+function select_unite($connexion,$item_select,$nom="ID_unite",$onChange="")
+{
+	$requete="SELECT unite_ID,unite_abrev FROM med_unites ORDER BY unite_abrev";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<select name=\"$nom\" size=\"1\" onChange='$onChange'>");
+	$mot = "--Choisir--";
+	print("<OPTION VALUE = \"0\">$mot</OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+			print("<OPTION VALUE=\"$rub[unite_ID]\" ");
+			if($item_select == $rub[unite_ID]) print(" SELECTED");
+			print("> $rub[unite_abrev] </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+//=======================================================================================
+//	select_psm()		Crée une liste déroulante avec les unités
+//					$connexion variable de connexion
+//					$item_select	unite_ID de l'unité sélectionnée
+//					Au retour $ID_presentation contient launite_ID de l'unité sélectionnée
+//=======================================================================================
+/**
+*Crée et affiche une liste déroulante avec une liste déroulante des presentation de médicaments.
+*@package utilitaires_MED.php.
+*@return int $ID_presentation contient l'presentation_ID de la presentation sélectionnée.
+*@param string variable de connexion.
+*@param int ID de la DCI courante.
+*@param string action à entreprendre si la sélection change (facultatif).
+*@version 1.0
+*/
+function select_psm($connexion,$item_select,$onChange="") //ID_psm
+{
+	$requete="SELECT lot_ID,lot_nom FROM med_psm ORDER BY lot_nom";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<select name=\"ID_psm\" size=\"1\" onChange='$onChange'>");
+	$mot = "--Choisir--";
+	print("<OPTION VALUE = \"0\">$mot</OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+			print("<OPTION VALUE=\"$rub[lot_ID]\" ");
+			if($item_select == $rub[lot_ID]) print(" SELECTED");
+			print("> $rub[lot_nom] </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+//=======================================================================================
+//	select_med_localisation()		Crée une liste déroulante avec les unités
+//					$connexion variable de connexion
+//					$item_select	unite_ID de l'unité sélectionnée
+//					Au retour $ID_presentation contient launite_ID de l'unité sélectionnée
+//=======================================================================================
+/**
+*Crée et affiche une liste déroulante avec une liste déroulante des presentation de médicaments.
+*@package utilitaires_MED.php.
+*@return int $ID_presentation contient l'presentation_ID de la presentation sélectionnée.
+*@param string variable de connexion.
+*@param int ID de la DCI courante.
+*@param string action à entreprendre si la sélection change (facultatif).
+*@version 1.0
+*/
+function select_med_localisation($connexion,$item_select,$onChange="")//$ID_medlocal
+{
+	$requete="SELECT local_ID,local_nom FROM med_localisation ORDER BY local_nom";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<select name=\"ID_medlocal\" size=\"1\" onChange='$onChange'>");
+	$mot = "--Choisir--";
+	print("<OPTION VALUE = \"0\">$mot</OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+			print("<OPTION VALUE=\"$rub[local_ID]\" ");
+			if($item_select == $rub[local_ID]) print(" SELECTED");
+			print("> $rub[local_nom] </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+//=======================================================================================
+//	select_malle()		Crée une liste déroulante avec les unités
+//					$connexion variable de connexion
+//					$item_select	unite_ID de l'unité sélectionnée
+//					Au retour $ID_presentation contient launite_ID de l'unité sélectionnée
+//=======================================================================================
+/**
+*Crée et affiche une liste déroulante avec une liste déroulante des presentation de médicaments.
+*@package utilitaires_MED.php.
+*@return int $ID_presentation contient l'presentation_ID de la presentation sélectionnée.
+*@param string variable de connexion.
+*@param int ID de la DCI courante.
+*@param string action à entreprendre si la sélection change (facultatif).
+*@version 1.0
+*/
+function select_malle($connexion,$item_select,$onChange="")
+{
+	//$requete="SELECT local_ID,local_nom FROM med_localisation ORDER BY local_nom";
+	//$resultat = ExecRequete($requete,$connexion);
+	print("<select name=\"ID_malle\" size=\"1\" onChange='$onChange'>");
+	$mot = "--Choisir--";
+	print("<OPTION VALUE = \"0\">$mot</OPTION> \n");
+	for($i=1;$i<150;$i++)
+	{
+			print("<OPTION VALUE=\"$i\" ");
+			if($item_select == $i) print(" SELECTED");
+			print("> malle $i </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+//=======================================================================================
+//	select_specialites()		Crée une liste déroulante avec les unités
+//					$connexion variable de connexion
+//					$item_select	unite_ID de l'unité sélectionnée
+//					Au retour $ID_presentation contient launite_ID de l'unité sélectionnée
+//=======================================================================================
+/**
+*Crée et affiche une liste déroulante avec une liste déroulante des presentation de médicaments.
+*@package utilitaires_MED.php.
+*@return int $ID_presentation contient l'presentation_ID de la presentation sélectionnée.
+*@param string variable de connexion.
+*@param int ID de la DCI courante.
+*@param string action à entreprendre si la sélection change (facultatif).
+*@version 1.0
+*/
+function select_specialites($connexion,$item_select,$onChange="")
+{
+	$requete="SELECT special_ID,special_nom FROM med_specialite ORDER BY special_nom";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<select name=\"ID_special\" size=\"1\" onChange='$onChange'>");
+	$mot = "--Choisir--";
+	print("<OPTION VALUE = \"0\">$mot</OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+			print("<OPTION VALUE=\"$rub[special_ID]\" ");
+			if($item_select == $rub[special_ID]) print(" SELECTED");
+			print("> $rub[special_nom] </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+//=======================================================================================
+//	select_stock()		Crée une liste déroulante avec le type de stockage: psm1, psm2..
+//					$connexion variable de connexion
+//					$item_select	unite_ID de l'unité sélectionnée
+//					Au retour $ID_stock contient le med_stock_ID de l'unité sélectionnée
+//=======================================================================================
+/**
+*Crée et affiche une liste déroulante avec une liste déroulante des presentation de médicaments.
+*@package utilitaires_MED.php.
+*@return int $ID_presentation contient l'presentation_ID de la presentation sélectionnée.
+*@param string variable de connexion.
+*@param int ID de la DCI courante.
+*@param string action à entreprendre si la sélection change (facultatif).
+*@version 1.0
+*/
+function select_stock($connexion,$item_select,$onChange="") //ID_stock
+{
+	$requete="SELECT med_stock_ID,med_stock_nom FROM med_type_stock ORDER BY med_stock_nom";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<select name=\"ID_stock\" size=\"1\" onChange='$onChange'>");
+	$mot = "--Choisir--";
+	print("<OPTION VALUE = \"0\">$mot</OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+			print("<OPTION VALUE=\"$rub[med_stock_ID]\" ");
+			if($item_select == $rub[med_stock_ID]) print(" SELECTED");
+			print("> $rub[med_stock_nom] </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+//=======================================================================================
+//	liste_med()		affiche un tableau des médicaments
+//					$connexion variable de connexion
+//					$item_select	unite_ID de l'unité sélectionnée
+//					Au retour $ID_stock contient le med_stock_ID de l'unité sélectionnée
+//=======================================================================================
+function liste_med($connexion)
+{
+	$requete="SELECT medic_ID,special_nom, dci_nom,presentation_nom,presentation_ID,medic_volume,unite_abrev ml,medic_dosage,medic_dosage_unite
+			FROM medicament,med_specialite,med_dci,med_presentation,med_unites
+			WHERE special_ID = medic_nom
+			AND dci_ID = medic_dci
+			AND presentation_ID = medic_presentation
+			AND unite_ID = medic_volume_unite
+			ORDER BY special_nom
+			";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<table>");
+	while($rub=mysql_fetch_array($resultat))
+	{
+		print("<TR>");
+		print("<TD>");
+			print("<A href=\"medicament_fiche.php?medicament=$rub[medic_ID]\">$rub[medic_ID]</A>");
+		print("</TD>");
+		print("<TD> $rub[special_nom]</TD>");
+		print("<TD> $rub[dci_nom]</TD>");
+		print("<TD>");
+			print("$rub[presentation_nom]");
+			if($rub[presentation_ID]=="1"||$rub[presentation_ID]=="3"||$rub[presentation_ID]=="4"||$rub[presentation_ID]=="7") print(" de ".$rub[medic_volume]." ".$rub[ml]);
+			$requete="SELECT unite_abrev FROM med_unites WHERE unite_ID='$rub[medic_dosage_unite]'";
+			$resultat2 = ExecRequete($requete,$connexion);
+			$unit=mysql_fetch_array($resultat2);
+			print(" contenant ".$rub[medic_dosage]." ".$unit[unite_abrev]);
+			@mysql_free_result($resultat2);
+		print("</TD>");
+		print("</TR>");
+	}
+	print("</table>");
+	@mysql_free_result($resultat);
+}
+//=======================================================================================
+//	liste_med2()		affiche liste déroulante des médicaments
+//					$connexion variable de connexion
+//					$item_select	unite_ID de l'unité sélectionnée
+//					Au retour ID_med contient le med_stock_ID de l'unité sélectionnée
+//=======================================================================================
+function get_med($connexion, $med)
+{
+	$requete="SELECT medic_ID,special_nom, dci_nom,presentation_nom,medic_volume,unite_abrev ml,medic_dosage,medic_dosage_unite
+			FROM medicament,med_specialite,med_dci,med_presentation,med_unites
+			WHERE medic_ID = '$med'
+			AND special_ID = medic_nom
+			AND dci_ID = medic_dci
+			AND presentation_ID = medic_presentation
+			AND unite_ID = medic_volume_unite
+			";
+	$resultat = ExecRequete($requete,$connexion);
+	$rub=mysql_fetch_array($resultat);
+	$medoc=$rub[special_nom]." (".$rub[dci_nom].") ".$rub[presentation_nom];
+	if($rub[presentation_nom]=="ampoule") $medoc.=" de ".$rub[medic_volume]." ".$rub[ml];
+	$requete="SELECT unite_abrev FROM med_unites WHERE unite_ID='$rub[medic_dosage_unite]'";
+	$resultat2 = ExecRequete($requete,$connexion);
+	$unit=mysql_fetch_array($resultat2);
+	$medoc.=" contenant ".$rub[medic_dosage]." ".$unit[unite_abrev];
+	@mysql_free_result($resultat2);
+	@mysql_free_result($resultat);
+	return $medoc;
+}
+function liste_med2($connexion,$item_select)
+{
+	$requete="SELECT medic_ID,special_nom, dci_nom,presentation_nom,medic_volume,unite_abrev ml,medic_dosage,medic_dosage_unite
+			FROM medicament,med_specialite,med_dci,med_presentation,med_unites
+			WHERE special_ID = medic_nom
+			AND dci_ID = medic_dci
+			AND presentation_ID = medic_presentation
+			AND unite_ID = medic_volume_unite
+			ORDER BY special_nom
+			";
+	$resultat = ExecRequete($requete,$connexion);
+	//print($requete."<br>");
+	print("<select name=\"ID_med\" size=\"1\" onChange='$onChange'>");
+	$mot = "--Choisir--";
+	print("<OPTION VALUE = \"0\">$mot</OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+			print("<OPTION VALUE=\"$rub[medic_ID]\" ");
+			if($item_select == $rub[medic_ID]) print(" SELECTED");
+			$medoc=$rub[special_nom]." (".$rub[dci_nom].") ".$rub[presentation_nom];
+			if($rub[presentation_nom]=="ampoule") $medoc.=" de ".$rub[medic_volume]." ".$rub[ml];
+			$requete="SELECT unite_abrev FROM med_unites WHERE unite_ID='$rub[medic_dosage_unite]'";
+			$resultat2 = ExecRequete($requete,$connexion);
+			$unit=mysql_fetch_array($resultat2);
+			$medoc.=" contenant ".$rub[medic_dosage]." ".$unit[unite_abrev];
+			@mysql_free_result($resultat2);
+			print("> $medoc </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+//=======================================================================================
+//	select_stockage()		Crée une liste déroulante avec le type de stockage: psm1, psm2..
+//					$connexion variable de connexion
+//					$item_select	unite_ID de l'unité sélectionnée
+//					Au retour $ID_stock contient le med_stock_ID de l'unité sélectionnée
+//=======================================================================================
+/**
+*Crée et affiche une liste déroulante avec une liste déroulante des presentation de médicaments.
+*@package utilitaires_MED.php.
+*@return int $ID_presentation contient l'presentation_ID de la presentation sélectionnée.
+*@param string variable de connexion.
+*@param int ID de la DCI courante.
+*@param string action à entreprendre si la sélection change (facultatif).
+*@version 1.0
+*/
+function select_stockage($connexion,$item_select,$onChange="") //$ID_stockage
+{
+	//$requete="SELECT * FROM stockage ORDER BY stockage_batiment";
+	$requete="SELECT * FROM stockage";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<select name=\"ID_stockage\" size=\"1\" onChange='$onChange'>");
+	$mot = "--Choisir--";
+	print("<OPTION VALUE = \"0\">$mot</OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+			print("<OPTION VALUE=\"$rub[stockage_ID]\" ");
+			if($item_select == $rub[stockage_ID]) print(" SELECTED");
+			$mot=$rub[stockage_batiment]." (".$rub[stockage_etage].") ".$rub[stockage_local];
+			print("> $mot </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+//=======================================================================================
+//	select_rangement()		Crée une liste déroulante avec le type de stockage: psm1, psm2..
+//					$connexion variable de connexion
+//					$item_select	unite_ID de l'unité sélectionnée
+//					Au retour $ID_stock contient le med_stock_ID de l'unité sélectionnée
+//=======================================================================================
+/**
+*Crée et affiche une liste déroulante avec une liste déroulante des presentation de médicaments.
+*@package utilitaires_MED.php.
+*@return int $ID_presentation contient l'presentation_ID de la presentation sélectionnée.
+*@param string variable de connexion.
+*@param int ID de la DCI courante.
+*@param string action à entreprendre si la sélection change (facultatif).
+*@version 1.0
+*/
+function select_rangement($connexion,$item_select,$onChange="") //$ID_rangement
+{
+	$requete="SELECT * FROM stock_rangement ORDER BY rangement_nom";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<select name=\"ID_rangement\" size=\"1\" onChange='$onChange'>");
+	$mot = "--Choisir--";
+	print("<OPTION VALUE = \"0\">$mot</OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+			print("<OPTION VALUE=\"$rub[rangement_ID]\" ");
+			if($item_select == $rub[rangement_ID]) print(" SELECTED");
+			$mot=$rub[rangement_nom];
+			print("> $mot </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+//=======================================================================================
+//	get_stockage()		Renvoie une chaine de caractères contenant le description d'un
+//					lieu de stockage
+//					$connexion variable de connexion
+//					$i stockage_ID à décrire
+//=======================================================================================
+function get_stockage($connexion,$i)
+{
+	$requete="SELECT * FROM stockage WHERE stockage_ID = '$i'";
+	$resultat = ExecRequete($requete,$connexion);
+	$rub=mysql_fetch_array($resultat);
+	return $rub[stockage_batiment]." (".$rub[stockage_etage].") ".$rub[stockage_local];
+}
+//=======================================================================================
+//stockage_table		affiche le contenu de la table stockage
+//					$connexion variable de connexion
+//=======================================================================================
+function stockage_table($connexion)
+{
+	$requete="SELECT stockage_ID,stockage_batiment_nom,stockage_etage,stockage_local,org_nom
+	 		FROM stockage,organisme,stockage_batiment
+			WHERE organisme.org_ID = stockage.org_ID
+			AND stockage_batiment.stockage_batiment_ID = stockage.stockage_batiment_ID
+			";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<table>");
+	while($rub=mysql_fetch_array($resultat))
+	{
+		print("<TR>");
+		print("<TD><A href=\"local_saisie.php?local=$rub[stockage_ID]\">$rub[stockage_ID]</A></TD>");
+		$mot=$rub[stockage_batiment_nom]." (".$rub[stockage_etage].") ".$rub[stockage_local];
+		print("<TD>$mot</TD>");
+		print("<TD>$rub[org_nom]</TD>");
+		print("</TR>");
+	}
+	print("</table>");
+	@mysql_free_result($resultat);
+}
+//=============================================================================
+//	Selectlocal()	Crée une liste déroulante avec la liste locaux de stockage
+//						$connexion 		variable de connexion
+//						$item_select	type_ID de l'organisme sélectionné
+//						Au retour, $org_type contient le type_ID
+//=============================================================================
+function Selectlocal($connexion,$item_select,$langue,$onChange="")
+{
+	require '../utilitaires/globals_string_lang.php';
+	// lit la liste des hôpitaux dans la base de données
+	$requete="SELECT org_ID,org_nom FROM organisme ORDER BY org_nom";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<SELECT NAME=\"org_type\" size=\"1\" onChange='$onChange'>");
+	$mot = $string_lang['ALL_ETATS'][$langue];
+	print("<OPTION VALUE = \"0\">$mot </OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+		print("<OPTION VALUE=\"$rub[org_ID]\" ");
+		if($item_select == $rub[org_ID]) print(" SELECTED");
+		print(">$rub[org_nom]</OPTION> \n");
+
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+
+//=============================================================================
+//	SelectBatiment()	Crée une liste déroulante avec la liste batiments de stockage
+//						$connexion 		variable de connexion
+//						$item_select	type_ID de l'organisme sélectionné
+//						Au retour, $ID_batiment contient le type_ID
+//=============================================================================
+function SelectBatiment($connexion,$org_ID,$item_select,$langue,$onChange="")
+{
+	require '../utilitaires/globals_string_lang.php';
+	// lit la liste des hôpitaux dans la base de données
+	$requete="SELECT DISTINCT stockage_batiment.stockage_batiment_ID,stockage_batiment_nom
+			FROM stockage_batiment, stockage
+			WHERE stockage.org_ID = '$org_ID'
+			AND stockage.stockage_batiment_ID = stockage_batiment.stockage_batiment_ID
+			";
+
+	$resultat = ExecRequete($requete,$connexion);
+	print("<SELECT NAME=\"ID_batiment\" size=\"1\" onChange='$onChange'>");
+	$mot = $string_lang['ALL_ETATS'][$langue];
+	print("<OPTION VALUE = \"0\">$mot </OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+		print("<OPTION VALUE=\"$rub[stockage_batiment_ID]\" ");
+		if($item_select == $rub[stockage_batiment_ID]) print(" SELECTED");
+		print(">$rub[stockage_batiment_nom]</OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+//=======================================================================================
+//	liste_lot()		affiche le contenu d'un lot
+//					$connexion variable de connexion
+//					$item_select	unite_ID de l'unité sélectionnée
+//=======================================================================================
+function liste_lot($connexion)
+{
+/*$requete="SELECT med_lot_ID,medic_ID,med_lot_qte,med_lot_perime,rangement_code,rangement_nom,stockage_ID,local_nom
+			FROM med_lot,stock_rangement,med_localisation
+			WHERE med_lot.rangement_ID = stock_rangement.rangement_ID
+			AND med_lot.local_ID = med_localisation.local_ID
+			ORDER BY medic_ID
+	";*/
+
+	$requete="SELECT med_lot_ID,medic_ID,med_lot_qte,med_lot_perime,med_lot.conteneur_ID,lot_nom,conteneur_nom,conteneur_no,stockage_ID
+			FROM med_lot,stock_conteneur,med_psm
+			WHERE med_lot.conteneur_ID = stock_conteneur.conteneur_ID
+			AND stock_conteneur.conteneur_nom = med_psm.lot_ID
+			ORDER BY medic_ID
+	";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<table width=\"100%\">");
+
+	print("<TR>");
+		print("<TH width=\"1%\"></TH>");
+		print("<TH> médicament </TH>");
+		print("<TH>quantité</TH>");
+		print("<TH>péremption</TH>");
+		print("<TH>conteneur</TH>");
+		print("<TH>localisation</TH>");
+	print("</TR>");
+
+	while($rub=mysql_fetch_array($resultat))
+	{
+		$stockage = get_stockage($connexion,$rub[stockage_ID]);
+		$medoc = get_med($connexion, $rub[medic_ID]);
+		print("<TR>");
+		print("<TD class\"verda\"><A href=\"medicament_lot.php?lot=$rub[med_lot_ID]\">$rub[med_lot_ID]</A></TD>");
+		print("<TD class\"verda\">$medoc</TD>");
+		print("<TD class\"verda\">$rub[med_lot_qte]</TD>");
+		print("<TD class\"verda\">$rub[med_lot_perime]</TD>");
+		print("<TD class\"verda\"> $rub[lot_nom]$rub[conteneur_no]</TD>");
+		//print("<TD>$rub[local_nom] $rub[rangement_nom] $rub[rangement_code]</TD>");
+		print("<TD class\"verda\">$stockage</TD>");
+		print("</TR>");
+	}
+	print("</table>");
+	@mysql_free_result($resultat);
+}
+//=======================================================================================
+//	liste_famille()	liste déroulante des familles de médicaments
+//					$connexion variable de connexion
+//					$item_select	ID_famille de l'unité sélectionnée
+//					Au retour $ID_famille[] contient les famille_ID. en effet un
+//					médicament peut appartenir à plusieurs familles.
+//=======================================================================================
+/**
+*Crée et affiche une liste déroulante des familles de médicaments.
+*@package utilitaires_MED.php.
+*@return int $ID_famille contient le famille_ID.
+*@param string variable de connexion.
+*@param int ID de la famille courante.
+*@param string action à entreprendre si la sélection change (facultatif).
+*@version 1.0
+*/
+function liste_famille($connexion,$item_select,$onChange="") //$ID_famille
+{
+	$requete="SELECT * FROM med_famille ORDER BY famille_nom";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<select name=\"ID_famille[]\" size=\"1\" onChange='$onChange'>");
+	$mot = "--Choisir--";
+	print("<OPTION VALUE = \"0\">$mot</OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+			print("<OPTION VALUE=\"$rub[famille_ID]\" ");
+			if($item_select == $rub[famille_ID]) print(" SELECTED");
+			$mot=$rub[famille_nom];
+			print("> $mot </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+//=======================================================================================
+//	liste_medicament()	liste déroulante des médicaments
+//					$connexion variable de connexion
+//					$item_select	ID_famille de l'unité sélectionnée
+//					Au retour $ID_famille[] contient les famille_ID.
+//=======================================================================================
+/**
+*Crée et affiche une liste déroulante des familles de médicaments.
+*@package utilitaires_MED.php.
+*@return int $ID_med contient le nom du médicament.
+*@param string variable de connexion.
+*@param int ID de la famille courante.
+*@param string action à entreprendre si la sélection change (facultatif).
+*@version 1.0
+*/
+function liste_medicament($connexion,$item_select,$onChange="") //$ID_med
+{
+	$requete="SELECT * FROM med_specialite ORDER BY special_nom";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<select name=\"ID_med\" size=\"1\" onChange='$onChange'>");
+	$mot = "--Choisir--";
+	print("<OPTION VALUE = \"0\">$mot</OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+			print("<OPTION VALUE=\"$rub[special_ID]\" ");
+			if($item_select == $rub['special_ID']) print(" SELECTED");
+			$mot=$rub['special_nom'];
+			print("> $mot </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+?>

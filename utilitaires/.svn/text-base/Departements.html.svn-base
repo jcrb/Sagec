@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 6">
+		<title>Bienvenue dans Adobe GoLive 6</title>
+	</head>
+
+	<body bgcolor="#ffffff">
+		<p><select name="selectName" size="1">
+				<OPTION value="Ain">Ain</OPTION>
+<OPTION value="Aisne">Aisne</OPTION>
+<OPTION value="Allier">Allier</OPTION>
+<OPTION value="Alpes-Maritimes">Alpes-Maritimes</OPTION>
+<OPTION value="Alpes-de-Haute-Provence">Alpes-de-Haute-Provence</OPTION>
+<OPTION value="Ardennes">Ardennes</OPTION>
+<OPTION value="Ardèche">Ardèche</OPTION>
+<OPTION value="Ariège">Ariège</OPTION>
+<OPTION value="Aube">Aube</OPTION>
+<OPTION value="Aude">Aude</OPTION>
+<OPTION value="Aveyron">Aveyron</OPTION>
+<OPTION value="Bas-Rhin">Bas-Rhin</OPTION>
+<OPTION value="Bouches-du-Rhône">Bouches-du-Rhône</OPTION>
+<OPTION value="Calvados">Calvados</OPTION>
+<OPTION value="Cantal">Cantal</OPTION>
+<OPTION value="Charente">Charente</OPTION>
+<OPTION value="Charente-Maritime">Charente-Maritime</OPTION>
+<OPTION value="Cher">Cher</OPTION>
+<OPTION value="Corrèze">Corrèze</OPTION>
+<OPTION value="Corse-du-Sud">Corse-du-Sud</OPTION>
+<OPTION value="Creuse">Creuse</OPTION>
+<OPTION value="Côte-d'Or">Côte-d'Or</OPTION>
+<OPTION value="Côtes-d'Armor">Côtes-d'Armor</OPTION>
+<OPTION value="D.O.M.-T.O.M">D.O.M.-T.O.M</OPTION>
+<OPTION value="Deux-Sèvres">Deux-Sèvres</OPTION>
+<OPTION value="Dordogne">Dordogne</OPTION>
+<OPTION value="Doubs">Doubs</OPTION>
+<OPTION value="Drôme">Drôme</OPTION>
+<OPTION value="Essonne">Essonne</OPTION>
+<OPTION value="Eure">Eure</OPTION>
+<OPTION value="Eure-et-Loir">Eure-et-Loir</OPTION>
+<OPTION value="Finistère">Finistère</OPTION>
+<OPTION value="Gard">Gard</OPTION>
+<OPTION value="Gers">Gers</OPTION>
+<OPTION value="Gironde">Gironde</OPTION>
+<OPTION value="Haut-Rhin">Haut-Rhin</OPTION>
+<OPTION value="Haute Corse">Haute Corse</OPTION>
+<OPTION value="Haute-Garonne">Haute-Garonne</OPTION>
+<OPTION value="Haute-Loire">Haute-Loire</OPTION>
+<OPTION value="Haute-Marne">Haute-Marne</OPTION>
+<OPTION value="Haute-Savoie">Haute-Savoie</OPTION>
+<OPTION value="Haute-Saône">Haute-Saône</OPTION>
+<OPTION value="Haute-Vienne">Haute-Vienne</OPTION>
+<OPTION value="Hautes-Alpes">Hautes-Alpes</OPTION>
+<OPTION value="Hautes-Pyrénées">Hautes-Pyrénées</OPTION>
+<OPTION value="Hauts-de-Seine">Hauts-de-Seine</OPTION>
+<OPTION value="Hérault">Hérault</OPTION>
+<OPTION value="Ille-et-Vilaine">Ille-et-Vilaine</OPTION>
+<OPTION value="Indre">Indre</OPTION>
+<OPTION value="Indre-et-Loire">Indre-et-Loire</OPTION>
+<OPTION value="Isère">Isère</OPTION>
+<OPTION value="Jura">Jura</OPTION>
+<OPTION value="Landes">Landes</OPTION>
+<OPTION value="Loir-et-Cher">Loir-et-Cher</OPTION>
+<OPTION value="Loire">Loire</OPTION>
+<OPTION value="Loire-Atlantique">Loire-Atlantique</OPTION>
+<OPTION value="Loiret">Loiret</OPTION>
+<OPTION value="Lot">Lot</OPTION>
+<OPTION value="Lot-et-Garonne">Lot-et-Garonne</OPTION>
+<OPTION value="Lozère">Lozère</OPTION>
+<OPTION value="Maine-et-Loire">Maine-et-Loire</OPTION>
+<OPTION value="Manche">Manche</OPTION>
+<OPTION value="Marne">Marne</OPTION>
+<OPTION value="Mayenne">Mayenne</OPTION>
+<OPTION value="Meurthe-et-Moselle">Meurthe-et-Moselle</OPTION>
+<OPTION value="Meuse">Meuse</OPTION>
+<OPTION value="Morbihan">Morbihan</OPTION>
+<OPTION value="Moselle">Moselle</OPTION>
+<OPTION value="Nièvre">Nièvre</OPTION>
+<OPTION value="Nord">Nord</OPTION>
+<OPTION value="Oise">Oise</OPTION>
+<OPTION value="Orne">Orne</OPTION>
+<OPTION value="Paris">Paris</OPTION>
+<OPTION value="Pas-de-Calais">Pas-de-Calais</OPTION>
+<OPTION value="Puy-de-Dôme">Puy-de-Dôme</OPTION>
+<OPTION value="Pyrénées-Atlantiques">Pyrénées-Atlantiques</OPTION>
+<OPTION value="Pyrénées-Orientales">Pyrénées-Orientales</OPTION>
+<OPTION value="Rhône">Rhône</OPTION>
+<OPTION value="Sarthe">Sarthe</OPTION>
+<OPTION value="Savoie">Savoie</OPTION>
+<OPTION value="Saône-et-Loire">Saône-et-Loire</OPTION>
+<OPTION value="Seine-Maritime">Seine-Maritime</OPTION>
+<OPTION value="Seine-Saint-Denis">Seine-Saint-Denis</OPTION>
+<OPTION value="Seine-et-Marne">Seine-et-Marne</OPTION>
+<OPTION value="Somme">Somme</OPTION>
+<OPTION value="Tarn">Tarn</OPTION>
+<OPTION value="Tarn-et-Garonne">Tarn-et-Garonne</OPTION>
+<OPTION value="Territ.-de-Belfort">Territ.-de-Belfort</OPTION>
+<OPTION value="Val-d'Oise">Val-d'Oise</OPTION>
+<OPTION value="Val-de-Marne">Val-de-Marne</OPTION>
+<OPTION value="Var">Var</OPTION>
+<OPTION value="Vaucluse">Vaucluse</OPTION>
+<OPTION value="Vendée">Vendée</OPTION>
+<OPTION value="Vienne">Vienne</OPTION>
+<OPTION value="Vosges">Vosges</OPTION>
+<OPTION value="Yonne">Yonne</OPTION>
+<OPTION value="Yvelines">Yvelines</OPTION>
+			</select></p>
+	</body>
+
+</html>

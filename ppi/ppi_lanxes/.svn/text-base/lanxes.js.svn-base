@@ -1,0 +1,12 @@
+/**
+ * index.php
+ *
+ * @version $Id$
+ * @package Sagec
+ * @author JCB
+ * @copyright 2007
+ */
+var centerLatitude = 48.655806;
+var centerLongitude = 7.798040;
+var startZoom = 15;
+var description = 'Lanxes';

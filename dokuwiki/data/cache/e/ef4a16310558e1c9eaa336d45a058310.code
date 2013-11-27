@@ -1,0 +1,34 @@
+<span class="sc2">&lt;<a href="http://december.com/html/4/element/head.html"><span class="kw2">head</span></a>&gt;</span>
+<span class="sc2">&lt;<a href="http://december.com/html/4/element/title.html"><span class="kw2">title</span></a>&gt;</span> Page de Test <span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/title.html"><span class="kw2">title</span></a>&gt;</span>
+<span class="sc2">&lt;<a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">'text/javascript'</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">&quot;prototype-1.4.0.js&quot;</span>&gt;&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a>&gt;</span>
+&nbsp;
+<span class="sc2">&lt;<a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">'text/javascript'</span>&gt;</span>
+	function test1()
+	{
+		var d = $('monDiv');
+		alert(d.innerHTML);
+	}
+&nbsp;
+	function test2()
+	{
+		var divs = $('monDiv','monAutreDiv');
+		for(i=0; i<span class="sc2">&lt;divs.length; i++<span class="br0">&#41;</span></span>
+<span class="sc2">		<span class="br0">&#123;</span></span>
+<span class="sc2">			alert<span class="br0">&#40;</span>divs<span class="br0">&#91;</span>i<span class="br0">&#93;</span>.innerHTML<span class="br0">&#41;</span>;</span>
+<span class="sc2">		<span class="br0">&#125;</span></span>
+<span class="sc2">	<span class="br0">&#125;</span></span>
+<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/head.html"><span class="kw2">head</span></a>&gt;</span>
+&nbsp;
+<span class="sc2">&lt;<a href="http://december.com/html/4/element/body.html"><span class="kw2">body</span></a>&gt;</span>
+	<span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">&quot;monDiv&quot;</span>&gt;</span>
+		<span class="sc2">&lt;<a href="http://december.com/html/4/element/p.html"><span class="kw2">p</span></a>&gt;</span>Ceci est un paragraphe<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/p.html"><span class="kw2">p</span></a>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span>
+	<span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">&quot;monAutreDiv&quot;</span>&gt;</span>
+		<span class="sc2">&lt;<a href="http://december.com/html/4/element/p.html"><span class="kw2">p</span></a>&gt;</span>Ceci est un autre paragraphe<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/p.html"><span class="kw2">p</span></a>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span>
+&nbsp;
+	<span class="sc2">&lt;<a href="http://december.com/html/4/element/input.html"><span class="kw2">input</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;button&quot;</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">&quot;Test1&quot;</span> <span class="kw3">onclick</span><span class="sy0">=</span><span class="st0">&quot;test1();&quot;</span>&gt;&lt;<a href="http://december.com/html/4/element/br.html"><span class="kw2">br</span></a>&gt;</span>
+	<span class="sc2">&lt;<a href="http://december.com/html/4/element/input.html"><span class="kw2">input</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;button&quot;</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">&quot;Test2&quot;</span> <span class="kw3">onclick</span><span class="sy0">=</span><span class="st0">&quot;test2();&quot;</span>&gt;&lt;<a href="http://december.com/html/4/element/br.html"><span class="kw2">br</span></a>&gt;</span>
+&nbsp;
+<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/body.html"><span class="kw2">body</span></a>&gt;</span>

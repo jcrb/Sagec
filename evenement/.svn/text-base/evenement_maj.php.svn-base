@@ -1,0 +1,151 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+//
+// This file is part of SAGEC67 Copyright (C) 2003 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+//----------------------------------------- SAGEC ---------------------------------------------//
+/**
+//	programme: 			evenement_maj.php
+//	date de création: 	12/11/2004
+//	@author:			jcb
+//	description:
+//	@version:			1.0 - $Id$
+//	maj le:				14/08/2006
+*/
+//---------------------------------------------------------------------------------------------//
+session_start();
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+if(!$_SESSION["autorisation"]>8) header("Location:../logout.php");
+//
+include("../html.php");
+require("../pma_connect.php");
+require("../pma_connexion.php");
+require '../utilitaires/requete.php';
+//
+$langue = $_SESSION['langue'];
+//
+// ENTETE
+print("<html>");
+print("<head>");
+print("<title> Evènement MAJ </title>");
+print("<meta name=\"author\" content=\"JCB\">");
+print("<LINK REL=stylesheet HREF=\"../pma.css\" TYPE =\"text/css\">");
+print("</head>");
+// CORPS
+print("<BODY>");
+print("<FORM ACTION =\"evenement_maj.php\" METHOD=\"POST\">");
+$connect = Connexion(NOM,PASSE,BASE,SERVEUR);
+//================================== Affichage ===============================================
+if($_REQUEST['ok']=='MAJ')
+{
+	$requete = "SELECT * FROM evenement WHERE evenement_ID = '$_REQUEST[ev_courant]'";
+	$resultat = ExecRequete($requete,$connect);
+	$rub=mysql_fetch_array($resultat);
+	// on enregistre dans un champ caché la valeur de l'évènement courant précédant
+	print("<input type=\"hidden\" name=\"ev_courant\" value=\"$_REQUEST[ev_courant]\">");
+	print("<table>");
+	print("<TR>");
+		print("<TD>Evènement courant</TD>");
+		print("<TD><input type=\"text\" name=\"titre\" value=\"$rub[evenement_nom]\" size=\"50\"></TD>");
+		print("<TD><input type=\"submit\" name=\"ok\" value=\"Valider\"></TD>");
+	print("</TR>");
+	print("<TR>");
+		print("<TD>Date de création</TD>");
+		$date = date("Y-m-j");
+		print("<TD><input type=\"text\" name=\"date1\" value=\"$date\" size=\"10\"></TD>");
+	print("</TR>");
+	print("<TR>");
+		print("<TD>Heure de création</TD>");
+		$heure = date("H:i:s");
+		print("<TD><input type=\"text\" name=\"heure1\" value=\"$heure\" size=\"10\"></TD>");
+	print("</TR>");
+	print("<TR>");
+		print("<TD>Commentaires</TD>");
+		print("<TD><TEXTAREA name=\"comment\" value=\"\" cols=\"50\" rows=\"5\">$rub[comment]</textarea></TD>");
+	print("</TR>");
+	print("<TR>");
+		print("<TD>N° dossier SAMU</TD>");
+		print("<TD><input type=\"text\" name=\"dossier_samu\" value=\"$rub[dossier_samu]\" size=\"10\"></TD>");
+	print("</TR>");
+	print("<TR>");
+		print("<TD>N° dossier SDIS</TD>");
+		print("<TD><input type=\"text\" name=\"dossier_sdis\" value=\"$rub[dossier_sdis]\" size=\"10\"></TD>");
+	print("</TR>");
+
+	print("<TR>");
+		print("<TD>évènement actif</TD>");
+		$c1 = $c2 = 0;
+		if($rub['evenement_actif']=='o')$c1='checked';
+		else $c2='checked';
+		print("<TD><input type=\"radio\" name=\"actif\" value=\"o\" $c1> oui");
+		print("<input type=\"radio\" name=\"actif\" value=\"n\" $c2> non</TD>");
+	print("</TR>");
+
+	print("<TR>");
+		print("<TD>Date de fin</TD>");
+		print("<TD><input type=\"text\" name=\"date2\" value=\"$rub[date2]\" size=\"10\"></TD>");
+	print("</TR>");
+	print("<TR>");
+		print("<TD>Heure de fin</TD>");
+		print("<TD><input type=\"text\" name=\"heure2\" value=\"$rub[heure2]\" size=\"10\"></TD>");
+	print("</TR>");
+
+	print("</table>");
+}
+//================================== MAJ ===============================================
+elseif($_REQUEST['ok']=='Valider')
+{
+	$titre = $_REQUEST['titre'];
+	$date1 = $_REQUEST['date1'];
+	$heure1 = $_REQUEST['heure1'];
+	$date2 = $_REQUEST['date2'];
+	$heure2 = $_REQUEST['heure2'];
+	$samu = $_REQUEST['dossier_samu'];
+	$sdis = $_REQUEST['dossier_sdis'];
+	$comment = $_REQUEST['comment'];
+	$actif = $_REQUEST['actif'];
+	$maj = date("Y-m-j H:i:s");
+	$requete = "UPDATE evenement SET
+					evenement_nom = '$titre',
+					evenement_date1 = '$date1',
+					evenement_heure1 = '$heure1',
+					evenement_date2 = '$date2',
+					evenement_heure2 = '$heure2',
+					last_update = '$maj',
+					evenement_actif = '$actif',
+					dossier_samu= '$samu',
+					dossier_sdis = '$sdis',
+					comment = '$comment'
+				WHERE evenement_ID = $_REQUEST[ev_courant]";
+	$resultat = ExecRequete($requete,$connect);
+}
+//================================== CHOIX ===============================================
+else
+{
+	// liste des évènements courants
+	$requete = "SELECT evenement_ID, evenement_nom FROM evenement WHERE evenement_actif = 'o'";
+	$resultat = ExecRequete($requete,$connect);
+	print("Evènement à modifier <SELECT name=\"ev_courant\">");
+	while($rub=mysql_fetch_array($resultat))
+	{
+		print("<option value=\"$rub[evenement_ID]\"> $rub[evenement_nom]</option>");
+	}
+	print("</SELECT>");
+	print("<input type=\"submit\" name=\"ok\" value=\"MAJ\">");
+}
+
+print("</BODY>");
+print("</FORM>");
+print("</html>");
+?>

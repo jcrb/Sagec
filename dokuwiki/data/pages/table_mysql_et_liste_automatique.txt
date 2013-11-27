@@ -1,0 +1,5 @@
+====== Tables et Listes ======
+objet: créer automatiquement une liste de sélection à partir d'une colonne quelconque d'une table.
+
+
+[[http://localhost/html/sagec3/utilitaires/list.php]]

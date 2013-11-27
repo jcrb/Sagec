@@ -1,0 +1,51 @@
+Date: Saturday 25 October 2008 à 17:37
+//================================= Evènement courant ================================
+Evènement courant: test2  le 2008-08-08  , à 16:39:43
+Plans déclenchés: 
+//================================= Structures Activées ================================
+ - PMA PMC_VIP  localisation: Palais de la musique et des congrès  contacts: 
+ - PMA Entzheim  localisation: Aéroport Entzheim  contacts: 
+ - PMA Kleber  localisation: Rue fritz Kieffer  contacts: 
+ - PMA Arp  localisation: Infirmerie du PMC
+Proximité espace Arp  contacts: 
+ - PCO PMC  localisation:   contacts: 
+ - PC Crise SAMU  localisation: Hôpitaux universitaires de Strasbourg  contacts: 
+ - SAMU 67  localisation:   contacts: 
+ - Transit Caserne OUEST  localisation: Caserne ouest  contacts: 
+ - PCFixe Préfecture  localisation: Hôtel du Préfet
+Petit Broglie
+67000 Strasbourg  contacts: SIDPC
+
+//================================= Missions ================================
+ - DSM: BARTIER Jean-Claude
+ - Med.Chef PMA: HADEF Hysham
+ - Regulateur CRISE: DELPLANCQ Hervé
+ - Regulateur CRISE: DAURE-SIRE Muriel
+ - Regulateur COURANT: CAHLIK Jean-Marc
+ - Zone Tri: ADOLPHE Max
+ - Zone Evacuation: ACKER Aurélie
+
+//================================= Sauvegarde des moyens engagés ================================
+12	VLM Haguenau	
+13	AR Haguenau	
+134	AMBU *	
+
+//================================= Sauvegarde de l'organigramme ================================
+CHANTIER	DELPLANCQ Hervé	 (Médecin)
+SAMU_CRISE	TEIXERA Nathalie	 (Permanencier(e))
+SAMU_CRISE	HENRY Sylvain	 (Médecin)
+SAMU_COURANT	LAENG Sylvie	 (Permanencier(e))
+
+//========================= Répartition dans les hôpitaux =====================
+U / UA / UR / U3 / DCD 
+CHU de Strasbourg(Hautepierre) 0 / 0 / 1 / 0 / 0 /  total: 1
+CH de Thionville 0 / 0 / 1 / 0 / 0 /  total: 1
+CHU de Strasbourg (Hop. Civil) 0 / 0 / 1 / 0 / 0 /  total: 1
+0 / 0 / 0 / 0 / 0 / 
+Total Général   /  / 3 /  /  / 3 / 
+//==================================== Sauvegarde du bloc-note ==================================
+1	2008-08-11 21:42:45	SDIS67	VSAB Nord en position
+2	2008-08-12 22:54:24	Mader	,,,,,,,,,,,,,,,,,,,,,,
+3	2008-08-27 20:00:42	Bartier	rrrrrrrrrrrrrrrrrrrrr
+
+//======================================== Fin des données =======================================

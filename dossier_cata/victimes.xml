@@ -1,0 +1,1611 @@
+<SAGEC_XML>
+<VICTIME>
+<ID>1</ID>
+<Identifiant>3790001000013</Identifiant>
+<Nom>QUIRIN</Nom>
+<Prenom>GUY</Prenom>
+<Sexe>1</Sexe>
+<Age1>28</Age1>
+<Age2>0</Age2>
+<Gravite>1</Gravite>
+<heure_creation>2011-01-19 15:35:40</heure_creation>
+<heure_maj>2011-10-15 20:17:36</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>619</service_ID>
+<service_nom></service_nom>
+<Lesions>TRAUMA CRANIO-FACIAL
+TRAUMA ABDOMINAL
+SATURATION: 90%</Lesions>
+<traitements>2 VVP
+IOT
+ETO + CELO
+HYPNO + SUFENTA</traitements>
+<constantes>Glasgow 3	
+PA 12/8
+85</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>2</ID>
+<Identifiant>3790001000020</Identifiant>
+<Nom>BREGER</Nom>
+<Prenom>MIREILLE</Prenom>
+<Sexe>1</Sexe>
+<Age1>30</Age1>
+<Age2>1</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 15:37:40</heure_creation>
+<heure_maj>2011-10-17 19:09:05</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>619</service_ID>
+<service_nom></service_nom>
+<Lesions>ENTORSE POIGNET
+[...] Traumatisme crânien</Lesions>
+<traitements>O2: 3 L/MN
+[DKMD001]Intubation oro-trachéale (calibre n°8)</traitements>
+<constantes>Saturation:90%						
+glycémie:1.15 g/l								
+Fc: 100 bpm				
+Fr: 22 cycles/mn				
+GCS: 12				
+EVA: 7				
+PA 140/70 mmHg</constantes>
+<comment>sous dialyse</comment>
+</VICTIME>
+<VICTIME>
+<ID>3</ID>
+<Identifiant>3790001000037</Identifiant>
+<Nom>MEY</Nom>
+<Prenom>JOSEPH</Prenom>
+<Sexe>2</Sexe>
+<Age1>18</Age1>
+<Age2>ADULTE</Age2>
+<Gravite>1</Gravite>
+<heure_creation>2011-01-19 15:37:40</heure_creation>
+<heure_maj>2011-05-22 16:13:16</heure_maj>
+<localisation_ID>20</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>TRAUMA THORACIQUE GRAVE
+PNEUMOTHORAX SUFFOCANT
+DéTRESSE RESPIRATOIRE
+FC: 18 BPM
+GCS: 3
+EVA: 8
+FC: 105 BPM
+SATURATION: 66%
+PA systolique: 17 mmHg
+PA diastolique: 90 mmHg</Lesions>
+<traitements>DRAIN THO
+IOT
+VVP
+O2: 3 L/MN</traitements>
+<constantes>PA 10/6
+fc 120
+SpO2 80%																																																				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>4</ID>
+<Identifiant>3790001000044</Identifiant>
+<Nom>Krommenacker</Nom>
+<Prenom>Sebastien</Prenom>
+<Sexe>1</Sexe>
+<Age1>39</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 15:40:40</heure_creation>
+<heure_maj>2011-05-18 10:07:02</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>TC sans PC</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 12/7
+Fc 77	
+sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>5</ID>
+<Identifiant>3790001000051</Identifiant>
+<Nom>Acker</Nom>
+<Prenom>Marie-Jeanne</Prenom>
+<Sexe>2</Sexe>
+<Age1>28</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 15:40:40</heure_creation>
+<heure_maj>2011-05-18 10:08:03</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>Traumatisme psy</Lesions>
+<traitements>CUMP</traitements>
+<constantes>				Gl 15
+PA 12/8
+Fc 87	
+sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>6</ID>
+<Identifiant>3790001000068</Identifiant>
+<Nom>Perillo</Nom>
+<Prenom>Marie-Louise</Prenom>
+<Sexe>2</Sexe>
+<Age1>30</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 15:40:40</heure_creation>
+<heure_maj>2011-05-18 10:08:50</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>Plaie du front à suturer</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 11/7
+Fc 74	
+sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>7</ID>
+<Identifiant>3790001000075</Identifiant>
+<Nom>Asimus</Nom>
+<Prenom>Roland</Prenom>
+<Sexe>1</Sexe>
+<Age1>53</Age1>
+<Age2>0</Age2>
+<Gravite>2</Gravite>
+<heure_creation>2011-01-19 15:41:40</heure_creation>
+<heure_maj>2011-05-18 09:37:54</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>Fracture fermée jambe droite
+dermabrasions multiples</Lesions>
+<traitements>coquille partiel
+perfalgan</traitements>
+<constantes>Gl15
+fc 90
+PA 12/8
+100%</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>8</ID>
+<Identifiant>3790001000082</Identifiant>
+<Nom>Mochel</Nom>
+<Prenom>Christophe</Prenom>
+<Sexe>1</Sexe>
+<Age1>51</Age1>
+<Age2>0</Age2>
+<Gravite>2</Gravite>
+<heure_creation>2011-01-19 15:41:40</heure_creation>
+<heure_maj>2011-05-18 09:39:32</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>luxation épaule droite
+pas de pb vasculo-nerveux</Lesions>
+<traitements>écharpe
+prodafalgan</traitements>
+<constantes>gl 15
+fc 95
+pa 14/8
+100%</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>9</ID>
+<Identifiant>3790001000099</Identifiant>
+<Nom>Trautmann</Nom>
+<Prenom>Christiane</Prenom>
+<Sexe>2</Sexe>
+<Age1>37</Age1>
+<Age2>1</Age2>
+<Gravite>5</Gravite>
+<heure_creation>2011-01-19 15:44:40</heure_creation>
+<heure_maj>2011-05-18 10:03:45</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>Plaie cranio-cérébrale avec perte de substance</Lesions>
+<traitements>DCD</traitements>
+<constantes>												</constantes>
+<comment>Pris en charge par pompes funèbres après réquisition gendarmerie. Certificat de décès fait par SAMU</comment>
+</VICTIME>
+<VICTIME>
+<ID>10</ID>
+<Identifiant>3790001000105</Identifiant>
+<Nom>Zweig</Nom>
+<Prenom>Marie-Jeanne</Prenom>
+<Sexe>2</Sexe>
+<Age1>36</Age1>
+<Age2>0</Age2>
+<Gravite>2</Gravite>
+<heure_creation>2011-01-19 15:46:40</heure_creation>
+<heure_maj>2011-05-18 11:51:34</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>fracture fermée bras gauche</Lesions>
+<traitements>écharpe
+prodaf</traitements>
+<constantes>gl 15
+fc 88
+pa 13/8
+100%												</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>11</ID>
+<Identifiant>3790001000112</Identifiant>
+<Nom>Ulman</Nom>
+<Prenom>Arthur</Prenom>
+<Sexe>1</Sexe>
+<Age1>52</Age1>
+<Age2>0</Age2>
+<Gravite>1</Gravite>
+<heure_creation>2011-01-19 15:46:40</heure_creation>
+<heure_maj>2011-05-18 09:27:57</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>Fracture Bassin
+Fracture ouverte fémur droit	
+Syndrome ischemique d\'aval</Lesions>
+<traitements>2 VVP + Remplissage
+Kétamine 25 mg
+Morphine 12 mg</traitements>
+<constantes>PA 9/7
+fc 120
+94%			</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>12</ID>
+<Identifiant>3790001000129</Identifiant>
+<Nom>Zaepfel</Nom>
+<Prenom>Alexandra</Prenom>
+<Sexe>2</Sexe>
+<Age1>53</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 15:46:40</heure_creation>
+<heure_maj>2011-05-18 10:10:09</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>contusion thoracique
+dermabrasions multiples</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 12/7
+Fc 77	
+sat 100%								</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>13</ID>
+<Identifiant>3790001000136</Identifiant>
+<Nom>Jaeck</Nom>
+<Prenom>Claude</Prenom>
+<Sexe>2</Sexe>
+<Age1>46</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 15:47:40</heure_creation>
+<heure_maj>2011-05-18 10:11:03</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>TC sans PC
+contusion dorsale</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 15/7
+Fc 97	
+sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>14</ID>
+<Identifiant>3790001000143</Identifiant>
+<Nom>Ganner</Nom>
+<Prenom>Virginie</Prenom>
+<Sexe>2</Sexe>
+<Age1>37</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 15:50:40</heure_creation>
+<heure_maj>2011-05-18 10:12:26</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>contusion abdominale
+pas de contractions</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 14/7
+Fc 67	
+sat 100%				</constantes>
+<comment>grossesse en cours</comment>
+</VICTIME>
+<VICTIME>
+<ID>15</ID>
+<Identifiant>3790001000150</Identifiant>
+<Nom>Rabe</Nom>
+<Prenom>Charles</Prenom>
+<Sexe>1</Sexe>
+<Age1>42</Age1>
+<Age2>0</Age2>
+<Gravite>1</Gravite>
+<heure_creation>2011-01-19 15:51:40</heure_creation>
+<heure_maj>2011-05-18 09:29:55</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>Tétraplégie niveau C4</Lesions>
+<traitements>collier cervical
+coquille
+O2 voie nasale
+Atropine 1 mg
+VVP</traitements>
+<constantes>Fc 50
+PA 9/6
+Sat 90%</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>16</ID>
+<Identifiant>3790001000167</Identifiant>
+<Nom>Marchal</Nom>
+<Prenom>Martine</Prenom>
+<Sexe>2</Sexe>
+<Age1>44</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 15:54:40</heure_creation>
+<heure_maj>2011-05-18 10:13:53</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>contusion tho par ceinture
+plaie main</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 12/7
+Fc 77	
+sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>17</ID>
+<Identifiant>3790001000174</Identifiant>
+<Nom>Krauss</Nom>
+<Prenom>Mireille</Prenom>
+<Sexe>2</Sexe>
+<Age1>39</Age1>
+<Age2>0</Age2>
+<Gravite>2</Gravite>
+<heure_creation>2011-01-19 15:54:40</heure_creation>
+<heure_maj>2011-05-18 09:45:49</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>Contusion thoracique sans détresse respiratoire
+cervicalgies
+trauma genou gauche</Lesions>
+<traitements>collier cervical</traitements>
+<constantes>gl 15
+fc78
+pa 11/8
+100%</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>18</ID>
+<Identifiant>3790001000181</Identifiant>
+<Nom>Issur</Nom>
+<Prenom>Christophe</Prenom>
+<Sexe>1</Sexe>
+<Age1>40</Age1>
+<Age2>0</Age2>
+<Gravite>2</Gravite>
+<heure_creation>2011-01-19 15:57:40</heure_creation>
+<heure_maj>2011-05-18 09:47:37</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>contusions multiples
+plaie de l\'arcade sourcilière
+FOPN</Lesions>
+<traitements>pansement</traitements>
+<constantes>gl 15
+fc 90
+pa 13/7
+100%		</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>19</ID>
+<Identifiant>3790001000198</Identifiant>
+<Nom>Vix</Nom>
+<Prenom>Christine</Prenom>
+<Sexe>2</Sexe>
+<Age1>51</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 15:58:40</heure_creation>
+<heure_maj>2011-05-18 10:15:27</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>contusion thoracique
+douleur costale à la palpation</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 10/7
+Fc h7	
+sat 100%								</constantes>
+<comment>HTA sous BB</comment>
+</VICTIME>
+<VICTIME>
+<ID>20</ID>
+<Identifiant>3790001000204</Identifiant>
+<Nom>Mertz</Nom>
+<Prenom>Cyrille</Prenom>
+<Sexe>1</Sexe>
+<Age1>48</Age1>
+<Age2>0</Age2>
+<Gravite>1</Gravite>
+<heure_creation>2011-01-19 15:58:40</heure_creation>
+<heure_maj>2011-05-18 09:32:33</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>Amputation traumatique bras gauche
+Garrot</Lesions>
+<traitements>VVP
+Morphine 10 mg</traitements>
+<constantes>Gl 14
+PA 11/8
+Fc 100								</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>21</ID>
+<Identifiant>3790001000211</Identifiant>
+<Nom>Osswald</Nom>
+<Prenom>Estelle</Prenom>
+<Sexe>2</Sexe>
+<Age1>49</Age1>
+<Age2>0</Age2>
+<Gravite>2</Gravite>
+<heure_creation>2011-01-19 15:59:40</heure_creation>
+<heure_maj>2011-05-18 09:49:02</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>fracture fermée du poignet gauche
+avulsion dentaire</Lesions>
+<traitements></traitements>
+<constantes>gl 15
+fc 95
+pa 14/8
+100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>22</ID>
+<Identifiant>3790001000228</Identifiant>
+<Nom>Poree</Nom>
+<Prenom>Auguste</Prenom>
+<Sexe>1</Sexe>
+<Age1>42</Age1>
+<Age2>0</Age2>
+<Gravite>2</Gravite>
+<heure_creation>2011-01-19 16:01:40</heure_creation>
+<heure_maj>2011-05-18 09:51:19</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>TC avec PC brève
+céphalées
+vomissements</Lesions>
+<traitements></traitements>
+<constantes>gl 15
+fc 65
+pa 12/8
+100%			</constantes>
+<comment>beta-bloquants pour HTA</comment>
+</VICTIME>
+<VICTIME>
+<ID>23</ID>
+<Identifiant>3790001000235</Identifiant>
+<Nom>Kennel</Nom>
+<Prenom>Michel</Prenom>
+<Sexe>1</Sexe>
+<Age1>33</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:01:40</heure_creation>
+<heure_maj>2011-05-18 10:16:37</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>TC sans PC
+entorse poignet gauche</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 13/7
+Fc 76	
+sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>24</ID>
+<Identifiant>3790001000242</Identifiant>
+<Nom>Knobloch</Nom>
+<Prenom>Zorah</Prenom>
+<Sexe>2</Sexe>
+<Age1>38</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:01:40</heure_creation>
+<heure_maj>2011-05-18 10:17:36</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>plaie non hémorragique avant-bras gauche</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 15/7
+Fc 87	
+sat 100%					</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>25</ID>
+<Identifiant>3790001000259</Identifiant>
+<Nom>Lehman</Nom>
+<Prenom>Joseph</Prenom>
+<Sexe>1</Sexe>
+<Age1>38</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:01:40</heure_creation>
+<heure_maj>2011-05-18 10:18:47</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>contusion coude droit</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 13/8
+Fc 72	
+sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>26</ID>
+<Identifiant>3790001000266</Identifiant>
+<Nom>Pfeiffer</Nom>
+<Prenom>Claude</Prenom>
+<Sexe>1</Sexe>
+<Age1>33</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:03:40</heure_creation>
+<heure_maj>2011-05-18 10:19:36</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>contusion hanche gauche</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 14/7
+Fc 89	
+sat 100%								</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>27</ID>
+<Identifiant>3790001000273</Identifiant>
+<Nom>Lechene</Nom>
+<Prenom>Zorah</Prenom>
+<Sexe>2</Sexe>
+<Age1>40</Age1>
+<Age2>0</Age2>
+<Gravite>2</Gravite>
+<heure_creation>2011-01-19 16:03:40</heure_creation>
+<heure_maj>2011-05-18 10:20:18</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>fracture fermée de la jambe</Lesions>
+<traitements>morphine</traitements>
+<constantes>12/8																				</constantes>
+<comment>no comment</comment>
+</VICTIME>
+<VICTIME>
+<ID>28</ID>
+<Identifiant>3790001000280</Identifiant>
+<Nom>Littner</Nom>
+<Prenom>Anne</Prenom>
+<Sexe>2</Sexe>
+<Age1>32</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:06:40</heure_creation>
+<heure_maj>2011-05-18 10:21:43</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>contusion thoracique</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 10/7
+Fc 66	
+sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>29</ID>
+<Identifiant>3790001000297</Identifiant>
+<Nom>Host</Nom>
+<Prenom>Jean-Paul</Prenom>
+<Sexe>1</Sexe>
+<Age1>32</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:09:40</heure_creation>
+<heure_maj>2011-05-18 10:22:25</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>plaie du visage</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 13/7
+Fc 79	
+sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>30</ID>
+<Identifiant>3790001000303</Identifiant>
+<Nom>Kleinpeter</Nom>
+<Prenom>Alexandra</Prenom>
+<Sexe>2</Sexe>
+<Age1>48</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:10:40</heure_creation>
+<heure_maj>2011-05-18 10:23:45</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>contusion abdo</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 14/8
+Fc 67	
+sat 100%								</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>31</ID>
+<Identifiant>3790001000310</Identifiant>
+<Nom>Naxara</Nom>
+<Prenom>Isabelle</Prenom>
+<Sexe>2</Sexe>
+<Age1>50</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:10:40</heure_creation>
+<heure_maj>2011-05-18 10:25:08</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>plaie frontale</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 12/7
+Fc 77	
+sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>32</ID>
+<Identifiant>3790001000327</Identifiant>
+<Nom>Keller</Nom>
+<Prenom>Jean-Paul</Prenom>
+<Sexe>1</Sexe>
+<Age1>33</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:10:40</heure_creation>
+<heure_maj>2011-05-18 10:29:06</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>contusion abdominale</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 12/7
+Fc 77	
+sat 100%								</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>33</ID>
+<Identifiant>3790001000334</Identifiant>
+<Nom>Moritz</Nom>
+<Prenom>Olivier</Prenom>
+<Sexe>1</Sexe>
+<Age1>36</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:13:40</heure_creation>
+<heure_maj>2011-05-18 10:30:19</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>plaie cuir chevelu</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 11/6
+Fc 77	
+sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>34</ID>
+<Identifiant>3790001000341</Identifiant>
+<Nom>Lang</Nom>
+<Prenom>Herve</Prenom>
+<Sexe>1</Sexe>
+<Age1>31</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:15:40</heure_creation>
+<heure_maj>2011-05-18 10:31:43</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>Scizophrene sous tercian
+très angoissé</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 14/90
+Fc 97	
+sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>35</ID>
+<Identifiant>3790001000358</Identifiant>
+<Nom>Bauzon</Nom>
+<Prenom>Celine</Prenom>
+<Sexe>2</Sexe>
+<Age1>40</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:18:40</heure_creation>
+<heure_maj>2011-05-18 10:32:39</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>Contusion bras gauche
+impotence partielle</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 12/6
+Fc 71	
+sat 100%								</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>36</ID>
+<Identifiant>3790001000365</Identifiant>
+<Nom>Wagner</Nom>
+<Prenom>Claude</Prenom>
+<Sexe>2</Sexe>
+<Age1>50</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:19:40</heure_creation>
+<heure_maj>2011-05-18 10:33:58</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>entorse poignet droit</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 13/7
+Fc 57	
+sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>37</ID>
+<Identifiant>3790001000372</Identifiant>
+<Nom>Niederhoffer</Nom>
+<Prenom>Richard</Prenom>
+<Sexe>1</Sexe>
+<Age1>27</Age1>
+<Age2>0</Age2>
+<Gravite>1</Gravite>
+<heure_creation>2011-01-19 16:20:40</heure_creation>
+<heure_maj>2011-05-18 09:34:43</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>Contusion abdo
+suspicion hemoperitoine
+choc hypovolémique</Lesions>
+<traitements>2 VVP
+Remplissage 4L
+IOT</traitements>
+<constantes>AG
+PA 10/6
+fc 110				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>38</ID>
+<Identifiant>3790001000389</Identifiant>
+<Nom>Grossmann</Nom>
+<Prenom>Auguste</Prenom>
+<Sexe>1</Sexe>
+<Age1>40</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:20:40</heure_creation>
+<heure_maj>2011-05-18 10:34:59</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>contusion thoracique</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 14/7
+Fc83	
+sat 100%						</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>39</ID>
+<Identifiant>3790001000396</Identifiant>
+<Nom>Edner</Nom>
+<Prenom>Pierre</Prenom>
+<Sexe>1</Sexe>
+<Age1>25</Age1>
+<Age2>0</Age2>
+<Gravite>2</Gravite>
+<heure_creation>2011-01-19 16:22:40</heure_creation>
+<heure_maj>2011-05-18 09:53:31</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>fracture fermée cheville gauche</Lesions>
+<traitements>VVP
+Prodaf</traitements>
+<constantes>gl 15
+fc 75
+pa 13/8
+100%								</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>40</ID>
+<Identifiant>3790001000402</Identifiant>
+<Nom>Schott</Nom>
+<Prenom>Sebastien</Prenom>
+<Sexe>1</Sexe>
+<Age1>43</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:22:40</heure_creation>
+<heure_maj>2011-05-18 10:36:09</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>FOPN</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 14/8
+Fc97	
+sat 100%						</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>41</ID>
+<Identifiant>3790001000419</Identifiant>
+<Nom>Offner</Nom>
+<Prenom>Céline</Prenom>
+<Sexe>2</Sexe>
+<Age1>31</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:23:40</heure_creation>
+<heure_maj>2011-05-18 10:39:46</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>plaie de la jambe droite face postérieure</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 11/6
+Fc 67	
+sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>42</ID>
+<Identifiant>3790001000426</Identifiant>
+<Nom>Ries</Nom>
+<Prenom>Pierre</Prenom>
+<Sexe>1</Sexe>
+<Age1>40</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:24:40</heure_creation>
+<heure_maj>2011-05-18 10:54:03</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>plaie de la face</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 13/8
+FC 86
+Sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>43</ID>
+<Identifiant>3790001000433</Identifiant>
+<Nom>Moll</Nom>
+<Prenom>Christian</Prenom>
+<Sexe>1</Sexe>
+<Age1>45</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:27:40</heure_creation>
+<heure_maj>2011-05-18 10:52:25</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>TC + PC brève
+exam sp</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 13/6
+FC 76
+Sat 100%</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>44</ID>
+<Identifiant>3790001000440</Identifiant>
+<Nom>Muller</Nom>
+<Prenom>Olivier</Prenom>
+<Sexe>1</Sexe>
+<Age1>46</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:27:40</heure_creation>
+<heure_maj>2011-05-18 10:54:41</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>plaie main</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 13/6
+FC 76
+Sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>45</ID>
+<Identifiant>3790001000457</Identifiant>
+<Nom>Fabacher</Nom>
+<Prenom>Richard</Prenom>
+<Sexe>1</Sexe>
+<Age1>28</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:29:40</heure_creation>
+<heure_maj>2011-05-18 10:55:18</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>contusion trajet ceinture</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 12/6
+FC 79
+Sat 100%				</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>46</ID>
+<Identifiant>3790001000464</Identifiant>
+<Nom>Quoix</Nom>
+<Prenom>Germaine</Prenom>
+<Sexe>2</Sexe>
+<Age1>56</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:29:40</heure_creation>
+<heure_maj>2011-05-18 10:56:01</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>TC sans PC</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 13/6
+FC 76
+Sat 100%			</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>47</ID>
+<Identifiant>3790001000471</Identifiant>
+<Nom>Deiller</Nom>
+<Prenom>Serge</Prenom>
+<Sexe>1</Sexe>
+<Age1>36</Age1>
+<Age2>0</Age2>
+<Gravite>2</Gravite>
+<heure_creation>2011-01-19 16:30:40</heure_creation>
+<heure_maj>2011-05-18 09:54:54</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>plaie importante du cuir chevelu
+contusion thoracique par ceinture</Lesions>
+<traitements>pansement compressif</traitements>
+<constantes>gl 15
+fc 85
+pa 11/8
+100%</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>48</ID>
+<Identifiant>3790001000488</Identifiant>
+<Nom>Quelqueguer</Nom>
+<Prenom>André</Prenom>
+<Sexe>1</Sexe>
+<Age1>54</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:31:40</heure_creation>
+<heure_maj>2011-05-18 10:57:05</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>contusion genou et cheville gauche</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 13/6
+FC 76
+Sat 100%								</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>49</ID>
+<Identifiant>3790001000495</Identifiant>
+<Nom>Carre</Nom>
+<Prenom>Louis</Prenom>
+<Sexe>1</Sexe>
+<Age1>47</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:34:40</heure_creation>
+<heure_maj>2011-05-18 10:57:49</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>plaie du nez</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 13/6
+FC 76
+Sat 100%			</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>50</ID>
+<Identifiant>3790001000501</Identifiant>
+<Nom>Sturm</Nom>
+<Prenom>Christiane</Prenom>
+<Sexe>2</Sexe>
+<Age1>34</Age1>
+<Age2>0</Age2>
+<Gravite>6</Gravite>
+<heure_creation>2011-01-19 16:37:40</heure_creation>
+<heure_maj>2011-05-18 10:58:48</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions>entorse du pouce</Lesions>
+<traitements></traitements>
+<constantes>Gl 15
+PA 13/9
+FC 96
+Sat 100%			</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>68</ID>
+<Identifiant>456</Identifiant>
+<Nom></Nom>
+<Prenom></Prenom>
+<Sexe>0</Sexe>
+<Age1>0</Age1>
+<Age2>0</Age2>
+<Gravite>1</Gravite>
+<heure_creation>2012-06-23 13:49:23</heure_creation>
+<heure_maj>2012-06-23 13:49:33</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions></Lesions>
+<traitements></traitements>
+<constantes></constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>65</ID>
+<Identifiant>123</Identifiant>
+<Nom>Bidule</Nom>
+<Prenom></Prenom>
+<Sexe>0</Sexe>
+<Age1>25</Age1>
+<Age2>0</Age2>
+<Gravite>2</Gravite>
+<heure_creation>2011-05-21 16:42:59</heure_creation>
+<heure_maj>2012-06-24 19:27:59</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>44</service_ID>
+<service_nom></service_nom>
+<Lesions>[...] Traumatisme crânien avec perte de connaissance initiale</Lesions>
+<traitements>O2: 5 L/mn</traitements>
+<constantes>Saturation: 98%				
+Fr: 22 cycles/mn				
+PA systolique: 140 mmHg
+PA diastolique: 80 mmHg</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>66</ID>
+<Identifiant>00000000</Identifiant>
+<Nom></Nom>
+<Prenom></Prenom>
+<Sexe></Sexe>
+<Age1>0</Age1>
+<Age2></Age2>
+<Gravite>0</Gravite>
+<heure_creation>2011-07-02 11:46:28</heure_creation>
+<heure_maj>2011-07-02 11:46:28</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions></Lesions>
+<traitements></traitements>
+<constantes></constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>70</ID>
+<Identifiant>999</Identifiant>
+<Nom>Mertz</Nom>
+<Prenom>Alfred</Prenom>
+<Sexe>0</Sexe>
+<Age1>0</Age1>
+<Age2>0</Age2>
+<Gravite>1</Gravite>
+<heure_creation>2012-06-23 20:27:30</heure_creation>
+<heure_maj>2012-06-25 17:53:42</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>5</service_ID>
+<service_nom></service_nom>
+<Lesions>[...] Traumatisme crânien</Lesions>
+<traitements>[DKMD001]Intubation oro-trachéale (calibre n°8)</traitements>
+<constantes>GCS: 6</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>67</ID>
+<Identifiant>231</Identifiant>
+<Nom></Nom>
+<Prenom></Prenom>
+<Sexe>0</Sexe>
+<Age1>0</Age1>
+<Age2>0</Age2>
+<Gravite>0</Gravite>
+<heure_creation>2012-06-23 12:25:43</heure_creation>
+<heure_maj>2012-06-23 12:25:56</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions></Lesions>
+<traitements></traitements>
+<constantes></constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>69</ID>
+<Identifiant>789</Identifiant>
+<Nom></Nom>
+<Prenom></Prenom>
+<Sexe>1</Sexe>
+<Age1>0</Age1>
+<Age2>0</Age2>
+<Gravite>2</Gravite>
+<heure_creation>2012-06-23 19:05:40</heure_creation>
+<heure_maj>2012-06-23 19:06:26</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>85</service_ID>
+<service_nom></service_nom>
+<Lesions></Lesions>
+<traitements></traitements>
+<constantes></constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>71</ID>
+<Identifiant>991</Identifiant>
+<Nom>Macin</Nom>
+<Prenom>Jules</Prenom>
+<Sexe>0</Sexe>
+<Age1>0</Age1>
+<Age2>0</Age2>
+<Gravite>0</Gravite>
+<heure_creation>2012-06-23 20:29:48</heure_creation>
+<heure_maj>2012-06-24 10:25:07</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions></Lesions>
+<traitements></traitements>
+<constantes></constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>72</ID>
+<Identifiant>123</Identifiant>
+<Nom>Truc</Nom>
+<Prenom></Prenom>
+<Sexe>0</Sexe>
+<Age1>0</Age1>
+<Age2>0</Age2>
+<Gravite>0</Gravite>
+<heure_creation>2012-06-23 20:42:15</heure_creation>
+<heure_maj>2012-06-24 09:57:24</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions></Lesions>
+<traitements></traitements>
+<constantes>Saturation: 98%</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>73</ID>
+<Identifiant>%12</Identifiant>
+<Nom></Nom>
+<Prenom></Prenom>
+<Sexe></Sexe>
+<Age1>0</Age1>
+<Age2></Age2>
+<Gravite>0</Gravite>
+<heure_creation>2012-06-24 09:42:47</heure_creation>
+<heure_maj>2012-06-24 09:42:47</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions></Lesions>
+<traitements></traitements>
+<constantes></constantes>
+<comment>suppression</comment>
+</VICTIME>
+<VICTIME>
+<ID>74</ID>
+<Identifiant></Identifiant>
+<Nom></Nom>
+<Prenom></Prenom>
+<Sexe></Sexe>
+<Age1>0</Age1>
+<Age2></Age2>
+<Gravite>0</Gravite>
+<heure_creation>2012-06-24 09:43:37</heure_creation>
+<heure_maj>2012-06-24 09:43:37</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions></Lesions>
+<traitements></traitements>
+<constantes></constantes>
+<comment>suppression</comment>
+</VICTIME>
+<VICTIME>
+<ID>75</ID>
+<Identifiant>992</Identifiant>
+<Nom>Orsini</Nom>
+<Prenom>Bernard</Prenom>
+<Sexe>1</Sexe>
+<Age1>0</Age1>
+<Age2>0</Age2>
+<Gravite>9</Gravite>
+<heure_creation>2012-06-24 17:20:30</heure_creation>
+<heure_maj>2012-06-24 19:30:04</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions></Lesions>
+<traitements></traitements>
+<constantes>140/80				
+PA: 14/8 mmHg</constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>76</ID>
+<Identifiant>993</Identifiant>
+<Nom>Test</Nom>
+<Prenom></Prenom>
+<Sexe>0</Sexe>
+<Age1>0</Age1>
+<Age2>0</Age2>
+<Gravite>0</Gravite>
+<heure_creation>2012-06-24 17:28:06</heure_creation>
+<heure_maj>2012-06-24 17:28:20</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions></Lesions>
+<traitements></traitements>
+<constantes></constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>77</ID>
+<Identifiant>994</Identifiant>
+<Nom>AZERTY</Nom>
+<Prenom></Prenom>
+<Sexe>0</Sexe>
+<Age1>0</Age1>
+<Age2>0</Age2>
+<Gravite>0</Gravite>
+<heure_creation>2012-06-24 17:29:41</heure_creation>
+<heure_maj>2012-06-24 17:29:54</heure_maj>
+<localisation_ID>0</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions></Lesions>
+<traitements></traitements>
+<constantes></constantes>
+<comment></comment>
+</VICTIME>
+<VICTIME>
+<ID>78</ID>
+<Identifiant>777</Identifiant>
+<Nom></Nom>
+<Prenom></Prenom>
+<Sexe>2</Sexe>
+<Age1>0</Age1>
+<Age2>0</Age2>
+<Gravite>1</Gravite>
+<heure_creation>2012-06-25 17:54:38</heure_creation>
+<heure_maj>2012-06-25 17:55:09</heure_maj>
+<localisation_ID>16</localisation_ID>
+<hopital_ID></hopital_ID>
+<hopital_finess></hopital_finess>
+<hopital_nom></hopital_nom>
+<service_ID>0</service_ID>
+<service_nom></service_nom>
+<Lesions></Lesions>
+<traitements></traitements>
+<constantes></constantes>
+<comment></comment>
+</VICTIME>
+</SAGEC_XML>

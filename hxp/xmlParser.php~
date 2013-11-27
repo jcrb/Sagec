@@ -1,0 +1,158 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+
+// This file is part of SAGEC67 Copyright (C) 2003 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//--------------------------------------------------------------------------------------------------------
+/** xmlParser.php
+* 	class de base pour un parser XML
+*	date de création: 	10/05/2009		 
+*	@author:			jcb		  
+*	@version:			1.1	- $Id: sauvegarde.php 10 2006-08-17 22:41:56Z jcb $	 
+*	maj le:				14/08/2006	
+* 	@TODO: 	
+*	@package			sagec
+*/
+//--------------------------------------------------------------------------------------------------------
+include ('../utilitaires/stack.php');
+
+class xmlparser{
+	/**
+	*	VARIABLES
+	*/
+	
+	var $deep;
+	var $stack;
+	var $parser;
+  	var $balise_courante;
+	var $fp;
+
+	/**
+	*	---------------------------------------------------------------------
+	* Constructeur
+	* @param $file fichier à parser
+	*	---------------------------------------------------------------------
+	*/
+	function xmlparser($file){
+		$this->stack = new Stack();
+		$this->deep = 0;
+		// création du parser
+  		$this->parser = xml_parser_create("ISO-8859-1");
+		// les balises ne sont pas transformées en majuscules
+  		xml_parser_set_option( $this->parser, XML_OPTION_CASE_FOLDING, 0 );
+  		$this->set_handlers();
+  		if (!($this->fp = fopen($file, "r"))) {die("could not open XML input");}
+  		//this->parse();
+	}
+	/**
+	*	---------------------------------------------------------------------
+	*	parse
+	*	---------------------------------------------------------------------
+	*/
+	function parse(){
+		print("Parsing");
+		while ($data = fread($this->fp, 4096)) 
+  		{
+			//print($data.'<br>');
+			//$data = utf8_encode($data);
+  			$this->lit_une_ligne($data,$this);
+  		}
+		xml_parser_free($this->parser);
+		fclose($this->fp);
+	}
+	/** 
+	*	---------------------------------------------------------------------
+	*	Initialisation des 3 méthodes de base pour un parseur de type SAX
+	*	@param $parser un objet parseur
+	*	---------------------------------------------------------------------
+	*/
+	function set_handlers(){
+  		xml_set_element_handler($this->parser,$this->balise_ouvrante,$this->balise_fermante);
+		xml_set_default_handler($this->parser,$this->defaut);
+		xml_set_character_data_handler($this->parser,$this->texte);
+	}
+	/** 
+	*	---------------------------------------------------------------------
+	*	Lit une ligne du fichier XML.
+	*	@param $parser le parseur.
+	*	@param $data les données lues.
+	*	@param $fp le fichier source.
+	*	---------------------------------------------------------------------
+	*/
+  	function lit_une_ligne($data){
+  		print($data);
+  		if (!xml_parse($this->parser, $data, feof($this->fp)))
+    	{
+        	die(sprintf("erreur XML: %s à la ligne %d",
+                  xml_error_string(xml_get_error_code($this->parser)),
+                  xml_get_current_line_number($this->parser)));
+    	}
+ 	}
+ 	/** ---------------------------------------------------------------------
+	*	Analyse du texte présent entre les 2 balises
+	*	@param $parser un objet parseur
+	*	@param $data texte
+	*	----------------------------------------------------------------------
+	*/
+  	function texte($parser,$data)
+  	{
+  		print($data);
+  	}
+	/** 
+	*	---------------------------------------------------------------------
+	*	méthode par défaut
+	*	------------------------------------------------------------------------*/
+	function defaut(){
+  		return true;
+	}
+	/** 
+  	*	---------------------------------------------------------------------
+	*	Analyse d'une balise ouvrante
+	*	@param $parser un objet parseur
+	*	@param $name nom de la balise
+	*	@param $attr attribut de la balise
+	*	------------------------------------------------------------------------
+	*/
+  	function balise_ouvrante($parser,$name,$attr){
+		$this->deep++;
+		$this->balise_courante = $name;
+		$this->stack->push($this->balise_courante);
+		$this->stack->write_stack();
+		print("deep= ".$his->deep.'<br>');
+  	}
+	/** 
+	*	---------------------------------------------------------------------
+	*	Analyse d'une balise fermante
+	*	@param $parser un objet parseur
+	*	@param $name nom de la balise
+	*	---------------------------------------------------------------------
+	*/
+  	function balise_fermante($parser,$name){
+		$this->deep--;
+		$element = $this->stack->pop();// dépile le dernier élémment
+		$this->balise_courante = $this->stack->top();
+		$this->stack->write_stack();
+		$this->executeBaliseFermante();
+  	}
+  	/**
+  	*	-----------------------------------------------------------------------
+  	*	execute qqchose à la fermeture d'une balise
+  	*	-----------------------------------------------------------------------
+  	*/
+  	function executeBaliseFermante(){
+  		print($this->deep.'<br>');
+		//if( $name == "Hospital")
+		//	enregistre_hopital();// nouvel hop, il faut enregistrer le précédant
+  	}
+}
+?>

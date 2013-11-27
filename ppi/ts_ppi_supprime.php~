@@ -1,0 +1,8 @@
+<?php
+/**
+* ts_ppi_supprime.php
+* supprime l'association entre un PPi et une structure temporaire
+*/
+$back = $_REQUEST['back']
+header("Location:".$back);
+?>

@@ -1,0 +1,51 @@
+/* map.css */
+
+/**
+* le code qui suit est indispensable pour microsoft
+* car incompatibilité IE6 et position: absolute
+*	@version $Id$
+*/
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#map {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#toolbar{
+	position: absolute;
+	top: 25px;
+	right: 7px;
+	width: 188px;
+	padding: 5px;
+	background: white;
+	border: 1px solid black;
+}
+
+#mouseTrack{
+	position: absolute;
+	bottom: 25px;
+	right: 7px;
+	width: 188px;
+	padding: 5px;
+	background: white;
+	border: 1px solid black;
+}
+
+#statusBar{
+	position: absolute;
+	bottom: 25px;
+	left: 7px;
+	width: 188px;
+	padding: 5px;
+	background: white;
+	border: 1px solid black;
+}
+

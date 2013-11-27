@@ -1,0 +1,116 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+//
+// This file is part of SAGEC67 Copyright (C) 2003 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+//----------------------------------------- SAGEC --------------------------------------------------------
+//													//
+//	programme: 		/gis/ville/ville_enregistre.php						//
+//	date de création: 	18/08/2003								//
+//	auteur:			jcb									//
+//	description:		enregistre les caractéristiques d'une ville dont l'identifiant est 	//
+//				transmis par la variable $_GET[id_ville]
+//	version:		1.0									//
+//	maj le:			10/08/2004								//
+//													//
+//---------------------------------------------------------------------------------------------------------
+//
+session_start();
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+//
+//
+require("./../../pma_connect.php");
+require("./../../pma_connexion.php");
+require("./../../pma_requete.php");
+//
+// teste s'il existe une ville ayant le même nom
+function ville_existe($nom,$connexion)
+{
+	if($_GET['id_ville'] == 0)// uniquement si demande de création
+	{
+		$requete="SELECT ville_nom FROM ville WHERE ville_ID = '$_GET[id_ville]'";
+		$resultat = ExecRequete($requete,$connexion);
+		$donnees = mysql_fetch_array($resultat);
+		if($donnees)return true;
+		else return false;
+	}
+}
+//====================================== Main ========================================
+//
+$connexion = Connexion(NOM,PASSE,BASE,SERVEUR);
+if($_GET["bouton"]=="Enregistrer")
+{
+	if($_GET["nom"] != "" || !ville_existe($_GET['nom'],$connexion)) // ne pas enregistrer si pas de nom de ville
+	{
+		if($_GET["id_ville"]==0)	// create
+		{
+			$requete="INSERT INTO ville (ville_ID,ville_nom,ville_insee,ville_zip,ville_lambertX,ville_lambertY,departement_ID,region_ID,zone_ID,pays_ID,ville_longitude,ville_latitude,
+			territoire_sante,secteur_apa_ID,secteur_smur_ID,secteur_Adps_ID,zone_proximite) 
+			VALUES ('',
+				'$_GET[nom]',
+				'$_GET[insee]',
+				'$_GET[zip]',
+				'$_GET[X]',
+				'$_GET[Y]',
+				'$_GET[departement]',
+				'$_GET[id_region]',
+				'$_GET[id_zone]',
+				'$_GET[id_pays]',
+				'$_GET[long]',
+				'$_GET[lat]',
+				'$_GET[id_territoire]',
+				'$_GET[secteur_apa_ID]',
+				'$_GET[smur_id]',
+				'$_GET[secteur_pds_ID]',
+				'$_GET[id_zone_p]'
+			)";
+		}
+		else				// update
+		{
+			$requete="UPDATE ville SET
+				ville_nom = '$_GET[nom]',
+				ville_insee = '$_GET[insee]',
+				ville_zip = '$_GET[zip]',
+				ville_lambertX = '$_GET[X]',
+				ville_lambertY = '$_GET[Y]',
+				departement_ID = '$_GET[departement]',
+				region_ID = '$_GET[id_region]',
+				zone_ID = '$_GET[id_zone]',
+				pays_ID = '$_GET[id_pays]',
+				ville_longitude = '$_GET[long]',
+				ville_latitude = '$_GET[lat]',
+				territoire_sante = '$_GET[id_territoire]',
+				secteur_apa_ID = '$_GET[secteur_apa_ID]',
+				secteur_smur_ID = '$_GET[smur_id]',
+				secteur_Adps_ID = '$_GET[secteur_pds_ID]',
+				zone_proximite = '$_GET[id_zone_p]'
+				WHERE ville_ID = '$_GET[id_ville]'";
+		}
+		$resultat = ExecRequete($requete,$connexion);
+		if($_GET["id_ville"]==0)$_GET["id_ville"] = mysql_insert_id();
+	}
+}
+else if($_GET["bouton"]=="Supprimer ")	// attention, conserver l'espace après supprimer
+{
+	$requete = "DELETE FROM ville where ville_ID = '$_GET[id_ville]'";
+	$resultat = ExecRequete($requete,$connexion);
+	$_GET["id_ville"] = 0;
+}
+elseif($_GET["bouton"]=="Nouvelle ")
+{
+	$_GET["id_ville"] = 0;
+}
+//print($requete);
+header("Location:$_GET[back]?id_ville=$_GET[id_ville]");
+?>

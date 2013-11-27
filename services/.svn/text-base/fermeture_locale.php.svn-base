@@ -1,0 +1,144 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+//
+// This file is part of SAGEC67 Copyright (C) 2003 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//----------------------------------------- SAGEC --------------------------------------------------------
+/**
+*	programme: 			fermeture_locale.php
+*	@date de création: 	23/03/2005
+*	@author:			jcb
+*	description:		affiche la liste des services d'une région et le nombre de lits fermés
+*						à une date donnée (du jour par défaut) et par type de services
+*	@version:			1.1 - $Id$
+*	maj le:				08/08/2006
+*	@package			Sagec
+*/
+//--------------------------------------------------------------------------------------------------------
+session_start();
+if(!($_SESSION['auto_hopital']||$_SESSION['auto_service']||$_SESSION['auto_organisme']))header("Location:../logout.php");
+$langue = $_SESSION['langue'];
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+require("../pma_connect.php");
+require("../pma_connexion.php");
+require '../utilitaires/globals_string_lang.php';
+require "../utilitairesHTML.php";
+require("../pma_requete.php");
+require("../date.php");
+$connexion = Connexion(NOM,PASSE,BASE,SERVEUR);
+
+print("<html>");
+print("<head>");
+print("<title> services à modifier </title>");
+print("<LINK REL=stylesheet HREF=\"../pma.css\" TYPE =\"text/css\">");
+print("<LINK REL = \"stylesheet\" TYPE = \"text/css\" HREF = \"service2.css\">");
+print("</head>");
+
+print("<Form name=\"fermeture\">");
+//print("organisme: ".$_SESSION[organisation]."<br>");
+//print("hôpital: ".$_SESSION[hopital]."<br>");
+// Liste des services de cet hôpital
+
+//WHERE org_ID='$_SESSION[organisation]'
+$requete = "SELECT service.service_ID, service_nom, lits_sp
+			FROM service,lits
+			WHERE service.Hop_ID = '$_SESSION[Hop_ID]'
+			AND lits.service_ID = service.service_ID
+			";
+$resultat = ExecRequete($requete,$connexion);
+print("<TABLE WIDTH=\"100%\" CLASS=\"Style22\">");
+print("<tr>");
+	print("<th>voir</th>");
+	print("<th>service</th>");
+	print("<th>début</th>");
+	print("<th>fin</th>");
+	print("<th>nombre de lits fermés</th>");
+	print("<th>mise à jour</th>");
+print("</tr>");
+
+while($rub=mysql_fetch_array($resultat))
+{
+	print("<tr>");
+	print("<th><A href=\"lits_fermes_voir.php?_service=$rub[service_ID]&nom=$rub[service_nom]\">voir</A></th>");
+	print("<td>".$rub['service_nom']."</td>");
+	print("</tr>");
+	$requete = "SELECT * FROM lits_fermes WHERE service_ID = '$rub[service_ID]' ORDER BY debut";
+	$resultat2 = ExecRequete($requete,$connexion);
+	while($rub2=mysql_fetch_array($resultat2))
+	{
+	print("<tr>");
+	print("<th>&nbsp;</th>");
+	print("<td>&nbsp;</td>");
+	print("<td>".uDate2French($rub2['debut'])."</td>");
+	print("<td>".uDate2French($rub2['fin'])."</td>");
+	// % de lits fermés arrondis à l'unité supérieure
+	$pourcentage=0;
+	if($rub['lits_sp']>0)
+		$pourcentage = intval(100*$rub2['nb_lits_fermes']/$rub['lits_sp']+0.5);
+	$d = date("z",$rub2['debut']);// jour de l'année de 0 à 365
+	$f = date("z",$rub2['fin']);// jour de l'année de 0 à 365
+	print("<td>".$rub2['nb_lits_fermes']." (".$pourcentage."%)"."</td>");
+	print("<td>".uDate2French($rub2['date_maj'])."</td>");
+	print("</tr>");
+	}
+}
+print("</TABLE>");
+
+// Graphes
+// Liste des services de cet hôpital
+// org_ID='$_SESSION[organisation]'
+$requete = "SELECT service.service_ID, service_nom, lits_sp
+			FROM service,lits
+			WHERE service.Hop_ID = '$_SESSION[Hop_ID]'
+			AND lits.service_ID = service.service_ID
+			";
+$resultat = ExecRequete($requete,$connexion);
+$requete = "SELECT * FROM lits_fermes WHERE service_ID = '$rub[service_ID]' ORDER BY debut";
+
+while($rub=mysql_fetch_array($resultat))
+{
+	//for($i=0;$i<count($ferme);$i++)
+	//	$ferme[$i]=0;
+	//reset($ferme);
+	$ferme=array();
+
+	$requete = "SELECT * FROM lits_fermes WHERE service_ID = '$rub[service_ID]' ORDER BY debut";
+	$resultat2 = ExecRequete($requete,$connexion);
+	while($rub2=mysql_fetch_array($resultat2))
+	{
+	// % de lits fermés arrondis à l'unité supérieure
+	$pourcentage=0;
+	if($rub['lits_sp']>0)
+		$pourcentage = intval(100*$rub2['nb_lits_fermes']/$rub['lits_sp']+0.5);
+	// les données sont enregistrées par paquet de 3 dans le tableau ferme: date début, date fin et % de lits fermés
+	$ferme[] = date("z",$rub2['debut']);// jour de l'année de 0 à 365
+	$ferme[] = date("z",$rub2['fin']);// jour de l'année de 0 à 365
+	$ferme[]= $pourcentage;
+	$dessin = true;
+	}
+	if($dessin)
+	{
+		$dessin = false;
+		$fermes=implode("|", $ferme);
+		$action = "<IMG SRC = \"graphe_lits.php?ferme=$fermes&essai=$rub[service_nom]\">";
+		print($action);
+		//print($fermes."<br>");
+		//require("graphe_lits.php");
+	}
+}
+//$action = "<IMG SRC = \"graphe_lits.php?ferme=$ferme&essai=$rub[service_nom]\">";
+//		print($action);
+print("</Form>");
+print("</html>");
+?>

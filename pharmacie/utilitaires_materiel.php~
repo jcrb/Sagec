@@ -1,0 +1,38 @@
+<?
+/**
+*	utilitaires_materiel.php
+*/
+
+//=======================================================================================
+//	select_specialites()		Crée une liste déroulante avec les unités
+//					$connexion variable de connexion
+//					$item_select	unite_ID de l'unité sélectionnée
+//					Au retour $ID_presentation contient launite_ID de l'unité sélectionnée
+//=======================================================================================
+/**
+*Crée et affiche une liste déroulante avec une liste déroulante des presentation de médicaments.
+*@package utilitaires_MED.php.
+*@return int $ID_presentation contient l'presentation_ID de la presentation sélectionnée.
+*@param string variable de connexion.
+*@param int ID de la DCI courante.
+*@param string action à entreprendre si la sélection change (facultatif).
+*@version 1.0
+*/
+function select_materiels($connexion,$item_select,$onChange="")
+{
+	$requete="SELECT special_ID,special_nom FROM med_specialite WHERE categorie = '2' ORDER BY special_nom";
+	$resultat = ExecRequete($requete,$connexion);
+	print("<select name=\"ID_special\" size=\"1\" onChange='$onChange'>");
+	$mot = "--Choisir--";
+	print("<OPTION VALUE = \"0\">$mot</OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+			print("<OPTION VALUE=\"$rub[special_ID]\" ");
+			if($item_select == $rub[special_ID]) print(" SELECTED");
+			print("> $rub[special_nom] </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+
+?>

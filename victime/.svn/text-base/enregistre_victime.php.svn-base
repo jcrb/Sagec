@@ -1,0 +1,127 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+// This file is part of SAGEC67 Copyright (C) 2003-2005 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//---------------------------------------------------------------------------------------------
+//	programme: 		enregistre_victime.php
+//	date de création: 	18/08/2003
+//	auteur:			jcb
+//	version:			1.3
+//	maj le:			13/11/2004
+//---------------------------------------------------------------------------------------------
+/**
+* enregistre_victime.php
+* Crée ou met à jour un enregistrement de la table victime
+* @author Jean-Claude Bartier
+* @copyright 2003-2005 (Jean-Claude Bartier)
+* @package SAGEC67
+*/
+session_start();
+require("../pma_connect.php");
+require("../pma_connexion.php");
+require("../pma_requete.php");
+
+function enregistre_gravite($connexion,$victime_ID,$gravite,$localisation_ID,$heure)
+{
+	$requete="INSERT INTO victime_gravite VALUES (
+		'$victime_ID',
+		'$gravite',
+		'$localisation_ID',
+		'$heure'
+		)";
+	$resultat = ExecRequete($requete,$connexion);
+	//print($requete);
+}
+
+$fichier= $_FILES['photo_victime']['name'];
+$taille= $_FILES['photo_victime']['size'];
+$tmp= $_FILES['photo_victime']['tmp_name'];
+$type= $_FILES['photo_victime']['type'];
+$erreur= $_FILES['photo_victime']['error'];
+/*
+echo"Nom originel => $fichier <br />";
+echo"Taille => $taille <br />";
+echo"Adresse temporaire sur le serveur => $tmp <br />";
+echo"Type de fichier => $type <br />";
+echo"Code erreur => $erreur. <br />";
+*/
+if($erreur == 0){
+	$destination = "../photos/".$_POST[no_identification].".jpg";
+	//echo"nouveau nom => $destination. <br />";
+	move_uploaded_file($tmp, $destination);
+	chmod ($destination,07777);
+}
+//echo"nouveau nom => $destination. <br />";
+$connexion = Connexion(NOM,PASSE,BASE,SERVEUR);
+if($_POST['database'] == "INSERT")
+{
+	$requete="INSERT INTO victime VALUES ('',
+	'$_POST[nom]',
+	'$_POST[prenom]',
+	'$_POST[no_identification]',
+	'$_POST[sexe]',
+	'$_POST[age1]',
+	'$_POST[age2]',
+	'$_POST[gravite]',
+	'$_POST[localisation_type]',
+	'$_POST[ID_hopital]',
+	'$_POST[the_service]',
+	'$destination',
+	'$_POST[heure_courante]',
+	'$_POST[heure_courante]',
+	'$_POST[devenir]',
+	'$_POST[vecteur_engage_ID]',
+	'$_POST[signes]',
+	'$_POST[lesions]',
+	'$_POST[traitement]',
+	'$_POST[N]',
+	'$_POST[B]',
+	'$_POST[C]',
+	'$_SESSION[evenement]'
+	)";
+
+	$resultat = ExecRequete($requete,$connexion);
+	$victime_ID = mysql_insert_id();
+enregistre_gravite($connexion,$victime_ID,$_POST['gravite'],$_POST['localisation_type'],$_POST['heure_courante']);
+}
+else
+{
+	$requete="UPDATE victime SET 	nom = '$_POST[nom]',
+					prenom = '$_POST[prenom]',
+					no_ordre = $_POST[no_identification],
+					sexe = '$_POST[sexe]',
+					age1 = '$_POST[age1]',
+					age2 = '$_POST[age2]',
+					gravite = '$_POST[gravite]',
+					localisation_ID ='$_POST[localisation_type]',
+					Hop_ID ='$_POST[ID_hopital]',
+					service_ID ='$_POST[the_service]',
+					heure_maj = '$_POST[heure_courante]',
+					medicalisation_ID = '$_POST[devenir]',
+					vecteur_ID = '$_POST[vecteur_engage_ID]',
+					signes = '$_POST[signes]',
+					lesions = '$_POST[lesions]',
+					traitement = '$_POST[traitement]',
+					conta_N = '$_POST[N]',
+					conta_B = '$_POST[B]',
+					conta_C = '$_POST[C]',
+					evenement_ID = '$_SESSION[evenement]'";
+					if($destination)
+						$requete.=",photo = '$destination' ";
+				$requete.="WHERE victime_ID = '$_POST[victimes]'";
+	$resultat = ExecRequete($requete,$connexion);
+enregistre_gravite($connexion,$_POST['victimes'],$_POST['gravite'],$_POST['localisation_type'],$_POST['heure_courante']);
+}
+//print($requete);
+header("Location:victimes_saisie.php?identifiant=$_POST[no_identification]");
+?>

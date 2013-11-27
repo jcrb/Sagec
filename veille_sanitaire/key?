@@ -1,0 +1,26 @@
+Exemple
+
+Liste des clés
+
+Array ( [0] => Array ( [RecordType] => pub [CalculatedTrust] => u [KeyLength] => 1024 [Algorithm] => 17 [KeyID] => 51D31450FFECFA08 [CreationDate] => 2005-05-08 [ExpirationDate] => [LocalID] => [Ownertrust] => u [UserID] => SAGEC 67 (Système d'aide à la gestion d'évènements catastrophiques) ) )
+The KEY BLOCK for SAGEC 67 (Système d'aide à la gestion d'évènements catastrophiques) is:
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1.4.1 (GNU/Linux)
+mQGiBEJ+Ff8RBADRfHlZ7di+75jSQBk8x3iOT9hDMdKWaKqmW3/WQtMAy1iCuIsu +y1o7zftEr+VzIp+vBswAkFScRewbgQhFKnuW9D8zqDVNuNFn7fahOnnqlWaRiZY EAI1jiM2jWeveu13BBbtNIeQSxoeL5VGxMIJV4aIrl8tQRk1A7S4trWVEwCgmjza KRtZnNq8dsWGUF0uB2amJKMEAJJkxfFW8vV0GJLiHg7vUtEVXGQyC9mmc5FZPgVy NRfMyl0agGg/N5dM/WU73O0ZJGi4uGEQyPdcHoVWnKxYS7+OWDFNbi1D9nfzhIfG 69LGJPQZ0xDqiK4P7pF0/55BXI1wkg/o0U7e/xdIFo9PPkPlNH4h9JpXHabuuM+6 TVuMBAC6aPo/UifC6daQ0EPELZFO06RHz409hGn7oelZ7gUg+VIdkTaJ/M/FsMVu 3P41af116YGRATjXnAUSbfByg+pWTpad4/PG3UUjEVkjBD9BYhbq5ZwxI9SgUd17 Om3hsUaH+9WwG+jaCfafCZDdrbmYUBEejiZPBjtX54lCiKYZ5rRcU0FHRUMgNjcg KFN5c3TobWUgZCdhaWRlIOAgbGEgZ2VzdGlvbiBkJ+l26G5lbWVudHMgY2F0YXN0 cm9waGlxdWVzKSA8amNiLWJhcnRpZXJAd2FuYWRvby5mcj6IWwQTEQIAGwUCQn4V /wYLCQgHAwIDFQIDAxYCAQIeAQIXgAAKCRBR0xRQ/+z6CNwiAJ9DEK4mYRDHB9kS wZRLtrmbWXIJbACgiCm+HRIRs+jcBUT4Dh/oEO7Qqxu5AQ0EQn4WABAEAOM3SI06 W/G5CRfElwTADQzPoc8nIBJp/NJDtncI/de5x6q2l3pez3YI42KgZRiYjKLlvxd5 Wn3E2c2I3v3WVOfPDvBqLVXphN3IwH43ab7taXZZv/AUudTnBXMFvNqGcwzv3p7v 2r061jOJtUGXZd75CIhP2mumi5ljg/1c3PEPAAQLA/sGzOjV4IGKMRny5H949zOU ZC+I+edEfpjt2mIRMww3kOwwyTPkTqxp1PUbLxqFYJpEF2lhIVrp1O4gVQAYqQsC y3gdiJ2AoJl5d7yzodRDzhTHm8N1cEtVdCvNRBCt1gAjFgpHldOdVMndi5AU+VNt lWg5k1teVJ9pbowDZISNHIhGBBgRAgAGBQJCfhYAAAoJEFHTFFD/7PoIqUMAnRah 3KDhcYvYOT105GCsKNPmCT0zAJ9RqJpj+miKHVq+EX43ug8SnIWPlg== =k9kq
+-----END PGP PUBLIC KEY BLOCK-----
+
+The key 6408492CB7AE0554, Test Key (This is a dummy key) was sucessfuly imported!!!
+The new key was created with Fingerprint = FB92D77FCC6C172A56A5E50D522CD3AF6F4ED8A2!!!
+The Key 6408492CB7AE0554 was sucessfuly signed by FB92D77FCC6C172A56A5E50D522CD3AF6F4ED8A2!!!
+
+The ENCRYPTED TEXT BLOCK is:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1.4.1 (GNU/Linux)
+hQEOAyIuN+1Sju0bEAP9Gck3OLrdGRodeLGC14Ceii9eu+4OOQ5RDePyjtgdnXIX 24QPyUkQxobXKAduqIbsYPWZasZwoHZLIgxzf0FpIMRjDHfGvOAxfnGqj2caBMpF QocFjkxJE7XYhf9Po43sJ3qyh4moqs2R+6j2JnK+Rvvhed7HuhMLDhmLz52BWacD /Att5KyegxPZodGRnJNNu4O9/b3LZhEIEFaiKIqpjDos1X+woST1ym+ehcJqgYka 1DgpfbLRJi1ENs0/2sh1ERjfZh40NITGBiIjju0P5QI/4MONk/o+xmXHxZxBIxkY IhN2piTfknSWSkWK/vtMjzfbJGQd5eUvYo0vGEJMj4FO0pwB/5pJ6z3uSg2W8kzd Le4Z8jiqaTtah3vAChB0rjXjEyBGNmXdU6u/sd0rA/6kBIuhSNTkUPO3POO0MsiF ZJEtkQwYvViUOXWeE8nq+8DW5bLJaRadevuwpSbCU1qJRhWcf0dnia+wt/ZhvEhw UktR7CITwxQgYoHwB+ECpL/6VR4dkplDuYVty6Ymzt/F3H0UJAGLB96iA20Pkzk= =25gk
+-----END PGP MESSAGE-----
+
+The DECRYPTED TEXT is: This is a success test!!!
+The imported key 6408492CB7AE0554 was deleted from the keyring
+The secret key for FB92D77FCC6C172A56A5E50D522CD3AF6F4ED8A2 was deleted from the keyring
+The public key for FB92D77FCC6C172A56A5E50D522CD3AF6F4ED8A2 was deleted from the keyring

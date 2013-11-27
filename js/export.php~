@@ -1,0 +1,23 @@
+<?php
+/**
+  export.php
+  */
+// author : fareh.nasreddine@gmail.com/dev-skills@dev-skills.com
+//include_once("getbrowsers.php");
+//$ua          = getBrowser();
+//$yourbrowser = $ua['name'];
+if ($yourbrowser == 'Internet Explorer') {
+    header('Content-Type: application/force-download');
+    header("Content-disposition: attachment; filename=".$_POST['exportname'].".csv");
+    print $_POST['exportdata'];
+    
+    
+} else {
+    header("Content-type: application/vnd.ms-excel; name='excel'");
+    header("Content-Disposition: filename=".$_POST['exportname'].".csv");
+    header("Pragma: no-cache");
+    header("Expires: 0");
+    
+    print $_REQUEST['exportdata'];
+}
+?>

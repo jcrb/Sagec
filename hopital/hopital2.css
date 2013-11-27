@@ -1,0 +1,95 @@
+body {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 1.0em;
+	margin: 0;
+	padding: 0;
+	}
+table#sample {
+    background-color:#EEEEEE;
+    border: solid #000 3px;
+    width: 400px;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 0.8em;
+}
+
+table#sample td {
+    padding: 5px;
+    border: solid #000 1px;
+}
+
+tr:hover {
+color : #ffffff;
+text-decoration : none;
+background-color : #4c0000;
+font-style : normal;
+} 
+
+.data {
+    color: #000000;
+    text-align: right;
+    background-color: #CCCCCC;
+
+}
+
+.toprow {
+    font-style: italic;
+    text-align: center;
+    background-color: #FFFFCC;
+
+}
+
+.leftcol {
+    font-weight: bold;
+    text-align: left;
+    width: 150px;
+    background-color: #CCCCCC;
+
+}
+
+.ligne_impaire{
+	background-color: #CCCCCC;
+}
+.ligne_paire{
+	background-color: #FFFFCC;
+}
+
+ul#menu
+{
+	margin: 0;
+	padding: 0;
+	font:bold 0.8em georgia, Times, serif;
+	list-style-type:none;
+	text-align: center;
+}
+
+#menu a
+{
+	display: block;
+	margin: 5px 0;
+	/**color:green;*/
+	text-decoration: none;
+	line-height: 12px;
+	width: 150px;
+	/**border: 1px solid black;*/
+	/**background: #fc0;*/
+	text-align: center;
+}
+
+li {
+	background: #EEEEEE;
+	margin: 0.5em 0;
+	padding: 0.1em;
+	border-left: 0.8em solid gray;
+	border-right: 1px solid gray;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	margin-left: 1px;
+	font-family: arial, verdana, helvetica, sans-serif;
+	text-align: center;
+}
+
+#menu li:hover
+{
+	color : #ffffff;
+	background: white;
+}

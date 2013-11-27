@@ -1,0 +1,11 @@
+====== Utilisation du Logiciel R ======
+
+SAGEC est capable d'utiliser les possibilités du logiciel de statistique R.
+En savoir plus sur [[http://www.r-project.org/|R]]
+
+===== Prérequis =====
+
+  * R doit être installé sur la machine
+  * ImageMagic également ([[http://www.imagemagick.org/script/command-line-options.php]]). ImageMagik permet de transformer les graphiques générés par R et notamment les rotations et changement de types: par exemple transformer .ps et .png.
+
+

@@ -1,0 +1,52 @@
+8
+
+dir
+44
+file:///home/jcb/svn/sagec/phplot
+file:///home/jcb/svn/sagec
+
+
+
+2006-11-19T18:21:13.453743Z
+19
+jcb
+
+
+svn:special svn:externals svn:needs-lock
+
+phplot_data.php
+file
+
+
+
+
+2004-01-24T22:18:11.000000Z
+76a8a9856d1fc5a7ad2acbb9834df17b
+2006-11-19T18:21:13.453743Z
+19
+jcb
+
+rgb.inc.php
+file
+
+
+
+
+2000-11-29T16:12:42.000000Z
+b1146048ac3199f717589c5d677e91ac
+2006-11-19T18:21:13.453743Z
+19
+jcb
+
+phplot.php
+file
+
+
+
+
+2004-10-24T16:40:58.000000Z
+495b040874f4f0f09d8c29b6b7305502
+2006-11-19T18:21:13.453743Z
+19
+jcb
+

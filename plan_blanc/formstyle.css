@@ -1,0 +1,88 @@
+body {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+	}
+	
+/*positionnement de l'ensemble du formulaire*/
+#catalogue {	
+	width: 50%;
+	margin: auto;
+	margin-top: 2em;
+	}
+
+/*alignement des zones de saisies*/	
+#coordonnees label { 
+	width: 25%;
+	float: left;
+	text-align: right;
+	line-height: 1.8em;
+	padding: 0 0.8em 0 0;
+	}
+
+/*marge pour espacer les zones de saisies des exemples*/	
+#coordonnees input {
+	margin-right: 1em;
+	}
+
+/*style pour les exemples de réponse*/
+#coordonnees .exemple, #typecat .exemple { 
+	font-style: italic; 
+	color: #fff;
+	}
+
+/*style du contenu du formulaire*/
+#content {	
+	background-color: #9999CC;
+	margin: 0;
+	padding: 2em;
+	border: 0.2em solid #666699;	
+	}
+	
+/*mise en gras du titre des zones de formulaire*/	
+#content legend {
+	font-weight: bold;
+	}
+	
+#content a.help img {
+	border: 0; /*pour supprimer le cadre bleu de l'image lien*/
+	position: absolute; /*pour aligner l'icone et le champ de saisie*/
+	}
+	
+/*modification de l'apparence du curseur de la souris au survol du lien*/	
+#content a.help:hover {
+	cursor: help;
+	}
+
+/*mise en forme de l'en-tête du formulaire*/
+#formtitle {	
+	background-color: #666699;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: bold;
+	height: 3em;
+	line-height: 3em;
+	text-align: center;	
+	}
+
+/*mise en forme du pied du formulaire*/
+#formfooter {	
+	background-color: #666699;
+	height: 3em;
+	margin: 0;
+	padding: 0.8em;
+	}
+
+/*positionnement des boutons d'action*/	
+#formfooter input {
+	float: right; 
+	margin-right: 1.8em;
+	}
+	
+#inverse {
+}
+#inverse td:hover{
+	color:red;
+	background-color: yellow;
+}

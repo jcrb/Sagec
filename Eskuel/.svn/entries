@@ -1,0 +1,190 @@
+8
+
+dir
+44
+file:///home/jcb/svn/sagec/Eskuel
+file:///home/jcb/svn/sagec
+
+
+
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c9c9d45a-3d19-0410-aca5-b5182dfb4288
+
+left.php
+file
+
+
+
+
+2006-07-23T11:11:35.000000Z
+4f25166b326f8164f3b1367792a95b4a
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+lang
+dir
+
+LICENSE
+file
+
+
+
+
+2006-07-23T11:11:35.000000Z
+310f8424517f3df127d39393ceaebb6f
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+include
+dir
+
+setup.php
+file
+
+
+
+
+2006-07-23T11:11:35.000000Z
+746c50d8cd52e46bf47450f7237dd93f
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+help
+dir
+
+phpinfo.php
+file
+
+
+
+
+2006-07-23T11:11:35.000000Z
+a3a97306a17681f7d765db612a6cb2b2
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+index.php
+file
+
+
+
+
+2006-07-23T11:11:35.000000Z
+a4f72294bac09077240c9d5c21acbab7
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+tpl
+dir
+
+config.inc.php
+file
+
+
+
+
+2006-07-23T11:11:35.000000Z
+3a36d9c0c8d22eb46c5afeaab7563fa6
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+right.php
+file
+
+
+
+
+2006-07-23T11:11:35.000000Z
+59792c1144c300efe77e755f044b28fe
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+incoming
+dir
+
+INSTALL
+file
+
+
+
+
+2006-07-23T11:11:35.000000Z
+a38d6d13b5771e674fbc199028566c93
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+main.php
+file
+
+
+
+
+2006-07-23T11:11:35.000000Z
+d26e0b06a1cb0d5e55e0ff59c8ed1bf3
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+img
+dir
+
+popup_dump.php
+file
+
+
+
+
+2006-07-23T11:11:35.000000Z
+d71fff65bc6f74e209c4b7bd86269372
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+popup_bookmark.php
+file
+
+
+
+
+2006-07-23T11:11:35.000000Z
+f5a5ca4f2097e4676dee2ada8cba6ffd
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+help.php
+file
+
+
+
+
+2006-07-23T11:11:35.000000Z
+b7ab63d3871466f4cca00986ce584b36
+2006-07-23T10:58:42.746403Z
+1
+jcb
+

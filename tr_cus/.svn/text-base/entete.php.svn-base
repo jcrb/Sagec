@@ -1,0 +1,10 @@
+
+<?php
+print("<html>");
+print("<head>");
+print("<title> Tour de rôle </title>");
+print("<LINK REL=stylesheet HREF=\"../pma.css\" TYPE =\"text/css\">");
+require("../html.php");
+entete_sagec("Tour de rôle sur la CUS");
+print("</html>");
+?>

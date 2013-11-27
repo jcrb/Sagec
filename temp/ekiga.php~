@@ -1,0 +1,8 @@
+<?php
+/**
+*	ekiga.php
+*/
+?>
+
+<scipt src="http://www.ekiga.net/status/presence.php?user=sagec1"></script>
+

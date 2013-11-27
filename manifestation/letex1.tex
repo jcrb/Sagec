@@ -1,0 +1,59 @@
+% This file is part of the "lettre" package.
+% This package is distributed under the terms of the LaTeX Project 
+% Public License (LPPL) described in the file lppl.txt.
+%
+% Denis Mégevand - Observatoire de Genève.
+%
+% Ce fichier fait partie de la distribution du paquetage "lettre".
+% Ce paquetage est distribué sous les termes de la licence publique 
+% du projet LaTeX (LPPL) décrite dans le fichier lppl.txt.
+
+\documentclass[12pt,origdate]{lettre}
+\usepackage[francais]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[absolute]{textpos}
+
+%\usepackage[OT1]{fontenc}
+\usepackage{mltex}
+
+ % On définit ici les nouvelles commandes
+\newcommand{\dr}{\textbf{Docteur L.Dussau}\\Praticien Hospitalier\\SAMU67/SMUR de Strasbourg}%
+\newcommand{\manif}{Rallye de France-Alsace, du 30 septembre au 2 octobre 2011.}%
+\newcommand{\avis}{Avis favorable.}%
+\newcommand{\adresse}{	\textbf{Préfecture du Bas-Rhin \\ 
+                Direction de la réglementation} \\ 
+                \textsl{Bureau Circulation et Sécurité Routière} \\
+                5 place de la République \\
+		BP 1070F \\
+                67073 Strasbourg Cedex}%
+
+\begin{document}
+
+%
+% Entete et signature par defaut, format plain.
+% =============================================
+%
+\begin{letter}{\adresse}
+
+% Positionnement absolu du logo
+\begin{textblock*}{3cm}(4cm,2.5cm)
+\includegraphics[scale=0.3]{../images/logohus.png}
+\end{textblock*}
+
+\pagestyle{plain}
+
+\conc{\textbf{\manif}}
+
+\name{\dr}
+
+\opening{\textit{Remarque:}}
+
+Les organisateurs, au vu du dispositif de secours mis en place, prendront contacty avec le centre 15 en début et din de manifestation, ainsi
+que lors de tout incident ou accident afin de coordonner les secours médicaux. 
+
+\closing{\textbf{\avis}}
+
+\end{letter}
+%
+\end{document}

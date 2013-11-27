@@ -1,0 +1,25 @@
+MapIconMaker How-to
+
+You can use the MapIconMaker to create icons for your map markers easily:
+
+   1. Include mapiconmaker.js in your document header. You can reference it from here or download it to your own server.
+
+      <script src="mapiconmaker.js" type="text/javascript"></script>
+
+   2. Create an icon using MapIconMaker.createMarkerIcon and add it to the map.
+
+        var map = new GMap2(document.getElementById("map"));
+        map.setCenter(new GLatLng(37.441944, -122.141944), 13);
+        var newIcon = MapIconMaker.createMarkerIcon({width: 64, height: 64, primaryColor: "#00ff00"});
+        var marker = new GMarker(map.getCenter(), {icon: newIcon});
+        map.addOverlay(marker);
+        
+Creating Different Icon Types
+
+There are three basic types of icons that you can create and customize, using one of the three provided static functions. The following table summarizes them, shows a sample marker, and links to an example. For a full description, read the reference.
+createFlatIcon 	The icons can be dynamically sized and colored, can be either circular or rectangular in shape, and can have text overlaid on them. They will appear to lie 'flat' on the map because of their shape.
+ 	
+createLabeledMarkerIcon 	The icons can be dynamically colored and can have text overlaid on them, but can only be one shape and size (marker-shape, 32*32). They can optionally have a dynamically colored star attached to the corner.
+	
+createMarkerIcon 	The icons can be dynamically sized and colored, but cannot have any text overlaid on them.
+ 	

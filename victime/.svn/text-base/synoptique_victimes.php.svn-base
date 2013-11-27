@@ -1,0 +1,262 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+
+// This file is part of SAGEC67 Copyright (C) 2003-2006 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA	
+//-------------------------------------------------------------------------------------------
+//	programme: 			synoptique_victimes.php dossier victimes
+//	date de création: 	29/01/2006
+//	auteur:				jcb
+//	description:		Tableau récapitulatif de l'état des victimes (gravité)	
+//	version:			1.0
+//	maj le:				29/01/2006  
+//--------------------------------------------------------------------------------------------
+session_start();
+if(! $_SESSION['auto_sagec'])header("Location:logout.php");
+$langue = $_SESSION['langue'];
+$member_id = $_SESSION['member_id'];
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+$prefix = "../";
+
+require("../utilitaires/table.php");
+require("../utilitairesHTML.php");
+require("../pma_connect.php");
+require("../pma_connexion.php");
+require("../pma_requete.php");
+require("../en_tete.php");
+require '../utilitaires/globals_string_lang.php';
+
+print("<HTML>");
+print("<HEAD>");
+print("<META NAME=\"author JCB\"> ");
+print("<TITLE>Bilan</TITLE>");
+//<comment> rafraichissement automatique toutes les 30 secondes </comment>
+print("<meta http-equiv=\"refresh\" content=\"30\">");
+print("</HEAD>");
+
+print("<BODY>");
+print("<FORM ACTION =\"bilan.php\">");
+
+$connexion = Connexion(NOM,PASSE,BASE,SERVEUR);
+entete($member_id,$langue,$prefix);
+$event = evenement_courant($connexion,$_SESSION['evenement']);
+// rechercher les victimes dans les différentes zones
+$requete =" SELECT no_ordre,gravite,localisation_ID,ts_type,ts_nom
+			FROM victime,temp_structure
+			WHERE localisation_ID = ts_ID
+			AND ts_type IN ('3','5','6','8','9')
+			AND evenement_ID = '$_SESSION[evenement]'
+			ORDER BY ts_type
+			";
+$resultat = ExecRequete($requete,$connexion);
+//print($requete."<br>");
+//print("<table>");
+while($rub= mysql_fetch_array($resultat))
+{
+	//print("<tr>");
+	//	print("<td>$rub[no_ordre]</td>");
+	//	print("<td>$rub[gravite]</td>");
+	//	print("<td>$rub[ts_nom]</td>");
+		// ventilation des victimes par gravité
+		switch($rub['gravite'])
+		{
+			case 3:case 4:$victime[$rub['ts_nom']][1]++;break; // indéterminés, UP, UD
+			case 1:case 7:$victime[$rub['ts_nom']][2]++;break; // UA
+			case 2: case 8:$victime[$rub['ts_nom']][3]++;break; // UR
+			case 6: case 9:$victime[$rub['ts_nom']][4]++;break; // U3
+			case 10:$victime[$rub['ts_nom']][5]++;break; // U4 ou indemnes
+			case 5:$victime[$rub['ts_nom']][6]++;break; // DCD
+		}
+	//print("</tr>");
+}
+//print("</table>");
+
+$color[0] = "#dde6ee";
+$color[1] = "#009999";
+$color[2] = "#f48b80";
+$color[3] = "#ffff80";
+$color[4] = "#8bf878";
+$color[6] = "#999999";
+$color[5] = "#009999";
+
+echo "<br>";
+
+// Date et heure du bilan
+$mot = DateHeure($langue);
+$ev = $event['evenement_nom'];
+print("<fieldset>");
+print("<legend>$ev<H4>$mot</H4></legend>");
+
+print("<table CELLSPACING=\"2\" CELLPADDING=\"0\" border=\"0\" BGCOLOR=\"\">");
+	print("<tr>");
+		print("<td>&nbsp;</td>");
+		print("<td WIDTH=\"45\"BGCOLOR=\"#000099\"><CENTER><B><FONT COLOR=\"#ffffff\">U</b></center></td>");
+		print("<td WIDTH=\"45\"BGCOLOR=\"#ff0000\"><CENTER><B><FONT COLOR=\"#000000\">UA</b></center></td>");
+		print("<td WIDTH=\"45\"BGCOLOR=\"#ffff00\"><CENTER><B><FONT COLOR=\"#000000\">UR</b></center></td>");
+		print("<td WIDTH=\"45\"BGCOLOR=\"#00ff00\"><CENTER><B><FONT COLOR=\"#000000\">U3</b></center></td>");
+		print("<td WIDTH=\"45\"BGCOLOR=\"#000099\"><CENTER><B><FONT COLOR=\"#ffffff\">U4</b></center></td>");
+		print("<td WIDTH=\"45\"BGCOLOR=\"#000000\"><CENTER><B><FONT COLOR=\"#ffffff\">DCD</b></center></td>");
+		print("<td WIDTH=\"45\"BGCOLOR=\"#dde6ee\"><CENTER><B><FONT COLOR=\"#ffffff\">&nbsp;</b></center></td>");
+	print("</tr>");
+	$total = 0;
+	$ligne = 0;
+	for($i=0; $i<8; $i++);$col[$i]=0;
+	while($element = each($victime))
+	{
+		print("<tr>");
+		echo "<td WIDTH=\"350\" BGCOLOR=\"#dde6ee\">".$element['key']."</td>";// nom du PMA
+		for($i=1; $i<7; $i++)
+		{
+			echo "<td bgcolor=$color[$i]><CENTER>";
+			if($victime[$element['key']][$i])
+			{
+				echo $victime[$element['key']][$i];
+				$ligne += $victime[$element['key']][$i];// total de la ligne
+				$col[$i]+= $victime[$element['key']][$i];// total de la colonne
+			}
+			else
+				echo "&nbsp;";
+			echo "</CENTER></td>";
+		}
+		echo "<td BGCOLOR=\"#dde6ee\"><center>$ligne</center></td>";
+		$total += $ligne;
+		$ligne = 0;
+		print("</tr>");
+	}
+	// dernière ligne = total par colonne
+	$col[0] = "&nbsp;";
+	$col[7] = $total;
+	print("<tr>");
+	for($i=0; $i<8; $i++)
+	{
+		if($col[$i]!='0')
+			print("<td bgcolor=$color[0]><CENTER>$col[$i]</CENTER></td>");
+		else
+			echo "&nbsp;";
+	}
+	print("</tr>");
+print("</table>");
+print("</fieldset>");
+
+// statistiques
+
+function ligne_entete()
+{
+	print("<TR>");
+		print("<TD class=\"th1\">&nbsp;</TD>");
+		print("<TD class=\"th1\" ALIGN=\"RIGHT\">moyenne</TD>");
+		print("<TD class=\"th1\" ALIGN=\"RIGHT\">min</TD>");
+		print("<TD class=\"th1\" ALIGN=\"RIGHT\">max</TD>");
+		print("<TD class=\"th1\" ALIGN=\"RIGHT\">écart-type</TD>");
+		print("<TD class=\"th1\" ALIGN=\"RIGHT\">n</TD>");
+	print("</TR>");
+}
+function ligne_resultats($resultat)
+{
+	while($moy = mysql_fetch_array($resultat))
+	{
+		print("<TR>");
+		switch($moy[5])
+		{
+			case '0':$titre="indéterminé";break;
+			case '1':$titre="Hommes";break;
+			case '2':$titre="Femmes";break;
+			case '3':$titre="indéterminé";break;
+			default:$titre="total";
+		}
+		print("<TD class=\"td2\" >$titre</TD>");
+		printf("<TD class=\"td1\" ALIGN=\"RIGHT\">%.2f</TD>",$moy[0]);
+		printf("<TD class=\"td1\" ALIGN=\"RIGHT\">%.2f</TD>",$moy[1]);
+		printf("<TD class=\"td1\" ALIGN=\"RIGHT\">%.2f</TD>",$moy[2]);
+		printf("<TD class=\"td1\" ALIGN=\"RIGHT\">%.2f</TD>",$moy[3]);
+		printf("<TD class=\"td1\" ALIGN=\"RIGHT\">$moy[4]</TD>");
+		//printf("<TD ALIGN=\"RIGHT\">$moy[5]</TD>");
+	print("</TR>");
+	}
+}
+function table_age($resultat,$intervalle="10")
+{
+// histogramme des ages
+$histo = array();
+$max = 0;
+//$intervalle = 10;
+$total = 0;
+while($moy = mysql_fetch_array($resultat))
+{
+	$i =  floor($moy[0] / $intervalle);
+	$histo[$i]++;
+	if($i > $max)$max = $i;
+	$total++;
+}
+$cumul = 0;
+print("<TABLE width=\"50%\">");
+	print("<TR>");
+		print("<TD ALIGN=\"CENTER\"> Age </TD>");
+		print("<TD ALIGN=\"RIGHT\"> N </TD>");
+		print("<TD ALIGN=\"RIGHT\"> cumul </TD>");
+		print("<TD ALIGN=\"RIGHT\"> % cumulés </TD>");
+	print("</TR>");
+	for($i=0; $i<=$max;$i++)
+	{
+		print("<TR>");
+			// tranche d'age
+			print("<TD ALIGN=\"CENTER\">");
+				$bi = $intervalle*$i;
+				$bs = $bi + $intervalle;
+				print($bi." - ".$bs);
+			print("</TD>");
+			// nombre de cas
+			printf("<TD ALIGN=\"RIGHT\">$histo[$i]</TD>");
+			// Cumul
+			$cumul = $cumul + $histo[$i];
+			printf("<TD ALIGN=\"RIGHT\">$cumul</TD>");
+			// pourcentage
+			printf("<TD ALIGN=\"RIGHT\">%.2f</TD>",$cumul*100/$total);
+
+		print("</TR>");
+	}
+print("</TABLE>");
+}
+
+print("<fieldset>");
+print("<legend> Statistiques </legend>");
+//-------------------------------- AGE en général ------------------------------------------------
+$requete = "SELECT AVG(age1),MIN(age1),MAX(age1),STD(age1),COUNT(age1),sexe
+			FROM victime 
+			WHERE age1 > '0' 
+			GROUP BY sexe ";
+			//print($requete);
+$resultat = ExecRequete($requete,$connexion);
+print("<H3>Age</H3>");
+print("<TABLE WIDTH=\"50%\" class=\"table1\" >");
+	print("<hr>");// barre horizontale
+	ligne_entete();
+	ligne_resultats($resultat);
+	//ligne_resultats($resultat,"Hommes");
+	//ligne_resultats($resultat,"Femmes");
+	$requete = "SELECT AVG(age1),MIN(age1),MAX(age1),STD(age1),COUNT(age1) 
+			FROM victime 
+			WHERE age1 > '0'";
+	$resultat = ExecRequete($requete,$connexion);
+	ligne_resultats($resultat,"Total");
+//presente_age($resultat);
+print("</TABLE>");;
+// ---------------------------------- histogramme des ages ---------------------------------------
+print("<BR>");
+print("Répartition par classes d'age<BR><BR>");
+$requete = "SELECT age1 FROM victime WHERE age1 > '0'";
+$resultat = ExecRequete($requete,$connexion);
+table_age($resultat,"10");
+
+print("</fieldset>");
+?>

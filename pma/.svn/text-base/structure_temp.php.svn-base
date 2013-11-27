@@ -1,0 +1,98 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+//
+// This file is part of SAGEC67 Copyright (C) 2003 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+//----------------------------------------- SAGEC --------------------------------------------------------
+//
+//	programme: 		structure_temp.php
+//	date de création: 	22/10/2005
+//	auteur:			jcb
+//	description:
+//	version:		1.0
+//	modifié le		22/10/2005
+//
+//---------------------------------------------------------------------------------------------------------
+include_once("header.php");
+include_once("dbConnection.php");
+include_once("../date.php");
+?>
+<h2>Nouvelle structure temporaire</h2>
+<form name="temp_structureEnterForm" method="GET" action="insertNewTemp_structure.php">
+
+<table cellspacing="2" cellpadding="2" border="0" width="100%">
+    <tr valign="top" height="20">
+        <td align="right"> <b> nom </b> </td>
+        <td align="left"> <input type="text" name="thisTs_nomField" size="40" value="">  </td>
+    </tr>
+    <tr valign="top" height="20">
+        <td align="right"> <b> type </b> </td>
+	<?php
+		print("<TD  align=\"left\">");
+			SelectLocalisation($connexion,$rub->ts_localisation,$langue,'');//$org_type contient le type_ID select name="thisTs_typeField"
+		print("</TD>");
+	?>
+    </tr>
+    <tr valign="top" height="20">
+        <td align="right"> <b> localisation : </b> </td>
+        <td align="left"> <textarea name="thisTs_localisationField" wrap="VIRTUAL" cols="40" rows="4"></textarea>  </td>
+    </tr>
+    <tr valign="top" height="20">
+        <td align="right"> <b> contact : </b> </td>
+        <td align="left"> <textarea name="thisTs_contactField" wrap="VIRTUAL" cols="40" rows="4"></textarea>  </td>
+    </tr>
+    <tr valign="top" height="20">
+        <td align="right"> <b> latitude : </b> </td>
+        <td align="left"> <input type="text" name="thisTs_latField" size="10" value="">  </td>
+    </tr>
+    <tr valign="top" height="20">
+        <td align="right"> <b> longitude : </b> </td>
+        <td align="left"> <input type="text" name="thisTs_longField" size="10" value="">  </td>
+    </tr>
+    <tr valign="top" height="20">
+        <td align="right"> <b> dépend de : </b> </td>
+	
+	<?php 
+		print("<TD  align=\"left\">");
+		SelectStructureTemporaire($connexion,$item_select,$langue); // retourne l'ID de la structure temporaire mère: localisation_type
+		$datetime = uDateTime2MySql(time());
+		print("</TD>");
+	?>
+    </tr>
+    <tr valign="top" height="20">
+        <td align="right"> <b> activé : </b> </td>
+	<td align="left"> <input type="checkbox" name="thisTs_activeField" value="o" checked></td>
+    </tr>
+    <tr valign="top" height="20">
+        <td align="right"> <b> heure d'activation : </b> </td>
+        <td align="left"> <input type="text" name="thisTs_heure_activationField" size="17" value="<? echo $datetime ?>">  </td>
+    </tr>
+    <tr valign="top" height="20">
+        <td align="right"> <b> heure d'arret : </b> </td>
+        <td align="left"> <input type="text" name="thisTs_heure_arretField" size="17" value="<? echo $datetime ?>">  </td>
+    </tr>
+    <tr valign="top" height="20">
+        <td align="right"> <b> réutilisable : </b> </td>
+        <td align="left"> <input type="checkbox" name="thisTs_reutilisableField" value="o" checked></td>
+    </tr>
+</table>
+
+<input type="submit" name="submitEnterTemp_structureForm" value="Enter Temp_structure">
+<input type="reset" name="resetForm" value="Clear Form">
+
+</form>
+
+<?php
+    include_once("footer.php");
+?> 

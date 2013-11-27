@@ -1,0 +1,31 @@
+/*tr_css.css
+ CSS issu des tutoriels www.alsacreations.com/articles
+ */
+BODY {font: 14px Verdana, Arial, sans-serif;}
+
+ul {list-style-type: none;} 
+
+li {margin-bottom: 20px;margin-left: -30px;}
+
+.menu1 a {
+     margin: 0 0px;			/* marges droites et gauches du rectangle */
+     width: 190px;			/* largeur du rectangle */
+     height: 20px;			/* hauteur du rectangle */
+     display: block;		/* affichage du rectangle */
+     text-align: center;		/* alignement du texte */
+     border: 1px solid gray;	/*couleur du cadre */
+     text-decoration: none;	/*le texte n'est ps souligné */
+     color: #000;			/*couleur police de caractère, noir = #000 */
+     background: #fff;		/*couleur d'arrière plan des rectangles, blanc = #fff */
+	 }
+
+.menu1 a:hover {
+     background:#99ccff;		/*couleur du fond lorsque la souris survole */
+     border: 1px solid red;	/*couleur du cadre */
+     }
+
+.menu1 a:active {
+     background: gray;
+     border: 1px solid gray;
+     color: #fff;
+     }

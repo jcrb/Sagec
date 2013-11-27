@@ -1,0 +1,98 @@
+
+
+
+<h1><a name="ajax_prototype" id="ajax_prototype">Ajax Prototype</a></h1>
+<div class="level1">
+
+<p>
+Bibliothèque de programmation en javascript.
+
+</p>
+
+</div>
+<!-- SECTION "Ajax Prototype" [1-75] -->
+<h2><a name="biliographie" id="biliographie">Biliographie</a></h2>
+<div class="level2">
+
+<p>
+
+<a href="http://dcabasson.developpez.com/articles/javascript/ajax/documentation-prototype-1.4.0/#L5-A-7" class="urlextern" title="http://dcabasson.developpez.com/articles/javascript/ajax/documentation-prototype-1.4.0/#L5-A-7"  rel="nofollow">http://dcabasson.developpez.com/articles/javascript/ajax/documentation-prototype-1.4.0/#L5-A-7</a>
+
+</p>
+
+</div>
+<!-- SECTION "Biliographie" [76-201] -->
+<h2><a name="les_fonctions_de_base" id="les_fonctions_de_base">Les fonctions de base</a></h2>
+<div class="level2">
+
+</div>
+<!-- SECTION "Les fonctions de base" [202-236] -->
+<h3><a name="la_fonction" id="la_fonction">La fonction $()</a></h3>
+<div class="level3">
+
+<p>
+ La fonction $() est un raccourci pratique pour la fonction <acronym title="Document Object Model">DOM</acronym> très souvent utilisée<strong> document.getElementById()</strong>. Tout comme la fonction <acronym title="Document Object Model">DOM</acronym>, celle-ci retourne l&#039;élément dont l&#039;id est passé en paramètre.
+</p>
+
+<p>
+Contrairement à la fonction <acronym title="Document Object Model">DOM</acronym>, celle-ci va plus loin. Vous pouvez lui passer plus d&#039;un seul id et $() retournera un tableau (Array) des éléments requis. L&#039;exemple ci-dessous illustre cela :
+</p>
+<pre class="code html4strict"><span class="sc2">&lt;<a href="http://december.com/html/4/element/html.html"><span class="kw2">html</span></a>&gt;</span>
+<span class="sc2">&lt;<a href="http://december.com/html/4/element/head.html"><span class="kw2">head</span></a>&gt;</span>
+<span class="sc2">&lt;<a href="http://december.com/html/4/element/title.html"><span class="kw2">title</span></a>&gt;</span> Page de Test <span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/title.html"><span class="kw2">title</span></a>&gt;</span>
+<span class="sc2">&lt;<a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">'text/javascript'</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">&quot;prototype-1.4.0.js&quot;</span>&gt;&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a>&gt;</span>
+&nbsp;
+<span class="sc2">&lt;<a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">'text/javascript'</span>&gt;</span>
+	function test1()
+	{
+		var d = $('monDiv');
+		alert(d.innerHTML);
+	}
+&nbsp;
+	function test2()
+	{
+		var divs = $('monDiv','monAutreDiv');
+		for(i=0; i<span class="sc2">&lt;divs.length; i++<span class="br0">&#41;</span></span>
+<span class="sc2">		<span class="br0">&#123;</span></span>
+<span class="sc2">			alert<span class="br0">&#40;</span>divs<span class="br0">&#91;</span>i<span class="br0">&#93;</span>.innerHTML<span class="br0">&#41;</span>;</span>
+<span class="sc2">		<span class="br0">&#125;</span></span>
+<span class="sc2">	<span class="br0">&#125;</span></span>
+<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/head.html"><span class="kw2">head</span></a>&gt;</span>
+&nbsp;
+<span class="sc2">&lt;<a href="http://december.com/html/4/element/body.html"><span class="kw2">body</span></a>&gt;</span>
+	<span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">&quot;monDiv&quot;</span>&gt;</span>
+		<span class="sc2">&lt;<a href="http://december.com/html/4/element/p.html"><span class="kw2">p</span></a>&gt;</span>Ceci est un paragraphe<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/p.html"><span class="kw2">p</span></a>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span>
+	<span class="sc2">&lt;<a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">&quot;monAutreDiv&quot;</span>&gt;</span>
+		<span class="sc2">&lt;<a href="http://december.com/html/4/element/p.html"><span class="kw2">p</span></a>&gt;</span>Ceci est un autre paragraphe<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/p.html"><span class="kw2">p</span></a>&gt;</span>
+	<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/div.html"><span class="kw2">div</span></a>&gt;</span>
+&nbsp;
+	<span class="sc2">&lt;<a href="http://december.com/html/4/element/input.html"><span class="kw2">input</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;button&quot;</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">&quot;Test1&quot;</span> <span class="kw3">onclick</span><span class="sy0">=</span><span class="st0">&quot;test1();&quot;</span>&gt;&lt;<a href="http://december.com/html/4/element/br.html"><span class="kw2">br</span></a>&gt;</span>
+	<span class="sc2">&lt;<a href="http://december.com/html/4/element/input.html"><span class="kw2">input</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;button&quot;</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">&quot;Test2&quot;</span> <span class="kw3">onclick</span><span class="sy0">=</span><span class="st0">&quot;test2();&quot;</span>&gt;&lt;<a href="http://december.com/html/4/element/br.html"><span class="kw2">br</span></a>&gt;</span>
+&nbsp;
+<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/body.html"><span class="kw2">body</span></a>&gt;</span>
+<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/html.html"><span class="kw2">html</span></a>&gt;</span></pre>
+<p>
+Une autre chose appréciable avec cette fonction, c&#039;est que l&#039;on peut aussi lui passer indifféremment l&#039;id de l&#039;élément ou l&#039;élément lui-même, ce qui la rend très utile lors de la création d&#039;autres fonctions qui acceptent également l&#039;une ou l&#039;autre forme de paramètres. 
+</p>
+
+</div>
+<!-- SECTION "La fonction $()" [237-1615] -->
+<h3><a name="la_fonction_f" id="la_fonction_f">La fonction $F()</a></h3>
+<div class="level3">
+
+<p>
+ La fonction $F() est un autre raccourci appréciable. Elle retourne la valeur de n&#039;importe quel contrôle de saisie, tel que input type=&#039;text&#039; ou select. La fonction accepte indifféremment en argument l&#039;id de l&#039;élément ou l&#039;élément lui-même. Utile pour valider un formulaire
+</p>
+<pre class="code html4strict"><span class="sc2">&lt;<a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">'text/javascript'</span>&gt;</span>
+	function test3()
+	{
+		alert(  $F('utilisateur')  );
+	}
+<span class="sc2">&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a>&gt;</span>
+&nbsp;
+<span class="sc2">&lt;<a href="http://december.com/html/4/element/input.html"><span class="kw2">input</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;text&quot;</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">&quot;utilisateur&quot;</span> <span class="kw3">value</span><span class="sy0">=</span><span class="st0">&quot;Marc Assin&quot;</span>&gt;&lt;<a href="http://december.com/html/4/element/br.html"><span class="kw2">br</span></a>&gt;</span>
+<span class="sc2">&lt;<a href="http://december.com/html/4/element/input.html"><span class="kw2">input</span></a> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;button&quot;</span> <span class="kw3">value</span><span class="sy0">=</span>Test3 <span class="kw3">onclick</span><span class="sy0">=</span><span class="st0">&quot;test3();&quot;</span>&gt;&lt;<a href="http://december.com/html/4/element/br.html"><span class="kw2">br</span></a>&gt;</span></pre>
+</div>
+<!-- SECTION "La fonction $F()" [1616-] -->

@@ -1,0 +1,44 @@
+<?php
+	/**
+	*	@version $Id: google_base.php 29 2008-01-13 22:52:31Z jcb $
+	*/
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+    <tittle>Googlemap</tittle>
+<!-- Ceci est spécifique de Sagec, hus -->
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAOiFPV0Y5zzLw7M6z-aRD5RS4M0VztE0O-QJMMgCt9di7cKfD1RRqOuGcbIuRW0zmeP9ety1-dA17AA" type="text/javascript"></script>
+<!-- Ceci est spécifique de Sagec, localhost 
+	 <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAOiFPV0Y5zzLw7M6z-aRD5RS5u1nAG4uSd7t1qAnJ_TFOSdaPdBQ7Vq8M6vT5wPThrBtK6O6z4mB3Og"
+      type="text/javascript"></script>  
+      
+ <script src="googlemap.js" type= "text/javascript"></script>
+ <script src="googlemap_data.php" type= "text/javascript"></script> -->
+<link href = "googlemap.css" rel = "stylesheet" type = "text/css" />
+
+<script type="text/javascript">
+	//<![CDATA[
+	function load(){
+		if(GBrowserIsCompatible()){
+			var map = new GMap2(document.getElementById("map"));
+			map.setCenter(new GLatLng(48.585,7.736),13);
+		}
+	}
+	//]]>
+</script>
+</head>
+
+<body onload="load()" onunload="GUnload()">
+	<!-- <div id="map" style="width: 500px; height: 300px"></div> -->
+	<div id="map"></div>
+	<div id="toolbar">
+		<table border="1" width="100%">
+			<tr><td><a href="">Page précédante</a></td></tr>
+		</table>
+	</div>
+</body>
+</html>

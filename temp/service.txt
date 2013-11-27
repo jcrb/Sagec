@@ -1,0 +1,77 @@
+1	85	86	2	Réa 310	3371	0388116004		4	Chirurgie A		1		0	12				0	
+2	85	86	2	Réa Chir B	3618	16308		0	Chirurgie B				0	0				0	
+3	85	86	2	Réa médicale Pasteur	0802	16257		0	Pavillon Pasteur				0	0				0	
+4	87	87	2	Réa CTO		0388552201		1					0	0				0	
+5	85	85	2	Réa Chir HTP	6361	27100		3	petit Y				0	0				0	
+6	85	85	2	Réa Med HTP	6251	27901		2	grand Y				0	0				0	
+7	2	2	2	Réa Cardio-Vasculaire	3312	0388116685		2	Chirurgie A				0	12	o			88	
+8	85	85	1	Accueil Pasteur	0803			0	Pavillon Pasteur		1		0	0	o			88	
+9	85	85	1	Urgences Adulte		0388125555		2	Grand Y		1		0	12				0	
+10	87	87	1	Premiers soins		0388552268		0			1		0	0				0	
+12	13	13	10	Grands brûlés		0387553131						1	10	0	o	o	3	91	
+13	4	4	4	Cardio CMCO		0388628314	0388628314	1er					0	0				88	
+14	90	90	4	USIC Haguenau		0388063489							0	0				0	
+15	89	5	4	USIC Orangerie		0388567700	0388567704	4					0	0				0	
+16	85	85	4	USIC Hautepierre	6905	27205		9	Grand Y				0	0				0	
+17	90	90	2	Réa Haguenau		0388063333							0	0				0	
+18	91	91	2	Réa Saverne		0388716767						1	0	0				0	
+19	42	42	2	Réa Wissembourg		0388541111							0	0				0	
+20	99	99	2	Réa Sarrebourg		0387232425							0	0				0	
+21	93	93	2	Réa Sélestat		0388575555							0	0				0	
+23	85	1	3	Rea Chir Pédiatrique									0	0				0	
+24	42	9	7	Médecine A									0	0				0	
+25	42	9	5	Bloc opératoire									0	0				0	
+26	42	9	12	SMUR Wissembourg							2		0	0				0	
+27	42	9	8	Chirurgie 1									0	0				0	
+28	85	86	11	Maladies Infectieuses				3	Médicale A				0	1				0	
+29	100	100	10	Verbrennungsstation		4962168102	4962168102	0					0	0	o	o	3	88	
+33	42	9	7	Cardio Wissembourg									0	0				0	
+34	42	9	4	USIC Wissembourg									0	0				0	
+65	90	90	12	SMUR Haguenau									0	0				0	
+38	85	86	1	Poli Chir A					Chirurgie A				0	0				0	
+40	85	85	1	Urgences Pédiatrie							1		0	8				0	
+64	85	86	12	SMUR Strasbourg		0388333333	0388116905						0	0				0	
+44	9	9	1	Urgences Wissembourg	123			Rdc					0	0				88	
+46	85	86	8	Chir Urologique				3	Chirurgie A				0	0				0	
+47	2	2	5	Chir Urologique				1	Chirurgie A				0	0				88	
+48	138	138	10	Grands brûlés (Lyon)		0472117598	0472117589						0	0	o	o		0	
+49	139	139	10	Grands brûlés (Lausanne)									0	0				0	
+50	94	94	2	Réa Med Colmar									0	0				0	
+51	94	94	2	Réa Chir2 Colmar									0	0				0	
+52	94	94	2	Réa Chir3 Colmar									0	0				0	
+53	96	96	2	Réa Chir Mulhouse									0	0				0	
+54	96	96	2	Réa Med Mulhouse									0	0				0	
+55	85	85	3	Réa ped Chir HTP									0	0				0	
+56	85	85	3	Réa ped Med HTP									0	0				0	
+57	96	96	3	Réa ped Mulhouse									0	0				0	
+58	85	86	4	Cardio Med B				ent	Clinique médicale B				0	0				0	
+59	142	142	4	USIC St Joseph									0	0				0	
+60	94	94	4	USIC CH Colmar									0	0				0	
+61	96	96	4	USIC CH Mulhouse									0	0				0	
+62	140	140	4	USIC Diaconat Mulhouse									0	0				0	
+63	141	141	4	USIC St Sauveur Mulhouse									0	0				0	
+66	91	91	12	SMUR Saverne									0	0				0	
+67	93	93	12	SMUR Selestat									0	0				0	
+68	94	94	12	SMUR Colmar									0	0				0	
+69	96	96	12	SMUR Mulhouse									0	0				0	
+70	143	143	12	SMUR Bitche (ant.)									0	0				0	
+71	107	107	12	SMUR Sarreguemines									0	0				0	
+72	106	106	12	SMUR Forbach									0	0				0	
+73	97	97	12	SMUR Metz									0	0				0	
+74	99	99	12	SMR Sarrebourg									0	0				0	
+75	108	108	12	SMUR Thionville									0	0				0	
+76	117	117	12	SMUR Belfort									0	0				0	
+77	105	105	12	SMUR Nancy									0	0				0	
+78	144	144	1	UPATOU St Odile									0	0				0	
+80	85	86	6	Réveil ChirA				1	Chirurgie A		1		0	0				0	
+82	162	162	10	Dpt Plastic Surgery									0	0				0	
+84	0	0	1	SAU Colmar									0	0				0	
+85	94	94	1	SAU Colmar									0	0				0	
+86	91	91	8	Gynécologie Saverne	2005								0	0				0	
+87	91	91	7	Maternité Saverne	2015								0	0				0	
+88	88	88	13	SAMU 67		0388333333	0388116905						0	0				88	
+89	96	96	13	SAMU 68		0389646272							0	0				0	
+90	98	98	13	SAMU 88		0329693434							0	0				0	
+91	97	97	13	SAMU 57		0387553595							0	0				91	
+92	2	2	21	Chambre mortuaire									0	0				88	
+93	93	93	10	Clinic of burns & plastic									0	0	o	o		88	

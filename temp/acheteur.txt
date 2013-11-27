@@ -1,0 +1,13 @@
+1	HUS	
+2	DASS	
+3	Ministère Santé	
+4	DHOS	
+5	DGS	
+6	SGDN	
+7	HFD	
+8	inconnu	
+9	CHU Nancy	
+11	CHU Besançon	
+12	CHU Dijon	
+13	CHU Reims	
+14	CH de Metz	

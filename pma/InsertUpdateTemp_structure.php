@@ -1,0 +1,347 @@
+<?php
+//InsertUpdateTemp_structure.php
+	$backPathToRoot = "../";
+	include_once("header.php");
+	include_once("dbConnection.php");
+	include_once($backPathToRoot."login/init_security.php");
+
+$thisTs_IDFromForm = $_REQUEST['thisTs_IDField'];
+$thisAction = $_REQUEST['action'];
+if ($thisAction=="Update")
+{
+    // Retreiving Form Elements from Form
+    $thisTs_ID = addslashes($_REQUEST['thisTs_IDField']);
+    $thisTs_nom = addslashes($_REQUEST['thisTs_nomField']);
+    $thisTs_type = addslashes($_REQUEST['thisTs_typeField']);
+    $thisTs_localisation = addslashes($_REQUEST['thisTs_localisationField']);
+    $thisTs_contact = addslashes($_REQUEST['thisTs_contactField']);
+    $thisTs_lat = addslashes($_REQUEST['thisTs_latField']);
+    $thisTs_long = addslashes($_REQUEST['thisTs_longField']);
+    $thisCata_ID = addslashes($_REQUEST['thisCata_IDField']);
+    $thisTs_parent_ID = addslashes($_REQUEST['thisTs_parent_IDField']);
+    $thisTs_active = addslashes($_REQUEST['thisTs_activeField']);
+    $thisTs_heure_activation = addslashes($_REQUEST['thisTs_heure_activationField']);
+    $thisTs_heure_arret = addslashes($_REQUEST['thisTs_heure_arretField']);
+    $thisTs_reutilisable = addslashes($_REQUEST['thisTs_reutilisableField']);
+
+    $sqlUpdate = "UPDATE temp_structure SET ts_ID = '$thisTs_ID' , ts_nom = '$thisTs_nom' , ts_type = '$thisTs_type' , ts_localisation = '$thisTs_localisation' , ts_contact = '$thisTs_contact' , ts_lat = '$thisTs_lat' , ts_long = '$thisTs_long' , cata_ID = '$thisCata_ID' , ts_parent_ID = '$thisTs_parent_ID' , ts_active = '$thisTs_active' , ts_heure_activation = '$thisTs_heure_activation' , ts_heure_arret = '$thisTs_heure_arret' , ts_reutilisable = '$thisTs_reutilisable'  WHERE ts_ID = '$thisTs_ID'";
+    $resultUpdate = MYSQL_QUERY($sqlUpdate);
+    echo "<b>Record with Id ".$thisTs_IDFromForm." has been Updated<br></b>";
+    $thisTs_IDFromForm = "";
+}
+
+if ($thisAction=="Insert")
+{
+    // Retreiving Form Elements from Form
+    $thisTs_ID = addslashes($_REQUEST['thisTs_IDField']);
+    $thisTs_nom = addslashes($_REQUEST['thisTs_nomField']);
+    $thisTs_type = addslashes($_REQUEST['thisTs_typeField']);
+    $thisTs_localisation = addslashes($_REQUEST['thisTs_localisationField']);
+    $thisTs_contact = addslashes($_REQUEST['thisTs_contactField']);
+    $thisTs_lat = addslashes($_REQUEST['thisTs_latField']);
+    $thisTs_long = addslashes($_REQUEST['thisTs_longField']);
+    $thisCata_ID = addslashes($_REQUEST['thisCata_IDField']);
+    $thisTs_parent_ID = addslashes($_REQUEST['thisTs_parent_IDField']);
+    $thisTs_active = $_REQUEST['thisTs_activeField'];
+    $thisTs_heure_activation = addslashes($_REQUEST['thisTs_heure_activationField']);
+    $thisTs_heure_arret = addslashes($_REQUEST['thisTs_heure_arretField']);
+    $thisTs_reutilisable = addslashes($_REQUEST['thisTs_reutilisableField']);
+
+    $sqlInsert = "INSERT INTO temp_structure (ts_ID , ts_nom , ts_type , ts_localisation , ts_contact , ts_lat , ts_long , cata_ID , ts_parent_ID ,ts_active, ts_heure_activation , ts_heure_arret , ts_reutilisable ) VALUES ('$thisTs_ID' , '$thisTs_nom' , '$thisTs_type' , '$thisTs_localisation' , '$thisTs_contact' , '$thisTs_lat' , '$thisTs_long' , '$thisCata_ID' , '$thisTs_parent_ID' , '$thisTS_active','$thisTs_heure_activation' , '$thisTs_heure_arret' , '$thisTs_reutilisable' )";
+    $resultInsert = MYSQL_QUERY($sqlInsert);
+    echo "<b>Record has been inserted in Database<br></b>";
+    $thisTs_IDFromForm = "";
+}
+
+if ($thisAction=="Delete")
+{
+    // Retreiving Form Elements from Form
+    $thisTs_ID = addslashes($_REQUEST['thisTs_IDField']);
+    $thisTs_nom = addslashes($_REQUEST['thisTs_nomField']);
+    $thisTs_type = addslashes($_REQUEST['thisTs_typeField']);
+    $thisTs_localisation = addslashes($_REQUEST['thisTs_localisationField']);
+    $thisTs_contact = addslashes($_REQUEST['thisTs_contactField']);
+    $thisTs_lat = addslashes($_REQUEST['thisTs_latField']);
+    $thisTs_long = addslashes($_REQUEST['thisTs_longField']);
+    $thisCata_ID = addslashes($_REQUEST['thisCata_IDField']);
+    $thisTs_parent_ID = addslashes($_REQUEST['thisTs_parent_IDField']);
+    $thisTs_active = $_REQUEST['thisTs_activeField'];
+    $thisTs_heure_activation = addslashes($_REQUEST['thisTs_heure_activationField']);
+    $thisTs_heure_arret = addslashes($_REQUEST['thisTs_heure_arretField']);
+    $thisTs_reutilisable = addslashes($_REQUEST['thisTs_reutilisableField']);
+
+    $sqlDelete = "DELETE FROM temp_structure WHERE ts_ID = '$thisTs_ID'";
+    $resultDelete = MYSQL_QUERY($sqlDelete);
+
+    echo "<b>Record with Id ".$thisTs_IDFromForm." has been Deleted<br></b>";
+    $thisTs_IDFromForm = "";
+}
+
+$initStartLimit = 0;
+$limitPerPage = 10;
+
+$startLimit = $_REQUEST['startLimit'];
+$numberOfRows = $_REQUEST['rows'];
+$sortBy = $_REQUEST['sortBy'];
+$sortOrder = $_REQUEST['sortOrder'];
+
+if ($startLimit=="")
+{
+        $startLimit = $initStartLimit;
+}
+
+if ($numberOfRows=="")
+{
+        $numberOfRows = $limitPerPage;
+}
+
+if ($sortOrder=="")
+{
+        $sortOrder  = "DESC";
+}
+if ($sortOrder == "DESC") { $newSortOrder = "ASC"; } else  { $newSortOrder = "DESC"; }
+$limitQuery = " LIMIT ".$startLimit.",".$numberOfRows;
+$nextStartLimit = $startLimit + $limitPerPage;
+$previousStartLimit = $startLimit - $limitPerPage;
+
+if ($sortBy!="")
+{
+        $orderByQuery = " ORDER BY ".$sortBy." ".$sortOrder;
+}
+
+
+$sql = "SELECT   * FROM temp_structure".$orderByQuery.$limitQuery;
+$result = MYSQL_QUERY($sql);
+$numberOfRows = MYSQL_NUM_ROWS($result);
+
+
+?>
+<?
+if ($numberOfRows==0) {  
+?>
+
+Sorry. No records found !!
+
+<?
+}
+else if ($numberOfRows>0) {
+
+    $i=0;
+?>
+
+
+<br>
+<?
+if ($_REQUEST['startLimit'] != "")
+{
+?>
+
+<a href="<? echo  $_SERVER['PHP_SELF']; ?>?startLimit=<? echo $previousStartLimit; ?>&limitPerPage=<? echo $limitPerPage; ?>&sortBy=<? echo $sortBy; ?>&sortOrder=<? echo $sortOrder; ?>">Previous <? echo $limitPerPage; ?> Results</a>....
+<? } ?>
+<?
+if ($numberOfRows == $limitPerPage)
+{
+?>
+<a href="<? echo $_SERVER['PHP_SELF']; ?>?startLimit=<? echo $nextStartLimit; ?>&limitPerPage=<? echo $limitPerPage; ?>&sortBy=<? echo $sortBy; ?>&sortOrder=<? echo $sortOrder; ?>">Next <? echo $limitPerPage; ?> Results</a>
+<? } ?>
+
+<br><br>
+<TABLE CELLSPACING="0" CELLPADDING="3" BORDER="0" WIDTH="100%">
+    <TR>
+        <TD>
+            <a href="<? echo $PHP_SELF; ?>?sortBy=ts_ID&sortOrder=<? echo $newSortOrder; ?>&startLimit=<? echo $startLimit; ?>&rows=<? echo $limitPerPage; ?>">
+                <B>Ts_ID</B>
+            </a>
+</TD>
+        <TD>
+            <a href="<? echo $PHP_SELF; ?>?sortBy=ts_nom&sortOrder=<? echo $newSortOrder; ?>&startLimit=<? echo $startLimit; ?>&rows=<? echo $limitPerPage; ?>">
+                <B>Ts_nom</B>
+            </a>
+</TD>
+        <TD>
+            <a href="<? echo $PHP_SELF; ?>?sortBy=ts_type&sortOrder=<? echo $newSortOrder; ?>&startLimit=<? echo $startLimit; ?>&rows=<? echo $limitPerPage; ?>">
+                <B>Ts_type</B>
+            </a>
+</TD>
+        <TD>
+            <a href="<? echo $PHP_SELF; ?>?sortBy=ts_localisation&sortOrder=<? echo $newSortOrder; ?>&startLimit=<? echo $startLimit; ?>&rows=<? echo $limitPerPage; ?>">
+                <B>Ts_localisation</B>
+            </a>
+</TD>
+        <TD>
+            <a href="<? echo $PHP_SELF; ?>?sortBy=ts_contact&sortOrder=<? echo $newSortOrder; ?>&startLimit=<? echo $startLimit; ?>&rows=<? echo $limitPerPage; ?>">
+                <B>Ts_contact</B>
+            </a>
+</TD>
+        <TD>
+            <a href="<? echo $PHP_SELF; ?>?sortBy=ts_lat&sortOrder=<? echo $newSortOrder; ?>&startLimit=<? echo $startLimit; ?>&rows=<? echo $limitPerPage; ?>">
+                <B>Ts_lat</B>
+            </a>
+</TD>
+        <TD>
+            <a href="<? echo $PHP_SELF; ?>?sortBy=ts_long&sortOrder=<? echo $newSortOrder; ?>&startLimit=<? echo $startLimit; ?>&rows=<? echo $limitPerPage; ?>">
+                <B>Ts_long</B>
+            </a>
+</TD>
+        <TD>
+            <a href="<? echo $PHP_SELF; ?>?sortBy=cata_ID&sortOrder=<? echo $newSortOrder; ?>&startLimit=<? echo $startLimit; ?>&rows=<? echo $limitPerPage; ?>">
+                <B>Cata_ID</B>
+            </a>
+</TD>
+        <TD>
+            <a href="<? echo $PHP_SELF; ?>?sortBy=ts_parent_ID&sortOrder=<? echo $newSortOrder; ?>&startLimit=<? echo $startLimit; ?>&rows=<? echo $limitPerPage; ?>">
+                <B>Ts_parent_ID</B>
+            </a>
+</TD>
+	<TD>
+            <a href="<? echo $PHP_SELF; ?>?sortBy=ts_active&sortOrder=<? echo $newSortOrder; ?>&startLimit=<? echo $startLimit; ?>&rows=<? echo $limitPerPage; ?>">
+                <B>Ts_active</B>
+            </a>
+</TD>
+        <TD>
+            <a href="<? echo $PHP_SELF; ?>?sortBy=ts_heure_activation&sortOrder=<? echo $newSortOrder; ?>&startLimit=<? echo $startLimit; ?>&rows=<? echo $limitPerPage; ?>">
+                <B>Ts_heure_activation</B>
+            </a>
+</TD>
+        <TD>
+            <a href="<? echo $PHP_SELF; ?>?sortBy=ts_heure_arret&sortOrder=<? echo $newSortOrder; ?>&startLimit=<? echo $startLimit; ?>&rows=<? echo $limitPerPage; ?>">
+                <B>Ts_heure_arret</B>
+            </a>
+</TD>
+        <TD>
+            <a href="<? echo $PHP_SELF; ?>?sortBy=ts_reutilisable&sortOrder=<? echo $newSortOrder; ?>&startLimit=<? echo $startLimit; ?>&rows=<? echo $limitPerPage; ?>">
+                <B>Ts_reutilisable</B>
+            </a>
+</TD>
+    </TR>
+<?
+if ($thisAction=="EnterNew")
+{
+?>
+<FORM NAME="insertForm" METHOD="POST" ACTION="<? echo $_SERVER['PHP_SELF']; ?>">
+<input type="hidden" name="action" value="Insert">
+<input type="hidden" name="thisTs_IDField" value="<? echo $thisTs_ID; ?>">
+    <TR BGCOLOR="#FF6666">
+        <TD><input type"text" name="thisTs_IDField" value=""></TD>
+        <TD><input type"text" name="thisTs_nomField" value=""></TD>
+        <TD><input type"text" name="thisTs_typeField" value=""></TD>
+        <TD><input type"text" name="thisTs_localisationField" value=""></TD>
+        <TD><input type"text" name="thisTs_contactField" value=""></TD>
+        <TD><input type"text" name="thisTs_latField" value=""></TD>
+        <TD><input type"text" name="thisTs_longField" value=""></TD>
+        <TD><input type"text" name="thisCata_IDField" value=""></TD>
+        <TD><input type"text" name="thisTs_parent_IDField" value=""></TD>
+	<TD><input type"text" name="thisTs_activeField" value=""></TD>
+        <TD><input type"text" name="thisTs_heure_activationField" value=""></TD>
+        <TD><input type"text" name="thisTs_heure_arretField" value=""></TD>
+        <TD><input type"text" name="thisTs_reutilisableField" value=""></TD>
+    <TD COLSPAN=2><input type="submit" name="Insert" Value="Insert Record"> </TD>
+    </TR>
+</FORM>
+
+<?
+}
+?>
+<?php
+    while ($i<$numberOfRows)
+    {
+
+        if (($i%2)==0) { $bgColor = "#FFFFFF"; } else { $bgColor = "#C0C0C0"; }
+
+    $thisTs_ID = MYSQL_RESULT($result,$i,"ts_ID");
+    $thisTs_nom = Security::db2str(MYSQL_RESULT($result,$i,"ts_nom"));
+    $thisTs_type = MYSQL_RESULT($result,$i,"ts_type");
+    $thisTs_localisation = Security::db2str(MYSQL_RESULT($result,$i,"ts_localisation"));
+    $thisTs_contact = MYSQL_RESULT($result,$i,"ts_contact");
+    $thisTs_lat = MYSQL_RESULT($result,$i,"ts_lat");
+    $thisTs_long = MYSQL_RESULT($result,$i,"ts_long");
+    $thisCata_ID = MYSQL_RESULT($result,$i,"cata_ID");
+    $thisTs_parent_ID = MYSQL_RESULT($result,$i,"ts_parent_ID");
+    $thisTs_active = MYSQL_RESULT($result,$i,"ts_active");
+    $thisTs_heure_activation = MYSQL_RESULT($result,$i,"ts_heure_activation");
+    $thisTs_heure_arret = MYSQL_RESULT($result,$i,"ts_heure_arret");
+    $thisTs_reutilisable = MYSQL_RESULT($result,$i,"ts_reutilisable");
+if ($thisTs_IDFromForm == $thisTs_ID)
+{
+
+?>
+<FORM NAME="editForm" METHOD="POST" ACTION="<? echo $_SERVER['PHP_SELF']; ?>">
+<input type="hidden" name="action" value="Update">
+<input type="hidden" name="thisTs_IDField" value="<? echo $thisTs_ID; ?>">
+    <TR BGCOLOR="<? echo $bgColor; ?>">
+        <TD><input type"text" name="thisTs_IDField" value="<? echo $thisTs_ID; ?>"></TD>
+        <TD><input type"text" name="thisTs_nomField" value="<? echo $thisTs_nom; ?>"></TD>
+        <TD><input type"text" name="thisTs_typeField" value="<? echo $thisTs_type; ?>"></TD>
+        <TD><input type"text" name="thisTs_localisationField" value="<? echo $thisTs_localisation; ?>"></TD>
+        <TD><input type"text" name="thisTs_contactField" value="<? echo $thisTs_contact; ?>"></TD>
+        <TD><input type"text" name="thisTs_latField" value="<? echo $thisTs_lat; ?>"></TD>
+        <TD><input type"text" name="thisTs_longField" value="<? echo $thisTs_long; ?>"></TD>
+        <TD><input type"text" name="thisCata_IDField" value="<? echo $thisCata_ID; ?>"></TD>
+        <TD><input type"text" name="thisTs_parent_IDField" value="<? echo $thisTs_parent_ID; ?>"></TD>
+	<TD><input type"text" name="thisTs_activeField" value="<? echo $thisTs_active; ?>"></TD>
+        <TD><input type"text" name="thisTs_heure_activationField" value="<? echo $thisTs_heure_activation; ?>"></TD>
+        <TD><input type"text" name="thisTs_heure_arretField" value="<? echo $thisTs_heure_arret; ?>"></TD>
+        <TD><input type"text" name="thisTs_reutilisableField" value="<? echo $thisTs_reutilisable; ?>"></TD>
+    <TD COLSPAN=2><input type="button" name="Save" Value="Save" onClick="this.form.submit();"> </TD>
+    </TR>
+</FORM>
+
+<?
+} else {
+?>
+    <TR BGCOLOR="<? echo $bgColor; ?>">
+        <TD><? echo $thisTs_ID; ?></TD>
+        <TD><? echo $thisTs_nom; ?></TD>
+        <TD><? echo $thisTs_type; ?></TD>
+        <TD><? echo $thisTs_localisation; ?></TD>
+        <TD><? echo $thisTs_contact; ?></TD>
+        <TD><? echo $thisTs_lat; ?></TD>
+        <TD><? echo $thisTs_long; ?></TD>
+        <TD><? echo $thisCata_ID; ?></TD>
+        <TD><? echo $thisTs_parent_ID; ?></TD>
+	<TD><? echo $thisTs_active; ?></TD>
+        <TD><? echo $thisTs_heure_activation; ?></TD>
+        <TD><? echo $thisTs_heure_arret; ?></TD>
+        <TD><? echo $thisTs_reutilisable; ?></TD>
+    <TD><a href="<? echo $_SERVER['PHP_SELF']; ?>?action=Edit&thisTs_IDField=<? echo $thisTs_ID; ?>">Edit</a></TD>
+    <TD><a href="<? echo $_SERVER['PHP_SELF']; ?>?action=Delete&thisTs_IDField=<? echo $thisTs_ID; ?>">Delete</a></TD>
+    </TR>
+
+<?
+}
+?>
+<?
+        $i++;
+
+    } // end while loop
+?>
+</TABLE>
+<FORM NAME="insertForm" METHOD="POST" ACTION="<? echo $_SERVER['PHP_SELF']; ?>">
+<input type="hidden" name="action" value="EnterNew">
+<input type="Submit" name="submit" value="Insert New Record">
+</FORM>
+
+
+<br>
+<?
+if ($_REQUEST['startLimit'] != "")
+{
+?>
+
+<a href="<? echo  $_SERVER['PHP_SELF']; ?>?startLimit=<? echo $previousStartLimit; ?>&limitPerPage=<? echo $limitPerPage; ?>&sortBy=<? echo $sortBy; ?>&sortOrder=<? echo $sortOrder; ?>">Previous <? echo $limitPerPage; ?> Results</a>....
+<? } ?>
+<?
+if ($numberOfRows == $limitPerPage)
+{
+?>
+<a href="<? echo $_SERVER['PHP_SELF']; ?>?startLimit=<? echo $nextStartLimit; ?>&limitPerPage=<? echo $limitPerPage; ?>&sortBy=<? echo $sortBy; ?>&sortOrder=<? echo $sortOrder; ?>">Next <? echo $limitPerPage; ?> Results</a>
+<? } ?>
+
+<br><br>
+<?
+} // end of if numberOfRows > 0
+?>
+
+<?php
+    include_once("footer.php");
+?> 

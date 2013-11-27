@@ -1,0 +1,120 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+//
+// This file is part of SAGEC67 Copyright (C) 2003-2005 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//----------------------------------------- SAGEC --------------------------------
+//
+//	programme: 		evenement_courant.php
+//	date de création: 	12/11/2004
+//	auteur:			jcb
+//	description:		Fonctionalité permise à l'administrateur
+//	version:			1.2
+//	maj le:			14/10/2004
+//
+//--------------------------------------------------------------------------------
+//
+session_start();
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+if(!$_SESSION["autorisation"]>8) header("Location:logout.php");
+require("../pma_connect.php");
+require("../pma_connexion.php");
+require '../utilitaires/requete.php';
+$langue = $_SESSION['langue'];
+$connect = Connexion(NOM,PASSE,BASE,SERVEUR);
+//
+// ENTETE
+print("<html>");
+print("<head>");
+print("<title> Evenement courant </title>");
+print("<meta name=\"author\" content=\"JCB\">");
+print("<LINK REL=stylesheet HREF=\"../pma.css\" TYPE =\"text/css\">");
+print("</head>");
+
+// CORPS
+print("<BODY>");
+print("<FORM ACTION =\"evenement_enregistre.php\" METHOD=\"GET\">");
+
+// évènement courant
+$requete = "SELECT * FROM evenement WHERE evenement_ID = '$_SESSION[evenement]'";
+$resultat = ExecRequete($requete,$connect);
+$event=mysql_fetch_array($resultat);
+
+print("<table>");
+print("<TR>");
+	print("<TD>Evènement courant</TD>");
+	print("<TD><input type=\"text\" name=\"titre\" value=\"$event[evenement_nom]\" size=\"30\"></TD>");
+	print("<TD> le <input type=\"text\" name=\"date1\" value=\"$event[evenement_date1]\" size=\"10\"></TD>");
+	print("<TD> à <input type=\"text\" name=\"heure1\" value=\"$event[evenement_heure1]\" size=\"10\"></TD>");
+	if($_SESSION['auto_sagec'])
+		print("<TD><input type=\"submit\" name=\"ok\" value=\"Modifier\"></TD>");
+print("</TR>");
+
+print("<TR>");
+	print("<TD>Plans déclenchés</TD>");
+	print("<TD>");
+		print("<table width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"5\" class=\"Style22\">");
+		print("<TR>");
+			print("<TD>Plan</TD>");
+			print("<TD>Titre</TD>");
+			print("<TD>Activé</TD>");
+			print("<TD>Levé</TD>");
+		print("</TR>");
+		$requete = 	"SELECT plan_nom,plan_courant_ID,titre,date1,date2
+					FROM plan_courant,plan
+					WHERE evenement_ID = '$_SESSION[evenement]'
+					AND plan_courant.plan_ID = plan.plan_ID
+					ORDER BY date1
+					";
+		$resultat = ExecRequete($requete,$connect);
+		while($rub=mysql_fetch_array($resultat))
+		{
+			print("<TR>");
+			//print("<TD>$rub[plan_nom]</TD>");
+			print("<TD><A HREF=\"evenement_plan.php?maj=$rub[plan_courant_ID]\">$rub[plan_nom]</A></TD>");
+			print("<TD>$rub[titre]</TD>");
+			print("<TD>$rub[date1]</TD>");
+			print("<TD>$rub[date2]</TD>");
+			print("</TR>");
+		}
+		print("</table>");
+	print("</TD>");
+print("</TR>");
+
+print("<TR>");
+	print("<TD>Nombre de victimes estimé</TD>");
+	print("<TD><input type=\"text\" name=\"victime\" value=\"$event[evenement_victime]\" size=\"30\"></TD>");
+print("</TR>");
+
+print("<TR>");
+	print("<TD>Moyens engagés</TD>");
+	print("<TD>");
+	print("<table width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"5\" class=\"Style22\">");
+	$requete="SELECT * FROM vecteur WHERE Vec_Engage = 'o' ORDER BY Vec_Type";
+	$result = ExecRequete($requete,$connect);
+	while($i = LigneSuivante($result))
+	{
+		print("<TR>");
+		//print("<TD>$i->Vec_ID</TD>");
+		print("<TD>$i->Vec_Nom</TD>");
+		print("</TR>");
+	}
+	print("</table>");
+	print("</TD>");
+print("</TR>");
+
+print("</table>");
+print("</BODY>");
+print("</FORM>");
+print("</html>");
+?>

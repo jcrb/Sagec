@@ -1,0 +1,160 @@
+8
+
+dir
+44
+file:///home/jcb/svn/sagec/wikini
+file:///home/jcb/svn/sagec
+
+
+
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c9c9d45a-3d19-0410-aca5-b5182dfb4288
+
+actions
+dir
+
+handlers
+dir
+
+setup
+dir
+
+LICENSE
+file
+
+
+
+
+2006-07-23T11:11:44.000000Z
+6ed0ffee0fe1797bfe095bfc4e6bf604
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+wakka.php
+file
+
+
+
+
+2006-07-23T11:11:44.000000Z
+6f298a7fe659b37db5f3d2158388b8e8
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+wakka.basic.css
+file
+
+
+
+
+2006-07-23T11:11:44.000000Z
+3ebdc2248c46b4e99982fc71e9971c5b
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+wakka.css
+file
+
+
+
+
+2006-07-23T11:11:44.000000Z
+2169004516953277d907669b635308f1
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+formatters
+dir
+
+INSTALL
+file
+
+
+
+
+2006-07-23T11:11:44.000000Z
+c388e63e3adf1f9ab84a004f2f5e75f6
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+COPYING
+file
+
+
+
+
+2006-07-23T11:11:44.000000Z
+94d55d512a9ba36caa9b7df079bae19f
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+wakka.config.php
+file
+
+
+
+
+2006-07-23T11:11:44.000000Z
+daaef9df267e9a9839736cb0086c835e
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+interwiki.conf
+file
+
+
+
+
+2006-07-23T11:11:44.000000Z
+48f1d649248b5dbe3348c6b49870b05e
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+README
+file
+
+
+
+
+2006-07-23T11:11:44.000000Z
+8f8d311b7bcbb4a601a5ec95802dff4e
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+index.php
+file
+
+
+
+
+2006-07-23T11:11:44.000000Z
+f710836920de7055b6574313e638e5ed
+2006-07-23T10:58:42.746403Z
+1
+jcb
+

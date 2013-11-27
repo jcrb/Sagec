@@ -1,0 +1,66 @@
+/**
+ * ppi_pmc_data.php
+ *
+ * @version $Id: lanxes.js 38 2008-02-27 21:07:19Z jcb $
+ * @package Sagec
+ * @author JCB
+ * @copyright 2007
+ */
+<?php
+require("../../pma_connect.php");
+require("../../pma_connexion.php");
+require("../../pma_requete.php");
+$connexion = Connexion(NOM,PASSE,BASE,SERVEUR);
+$requete = 	"SELECT *
+		 FROM ppi
+		 WHERE ppi_ID = 25
+		 ";
+$resultat = ExecRequete($requete,$connexion);
+$rub=mysql_fetch_array($resultat);
+	$lat = 48.597848;
+	print("var centerLatitude = ".$rub['center_lat'].";");
+	print("var centerLongitude = ".$rub['center_lng'].";");
+	print("var description = '".$rub['ppi_nom']."';");
+	//var centerLatitude = 48.597848;
+	//var centerLongitude = 7.757721;
+?>
+
+var startZoom = 15;
+var normalProj = G_NORMAL_MAP.getProjection();
+var mouseTracking;
+//var heb_ico = new GIcon(baseIcon, "../../images/logo_ath.jpg", null, "");
+var heb_ico = new GIcon(baseIcon, "../../images/logo-hopital.jpg", null, "");
+
+function helico()
+{
+	pt = new GLatLng(48.596504, 7.753102);
+	markerH = new GMarker(pt,heb_ico);
+	map.addOverlay(markerH);
+}
+
+function mouseMove(mousePt)
+{
+	if(mouseTracking)
+   {
+		mouseLatLng = mousePt;
+		var zoom = map.getZoom();
+		var oStatusDiv = document.getElementById("mouseTrack")	
+		var mousePx = normalProj.fromLatLngToPixel(mousePt, zoom);
+		oStatusDiv.innerHTML = 'Latitude:   ' + mousePt.y.toFixed(6) + '<br>Longitude: ' + mousePt.x.toFixed(6) ;
+	}
+}
+
+function analyseMenu()
+{
+	
+	var oTracking = document.getElementById('mt');
+	if(oTracking.checked) 
+	{
+    		mouseTracking = true;
+	}
+	else
+	{
+    		mouseTracking = false;
+	}
+	helico();
+}

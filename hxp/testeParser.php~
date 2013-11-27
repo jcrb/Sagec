@@ -1,0 +1,9 @@
+<?php
+/**
+* testeParser.php
+*/
+include ('xmlParser.php');
+
+$p = new xmlParser();
+$p->parse();
+?>

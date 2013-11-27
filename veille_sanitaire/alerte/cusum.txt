@@ -1,0 +1,1 @@
+Données SAU HUS hors pédiatriejour	date	affaires	moyenne	ecart-type	St	Cusum

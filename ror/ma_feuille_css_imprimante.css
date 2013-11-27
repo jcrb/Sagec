@@ -1,0 +1,24 @@
+/*
+	ma_feuille_css_imprimante.css
+*/
+
+
+body { /* Modifications : la couleur de fond de page - la police - l'unité utilisée pour la taille de la police  */
+	background-color:#fff;
+	font-family:Serif;
+	font-size:15pt;
+}
+#div1 { /* Les éléments qui ne seront pas affichés  */
+	display:none;
+}
+
+a { /* Empèche le souligné par défaut du titre h1 */
+	text-decoration:none;
+	display:none;
+}
+p { /* Modifications : alignement du texte - marges - unité des marges, police et taille de la police */
+  text-align:justify;
+  margin:2pt 1pt 6pt 0;
+  font-size:12pt;
+  color:#000;
+}

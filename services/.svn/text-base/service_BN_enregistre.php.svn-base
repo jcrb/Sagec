@@ -1,0 +1,46 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+
+// This file is part of SAGEC67 Copyright (C) 2003 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//													//
+//	programme: 		blocnote_enregistre.php							//
+//	date de création: 	18/08/2003								//
+//	auteur:			jcb									//
+//	description:		Enregistre une information textuelle					//
+//													//
+//	version:		1.4									//
+//	maj le:			08/04/2004								//
+//													//
+//---------------------------------------------------------------------------------------------------------
+session_start();
+require("../pma_connect.php");
+require("../pma_connexion.php");
+require("../pma_requete.php");
+
+if($_GET['montexte']) // pour ne pas enregistrer une phrase vide
+{
+	$connexion = Connexion(NOM,PASSE,BASE,SERVEUR);
+	$query = "INSERT INTO livrebord_service
+			VALUES('','$_SESSION[organisation]','$_GET[auteur]','$_GET[date]','$_GET[montexte]')";
+	$result = ExecRequete($query,$connexion);
+	if($_GET['copie'])
+	{
+		$query = "INSERT INTO livrebord
+			VALUES('','$_SESSION[organisation]','$_GET[auteur]','$_GET[date]','$_GET[montexte]')";
+	$result = ExecRequete($query,$connexion);
+	}
+}
+//L'instruction provoque le retour automatique vers le bloc-note
+header("Location: service_bloc_note.php");
+?>

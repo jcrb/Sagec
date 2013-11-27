@@ -1,0 +1,439 @@
+<?php
+/*
+* lanxes_data.php"
+* @version $Id$
+* @author jcb
+*/
+
+?>
+
+function newMarker2(latitude,longitude,texte,icon)
+{
+	var marker = new GMarker(new GLatLng(latitude,longitude), icon);
+	GEvent.addListener(marker,'click',
+		function(){
+			marker.openInfoWindowHtml(texte);
+		}
+	)
+	return marker;
+}
+
+function cercle2(lat,lng,rayon,color,transparence)
+{
+	var center = new GLatLng(lat,lng);
+	var circlepoints = new Array();
+	with (Math)
+	{
+		var rLat = (rayon/6378.8) * (180/PI);
+		var rLng = rLat/cos(center.lat() * (PI/180));
+		for (var a = 0 ; a < 361 ; a+=10 ) 
+		{
+			var aRad = a*(PI/180);
+			var x = center.lng() + (rLng * cos(aRad));
+			var y = center.lat() + (rLat * sin(aRad));
+			var point = new GLatLng(parseFloat(y),parseFloat(x));
+			circlepoints.push(point);
+		}
+	}
+	var couleur_trait = color;
+	var epaisseur_trait = 1;
+	var transparence_trait = 0.5;
+	var a_circle = new GPolygon(circlepoints, couleur_trait,epaisseur_trait,transparence_trait,color, transparence);
+	return a_circle;
+}
+
+var normalProj = G_NORMAL_MAP.getProjection();
+var mouseTracking;
+var circleA;
+var circleB;
+var cicleSet = false;// bool
+var circleMarker;
+var circle_acryloA;
+var circle_acryloB;
+var acrylo_circleMarker
+var cicleSet_acrylo = false;// bool
+
+var circle_ammoA;
+var circle_ammoB;
+var ammo_circleMarker
+var cicleSet_ammo = false;// bool
+
+var pcoMarker1;
+var pcoMarker2;
+var pcoMarker3;
+
+var bou_ico = new GIcon(baseIcon, "../../utilitaires/google/icons/icon16.png", null, "../../utilitaires/google/icons/icon16s.png");
+var ppd_ico = new GIcon(baseIcon, "../../utilitaires/google/icons/icon15.png", null, "../../utilitaires/google/icons/icon15s.png");
+var pma_ico   = new GIcon(baseIcon, "../../utilitaires/google/icons/icon46.png", null, "../../utilitaires/google/icons/icon46s.png");
+var pco_ico = new GIcon(baseIcon, "../../utilitaires/google/icons/icon53.png", null, "../../utilitaires/google/icons/icon53s.png");
+var heb_ico = new GIcon(baseIcon, "../../utilitaires/google/icons/icon20.png", null, "../../utilitaires/google/icons/icon20s.png");
+
+var bouclage = new Array();
+var pmas = new Array();
+var hebergement = new Array();
+var ppd = new Array();
+
+var butadiene1_ico = new GIcon(baseIcon, "../../utilitaires/google/icons/icong1.png", null, "../../utilitaires/google/icons/icon46s.png");
+butadiene1_ico.iconSize=new GSize(20,34);
+butadiene1_ico.iconAnchor=new GPoint(10,34);
+var butadiene2_ico = new GIcon(baseIcon, "../../utilitaires/google/icons/icong2.png", null, "../../utilitaires/google/icons/icon46s.png");
+butadiene2_ico.iconSize=new GSize(20,34);
+
+var btd1_lat = 48.657361;
+var btd1_lng = 7.799665;
+var btd_Bleve_rMortel = 1.215;
+var btd_Bleve_rBrule = 1.425;
+var butadiene1 = newMarker2(btd1_lat,btd1_lng,"Sphère de BUTADIENE frais<br>1241 tonnes<br>gaz liquéfié",butadiene1_ico);
+var butadiene2 = newMarker2(48.657232,7.800022,"Sphère de BUTADIENE frais<br>1241 tonnes<br>gaz liquéfié",butadiene2_ico);
+
+// acrylonitrile
+var acrylonitrile1_ico = new GIcon(baseIcon, "../../utilitaires/google/icons/iconb1.png", null, "../../utilitaires/google/icons/icon46s.png");
+acrylonitrile1_ico.iconSize=new GSize(20,34);
+acrylonitrile1_ico.iconAnchor=new GPoint(10,34);
+var acn1_lat = 48.656458;
+var acn1_lng = 7.800186;
+var acn_Bleve_rMortel = 0.05;
+var acn_Bleve_rTox = 0.5;
+var acrylonitrile1 = newMarker2(acn1_lat,acn1_lng,"Réservoirs d'ACRYLONITRILE<br>415 tonnes<br>Liquide",acrylonitrile1_ico);
+
+// Ammoniac
+var ammoniac_ico = new GIcon(baseIcon, "../../utilitaires/google/icons/orange_MarkerA.png", null, "../../utilitaires/google/icons/icon46s.png");
+ammoniac_ico.iconSize=new GSize(20,34);
+ammoniac_ico.iconAnchor=new GPoint(10,34);
+var amn1_lat = 48.655735;
+var amn1_lng = 7.800196;
+var amn_Bleve_rMortel = 0.8;
+var amn_Bleve_rTox = 1.450;
+var ammoniac = newMarker2(amn1_lat,amn1_lng,"Réservoirs d'AMMONIAC<br>7,425 tonnes<br>Gaz liquéfié",ammoniac_ico);
+
+
+
+function mouseMove(mousePt)
+{
+	if(mouseTracking)
+   {
+		mouseLatLng = mousePt;
+		var zoom = map.getZoom();
+		var oStatusDiv = document.getElementById("mouseTrack")	
+		var mousePx = normalProj.fromLatLngToPixel(mousePt, zoom);
+		oStatusDiv.innerHTML = 'Latitude:   ' + mousePt.y.toFixed(6) + '<br>Longitude: ' + mousePt.x.toFixed(6) ;
+	}
+}
+
+function butadiene(oZoneRisque)
+{
+	
+	if(oZoneRisque.checked)
+	{
+		if(cicleSet == false)
+		{
+			
+			circleA = cercle2(btd1_lat,btd1_lng,btd_Bleve_rMortel,'#ff0000',0.25);
+			map.addOverlay(circleA);
+		
+			circleB = cercle2(btd1_lat,btd1_lng,btd_Bleve_rBrule,'#ff0000',0.25);
+			map.addOverlay(circleB);
+
+			cicleSet = true;
+
+			var unPoint = new GLatLng(btd1_lat,btd1_lng);
+			var texte = "<a href='scenario1.php' TARGET='_blank'><u>Scénario 1:</u></a><br> BLEVE sur la sphère de butadiène";
+			circleMarker = createMarker(unPoint,texte,'');
+			map.addOverlay(circleMarker);
+		}
+	}
+	else if(cicleSet== true)
+	{
+		map.removeOverlay(circleA);
+		map.removeOverlay(circleB);
+		map.removeOverlay(circleMarker);
+		cicleSet = false;
+	}
+
+}
+
+function acrylonitrile(oZoneRisque2)
+{
+	
+	if(oZoneRisque2.checked)
+	{
+		if(cicleSet_acrylo == false)
+		{
+			
+			circle_acryloA = cercle2(acn1_lat,acn1_lng,acn_Bleve_rMortel,'#6699FF',0.25);
+			circle_acryloB = cercle2(acn1_lat,acn1_lng,acn_Bleve_rTox,'#6699FF',0.25);
+			map.addOverlay(circle_acryloB);
+			map.addOverlay(circle_acryloA);
+
+			var unPoint = new GLatLng(acn1_lat,acn1_lng);
+			var texte = "<a href='scenario1.php' TARGET='_blank'><u>Scénario 1:</u></a><br> Epandage d'Acrylonitrile<br>dans la cuvette de rétention";
+			acrylo_circleMarker = createMarker(unPoint,texte,'');
+			map.addOverlay(acrylo_circleMarker);
+			cicleSet_acrylo = true;
+		}
+	}
+	else if(cicleSet_acrylo== true)
+	{
+		map.removeOverlay(circle_acryloA);
+		map.removeOverlay(circle_acryloB);
+		map.removeOverlay(acrylo_circleMarker);
+		cicleSet_acrylo = false;
+	}
+
+}
+
+function fct_ammoniac(oZoneRisque3)
+{
+	
+	if(oZoneRisque3.checked)
+	{
+		if(cicleSet_ammo == false)
+		{
+			
+			circle_ammoA = cercle2(amn1_lat,amn1_lng,amn_Bleve_rMortel,'#FFCC00',0.25);
+			circle_ammoB = cercle2(amn1_lat,amn1_lng,amn_Bleve_rTox,'#FFCC00',0.25);
+			map.addOverlay(circle_ammoB);
+			map.addOverlay(circle_ammoA);
+
+			var unPoint = new GLatLng(amn1_lat,amn1_lng);
+			var texte = "<a href='scenario1.php' TARGET='_blank'><u>Scénario 1:</u></a><br>Rupture instantannée<br>du réservoir d'ammoniac";
+			ammo_circleMarker = createMarker(unPoint,texte,'');
+			map.addOverlay(ammo_circleMarker);
+			cicleSet_ammo = true;
+		}
+	}
+	else if(cicleSet_ammo== true)
+	{
+		map.removeOverlay(circle_ammoA);
+		map.removeOverlay(circle_ammoB);
+		map.removeOverlay(ammo_circleMarker);
+		cicleSet_ammo = false;
+	}
+
+}
+
+function ppd2(dessine)
+{
+	if(ppd.length < 1)
+	{
+		ppd[0] = new Array();
+		ppd[0]["nom"] = 'PPD 1';
+		ppd[0]["adresse"] = 'Parking PL raffinerie';
+		ppd[0]["lat"] = 48.664522;
+		ppd[0]["long"] = 7.761444;
+		ppd[0]["marker"] = 0;
+		ppd[1] = new Array();
+		ppd[1]["nom"] = 'PPD 2<br>Wantzenau D468';
+		ppd[1]["adresse"] = 'Parking de la gare';
+		ppd[1]["lat"] = 48.664568;
+		ppd[1]["long"] = 7.823773;
+		ppd[1]["marker"] = 0;
+		ppd[2] = new Array();
+		ppd[2]["nom"] = 'PPD 3<br>Reichstett';
+		ppd[2]["adresse"] = 'Rue de la gravière';
+		ppd[2]["lat"] = 48.644465;
+		ppd[2]["long"] = 7.761680;
+		ppd[2]["marker"] = 0;
+		ppd[3] = new Array();
+		ppd[3]["nom"] = 'PPD 4 Bischheim';
+		ppd[3]["adresse"] = 'Rue des trois maires';
+		ppd[3]["lat"] = 48.629983;
+		ppd[3]["long"] = 7.777870;
+		ppd[3]["marker"] = 0;
+		ppd[4] = new Array();
+		ppd[4]["nom"] = 'PPD 5';
+		ppd[4]["adresse"] = 'Parking du "Chalet"';
+		ppd[4]["lat"] = 48.626743;
+		ppd[4]["long"] = 7.805293;
+		ppd[4]["marker"] = 0;
+		for (var i=0;i<ppd.length;i++)
+   	{
+			unPoint = new GLatLng(ppd[i]["lat"],ppd[i]["long"]);
+			texte = "<u>"+ppd[i]["nom"]+"</u><br>" + ppd[i]["adresse"];
+			ppd[i]["marker"] = createMarker(unPoint,texte,ppd_ico);
+		}
+	}
+
+
+	if(dessine)
+	{
+		for (var i=0;i<ppd.length;i++)
+			map.addOverlay(ppd[i]["marker"]);
+   }
+   else
+   {
+   	for (var i=0;i<ppd.length;i++)
+			map.removeOverlay(ppd[i]["marker"]);
+	}
+}
+
+function pma2(dessine)
+{
+	if(pmas.length < 1)
+	{
+		pmas[0] = new Array();
+		pmas[0]["nom"] = 'PMA 1 Wantzenau';
+		pmas[0]["adresse"] = 'Gymnase, rue neuve';
+		pmas[0]["places"] = 115;
+		pmas[0]["lat"] = 48.661333;
+		pmas[0]["long"] = 7.829432;
+		pmas[0]["marker"] = 0;
+
+	// PMA 2 Wantzenau gymnase rue des vergers
+		pmas[1] = new Array();
+		pmas[1]["nom"] = 'PMA 2 Wantzenau';
+		pmas[1]["adresse"] = 'Gymnase, rue des vergers';
+		pmas[1]["places"] = 200;
+		pmas[1]["lat"] = 48.661950;
+		pmas[1]["long"] = 7.833177;
+		pmas[1]["marker"] = 0;
+
+	// PMA Hoenheim 1 rue du stade
+		pmas[2] = new Array();
+		pmas[2]["nom"] = 'PMA Hoenheim';
+		pmas[2]["adresse"] = 'Salle de sport, 1 rue du stade';
+		pmas[2]["places"] = 140;
+		pmas[2]["lat"] = 48.625243;
+		pmas[2]["long"] = 7.765950;
+		pmas[2]["marker"] = 0;
+
+	// PMA Vendenheim salle de sport
+		pmas[3] = new Array();
+		pmas[3]["nom"] = 'PMA Vendenheim';
+		pmas[3]["adresse"] = 'Salle de sport, rue des chataigners';
+		pmas[3]["places"] = 200;
+		pmas[3]["lat"] = 48.665514;
+		pmas[3]["long"] = 7.706276;
+		pmas[3]["marker"] = 0;
+
+	// PMA Mundolsheim salle de sport
+		pmas[4] = new Array();
+		pmas[4]["nom"] = 'PMA Mundolsheim';
+		pmas[4]["adresse"] = 'Salle de sport, rue du collège';
+		pmas[4]["places"] = 300;
+		pmas[4]["lat"] = 48.644840;
+		pmas[4]["long"] = 7.710557;
+		pmas[4]["marker"] = 0;
+
+	// PMA Souffelweyersheim salle de sport
+		pmas[5] = new Array();
+		pmas[5]["nom"] = 'PMA Souffelweyersheim';
+		pmas[5]["adresse"] = 'Salle de sport, rue des 7 arpents';
+		pmas[5]["places"] = 300;
+		pmas[5]["lat"] = 48.631824;
+		pmas[5]["long"] = 7.739911;
+		pmas[5]["marker"] = 0;
+
+
+		var texte="test";
+		//var pma_ico2   = new GIcon(baseIcon, "icon46.png", null, "icon46.png");
+		for (var i=0;i<pmas.length;i++)
+   	{
+			unPoint = new GLatLng(pmas[i]["lat"],pmas[i]["long"]);
+			texte = "<u>"+pmas[i]["nom"]+"</u><br>" + pmas[i]["adresse"]+"<br>" + pmas[i]["places"]+" places";
+			pmas[i]["marker"] = createMarker(unPoint,texte,pma_ico);
+		}
+	}
+
+
+	if(dessine)
+	{
+		for (var i=0;i<pmas.length;i++)
+			map.addOverlay(pmas[i]["marker"]);
+   }
+   else
+   {
+   	for (var i=0;i<pmas.length;i++)
+			map.removeOverlay(pmas[i]["marker"]);
+	}
+}
+
+function pco(dessine)
+{
+	if(!pcoMarker1)
+	{
+			var pcoPoint = new GLatLng(48.665556,7.710556);
+			pcoMarker1 = createMarker(pcoPoint,'PCO Vendenheim<br>Mairie rue Jean Holweg',pco_ico);
+			pcoPoint = new GLatLng(48.663523,7.762012);
+			pcoMarker2 = createMarker(pcoPoint,'PCO CRR<br>Raffinerie de Reischtett',pco_ico);
+			pcoPoint = new GLatLng(48.659151,7.825398);
+			pcoMarker3 = createMarker(pcoPoint,'PCO Wantzenau<br>Mairie 11-13 rue des Héros<br>03.88.59.22.59',pco_ico);
+	}
+	if(dessine)
+	{
+		map.addOverlay(pcoMarker1);
+		map.addOverlay(pcoMarker2);
+		map.addOverlay(pcoMarker3);
+	}
+	else
+	{
+		map.removeOverlay(pcoMarker1);
+		map.removeOverlay(pcoMarker2);
+		map.removeOverlay(pcoMarker3);
+	}
+}
+
+
+function analyseMenu()
+{
+	var oSau = document.getElementById('sau');
+	if(oSau.checked)
+	{
+		map.addOverlay(butadiene1);
+		map.addOverlay(butadiene2);
+	}
+	else
+	{
+		map.removeOverlay(butadiene1);
+		map.removeOverlay(butadiene2);
+	}
+
+	var oAcn = document.getElementById('acn');
+	if(oAcn.checked)
+	{
+		map.addOverlay(acrylonitrile1);
+	}
+	else
+	{
+		map.removeOverlay(acrylonitrile1);
+	}
+	
+	var oZoneRisque1 = document.getElementById('zr1');
+	butadiene(oZoneRisque1);
+
+	var oZoneRisque2 = document.getElementById('zr2');
+	acrylonitrile(oZoneRisque2);
+	
+	var oZoneRisque3 = document.getElementById('zr3');
+	fct_ammoniac(oZoneRisque3);
+	
+
+	var oPma = document.getElementById('pma');
+	if(oPma.checked)
+		pma2(true);
+	else
+		pma2(false);
+
+	var oPco = document.getElementById('pco');
+	if(oPco.checked)
+		pco(true);
+	else
+		pco(false);
+	
+	var oPpd = document.getElementById('ppd');
+	if(oPpd.checked)
+		ppd2(true);
+	else
+		ppd2(false);
+		
+	var oamn = document.getElementById('amn');
+	if(oamn.checked)
+	{
+		map.addOverlay(ammoniac);
+	}
+	else
+	{
+		map.removeOverlay(ammoniac);
+	}
+}
+

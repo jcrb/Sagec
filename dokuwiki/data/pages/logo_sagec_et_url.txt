@@ -1,0 +1,5 @@
+Pour remplacer le logo standard figurant notamment dans les onglets, rajouter dans le <head>:
+
+<code html>
+<LINK REL="SHORTCUT ICON" HREF="../images/sagec67.ico">
+</code>

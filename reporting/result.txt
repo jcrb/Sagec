@@ -1,0 +1,4 @@
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   3.500   6.000   6.667   9.500  13.000 
+[1] "variance: "
+[1] 36.33333

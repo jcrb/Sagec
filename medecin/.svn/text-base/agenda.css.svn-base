@@ -1,0 +1,51 @@
+// agenda.css
+
+table#sample {
+    background-color:#FFFFFF;
+    border: solid #000 3px;
+    width: 400px;
+}
+
+table#sample td {
+    padding: 5px;
+    border: solid #000 1px;
+}
+
+table#sample tr:hover{
+	background-color: #FFFFCC;
+	color:red
+}
+
+a {
+	font-size: 10px;
+}
+
+.data {
+    color: #000000;
+    text-align: right;
+	width: 400px;
+    //background-color: #CCCCCC;
+	font-size: 10px;
+}
+
+.toprow {
+    font-style: italic;
+    text-align: center;
+    background-color: #FFFFCC;
+	font-size: 10px;
+}
+
+.leftcol1 {
+    font-weight: bold;
+	font-size: 12px;
+    text-align: right;
+    width: 100px;
+    background-color: #CCCCCC;
+}
+.leftcol2 {
+    font-weight: normal;
+	font-size: 10px;
+    text-align: right;
+    width: 100px;
+    background-color: #CCCCCF;
+}

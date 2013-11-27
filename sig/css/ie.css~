@@ -1,0 +1,21 @@
+/**
+*	ie.css pour IE
+*/
+
+a:hover {
+  cursor: pointer;
+}
+#en-tete ul li a:active {
+  background-position: 0% -500px;
+}
+#en-tete ul li a:active span {
+  background-position: 100% -500px;
+}
+
+#en-tete {
+  width: 100%;
+}
+#en-tete ul {
+  position: relative;
+  right: -16px;
+}

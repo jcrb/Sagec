@@ -1,0 +1,20 @@
+a:6:{s:2:"id";s:25:"utilisation_du_logiciel_r";s:6:"prefix";s:0:"";s:4:"text";s:1204:"====== Utilisation du Logiciel R ======
+
+SAGEC est capable d'utiliser les possibilités du logiciel de statistique R.
+En savoir plus sur [[http://www.r-project.org/|R]]
+
+===== Prérequis =====
+
+  * R doit être installé sur la machine
+  * Il est également utile de disposer des logiciels libres suivants:
+    * ImageMagic également ([[http://www.imagemagick.org/script/command-line-options.php]]). ImageMagik permet de transformer les graphiques générés par R et notamment les rotations et changement de types: par exemple transformer .ps et .png.
+    * HtmlDoc pour certains éléments de mise en page
+
+===== Principe général =====
+
+Les données sont récupérées à partir de la base de données et transmises à R. Le traitement statistique se fait ensuite en mode Batch: les instructions de traitement en langage R sont enregistrées dans un fichier .txt. Le traitement proprement dit utilise la méthode **exec()** de PHP qui déclenche R. Les résultats sont retournés sous la forme d'un fichier texte ou .ps pour les graphes. Le programme ImageMagic est alors utilisé essentiellement pour réaliser une rotation des graphes et transformer le fichier .ps en .png.
+
+
+
+
+";s:6:"suffix";s:0:"";s:4:"date";s:10:"1261935477";s:6:"client";s:9:"127.0.0.1";}

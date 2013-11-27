@@ -1,0 +1,327 @@
+<?php
+// création d'une classe formulaire (Rigaux pp 134)
+ if (!isset ($ClasseFormulaire))
+ {
+  $ClasseFormulaire = 1;
+
+  // Classe gérant les formulaires
+
+  require ("Table.php");
+  
+class Formulaire {
+	// ---- partie privée: les variables
+	var $modeTable;		// mode table ou mode libre
+	var $orientation;	// VERTICAL ou HORIZONTAL
+	var $entetes;		// contient les entête de colonne en mode horizontal
+	var $champs;		// contient les champs en mode horizontal
+	var $nbChamps;		// nb de colonnes
+	var $nbLignes;		// nb de lignes
+	// ---- partie privée: les méthodes
+	//===================================================================================
+	// Constructeur
+	// constructeurs (doit avoir le même nom que la classe)
+	// pMethode = POST ou
+	// pAction = nom du script associé au formulaire
+	//===================================================================================
+	function Formulaire($pMethode,$pAction,$pTransfertFichier=FALSE,$pNom="Form")
+	{
+		$this->modeTable = FALSE; //
+		// mettre un attribut ENCTYPE si on transfère un fichier
+		if($pTransfertFichier)
+			$encType = "ENCTYPE = 'multipart/form-data'";
+		// Ouverture de la balise
+		echo"<LEFT><FORM METHOD='pMethode'".$encType."ACTION='$pAction' NAME='pNom'>\n";
+	}
+	//===================================================================================
+	// Ferme le formulaire		<=> à un destructeur
+	//===================================================================================
+	function fin()
+	{
+		// fin de table, au cas où une table ouverte n'a pas été fermée'
+		$this->finTable();
+		echo "</FORM></LEFT>\n";
+	}
+	//===================================================================================
+	// champINPUT
+	//===================================================================================
+	// Méthode pour créer un champ INPUT général
+	function champINPUT($pType,$pNom,$pVal,$pTaille,$pTailleMax)
+	{
+		$s = "<INPUT TYPE='$pType' NAME='$pNom'"
+			."VALUE='$pVal' SIZE='$pTaille' MAXLENGTH='$pTailleMax'>\n";
+		return $s;
+	}
+	//===================================================================================
+	// champSELECT
+	//===================================================================================
+	// Méthode pour créer un champ INPUT général
+	function champSELECT($pNom,$pListe,$pDefaut,$pTaille=1)
+	{
+		$s = "<SELECT NAME ='$pNom' SIZE = $pTaille>\n";
+		while(list($val,$libelle)=each($pListe))
+		{
+			if($val != $pDefaut)
+				$s .="<OPTION VALUE='$val'>$libelle </OPTION>\n";
+			else
+				$s .="<OPTION VALUE='$val' SELECTED>$libelle </OPTION>\n";
+		}
+		return $s .="</SELECT>\n";
+	}
+	//===================================================================================
+	// champBUTTONS		Champ CHECKBOX ou RADIO
+	//					Affiche l'intitulé et le dessin du bouton sur 2 lignes superposées
+	//					$pType Radio ou case à cocher
+	//					$pNom  nom du champ
+	//					$pListe liste des items ex. $pListe = array("homme","femme");
+	//					$pDefaut item sélectionné par défaut; le 1er = 0
+	//===================================================================================
+	// 
+    function  champBUTTONS ($pType, $pNom, $pListe, $pDefaut)
+    {
+      // Toujours afficher dans une table
+      while (list ($val, $libelle) = each ($pListe))
+      {
+       $libelles .= "<TD><B>$libelle</B></TD>";
+       if ($val == $pDefaut) $checked = "CHECKED";
+       else $checked = " ";
+       	$champs .= "<TD><INPUT TYPE='$pType' NAME='$pNom' VALUE='$val' ". " $checked> </TD>\n";
+      }
+      return  "<TABLE BORDER=0 CELLSPACING=5 CELLPADDING=2><TR>\n".$libelles ."</TR> \n<TR>".$champs."</TR></TABLE>";
+    }
+	//===================================================================================
+	// champBUTTONS2	Champ CHECKBOX ou RADIO
+	//					Affiche l'intitulé et le dessin du bouton sur la même ligne
+	//					$pType Radio ou case à cocher
+	//					$pNom  nom du champ
+	//					$pListe liste des items ex. $pListe = array("homme","femme");
+	//					$pDefaut item sélectionné par défaut; le 1er = 0
+	//===================================================================================
+	// 
+    function  champBUTTONS2 ($pType, $pNom, $pListe, $pDefaut)
+    {
+      // Toujours afficher dans une table
+      while (list ($val, $libelle) = each ($pListe))
+      {
+       $libelles .= "<TD><B>$libelle</B></TD>";
+       if ($val == $pDefaut) $checked = "CHECKED";
+       else $checked = " ";
+	   $champs .= "<TD><INPUT TYPE='$pType' NAME='$pNom' VALUE='$val' "." $checked> <B>$libelle</B> </TD>\n";
+      }
+	  return  "<TABLE BORDER=0 CELLSPACING=5 CELLPADDING=2><TR>\n".$champs."</TR></TABLE>";
+    }
+	//===================================================================================
+	// champTEXTAREA
+	//===================================================================================
+	// Champ de type texte
+    function champTEXTAREA ($pNom, $pVal, $pLig, $pCol)
+    {
+      return "<TEXTAREA NAME='$pNom' ROWS='$pLig' "
+             . "COLS='$pCol'>$pVal</TEXTAREA>\n";
+    }
+
+	//===================================================================================
+	// champForm
+	//===================================================================================
+	// Méthode pour créer un champ INPUT général
+	function champForm($pType,$pNom,$pVal,$params,$pListe=array())
+	{
+		switch($pType)
+		{
+			case "TEXT":
+			case "PASSWORD":
+			case "SUBMIT":
+			case "RESET":
+			case "FILE":
+				$taille = $param["SIZE"];
+				$tailleMax = $param["MAXLENGTH"];
+				if($tailleMax == 0)$tailleMax = $taille;
+				//appel à la méthode champInput de l'objet courant
+				$champ = $this->champINPUT($pType,$pNom,$pVal,$taille,$tailleMax);
+				break;
+			
+			case "TEXTAREA":
+				$lig = $params["ROWS"];
+				$col = $params["COLS"];
+				//appel à la méthode textAREA de l'objet courant
+				$champ = $this->champTEXTAREA($pNom,$pVal,$lig,$col);
+				break;
+				
+			case "SELECT":
+				$taille = $params["SIZE"];
+				//appel à la méthode champSELECT de l'objet courant
+				$champ = $this->champSELECT($pNom,$pListe,$pVal,$taille);
+				break;
+				
+			case "CHECKBOX":
+			case "RADIO":
+				//appel à la méthode champBUTTONS de l'objet courant
+				$champ = $this->champBUTTONS($pType,$pNom,$pListe,$pVal);
+				break;
+			case "RADIO2":
+			case "CHECKBOX2":
+				if($pType[0]=='R')$pType = "RADIO";
+				else $pType ="CHECKBOX";
+				$champ = $this->champBUTTONS2($pType,$pNom,$pListe,$pVal);
+				break;
+			
+			default:
+				echo"<B>ERREUR: $pType est un type inconnu</B>\n";
+				break;
+		}
+		return $champ;
+	}
+	//===================================================================================
+	// champLibelle
+	//===================================================================================
+	// Affichage d'un champ avec son libellé
+	function champLibelle($pLibelle,$pNom,$pVal,$pType="TEXT",$params=array(),$pListe=array())
+	{
+		// creation du champ
+		$champHTML = $this->champForm($pType,$pNom,$pVal,$params,$pListe);
+		// affichage du champ en tenant compte de la présentation
+		if($this->modeTable)
+		{
+			if($this->orientation == VERTICAL)
+			{
+				// nouvelle ligne avec libellé et champ dans 2 cellules
+				TblDebutLigne();
+				TblCellule("<B>" .$pLibelle . "</B>");
+				TblCellule($champHTML);
+				TblFinLigne();
+			}
+			else
+			{
+				// on ne peux pas afficher maintenant: on stocke dans les tableaux
+				$this->entetes[$this->nbChamps] = "<B>".$pLibelle."</B>";
+				$this->champs[$this->nbChamps] = $champHTML;
+				$this->nbChamps++;
+			}
+		}
+		else
+		{
+			// affichage simple
+			echo "$pLibelle";
+			echo $champHTML;
+		}
+	}
+	
+	// ---- partie publique: les méthodes
+	
+	//===================================================================================
+	// champMotDePasse
+	//===================================================================================
+	function champMotDePasse ($pLibelle, $pNom, $pVal, $pTaille, $pTailleMax=0)
+   	{ 
+     $this->champLibelle ($pLibelle, $pNom, $pVal, 
+                             "PASSWORD", array ("SIZE"=>$pTaille,
+                                            "MAXLENGTH"=>$pTailleMax));
+   	}
+	//===================================================================================
+	// champTexte
+	//===================================================================================
+	function champTexte($pLibelle,$pNom,$pVal,$pTaille,$pTailleMax)
+	{
+		$this->champLibelle($pLibelle,$pNom,$pVal,"TEXT",array("SIZE"=>$pTaille,"MAXLENGTH"=>$pTailleMax));
+	}
+	//===================================================================================
+	// champRadio		Affiche une série de boutons radio	
+	//					$pLibelle 	intitulé du champ
+	//					$pNom		variable qui contiendra l'item sélectionné
+	//					$pVal		item sélectionné (le 1er = 0)
+	//					$pListe		liste des valeurs à afficher (sous forme d'un array)
+	//===================================================================================
+	function champRadio($pLibelle,$pNom,$pVal,$pListe)
+	{
+		$this->champLibelle($pLibelle,$pNom,$pVal,"RADIO",array(),$pListe);
+	}
+	function champRadio2($pLibelle,$pNom,$pVal,$pListe)
+	{
+		$this->champLibelle($pLibelle,$pNom,$pVal,"RADIO2",array(),$pListe);
+	}
+	//===================================================================================
+	// champListe		Affiche une liste déroulante	
+	//					$pLibelle 	intitulé du champ
+	//					$pNom		variable qui contiendra l'item sélectionné
+	//					$pVal		item sélectionné (le 1er = 0)
+	//					$pTaille	nombre d'items visibles de la liste
+	//					$pListe		liste des valeurs à afficher (sous forme d'un array)
+	//===================================================================================
+	   function champListe ($pLibelle, $pNom, $pVal, $pTaille, $pListe)
+   	{
+     $this->champLibelle ($pLibelle, $pNom, $pVal, "SELECT",
+                           array("SIZE"=>$pTaille), $pListe);       
+   	}
+	//===================================================================================
+	// champFenetre (Zone de texte)
+	//===================================================================================
+	function champFenetre($pLibelle,$pNom,$pVal,$pLig,$pCol)
+	{
+		$this->champLibelle($pLibelle,$pNom,$pVal,"TEXTAREA",array("ROWS"=>$pLig,"COLS"=>$pCol));
+	}
+	//===================================================================================
+	// champValider
+	//===================================================================================
+	function champValider ($pLibelle, $pNom)
+   	{
+     $this->champLibelle (" ", $pNom, $pLibelle, "SUBMIT");
+   	}
+	//===================================================================================
+	// champFichier 
+	//===================================================================================
+	function champFichier ($pLibelle, $pNom, $pTaille)
+   	{
+     $this->champLibelle ($pLibelle, $pNom, "", "FILE",
+                            array ("SIZE"=>$pTaille));
+   	}
+	//===================================================================================
+	// champCache 
+	//===================================================================================
+   	function champCache ($pNom, $pValeur)
+   	{
+      echo "<INPUT TYPE=HIDDEN NAME='$pNom' VALUE=\"$pValeur\">\n";
+   	}
+
+	//===================================================================================
+	// debutTable		Début d'une table
+	//===================================================================================
+	function debutTable($pOrientation = VERTICAL,$pNbLignes=1)
+	{
+		if($pOrientation== VERTICAL)TblDebut(0);
+		$this->modeTable = TRUE;
+		$this->orientation = $pOrientation;
+		$this->nbLignes = $pNbLignes;
+		$this->nbChamps = 0;
+	}
+	//===================================================================================
+	// finTable		Début d'une table
+	//===================================================================================
+	function finTable()
+	{
+		if($this->modeTable==TRUE)
+		{
+			if($this->orientation == HORIZONTAL)
+			{
+				// affichage des libellés
+				TblDebut(0);
+				TblDebutLigne();
+				// les entêtes du tableau
+				for($i=0;$i < $this->nbChamps;$i++)
+					TblCellule($this->entetes[$i]);
+				TblFinLigne();
+				// affichage des lignes et colonnes
+				for($j=0; $j < $this->nbLignes; $j++)
+				{
+					TblDebutLigne();
+					for($i=0;$i < $this->nbChamps;$i++)
+						TblCellule($this->champs[$i]);
+					TblFinLigne();
+				}
+			}
+			TblFin();
+		}
+		$this->modeTable = FALSE;
+	}
+}
+}
+
+?>

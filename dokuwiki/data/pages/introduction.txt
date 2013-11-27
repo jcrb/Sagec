@@ -1,0 +1,26 @@
+====== Introduction ======
+
+SAGEC est un logiciel libre, diffusé sous la licence [[GNU]]. Ce logiciel a été conçu à son origine pour aider le personnel d'un CRRA à gérer les situations de crises qu'un SAMU peut rencontrer. Il repose sur le principe que beaucoup des informations pertinentes pour gérer une crise, sont connues bien avant que la crise n'éclate. SAGEC est donc d'abord un répertoire des ressources. Ces ressources peuvent se diviser en quelques chapitres:
+  - ressources matérielles
+      * capacités hospitalières
+           * capacités d'hébergement en lits et places
+           * les plateaux techniques
+      * vecteurs d'intervention et de transport
+          *  publics
+          * privés
+      * ressources projetables sur le terrain
+      * capacités d'hébergement extra-hospitalières
+  - ressources humaines
+  - les zones répertoriées
+      * entreprises à risques
+
+
+Une fois que la crise est là, il faut la gérer. SAGEC facilite cette gestion en mettant divers outils à disposition du décideur:
+  - main courante partageable
+  - une cartographie
+  - des check-listes
+
+
+
+
+

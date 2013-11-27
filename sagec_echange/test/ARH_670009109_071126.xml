@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ARH_ALSACE>
+  <ETAB_SERV>
+    <DESCSERV>
+      <id_etab>670009109</id_etab>
+    </DESCSERV>
+    <INDICATEURS>
+      <JOURNEE>
+			<SERVICE>
+	  			<jour>2006-10-23</jour>
+	  			<service_nom></service_nom>
+	  			<service_id>9700</service_id>
+	  			<UF>
+	    			<id_UF>9411</id_UF>
+	    			<nom_UF></nom_UF>
+	    			<urg>0</urg>
+	    			<urg1a>0</urg1a>
+	    			<urg75a>0</urg75a>
+	    			<hosp>0</hosp>
+	    			<uhcd>0</uhcd>
+	    			<transferts>0</transferts>
+	  			</UF>
+	  			<UF>
+	    			<id_UF>9412</id_UF>
+	    			<nom_UF></nom_UF>
+	    			<urg>0</urg>
+	    			<urg1a>0</urg1a>
+	    			<urg75a>0</urg75a>
+	    			<hosp>0</hosp>
+	    			<uhcd>0</uhcd>
+	    			<transferts>0</transferts>
+	  			</UF>
+			</SERVICE>
+			<MORTALITE>
+	  			<deces>0</deces>
+	  			<deces75a>0</deces75a>
+				</MORTALITE>
+			<SAMU>
+	  			<affaires></affaires>
+	  			<sdis></sdis>
+	  			<ambu></ambu>
+	  			<interv></interv>
+	  			<primaire></primaire>
+	  			<secondaire></secondaire>
+	 			 <conseil></conseil>
+	  			<envoi_med></envoi_med>
+	  			<tiih></tiih>
+	  			<neonat></neonat>
+			</SAMU>
+      </JOURNEE>
+    </INDICATEURS>
+    <LITS>
+      <JOURNEE />
+    </LITS>
+  </ETAB_SERV>
+</ARH_ALSACE>
+

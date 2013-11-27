@@ -1,0 +1,70 @@
+====== Ajax Prototype ======
+Bibliothèque de programmation en javascript.
+===== Biliographie =====
+
+[[http://dcabasson.developpez.com/articles/javascript/ajax/documentation-prototype-1.4.0/#L5-A-7
+]]
+===== Les fonctions de base =====
+
+==== La fonction $() ====
+
+
+ La fonction $() est un raccourci pratique pour la fonction DOM très souvent utilisée** document.getElementById()**. Tout comme la fonction DOM, celle-ci retourne l'élément dont l'id est passé en paramètre.
+
+Contrairement à la fonction DOM, celle-ci va plus loin. Vous pouvez lui passer plus d'un seul id et $() retournera un tableau (Array) des éléments requis. L'exemple ci-dessous illustre cela :
+
+<code html>
+<html>
+<head>
+<title> Page de Test </title>
+<script type='text/javascript' src="prototype-1.4.0.js"></script>
+
+<script type='text/javascript'>
+	function test1()
+	{
+		var d = $('monDiv');
+		alert(d.innerHTML);
+	}
+
+	function test2()
+	{
+		var divs = $('monDiv','monAutreDiv');
+		for(i=0; i<divs.length; i++)
+		{
+			alert(divs[i].innerHTML);
+		}
+	}
+</script>
+</head>
+
+<body>
+	<div id="monDiv">
+		<p>Ceci est un paragraphe</p>
+	</div>
+	<div id="monAutreDiv">
+		<p>Ceci est un autre paragraphe</p>
+	</div>
+
+	<input type="button" value="Test1" onclick="test1();"><br>
+	<input type="button" value="Test2" onclick="test2();"><br>
+
+</body>
+</html>
+</code>
+
+Une autre chose appréciable avec cette fonction, c'est que l'on peut aussi lui passer indifféremment l'id de l'élément ou l'élément lui-même, ce qui la rend très utile lors de la création d'autres fonctions qui acceptent également l'une ou l'autre forme de paramètres. 
+
+==== La fonction $F() ====
+ La fonction $F() est un autre raccourci appréciable. Elle retourne la valeur de n'importe quel contrôle de saisie, tel que input type='text' ou select. La fonction accepte indifféremment en argument l'id de l'élément ou l'élément lui-même. Utile pour valider un formulaire
+
+<code html>
+<script type='text/javascript'>
+	function test3()
+	{
+		alert(  $F('utilisateur')  );
+	}
+</script>
+
+<input type="text" id="utilisateur" value="Marc Assin"><br>
+<input type="button" value=Test3 onclick="test3();"><br>
+</code>

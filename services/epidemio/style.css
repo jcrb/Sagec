@@ -1,0 +1,14 @@
+/*===============================================================
+//	Feuille de style
+//=============================================================*/
+
+/* Pour incorporer cette feuille de style dans un programme, rajouter
+	dans la section <HEAD> un tag <LINK>:
+	<LINK REL = "stylesheet" TYPE = "text/css" HREF = "style.css">
+*/
+
+.nombre{text-align:right; color: red;background-color:#D0E3FA;}
+.date{text-align:right; color: black;}
+.ok{background-color:#D0E3FA;}
+.ok:hover{background-color:yellow;}
+.ligne:hover{background-color:blue;}

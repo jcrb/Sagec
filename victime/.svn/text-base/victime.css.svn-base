@@ -1,0 +1,17 @@
+// css
+
+table#table2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;
+	}
+table#table2 td {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;
+	}
+
+TABLE.A3 {
+	background-color:LightGrey;
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;
+	width: 100%;
+}
+TD.A3 {
+	background-color:LightGrey;
+}

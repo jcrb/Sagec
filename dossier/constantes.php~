@@ -1,0 +1,98 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+//
+// This file is part of SAGEC67 Copyright (C) 2003-2005 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//----------------------------------------- SAGEC --------------------------------
+//
+//	programme: 		constantes.php
+//	date de création: 	06/02/2005
+//	auteur:			jcb
+//	description:		saisies de constantes
+//	version:			1.0
+//	maj le:			06/02/2005
+//
+//--------------------------------------------------------------------------------
+//
+session_start();
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+require("../html.php");
+
+print("<HTML><HEAD><TITLE>Sauvegarde</TITLE>");
+print("<LINK REL=stylesheet HREF=\"../pma.css\" TYPE =\"text/css\"></HEAD>");
+
+print("<FORM name =\"APA\"  ACTION=\"constantes_enregistre2.php\" METHOD=\"get\">");
+print("&nbsp;<BR>");
+//--------------------------------------------- Horodatage ----------------------------------------------
+print("<fieldset class=\"time3\">");
+print("<legend> Horodatage </legend>");
+print("<table bgcolor=\"#ccccff\" width=\"75%\" border=\"1\" cellspacing=\"0\" cellpadding=\"5\" class=\"Style22\">");
+print("<TR>");
+	//$aujourdhui = date("d/m/Y");
+	$maintenant = strtotime("now");
+	//print($maintenant);
+	$date = date("Y-m-d",$maintenant);
+	print("<TD>date <input type=\"text\" name=\"date\" size=\"10\" value=$date></TD>");
+	$heure = date("H:i:s",$maintenant);
+	print("<TD>heure <input type=\"text\" name=\"heure\" size=\"10\" value=$heure></TD>");
+	print("<TD>dossier <input type=\"text\" name=\"dossier\" size=\"10\" value=$_REQUEST[dossier]></TD>");
+	print("<TD><input type=\"submit\" name=\"valider\" value=\"valider\"></TD>");
+print("</TR>");
+print("</table>");
+//--------------------------------------------- Valider -------------------------------------------------------
+//print("<table width=\"15%\">");
+//print("<TR><TD><input type=\"submit\" name=\"valider\" value=\"valider\"></TD></TR>");
+//print("</table>");
+print("</fieldset>");
+//--------------------------------------------- Etat Circulatoire ----------------------------------------------
+print("<fieldset class=\"time2\">");
+print("<legend> Constantes circulatoires </legend>");
+print("<table bgcolor=\"#ccccff\" width=\"75%\" border=\"1\" cellspacing=\"0\" cellpadding=\"5\" class=\"Style22\">");
+print("<TR>");
+	print("<TD>PA <input type=\"text\" name=\"pas\" size=\"3\"> / <input type=\"text\" name=\"pad\" size=\"3\"> mmHg</TD>");
+	print("<TD>Fc <input type=\"text\" name=\"fc\" size=\"3\" value=\"100\"></TD>");
+print("</TR>");
+print("</table>");
+print("</fieldset>");
+//--------------------------------------------- Etat Respi -----------------------------------------------------
+print("<fieldset class=\"time3\">");
+print("<legend>Constantes respiratoires</legend>");
+print("<table bgcolor=\"#ccccff\" width=\"75%\" border=\"1\" cellspacing=\"0\" cellpadding=\"5\" class=\"Style22\">");
+print("<TR>");
+	print("<TD>Fr <input type=\"text\" name=\"fr\" size=\"3\" value=\"10\">c/mn</TD>");
+	print("<TD>SaO2 <input type=\"text\" name=\"sao2\" size=\"3\" value=\"100\">%</TD>");
+	print("<TD>ETCO2 <input type=\"text\" name=\"etco2\" size=\"3\" value=\"38\">mmHg</TD>");
+print("</TR>");
+print("</table>");
+print("</fieldset>");
+//--------------------------------------------- Etat neuro -----------------------------------------------------
+print("<fieldset class=\"time3\">");
+print("<legend>Etat neurologique</legend>");
+print("<table bgcolor=\"#ccccff\" width=\"75%\" border=\"1\" cellspacing=\"0\" cellpadding=\"5\" class=\"Style22\">");
+print("<TR>");
+	print("<TD>Glasgow <input type=\"text\" name=\"glasgow\" size=\"2\" value=\"15\"></TD>");
+print("</TR>");
+print("</table>");
+print("</fieldset>");
+//--------------------------------------------- Autres -----------------------------------------------------
+print("<fieldset class=\"time3\">");
+print("<legend> Autres </legend>");
+print("<table bgcolor=\"#ccccff\" width=\"75%\" border=\"1\" cellspacing=\"0\" cellpadding=\"5\" class=\"Style22\">");
+print("<TR>");
+	print("<TD>Glycémie <input type=\"text\" name=\"gly\" size=\"2\" value=\"1\"> g/L</TD>");
+	print("<TD>Température <input type=\"text\" name=\"temp\" size=\"2\" value=\"37\"> °C</TD>");
+	print("<TD>Diurèse <input type=\"text\" name=\"diurese\" size=\"2\" value=\"0\"> ml</TD>");
+print("</TR>");
+print("</table>");
+print("</fieldset>");
+?>

@@ -1,0 +1,159 @@
+<?php
+/**
+*	hop_saisie.php
+*	mise à jour des disponibilités en lits d'un hopital
+*/
+session_start();
+$backPathToRoot = "../"; 
+include_once($backPathToRoot."dbConnection.php");
+include_once($backPathToRoot."login/init_security.php");
+include_once($backPathToRoot."date.php");
+require($backPathToRoot."interrogeBD.php");
+require($backPathToRoot."utilitaires/globals_string_lang.php");
+require $backPathToRoot."utilitairesHTML.php";
+
+$langue = $_SESSION['langue'];
+
+$hopID = $_REQUEST[hopID];
+
+print("<html>");
+print("<head><meta http-equiv=\"content-type\" content=\"text/html; charset=ISO-8859-1\">");
+print("<title> gestion des tâches </title>");
+print("<LINK REL=stylesheet HREF=\"../pma.css\" TYPE =\"text/css\">");
+print("<LINK REL = \"stylesheet\" TYPE = \"text/css\" HREF = \"../services/service.css\">");
+print("</head>");
+
+print("<form name=\"hop_saisie\" method=\"post\" action=\"hop_enregistre.php\">");
+$ok = '';
+//=============================  Sauvegarde des données  ====================================================
+if($_GET['ok'] )
+{
+	print("==> Les données ont été enregistrées <br>");
+
+}
+
+//==========================  Saisie des données  ============================================================
+print("<table width=\"100%\">");
+print('<tr>');
+	$mot = $string_lang['LISTE_SERVICE_HOPITAL'][$langue];
+	print("<td><H3>$mot</H3><br>(1) Dernières mise à jour</td>");
+	print("<td>".$string_lang['DATE'][$langue]."</td>");
+	$date=date("j/m/Y H:i:s");
+	print("<td><input type=\"text\" name=\"date\" value=\"$date\"></td>");
+	print("<td><p><a href=\"hopitaux_par_zone.php\">".$string_lang['RETOUR'][$langue]."</a></p></td>");
+print('<tr>');
+print("</table>");
+
+if($_GET[erreur])
+{
+	if($_GET[erreur]==1)
+		print("Saisie incohérente<br>");
+	$err = $_GET[id];// id du service en cause
+}
+
+print("<TABLE WIDTH=\"75%\" CLASS=\"Style22\">");
+	TblDebutLigne("A2");
+		//$modifier = $string_lang['MODIFIER'][$langue];print("<TH>$modifier</TH>");//TblCellule("$modifier");
+		$mot = $string_lang['SELECT_SERVICE'][$langue];
+		print("<TH><a href=\"hop_saisie.php?tri=service\">$mot</a></TH>");
+		$mot = $string_lang['TYPE'][$langue];
+		print("<TH><a href=\"hop_saisie.php?tri=type\">$mot</a></TH>");
+		$mot = $string_lang['LITS_AUTO'][$langue];print("<TH>$mot</TH>");
+		print("<TH> (1) </TH>");
+		$mot = $string_lang['LITS_DISPO'][$langue];print("<TH>$mot</TH>");
+		/** décommenter pour les hôpitaux français
+		$mot = $string_lang['PLACES'][$langue];print("<TH>$mot</TH>");
+		print("<TH> (1) </TH>");
+		$mot = $string_lang['PLACES_DISPO'][$langue];print("<TH>$mot</TH>");
+		*/
+		$mot = $string_lang['MAJ'][$langue];print("<TH>$mot</TH>");
+		//print("<TH>&nbsp;</TH>");
+	TblFinLigne();
+
+$requete="SELECT service.service_ID, service_nom, service_code, lits_dispo,lits_sp, date_maj, type_nom,places_dispo,places_auto
+				FROM service, lits,type_service
+				WHERE service.Hop_ID = '$hopID'
+				AND service.Priorite_Alerte <> 9
+				AND lits.service_ID = service.service_ID
+				AND service.Type_ID = type_service.Type_ID
+				ORDER BY ";
+switch($_GET['tri']){
+		case 'service':$requete.='service_nom';break;
+		case 'type':$requete.='type_nom';break;
+		default:$requete.='type_nom';break;
+	}
+	//print($requete);
+
+	$resultat = ExecRequete($requete,$connexion);
+	$n = 1; // incrémente les tabindex
+	while($i = LigneSuivante($resultat))
+	{
+		if($_style=="A5")$_style="A6";
+		else $_style="A5";
+		if($err == $i->service_ID) $_style="A1";
+		//TblDebutLigne("$_style");
+		print("<tr>");
+			print("<td>");
+				$identifiant = $i->service_ID;
+				$type = $i->Type_ID;
+				print("[".$i->service_code."] ".$i->service_nom);
+			print("</td>");
+			print("<td>");
+				$mot = $string_lang["$i->type_nom"][$langue];
+				print($mot);
+			print("</td>");
+			print("<td>");
+				print("<div align=\"right\">".$i->lits_sp."</div>");
+			print("</td>");
+			// on mémorise le nombre de lits autorisés
+			print("<input type=\"hidden\" name=\"lits_auto[]\" value=\"$i->lits_sp\">");
+			// lits dispo lors de la dernière maj
+			print("<td><div align=\"right\">$i->lits_dispo</div></td>");
+			// lits disponibles
+			print("<td>");
+				print("<input type=\"hidden\" name=\"services[]\" value=\"$i->service_ID\">");
+				print("<input type=\"text\" name=\"litsd[]\" value=\"\" size=\"3\" tabindex=\"$n\">");
+				$n++;
+			print("</td>");
+			// places autorisées
+			/**
+			print("<td>");
+				print("<div align=\"right\"> $i->places_auto </div>");
+			print("</td>");
+			// places disponibles
+			print("<td>");
+				print("<div align=\"right\"> $i->places_dispo </div>");
+			print("</td>");
+			print("<td>");
+				//print("<div align=\"right\">");
+				print("<input type=\"text\" name=\"placessd[]\" value=\"?\" size=\"3\" >");
+				//print("</div>");
+			print("</td>");
+			*/
+			// date de mise à jour
+			if($i->date_maj < 1)
+				$d = "indéterminé";
+			else
+				$d = date("j/m/Y H:i",$i->date_maj);
+			print("<td>");
+				print("<div align=\"right\"> $d </div>");
+			print("</td>");
+			$total[$i->type_nom] = $total[$i->type_nom] + $i->lits_dispo;
+
+			$voir = $string_lang['VOIR'][$langue];
+			$back = "hopital/hop_saisie.php?hopID=".$hopID;
+			/**
+			temporairement neutralisé
+			print("<td><a href=\"../services.php?ttservice=$i->service_ID&back=$back\">$voir</td>");
+			*/
+
+		print("</tr>");
+	}
+print("</TABLE>");
+
+
+
+print("<input type=\"submit\" name=\"ok\" value=\"Valider\">");
+print("</form>");
+print("</html>");
+?>

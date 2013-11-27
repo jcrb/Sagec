@@ -1,0 +1,14 @@
+====== TODO ======
+
+===== bloc-note =====
+
+  * bloc-note: suppression des messages de fonctionne pas
+
+===== Check-list =====
+
+  * faire interface de saisie des consignes pour un plan de secours
+
+===== Victime =====
+
+  * supprimer victime en masquant son affichage
+  * <del>impression liste_victime fonctionne pas</del> OK le 20/05/11 

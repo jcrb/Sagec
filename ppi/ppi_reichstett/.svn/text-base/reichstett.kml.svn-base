@@ -1,0 +1,27 @@
+/**
+* PPI Reichstett: données spécifiques
+* @version $Id$
+* @author jcb
+*/
+<?xml version="1.0" encoding="iso-8859-1"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+	<Placemark>
+		<name>Reichstett</name>
+		<description>
+			Perimetre de la rafinerie de Reichstett
+		</description>
+	</Placemark>
+	<Placemark>
+		<name>Stonehenge, England</name>
+		<description>
+			Stonehenge
+		</description>
+		<Point>
+			<coordinates>
+				-1.826752,51.179045,0 
+			</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

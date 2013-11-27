@@ -1,0 +1,4 @@
+# [SAGEC67]
+# 1 : test
+30 18 * * * wget --delete-after http://localhost/SAGEC67_v3/veille_sanitaire/create_xml.php
+# ##

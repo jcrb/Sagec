@@ -1,0 +1,56 @@
+<?php
+/**
+*	pharma.php
+*/
+require("../../pma_connect.php");
+require("../../pma_connexion.php");
+require("../../pma_requete.php");
+$connexion = Connexion(NOM,PASSE,BASE,SERVEUR);
+// indique que la réponse renvoyée sera de type text
+header("Content-Type: text/plain");
+// retourne la réponse au client
+$x1 = $_REQUEST['x1'];
+$y1 = $_REQUEST['y1'];
+$x2 = $_REQUEST['x2'];
+$y2 = $_REQUEST['y2'];
+$cible = $_REQUEST['cible'];
+switch($cible)
+{
+	case 'pharma':
+		$requete = "SELECT nom, adresse,ville,zip, tel, fax,pharmacie.long,lat FROM pharmacie
+		WHERE pharmacie.long > '$y1' AND pharmacie.long < '$y2' AND lat > '$x1' AND lat < '$x2'";
+		break;
+	case 'med':
+		$requete = "SELECT med_nom,med_adresse,med_tel,med_tel2,med_tel3,lat,lng FROM mg67
+		WHERE lng > '$y1' AND lng < '$y2' AND lat > '$x1' AND lat < '$x2'
+		AND lng > 0 AND lat >0
+		";
+		break;
+}
+$resultat = ExecRequete($requete,$connexion);
+$nbCol = mysql_num_fields($resultat);
+$debut = true;
+// écriture de la réponse  en format JSON 
+echo  "{\"".$cible."\":[";
+while($rep = mysql_fetch_array($resultat))
+{
+	if($debut)
+	{
+		echo "{";
+		$debut = false;
+	}
+	else
+	{
+		echo ",{";
+	}// end if 
+	
+	for($j = 0;$j < $nbCol;$j++)
+	{
+		$colonne = mysql_field_name($resultat,$j);
+		echo "\"".$colonne."\":\"".stripslashes($rep[$colonne])."\"";
+		if($j != $nbCol-1) echo ",";
+	}
+	echo "}";
+} // end while 
+echo "]}";
+?>

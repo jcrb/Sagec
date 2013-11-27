@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+	<title>weather.com</title>
+	<style type="text/css">
+	body { background-color: white; color: black; font-family: Sans-Serif; }
+	</style>
+</head>
+
+<body>
+
+<?php
+
+error_reporting(E_ALL);
+//error_reporting(E_NONE);
+
+include("classe_weather.php");
+//include("WeatherHTML.php");
+
+define("PARTNER_ID", "1004409465");
+define("KEY_ID", "7ddce928bdbf5560");
+
+$weather = new Weather(PARTNER_ID, KEY_ID);
+$weather->getWeather();
+$weather->afficheWeatherXML();
+$data = $weather->getWeatherXML();
+$p = new parse($data);
+
+?>
+
+</body>
+</html>

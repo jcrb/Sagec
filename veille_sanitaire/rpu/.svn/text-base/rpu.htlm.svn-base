@@ -1,0 +1,5 @@
+<form action="rpu_enregistre.php" method="post">
+<select name="mode_entree" size="1" >
+<option value="1" label="mutation"></option>
+</select>
+</form>

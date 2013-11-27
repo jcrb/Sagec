@@ -1,0 +1,63 @@
+/**
+* ppi.css
+*/
+
+tr.impaire td {
+   background-color: #eee;
+}
+tr.paire td {
+   background-color: #f0f8ff;
+}
+
+tr:hover td {
+	color:#0555FA;
+	background-color: #FFE4B5;
+}
+
+ul#menu{
+	margin: 0;
+	padding: 0;
+	font: bold 0.8em Georgia,Times,serif;
+	list-style-type:none;
+}
+
+#menu a{
+	display: block;
+	margin: 5px 0;
+	color: #FFFF00;
+	text-decoration:none;
+	line-height: 25px;
+	width: 100%;
+	background:#969696;
+}
+
+#menu a:hover{
+	color:#969696 ;
+	background:#FFFF00;
+	font: bold 1em Georgia,Times,serif;
+	line-height: 25px;
+}
+
+ul#menu_ppi{
+	margin: 0;
+	padding: 0;
+	font: 0.8em Georgia,Times,serif;
+	list-style-type:none;
+}
+
+#menu_ppi a{
+	display: block;
+	margin: 5px 0;
+	color: #0033CC;
+	text-decoration:none;
+	line-height: 25px;
+	width: 100%;
+	background:#DDDDDD;
+}
+
+#menu_ppi a:hover{
+	color:#DDDDDD ;
+	background:#0033CC;
+	font: bold 1em Georgia,Times,serif;
+	line-height: 25px;
+}

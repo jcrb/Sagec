@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+	<title>Un joli formulaire grâce aux CSS</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<link href="formstyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="document.getElementById('nom').focus()">
+	<form id="catalogue" action="" method="post">
+	<div id="formtitle">Commande de catalogue</div>
+	<div id="content">
+	<fieldset id="coordonnees">
+		<legend>Vos coordonnées</legend>
+		<p>
+			<label for="nom" title="Veuillez saisir votre nom en majuscules">Nom :</label>
+			<input type="text" id="nom" name="nom" title="Veuillez saisir votre nom en majuscules"/>
+			<span class="exemple">ex : DUPONT</span>
+		</p>
+		<p>
+			<label for="prenom">Prénom :</label>
+			<input type="text" id="prenom" name="prenom" />
+		</p>
+		<p>
+			<label for="adresse">Adresse :</label>
+			<input type="text" id="adresse" name="adresse" />
+			<a href="#" class="help" title="Notez bien votre adresse complète!"><img src="help-browser.png" alt="Notez bien votre adresse complète!" /></a>
+		</p>
+		<p>
+			<label for="codepostal">Code Postal :</label>
+			<input type="text" id="codepostal" name="codepostal" maxlength="6" size="6"/>
+		</p>
+		<p>
+			<label for="ville">Ville :</label>
+			<input type="text" id="ville" name="ville" />
+		</p>
+		<p>
+			<label for="email">E-Mail :</label>
+			<input type="text" id="email" name="email" />
+			<span class="exemple">ex : jdupont@laposte.net</span>
+		</p>
+	</fieldset>
+	<br />
+	
+	<fieldset id="infosupp">
+		<legend>Renseignements supplémentaires</legend>
+		<p>Votre âge :
+		<select id="age">
+			<option value="18" selected="selected">18-25 ans</option>
+			<option value="26">26-35 ans</option>
+			<option value="36">36-45 ans</option>
+			<option value="46">46-55 ans</option>
+			<option value="56+">56 ans et +</option>
+		</select>
+		</p>
+	</fieldset>
+	<br />
+	
+	<fieldset id="typecat">
+		<legend>Commande catalogue</legend>		
+		<p><span class="exemple">Sélectionnez le catalogue que vous souhaitez recevoir :</span><br />
+			<input type="radio" name="periode" id="ete" value="cat_ete" checked="checked" /> Catalogue printemps/été 2008<br />
+			<input type="radio" name="periode" id="hiver" value="cat_hiver" /> Catalogue automne/hiver 2008<br />		
+		</p>
+	</fieldset>
+	
+	</div>
+	<div id="formfooter">
+		<p>			
+			<input type="submit" name="BtnSubmit" id="valid" value="Valider" />
+			<input type="reset" name="BtnClear" id="annul" value="Annuler" />
+		</p>
+	</div>
+	</form>
+</body>
+
+</html>

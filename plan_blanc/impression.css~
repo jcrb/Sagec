@@ -1,0 +1,33 @@
+/**
+* impression.css
+*/
+
+// fond blanc
+body {
+	background: white;
+	font-size: 12pt;
+	}
+
+// masque le menu 
+#menu {
+	display: none;
+}
+
+//redéfinit la zone impression
+#wrapper, #content {
+	width: auto;
+	margin: 0 5%;
+	padding: 0;
+	border: 0;
+	float: none !important;
+	color: black;
+	background: transparent;
+	}
+
+div#content {
+	margin-left: 10%;
+	}
+#noprint {
+  display: none;
+}
+

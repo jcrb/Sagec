@@ -1,0 +1,60 @@
+<?php
+/**
+*	way_utilitaires.php
+*/
+$backPathToRoot = "../"; 
+include_once($backPathToRoot."login/init_security.php");
+include_once($backPathToRoot."dbConnection.php");
+
+/**
+*	Détruit les nodes appartenant au WAY donné
+*	ainsi que les enregistrements correspondants de la table way_node
+*	@param $wid identifiant du WAY dont les noeuds doivent être détruit
+*	les noeuds sont dans la table NODES
+*	La table WAY_NODE lie un noeud à un way
+*	note: le way n'est pas détruit
+*/
+function deleteNodeWay($wid)
+{
+	global $connexion;
+	$requete = "DELETE nodes.*,way_node.* FROM nodes, way_node
+					WHERE nodes.node_ID = way_node.node_ID
+					AND way_node.way_ID = '$wid'
+					";
+	return $resultat = ExecRequete($requete,$connexion);
+}
+
+/**
+*	détruit toute une zone, ses caractéristiques et les points associés
+*/
+function deleteWay($wid)
+{
+	global $connexion;
+	// destruction des noeuds associés
+	if(deleteNodeWay($wid))
+	{	
+		// destruction du way
+		$requete = "DELETE FROM way WHERE way_ID = '$wid'";
+		return $resultat = ExecRequete($requete,$connexion);
+	}
+	else return 0;
+}
+
+/**
+*	Récupère tous les points appartenants à un WAY
+*/
+function getNodes($wid)
+{
+	global $connexion;
+	$wid = 6;
+	$tableau=array();
+	$requete = "SELECT node_lat,node_lng FROM nodes,way_node WHERE nodes.node_ID = way_node.node_ID AND way_node.way_ID = '$wid'";
+	$resultat = ExecRequete($requete,$connexion);
+	while($rep = mysql_fetch_array($resultat))
+	{
+		$tableau[]= $rep[0];
+		$tableau[]= $rep[1];	}
+	$tab = implode(",\n", $tableau);
+	return $tab;
+}
+?>

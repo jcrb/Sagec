@@ -1,0 +1,86 @@
+<?php
+    include_once("header.php");
+    include_once("dbConnection.php");
+?>
+<?php
+    // Retreiving Form Elements from Form
+    $thisTs_ID = addslashes($_REQUEST['thisTs_IDField']);
+    $thisTs_nom = addslashes($_REQUEST['thisTs_nomField']);
+    $thisTs_type = addslashes($_REQUEST['org_type']);
+    $thisTs_localisation = addslashes($_REQUEST['thisTs_localisationField']);
+    $thisTs_contact = addslashes($_REQUEST['thisTs_contactField']);
+    $thisTs_lat = addslashes($_REQUEST['thisTs_latField']);
+    $thisTs_long = addslashes($_REQUEST['thisTs_longField']);
+    $thisCata_ID = addslashes($_SESSION['evenement']);
+    $thisTs_parent_ID = addslashes($_REQUEST['localisation_type']);
+	$thisTs_active = $_REQUEST['thisTs_activeField'];
+    $thisTs_heure_activation = $_REQUEST['thisTs_heure_activationField'];
+    $thisTs_heure_arret = $_REQUEST['thisTs_heure_arretField'];
+    $thisTs_reutilisable = addslashes($_REQUEST['thisTs_reutilisableField']);
+
+?>
+<?
+$sqlQuery = "INSERT INTO temp_structure (ts_ID , ts_nom , ts_type , ts_localisation , ts_contact , ts_lat , ts_long , cata_ID , ts_parent_ID , ts_active, ts_heure_activation , ts_heure_arret , ts_reutilisable ) VALUES ('' , '$thisTs_nom' , '$thisTs_type' , '$thisTs_localisation' , '$thisTs_contact' , '$thisTs_lat' , '$thisTs_long' , '$thisCata_ID' , '$thisTs_parent_ID' , '$thisTs_active','$thisTs_heure_activation' , '$thisTs_heure_arret' , '$thisTs_reutilisable' )";
+$result = MYSQL_QUERY($sqlQuery);
+
+?>
+A new record has been inserted in the database. Here is the information that has been inserted :- <br><br>
+
+<table>
+<tr height="30">
+    <td align="right"><b>Ts_ID : </b></td>
+    <td><? echo $thisTs_ID; ?></td>
+</tr>
+<tr height="30">
+    <td align="right"><b>Ts_nom : </b></td>
+    <td><? echo $thisTs_nom; ?></td>
+</tr>
+<tr height="30">
+    <td align="right"><b>Ts_type : </b></td>
+    <td><? echo $thisTs_type; ?></td>
+</tr>
+<tr height="30">
+    <td align="right"><b>Ts_localisation : </b></td>
+    <td><? echo $thisTs_localisation; ?></td>
+</tr>
+<tr height="30">
+    <td align="right"><b>Ts_contact : </b></td>
+    <td><? echo $thisTs_contact; ?></td>
+</tr>
+<tr height="30">
+    <td align="right"><b>Ts_lat : </b></td>
+    <td><? echo $thisTs_lat; ?></td>
+</tr>
+<tr height="30">
+    <td align="right"><b>Ts_long : </b></td>
+    <td><? echo $thisTs_long; ?></td>
+</tr>
+<tr height="30">
+    <td align="right"><b>Cata_ID : </b></td>
+    <td><? echo $thisCata_ID; ?></td>
+</tr>
+<tr height="30">
+    <td align="right"><b>Ts_parent_ID : </b></td>
+    <td><? echo $thisTs_parent_ID; ?></td>
+</tr>
+<tr height="30">
+    <td align="right"><b>Ts_active : </b></td>
+    <td><? echo $thisTs_active; ?></td>
+</tr>
+<tr height="30">
+    <td align="right"><b>Ts_heure_activation : </b></td>
+    <td><? echo $thisTs_heure_activation; ?></td>
+</tr>
+<tr height="30">
+    <td align="right"><b>Ts_heure_arret : </b></td>
+    <td><? echo $thisTs_heure_arret; ?></td>
+</tr>
+<tr height="30">
+    <td align="right"><b>Ts_reutilisable : </b></td>
+    <td><? echo $thisTs_reutilisable; ?></td>
+</tr>
+</table>
+
+<?php
+    include_once("footer.php");
+?> 
