@@ -1,0 +1,461 @@
+   1. function mail_attachement($to , $sujet , $message , $fichier , $typemime , $nom , $reply , $from){
+   2.  $limite = "_parties_".md5(uniqid (rand()));
+   3.   
+   4.   $mail_mime = "Date: ".date("l j F Y, G:i")."\n";
+   5.   $mail_mime .= "MIME-Version: 1.0\n";
+   6.   $mail_mime .= "Content-Type: multipart/mixed;\n";
+   7.   $mail_mime .= " boundary=\"----=$limite\"\n\n";
+   8.   
+   9.   //Le message en texte simple pour les navigateurs qui n'acceptent pas le HTML
+  10.   $texte = "This is a multi-part message in MIME format.\n";
+  11.   $texte .= "Ceci est un message est au format MIME.\n";
+  12.   $texte .= "------=$limite\n";
+  13.   $texte .= "Content-Type: text/plain; charset=\"iso-8859-1\"\n";
+  14.   $texte .= "Content-Transfer-Encoding: 7bit\n\n";
+  15.   $texte .= $message;
+  16.   $texte .= "\n\n";
+  17.   
+  18.   //le fichier
+  19.   $attachement = "------=$limite\n";
+  20.   $attachement .= "Content-Type: $typemime; name=\"$nom\"\n";
+  21.   $attachement .= "Content-Transfer-Encoding: base64\n";
+  22.   $attachement .= "Content-Disposition: attachment; filename=\"$nom\"\n\n";
+  23.   
+  24.   $fd = fopen( $fichier, "r" );
+  25.   $contenu = fread( $fd, filesize( $fichier ) );
+  26.   fclose( $fd );
+  27.   $attachement .= chunk_split(base64_encode($contenu));
+  28.   
+  29.   $attachement .= "\n\n\n------=$limite\n";
+  30.   return mail($to, $sujet, $texte.$attachement, "Reply-to: $reply\nFrom:
+  31. $from\n".$mail_mime);
+  32. }
+
+     1. // le code de la form.html
+   2.  
+   3. <form vname="FormName" action="formmail.php" method="post" enctype="multipart/form-data" name="form">
+   4. <table border="0" cellpadding="5" cellspacing="0" width="137">
+   5.     <tr>
+   6.         <td>Exp&eacute;diteur:</td>
+   7.         <td><input type="text" name="email" size="35"></td>
+   8.     </tr>
+   9.     <tr>
+  10.         <td>Sujet</td>
+  11.         <td><input type="text" name="subject" size="35"></td>
+  12.     </tr>
+  13.     <tr>
+  14.         <td>Message</td>
+  15.         <td><textarea rows="12" name="msg" cols="60"></textarea></td>
+  16.     </tr>
+  17.     <tr>
+  18.         <td>Fichier joint:</td>
+  19.         <td><input type="hidden" name="MAX_FILE_SIZE" value="100000"><input name="NomFichier" type="file" size="16"></td>
+  20.     </tr>
+  21.     <tr>
+  22.         <td>Priorit&eacute;:</td>
+  23.         <td>
+  24.             <div align="left">
+  25.                 <select name="priority" size="1">
+  26.                     <option value="1">Urgent
+  27.                     <option value="2">Haute
+  28.                     <option value="3">Moyenne
+  29.                     <option value="4">Basse
+  30.                     <option value="5">Tr&egrave;s basse
+  31.                 </select> <input type="submit" value="Envoyer"></div>
+  32.         </td>
+  33.     </tr>
+  34. </table>
+  35. </form>
+  36.  
+  37. // code de formail.php
+  38. <?
+  39. /* PARAMETRAGE DU SCRIPT */
+  40. /* ENTREZ VOTRE ADRESSE EMAIL ENTRE LES GUILLEMETS*/
+  41.  
+  42. $dest="email@email.fr";
+  43.  
+  44. $reponse=StripSlashes("Entrez ici la réponse quand une personne envoie le formulaire");
+  45.  
+  46. /* FIN DU PARAMETRAGE */
+  47.  
+  48.  
+  49. /*
+  50.  
+  51.  
+  52. Le script utilise une version de la classe Mail() développée par Leo West (lwest.free.fr)
+  53.  
+  54.  
+  55.  
+  56. DESCRIPTION
+  57.  
+  58. this class encapsulates the PHP mail() function.
+  59. implements CC, Bcc, Priority headers
+  60. */
+  61.  
+  62.  
+  63.  
+  64. class Mail
+  65. {
+  66.  
+  67.         var $sendto= array();
+  68.         var $from, $msubject;
+  69.         var $acc= array();
+  70.         var $abcc= array();
+  71.         var $aattach= array();
+  72.         var $priorities= array( '1 (Highest)', '2 (High)', '3 (Normal)', '4 (Low)', '5 (Lowest)' );
+  73.  
+  74.  
+  75. // Mail contructor
+  76.  
+  77. function Mail()
+  78. {
+  79.         $this->autoCheck( true );
+  80. }
+  81.  
+  82.  
+  83. /* autoCheck( $boolean )
+  84. * activate or desactivate the email addresses validator
+  85. * ex: autoCheck( true ) turn the validator on
+  86. * by default autoCheck feature is on
+  87. */
+  88.  
+  89. function autoCheck( $bool )
+  90. {
+  91.         if( $bool )
+  92.                 $this->checkAddress = true;
+  93.         else
+  94.                 $this->checkAddress = false;
+  95. }
+  96.  
+  97.  
+  98. /* Subject( $subject )
+  99. * define the subject line of the email
+ 100. * $subject: any valid mono-line string
+ 101. */
+ 102.  
+ 103. function Subject( $subject )
+ 104. {
+ 105.         $this->msubject = strtr( $subject, "\r\n" , " " );
+ 106. }
+ 107.  
+ 108.  
+ 109. /* From( $from )
+ 110. * set the sender of the mail
+ 111. * $from should be an email address
+ 112. */
+ 113.  
+ 114. function From( $from )
+ 115. {
+ 116.  
+ 117.         if( ! is_string($from) ) {
+ 118.                 echo "Class Mail: error, From is not a string";
+ 119.                 exit;
+ 120.         }
+ 121.         $this->from= $from;
+ 122. }
+ 123.  
+ 124.  
+ 125. /* To( $to )
+ 126. * set the To ( recipient )
+ 127. * $to : email address, accept both a single address or an array of addresses
+ 128. */
+ 129.  
+ 130. function To( $to )
+ 131. {
+ 132.  
+ 133.         // TODO : test validité sur to
+ 134.         if( is_array( $to ) )
+ 135.                 $this->sendto= $to;
+ 136.         else
+ 137.                 $this->sendto[] = $to;
+ 138.  
+ 139.         if( $this->checkAddress == true )
+ 140.                 $this->CheckAdresses( $this->sendto );
+ 141.  
+ 142. }
+ 143.  
+ 144.  
+ 145. /* Cc()
+ 146. * set the CC headers ( carbon copy )
+ 147. * $cc : email address(es), accept both array and string
+ 148. */
+ 149.  
+ 150. function Cc( $cc )
+ 151. {
+ 152.         if( is_array($cc) )
+ 153.                 $this->acc= $cc;
+ 154.         else
+ 155.                 $this->acc[]= $cc;
+ 156.  
+ 157.         if( $this->checkAddress == true )
+ 158.                 $this->CheckAdresses( $this->acc );
+ 159.  
+ 160. }
+ 161.  
+ 162.  
+ 163.  
+ 164. /* Bcc()
+ 165. * set the Bcc headers ( blank carbon copy ).
+ 166. * $bcc : email address(es), accept both array and string
+ 167. */
+ 168.  
+ 169. function Bcc( $bcc )
+ 170. {
+ 171.         if( is_array($bcc) ) {
+ 172.                 $this->abcc = $bcc;
+ 173.         } else {
+ 174.                 $this->abcc[]= $bcc;
+ 175.         }
+ 176.  
+ 177.         if( $this->checkAddress == true )
+ 178.                 $this->CheckAdresses( $this->abcc );
+ 179. }
+ 180.  
+ 181.  
+ 182. /* Body()
+ 183. * set the body of the mail ( message )
+ 184. */
+ 185.  
+ 186. function Body( $body )
+ 187. {
+ 188.         $this->body= $body;
+ 189. }
+ 190.  
+ 191.  
+ 192. /* Send()
+ 193. * fornat and send the mail
+ 194. */
+ 195.  
+ 196. function Send()
+ 197. {
+ 198.         // build the headers
+ 199.         $this->_build_headers();
+ 200.  
+ 201.         // include attached files
+ 202.         if( sizeof( $this->aattach > 0 ) ) {
+ 203.                 $this->_build_attachement();
+ 204.                 $body = $this->fullBody . $this->attachment;
+ 205.         }
+ 206.  
+ 207.         // envoie du mail aux destinataires principal
+ 208.         for( $i=0; $i< sizeof($this->sendto); $i++ ) {
+ 209.                 $res = mail($this->sendto[$i], $this->msubject,$body, $this->headers);
+ 210.                 // TODO : trmt res
+ 211.         }
+ 212.  
+ 213. }
+ 214.  
+ 215.  
+ 216. /* Organization( $org )
+ 217. * set the Organisation header
+ 218. */
+ 219.  
+ 220. function Organization( $org )
+ 221. {
+ 222.         if( trim( $org != "" ) )
+ 223.                 $this->organization= $org;
+ 224. }
+ 225.  
+ 226.  
+ 227. /* Priority( $priority )
+ 228. * set the mail priority
+ 229. * $priority : integer taken between 1 (highest) and 5 ( lowest )
+ 230. * ex: $m->Priority(1) ; => Highest
+ 231. */
+ 232.  
+ 233. function Priority( $priority )
+ 234. {
+ 235.  
+ 236.         if( ! intval( $priority ) )
+ 237.                 return false;
+ 238.  
+ 239.         if( ! isset( $this->priorities[$priority-1]) )
+ 240.                 return false;
+ 241.  
+ 242.         $this->priority= $this->priorities[$priority-1];
+ 243.  
+ 244.         return true;
+ 245.  
+ 246. }
+ 247.  
+ 248.  
+ 249. /* Attach( $filename, $filetype )
+ 250. * attach a file to the mail
+ 251. * $filename : path of the file to attach
+ 252. * $filetype : MIME-type of the file. default to 'application/x-unknown-content-type'
+ 253. * $disposition : instruct the Mailclient to display the file if possible ("inline") or always as a link ("attachment")
+ 254. * possible values are "inline", "attachment"
+ 255. */
+ 256.  
+ 257. function Attach( $filename, $filetype='application/x-unknown-content-type', $disposition = "inline" )
+ 258. {
+ 259.         // TODO : si filetype="", alors chercher dans un tablo de MT connus / extension du fichier
+ 260.         $this->aattach[] = $filename;
+ 261.         $this->actype[] = $filetype;
+ 262.         $this->adispo[] = $disposition;
+ 263. }
+ 264.  
+ 265.  
+ 266. /* Get()
+ 267. * return the whole e-mail , headers + message
+ 268. * can be used for displaying the message in plain text or logging it
+ 269. */
+ 270.  
+ 271. function Get()
+ 272. {
+ 273.         $this->_build_headers();
+ 274.         if( sizeof( $this->aattach > 0 ) ) {
+ 275.                 $this->_build_attachement();
+ 276.                 $this->body= $this->body . $this->attachment;
+ 277.         }
+ 278.         $mail = $this->headers;
+ 279.         $mail .= "\n$this->body";
+ 280.         return $mail;
+ 281. }
+ 282.  
+ 283.  
+ 284. /* ValidEmail( $email )
+ 285. * return true if email adress is ok - regex from Manuel Lemos (mlemos@acm.org)
+ 286. * $address : email address to check
+ 287. */
+ 288.  
+ 289. function ValidEmail($address)
+ 290. {
+ 291.         if( ereg( ".*<(.+)>", $address, $regs ) ) {
+ 292.                 $address = $regs[1];
+ 293.         }
+ 294.          if(ereg( "^[^@ ]+@([a-zA-Z0-9\-]+\.)+([a-zA-Z0-9\-]{2}|net|com|gov|mil|org|edu|int)\$",$address) )
+ 295.                  return true;
+ 296.          else
+ 297.                  return false;
+ 298. }
+ 299.  
+ 300.  
+ 301. /* CheckAdresses()
+ 302. * check validity of email addresses
+ 303. * if unvalid, output an error message and exit, this may be customized
+ 304. * $aad : array of emails addresses
+ 305. */
+ 306.  
+ 307. function CheckAdresses( $aad )
+ 308. {
+ 309.         for($i=0;$i< sizeof( $aad); $i++ ) {
+ 310.                 if( ! $this->ValidEmail( $aad[$i]) ) {
+ 311.                         echo "Class Mail, method Mail : invalid address $aad[$i]";
+ 312.                         exit;
+ 313.                 }
+ 314.         }
+ 315. }
+ 316.  
+ 317.  
+ 318. /********************** PRIVATE METHODS BELOW **********************************/
+ 319.  
+ 320.  
+ 321.  
+ 322. /* _build_headers()
+ 323. * [INTERNAL] build the mail headers
+ 324. */
+ 325.  
+ 326. function _build_headers()
+ 327. {
+ 328.  
+ 329.         // creation du header mail
+ 330.  
+ 331.         $this->headers= "From: $this->from\n";
+ 332.  
+ 333.         $this->to= implode( ", ", $this->sendto );
+ 334.  
+ 335.         if( count($this->acc) > 0 ) {
+ 336.                 $this->cc= implode( ", ", $this->acc );
+ 337.                 $this->headers .= "CC: $this->cc\n";
+ 338.         }
+ 339.  
+ 340.         if( count($this->abcc) > 0 ) {
+ 341.                 $this->bcc= implode( ", ", $this->abcc );
+ 342.                 $this->headers .= "BCC: $this->bcc\n";
+ 343.         }
+ 344.  
+ 345.         if( $this->organization != "" )
+ 346.                 $this->headers .= "Organization: $this->organization\n";
+ 347.  
+ 348.         if( $this->priority != "" )
+ 349.                 $this->headers .= "X-Priority: $this->priority\n";
+ 350.  
+ 351. }
+ 352.  
+ 353.  
+ 354.  
+ 355. /*
+ 356. * _build_attachement()
+ 357. * internal use only - check and encode attach file(s)
+ 358. */
+ 359. function _build_attachement()
+ 360. {
+ 361.         $this->boundary= "------------" . md5( uniqid("myboundary") ); // TODO : variable bound
+ 362.  
+ 363.         $this->headers .= "MIME-Version: 1.0\nContent-Type: multipart/mixed;\n boundary=\"$this->boundary\"\n\n";
+ 364.         $this->fullBody = "This is a multi-part message in MIME format.\n--$this->boundary\nContent-Type: text/plain; charset=us-ascii\nContent-Transfer-Encoding: 7bit\n\n" . $this->body ."\n";
+ 365.         $sep= chr(13) . chr(10);
+ 366.  
+ 367.         $ata= array();
+ 368.         $k=0;
+ 369.  
+ 370.         // for each attached file, do...
+ 371.         for( $i=0; $i < sizeof( $this->aattach); $i++ ) {
+ 372.  
+ 373.                 $filename = $this->aattach[$i];
+ 374.                 $basename = basename($filename);
+ 375.                 $ctype = $this->actype[$i]; // content-type
+ 376.                 $disposition = $this->adispo[$i];
+ 377.  
+ 378.                 if( ! file_exists( $filename) ) {
+ 379.                         echo "Class Mail, method attach : file $filename can't be found"; exit;
+ 380.                 }
+ 381.                 $subhdr= "--$this->boundary\nContent-type: $ctype;\n name=\"$basename\"\nContent-Transfer-Encoding: base64\nContent-Disposition: $disposition;\n filename=\"$basename\"\n";
+ 382.                 $ata[$k++] = $subhdr;
+ 383.                 // non encoded line length
+ 384.                 $linesz= filesize( $filename)+1;
+ 385.                 $fp= fopen( $filename, 'r' );
+ 386.                 $data= base64_encode(fread( $fp, $linesz));
+ 387.                 fclose($fp);
+ 388.                 $ata[$k++] = chunk_split( $data );
+ 389.  
+ 390. /*
+ 391. // OLD version - used in php < 3.0.6 - replaced by chunk_split()
+ 392. $deb=0; $len=76; $data_len= strlen($data);
+ 393. do {
+ 394. $ata[$k++]= substr($data,$deb,$len);
+ 395. $deb += $len;
+ 396. } while($deb < $data_len );
+ 397.  
+ 398. */
+ 399.         }
+ 400.         $this->attachment= implode($sep, $ata);
+ 401. }
+ 402.  
+ 403.  
+ 404. } // class Mail
+ 405.  
+ 406. $subject=StripSlashes($subject);
+ 407. $msg=StripSlashes($msg);
+ 408. $msg="Message depuis votre site web:
+ 409. $msg";
+ 410. $m= new Mail; // create the mail
+ 411.         $m->From( "$email" );
+ 412.         $m->To( "$dest");
+ 413.         $m->Subject( "$subject" );
+ 414.         $m->Body( $msg); // set the body
+ 415. if ($email1!="") {
+ 416.         $m->Cc( "$email1");
+ 417.     }
+ 418.         $m->Priority($priority) ;
+ 419. if ("$NomFichier_name"!="") {
+ 420.     copy("$NomFichier","../upload/$NomFichier_name");
+ 421.     $m->Attach( "../upload/$NomFichier_name", "application/octet-stream" );
+ 422.     }
+ 423.         $m->Send();
+ 424. if ("$NomFichier_name"!="") {
+ 425. Unlink("../upload/$NomFichier_name"); }
+ 426. echo "$reponse";
+ 427.  
+ 428. ?>

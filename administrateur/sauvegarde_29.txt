@@ -1,0 +1,55 @@
+Date: Friday 27 May 2011 � 17:24
+//================================= Ev�nement courant ================================
+Ev�nement courant: Rallye Alsace-France  le 0000-00-00  , � 00:00:00
+Plans d�clench�s: 
+//================================= Structures Activ�es ================================
+ - PMA Oberhaslach  localisation: Gymnase Oberhaslach  contacts: 03 88 50 99 38
+ - PMA Dow 3  localisation: Maison des sports
+1a rue du gymnase
+Herrlisheim  contacts: 03 88 96 75 67
+ - PMA Dow 2  localisation: Centre sportif, festif et de loisirs
+Rue de Lorraine - Rue de Dahlunden
+300 personnes  contacts: 
+ - PMA Dow 1  localisation: 2 rue du collège
+67410 Drusenheim
+800 personnes  contacts: 03 88 53 32 75
+ - PMA Arp  localisation: Infirmerie du PMCProximité espace Arp  contacts: 
+ - PMA Gare  localisation: Gare de Strasbourg  contacts: 
+ - PMA ERASME  localisation: Palais de la musique et des congrès  contacts: 
+ - PMA Raffinerie Reichstett  localisation: Reichstett  contacts: 
+ - PMA Entzheim  localisation: Aéroport Entzheim  contacts: 
+ - PMA Kleber  localisation: Rue fritz Kieffer  contacts: 
+ - PCO Dow  localisation: Bâtiment administratif Dow  contacts: +33 388 53 5353
+ - Mertzwiller - Salle Polyvalente  localisation: 14 rue Louis Pasteur  contacts: tel: 03 88 90 12 07
+ - PC Crise SAMU  localisation: Pole Logistique  contacts: 
+ - Bouclage 1 PPI Dow  localisation:   contacts: 
+ - Bouclage 2 PPI Dow  localisation:   contacts: 
+ - Bouclage 3 PPI Dow  localisation:   contacts: 
+ - Point Transit Dow  localisation: Parking Dow  contacts: 
+ - Mertzwiller - Mairie  localisation: 17 rue de la Liberté  contacts: tel: +33 3 88 90 30 02
+fax: +33 3 88 90 18 13
+ - Ecole maternelle Molière  localisation:   contacts: 
+ - Dépot de munitions  localisation: Zone militaire  contacts: 
+ - Maison de Retraite de Mertzwiller  localisation: 1, Rue du Docteur Albert Schweitzer
+67580 - MERTZWILLER
+Capacité totale = 44
+Hébergement Permanent = 18
+Hébergement Temporaire = 4
+Hébergement Permanent Alzheimer = 22  contacts: tel: 03 88 90 47 47
+Fax: 03 88 90 49 29
+ - Hôpital de Hautepierre  localisation:   contacts: 03 88  11 67 68
+ - SAU Ste Anne  localisation: 182 route de la Wantzenau
+67085 Strasbourg  contacts: Tél: 03 88 45 81 81
+Fax: 03 88 45 81 30
+Email:sainte-anne@ghsv.org
+Site internet :sainteanne.ghs
+ - CCOM  localisation:   contacts: 
+ - Hôpital du Neuhof  localisation:   contacts: 
+ - Hopital de la Robertsau  localisation:   contacts: 
+ - Hopital de l\'Elsau  localisation:   contacts: 
+ - Clinique Ste Anne  localisation:   contacts: 
+ - Nouvel Hôpital Civil  localisation: 03  88 11 67 68  contacts: 
+ - Mat Relais PSM  localisation:   contacts: 
+ - Mertzwiller - DZ Helico  localisation: Salle polyvalente  contacts: 
+
+//================================= Missions ================================

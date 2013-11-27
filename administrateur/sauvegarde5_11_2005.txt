@@ -1,0 +1,9 @@
+Date: samedi 05 novembre 2005 à 23:04
+//==================================== Sauvegarde du bloc-note ==================================
+
+//================================= Sauvegarde des moyens engagés ================================
+
+//================================= Sauvegarde de l'organigramme ================================
+PCF	BARTIER Jean-Claude	 (Médecin)
+SAMU_CRISE	ROBIC Steve	 (Permanencier(e))
+//======================================== Fin des données =======================================

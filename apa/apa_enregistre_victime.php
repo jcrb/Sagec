@@ -1,0 +1,141 @@
+<?php
+/**
+*	apa_enregistre_victime.php
+*/
+session_start();
+$backPathToRoot = "../"; 
+include_once($backPathToRoot."dbConnection.php");
+include_once($backPathToRoot."login/init_security.php");
+include_once($backPathToRoot."date.php");
+require($backPathToRoot."interrogeBD.php");
+
+function enregistre_gravite($connexion,$victime_ID,$gravite,$localisation_ID,$heure,$status)
+{
+	$requete="INSERT INTO victime_gravite VALUES (
+		'$victime_ID',
+		'$gravite',
+		'$localisation_ID',
+		'$heure',
+		'$status'
+		)";
+	$resultat = ExecRequete($requete,$connexion);
+	//print($requete);
+}
+
+/** -----------------------------------------------------------------------------------------
+*	enregistrement photo
+*/
+$fichier= $_FILES['photo_victime']['name'];
+$taille= $_FILES['photo_victime']['size'];
+$tmp= $_FILES['photo_victime']['tmp_name'];
+$type= $_FILES['photo_victime']['type'];
+$erreur= $_FILES['photo_victime']['error'];
+/*
+echo"Nom originel => $fichier <br />";
+echo"Taille => $taille <br />";
+echo"Adresse temporaire sur le serveur => $tmp <br />";
+echo"Type de fichier => $type <br />";
+echo"Code erreur => $erreur. <br />";
+*/
+if($erreur == 0){
+	$destination = "photos/".$_REQUEST[no_identification].".jpg";
+	//echo"nouveau nom => $destination. <br />";
+	move_uploaded_file($tmp, $destination);
+	chmod ($destination,07777);
+}
+//---------------------------------------------------------------------------------------------
+
+$victimeID = $_REQUEST[victimeID];
+
+$nom = Security::esc2Db(strtoupper($_REQUEST[nom]));
+$prenom = Security::esc2Db(strtoupper($_REQUEST[prenom]));
+$no_identification = Security::esc2Db(strtoupper($_REQUEST[no_identification]));
+$age1 = Security::esc2Db(strtoupper($_REQUEST[age1]));
+$age2 = Security::esc2Db(strtoupper($_REQUEST[age2]));
+$adresse1 = Security::esc2Db(strtoupper($_REQUEST[adresse1]));
+$adresse2 = Security::esc2Db(strtoupper($_REQUEST[adresse2]));
+$ville = Security::esc2Db(strtoupper($_REQUEST[ville]));
+$naissance = Security::esc2Db(strtoupper($_REQUEST[naissance]));
+$lesions = Security::esc2Db(strtoupper($_REQUEST[lesions]));
+$traitement = Security::esc2Db(strtoupper($_REQUEST[traitement]));
+
+$pas = Security::esc2Db(strtoupper($_REQUEST[pas]));
+$pad = Security::esc2Db(strtoupper($_REQUEST[pad]));
+$fc = Security::esc2Db(strtoupper($_REQUEST[fc]));
+$fr = Security::esc2Db(strtoupper($_REQUEST[fr]));
+$gcs = Security::esc2Db(strtoupper($_REQUEST[gcs]));
+$sat = Security::esc2Db(strtoupper($_REQUEST[sat]));
+
+//print_r($_REQUEST);
+
+if($_REQUEST['nationalite']=='') $_REQUEST['nationalite'] = 999;
+if($_REQUEST['gravite']=='') $_REQUEST['gravite'] = 11;
+
+$requete="UPDATE victime SET 	nom = '$nom',
+					prenom = '$prenom',
+					no_ordre = '$no_identification',
+					sexe = '$_REQUEST[sexe]',
+					age1 = '$age1',
+					age2 = '$age2',
+					gravite = '$_REQUEST[gravite]',
+					localisation_ID ='$_REQUEST[localisation_type]',
+					Hop_ID ='$_REQUEST[ID_hopital]',
+					service_ID ='$_REQUEST[the_service]',
+					heure_maj = '$_REQUEST[heure_courante]',
+					medicalisation_ID = '$_REQUEST[devenir]',
+					vecteur_ID = '$_REQUEST[vecteur_disponible_ID]',
+					signes = '$signes',
+					lesions = '$lesions',
+					traitement = '$traitement',
+					conta_N = '$_REQUEST[N]',
+					conta_B = '$_REQUEST[B]',
+					conta_C = '$_REQUEST[C]',
+					evenement_ID = '$_SESSION[evenement]',
+					pays_ID = '$_REQUEST[nationalite]',
+					naissance = '$naissance',
+					adresse1 = '$adresse1',
+					adresse2 = '$adresse2',
+					ville = '$ville',
+					status_ID = '$_REQUEST[status_type]'
+					";
+					if($destination)
+						$requete.=",photo = '$destination' ";
+				$requete.=" WHERE victime_ID = '$victimeID'";
+	$resultat = ExecRequete($requete,$connexion);
+
+$dateTime = mysqlDateTime2u(time());//print($_REQUEST['heure_courante']);
+$qui = $_SESSION['member_ID'];
+if($fc){
+		$requete = "INSERT INTO dm_constantes2 VALUES('$victimeID','$dateTime','1','$fc','$qui')";
+		$resultat = ExecRequete($requete,$connexion);}
+if($pas){
+		$requete = "INSERT INTO dm_constantes2 VALUES('$victimeID','$dateTime','2','$pas','$qui')";
+		$resultat = ExecRequete($requete,$connexion);}
+	if($pad){
+		$requete = "INSERT INTO dm_constantes2 VALUES('$victimeID','$dateTime','3','$pad','$qui')";
+		$resultat = ExecRequete($requete,$connexion);}
+	if($fr){
+		$requete = "INSERT INTO dm_constantes2 VALUES('$victimeID','$dateTime','4','$fr','$qui')";
+		$resultat = ExecRequete($requete,$connexion);}
+	if($sat){
+		$requete = "INSERT INTO dm_constantes2 VALUES('$victimeID','$dateTime','5','$sat','$qui')";
+		$resultat = ExecRequete($requete,$connexion);}
+	if($etco2){
+		$requete = "INSERT INTO dm_constantes2 VALUES('$victimeID','$dateTime','6','$etco2','$qui')";
+		$resultat = ExecRequete($requete,$connexion);}
+	if($diurese){
+		$requete = "INSERT INTO dm_constantes2 VALUES('$victimeID','$dateTime','7','$diurese','$qui')";
+		$resultat = ExecRequete($requete,$connexion);}
+	if($gly){
+		$requete = "INSERT INTO dm_constantes2 VALUES('$victimeID','$dateTime','8','$gly','$qui')";
+		$resultat = ExecRequete($requete,$connexion);}
+	if($gcs){
+		$requete = "INSERT INTO dm_constantes2 VALUES('$victimeID','$dateTime','9','$gcs','$qui')";
+		$resultat = ExecRequete($requete,$connexion);}
+	if($temp){
+		$requete = "INSERT INTO dm_constantes2 VALUES('$victimeID','$dateTime','10','$temp','$qui')";
+		$resultat = ExecRequete($requete,$connexion);}
+//print($requete);
+header("Location:apa_fiche_victime.php?no_victime=$no_identification");
+
+?>

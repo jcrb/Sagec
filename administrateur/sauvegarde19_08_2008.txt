@@ -1,0 +1,45 @@
+Date: Tuesday 19 August 2008 à 17:19
+//================================= Evènement courant ================================
+Evènement courant: test2  le 2008-08-08  , à 16:39:43
+Plans déclenchés: 
+//================================= Structures Activées ================================
+ - PMA PMC_VIP  localisation: Palais de la musique et des congrès  contacts: 
+ - PMA Kleber  localisation: Rue fritz Kieffer  contacts: 
+ - PMA Rhenus  localisation: Place foire des expositions
+67000 Strasbourg  contacts: 03 88 37 21 21
+
+ - PCO PMC  localisation:   contacts: 
+ - PCFixe Préfecture  localisation: Hôtel du Préfet
+Petit Broglie
+67000 Strasbourg  contacts: SIDPC
+ - Transit Caserne OUEST  localisation: Caserne ouest  contacts: 
+
+//================================= Missions ================================
+ - Regulateur CRISE: BARTIER Jean-Claude
+
+//================================= Sauvegarde des moyens engagés ================================
+12	VLM Haguenau	
+134	AMBU *	
+145	Quad 1	
+
+//================================= Sauvegarde de l'organigramme ================================
+PCF	DELPLANCQ Herv	 (M?decin)
+PCO	BARTIER Jean-Claude	 (M?decin)
+SAMU_CRISE	HENRY Sylvain	 (M?decin)
+SAMU_CRISE	TEIXERA Nathalie	 (Permanencier(e))
+SAMU_COURANT	LAENG Sylvie	 (Permanencier(e))
+SAMU_COURANT	DAURE-SIRE Muriel	 (M?decin)
+
+//========================= Répartition dans les hôpitaux =====================
+U / UA / UR / U3 / DCD 
+CHU de Strasbourg(Hautepierre) 0 / 0 / 1 / 0 / 0 /  total: 1
+CH de Thionville 0 / 0 / 1 / 0 / 0 /  total: 1
+CHU de Strasbourg (Hop. Civil) 0 / 0 / 1 / 0 / 0 /  total: 1
+0 / 0 / 0 / 0 / 0 / 
+Total Général   /  / 3 /  /  / 3 / 
+
+//==================================== Sauvegarde du bloc-note ==================================
+1	2008-08-11 21:42:45	SDIS67	VSAB Nord en position
+2	2008-08-12 22:54:24	Mader	,,,,,,,,,,,,,,,,,,,,,,
+
+//======================================== Fin des données =======================================

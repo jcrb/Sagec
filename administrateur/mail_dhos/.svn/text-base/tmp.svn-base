@@ -1,0 +1,4 @@
+# [SAGEC67]
+# 1 : ****
+30 20 * * * wget --delete-after http://localhost/sagec3/info_lits/analyse_fichiers.php
+# ##

@@ -1,0 +1,83 @@
+/**
+* apa.css
+*/
+
+fieldset
+{
+	width: 38em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 68%;
+	background-color: #ccc;
+	border: solid 1 #ccc;
+}
+
+body {
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+	}
+	
+/*positionnement de l'ensemble du formulaire*/
+#saisie 
+{	
+	width: 50%;
+	margin: auto;
+	margin-top: 2em;
+}
+
+/*style du contenu du formulaire*/
+#divAbsolute {	
+	background-color: #9999CC;
+	margin: 0; /**les bords du rectangle violet touchent les limites du body*/
+	padding: 2em;/** espace entre les bords et les éléments contenus*/
+	border: 0.2em solid #666699;	
+	position:absolute;
+}
+
+/*style du contenu du formulaire*/
+#etatcivil {	
+	background-color: #9999CC;
+	margin: 0; /**les bords du rectangle violet touchent les limites du body*/
+	padding: 2em;/** espace entre les bords et les éléments contenus*/
+	border: 0.2em solid #666699;	
+}
+
+/*alignement des zones de saisies*/	
+#etatcivil label { 
+	width: 30%;
+	float: left;
+	text-align: right;
+	line-height: 1.8em;
+	padding: 0 0.8em 0 0;
+}
+
+/*marge pour espacer les zones de saisies des exemples*/	
+#etatcivil input {
+	margin-right: 1em;
+	}
+
+/** décoration des tbleaux */
+
+#divTable {	
+	background-color: #ffffff;
+	margin: 0; /**les bords du rectangle violet touchent les limites du body*/
+	padding: 2em;/** espace entre les bords et les éléments contenus*/
+	/*border: 0.2em solid #666699;	*/
+	}
+table 
+{
+	border: medium solid #6495ed;
+	border-collapse: collapse;
+	width: 50%;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 0.8em;
+}
+
+.table-entete {
+  font-size : 12px;
+  font-family : Verdana, arial, helvetica, sans-serif;
+  color : #333333;
+  background-color : #a7ada7;
+}
+

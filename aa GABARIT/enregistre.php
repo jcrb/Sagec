@@ -1,0 +1,42 @@
+<?php
+/**
+  *	_enregistre.php
+  */
+  	session_start();
+	error_reporting(E_ERROR | E_WARNING | E_PARSE);	
+	$backPathToRoot = "../../";
+	require($backPathToRoot."dbConnection.php");
+	include($backPathToRoot."login/init_security.php");
+	require($backPathToRoot."date.php");
+  
+  $date = uDateTime2MySql(time());
+  
+  $attente = Security::esc2Db($_REQUEST['attente']);
+  $boxes = Security::esc2Db($_REQUEST['boxes']);
+  $brancard = Security::esc2Db($_REQUEST['brancard']);
+  $dechoc = Security::esc2Db($_REQUEST['dechoc']);
+  $uhtcd = Security::esc2Db($_REQUEST['uhtcd']);
+  $rem = Security::esc2Db($_REQUEST['rem']);
+  
+  $ID_utilisateur = '$_SESSION[member_id]';
+  
+  // nouveau message 
+  if($message != '' && $messageID < 1 && $auteur !=0)// ne pas enregistrer une phrase vide 
+  {
+  	$requete = "INSERT INTO pma ()
+  					VALUES (NULL)"; 
+  	$result = ExecRequete($requete,$connexion);
+  	$messageID = mysql_insert_id ();
+  }
+  else if($auteur !=0) // c'est une mise à jour 
+  {
+  	$requete = "UPDATE `pma`.`livrebord_service` SET
+  					org_ID = '$_SESSION[organisation]',
+  					
+  					WHERE ID = '$messageID'
+  					";
+  	$result = ExecRequete($requete,$connexion);
+  }
+  //print_r( $_REQUEST);
+  header("Location: message_lire.php?messageID=$messageID&info=message enregistre");
+?>

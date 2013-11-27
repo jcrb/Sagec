@@ -1,0 +1,38 @@
+Date: Thursday 18 March 2010 à 10:12
+//================================= Evènement courant ================================
+Evènement courant: JDD  le 2008-11-13  , à 19:38:05
+Plans déclenchés: 
+//================================= Structures Activées ================================
+ - PMA O'Reilly  localisation: 5 place de l'hôpital  contacts: John O'Hara
+ - PMA Bussière  localisation: ferme Bussière  contacts: 
+ - Concert  localisation: Parc Pourtalès  contacts: 
+ - Chateau de Pourtalès  localisation:   contacts: 
+ - Hôpital de Hautepierre  localisation:   contacts: 03 88  11 67 68
+ - Nouvel Hôpital Civil  localisation: 03  88 11 67 68  contacts: 
+ - Clinique de l' Orangerie  localisation:   contacts: 
+ - CTO  localisation:   contacts: 
+
+//================================= Missions ================================
+
+//================================= Sauvegarde des moyens engagés ================================
+
+//================================= Sauvegarde de l'organigramme ================================
+
+//========================= Répartition dans les hôpitaux =====================
+U / UA / UR / U3 / DCD 
+CH de Sélestat 0 / 0 / 1 / 0 / 0 /  total: 1
+0 / 0 / 0 / 0 / 0 / 
+Total Général   /  / 1 /  /  / 1 / 
+
+//==================================== Sauvegarde du bloc-note ==================================
+1	2009-08-21 10:54:22	Bartier	message test
+2	2009-08-21 10:57:48	Bartier	message ok
+3	2009-08-23 12:08:28	LUSSET	message ok
+4	2009-08-23 12:14:27	LUSSET	nouvelle réponse
+5	2009-09-25 15:18:05	Bartier	test
+6	2009-12-02 19:37:54	LUSSET	test
+7	2009-12-05 11:58:00	Bartier	Nouveau message ... b     [modifié par 2]
+8	2009-12-06 23:07:58	Bartier	reponse
+
+
+//======================================== Fin des données =======================================

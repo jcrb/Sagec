@@ -1,0 +1,64 @@
+Date: Thursday 19 March 2009 à 22:08
+//================================= Evènement courant ================================
+Evènement courant:   le   , à 
+Plans déclenchés: 
+//================================= Structures Activées ================================
+ - PMA Gutemberg  localisation:   contacts: 
+ - PMA ERASME  localisation: Palais de la musique et des congrès  contacts: 
+ - PMA Entzheim  localisation: Aéroport Entzheim  contacts: 
+ - PMA Kleber  localisation: Rue fritz Kieffer  contacts: 
+ - PMA Gare  localisation: Gare de Strasbourg  contacts: 
+ - PMA Arp  localisation: Infirmerie du PMC
+Proximité espace Arp  contacts: 
+ - PCO PMC  localisation:   contacts: 
+ - SAMU 67  localisation:   contacts: 
+ - PC Crise SAMU  localisation: Hôpitaux universitaires de Strasbourg  contacts: 
+ - PC ARH  localisation: 11 rue de l\'Université  contacts: 
+ - PCFixe Préfecture  localisation: Hôtel du Préfet
+Petit Broglie
+67000 Strasbourg  contacts: SIDPC
+ - Transit Caserne OUEST  localisation: Caserne ouest  contacts: 
+ - PS Cathédrale  localisation: Place de la Cathédrale  contacts: 
+ - Jardin des deux Rives  localisation: Frontière franco-allemande  contacts: 
+ - Palais des Rohan  localisation:   contacts: 
+ - Hollyday Inn  localisation: 20 place de Bordeaux 67000 Strasbourg, France
+170 chambres
+
+      
+  contacts: Tel : +33 (0)3 88 37 80 00 Fax : +33 (0)3 88 37 07 04
+ - Hôtel Regent Petite France  localisation: 5 rue des moulins
+67000 Strasbourg  contacts: 
+ - Sofitel Strasbourg  localisation: 4, place Saint Pierre le Jeune
+67000 Strasbourg
+  contacts: 03 88 15 49 00
+ - Hôtel Regent Contades  localisation: 8 avenue de la Liberté
+67000 Strasbourg  contacts: tel: +33 (0) 3 88 15 05 05<br>fax: +33 (0) 3 88 15 05 15<br>rc@regent-hotels.com
+ - Village Anti OTAN  localisation:   contacts: 
+ - Nouvel Hôpital Civil  localisation: 03  88 11 67 68  contacts: 
+ - Hôpital de Hautepierre  localisation:   contacts: 03 88  11 67 68
+
+//================================= Missions ================================
+
+//================================= Sauvegarde des moyens engagés ================================
+7	AR4 Strasbourg	
+
+//================================= Sauvegarde de l'organigramme ================================
+
+//========================= Répartition dans les hôpitaux =====================
+U / UA / UR / U3 / DCD 
+0 / 0 / 1 / 0 / 0 / 
+Total Général   /  / 1 /  /  / 1 / 
+
+//==================================== Sauvegarde du bloc-note ==================================
+1	2009-01-21 14:12:08	Unfall Klinik	pppp
+2	2009-02-24 19:24:57	Bartier	test2
+    
+3	2009-02-24 20:03:01	Bartier	aaaa
+4	2009-02-24 20:08:43	Bartier	www
+5	2009-02-27 11:05:07	Bartier	qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqq
+qqqqqqqqqqqqqqqq
+6	2009-03-04 22:19:51	Schaeffer	message 3
+7	2009-03-04 22:59:32	Croix Rouge Fran?ais	CRF
+
+//======================================== Fin des données =======================================

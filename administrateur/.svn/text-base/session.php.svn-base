@@ -1,0 +1,118 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+//
+// This file is part of SAGEC67 Copyright (C) 2003 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+//	programme: 		session.php
+//	date de création: 	02/07/2005
+///	auteur:			jcb
+//	description:		affiche les données du tableau SESSION
+//	version:			1.0
+//	maj le:			02/07/2005
+//
+//---------------------------------------------------------------------------------------------------------
+// ouverture d'une session
+session_start();
+// identification d'un membre
+require("../pma_connect.php");
+
+/**
+*/
+$password=crypt(trim(htmlspecialchars(addslashes($password))),"azerty");
+// fonction connexion
+require("../pma_connexion.php");	// paramètres privés de connexion
+require '../utilitaires/requete.php';
+// connexion à la base de données
+$connexion = Connexion(NOM,PASSE,BASE,SERVEUR);
+$query = "SELECT nom, prenom,organisme.org_nom, service_nom
+			FROM utilisateurs,organisme,service
+			WHERE ID_utilisateur = '$_SESSION[member_id]'
+			AND utilisateurs.org_ID = organisme.org_ID
+			AND utilisateurs.service_ID = service.service_ID
+			";
+//print($query);
+$result = ExecRequete($query,$connexion);
+$utilisateur = LigneSuivante($result);
+$oui="oui";
+$non="non";
+// Il s'agit d'un utilisateur répertorié
+if($utilisateur)
+{
+	print("<table>");
+		print("<tr>");
+			print("<td>Utilisateur courant</td>");
+			print("<td>".$utilisateur->prenom." ".$utilisateur->nom."</td>");
+		print("</tr>");
+		print("<tr>");
+			print("<td>Identifiant</td>");
+			print("<td>".$_SESSION['member_id']."</td>");
+		print("</tr>");
+		print("<tr>");
+			print("<td>Administrateur</td>");
+			if($_SESSION['member_id'])$mot=$oui;else $mot=$non;
+			print("<td>".$mot."</td>");
+		print("</tr>");
+		print("<tr>");
+			print("<td>Autorisation SAGEC</td>");
+			if($_SESSION['auto_sagec'])$mot=$oui;else $mot=$non;
+			print("<td>".$mot."</td>");
+		print("</tr>");
+		print("<tr>");
+			print("<td>Autorisation hopital</td>");
+			if($_SESSION['auto_hopital'])$mot=$oui;else $mot=$non;
+			print("<td>".$mot."</td>");
+		print("</tr>");
+		print("<tr>");
+			print("<td>Autorisation APA</td>");
+			if($_SESSION['auto_apa'])$mot=$oui;else $mot=$non;
+			print("<td>".$mot."</td>");
+		print("</tr>");
+		print("<tr>");
+			print("<td>Autorisation ARH</td>");
+			if($_SESSION['auto_arh'])$mot=$oui;else $mot=$non;
+			print("<td>".$mot."</td>");
+		print("</tr>");
+		print("<tr>");
+			print("<td>Organisation</td>");
+			print("<td>".$_SESSION["organisation"]."</td>");
+			print("<td>".$utilisateur->org_nom."</td>");
+		print("</tr>");
+		print("<tr>");
+			print("<td>Hôpital</td>");
+			print("<td>".$_SESSION["hopital"]."</td>");
+		print("</tr>");
+		print("<tr>");
+			print("<td>Service</td>");
+			print("<td>".$_SESSION["service"]."</td>");
+			print("<td>".$utilisateur->service_nom."</td>");
+		print("</tr>");
+		print("<tr>");
+			print("<td>Niveau d'autorisation</td>");
+			print("<td>".$_SESSION["autorisation"]."</td>");
+		print("</tr>");
+		print("<tr>");
+			print("<td>Evènement courant</td>");
+			print("<td>".$_SESSION["evenement"]."</td>");
+		print("</tr>");
+		print("<tr>");
+			print("<td>Langue</td>");
+			print("<td>".$_SESSION["langue"]."</td>");
+		print("</tr>");
+		print("<tr>");
+			print("<td>Modification hôpital</td>");
+			print("<td>".$_SESSION["modif_hopital"]."</td>");
+		print("</tr>");
+	print("</table>");
+}
+?>

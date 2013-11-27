@@ -1,0 +1,16 @@
+Date: mercredi 06 avril 2005 à 22:40
+//==================================== Sauvegarde du bloc-note ==================================
+47	2004-11-21 18:29:54	Bartier	vecteur_dispo.php v1.1 largeur des tables mises à 50% (et non 100%)
+48	2004-11-21 18:30:44	Bartier	sagec_version passe à 3.25
+49	2004-11-21 19:31:39	Bartier	modification de la fonction DateHeure($langue="FR") dans UtilitairesHTML pour afficher correctement la date en allemand
+50	2004-11-27 19:50:00	Bartier	Modification de la table lits: ajout de 3 champs (lits réservés, installés et fermés)
+51	2004-11-27 22:00:15	cardio CMCO	salle de KT hs
+
+//================================= Sauvegarde des moyens engagés ================================
+1	VLM1 Strasbourg	
+2	VLM2 Strasbourg	
+8	AR5 Strasbourg	
+36	VSAV Strasbourg Nord	
+
+//================================= Sauvegarde de l'organigramme ================================
+//======================================== Fin des données =======================================

@@ -1,0 +1,37 @@
+/**
+*	Routines Ajax ajax.js
+*	@source Ajax et PHP
+*/
+
+var objetXHR = createXHR();
+
+/**
+* Création d'un objet XMLHttpRequest générique
+*/
+function createXHR()
+{
+	var resultat = null;
+	try // tout navigateur sauf IE
+	{
+		resultat = new XMLHttpRequest();
+	}
+	catch(Error)
+	{
+		try // internet explorer > 5.0
+		{
+			resultat = new ActiveXObject("Msxml2.XMLHTTP");
+		}
+		catch(Error)
+		{
+			try // internet explorer 5.0
+			{
+				resultat = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			catch(Error)
+			{
+				resultat = null;
+			}
+		}
+	}
+	return resultat;
+}

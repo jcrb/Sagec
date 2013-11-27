@@ -1,0 +1,18 @@
+Date: Sunday 17 August 2008 à 20:36
+//================================= Sauvegarde des moyens engagés ================================
+12	VLM Haguenau	
+134	AMBU *	
+145	Quad 1	
+
+//================================= Sauvegarde de l'organigramme ================================
+PCF	DELPLANCQ Herv	 (M?decin)
+PCO	BARTIER Jean-Claude	 (M?decin)
+SAMU_CRISE	HENRY Sylvain	 (M?decin)
+SAMU_CRISE	TEIXERA Nathalie	 (Permanencier(e))
+SAMU_COURANT	LAENG Sylvie	 (Permanencier(e))
+SAMU_COURANT	DAURE-SIRE Muriel	 (M?decin)
+//==================================== Sauvegarde du bloc-note ==================================
+1	2008-08-11 21:42:45	SDIS67	VSAB Nord en position
+2	2008-08-12 22:54:24	Mader	,,,,,,,,,,,,,,,,,,,,,,
+
+//======================================== Fin des données =======================================

@@ -1,0 +1,54 @@
+8
+
+dir
+44
+file:///home/jcb/svn/sagec/archives
+file:///home/jcb/svn/sagec
+
+
+
+2006-07-23T10:58:42.746403Z
+1
+jcb
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c9c9d45a-3d19-0410-aca5-b5182dfb4288
+
+archive1.txt
+file
+
+
+
+
+2006-07-23T11:11:35.000000Z
+36b3ef1ef2a1a292579ece5577a8ddf7
+2006-07-23T10:58:42.746403Z
+1
+jcb
+has-props
+
+essai_archive.txt
+file
+
+
+
+
+2006-07-23T11:11:35.000000Z
+637fddd87a914d5cff5c75f227b1a25b
+2006-07-23T10:58:42.746403Z
+1
+jcb
+has-props
+

@@ -1,0 +1,297 @@
+<?php
+if (!isset($_SESSION)){
+	session_start();
+}
+
+if (!isset($BackToRoot)){
+	$BackToRoot = "../";
+}
+
+if (!isset($backPathToRoot)){
+	$backPathToRoot = "../";
+}
+
+require_once $BackToRoot."html.php";
+require_once $BackToRoot."autorisations/droits.php";
+require_once $BackToRoot."classes/dao/pool.class.php";
+//require_once $backPathToRoot."./utilitaires/db_connection.php";
+
+// autorisation d'accï¿½s ï¿½ la page
+if (!isset($_SESSION["member_login"]) || strlen(trim($_SESSION["member_login"])) == 0){
+	// aucun utilisateur n'est connectï¿½
+	header("Location: ".$backPathToRoot."logout.php");
+	return;
+}
+	
+if (!est_autorise("TEST")){	// GESTION_AUTO_UTILISA
+	// l'utilisateur n'a pas le droit d'accï¿½der ï¿½ la page
+	header("Location: ".$backPathToRoot."login2.php");
+	return;
+}
+
+// crï¿½ation du menu 
+$gestion_droits = "";
+if (est_autorise("GESTION_AUTORISATION"))
+	$gestion_droits = "<a href='".$backPathToRoot."autorisations/gestion_droits.php'>Gestion des autorisations</a> |";
+	 
+$menu = $gestion_droits."<a href='".$backPathToRoot."utilisateurs_liste.php'>Menu principal</a> | <a href='".$backPathToRoot."logout.php' target='_parent'>Quitter</a>";
+
+// mise ï¿½ jour des droits utilisateurs
+$req_login = null;
+if (isset($_REQUEST["login"])){
+	$req_login = $_REQUEST["login"];
+}
+$req_id_ajouter = null; 
+if (isset($_REQUEST["ajouter"])){
+	$req_id_ajouter = $_REQUEST["ajouter"];
+}
+$req_id_suppr = null;
+if (isset($_REQUEST["supprimer"])){
+	$req_id_suppr = $_REQUEST["supprimer"];
+}
+
+$vConnexion = Dao_Pool::getConnexionPdo(); // lï¿½ve un PDOException s'il y a un problï¿½me ï¿½ la connexion
+
+// recherche des informations l'utilisateur
+$utilisateur_id = "";
+$utilisateur_nom = "";
+$utilisateur_prenom = "";
+if (isset($req_login) && strlen($req_login)>0){
+	$vPreparedStatment = $vConnexion->prepare("SELECT id_utilisateur, nom, prenom FROM utilisateurs WHERE login = ?");
+	$vPreparedStatment->execute(array($req_login));
+	
+	if ($vLigneObj = $vPreparedStatment->fetch(PDO::FETCH_OBJ)){
+		// utilisateur trouvï¿½
+		$utilisateur_id = $vLigneObj->id_utilisateur;
+		$utilisateur_nom = $vLigneObj->nom;
+		$utilisateur_prenom = $vLigneObj->prenom;
+	}
+}
+
+$vConnexion = null;
+$vConnexion = Dao_Pool::getConnexionPdo(); // lï¿½ve un PDOException s'il y a un problï¿½me ï¿½ la connexion
+
+// recherche des droits de "l'administrateur"
+//var_dump($_SESSION);
+$tbl_droits_adm = array();
+
+$login_adm = $_SESSION["member_login"];
+
+$vPreparedStatment = $vConnexion->prepare("SELECT id_utilisateur, admin FROM utilisateurs where login=?");
+$vPreparedStatment->execute(array($login_adm));
+
+$is_admin = false;
+$id_admin = "";
+if ($vLigneObj = $vPreparedStatment->fetch(PDO::FETCH_OBJ)){
+	$id_admin = $vLigneObj->id_utilisateur;
+	$is_admin = $vLigneObj->admin == "1";
+}
+
+$vConnexion = null;
+$vConnexion = Dao_Pool::getConnexionPdo(); // lï¿½ve un PDOException s'il y a un problï¿½me ï¿½ la connexion
+	
+if ($is_admin){
+	// l'administrateur peut donner tous les droits
+	$vPreparedStatment = $vConnexion->prepare("SELECT id_droit, description FROM droits WHERE supprime=0");
+	$vPreparedStatment->execute();
+}
+else{
+	$vPreparedStatment = $vConnexion->prepare("SELECT D.id_droit, D.description 
+						FROM utilisateurs U, utilisateurs_droits UD, droits D
+						WHERE 
+							login = ? 
+							AND U.id_utilisateur = UD.id_utilisateur 
+							AND UD.id_droits = D.id_droit
+							AND supprime = 0
+							AND propagation = 1");
+	$vPreparedStatment->execute(array($login_adm));
+}
+
+$cpt =0;
+while ($vLigneObj = $vPreparedStatment->fetch(PDO::FETCH_OBJ)){
+	$tbl_droits_adm[$cpt][0] = $vLigneObj->id_droit;
+	$tbl_droits_adm[$cpt][1] = $vLigneObj->description;
+	$cpt ++;
+}
+
+if (isset($utilisateur_id) && strlen($utilisateur_id)>0 && isset($req_id_ajouter) && strlen($req_id_ajouter)){
+	// ajout de droits
+	// verification des droits de l'administrateur
+	$found = false;	
+	foreach	($tbl_droits_adm as $row){
+		$found = $found || ($row[0] == $req_id_ajouter);
+	}
+
+	// ajout du droits dans la table
+	if ($found){
+		$vPreparedStatment = $vConnexion->prepare("INSERT INTO utilisateurs_droits (id_utilisateur, id_droits) VALUES (?, ?)");
+		$vPreparedStatment->execute(array($utilisateur_id, $req_id_ajouter));
+	}
+}
+
+if (isset($utilisateur_id) && strlen($utilisateur_id)>0 && isset($req_id_suppr) && strlen($req_id_suppr)){
+	// suppresion de droits
+	
+	// vï¿½rification des droits de l'administrateur
+	$found = false;	
+	foreach	($tbl_droits_adm as $row){
+		$found = $found || ($row[0] == $req_id_suppr);
+	}
+	
+	// suppression du droit de la table
+	if ($found){
+		$vPreparedStatment = $vConnexion->prepare("DELETE FROM utilisateurs_droits WHERE id_utilisateur=? AND id_droits=?");
+		$vPreparedStatment->execute(array($utilisateur_id, $req_id_suppr));
+	}
+}
+
+// droits de l'utilisateur
+$vListeDroitsUtilisateur = array();
+if (isset($req_login) && strlen($req_login)>0) {
+	$vPreparedStatment = $vConnexion->prepare("SELECT D.id_droit, D.description 
+						FROM utilisateurs U, utilisateurs_droits UD, droits D
+						WHERE 
+							login = ? 
+							AND U.id_utilisateur = UD.id_utilisateur 
+							AND UD.id_droits = D.id_droit
+							AND D.supprime=0");
+	$vPreparedStatment->execute(array($req_login));
+	
+	while ($vLigneObj = $vPreparedStatment->fetch(PDO::FETCH_OBJ)){
+		$vListeDroitsUtilisateur[$vLigneObj->id_droit] = $vLigneObj->description;
+	}
+}
+
+// droit que l'administrateur peu encore donner
+$tbl_droits_adm_donner = array();
+
+if ($is_admin){
+	// l'administrateur peut donner tous les droits
+	$vPreparedStatment = $vConnexion->prepare("SELECT id_droit, description 
+						FROM droits 
+						WHERE supprime=0
+							AND id_droit NOT IN (
+								SELECT D.id_droit 
+								FROM utilisateurs U, utilisateurs_droits UD, droits D
+								WHERE 
+									login = ? 
+									AND U.id_utilisateur = UD.id_utilisateur 
+									AND UD.id_droits = D.id_droit
+									AND D.supprime=0
+							)");
+	$vPreparedStatment->execute(array($req_login));
+}
+else {
+	$vPreparedStatment = $vConnexion->prepare("SELECT D.id_droit, D.description 
+						FROM utilisateurs U, utilisateurs_droits UD, droits D
+						WHERE 
+							login='".$login_adm."' 
+							AND U.id_utilisateur = UD.id_utilisateur 
+							AND UD.id_droits = D.id_droit
+							AND supprime = 0
+							AND propagation = 1
+							AND id_droit NOT IN (
+								SELECT D.id_droit 
+								FROM utilisateurs U, utilisateurs_droits UD, droits D
+								WHERE 
+									login='".$req_login."' 
+									AND U.id_utilisateur = UD.id_utilisateur 
+									AND UD.id_droits = D.id_droit
+									AND D.supprime=0
+							)");
+	$vPreparedStatment->execute(array($req_login));
+}
+
+$cpt =0;
+while ($vLigneObj = $vPreparedStatment->fetch(PDO::FETCH_OBJ)){
+	$tbl_droits_adm_donner[$cpt][0] = $vLigneObj->id_droit;
+	$tbl_droits_adm_donner[$cpt][1] = $vLigneObj->description;
+	$cpt ++;
+}
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Autorisation - création des autorisations</title>
+		<link rel="stylesheet" type="text/css" href="./../../css/entete_gris.css" />
+		<link rel="stylesheet" type="text/css" href="./../../css/page_gris.css" />
+	</head>
+	
+	<body>
+		<!-- EntÃªte SAGEC -->
+		<?php entete_sagec_css("Affectation des autorisations", "center", $menu, $backPathToRoot); ?>
+		<br/><br/>
+		
+		<form action="gestion_droits_utilisateurs.php" method="post">
+		
+			<!-- Ajout d'une autorisation -->
+			<center>
+				<table class="table_formulaire" width="50%">
+					<tr>
+						<td colspan="4" class="table_titre">Utilisateur</td>
+					</tr>
+					<tr>
+						<td>Nom:</td>
+						<td><input type="text" name="nom" id="nom" value="<?php echo $utilisateur_nom ?>" /></td>
+						<td>Prénom:</td>
+						<td><label id="lb_prenom"><?php echo $utilisateur_prenom ?></label> </td>
+					</tr>
+					<tr>
+						<td>Login: </td>
+						<td><input type="text" name="login" id="login" value="<?php echo $req_login ?>" /></td>
+						<td colspan="2"><input type="submit" value="Afficher les droits" /></td>
+					</tr>
+				</table>
+			</center>
+			<br/><br/>
+			
+			<center>
+				<table width="50%">
+					<tr>
+						<td>
+							<!-- droits que l'administrateur peux donner -->
+							<table width="100%" class="table_formulaire">
+								<tr>
+									<td colspan="2" class="table_titre">Droits disponibles</td>
+								</tr>
+									<?php
+										foreach ($tbl_droits_adm_donner as $row){
+									?>
+								<tr>
+									<td><?php echo $row[1]?></td>
+									<td width="20px"><a href="gestion_droits_utilisateurs.php?login=<?php echo $req_login ?>&ajouter=<?php echo $row[0]?>">+</a></td>
+								</tr>
+								<?php
+									}
+								?>
+							</table>
+						</td>
+						<td>
+							<!-- droits de l'utilisateur -->
+							<table class="table_formulaire" width="100%">
+								<tr>
+									<td colspan="2" class="table_titre">Droits de l'utilisateur</td>
+								</tr>
+<?php
+if (isset($req_login) && strlen($req_login)>0) {
+	foreach ($vListeDroitsUtilisateur as $vDroitId => $vDroitDescription){
+?>
+								<tr>
+									<td><?php echo $vDroitDescription?></td>
+									<td width="20px"><a href="gestion_droits_utilisateurs.php?login=<?php echo $req_login ?>&supprimer=<?php echo $vDroitId?>">X</a></td>
+								</tr>
+<?php
+	}
+}
+?>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</center>
+		</form>
+	</body>
+</html>

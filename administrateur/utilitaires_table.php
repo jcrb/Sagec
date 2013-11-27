@@ -1,0 +1,45 @@
+<?
+// utilitaires_table.php
+
+/**
+*Crée et affiche une liste déroulante des tables de la base de données.
+*@package choix_export_table.php
+*@return int $table contient la table sélectionnée.
+*@param string variable de connexion.
+*@version 1.0
+*/
+function listetable($connect)
+{
+	$requete = "SHOW TABLES";
+	$resultat = ExecRequete($requete,$connect,$onChange="");
+	print("<select name=\"table\" size=\"1\" onChange='$onChange'>");
+	$mot = "-- aucune --";
+	print("<OPTION VALUE = \"$mot\">$mot</OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+		print("<OPTION VALUE=\"$rub[0]\" ");
+		if($item_select == $rub[0]) print(" SELECTED");
+		print("> $rub[0] </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+
+function liste_champ($table,$connect)
+{
+	$requete = "SHOW COLUMNS FROM '$table'";
+	$resultat = ExecRequete($requete,$connect);
+	print("<select name=\"champs\" size=\"1\" onChange='$onChange'>");
+	$mot = "-- aucune --";
+	print("<OPTION VALUE = \"$mot\">$mot</OPTION> \n");
+	while($rub=mysql_fetch_array($resultat))
+	{
+		print("<OPTION VALUE=\"$rub[0]\" ");
+		if($item_select == $rub[0]) print(" SELECTED");
+		print("> $rub[0] </OPTION> \n");
+	}
+	@mysql_free_result($resultat);
+	print("</SELECT>\n");
+}
+
+?>

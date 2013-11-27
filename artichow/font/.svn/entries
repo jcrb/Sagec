@@ -1,0 +1,68 @@
+8
+
+dir
+44
+file:///home/jcb/svn/sagec/artichow/font
+file:///home/jcb/svn/sagec
+
+
+
+2007-03-12T17:13:10.784015Z
+22
+jcb
+
+
+svn:special svn:externals svn:needs-lock
+
+TuffyItalic.ttf
+file
+
+
+
+
+2006-12-15T17:25:09.000000Z
+ba1fe4300e2ff9f62ed8d7c5237c7249
+2007-03-12T17:13:10.784015Z
+22
+jcb
+has-props
+
+TuffyBoldItalic.ttf
+file
+
+
+
+
+2006-12-15T17:25:09.000000Z
+1861acde9e11115574e98491d57987c9
+2007-03-12T17:13:10.784015Z
+22
+jcb
+has-props
+
+Tuffy.ttf
+file
+
+
+
+
+2006-12-15T17:25:09.000000Z
+bbec80b179a6fa293ed2379b0340f162
+2007-03-12T17:13:10.784015Z
+22
+jcb
+has-props
+
+TuffyBold.ttf
+file
+
+
+
+
+2006-12-15T17:25:09.000000Z
+82bc862b2c8ba6db857c36e79f86fe28
+2007-03-12T17:13:10.784015Z
+22
+jcb
+has-props
+

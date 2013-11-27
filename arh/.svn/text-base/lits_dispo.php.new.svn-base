@@ -1,0 +1,621 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+//
+// This file is part of SAGEC67 Copyright (C) 2003 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+//----------------------------------------- SAGEC --------------------------------------------------------
+//
+//	programme: 		lits_dispo.php
+//	date de création: 	24/08/2005
+//	auteur:			jcb
+//	description:
+//	version:		1.2
+//	modifié le		30/08/2005
+//
+//---------------------------------------------------------------------------------------------------------
+// Création / mise à jour d'un service
+// appelé par Service_maj. Le service_ID est transmis par la variable $ttservice qui vaut 0
+// pour un nouveau service
+session_start();
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+require("../html.php");
+require("../pma_connect.php");
+require("../pma_connexion.php");
+require("../pma_requete.php");
+require("../date.php");
+$langue = $_SESSION['langue'];
+
+print("<head>");
+print("<title>F2T</title>");
+print("<LINK REL=stylesheet HREF=\"../pma.css\" TYPE =\"text/css\">");
+print("</head>");
+
+// variables globales
+global $connexion;
+global $DEBUG;
+// initialisations
+$connexion = Connexion(NOM,PASSE,BASE,SERVEUR);
+$DEBUG = false;// mettre à true pour affichage des messages
+
+//$date = "19/08/2005 00:00:00";
+$date = $_GET['date'];
+$date1=fDatetime2unix($date);
+$type_jour=date("w",$date1);// dimanche = 0
+
+/**
+/* heure_limite() renvoie sous la forme d'une date unix la valeur correspondant à un jour donné à une heure donnée
+/* $jour un timestamp unix quelconque
+/* $heure une heure entre 0 et 23 heures
+*/
+function heure_limite($jour,$heure)
+{
+	return round_u_date($jour) + $heure*3600;
+}
+
+/**
+/* cxalcule les lists disponibles sur les 3 derniers jours pour une spécialité
+/* les données nécessaires se trouvent dans $resultat
+/* permet notamment de tracer une courbe
+*/
+function lits_dispo_par_heure($resultat)
+{
+	global $DEBUG;
+	while($rub=mysql_fetch_array($resultat))
+	{
+		$x = $service[$rub['service_nom']];
+		$y = $rub['lits_dispo'];
+		$d = $y - $x;
+		$total_lits_dispo += $d;
+		$lits_dispo[uDate2Frenchdatetime($rub['date'])] = $total_lits_dispo;
+		$service[$rub['service_nom']] = $rub['lits_dispo'];
+	}
+	
+	if($DEBUG)
+	{
+		while($element = each($lits_dispo))
+		{
+			print($element["key"]." - ".$element["value"]."<br>");
+		}
+	}
+}
+/**
+/* calcule les lits dispobibles sur les 3 derniers jours, nouvelle version
+/* $resultat contient la liste des des services retenus classés par service et pour caque service par date croisssante
+*/
+function calcule_lits_disponibles2($resultat)
+{
+	$un_jour = 60*60*24;
+	global $DEBUG;
+	while($rub=mysql_fetch_array($resultat))
+	{
+		//print("service lu: ".uDate2Frenchdatetime($rub['date']).' '.$rub['service_nom'].' = '.$rub['lits_dispo'].' lits<br>');
+		
+		if(!$heure_limite)// premier passage
+		{
+			$heure_limite = heure_limite($rub['date'],16); //$jour_courant + 16*60*60;//16 heures
+			if($rub['date']<=$heure_limite)
+			{
+				$service_courant=$rub['service_nom'];
+				$lits_disponibles = $rub['lits_dispo'];
+				$heure_courante = $rub['date'];
+			}
+		}
+		else
+		{
+			if($rub['service_nom'] == $service_courant)// c'est le même service
+			{
+				if($heure_limite - $rub['date']>0)// date-heure courante < date-heure de référence
+				{ // si oui alors il s'agit un nouvel enregistrement concernant le même jour
+					$lits_disponibles = $rub['lits_dispo'];
+					$heure_courante = $rub['date'];
+				}
+				else // si non c'est qu'on a changé de jour
+				{
+					$lits_dispo3 += $lits_disponibles; // on mémorise la dernière entrée valide
+					//print("[1]Pris en compte ".uDate2Frenchdatetime($heure_courante).' '.$service_courant.' '.$lits_disponibles.' lits<br>');
+					// on réajuste les variables de référence
+					$heure_limite = heure_limite($rub['date'],16);
+					$lits_disponibles = 0;
+					if($rub['date']<=$heure_limite) 
+					{
+						$lits_disponibles = $rub['lits_dispo'];
+						$heure_courante = $rub['date'];
+					}
+				}
+			}
+			else // c'est au autre service     
+			{
+				// on mémorise la dernière entrée
+				$lits_dispo3 += $lits_disponibles;
+				//print("[2]Pris en compte ".uDate2Frenchdatetime($heure_courante).' '.$service_courant.' '.$lits_disponibles.' lits<br>');
+				// on réajuste les variables de référence
+				$service_courant=$rub['service_nom'];
+				$heure_limite = heure_limite($rub['date'],16);
+				$lits_disponibles = 0;
+				if($rub['date']<=$heure_limite) 
+				{
+					$lits_disponibles = $rub['lits_dispo'];
+					$heure_courante = $rub['date'];
+				}
+			}
+		}
+	}
+	// on mémorise la dernière entrée
+	if($rub['date']<=$heure_limite)
+	{
+		$lits_dispo3 += $lits_disponibles;
+		//print("[3]Pris en compte ".uDate2Frenchdatetime($heure_courante).' '.$service_courant.' '.$lits_disponibles.' lits<br><br>');
+	}
+	return $lits_dispo3;
+}
+/**
+/* calcule les lits dispobibles sur les 3 derniers jours
+*/
+function calcule_lits_disponibles($resultat)
+{
+	$un_jour = 60*60*24;
+	global $DEBUG;
+	// départ, lecture de la première ligne de résulat
+	$rub=mysql_fetch_array($resultat);
+	$service_courant=$rub['service_nom'];
+	$lits_disponibles = $rub['lits_dispo'];
+	$jour_courant = round_u_date($rub['date']);
+	$heure_limite = heure_limite($rub['date'],16); //$jour_courant + 16*60*60;//16 heures
+	$heure_courante = $rub['date'];
+	
+	if($DEBUG){
+		print("Départ ".uDate2Frenchdatetime($jour_courant)."<br>");
+		print("heure limite ".uDate2Frenchdatetime($heure_limite)."<br>");
+		print("service lu: ".uDate2Frenchdatetime($rub['date']).' '.$rub['service_nom'].' '.$rub['lits_dispo'].'<br>');
+		print("<br>");
+	}
+	while($rub=mysql_fetch_array($resultat)){
+		if($DEBUG) print("service lu: ".uDate2Frenchdatetime($rub['date']).' '.$rub['service_nom'].' '.$rub['lits_dispo'].'<br>');
+		if($rub['service_nom'] != $service_courant)
+		{
+			$lits_dispo3 += $lits_disponibles;
+			if($DEBUG) print("[1]Pris en compte ".uDate2Frenchdatetime($heure_courante).' '.$service_courant.' '.$lits_disponibles.'<br>'.'<br>');
+			$service_courant=$rub['service_nom'];
+			$heure_courante = $rub['date'];
+			$heure_limite = $rub['date']%$un_jour + 16*60*60;//16 heures
+			$lits_disponibles = $rub['lits_dispo'];
+			$jour_courant = round_u_date($rub['date']);// rajout
+		}
+		elseif(round_u_date($rub['date']) !=$jour_courant)
+		{
+			$lits_dispo3 += $lits_disponibles;
+			if($DEBUG)print("[2]Pris en compte ".uDate2Frenchdatetime($heure_courante).' '.$service_courant.' '.$lits_disponibles.'<br>');
+			if($DEBUG)print(round_u_date($rub['date'])." ".$jour_courant.'<br>');
+			$jour_courant = round_u_date($rub['date']);
+			$heure_limite = $jour_courant + 16*60*60;//16 heures
+			if($DEBUG) print("heure limite ".uDate2Frenchdatetime($heure_limite)."<br>");
+			$lits_disponibles = $rub['lits_dispo'];
+			$heure_courante = $rub['date'];
+			$nb_de_jour++;
+		}
+		else{
+			if($rub['date'] > $heure_limite)
+			{
+				$lits_dispo3 += $lits_disponibles;
+				if($DEBUG) print("[3]Pris en compte ".uDate2Frenchdatetime($heure_courante).' '.$service_courant.' '.$lits_disponibles.'<br>');
+				$heure_courante = $rub['date'];
+				$lits_disponibles = 0;
+			}
+			else
+			{
+			$heure_courante = $rub['date'];
+			$lits_disponibles = $rub['lits_dispo'];
+			if($DEBUG) print("[4]En attente: ".uDate2Frenchdatetime($heure_courante).' '.$service_courant.' '.$lits_disponibles."<br>");
+			}
+		}
+		//$lits_dispo3 += $rub['lits_dispo'];
+		//$d = $rub['date']%$un_jour;// partie de jour
+		//$e = $rub['date']-$d;//jour entier
+		//print( uDate2Frenchdatetime($rub['date']).' '.$rub['service_nom'].' '.$rub['lits_dispo'].'<br>');
+	}
+	return $lits_dispo3;
+}
+
+/*
+/* Extrait les données et effectue les calculs de base
+/* $specialite = n° de la spécialité tell qu'on la trouve dans la table "specialite". Pris en compte uniquement si type=0
+/* date: date re référence pour les calculs
+/* $type = type_ID tel qu'on le trouve dans la table type_service. S'il vaut 0 (valeur par défaut, c'est $pecialité et la table correspondante
+/* qui est utilisée
+*/
+function calculs($specialite,$date1,$type=0)
+{
+	// ATTENTION IL FAUDRA RAJOUTER UNE SELECTION SUR LA REGION POUR N'AVOIR QUE L'ALASACE
+	global $connexion;
+	global $total_lits_installes;
+	global $total_lits_installes2;
+	global $total_lits_dispo;
+	global $total_lits_dispo3;
+	global $total_m_lits_dispo;
+	global $DEBUG;
+	global $total_litsmed_installes;
+	global $total_litsmed_installes2;
+	global $total_litsmed_dispo;
+	global $total_litsmed_dispo3;
+	global $total_m_litsmed_dispo;
+	// initialisation
+	$lits_installes=$lits_installes2=$lits_dispo=$reponse=$lits_dispo3=0;
+	//$date2=fDatetime2unix("20/08/2005 00:00:00");
+	$date2 = $date1 + 24*3600;
+	//print('date2: '.uDate2Frenchdatetime($date2).'<br>');
+	// lits installés au 31 décembre
+	if($type==0)
+		$requete="SELECT lits_sp
+			FROM lits,service
+			WHERE specialite_ID='$specialite'
+			AND lits.service_ID=service.service_ID";
+	else{
+		$requete="SELECT lits_sp
+			FROM lits,service
+			WHERE type_ID='$type'
+			AND lits.service_ID=service.service_ID";
+		if($DEBUG)print("Type = ".$type."<br>");
+	}
+	$resultat = ExecRequete($requete,$connexion);
+	while($rub=mysql_fetch_array($resultat)){
+		$lits_installes += $rub['lits_sp'];
+	}
+	//=========================================  lits disponibles =============================================================
+	if($DEBUG)print("Lits disponibles<br>");
+	if($type==0)
+		$requete="SELECT lits_journal.lits_dispo,lits_sp,service_nom,date
+			FROM lits_journal,service, lits
+			WHERE specialite_ID='$specialite'
+			AND lits_journal.service_ID=service.service_ID
+			AND lits.service_ID=service.service_ID
+			AND lits_journal.date BETWEEN '$date1' AND '$date2'ORDER BY service_nom, date";
+	else
+		$requete="SELECT lits_journal.lits_dispo,lits_sp,service_nom,date
+			FROM lits_journal,service, lits
+			WHERE type_ID='$type'
+			AND lits_journal.service_ID=service.service_ID
+			AND lits.service_ID=service.service_ID
+			AND lits_journal.date BETWEEN '$date1' AND '$date2'ORDER BY service_nom, date";
+	$resultat = ExecRequete($requete,$connexion);
+	
+	// pb car on peut avoir plusieurs résultats un jour donné pour le même hopital si plusieurs mises à jour ont été faites
+	// il faut repérer les doublons et ne garder que l'enregistrement le plus proche de 16h, sans le dépasser
+	$rub=mysql_fetch_array($resultat);
+	$service_courant = $rub['service_nom'];
+	$lits_ouverts = $rub['lits_sp'];
+	$lits_disponibles = $rub['lits_dispo'];
+	if($DEBUG)
+		print("services: ".$rub['service_nom'].' '.$rub['lits_dispo'].' '.$rub['lits_sp'].' '.uDate2Frenchdatetime($rub['date']).'<br>');
+	
+	$heure_limite = heure_limite($date1,16);
+	while($rub=mysql_fetch_array($resultat))
+	{
+		if($DEBUG) print("services: ".$rub['service_nom'].' '.$rub['lits_dispo'].' '.$rub['lits_sp'].' '.uDate2Frenchdatetime($rub['date']).'<br>');
+		if($rub['service_nom'] != $service_courant)// c'est un autre service => on enregistre les valeurs courantes
+		{
+			$lits_installes2 += $lits_ouverts;
+			$lits_dispo += $lits_disponibles;
+			if($DEBUG) print("[1]pris en compte: ".$service_courant.' '.$lits_disponibles.' '.$lits_ouverts.'<br>');
+			// mise à jour des valeurs courantes
+			$service_courant = $rub['service_nom'];
+			$lits_ouverts = $rub['lits_sp'];
+			$lits_disponibles = $rub['lits_dispo'];
+		}
+		else // c'est un enregistrement concernant le même service. Si heure < heure_limite, on le garde 
+		{
+			if($rub['date']< $heure_limite)
+			{
+				$lits_disponibles = $rub['lits_dispo'];
+			}
+			else // on mémorise la dernière valeur
+			{
+				$lits_installes2 += $lits_ouverts;
+				$lits_dispo += $lits_disponibles;
+				if($DEBUG) print("[2]pris en compte: ".$service_courant.' '.$lits_disponibles.' '.$lits_ouverts.'<br>');
+				// mise à 0 des paramètres pour éviter tout double compte
+				$lits_ouverts = 0;
+				$lits_disponibles = 0;
+			}
+		}
+	}
+	// prise en compte du dernier
+	$lits_installes2 += $lits_ouverts;
+	$lits_dispo += $lits_disponibles;
+	if($DEBUG) print("[3]pris en compte: ".$service_courant.' '.$lits_disponibles.' '.$lits_ouverts.'<br>');
+	
+	if($lits_installes>0)
+		$reponse = intval(0.5+100*$lits_installes2/$lits_installes);
+	else $reponse = 'na';
+	if($lits_installes2>0)
+		$prop = intval(0.5+100*$lits_dispo/$lits_installes2);
+	else $prop = 'na';
+	if($DEBUG)print("-----------------------------------------------------------------------------------<br>");
+	
+	//=================================================  3 derniers jours  ================================================================
+	$date0 = $date2 - 24*60*60;
+	$date2 = $date0 - 3*24*60*60;
+	print('date2: '.uDate2Frenchdatetime($date2).'<br>');
+	if($type==0)
+		$requete="SELECT lits_dispo,date,service_nom
+			FROM lits_journal,service
+			WHERE specialite_ID='$specialite'
+			AND lits_journal.service_ID=service.service_ID
+			AND lits_journal.date BETWEEN '$date2' AND '$date0' ORDER BY service_nom,date";
+	else
+		$requete="SELECT lits_dispo,date,service_nom
+			FROM lits_journal,service
+			WHERE type_ID='$type'
+			AND lits_journal.service_ID=service.service_ID
+			AND lits_journal.date BETWEEN '$date2' AND '$date0' ORDER BY service_nom,date";
+	//print($requete);
+	$resultat = ExecRequete($requete,$connexion);
+	$lits_dispo3 = calcule_lits_disponibles2($resultat);
+
+	$lits_dispo3 = intval(0.5+$lits_dispo3/3);//lits moyens
+	if($lits_dispo3 != 0)
+	{
+		$prop3 = intval(0.5+100*$lits_dispo/$lits_dispo3)-100;
+	}
+	else{
+		$prop3 = "na";
+		//$lits_dispo3 = "na";
+	}
+	// petit essai pour tracer une éventuelle courbe
+	if($type==0)
+		$requete="SELECT lits_dispo,date,service_nom
+			FROM lits_journal,service
+			WHERE specialite_ID='$specialite'
+			AND lits_journal.service_ID=service.service_ID
+			AND lits_journal.date BETWEEN '$date2' AND '$date0' ORDER BY date";
+	else
+		$requete="SELECT lits_dispo,date,service_nom
+			FROM lits_journal,service
+			WHERE type_ID='$type'
+			AND lits_journal.service_ID=service.service_ID
+			AND lits_journal.date BETWEEN '$date2' AND '$date0' ORDER BY date";
+	$resultat = ExecRequete($requete,$connexion);
+	lits_dispo_par_heure($resultat);
+	//================================================  3 jours équivalents  ============================================================
+	$sept_jour = 7*24*3600;
+	if($DEBUG)print("Jours sélectionnés<br>");
+	global $date3;
+	global $date4;
+	global $date5;
+	$date3 = $date1 - $sept_jour;
+	//$date3=$date3-date("H",$date3)*3600;// ajustement lié à l'heure d'hiver: on retire le nb d'heures (exprimées en secondes) en exès
+	if($DEBUG)print(uDate2Frenchdatetime($date3)."<br>");
+	$date4 = $date3 - $sept_jour;if($DEBUG)print(uDate2Frenchdatetime($date4)."<br>");
+	$date5 = $date4 - $sept_jour;if($DEBUG)print(uDate2Frenchdatetime($date5)."<br>");
+	
+	if($type==0)
+		$requete="SELECT lits_dispo,date,service_nom
+			FROM lits_journal,service
+			WHERE specialite_ID='$specialite'
+			AND lits_journal.service_ID=service.service_ID
+			AND (lits_journal.date BETWEEN '$date3' AND ('$date3'+24*3600)
+			OR lits_journal.date BETWEEN '$date4' AND ('$date4'+24*3600)
+			OR lits_journal.date BETWEEN '$date5' AND ('$date5'+24*3600))
+			ORDER BY service_nom,date";
+	else
+		$requete="SELECT lits_dispo,date,service_nom
+			FROM lits_journal,service
+			WHERE type_ID='$type'
+			AND lits_journal.service_ID=service.service_ID
+			AND (lits_journal.date BETWEEN '$date3' AND ('$date3'+24*3600)
+			OR lits_journal.date BETWEEN '$date4' AND ('$date4'+24*3600)
+			OR lits_journal.date BETWEEN '$date5' AND ('$date5'+24*3600))
+			ORDER BY service_nom,date";
+	$resultat = ExecRequete($requete,$connexion);
+	$m_lits_dispo = calcule_lits_disponibles2($resultat);
+	
+	if($DEBUG){
+	$resultat = ExecRequete($requete,$connexion);
+		while($rub=mysql_fetch_array($resultat)){
+			print($rub['service_nom']." ".uDate2Frenchdatetime($rub['date'])." ".$rub['lits_dispo']."<br>");
+		}
+	}
+	
+	if($m_lits_dispo != 0)
+	{
+ 		$m_lits_dispo = intval(0.5+$m_lits_dispo/3);
+		$m_prop3 = intval(0.5+100*$lits_dispo/$m_lits_dispo)-100;
+	}
+	else{
+		$m_prop3 = "na";
+		$m_lits_dispo = "na";
+	}
+	// affichage en ligne
+	print("<td align=\"center\">$lits_installes</td>");
+	print("<td align=\"center\">$lits_installes2</td>");
+	print("<td align=\"center\">$reponse%</td>");
+	print("<td align=\"center\">$lits_dispo</td>");
+	print("<td align=\"center\">$prop%</td>");
+	print("<td align=\"center\">$lits_dispo3</td>");
+	print("<td align=\"center\">$prop3%</td>");
+	print("<td align=\"center\">$m_lits_dispo</td>");
+	print("<td align=\"center\">$m_prop3%</td>");
+	
+	// mémorisation des totaux
+	$total_lits_installes += $lits_installes;
+	$total_lits_installes2 += $lits_installes2;
+	$total_lits_dispo += $lits_dispo;
+	$total_lits_dispo3 += $lits_dispo3;
+	$total_m_lits_dispo += $m_lits_dispo;
+	
+	// total médecine
+	if($specialite <12 || $type==7 || $type==9)
+	{
+		$total_litsmed_installes += $lits_installes;
+		$total_litsmed_installes2 += $lits_installes2;
+		$total_litsmed_dispo += $lits_dispo;
+		$total_litsmed_dispo3 += $lits_dispo3;
+		$total_m_litsmed_dispo += $m_lits_dispo;
+	}
+}
+
+// date du jour
+$date_point = uDate2Frenchdatetime(heure_limite($date1,16));
+print($semaine[$type_jour]." ".$date_point."<br>");
+
+print("<table width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"5\">");
+	print("<tr class=\"tel\">");
+		print("<td rowspan=\"3\" valign=\"middle\">Groupe disciplines</td>");
+		print("<td rowspan=\"3\" valign=\"middle\">Disciplines</td>");
+		print("<td rowspan=\"3\" valign=\"middle\">Total lits installés dans la région au 31 décembre</td>");
+		print("<td colspan=\"2\" valign=\"middle\" align=\"center\">Réponses</td>");
+		print("<td rowspan=\"2\" colspan=\"2\" valign=\"middle\" align=\"center\">Lits disponibles</td>");
+		print("<td colspan=\"4\" valign=\"middle\" align=\"center\">Comparaison par rapport au</td>");
+	print("</tr>");
+	print("<tr class=\"tel\">");
+		print("<td rowspan=\"2\" valign=\"middle\">nombre de lits installés</td>");
+		print("<td rowspan=\"2\"valign=\"middle\">%</td>");
+		print("<td rowspan=\"2\" valign=\"middle\">nombre moyen des 3 derniers jours</td>");
+		print("<td rowspan=\"2\" valign=\"middle\">Evolution</td>");
+		print("<td rowspan=\"2\" valign=\"middle\">3 jours identiques</td>");
+		print("<td rowspan=\"2\" valign=\"middle\">Evolution</td>");
+	print("</tr>");
+	print("<tr class=\"tel\">");
+		print("<td valign=\"middle\">nombre</td>");
+		print("<td valign=\"middle\">%</td>");
+	print("</tr>");
+
+	print("<tr class=\"time_b\">");
+		print("<td rowspan=\"4\" valign=\"middle\">Pédiatrie</td>");
+		print("<td>Néonatalogie (avec ou sans SI)</td>");
+		calculs('1',$date1);
+	print("</tr>");
+	print("<tr class=\"time_b\">");
+		print("<td>Réanimation néonatale</td>");
+		calculs('2',$date1);
+	print("</tr>");
+	print("<tr class=\"time_b\">");
+		print("<td>Réanimation pédiatrique ou mixte</td>");
+		calculs('',$date1,'3');
+	print("</tr>");
+	print("<tr class=\"time_b\">");
+		print("<td>Autres disciplines de pédiatrie</td>");
+		calculs('',$date1,'9');
+	print("</tr>");
+	// Réanimations adultes
+	// lits installés
+	print("<tr class=\"time_b\">");
+		print("<td rowspan=\"4\" valign=\"middle\">Réanimation adulte</td>");
+		print("<td>Réanimation médicale</td>");
+		calculs('6',$date1);
+	print("</tr>");
+	print("<tr class=\"time_b\">");
+		print("<td>Réanimation chirurgicale</td>");
+		calculs('7',$date1);
+	print("</tr>");
+	print("<tr class=\"time_b\">");
+		print("<td>Réanimation médico-chirurgicale ou mixte</td>");
+		calculs('8',$date1);
+	print("</tr>");
+	print("<tr class=\"time_b\">");
+		print("<td>Soins intensifs</td>");
+		calculs('11',$date1);
+	print("</tr>");
+	// autres disciplines médicales
+	print("<tr class=\"time_b\">");
+		print("<td>Autres disciplines médicales</td>");
+		print("<td>Médecine</td>");
+		calculs('',$date1,'7');
+	print("</tr>");
+	// sous total médecine
+	print("<tr class=\"tel\">");
+		print("<td colspan=\"2\">Total médecine</td>");
+		print("<td align=\"center\">$total_litsmed_installes</td>");
+		print("<td align=\"center\">$total_litsmed_installes2</td>");
+		$calcul = intval(0.5+100*$total_litsmed_installes2/$total_litsmed_installes);
+		print("<td align=\"center\">$calcul%</td>");
+		print("<td align=\"center\">$total_litsmed_dispo</td>");
+		$calcul = intval(0.5+100*$total_litsmed_dispo/$total_litsmed_installes2);
+		print("<td align=\"center\">$calcul%</td>");
+		print("<td align=\"center\">$total_litsmed_dispo3</td>");
+		$calcul = intval(0.5+100*$total_litsmed_dispo/$total_litsmed_dispo3)-100;
+		print("<td align=\"center\">$calcul%</td>");
+		print("<td align=\"center\">$total_m_litsmed_dispo</td>");
+		$calcul = intval(0.5+100*$total_litsmed_dispo/$total_m_litsmed_dispo)-100;
+		print("<td align=\"center\">$calcul%</td>");
+	print("</tr>");
+	// Chirurgie
+	print("<tr class=\"time_b\">");
+		print("<td colspan=\"2\">Chirurgie</td>");
+		calculs('',$date1,'8');
+	print("</tr>");
+	// Gynéco
+	print("<tr class=\"time_b\">");
+		print("<td colspan=\"2\">Gynécologie Obstétrique</td>");
+		calculs('',$date1,'19');
+	print("</tr>");
+	// urgences
+	print("<tr class=\"time_b\">");
+		print("<td colspan=\"2\">Zone de surveillance de très courte durée</td>");
+		calculs('',$date1,'1');
+	print("</tr>");
+	// SSR
+	print("<tr class=\"time_b\">");
+		print("<td rowspan=\"3\" valign=\"middle\">Soins de suite ou de réadaptation</td>");
+		print("<td>Rédaptation fonctionelle</td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+	print("</tr>");
+	print("<tr class=\"time_b\">");
+		print("<td>Soins de suite</td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+		print("<td align=\"center\"> xxx </td>");
+	print("</tr>");
+	print("<tr class=\"time_b\">");
+		print("<td>Total SSR</td>");
+		calculs('',$date1,'15');
+	print("</tr>");
+	// TOTAL général
+	print("<tr class=\"tel\">");
+		print("<td colspan=\"2\">TOTAL</td>");
+		print("<td align=\"center\">$total_lits_installes</td>");
+		print("<td align=\"center\">$total_lits_installes2</td>");
+		$calcul = intval(0.5+100*$total_lits_installes2/$total_lits_installes);
+		print("<td align=\"center\">$calcul%</td>");
+		print("<td align=\"center\">$total_lits_dispo</td>");
+		$calcul = intval(0.5+100*$total_lits_dispo/$total_lits_installes2);
+		print("<td align=\"center\">$calcul%</td>");
+		print("<td align=\"center\">$total_lits_dispo3</td>");
+		$calcul = intval(0.5+100*$total_lits_dispo/$total_lits_dispo3)-100;
+		print("<td align=\"center\">$calcul%</td>");
+		print("<td align=\"center\">$total_m_lits_dispo</td>");
+		$calcul = intval(0.5+100*$total_lits_dispo/$total_m_lits_dispo)-100;
+		print("<td align=\"center\">$calcul%</td>");
+	print("</tr>");
+print("</table>");
+
+print("<br>");
+print("Comparaison faite avec les 3 jours identiques suivants:<br>");
+print($semaine[date("w",$date3)]." ".uDate2French($date3)."<br>");
+print($semaine[date("w",$date4)]." ".uDate2French($date4)."<br>");
+print($semaine[date("w",$date5)]." ".uDate2French($date5)."<br>");
+?>

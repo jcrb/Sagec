@@ -1,0 +1,12 @@
+# [SAGEC67]
+# 2 : Mail DHOS
+0 17 * * 1-5 wget --delete-after http://localhost/sagec3/info_lits/analyse_fichier.php
+# ##
+# [SAGEC67]
+# 2 : Mail DHOS
+0 17 * * 1-5 wget --delete-after http://localhost/sagec3/info_lits/analyse_fichier.php
+# ##
+# [SAGEC67]
+# 2 : Mail DHOS
+0 17 * * 1-5 wget --delete-after http://localhost/sagec3/info_lits/analyse_fichier.php
+# ##

@@ -1,0 +1,23 @@
+/**
+*	test_ajax.html
+*/
+
+<html>
+<head>
+<script  type="text/javascript" src="ajax.js"></script>
+<script>
+	function test()
+	{
+		var objetXHR = createXHR();
+		ojetXHR.open("get","script.php",false);
+		ojetXHR.send(null);
+		var resultat = ojetXHR.responseText;
+		alert(resultat);
+	}
+</script>
+</head>
+
+<body>
+<button name="b1" value="test" type="button" onclick="test();"></button>
+</body>
+</html>

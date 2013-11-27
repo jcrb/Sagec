@@ -1,0 +1,60 @@
+Date: Monday 01 September 2008 à 21:19
+//================================= Evènement courant ================================
+Evènement courant: test2  le 2008-08-08  , à 16:39:43
+Plans déclenchés: 
+//================================= Structures Activées ================================
+ - PMA Dow 3  localisation: Maison des sports
+1a rue du gymnase
+Herrlisheim  contacts: 03 88 96 75 67
+ - PMA Dow 2  localisation: Centre sportif, festif et de loisirs
+Rue de Lorraine - Rue de Dahlunden  contacts: 
+ - PMA Dow 1  localisation: 2 rue du collège
+67410 Drusenheim  contacts: 03 88 53 32 75
+ - PMA Arp  localisation: Infirmerie du PMC
+Proximité espace Arp  contacts: 
+ - PMA Rhenus  localisation: Place foire des expositions
+67000 Strasbourg  contacts: 03 88 37 21 21
+ - PMA Kleber  localisation: Rue fritz Kieffer  contacts: 
+ - PMA PMC_VIP  localisation: Palais de la musique et des congrès  contacts: 
+ - PCO PMC  localisation:   contacts: 
+ - PCO Dow  localisation: Bâtiment administratif Dow  contacts: +33 388 53 5353
+ - PCFixe Préfecture  localisation: Hôtel du Préfet
+Petit Broglie
+67000 Strasbourg  contacts: SIDPC
+ - Point Transit Dow  localisation: Parking Dow  contacts: 
+ - Transit Caserne OUEST  localisation: Caserne ouest  contacts: 
+ - Bouclage 1 PPI Dow  localisation:   contacts: 
+ - Bouclage 3 PPI Dow  localisation:   contacts: 
+ - Bouclage 2 PPI Dow  localisation:   contacts: 
+
+//================================= Missions ================================
+ - Regulateur CRISE: BARTIER Jean-Claude
+
+//================================= Sauvegarde des moyens engagés ================================
+12	VLM Haguenau	
+13	AR Haguenau	
+134	AMBU *	
+145	Quad 1	
+
+//================================= Sauvegarde de l'organigramme ================================
+PCF	DELPLANCQ Herv	 (Médecin)
+PCO	BARTIER Jean-Claude	 (Médecin)
+SAMU_CRISE	HENRY Sylvain	 (Médecin)
+SAMU_CRISE	TEIXERA Nathalie	 (Permanencier(e))
+SAMU_COURANT	LAENG Sylvie	 (Permanencier(e))
+SAMU_COURANT	DAURE-SIRE Muriel	 (Médecin)
+
+//========================= Répartition dans les hôpitaux =====================
+U / UA / UR / U3 / DCD 
+CHU de Strasbourg(Hautepierre) 0 / 0 / 1 / 0 / 0 /  total: 1
+CH de Thionville 0 / 0 / 1 / 0 / 0 /  total: 1
+CHU de Strasbourg (Hop. Civil) 0 / 0 / 1 / 0 / 0 /  total: 1
+0 / 0 / 0 / 0 / 0 / 
+Total Général   /  / 3 /  /  / 3 / 
+
+//==================================== Sauvegarde du bloc-note ==================================
+1	2008-08-11 21:42:45	SDIS67	VSAB Nord en position
+2	2008-08-12 22:54:24	Mader	,,,,,,,,,,,,,,,,,,,,,,
+3	2008-08-27 20:00:42	Bartier	rrrrrrrrrrrrrrrrrrrrr
+
+//======================================== Fin des données =======================================
