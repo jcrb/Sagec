@@ -1,0 +1,45 @@
+\hypertarget{tourDeRole__affiche_8php}{
+\section{R\'{e}f\'{e}rence du fichier tour\-De\-Role\_\-affiche.php}
+\label{tourDeRole__affiche_8php}\index{tourDeRole_affiche.php@{tourDeRole\_\-affiche.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{tourDeRole__affiche_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{tourDeRole__affiche_8php_a1}{\$requete}
+\item 
+\hyperlink{tourDeRole__affiche_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{tourDeRole__affiche_8php_a0}{
+\index{tourDeRole_affiche.php@{tour\-De\-Role\_\-affiche.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!tourDeRole_affiche.php@{tour\-De\-Role\_\-affiche.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{tourDeRole__affiche_8php_a0}
+
+
+\hypertarget{tourDeRole__affiche_8php_a1}{
+\index{tourDeRole_affiche.php@{tour\-De\-Role\_\-affiche.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!tourDeRole_affiche.php@{tour\-De\-Role\_\-affiche.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{tourDeRole__affiche_8php_a1}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}        "SELECT date,dossier,dispo,org_nom
+                        FROM apa_tour_enregistre,organisme
+                        WHERE organisme.org_ID = apa_tour_enregistre.org_ID
+                        ORDER BY date DESC
+                        LIMIT 100"
+\end{verbatim}\normalsize 
+\hypertarget{tourDeRole__affiche_8php_a2}{
+\index{tourDeRole_affiche.php@{tour\-De\-Role\_\-affiche.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!tourDeRole_affiche.php@{tour\-De\-Role\_\-affiche.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{tourDeRole__affiche_8php_a2}
+
+

@@ -1,0 +1,46 @@
+\hypertarget{intervenant__info_8php}{
+\section{R\'{e}f\'{e}rence du fichier intervenant\_\-info.php}
+\label{intervenant__info_8php}\index{intervenant_info.php@{intervenant\_\-info.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{intervenant__info_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{intervenant__info_8php_a1}{\$requete} = \char`\"{}SELECT $\ast$ FROM personnel WHERE Pers\_\-ID = '\$personne\_\-id'\char`\"{}
+\item 
+\hyperlink{intervenant__info_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{intervenant__info_8php_a3}{\$intervenant} = Ligne\-Suivante(\$resultat)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{intervenant__info_8php_a0}{
+\index{intervenant_info.php@{intervenant\_\-info.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!intervenant_info.php@{intervenant\_\-info.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{intervenant__info_8php_a0}
+
+
+\hypertarget{intervenant__info_8php_a3}{
+\index{intervenant_info.php@{intervenant\_\-info.php}!$intervenant@{\$intervenant}}
+\index{$intervenant@{\$intervenant}!intervenant_info.php@{intervenant\_\-info.php}}
+\subsubsection[\$intervenant]{\setlength{\rightskip}{0pt plus 5cm}\$intervenant = Ligne\-Suivante(\$resultat)}}
+\label{intervenant__info_8php_a3}
+
+
+\hypertarget{intervenant__info_8php_a1}{
+\index{intervenant_info.php@{intervenant\_\-info.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!intervenant_info.php@{intervenant\_\-info.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT $\ast$ FROM personnel WHERE Pers\_\-ID = '\$personne\_\-id'\char`\"{}}}
+\label{intervenant__info_8php_a1}
+
+
+\hypertarget{intervenant__info_8php_a2}{
+\index{intervenant_info.php@{intervenant\_\-info.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!intervenant_info.php@{intervenant\_\-info.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{intervenant__info_8php_a2}
+
+

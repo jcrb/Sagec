@@ -1,0 +1,122 @@
+\hypertarget{classStack}{
+\section{R\'{e}f\'{e}rence de la classe Stack}
+\label{classStack}\index{Stack@{Stack}}
+}
+\subsection*{Fonctions membres publiques}
+\begin{CompactItemize}
+\item 
+\hyperlink{classStack_a0}{push} (\$element)
+\item 
+\& \hyperlink{classStack_a1}{pop} ()
+\item 
+\& \hyperlink{classStack_a2}{top} ()
+\item 
+\& \hyperlink{classStack_a3}{get\_\-element} (\$i)
+\item 
+\hyperlink{classStack_a4}{get\_\-length} ()
+\item 
+\hyperlink{classStack_a5}{write\_\-reverse\_\-stack} ()
+\item 
+\hyperlink{classStack_a6}{write\_\-stack} ()
+\end{CompactItemize}
+\subsection*{Attributs publics}
+\begin{CompactItemize}
+\item 
+\hyperlink{classStack_o0}{\$\_\-stack} = array()
+\end{CompactItemize}
+
+
+\subsection{Description d\'{e}taill\'{e}e}
+A stack data structure. A stack is a LIFO (Last In First Out) data structure. \begin{Desc}
+\item[Auteur:]Brian Takita $<$\href{mailto:brian.takita@runbox.com}{\tt brian.takita@runbox.com}$>$ \end{Desc}
+\begin{Desc}
+\item[Version:]1.1 \end{Desc}
+
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classStack_a3}{
+\index{Stack@{Stack}!get_element@{get\_\-element}}
+\index{get_element@{get\_\-element}!Stack@{Stack}}
+\subsubsection[get\_\-element]{\setlength{\rightskip}{0pt plus 5cm}\& Stack::get\_\-element (\$ {\em i})}}
+\label{classStack_a3}
+
+
+Retourne une r\'{e}f\'{e}rence sur un \'{e}l\'{e}ment quelconque de la pile \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em int}]rang de l'\'{e}l\'{e}ment \`{a} retourner. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]mixed A reference to un \'{e}l\'{e}ment quelconque of the stack. \end{Desc}
+\begin{Desc}
+\item[Auteur:]jcb 2005 \end{Desc}
+\hypertarget{classStack_a4}{
+\index{Stack@{Stack}!get_length@{get\_\-length}}
+\index{get_length@{get\_\-length}!Stack@{Stack}}
+\subsubsection[get\_\-length]{\setlength{\rightskip}{0pt plus 5cm}Stack::get\_\-length ()}}
+\label{classStack_a4}
+
+
+Get the lenght of the Stack. \begin{Desc}
+\item[Renvoie:]int The lenght of the Stack. \end{Desc}
+\hypertarget{classStack_a1}{
+\index{Stack@{Stack}!pop@{pop}}
+\index{pop@{pop}!Stack@{Stack}}
+\subsubsection[pop]{\setlength{\rightskip}{0pt plus 5cm}\& Stack::pop ()}}
+\label{classStack_a1}
+
+
+Pop the Stack. \begin{Desc}
+\item[Renvoie:]mixed The reference to the popped element. \end{Desc}
+\hypertarget{classStack_a0}{
+\index{Stack@{Stack}!push@{push}}
+\index{push@{push}!Stack@{Stack}}
+\subsubsection[push]{\setlength{\rightskip}{0pt plus 5cm}Stack::push (\$ {\em element})}}
+\label{classStack_a0}
+
+
+Push the argument onto the stack. \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em mixed}]\$content The element to be pushed onto the stack. \end{description}
+\end{Desc}
+\hypertarget{classStack_a2}{
+\index{Stack@{Stack}!top@{top}}
+\index{top@{top}!Stack@{Stack}}
+\subsubsection[top]{\setlength{\rightskip}{0pt plus 5cm}\& Stack::top ()}}
+\label{classStack_a2}
+
+
+Returns a reference to the top of the stack. \begin{Desc}
+\item[Renvoie:]mixed A reference to the top of the stack. \end{Desc}
+\hypertarget{classStack_a5}{
+\index{Stack@{Stack}!write_reverse_stack@{write\_\-reverse\_\-stack}}
+\index{write_reverse_stack@{write\_\-reverse\_\-stack}!Stack@{Stack}}
+\subsubsection[write\_\-reverse\_\-stack]{\setlength{\rightskip}{0pt plus 5cm}Stack::write\_\-reverse\_\-stack ()}}
+\label{classStack_a5}
+
+
+Imprime le contenu de la pile. JCB 2005 \hypertarget{classStack_a6}{
+\index{Stack@{Stack}!write_stack@{write\_\-stack}}
+\index{write_stack@{write\_\-stack}!Stack@{Stack}}
+\subsubsection[write\_\-stack]{\setlength{\rightskip}{0pt plus 5cm}Stack::write\_\-stack ()}}
+\label{classStack_a6}
+
+
+
+
+\subsection{Documentation des donn\'{e}es membres}
+\hypertarget{classStack_o0}{
+\index{Stack@{Stack}!$_stack@{\$\_\-stack}}
+\index{$_stack@{\$\_\-stack}!Stack@{Stack}}
+\subsubsection[\$\_\-stack]{\setlength{\rightskip}{0pt plus 5cm}Stack::\$\_\-stack = array()}}
+\label{classStack_o0}
+
+
+
+
+La documentation de cette classe a \'{e}t\'{e} g\'{e}n\'{e}r\'{e}e \`{a} partir du fichier suivant:\begin{CompactItemize}
+\item 
+\hyperlink{stack_8php}{stack.php}\end{CompactItemize}

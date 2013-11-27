@@ -1,0 +1,58 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {7.50}R\'{e}f\'{e}rence du fichier bolus.php}{129}{section.7.50}}
+\newlabel{bolus_8php}{{7.50}{129}{R\'{e}f\'{e}rence du fichier bolus.php\relax }{section.7.50}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.50.1}Documentation des fonctions}{130}{subsection.7.50.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.1.1}select\_\discretionary {-}{}{}voie}{130}{subsubsection.7.50.1.1}}
+\newlabel{bolus_8php_a14}{{7.50.1.1}{130}{select\_\-voie\relax }{subsubsection.7.50.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.50.2}Documentation des variables}{130}{subsection.7.50.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.2.1}\$connexion}{130}{subsubsection.7.50.2.1}}
+\newlabel{bolus_8php_a0}{{7.50.2.1}{130}{\$connexion\relax }{subsubsection.7.50.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.2.2}\$date}{130}{subsubsection.7.50.2.2}}
+\newlabel{bolus_8php_a6}{{7.50.2.2}{130}{\$date\relax }{subsubsection.7.50.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.2.3}\$fdate}{130}{subsubsection.7.50.2.3}}
+\newlabel{bolus_8php_a12}{{7.50.2.3}{130}{\$fdate\relax }{subsubsection.7.50.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.2.4}\$fheure}{130}{subsubsection.7.50.2.4}}
+\newlabel{bolus_8php_a13}{{7.50.2.4}{130}{\$fheure\relax }{subsubsection.7.50.2.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.2.5}\$heure}{130}{subsubsection.7.50.2.5}}
+\newlabel{bolus_8php_a7}{{7.50.2.5}{130}{\$heure\relax }{subsubsection.7.50.2.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.2.6}\$langue}{130}{subsubsection.7.50.2.6}}
+\newlabel{bolus_8php_a1}{{7.50.2.6}{130}{\$langue\relax }{subsubsection.7.50.2.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.2.7}\$maintenant}{130}{subsubsection.7.50.2.7}}
+\newlabel{bolus_8php_a5}{{7.50.2.7}{130}{\$maintenant\relax }{subsubsection.7.50.2.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.2.8}\$ordre}{130}{subsubsection.7.50.2.8}}
+\newlabel{bolus_8php_a2}{{7.50.2.8}{130}{\$ordre\relax }{subsubsection.7.50.2.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.2.9}\$requete}{130}{subsubsection.7.50.2.9}}
+\newlabel{bolus_8php_a3}{{7.50.2.9}{130}{\$requete\relax }{subsubsection.7.50.2.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.2.10}\$resultat}{130}{subsubsection.7.50.2.10}}
+\newlabel{bolus_8php_a4}{{7.50.2.10}{130}{\$resultat\relax }{subsubsection.7.50.2.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.2.11}\$tri}{130}{subsubsection.7.50.2.11}}
+\newlabel{bolus_8php_a8}{{7.50.2.11}{130}{\$tri\relax }{subsubsection.7.50.2.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.2.12}\_\discretionary {-}{}{}\_\discretionary {-}{}{}pad3\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{130}{subsubsection.7.50.2.12}}
+\newlabel{bolus_8php_a11}{{7.50.2.12}{130}{\_\-\_\-pad3\_\-\_\-\relax }{subsubsection.7.50.2.12}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.2.13}\_\discretionary {-}{}{}med}{130}{subsubsection.7.50.2.13}}
+\newlabel{bolus_8php_a10}{{7.50.2.13}{130}{\_\-med\relax }{subsubsection.7.50.2.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.50.2.14}break}{130}{subsubsection.7.50.2.14}}
+\newlabel{bolus_8php_a9}{{7.50.2.14}{130}{break\relax }{subsubsection.7.50.2.14}{}}
+\@setckpt{bolus_8php}{
+\setcounter{page}{131}
+\setcounter{equation}{0}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{7}
+\setcounter{section}{50}
+\setcounter{subsection}{2}
+\setcounter{subsubsection}{14}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{float@type}{4}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{0}
+\setcounter{section@level}{3}
+}

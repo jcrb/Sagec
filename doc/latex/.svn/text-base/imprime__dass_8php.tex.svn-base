@@ -1,0 +1,69 @@
+\hypertarget{imprime__dass_8php}{
+\section{R\'{e}f\'{e}rence du fichier imprime\_\-dass.php}
+\label{imprime__dass_8php}\index{imprime_dass.php@{imprime\_\-dass.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{imprime__dass_8php_a4}{imprime} (\$resultat, \$date)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{imprime__dass_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{imprime__dass_8php_a1}{\$d} = \$\_\-GET\mbox{[}date\mbox{]}.\char`\"{}\%\char`\"{}
+\item 
+\hyperlink{imprime__dass_8php_a2}{\$requete}
+\item 
+\hyperlink{imprime__dass_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{imprime__dass_8php_a4}{
+\index{imprime_dass.php@{imprime\_\-dass.php}!imprime@{imprime}}
+\index{imprime@{imprime}!imprime_dass.php@{imprime\_\-dass.php}}
+\subsubsection[imprime]{\setlength{\rightskip}{0pt plus 5cm}imprime (\$ {\em resultat}, \$ {\em date})}}
+\label{imprime__dass_8php_a4}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{imprime__dass_8php_a0}{
+\index{imprime_dass.php@{imprime\_\-dass.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!imprime_dass.php@{imprime\_\-dass.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{imprime__dass_8php_a0}
+
+
+\hypertarget{imprime__dass_8php_a1}{
+\index{imprime_dass.php@{imprime\_\-dass.php}!$d@{\$d}}
+\index{$d@{\$d}!imprime_dass.php@{imprime\_\-dass.php}}
+\subsubsection[\$d]{\setlength{\rightskip}{0pt plus 5cm}\$d = \$\_\-GET\mbox{[}date\mbox{]}.\char`\"{}\%\char`\"{}}}
+\label{imprime__dass_8php_a1}
+
+
+\hypertarget{imprime__dass_8php_a2}{
+\index{imprime_dass.php@{imprime\_\-dass.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!imprime_dass.php@{imprime\_\-dass.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{imprime__dass_8php_a2}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "SELECT date,dossier,dispo,org_nom
+                        FROM apa_tour_enregistre,organisme
+                        WHERE organisme.org_ID = apa_tour_enregistre.org_ID
+                        AND date LIKE '$d'
+                        "
+\end{verbatim}\normalsize 
+\hypertarget{imprime__dass_8php_a3}{
+\index{imprime_dass.php@{imprime\_\-dass.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!imprime_dass.php@{imprime\_\-dass.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{imprime__dass_8php_a3}
+
+

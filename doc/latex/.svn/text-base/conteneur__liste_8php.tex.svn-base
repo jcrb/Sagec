@@ -1,0 +1,63 @@
+\hypertarget{conteneur__liste_8php}{
+\section{R\'{e}f\'{e}rence du fichier conteneur\_\-liste.php}
+\label{conteneur__liste_8php}\index{conteneur_liste.php@{conteneur\_\-liste.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{conteneur__liste_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{conteneur__liste_8php_a1}{\$requete}
+\item 
+\hyperlink{conteneur__liste_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{conteneur__liste_8php_a3}{\$mot} = \$rub\mbox{[}lot\_\-nom\mbox{]}.\$rub\mbox{[}conteneur\_\-no\mbox{]}
+\item 
+\hyperlink{conteneur__liste_8php_a4}{\$local} = get\_\-stockage(\$connexion,\$rub\mbox{[}stockage\_\-ID\mbox{]})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{conteneur__liste_8php_a0}{
+\index{conteneur_liste.php@{conteneur\_\-liste.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!conteneur_liste.php@{conteneur\_\-liste.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{conteneur__liste_8php_a0}
+
+
+\hypertarget{conteneur__liste_8php_a4}{
+\index{conteneur_liste.php@{conteneur\_\-liste.php}!$local@{\$local}}
+\index{$local@{\$local}!conteneur_liste.php@{conteneur\_\-liste.php}}
+\subsubsection[\$local]{\setlength{\rightskip}{0pt plus 5cm}\$local = get\_\-stockage(\$connexion,\$rub\mbox{[}stockage\_\-ID\mbox{]})}}
+\label{conteneur__liste_8php_a4}
+
+
+\hypertarget{conteneur__liste_8php_a3}{
+\index{conteneur_liste.php@{conteneur\_\-liste.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!conteneur_liste.php@{conteneur\_\-liste.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$rub\mbox{[}lot\_\-nom\mbox{]}.\$rub\mbox{[}conteneur\_\-no\mbox{]}}}
+\label{conteneur__liste_8php_a3}
+
+
+\hypertarget{conteneur__liste_8php_a1}{
+\index{conteneur_liste.php@{conteneur\_\-liste.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!conteneur_liste.php@{conteneur\_\-liste.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{conteneur__liste_8php_a1}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}"SELECT conteneur_ID,conteneur_no,stockage_ID,lot_nom,local_nom
+                FROM stock_conteneur,med_psm,med_localisation
+                WHERE lot_ID = conteneur_nom
+                AND med_localisation = local_ID
+                "
+\end{verbatim}\normalsize 
+\hypertarget{conteneur__liste_8php_a2}{
+\index{conteneur_liste.php@{conteneur\_\-liste.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!conteneur_liste.php@{conteneur\_\-liste.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{conteneur__liste_8php_a2}
+
+

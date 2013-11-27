@@ -1,0 +1,19 @@
+\hypertarget{evenement__fin_8php}{
+\section{R\'{e}f\'{e}rence du fichier evenement\_\-fin.php}
+\label{evenement__fin_8php}\index{evenement_fin.php@{evenement\_\-fin.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{evenement__fin_8php_a0}{\$connect} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{evenement__fin_8php_a0}{
+\index{evenement_fin.php@{evenement\_\-fin.php}!$connect@{\$connect}}
+\index{$connect@{\$connect}!evenement_fin.php@{evenement\_\-fin.php}}
+\subsubsection[\$connect]{\setlength{\rightskip}{0pt plus 5cm}\$connect = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{evenement__fin_8php_a0}
+
+

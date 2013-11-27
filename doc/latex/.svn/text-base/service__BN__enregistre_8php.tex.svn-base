@@ -1,0 +1,33 @@
+\hypertarget{service__BN__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier service\_\-BN\_\-enregistre.php}
+\label{service__BN__enregistre_8php}\index{service_BN_enregistre.php@{service\_\-BN\_\-enregistre.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{service__BN__enregistre_8php_a0}{\$query}
+\item 
+\hyperlink{service__BN__enregistre_8php_a1}{\$result} = Exec\-Requete(\$query,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{service__BN__enregistre_8php_a0}{
+\index{service_BN_enregistre.php@{service\_\-BN\_\-enregistre.php}!$query@{\$query}}
+\index{$query@{\$query}!service_BN_enregistre.php@{service\_\-BN\_\-enregistre.php}}
+\subsubsection[\$query]{\setlength{\rightskip}{0pt plus 5cm}\$query}}
+\label{service__BN__enregistre_8php_a0}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "INSERT INTO livrebord_service
+                        VALUES('','$_SESSION[organisation]','$_GET[auteur]','$_GET[date]','$_GET[montexte]')"
+\end{verbatim}\normalsize 
+\hypertarget{service__BN__enregistre_8php_a1}{
+\index{service_BN_enregistre.php@{service\_\-BN\_\-enregistre.php}!$result@{\$result}}
+\index{$result@{\$result}!service_BN_enregistre.php@{service\_\-BN\_\-enregistre.php}}
+\subsubsection[\$result]{\setlength{\rightskip}{0pt plus 5cm}\$result = Exec\-Requete(\$query,\$connexion)}}
+\label{service__BN__enregistre_8php_a1}
+
+

@@ -1,0 +1,75 @@
+\hypertarget{evenement__plan_8php}{
+\section{R\'{e}f\'{e}rence du fichier evenement\_\-plan.php}
+\label{evenement__plan_8php}\index{evenement_plan.php@{evenement\_\-plan.php}}
+}
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespaceutilitairesHTML_1_1php}{utilitaires\-HTML::php}
+\end{CompactItemize}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{evenement__plan_8php_a5}{Select\-Plan} (\$connexion, \$item\_\-select)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{evenement__plan_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{evenement__plan_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{evenement__plan_8php_a2}{\$requete} = \char`\"{}SELECT $\ast$ FROM plan\_\-courant WHERE plan\_\-courant\_\-ID = \$\_\-GET\mbox{[}maj\mbox{]}\char`\"{}
+\item 
+\hyperlink{evenement__plan_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{evenement__plan_8php_a4}{\$plan} = mysql\_\-fetch\_\-array(\$resultat)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{evenement__plan_8php_a5}{
+\index{evenement_plan.php@{evenement\_\-plan.php}!SelectPlan@{SelectPlan}}
+\index{SelectPlan@{SelectPlan}!evenement_plan.php@{evenement\_\-plan.php}}
+\subsubsection[SelectPlan]{\setlength{\rightskip}{0pt plus 5cm}Select\-Plan (\$ {\em connexion}, \$ {\em item\_\-select})}}
+\label{evenement__plan_8php_a5}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{evenement__plan_8php_a1}{
+\index{evenement_plan.php@{evenement\_\-plan.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!evenement_plan.php@{evenement\_\-plan.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{evenement__plan_8php_a1}
+
+
+\hypertarget{evenement__plan_8php_a0}{
+\index{evenement_plan.php@{evenement\_\-plan.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!evenement_plan.php@{evenement\_\-plan.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{evenement__plan_8php_a0}
+
+
+\hypertarget{evenement__plan_8php_a4}{
+\index{evenement_plan.php@{evenement\_\-plan.php}!$plan@{\$plan}}
+\index{$plan@{\$plan}!evenement_plan.php@{evenement\_\-plan.php}}
+\subsubsection[\$plan]{\setlength{\rightskip}{0pt plus 5cm}\$plan = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{evenement__plan_8php_a4}
+
+
+\hypertarget{evenement__plan_8php_a2}{
+\index{evenement_plan.php@{evenement\_\-plan.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!evenement_plan.php@{evenement\_\-plan.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT $\ast$ FROM plan\_\-courant WHERE plan\_\-courant\_\-ID = \$\_\-GET\mbox{[}maj\mbox{]}\char`\"{}}}
+\label{evenement__plan_8php_a2}
+
+
+\hypertarget{evenement__plan_8php_a3}{
+\index{evenement_plan.php@{evenement\_\-plan.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!evenement_plan.php@{evenement\_\-plan.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{evenement__plan_8php_a3}
+
+

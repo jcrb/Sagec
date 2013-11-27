@@ -1,0 +1,146 @@
+\hypertarget{serveur_8php}{
+\section{R\'{e}f\'{e}rence du fichier serveur.php}
+\label{serveur_8php}\index{serveur.php@{serveur.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{serveur_8php_a3}{teste\_\-header} (\$args)
+\item 
+\hyperlink{serveur_8php_a4}{erreur} (\$\hyperlink{utilitaires_2html_8php_a0}{n})
+\item 
+\hyperlink{serveur_8php_a5}{sageclits} (\$args)
+\item 
+\hyperlink{serveur_8php_a6}{Person\-Name\-Last} (\$args)
+\item 
+\hyperlink{serveur_8php_a7}{Person\-Name\-First} (\$args)
+\item 
+\hyperlink{serveur_8php_a8}{add} (\$args)
+\item 
+\hyperlink{serveur_8php_a9}{tableau} (\$args)
+\item 
+\hyperlink{serveur_8php_a10}{tableau2} (\$args)
+\item 
+\hyperlink{serveur_8php_a11}{get\_\-methodes} (\$args)
+\item 
+\hyperlink{serveur_8php_a12}{dossier} (\$args)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+global \hyperlink{serveur_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+global \hyperlink{serveur_8php_a1}{\$langue}
+\item 
+\hyperlink{serveur_8php_a2}{\$server}
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{serveur_8php_a8}{
+\index{serveur.php@{serveur.php}!add@{add}}
+\index{add@{add}!serveur.php@{serveur.php}}
+\subsubsection[add]{\setlength{\rightskip}{0pt plus 5cm}add (\$ {\em args})}}
+\label{serveur_8php_a8}
+
+
+\hypertarget{serveur_8php_a12}{
+\index{serveur.php@{serveur.php}!dossier@{dossier}}
+\index{dossier@{dossier}!serveur.php@{serveur.php}}
+\subsubsection[dossier]{\setlength{\rightskip}{0pt plus 5cm}dossier (\$ {\em args})}}
+\label{serveur_8php_a12}
+
+
+\hypertarget{serveur_8php_a4}{
+\index{serveur.php@{serveur.php}!erreur@{erreur}}
+\index{erreur@{erreur}!serveur.php@{serveur.php}}
+\subsubsection[erreur]{\setlength{\rightskip}{0pt plus 5cm}erreur (\$ {\em n})}}
+\label{serveur_8php_a4}
+
+
+\hypertarget{serveur_8php_a11}{
+\index{serveur.php@{serveur.php}!get_methodes@{get\_\-methodes}}
+\index{get_methodes@{get\_\-methodes}!serveur.php@{serveur.php}}
+\subsubsection[get\_\-methodes]{\setlength{\rightskip}{0pt plus 5cm}get\_\-methodes (\$ {\em args})}}
+\label{serveur_8php_a11}
+
+
+\hypertarget{serveur_8php_a7}{
+\index{serveur.php@{serveur.php}!PersonNameFirst@{PersonNameFirst}}
+\index{PersonNameFirst@{PersonNameFirst}!serveur.php@{serveur.php}}
+\subsubsection[PersonNameFirst]{\setlength{\rightskip}{0pt plus 5cm}Person\-Name\-First (\$ {\em args})}}
+\label{serveur_8php_a7}
+
+
+\hypertarget{serveur_8php_a6}{
+\index{serveur.php@{serveur.php}!PersonNameLast@{PersonNameLast}}
+\index{PersonNameLast@{PersonNameLast}!serveur.php@{serveur.php}}
+\subsubsection[PersonNameLast]{\setlength{\rightskip}{0pt plus 5cm}Person\-Name\-Last (\$ {\em args})}}
+\label{serveur_8php_a6}
+
+
+\hypertarget{serveur_8php_a5}{
+\index{serveur.php@{serveur.php}!sageclits@{sageclits}}
+\index{sageclits@{sageclits}!serveur.php@{serveur.php}}
+\subsubsection[sageclits]{\setlength{\rightskip}{0pt plus 5cm}sageclits (\$ {\em args})}}
+\label{serveur_8php_a5}
+
+
+\hypertarget{serveur_8php_a9}{
+\index{serveur.php@{serveur.php}!tableau@{tableau}}
+\index{tableau@{tableau}!serveur.php@{serveur.php}}
+\subsubsection[tableau]{\setlength{\rightskip}{0pt plus 5cm}tableau (\$ {\em args})}}
+\label{serveur_8php_a9}
+
+
+\hypertarget{serveur_8php_a10}{
+\index{serveur.php@{serveur.php}!tableau2@{tableau2}}
+\index{tableau2@{tableau2}!serveur.php@{serveur.php}}
+\subsubsection[tableau2]{\setlength{\rightskip}{0pt plus 5cm}tableau2 (\$ {\em args})}}
+\label{serveur_8php_a10}
+
+
+\hypertarget{serveur_8php_a3}{
+\index{serveur.php@{serveur.php}!teste_header@{teste\_\-header}}
+\index{teste_header@{teste\_\-header}!serveur.php@{serveur.php}}
+\subsubsection[teste\_\-header]{\setlength{\rightskip}{0pt plus 5cm}teste\_\-header (\$ {\em args})}}
+\label{serveur_8php_a3}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{serveur_8php_a0}{
+\index{serveur.php@{serveur.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!serveur.php@{serveur.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{serveur_8php_a0}
+
+
+\hypertarget{serveur_8php_a1}{
+\index{serveur.php@{serveur.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!serveur.php@{serveur.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}global \$langue}}
+\label{serveur_8php_a1}
+
+
+\hypertarget{serveur_8php_a2}{
+\index{serveur.php@{serveur.php}!$server@{\$server}}
+\index{$server@{\$server}!serveur.php@{serveur.php}}
+\subsubsection[\$server]{\setlength{\rightskip}{0pt plus 5cm}\$server}}
+\label{serveur_8php_a2}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} new IXR_Server(array(
+    Person.Name.Last => PersonNameLast,
+    Person.Name.First => PersonNameFirst,
+    Person.add => 'add',
+    Person.tableau => tableau,
+    Person.tableau2 => tableau2,
+    Sagec.lits => sageclits,
+    Sagec.Personne => dossier,
+    Sagec.Methods => get_methodes
+    ))
+\end{verbatim}\normalsize 

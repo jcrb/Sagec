@@ -1,0 +1,91 @@
+\hypertarget{session_8php}{
+\section{R\'{e}f\'{e}rence du fichier session.php}
+\label{session_8php}\index{session.php@{session.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{session_8php_a0}{\$password} = crypt(trim(htmlspecialchars(addslashes(\$password))),\char`\"{}azerty\char`\"{})
+\item 
+\hyperlink{session_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{session_8php_a2}{\$query}
+\item 
+\hyperlink{session_8php_a3}{\$result} = Exec\-Requete(\$query,\$connexion)
+\item 
+\hyperlink{session_8php_a4}{\$utilisateur} = Ligne\-Suivante(\$result)
+\item 
+\hyperlink{session_8php_a5}{\$oui} = \char`\"{}oui\char`\"{}
+\item 
+\hyperlink{session_8php_a6}{\$non} = \char`\"{}non\char`\"{}
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{session_8php_a7}{\$mot} = \$non
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{session_8php_a1}{
+\index{session.php@{session.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!session.php@{session.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{session_8php_a1}
+
+
+\hypertarget{session_8php_a7}{
+\index{session.php@{session.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!session.php@{session.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$mot = \$non}}
+\label{session_8php_a7}
+
+
+\hypertarget{session_8php_a6}{
+\index{session.php@{session.php}!$non@{\$non}}
+\index{$non@{\$non}!session.php@{session.php}}
+\subsubsection[\$non]{\setlength{\rightskip}{0pt plus 5cm}\$non = \char`\"{}non\char`\"{}}}
+\label{session_8php_a6}
+
+
+\hypertarget{session_8php_a5}{
+\index{session.php@{session.php}!$oui@{\$oui}}
+\index{$oui@{\$oui}!session.php@{session.php}}
+\subsubsection[\$oui]{\setlength{\rightskip}{0pt plus 5cm}\$oui = \char`\"{}oui\char`\"{}}}
+\label{session_8php_a5}
+
+
+\hypertarget{session_8php_a0}{
+\index{session.php@{session.php}!$password@{\$password}}
+\index{$password@{\$password}!session.php@{session.php}}
+\subsubsection[\$password]{\setlength{\rightskip}{0pt plus 5cm}\$password = crypt(trim(htmlspecialchars(addslashes(\$password))),\char`\"{}azerty\char`\"{})}}
+\label{session_8php_a0}
+
+
+\hypertarget{session_8php_a2}{
+\index{session.php@{session.php}!$query@{\$query}}
+\index{$query@{\$query}!session.php@{session.php}}
+\subsubsection[\$query]{\setlength{\rightskip}{0pt plus 5cm}\$query}}
+\label{session_8php_a2}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "SELECT nom, prenom,organisme.org_nom, service_nom
+                        FROM utilisateurs,organisme,service
+                        WHERE ID_utilisateur = '$_SESSION[member_id]'
+                        AND utilisateurs.org_ID = organisme.org_ID
+                        AND utilisateurs.service_ID = service.service_ID
+                        "
+\end{verbatim}\normalsize 
+\hypertarget{session_8php_a3}{
+\index{session.php@{session.php}!$result@{\$result}}
+\index{$result@{\$result}!session.php@{session.php}}
+\subsubsection[\$result]{\setlength{\rightskip}{0pt plus 5cm}\$result = Exec\-Requete(\$query,\$connexion)}}
+\label{session_8php_a3}
+
+
+\hypertarget{session_8php_a4}{
+\index{session.php@{session.php}!$utilisateur@{\$utilisateur}}
+\index{$utilisateur@{\$utilisateur}!session.php@{session.php}}
+\subsubsection[\$utilisateur]{\setlength{\rightskip}{0pt plus 5cm}\$utilisateur = Ligne\-Suivante(\$result)}}
+\label{session_8php_a4}
+
+

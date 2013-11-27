@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>SAGEC: Liste des membres</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.3.7 -->
+<div class="qindex"><a class="qindex" href="index.html">Page&nbsp;principale</a> | <a class="qindex" href="namespaces.html">Liste des namespaces</a> | <a class="qindex" href="hierarchy.html">Hiérarchie&nbsp;des&nbsp;classes</a> | <a class="qindex" href="annotated.html">Liste&nbsp;des&nbsp;classes</a> | <a class="qindex" href="files.html">Liste&nbsp;des&nbsp;fichiers</a> | <a class="qindex" href="functions.html">Membres&nbsp;de&nbsp;classe</a> | <a class="qindex" href="globals.html">Membres&nbsp;de&nbsp;fichier</a></div>
+<h1>FPDF Liste des membres</h1>Liste complète des membres de <a class="el" href="classFPDF.html">FPDF</a>, y compris les membres hérités:<p><table>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o56">$AliasNbPages</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o58">$angle</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o53">$author</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o46">$AutoPageBreak</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o22">$bMargin</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o3">$buffer</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o23">$cMargin</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o44">$ColorFlag</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o6">$compress</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o28">$CoreFonts</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o55">$creator</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o8">$CurOrientation</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o38">$CurrentFont</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o7">$DefOrientation</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o31">$diffs</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o41">$DrawColor</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o14">$fh</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o12">$fhPt</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o42">$FillColor</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o35">$FontFamily</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o30">$FontFiles</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o29">$fonts</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o40">$FontSize</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o39">$FontSizePt</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o36">$FontStyle</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o13">$fw</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o11">$fwPt</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o18">$h</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o16">$hPt</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o32">$images</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o48">$InFooter</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o10">$k</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o54">$keywords</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o26">$lasth</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o50">$LayoutMode</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o27">$LineWidth</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o34">$links</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o19">$lMargin</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o1">$n</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o2">$offsets</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o9">$OrientationChanges</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o0">$page</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o47">$PageBreakTrigger</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o33">$PageLinks</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o4">$pages</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o57">$PDFVersion</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o21">$rMargin</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o5">$state</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o52">$subject</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o43">$TextColor</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o51">$title</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o20">$tMargin</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o37">$underline</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o17">$w</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o15">$wPt</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o45">$ws</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o24">$x</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o25">$y</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#o49">$ZoomMode</a></td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a60">_beginpage</a>($orientation)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a134">_beginpage</a>($orientation)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a47">_dochecks</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a121">_dochecks</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a63">_dounderline</a>($x, $y, $txt)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a137">_dounderline</a>($x, $y, $txt)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a59">_enddoc</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a133">_enddoc</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a61">_endpage</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a135">_endpage</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a68">_escape</a>($s)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a142">_escape</a>($s)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a66">_freadint</a>($f)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a140">_freadint</a>($f)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a48">_getfontpath</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a122">_getfontpath</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a62">_newobj</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a136">_newobj</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a70">_out</a>($s)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a144">_out</a>($s)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a64">_parsejpg</a>($file)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a138">_parsejpg</a>($file)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a65">_parsepng</a>($file)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a139">_parsepng</a>($file)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a56">_putcatalog</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a130">_putcatalog</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a50">_putfonts</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a124">_putfonts</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a57">_putheader</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a131">_putheader</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a51">_putimages</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a125">_putimages</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a55">_putinfo</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a129">_putinfo</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a49">_putpages</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a123">_putpages</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a53">_putresourcedict</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a127">_putresourcedict</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a54">_putresources</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a128">_putresources</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a69">_putstream</a>($s)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a143">_putstream</a>($s)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a58">_puttrailer</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a132">_puttrailer</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a52">_putxobjectdict</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a126">_putxobjectdict</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a67">_textstring</a>($s)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a141">_textstring</a>($s)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a35">AcceptPageBreak</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a109">AcceptPageBreak</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a28">AddFont</a>($family, $style='', $file='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a102">AddFont</a>($family, $style='', $file='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a31">AddLink</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a105">AddLink</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a17">AddPage</a>($orientation='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a91">AddPage</a>($orientation='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a13">AliasNbPages</a>($alias='{nb}')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a87">AliasNbPages</a>($alias='{nb}')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a36">Cell</a>($w, $h=0, $txt='', $border=0, $ln=0, $align='', $fill=0, $link='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a110">Cell</a>($w, $h=0, $txt='', $border=0, $ln=0, $align='', $fill=0, $link='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a16">Close</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a90">Close</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a14">Error</a>($msg)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a88">Error</a>($msg)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a19">Footer</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a93">Footer</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a0">FPDF</a>($orientation='P', $unit='mm', $format='A4')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a71">FPDF</a>($orientation='P', $unit='mm', $format='A4')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a24">GetStringWidth</a>($s)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a98">GetStringWidth</a>($s)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a41">GetX</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a115">GetX</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a43">GetY</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a117">GetY</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a18">Header</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a92">Header</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a39">Image</a>($file, $x, $y, $w=0, $h=0, $type='', $link='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a113">Image</a>($file, $x, $y, $w=0, $h=0, $type='', $link='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a26">Line</a>($x1, $y1, $x2, $y2)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a100">Line</a>($x1, $y1, $x2, $y2)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a33">Link</a>($x, $y, $w, $h, $link)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a107">Link</a>($x, $y, $w, $h, $link)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a40">Ln</a>($h='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a114">Ln</a>($h='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a37">MultiCell</a>($w, $h, $txt, $border=0, $align='J', $fill=0)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a111">MultiCell</a>($w, $h, $txt, $border=0, $align='J', $fill=0)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a15">Open</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a89">Open</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a46">Output</a>($name='', $dest='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a120">Output</a>($name='', $dest='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a20">PageNo</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a94">PageNo</a>()</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a27">Rect</a>($x, $y, $w, $h, $style='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a101">Rect</a>($x, $y, $w, $h, $style='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a72">Rotate</a>($angle, $x=-1, $y=-1)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a74">RotatedImage</a>($file, $x, $y, $w, $h, $angle)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a73">RotatedText</a>($x, $y, $txt, $angle)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a10">SetAuthor</a>($author)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a84">SetAuthor</a>($author)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a5">SetAutoPageBreak</a>($auto, $margin=0)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a79">SetAutoPageBreak</a>($auto, $margin=0)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a7">SetCompression</a>($compress)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a81">SetCompression</a>($compress)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a12">SetCreator</a>($creator)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a86">SetCreator</a>($creator)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a6">SetDisplayMode</a>($zoom, $layout='continuous')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a80">SetDisplayMode</a>($zoom, $layout='continuous')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a21">SetDrawColor</a>($r, $g=-1, $b=-1)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a95">SetDrawColor</a>($r, $g=-1, $b=-1)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a22">SetFillColor</a>($r, $g=-1, $b=-1)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a96">SetFillColor</a>($r, $g=-1, $b=-1)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a29">SetFont</a>($family, $style='', $size=0)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a103">SetFont</a>($family, $style='', $size=0)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a30">SetFontSize</a>($size)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a104">SetFontSize</a>($size)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a11">SetKeywords</a>($keywords)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a85">SetKeywords</a>($keywords)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a2">SetLeftMargin</a>($margin)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a76">SetLeftMargin</a>($margin)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a25">SetLineWidth</a>($width)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a99">SetLineWidth</a>($width)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a32">SetLink</a>($link, $y=0, $page=-1)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a106">SetLink</a>($link, $y=0, $page=-1)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a1">SetMargins</a>($left, $top, $right=-1)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a75">SetMargins</a>($left, $top, $right=-1)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a4">SetRightMargin</a>($margin)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a78">SetRightMargin</a>($margin)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a9">SetSubject</a>($subject)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a83">SetSubject</a>($subject)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a23">SetTextColor</a>($r, $g=-1, $b=-1)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a97">SetTextColor</a>($r, $g=-1, $b=-1)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a8">SetTitle</a>($title)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a82">SetTitle</a>($title)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a3">SetTopMargin</a>($margin)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a77">SetTopMargin</a>($margin)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a42">SetX</a>($x)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a116">SetX</a>($x)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a45">SetXY</a>($x, $y)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a119">SetXY</a>($x, $y)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a44">SetY</a>($y)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a118">SetY</a>($y)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a34">Text</a>($x, $y, $txt)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a108">Text</a>($x, $y, $txt)</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a38">Write</a>($h, $txt, $link='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classFPDF.html#a112">Write</a>($h, $txt, $link='')</td><td><a class="el" href="classFPDF.html">FPDF</a></td><td></td></tr>
+</table><hr size="1"><address style="align: right;"><small>Généré le Sun Oct 23 18:17:19 2005 pour SAGEC par
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 ></a> 1.3.7 </small></address>
+</body>
+</html>

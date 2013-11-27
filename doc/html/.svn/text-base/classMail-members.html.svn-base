@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>SAGEC: Liste des membres</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.3.7 -->
+<div class="qindex"><a class="qindex" href="index.html">Page&nbsp;principale</a> | <a class="qindex" href="namespaces.html">Liste des namespaces</a> | <a class="qindex" href="hierarchy.html">Hiérarchie&nbsp;des&nbsp;classes</a> | <a class="qindex" href="annotated.html">Liste&nbsp;des&nbsp;classes</a> | <a class="qindex" href="files.html">Liste&nbsp;des&nbsp;fichiers</a> | <a class="qindex" href="functions.html">Membres&nbsp;de&nbsp;classe</a> | <a class="qindex" href="globals.html">Membres&nbsp;de&nbsp;fichier</a></div>
+<h1>Mail Liste des membres</h1>Liste complète des membres de <a class="el" href="classMail.html">Mail</a>, y compris les membres hérités:<p><table>
+  <tr class="memlist"><td><a class="el" href="classMail.html#o3">$aattach</a></td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#o2">$abcc</a></td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#o1">$acc</a></td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#o6">$charset</a></td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#o7">$ctencoding</a></td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#o5">$priorities</a></td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#o8">$receipt</a></td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#o0">$sendto</a></td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#o4">$xheaders</a></td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a18">_build_attachement</a>()</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a12">Attach</a>($filename, $filetype="", $disposition="inline")</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a1">autoCheck</a>($bool)</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a8">Bcc</a>($bcc)</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a9">Body</a>($body, $charset="")</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a13">BuildMail</a>()</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a7">Cc</a>($cc)</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a17">CheckAdresses</a>($aad)</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a3">From</a>($from)</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a15">Get</a>()</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a0">Mail</a>()</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a10">Organization</a>($org)</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a11">Priority</a>($priority)</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a5">Receipt</a>()</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a4">ReplyTo</a>($address)</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a14">Send</a>()</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a2">Subject</a>($subject)</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a6">To</a>($to)</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMail.html#a16">ValidEmail</a>($address)</td><td><a class="el" href="classMail.html">Mail</a></td><td></td></tr>
+</table><hr size="1"><address style="align: right;"><small>Généré le Sun Oct 23 18:17:20 2005 pour SAGEC par
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 ></a> 1.3.7 </small></address>
+</body>
+</html>

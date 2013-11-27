@@ -1,0 +1,46 @@
+\hypertarget{sagec__version_8php}{
+\section{R\'{e}f\'{e}rence du fichier sagec\_\-version.php}
+\label{sagec__version_8php}\index{sagec_version.php@{sagec\_\-version.php}}
+}
+\subsection*{\'{E}num\'{e}rations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{sagec__version_8php_a0}{version\_\-sagec} 
+\item 
+enum \hyperlink{sagec__version_8php_a1}{version\_\-pma} 
+\item 
+enum \hyperlink{sagec__version_8php_a2}{date\_\-modif\_\-pma} 
+\item 
+enum \hyperlink{sagec__version_8php_a3}{date\_\-modif\_\-sagec} 
+\end{CompactItemize}
+
+
+\subsection{Documentation du type de l'\'{e}num\'{e}ration}
+\hypertarget{sagec__version_8php_a2}{
+\index{sagec_version.php@{sagec\_\-version.php}!date_modif_pma@{date\_\-modif\_\-pma}}
+\index{date_modif_pma@{date\_\-modif\_\-pma}!sagec_version.php@{sagec\_\-version.php}}
+\subsubsection[date\_\-modif\_\-pma]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{sagec__version_8php_a2}{date\_\-modif\_\-pma}}}
+\label{sagec__version_8php_a2}
+
+
+\hypertarget{sagec__version_8php_a3}{
+\index{sagec_version.php@{sagec\_\-version.php}!date_modif_sagec@{date\_\-modif\_\-sagec}}
+\index{date_modif_sagec@{date\_\-modif\_\-sagec}!sagec_version.php@{sagec\_\-version.php}}
+\subsubsection[date\_\-modif\_\-sagec]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{sagec__version_8php_a3}{date\_\-modif\_\-sagec}}}
+\label{sagec__version_8php_a3}
+
+
+\hypertarget{sagec__version_8php_a1}{
+\index{sagec_version.php@{sagec\_\-version.php}!version_pma@{version\_\-pma}}
+\index{version_pma@{version\_\-pma}!sagec_version.php@{sagec\_\-version.php}}
+\subsubsection[version\_\-pma]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{sagec__version_8php_a1}{version\_\-pma}}}
+\label{sagec__version_8php_a1}
+
+
+\hypertarget{sagec__version_8php_a0}{
+\index{sagec_version.php@{sagec\_\-version.php}!version_sagec@{version\_\-sagec}}
+\index{version_sagec@{version\_\-sagec}!sagec_version.php@{sagec\_\-version.php}}
+\subsubsection[version\_\-sagec]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{sagec__version_8php_a0}{version\_\-sagec}}}
+\label{sagec__version_8php_a0}
+
+

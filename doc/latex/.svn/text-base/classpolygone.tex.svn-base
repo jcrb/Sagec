@@ -1,0 +1,96 @@
+\hypertarget{classpolygone}{
+\section{R\'{e}f\'{e}rence de la classe polygone}
+\label{classpolygone}\index{polygone@{polygone}}
+}
+\subsection*{Fonctions membres publiques}
+\begin{CompactItemize}
+\item 
+\hyperlink{classpolygone_a0}{polygone} ()
+\item 
+\hyperlink{classpolygone_a1}{get\-Polygone} ()
+\item 
+\hyperlink{classpolygone_a2}{get\-Enveloppe} ()
+\item 
+\hyperlink{classpolygone_a3}{file2polygone} (\$fp)
+\item 
+\hyperlink{classpolygone_a4}{enveloppe} ()
+\item 
+\hyperlink{classpolygone_a5}{add\_\-enveloppe} (\$e2)
+\end{CompactItemize}
+\subsection*{Attributs publics}
+\begin{CompactItemize}
+\item 
+\hyperlink{classpolygone_o0}{\$table}
+\item 
+\hyperlink{classpolygone_o1}{\$enveloppe}
+\end{CompactItemize}
+
+
+\subsection{Documentation des contructeurs et destructeur}
+\hypertarget{classpolygone_a0}{
+\index{polygone@{polygone}!polygone@{polygone}}
+\index{polygone@{polygone}!polygone@{polygone}}
+\subsubsection[polygone]{\setlength{\rightskip}{0pt plus 5cm}polygone::polygone ()}}
+\label{classpolygone_a0}
+
+
+/$\ast$Constructeur
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classpolygone_a5}{
+\index{polygone@{polygone}!add_enveloppe@{add\_\-enveloppe}}
+\index{add_enveloppe@{add\_\-enveloppe}!polygone@{polygone}}
+\subsubsection[add\_\-enveloppe]{\setlength{\rightskip}{0pt plus 5cm}polygone::add\_\-enveloppe (\$ {\em e2})}}
+\label{classpolygone_a5}
+
+
+/$\ast$retourne le plus petit rectangle entglobant 2 enveloppes /$\ast$ les 2 enveloppes ne sont pas n\'{e}cessairement jointives /$\ast$ \$e2 enveloppe ajout\'{e}e /$\ast$ \$e1 enveloppe courante /$\ast$ \$e3 enveloppe r\'{e}sultante\hypertarget{classpolygone_a4}{
+\index{polygone@{polygone}!enveloppe@{enveloppe}}
+\index{enveloppe@{enveloppe}!polygone@{polygone}}
+\subsubsection[enveloppe]{\setlength{\rightskip}{0pt plus 5cm}polygone::enveloppe ()}}
+\label{classpolygone_a4}
+
+
+/$\ast$calcule les dimensions du rectangle entourant le polygone\hypertarget{classpolygone_a3}{
+\index{polygone@{polygone}!file2polygone@{file2polygone}}
+\index{file2polygone@{file2polygone}!polygone@{polygone}}
+\subsubsection[file2polygone]{\setlength{\rightskip}{0pt plus 5cm}polygone::file2polygone (\$ {\em fp})}}
+\label{classpolygone_a3}
+
+
+/$\ast$\$fp handle sur un fichier. Les donn\'{e}es doivent \^{e}tre au format tab/tab/return\hypertarget{classpolygone_a2}{
+\index{polygone@{polygone}!getEnveloppe@{getEnveloppe}}
+\index{getEnveloppe@{getEnveloppe}!polygone@{polygone}}
+\subsubsection[getEnveloppe]{\setlength{\rightskip}{0pt plus 5cm}polygone::get\-Enveloppe ()}}
+\label{classpolygone_a2}
+
+
+\hypertarget{classpolygone_a1}{
+\index{polygone@{polygone}!getPolygone@{getPolygone}}
+\index{getPolygone@{getPolygone}!polygone@{polygone}}
+\subsubsection[getPolygone]{\setlength{\rightskip}{0pt plus 5cm}polygone::get\-Polygone ()}}
+\label{classpolygone_a1}
+
+
+
+
+\subsection{Documentation des donn\'{e}es membres}
+\hypertarget{classpolygone_o1}{
+\index{polygone@{polygone}!$enveloppe@{\$enveloppe}}
+\index{$enveloppe@{\$enveloppe}!polygone@{polygone}}
+\subsubsection[\$enveloppe]{\setlength{\rightskip}{0pt plus 5cm}polygone::\$enveloppe}}
+\label{classpolygone_o1}
+
+
+/$\ast$ tableau de 4 \'{e}l\'{e}ments contenant le rectangle enveloppant le polygone /$\ast$ dans l'ordre Xmin,Ymin,Xmax,Ymax\hypertarget{classpolygone_o0}{
+\index{polygone@{polygone}!$table@{\$table}}
+\index{$table@{\$table}!polygone@{polygone}}
+\subsubsection[\$table]{\setlength{\rightskip}{0pt plus 5cm}polygone::\$table}}
+\label{classpolygone_o0}
+
+
+
+
+La documentation de cette classe a \'{e}t\'{e} g\'{e}n\'{e}r\'{e}e \`{a} partir du fichier suivant:\begin{CompactItemize}
+\item 
+\hyperlink{carto__utilitaires_8php}{carto\_\-utilitaires.php}\end{CompactItemize}

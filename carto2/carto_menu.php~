@@ -1,0 +1,129 @@
+<?php
+//----------------------------------------- SAGEC --------------------------------------------------------
+//
+// This file is part of SAGEC67 Copyright (C) 2003 (Jean-Claude Bartier).
+// SAGEC67 is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+// SAGEC67 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// You should have received a copy of the GNU General Public License
+// along with SAGEC67; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//----------------------------------------- SAGEC --------------------------------------------------------
+/**
+*	programme: 		carto_menu.php
+*	date de création: 	15/04/2004
+*	@author:			jcb
+*	description:		affiche un choix d'options
+*	@version:			$Id$
+*	maj le:			15/02/2005
+*	@package Sagec
+*/
+//--------------------------------------------------------------------------------------------------------
+session_start();
+$langue=$_SESSION['langue'];
+$backPathToRoot = "../";
+require($backPathToRoot."dbConnection.php");
+require($backPathToRoot."utilitairesHTML.php");
+require($backPathToRoot."login/init_security.php");
+
+print("<html>");
+print("<head>");
+print("<title> menu service </title>");
+print("<LINK REL=stylesheet HREF=\"../pma.css\" TYPE =\"text/css\">");
+?>
+<script language="javascript">
+
+function checkBoxes (form, check) {
+   for (var c = 0; c < form.elements.length; c++)
+   	if (form.elements[c].type == 'checkbox')
+      	form.elements[c].checked = check;
+}
+</script>
+<?php
+print("</head>");
+
+print("<BODY>");
+print("<FORM name=\"menu\" method=\"get\" TARGET=\"midle\" action=\"carto_main.php\">");
+print("<UL>");
+	//print("<LI><A HREF = \"../samu_menu.php\" TARGET=\"_TOP\">Retour</A></LI>");//_TOP
+	print("<LI><A HREF = \"../sagec67.php\" TARGET=\"_TOP\">Retour</A>");
+	//print("<LI><A HREF = \"../gis/ville/ville_frameset.php\" TARGET=\"_TOP\">Villes</A>");
+	print("<LI><A HREF = \"http://www.sig-strasbourg.net/plan/index.html\" target=\"_blank\">CUS</A></LI>");
+print("</UL>");
+
+print("<fieldset class=\"time_r\">");
+print("<legend>objets à représenter</legend>");
+	print("<select name=\"objet\" size=\"1\">");
+	print("<OPTION VALUE = \"samu_smur\">SAMU et SMUR</OPTION>");
+	print("<OPTION VALUE = \"samu\">SAMU</OPTION>");
+	print("<OPTION VALUE = \"psm1\">PSM 1</OPTION>");
+	print("<OPTION VALUE = \"psm2\">PSM 2</OPTION>");
+	print("<OPTION VALUE = \"caisson\">Caissons hyperbares</OPTION>");
+	print("<OPTION VALUE = \"polyT\">Polytraumatisés</OPTION>");
+	print("<OPTION VALUE = \"helico\">Hélicoptères</OPTION>");
+	print("<OPTION VALUE = \"rea_adulte\">Réanimations Adultes</OPTION>");
+	print("<OPTION VALUE = \"rea_ped\">Réanimations pédiatriques</OPTION>");
+	print("<OPTION VALUE = \"morgue\">Morgues</OPTION>");
+	print("</select>\n");
+	
+print("</fieldset>");
+
+print("<fieldset class=\"time_v\">");
+print("<legend>Choisir les départements</legend>");
+$requete="SELECT * 
+			 FROM departement,region,zone
+			 WHERE departement.region_ID = region.region_ID
+			 AND region.zone_ID = zone.zone_ID
+			 AND zone.zone_ID = 1
+			 ORDER BY departement_id";
+$resultat = ExecRequete($requete,$connexion);
+print("<table>");
+$x = 0;
+print("<TR>");
+while($rub = mysql_fetch_array($resultat))
+{
+	print("<TD class=\"time_v\"><input type =\"checkbox\" name=\"dpt[]\" value=\"$rub[departement_ID]\">$rub[departement_ID]</TD>");
+	$x++;
+	if($x>2)
+	{
+		$x = 0;
+		print("</TR><TR>");
+	}
+}
+print("</TR>");
+print("</table>");
+print("<br>");
+print("<input type=\"button\" name=\"coche\" value=\"Tout cocher\"onclick=\"checkBoxes(this.form,true)\">");
+print("<input type=\"button\" name=\"decoche\" value=\"Tout décocher\"onclick=\"checkBoxes(this.form,false)\">");
+print("</fieldset>");
+//================================= ZOOM =================================================================
+/*
+print("<fieldset>");
+print("<legend> Zoom </legend>");
+	print("<input type =\"radio\" name=\"zoom\" value=\"1\" checked>A4<br>");
+	print("<input type =\"radio\" name=\"zoom\" value=\"2\">2A4<br>");
+	print("<input type =\"radio\" name=\"zoom\" value=\"3\">A5<br>");
+print("</fieldset>");*/
+//=======================================================================================================
+
+print("<br><input type = \"submit\" name = \"ok\" value=\"executer\">");
+
+print("<fieldset class=\"time_r\">");
+print("<legend><input type =\"checkbox\" name=\"isocercle\" checked > Isocercles</legend>");
+	print("centré sur:");
+	select_ville($connexion,"1",$langue,$onChange="");// id_ville
+	print("<br>");
+	print("rayon: <input type =\"text\" name=\"rayon\" value=\"100\" size=\"5\" >km");
+print("</fieldset>");
+
+?>
+<a href="newcarto_main.php">Nouvelle carto</a>
+
+</FORM>
+</BODY>"
+</html>

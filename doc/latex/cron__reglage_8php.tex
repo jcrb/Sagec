@@ -1,0 +1,73 @@
+\hypertarget{cron__reglage_8php}{
+\section{R\'{e}f\'{e}rence du fichier cron\_\-reglage.php}
+\label{cron__reglage_8php}\index{cron_reglage.php@{cron\_\-reglage.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{cron__reglage_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{cron__reglage_8php_a1}{\$requete} = \char`\"{}SELECT $\ast$ FROM cron\char`\"{}
+\item 
+\hyperlink{cron__reglage_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{cron__reglage_8php_a3}{\$rub} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{cron__reglage_8php_a4}{\$s} = ''
+\item 
+\hyperlink{cron__reglage_8php_a5}{\$hier} = date(\char`\"{}Y/m/j\char`\"{},mktime(0,0,0,date('m'),date('d')-1,date('Y')))
+\item 
+\hyperlink{cron__reglage_8php_a6}{\$j7} = date(\char`\"{}Y/m/j\char`\"{},mktime(0,0,0,date('m'),date('d')-7,date('Y')))
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{cron__reglage_8php_a0}{
+\index{cron_reglage.php@{cron\_\-reglage.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!cron_reglage.php@{cron\_\-reglage.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{cron__reglage_8php_a0}
+
+
+\hypertarget{cron__reglage_8php_a5}{
+\index{cron_reglage.php@{cron\_\-reglage.php}!$hier@{\$hier}}
+\index{$hier@{\$hier}!cron_reglage.php@{cron\_\-reglage.php}}
+\subsubsection[\$hier]{\setlength{\rightskip}{0pt plus 5cm}\$hier = date(\char`\"{}Y/m/j\char`\"{},mktime(0,0,0,date('m'),date('d')-1,date('Y')))}}
+\label{cron__reglage_8php_a5}
+
+
+\hypertarget{cron__reglage_8php_a6}{
+\index{cron_reglage.php@{cron\_\-reglage.php}!$j7@{\$j7}}
+\index{$j7@{\$j7}!cron_reglage.php@{cron\_\-reglage.php}}
+\subsubsection[\$j7]{\setlength{\rightskip}{0pt plus 5cm}\$j7 = date(\char`\"{}Y/m/j\char`\"{},mktime(0,0,0,date('m'),date('d')-7,date('Y')))}}
+\label{cron__reglage_8php_a6}
+
+
+\hypertarget{cron__reglage_8php_a1}{
+\index{cron_reglage.php@{cron\_\-reglage.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!cron_reglage.php@{cron\_\-reglage.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT $\ast$ FROM cron\char`\"{}}}
+\label{cron__reglage_8php_a1}
+
+
+\hypertarget{cron__reglage_8php_a2}{
+\index{cron_reglage.php@{cron\_\-reglage.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!cron_reglage.php@{cron\_\-reglage.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{cron__reglage_8php_a2}
+
+
+\hypertarget{cron__reglage_8php_a3}{
+\index{cron_reglage.php@{cron\_\-reglage.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!cron_reglage.php@{cron\_\-reglage.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{cron__reglage_8php_a3}
+
+
+\hypertarget{cron__reglage_8php_a4}{
+\index{cron_reglage.php@{cron\_\-reglage.php}!$s@{\$s}}
+\index{$s@{\$s}!cron_reglage.php@{cron\_\-reglage.php}}
+\subsubsection[\$s]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$s = ''}}
+\label{cron__reglage_8php_a4}
+
+

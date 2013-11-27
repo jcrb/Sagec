@@ -1,0 +1,46 @@
+\hypertarget{biotox__image_8php}{
+\section{R\'{e}f\'{e}rence du fichier biotox\_\-image.php}
+\label{biotox__image_8php}\index{biotox_image.php@{biotox\_\-image.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{biotox__image_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{biotox__image_8php_a1}{\$requete} = \char`\"{}SELECT materiel\_\-nom FROM materiel WHERE materiel\_\-ID = '\$\_\-GET\mbox{[}type\_\-materiels\mbox{]}'\char`\"{}
+\item 
+\hyperlink{biotox__image_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{biotox__image_8php_a3}{\$rub} = mysql\_\-fetch\_\-array(\$resultat)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{biotox__image_8php_a0}{
+\index{biotox_image.php@{biotox\_\-image.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!biotox_image.php@{biotox\_\-image.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{biotox__image_8php_a0}
+
+
+\hypertarget{biotox__image_8php_a1}{
+\index{biotox_image.php@{biotox\_\-image.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!biotox_image.php@{biotox\_\-image.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT materiel\_\-nom FROM materiel WHERE materiel\_\-ID = '\$\_\-GET\mbox{[}type\_\-materiels\mbox{]}'\char`\"{}}}
+\label{biotox__image_8php_a1}
+
+
+\hypertarget{biotox__image_8php_a2}{
+\index{biotox_image.php@{biotox\_\-image.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!biotox_image.php@{biotox\_\-image.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{biotox__image_8php_a2}
+
+
+\hypertarget{biotox__image_8php_a3}{
+\index{biotox_image.php@{biotox\_\-image.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!biotox_image.php@{biotox\_\-image.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{biotox__image_8php_a3}
+
+

@@ -1,0 +1,19 @@
+\hypertarget{courier_8php}{
+\section{R\'{e}f\'{e}rence du fichier courier.php}
+\label{courier_8php}\index{courier.php@{courier.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{courier_8php_a0}{\$fpdf\_\-charwidths} \mbox{[}'courier\-B'\mbox{]} = \$fpdf\_\-charwidths\mbox{[}'courier'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{courier_8php_a0}{
+\index{courier.php@{courier.php}!$fpdf_charwidths@{\$fpdf\_\-charwidths}}
+\index{$fpdf_charwidths@{\$fpdf\_\-charwidths}!courier.php@{courier.php}}
+\subsubsection[\$fpdf\_\-charwidths]{\setlength{\rightskip}{0pt plus 5cm}\$fpdf\_\-charwidths\mbox{[}'courier\-BI'\mbox{]} = \$fpdf\_\-charwidths\mbox{[}'courier'\mbox{]}}}
+\label{courier_8php_a0}
+
+

@@ -1,0 +1,126 @@
+\hypertarget{passeport_8php}{
+\section{R\'{e}f\'{e}rence du fichier passeport.php}
+\label{passeport_8php}\index{passeport.php@{passeport.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{passeport_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{passeport_8php_a1}{\$requete}
+\item 
+\hyperlink{passeport_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{passeport_8php_a3}{\$rub} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{passeport_8php_a4}{\$pays} = \char`\"{}30\char`\"{}
+\item 
+\hyperlink{passeport_8php_a5}{\$organisme} = substr(\char`\"{}000\char`\"{}.\$rub\mbox{[}org\_\-ID\mbox{]},-3)
+\item 
+\hyperlink{passeport_8php_a6}{\$service} = \char`\"{}000\char`\"{}
+\item 
+\hyperlink{passeport_8php_a7}{\$individu} = substr(\char`\"{}0000\char`\"{}.\$\_\-GET\mbox{[}personnel\-ID\mbox{]},-4)
+\item 
+\hyperlink{passeport_8php_a8}{\$code} = \$pays.\$organisme.\$service.\$individu
+\item 
+int \hyperlink{passeport_8php_a9}{\$b} = (int)\$code\mbox{[}\$i-1\mbox{]}
+\item 
+\hyperlink{passeport_8php_a10}{\$mot} = (int)\$mot + (int)\$a + (int)\$b
+\item 
+\hyperlink{passeport_8php_a11}{\$clef} = 0
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{passeport_8php_a9}{
+\index{passeport.php@{passeport.php}!$b@{\$b}}
+\index{$b@{\$b}!passeport.php@{passeport.php}}
+\subsubsection[\$b]{\setlength{\rightskip}{0pt plus 5cm}int \$b = (int)\$code\mbox{[}\$i-1\mbox{]}}}
+\label{passeport_8php_a9}
+
+
+\hypertarget{passeport_8php_a11}{
+\index{passeport.php@{passeport.php}!$clef@{\$clef}}
+\index{$clef@{\$clef}!passeport.php@{passeport.php}}
+\subsubsection[\$clef]{\setlength{\rightskip}{0pt plus 5cm}\$clef = 0}}
+\label{passeport_8php_a11}
+
+
+\hypertarget{passeport_8php_a8}{
+\index{passeport.php@{passeport.php}!$code@{\$code}}
+\index{$code@{\$code}!passeport.php@{passeport.php}}
+\subsubsection[\$code]{\setlength{\rightskip}{0pt plus 5cm}\$code = \$pays.\$organisme.\$service.\$individu}}
+\label{passeport_8php_a8}
+
+
+\hypertarget{passeport_8php_a0}{
+\index{passeport.php@{passeport.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!passeport.php@{passeport.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{passeport_8php_a0}
+
+
+\hypertarget{passeport_8php_a7}{
+\index{passeport.php@{passeport.php}!$individu@{\$individu}}
+\index{$individu@{\$individu}!passeport.php@{passeport.php}}
+\subsubsection[\$individu]{\setlength{\rightskip}{0pt plus 5cm}\$individu = substr(\char`\"{}0000\char`\"{}.\$\_\-GET\mbox{[}personnel\-ID\mbox{]},-4)}}
+\label{passeport_8php_a7}
+
+
+\hypertarget{passeport_8php_a10}{
+\index{passeport.php@{passeport.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!passeport.php@{passeport.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = (int)\$mot + (int)\$a + (int)\$b}}
+\label{passeport_8php_a10}
+
+
+\hypertarget{passeport_8php_a5}{
+\index{passeport.php@{passeport.php}!$organisme@{\$organisme}}
+\index{$organisme@{\$organisme}!passeport.php@{passeport.php}}
+\subsubsection[\$organisme]{\setlength{\rightskip}{0pt plus 5cm}\$organisme = substr(\char`\"{}000\char`\"{}.\$rub\mbox{[}org\_\-ID\mbox{]},-3)}}
+\label{passeport_8php_a5}
+
+
+\hypertarget{passeport_8php_a4}{
+\index{passeport.php@{passeport.php}!$pays@{\$pays}}
+\index{$pays@{\$pays}!passeport.php@{passeport.php}}
+\subsubsection[\$pays]{\setlength{\rightskip}{0pt plus 5cm}\$pays = \char`\"{}30\char`\"{}}}
+\label{passeport_8php_a4}
+
+
+\hypertarget{passeport_8php_a1}{
+\index{passeport.php@{passeport.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!passeport.php@{passeport.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{passeport_8php_a1}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}        "SELECT Pers_Nom,Pers_Prenom,org_ID,perso_cat_nom,photo
+                 FROM personnel,perso_cat
+                 WHERE Pers_ID = '$_GET[personnelID]'
+                 AND personnel.perso_cat_ID = perso_cat.perso_cat_ID
+                 "
+\end{verbatim}\normalsize 
+\hypertarget{passeport_8php_a2}{
+\index{passeport.php@{passeport.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!passeport.php@{passeport.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{passeport_8php_a2}
+
+
+\hypertarget{passeport_8php_a3}{
+\index{passeport.php@{passeport.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!passeport.php@{passeport.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{passeport_8php_a3}
+
+
+\hypertarget{passeport_8php_a6}{
+\index{passeport.php@{passeport.php}!$service@{\$service}}
+\index{$service@{\$service}!passeport.php@{passeport.php}}
+\subsubsection[\$service]{\setlength{\rightskip}{0pt plus 5cm}\$service = \char`\"{}000\char`\"{}}}
+\label{passeport_8php_a6}
+
+

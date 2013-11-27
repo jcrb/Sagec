@@ -1,0 +1,109 @@
+\hypertarget{contact__saisie_8php}{
+\section{R\'{e}f\'{e}rence du fichier contact\_\-saisie.php}
+\label{contact__saisie_8php}\index{contact_saisie.php@{contact\_\-saisie.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{contact__saisie_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{contact__saisie_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{contact__saisie_8php_a2}{\$rub} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{contact__saisie_8php_a3}{break}
+\item 
+case \hyperlink{contact__saisie_8php_a4}{\_\-\_\-pad0\_\-\_\-}
+\item 
+\hyperlink{contact__saisie_8php_a5}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+case \hyperlink{contact__saisie_8php_a6}{\_\-\_\-pad1\_\-\_\-}
+\item 
+case \hyperlink{contact__saisie_8php_a7}{\_\-\_\-pad2\_\-\_\-}
+\item 
+\hyperlink{contact__saisie_8php_a8}{\$requete} = \char`\"{}SELECT nature\_\-contact\_\-ID,nature\_\-contact\_\-nom FROM nature\_\-contact ORDER BY nature\_\-contact\_\-nom\char`\"{}
+\item 
+\hyperlink{contact__saisie_8php_a9}{\$type\_\-contact} = \$v\mbox{[}'type\_\-contact\_\-ID'\mbox{]}
+\item 
+\hyperlink{contact__saisie_8php_a10}{\$confidentialite} = \$v\mbox{[}'confidentialite\_\-ID'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{contact__saisie_8php_a10}{
+\index{contact_saisie.php@{contact\_\-saisie.php}!$confidentialite@{\$confidentialite}}
+\index{$confidentialite@{\$confidentialite}!contact_saisie.php@{contact\_\-saisie.php}}
+\subsubsection[\$confidentialite]{\setlength{\rightskip}{0pt plus 5cm}\$confidentialite = \$v\mbox{[}'confidentialite\_\-ID'\mbox{]}}}
+\label{contact__saisie_8php_a10}
+
+
+\hypertarget{contact__saisie_8php_a1}{
+\index{contact_saisie.php@{contact\_\-saisie.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!contact_saisie.php@{contact\_\-saisie.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{contact__saisie_8php_a1}
+
+
+\hypertarget{contact__saisie_8php_a0}{
+\index{contact_saisie.php@{contact\_\-saisie.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!contact_saisie.php@{contact\_\-saisie.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{contact__saisie_8php_a0}
+
+
+\hypertarget{contact__saisie_8php_a8}{
+\index{contact_saisie.php@{contact\_\-saisie.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!contact_saisie.php@{contact\_\-saisie.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT nature\_\-contact\_\-ID,nature\_\-contact\_\-nom FROM nature\_\-contact ORDER BY nature\_\-contact\_\-nom\char`\"{}}}
+\label{contact__saisie_8php_a8}
+
+
+\hypertarget{contact__saisie_8php_a5}{
+\index{contact_saisie.php@{contact\_\-saisie.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!contact_saisie.php@{contact\_\-saisie.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{contact__saisie_8php_a5}
+
+
+\hypertarget{contact__saisie_8php_a2}{
+\index{contact_saisie.php@{contact\_\-saisie.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!contact_saisie.php@{contact\_\-saisie.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{contact__saisie_8php_a2}
+
+
+\hypertarget{contact__saisie_8php_a9}{
+\index{contact_saisie.php@{contact\_\-saisie.php}!$type_contact@{\$type\_\-contact}}
+\index{$type_contact@{\$type\_\-contact}!contact_saisie.php@{contact\_\-saisie.php}}
+\subsubsection[\$type\_\-contact]{\setlength{\rightskip}{0pt plus 5cm}\$type\_\-contact = \$v\mbox{[}'type\_\-contact\_\-ID'\mbox{]}}}
+\label{contact__saisie_8php_a9}
+
+
+\hypertarget{contact__saisie_8php_a4}{
+\index{contact_saisie.php@{contact\_\-saisie.php}!__pad0__@{\_\-\_\-pad0\_\-\_\-}}
+\index{__pad0__@{\_\-\_\-pad0\_\-\_\-}!contact_saisie.php@{contact\_\-saisie.php}}
+\subsubsection[\_\-\_\-pad0\_\-\_\-]{\setlength{\rightskip}{0pt plus 5cm}case \hyperlink{contact__saisie_8php_a4}{\_\-\_\-pad0\_\-\_\-}}}
+\label{contact__saisie_8php_a4}
+
+
+\hypertarget{contact__saisie_8php_a6}{
+\index{contact_saisie.php@{contact\_\-saisie.php}!__pad1__@{\_\-\_\-pad1\_\-\_\-}}
+\index{__pad1__@{\_\-\_\-pad1\_\-\_\-}!contact_saisie.php@{contact\_\-saisie.php}}
+\subsubsection[\_\-\_\-pad1\_\-\_\-]{\setlength{\rightskip}{0pt plus 5cm}case \hyperlink{contact__saisie_8php_a6}{\_\-\_\-pad1\_\-\_\-}}}
+\label{contact__saisie_8php_a6}
+
+
+\hypertarget{contact__saisie_8php_a7}{
+\index{contact_saisie.php@{contact\_\-saisie.php}!__pad2__@{\_\-\_\-pad2\_\-\_\-}}
+\index{__pad2__@{\_\-\_\-pad2\_\-\_\-}!contact_saisie.php@{contact\_\-saisie.php}}
+\subsubsection[\_\-\_\-pad2\_\-\_\-]{\setlength{\rightskip}{0pt plus 5cm}case \hyperlink{contact__saisie_8php_a7}{\_\-\_\-pad2\_\-\_\-}}}
+\label{contact__saisie_8php_a7}
+
+
+\hypertarget{contact__saisie_8php_a3}{
+\index{contact_saisie.php@{contact\_\-saisie.php}!break@{break}}
+\index{break@{break}!contact_saisie.php@{contact\_\-saisie.php}}
+\subsubsection[break]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{lits__fermes__nouveau_8php_a0}{break}}}
+\label{contact__saisie_8php_a3}
+
+

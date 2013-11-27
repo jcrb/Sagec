@@ -1,0 +1,59 @@
+\hypertarget{utilitaire__tr_8php}{
+\section{R\'{e}f\'{e}rence du fichier utilitaire\_\-tr.php}
+\label{utilitaire__tr_8php}\index{utilitaire_tr.php@{utilitaire\_\-tr.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{utilitaire__tr_8php_a0}{maj\_\-tab\-Garde} (\$connexion)
+\item 
+\hyperlink{utilitaire__tr_8php_a1}{get\-Heure\-Courante} ()
+\item 
+\hyperlink{utilitaire__tr_8php_a2}{get\-Date\-Courante} ()
+\item 
+\hyperlink{utilitaire__tr_8php_a3}{get\-Periode\-Courante} ()
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{utilitaire__tr_8php_a2}{
+\index{utilitaire_tr.php@{utilitaire\_\-tr.php}!getDateCourante@{getDateCourante}}
+\index{getDateCourante@{getDateCourante}!utilitaire_tr.php@{utilitaire\_\-tr.php}}
+\subsubsection[getDateCourante]{\setlength{\rightskip}{0pt plus 5cm}get\-Date\-Courante ()}}
+\label{utilitaire__tr_8php_a2}
+
+
+\hyperlink{utilitaire__tr_8php_a2}{get\-Date\-Courante()} retourne la date courante \begin{Desc}
+\item[Renvoie:]string date courante au format aaaa-mm-jj \end{Desc}
+\hypertarget{utilitaire__tr_8php_a1}{
+\index{utilitaire_tr.php@{utilitaire\_\-tr.php}!getHeureCourante@{getHeureCourante}}
+\index{getHeureCourante@{getHeureCourante}!utilitaire_tr.php@{utilitaire\_\-tr.php}}
+\subsubsection[getHeureCourante]{\setlength{\rightskip}{0pt plus 5cm}get\-Heure\-Courante ()}}
+\label{utilitaire__tr_8php_a1}
+
+
+\hyperlink{utilitaire__tr_8php_a1}{get\-Heure\-Courante()} retourne l'heure courante \begin{Desc}
+\item[Renvoie:]string heure courante sous forme hh:mm \end{Desc}
+\hypertarget{utilitaire__tr_8php_a3}{
+\index{utilitaire_tr.php@{utilitaire\_\-tr.php}!getPeriodeCourante@{getPeriodeCourante}}
+\index{getPeriodeCourante@{getPeriodeCourante}!utilitaire_tr.php@{utilitaire\_\-tr.php}}
+\subsubsection[getPeriodeCourante]{\setlength{\rightskip}{0pt plus 5cm}get\-Periode\-Courante ()}}
+\label{utilitaire__tr_8php_a3}
+
+
+\hyperlink{utilitaire__tr_8php_a3}{get\-Periode\-Courante()} retourne la p\'{e}riode courante \begin{Desc}
+\item[Renvoie:]char J (jour) ou N (nuit) \end{Desc}
+\hypertarget{utilitaire__tr_8php_a0}{
+\index{utilitaire_tr.php@{utilitaire\_\-tr.php}!maj_tabGarde@{maj\_\-tabGarde}}
+\index{maj_tabGarde@{maj\_\-tabGarde}!utilitaire_tr.php@{utilitaire\_\-tr.php}}
+\subsubsection[maj\_\-tabGarde]{\setlength{\rightskip}{0pt plus 5cm}maj\_\-tab\-Garde (\$ {\em connexion})}}
+\label{utilitaire__tr_8php_a0}
+
+
+\hyperlink{utilitaire__tr_8php_a0}{maj\_\-tab\-Garde()} met \`{a} jour le tableau de roulement des ASSU CUS en fonction de la date et de l'heure \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em int}]variable de connexion \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]rien \end{Desc}

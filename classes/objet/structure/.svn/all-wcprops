@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/dev/!svn/ver/16747/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure
+END
+Uf.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure/Uf.class.php
+END
+DisciplineArh.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/dev/!svn/ver/16723/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure/DisciplineArh.class.php
+END
+Etablissement.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure/Etablissement.class.php
+END
+Pole.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure/Pole.class.php
+END
+Service.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure/Service.class.php
+END
+TypeStructure.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure/TypeStructure.class.php
+END
+Organisme.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure/Organisme.class.php
+END

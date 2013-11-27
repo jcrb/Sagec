@@ -1,0 +1,28 @@
+\hypertarget{reporting__choix_8php}{
+\section{R\'{e}f\'{e}rence du fichier reporting\_\-choix.php}
+\label{reporting__choix_8php}\index{reporting_choix.php@{reporting\_\-choix.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{reporting__choix_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{reporting__choix_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{reporting__choix_8php_a1}{
+\index{reporting_choix.php@{reporting\_\-choix.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!reporting_choix.php@{reporting\_\-choix.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{reporting__choix_8php_a1}
+
+
+\hypertarget{reporting__choix_8php_a0}{
+\index{reporting_choix.php@{reporting\_\-choix.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!reporting_choix.php@{reporting\_\-choix.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{reporting__choix_8php_a0}
+
+

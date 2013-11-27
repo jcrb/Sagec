@@ -1,0 +1,73 @@
+\hypertarget{fichier__en__table__execute_8php}{
+\section{R\'{e}f\'{e}rence du fichier fichier\_\-en\_\-table\_\-execute.php}
+\label{fichier__en__table__execute_8php}\index{fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{fichier__en__table__execute_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{fichier__en__table__execute_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{fichier__en__table__execute_8php_a2}{\$fichier} = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'name'\mbox{]}
+\item 
+\hyperlink{fichier__en__table__execute_8php_a3}{\$taille} = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'size'\mbox{]}
+\item 
+\hyperlink{fichier__en__table__execute_8php_a4}{\$tmp} = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'tmp\_\-name'\mbox{]}
+\item 
+\hyperlink{fichier__en__table__execute_8php_a5}{\$type} = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'type'\mbox{]}
+\item 
+\hyperlink{fichier__en__table__execute_8php_a6}{\$erreur} = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'error'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{fichier__en__table__execute_8php_a1}{
+\index{fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{fichier__en__table__execute_8php_a1}
+
+
+\hypertarget{fichier__en__table__execute_8php_a6}{
+\index{fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}!$erreur@{\$erreur}}
+\index{$erreur@{\$erreur}!fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}}
+\subsubsection[\$erreur]{\setlength{\rightskip}{0pt plus 5cm}\$erreur = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'error'\mbox{]}}}
+\label{fichier__en__table__execute_8php_a6}
+
+
+\hypertarget{fichier__en__table__execute_8php_a2}{
+\index{fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}!$fichier@{\$fichier}}
+\index{$fichier@{\$fichier}!fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}}
+\subsubsection[\$fichier]{\setlength{\rightskip}{0pt plus 5cm}\$fichier = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'name'\mbox{]}}}
+\label{fichier__en__table__execute_8php_a2}
+
+
+\hypertarget{fichier__en__table__execute_8php_a0}{
+\index{fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{fichier__en__table__execute_8php_a0}
+
+
+\hypertarget{fichier__en__table__execute_8php_a3}{
+\index{fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}!$taille@{\$taille}}
+\index{$taille@{\$taille}!fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}}
+\subsubsection[\$taille]{\setlength{\rightskip}{0pt plus 5cm}\$taille = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'size'\mbox{]}}}
+\label{fichier__en__table__execute_8php_a3}
+
+
+\hypertarget{fichier__en__table__execute_8php_a4}{
+\index{fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}!$tmp@{\$tmp}}
+\index{$tmp@{\$tmp}!fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}}
+\subsubsection[\$tmp]{\setlength{\rightskip}{0pt plus 5cm}\$tmp = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'tmp\_\-name'\mbox{]}}}
+\label{fichier__en__table__execute_8php_a4}
+
+
+\hypertarget{fichier__en__table__execute_8php_a5}{
+\index{fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}!$type@{\$type}}
+\index{$type@{\$type}!fichier_en_table_execute.php@{fichier\_\-en\_\-table\_\-execute.php}}
+\subsubsection[\$type]{\setlength{\rightskip}{0pt plus 5cm}\$type = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'type'\mbox{]}}}
+\label{fichier__en__table__execute_8php_a5}
+
+

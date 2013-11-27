@@ -1,0 +1,24 @@
+\hypertarget{graphe__pdf_8php}{
+\section{R\'{e}f\'{e}rence du fichier graphe\_\-pdf.php}
+\label{graphe__pdf_8php}\index{graphe_pdf.php@{graphe\_\-pdf.php}}
+}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classPDF}{PDF}
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{graphe__pdf_8php_a0}{\$pdf} = new \hyperlink{classPDF}{PDF}()
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{graphe__pdf_8php_a0}{
+\index{graphe_pdf.php@{graphe\_\-pdf.php}!$pdf@{\$pdf}}
+\index{$pdf@{\$pdf}!graphe_pdf.php@{graphe\_\-pdf.php}}
+\subsubsection[\$pdf]{\setlength{\rightskip}{0pt plus 5cm}\$pdf = new \hyperlink{classPDF}{PDF}()}}
+\label{graphe__pdf_8php_a0}
+
+

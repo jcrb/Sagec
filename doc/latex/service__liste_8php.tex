@@ -1,0 +1,100 @@
+\hypertarget{service__liste_8php}{
+\section{R\'{e}f\'{e}rence du fichier service\_\-liste.php}
+\label{service__liste_8php}\index{service_liste.php@{service\_\-liste.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{service__liste_8php_a0}{\$mot} = \$string\_\-lang\mbox{[}'LISTE\_\-SERVICE\_\-HOPITAL'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{service__liste_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{service__liste_8php_a2}{\$modifier} = \$string\_\-lang\mbox{[}'MODIFIER'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{service__liste_8php_a3}{\$\_\-style} = \char`\"{}A5\char`\"{}
+\item 
+\hyperlink{service__liste_8php_a4}{\$total} = array()
+\item 
+\hyperlink{service__liste_8php_a5}{\$identifiant} = \$i $\rightarrow$ service\_\-ID
+\item 
+\hyperlink{service__liste_8php_a6}{\$type} = \$i $\rightarrow$ Type\_\-ID
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{service__liste_8php_a7}{\$d} = date(\char`\"{}j/m/Y H:i\char`\"{},\$i $\rightarrow$ date\_\-maj)
+\item 
+\hyperlink{service__liste_8php_a8}{\$requete} = \char`\"{}SELECT type\_\-nom FROM type\_\-service ORDER BY type\_\-nom\char`\"{}
+\item 
+\hyperlink{service__liste_8php_a9}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{service__liste_8php_a3}{
+\index{service_liste.php@{service\_\-liste.php}!$_style@{\$\_\-style}}
+\index{$_style@{\$\_\-style}!service_liste.php@{service\_\-liste.php}}
+\subsubsection[\$\_\-style]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$\_\-style = \char`\"{}A5\char`\"{}}}
+\label{service__liste_8php_a3}
+
+
+\hypertarget{service__liste_8php_a1}{
+\index{service_liste.php@{service\_\-liste.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!service_liste.php@{service\_\-liste.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{service__liste_8php_a1}
+
+
+\hypertarget{service__liste_8php_a7}{
+\index{service_liste.php@{service\_\-liste.php}!$d@{\$d}}
+\index{$d@{\$d}!service_liste.php@{service\_\-liste.php}}
+\subsubsection[\$d]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$d = date(\char`\"{}j/m/Y H:i\char`\"{},\$i $\rightarrow$ date\_\-maj)}}
+\label{service__liste_8php_a7}
+
+
+\hypertarget{service__liste_8php_a5}{
+\index{service_liste.php@{service\_\-liste.php}!$identifiant@{\$identifiant}}
+\index{$identifiant@{\$identifiant}!service_liste.php@{service\_\-liste.php}}
+\subsubsection[\$identifiant]{\setlength{\rightskip}{0pt plus 5cm}\$identifiant = \$i $\rightarrow$ service\_\-ID}}
+\label{service__liste_8php_a5}
+
+
+\hypertarget{service__liste_8php_a2}{
+\index{service_liste.php@{service\_\-liste.php}!$modifier@{\$modifier}}
+\index{$modifier@{\$modifier}!service_liste.php@{service\_\-liste.php}}
+\subsubsection[\$modifier]{\setlength{\rightskip}{0pt plus 5cm}\$modifier = \$string\_\-lang\mbox{[}'MODIFIER'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{service__liste_8php_a2}
+
+
+\hypertarget{service__liste_8php_a0}{
+\index{service_liste.php@{service\_\-liste.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!service_liste.php@{service\_\-liste.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'LISTE\_\-SERVICE\_\-HOPITAL'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{service__liste_8php_a0}
+
+
+\hypertarget{service__liste_8php_a8}{
+\index{service_liste.php@{service\_\-liste.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!service_liste.php@{service\_\-liste.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT type\_\-nom FROM type\_\-service ORDER BY type\_\-nom\char`\"{}}}
+\label{service__liste_8php_a8}
+
+
+\hypertarget{service__liste_8php_a9}{
+\index{service_liste.php@{service\_\-liste.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!service_liste.php@{service\_\-liste.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{service__liste_8php_a9}
+
+
+\hypertarget{service__liste_8php_a4}{
+\index{service_liste.php@{service\_\-liste.php}!$total@{\$total}}
+\index{$total@{\$total}!service_liste.php@{service\_\-liste.php}}
+\subsubsection[\$total]{\setlength{\rightskip}{0pt plus 5cm}\$total\mbox{[}\$i $\rightarrow$ type\_\-nom\mbox{]} = array()}}
+\label{service__liste_8php_a4}
+
+
+\hypertarget{service__liste_8php_a6}{
+\index{service_liste.php@{service\_\-liste.php}!$type@{\$type}}
+\index{$type@{\$type}!service_liste.php@{service\_\-liste.php}}
+\subsubsection[\$type]{\setlength{\rightskip}{0pt plus 5cm}\$type = \$i $\rightarrow$ Type\_\-ID}}
+\label{service__liste_8php_a6}
+
+

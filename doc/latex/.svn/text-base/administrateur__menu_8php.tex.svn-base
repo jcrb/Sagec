@@ -1,0 +1,28 @@
+\hypertarget{administrateur__menu_8php}{
+\section{R\'{e}f\'{e}rence du fichier administrateur\_\-menu.php}
+\label{administrateur__menu_8php}\index{administrateur_menu.php@{administrateur\_\-menu.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{administrateur__menu_8php_a0}{\$mot} = \$string\_\-lang\mbox{[}'ADMINISTRATEUR'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{} \char`\"{}.\$hopital
+\item 
+\hyperlink{administrateur__menu_8php_a1}{\$\_\-style} = \char`\"{}A2\char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{administrateur__menu_8php_a1}{
+\index{administrateur_menu.php@{administrateur\_\-menu.php}!$_style@{\$\_\-style}}
+\index{$_style@{\$\_\-style}!administrateur_menu.php@{administrateur\_\-menu.php}}
+\subsubsection[\$\_\-style]{\setlength{\rightskip}{0pt plus 5cm}\$\_\-style = \char`\"{}A2\char`\"{}}}
+\label{administrateur__menu_8php_a1}
+
+
+\hypertarget{administrateur__menu_8php_a0}{
+\index{administrateur_menu.php@{administrateur\_\-menu.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!administrateur_menu.php@{administrateur\_\-menu.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'ADMINISTRATEUR'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{} \char`\"{}.\$hopital}}
+\label{administrateur__menu_8php_a0}
+
+

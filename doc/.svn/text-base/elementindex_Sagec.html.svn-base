@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Package Sagec Element Index</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+		[ <a href="classtrees_Sagec.html">Class Tree: Sagec</a> ]
+		[ <a href="elementindex_Sagec.html">Index: Sagec</a> ]
+		[ <a href="elementindex.html">All elements</a> ]
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">Sagec</div>
+		<div id="packageTitle">Sagec</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="packages">
+		Packages:
+					<p><a href="li_Sagec.html">Sagec</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="Sagec/_create_xml.php.html">		create_xml.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+							</div>
+		</div>
+	</div>
+
+<div id="body">
+	    	<a name="top"></a>
+<h1>Element index for package Sagec</h1>
+	<a href="elementindex_Sagec.html#c">c</a>
+	<a href="elementindex_Sagec.html#l">l</a>
+	<a href="elementindex_Sagec.html#p">p</a>
+
+	<a name="c"></a>
+	<a href="elementindex_Sagec.html#top">top</a><br>
+	<div>
+		<h2>c</h2>
+		<dl class="lettercontents">
+							<dt>create_xml.php</dt>
+				<dd>procedural page <a href="Sagec/_create_xml.php.html">create_xml.php</a></dd>
+					</dl>
+	</div>
+	<a name="l"></a>
+	<a href="elementindex_Sagec.html#top">top</a><br>
+	<div>
+		<h2>l</h2>
+		<dl class="lettercontents">
+							<dt>litsDispoParSpecialite_hopital</dt>
+				<dd>in file create_xml.php, function <a href="Sagec/_create_xml.php.html#functionlitsDispoParSpecialite_hopital">litsDispoParSpecialite_hopital()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Retourne les lits disponibles par spécialité avec un historique des n derniers jours</dd>
+					</dl>
+	</div>
+	<a name="p"></a>
+	<a href="elementindex_Sagec.html#top">top</a><br>
+	<div>
+		<h2>p</h2>
+		<dl class="lettercontents">
+							<dt>placesDispoParSpecialite_hopital</dt>
+				<dd>in file create_xml.php, function <a href="Sagec/_create_xml.php.html#functionplacesDispoParSpecialite_hopital">placesDispoParSpecialite_hopital()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Retourne les places disponibles par spécialité avec un historique des n derniers jours</dd>
+					</dl>
+	</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sat, 03 Jun 2006 22:55:22 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.3.0RC6</a>
+	</div>
+</div>
+</body>
+</html>

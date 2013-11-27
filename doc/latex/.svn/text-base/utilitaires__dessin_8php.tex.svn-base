@@ -1,0 +1,28 @@
+\hypertarget{utilitaires__dessin_8php}{
+\section{R\'{e}f\'{e}rence du fichier utilitaires\_\-dessin.php}
+\label{utilitaires__dessin_8php}\index{utilitaires_dessin.php@{utilitaires\_\-dessin.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{utilitaires__dessin_8php_a0}{pt\_\-est\-Sommet} (\$x, \$y, \$p)
+\item 
+\hyperlink{utilitaires__dessin_8php_a1}{fusionne2polygones} (\$p1, \$p2)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{utilitaires__dessin_8php_a1}{
+\index{utilitaires_dessin.php@{utilitaires\_\-dessin.php}!fusionne2polygones@{fusionne2polygones}}
+\index{fusionne2polygones@{fusionne2polygones}!utilitaires_dessin.php@{utilitaires\_\-dessin.php}}
+\subsubsection[fusionne2polygones]{\setlength{\rightskip}{0pt plus 5cm}fusionne2polygones (\$ {\em p1}, \$ {\em p2})}}
+\label{utilitaires__dessin_8php_a1}
+
+
+\hypertarget{utilitaires__dessin_8php_a0}{
+\index{utilitaires_dessin.php@{utilitaires\_\-dessin.php}!pt_estSommet@{pt\_\-estSommet}}
+\index{pt_estSommet@{pt\_\-estSommet}!utilitaires_dessin.php@{utilitaires\_\-dessin.php}}
+\subsubsection[pt\_\-estSommet]{\setlength{\rightskip}{0pt plus 5cm}pt\_\-est\-Sommet (\$ {\em x}, \$ {\em y}, \$ {\em p})}}
+\label{utilitaires__dessin_8php_a0}
+
+

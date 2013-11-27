@@ -1,0 +1,28 @@
+\hypertarget{cle__disponible_8php}{
+\section{R\'{e}f\'{e}rence du fichier cle\_\-disponible.php}
+\label{cle__disponible_8php}\index{cle_disponible.php@{cle\_\-disponible.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{cle__disponible_8php_a0}{\$gpg} = new \hyperlink{classgnuPG}{gnu\-PG}(/usr/local/bin/gpg, /var/www/html/SAGEC67\_\-v3/veille\_\-sanitaire)
+\item 
+\hyperlink{cle__disponible_8php_a1}{\$Keys} = \$gpg $\rightarrow$ List\-Keys(public)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{cle__disponible_8php_a0}{
+\index{cle_disponible.php@{cle\_\-disponible.php}!$gpg@{\$gpg}}
+\index{$gpg@{\$gpg}!cle_disponible.php@{cle\_\-disponible.php}}
+\subsubsection[\$gpg]{\setlength{\rightskip}{0pt plus 5cm}\$gpg = new \hyperlink{classgnuPG}{gnu\-PG}(/usr/local/bin/gpg, /var/www/html/SAGEC67\_\-v3/veille\_\-sanitaire)}}
+\label{cle__disponible_8php_a0}
+
+
+\hypertarget{cle__disponible_8php_a1}{
+\index{cle_disponible.php@{cle\_\-disponible.php}!$Keys@{\$Keys}}
+\index{$Keys@{\$Keys}!cle_disponible.php@{cle\_\-disponible.php}}
+\subsubsection[\$Keys]{\setlength{\rightskip}{0pt plus 5cm}\$Keys = \$gpg $\rightarrow$ List\-Keys(public)}}
+\label{cle__disponible_8php_a1}
+
+

@@ -1,0 +1,64 @@
+\hypertarget{passages__sau_8php}{
+\section{R\'{e}f\'{e}rence du fichier passages\_\-sau.php}
+\label{passages__sau_8php}\index{passages_sau.php@{passages\_\-sau.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{passages__sau_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{passages__sau_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{passages__sau_8php_a2}{\$val} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{passages__sau_8php_a3}{\$date\_\-fr} = \char`\"{}j/m/Y\char`\"{}
+\item 
+\hyperlink{passages__sau_8php_a4}{\$date\_\-us} = \char`\"{}Y/m/j\char`\"{}
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{passages__sau_8php_a5}{\$today} = date(\char`\"{}Y/m/j\char`\"{},mktime(0,0,0,date('m'),date('j')-1,date('Y')))
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{passages__sau_8php_a1}{
+\index{passages_sau.php@{passages\_\-sau.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!passages_sau.php@{passages\_\-sau.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{passages__sau_8php_a1}
+
+
+\hypertarget{passages__sau_8php_a3}{
+\index{passages_sau.php@{passages\_\-sau.php}!$date_fr@{\$date\_\-fr}}
+\index{$date_fr@{\$date\_\-fr}!passages_sau.php@{passages\_\-sau.php}}
+\subsubsection[\$date\_\-fr]{\setlength{\rightskip}{0pt plus 5cm}\$date\_\-fr = \char`\"{}j/m/Y\char`\"{}}}
+\label{passages__sau_8php_a3}
+
+
+\hypertarget{passages__sau_8php_a4}{
+\index{passages_sau.php@{passages\_\-sau.php}!$date_us@{\$date\_\-us}}
+\index{$date_us@{\$date\_\-us}!passages_sau.php@{passages\_\-sau.php}}
+\subsubsection[\$date\_\-us]{\setlength{\rightskip}{0pt plus 5cm}\$date\_\-us = \char`\"{}Y/m/j\char`\"{}}}
+\label{passages__sau_8php_a4}
+
+
+\hypertarget{passages__sau_8php_a0}{
+\index{passages_sau.php@{passages\_\-sau.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!passages_sau.php@{passages\_\-sau.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{passages__sau_8php_a0}
+
+
+\hypertarget{passages__sau_8php_a5}{
+\index{passages_sau.php@{passages\_\-sau.php}!$today@{\$today}}
+\index{$today@{\$today}!passages_sau.php@{passages\_\-sau.php}}
+\subsubsection[\$today]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$today = date(\char`\"{}Y/m/j\char`\"{},mktime(0,0,0,date('m'),date('j')-1,date('Y')))}}
+\label{passages__sau_8php_a5}
+
+
+\hypertarget{passages__sau_8php_a2}{
+\index{passages_sau.php@{passages\_\-sau.php}!$val@{\$val}}
+\index{$val@{\$val}!passages_sau.php@{passages\_\-sau.php}}
+\subsubsection[\$val]{\setlength{\rightskip}{0pt plus 5cm}\$val = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{passages__sau_8php_a2}
+
+

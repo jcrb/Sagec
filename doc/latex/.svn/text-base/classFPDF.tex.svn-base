@@ -1,0 +1,1875 @@
+\hypertarget{classFPDF}{
+\section{R\'{e}f\'{e}rence de la classe FPDF}
+\label{classFPDF}\index{FPDF@{FPDF}}
+}
+Graphe d'h\'{e}ritage de FPDF::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classFPDF}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{CompactItemize}
+\item 
+\hyperlink{classFPDF_a0}{FPDF} (\$orientation='P', \$unit='mm', \$format='A4')
+\item 
+\hyperlink{classFPDF_a1}{Set\-Margins} (\$left, \$top, \$right=-1)
+\item 
+\hyperlink{classFPDF_a2}{Set\-Left\-Margin} (\$margin)
+\item 
+\hyperlink{classFPDF_a3}{Set\-Top\-Margin} (\$margin)
+\item 
+\hyperlink{classFPDF_a4}{Set\-Right\-Margin} (\$margin)
+\item 
+\hyperlink{classFPDF_a5}{Set\-Auto\-Page\-Break} (\$auto, \$margin=0)
+\item 
+\hyperlink{classFPDF_a6}{Set\-Display\-Mode} (\$zoom, \$layout='continuous')
+\item 
+\hyperlink{classFPDF_a7}{Set\-Compression} (\$compress)
+\item 
+\hyperlink{classFPDF_a8}{Set\-Title} (\$title)
+\item 
+\hyperlink{classFPDF_a9}{Set\-Subject} (\$subject)
+\item 
+\hyperlink{classFPDF_a10}{Set\-Author} (\$author)
+\item 
+\hyperlink{classFPDF_a11}{Set\-Keywords} (\$keywords)
+\item 
+\hyperlink{classFPDF_a12}{Set\-Creator} (\$creator)
+\item 
+\hyperlink{classFPDF_a13}{Alias\-Nb\-Pages} (\$alias='\{nb\}')
+\item 
+\hyperlink{classFPDF_a14}{Error} (\$msg)
+\item 
+\hyperlink{classFPDF_a15}{Open} ()
+\item 
+\hyperlink{classFPDF_a16}{Close} ()
+\item 
+\hyperlink{classFPDF_a17}{Add\-Page} (\$orientation='')
+\item 
+\hyperlink{classFPDF_a18}{Header} ()
+\item 
+\hyperlink{classFPDF_a19}{Footer} ()
+\item 
+\hyperlink{classFPDF_a20}{Page\-No} ()
+\item 
+\hyperlink{classFPDF_a21}{Set\-Draw\-Color} (\$r, \$g=-1, \$b=-1)
+\item 
+\hyperlink{classFPDF_a22}{Set\-Fill\-Color} (\$r, \$g=-1, \$b=-1)
+\item 
+\hyperlink{classFPDF_a23}{Set\-Text\-Color} (\$r, \$g=-1, \$b=-1)
+\item 
+\hyperlink{classFPDF_a24}{Get\-String\-Width} (\$s)
+\item 
+\hyperlink{classFPDF_a25}{Set\-Line\-Width} (\$width)
+\item 
+\hyperlink{classFPDF_a26}{Line} (\$x1, \$y1, \$x2, \$y2)
+\item 
+\hyperlink{classFPDF_a27}{Rect} (\$x, \$y, \$w, \$h, \$style='')
+\item 
+\hyperlink{classFPDF_a28}{Add\-Font} (\$family, \$style='', \$file='')
+\item 
+\hyperlink{classFPDF_a29}{Set\-Font} (\$family, \$style='', \$size=0)
+\item 
+\hyperlink{classFPDF_a30}{Set\-Font\-Size} (\$size)
+\item 
+\hyperlink{classFPDF_a31}{Add\-Link} ()
+\item 
+\hyperlink{classFPDF_a32}{Set\-Link} (\$link, \$y=0, \$page=-1)
+\item 
+\hyperlink{classFPDF_a33}{Link} (\$x, \$y, \$w, \$h, \$link)
+\item 
+\hyperlink{classFPDF_a34}{Text} (\$x, \$y, \$txt)
+\item 
+\hyperlink{classFPDF_a35}{Accept\-Page\-Break} ()
+\item 
+\hyperlink{classFPDF_a36}{Cell} (\$w, \$h=0, \$txt='', \$border=0, \$ln=0, \$align='', \$fill=0, \$link='')
+\item 
+\hyperlink{classFPDF_a37}{Multi\-Cell} (\$w, \$h, \$txt, \$border=0, \$align='J', \$fill=0)
+\item 
+\hyperlink{classFPDF_a38}{Write} (\$h, \$txt, \$link='')
+\item 
+\hyperlink{classFPDF_a39}{Image} (\$file, \$x, \$y, \$w=0, \$h=0, \$type='', \$link='')
+\item 
+\hyperlink{classFPDF_a40}{Ln} (\$h='')
+\item 
+\hyperlink{classFPDF_a41}{Get\-X} ()
+\item 
+\hyperlink{classFPDF_a42}{Set\-X} (\$x)
+\item 
+\hyperlink{classFPDF_a43}{Get\-Y} ()
+\item 
+\hyperlink{classFPDF_a44}{Set\-Y} (\$y)
+\item 
+\hyperlink{classFPDF_a45}{Set\-XY} (\$x, \$y)
+\item 
+\hyperlink{classFPDF_a46}{Output} (\$name='', \$dest='')
+\item 
+\hyperlink{classFPDF_a47}{\_\-dochecks} ()
+\item 
+\hyperlink{classFPDF_a48}{\_\-getfontpath} ()
+\item 
+\hyperlink{classFPDF_a49}{\_\-putpages} ()
+\item 
+\hyperlink{classFPDF_a50}{\_\-putfonts} ()
+\item 
+\hyperlink{classFPDF_a51}{\_\-putimages} ()
+\item 
+\hyperlink{classFPDF_a52}{\_\-putxobjectdict} ()
+\item 
+\hyperlink{classFPDF_a53}{\_\-putresourcedict} ()
+\item 
+\hyperlink{classFPDF_a54}{\_\-putresources} ()
+\item 
+\hyperlink{classFPDF_a55}{\_\-putinfo} ()
+\item 
+\hyperlink{classFPDF_a56}{\_\-putcatalog} ()
+\item 
+\hyperlink{classFPDF_a57}{\_\-putheader} ()
+\item 
+\hyperlink{classFPDF_a58}{\_\-puttrailer} ()
+\item 
+\hyperlink{classFPDF_a59}{\_\-enddoc} ()
+\item 
+\hyperlink{classFPDF_a60}{\_\-beginpage} (\$orientation)
+\item 
+\hyperlink{classFPDF_a61}{\_\-endpage} ()
+\item 
+\hyperlink{classFPDF_a62}{\_\-newobj} ()
+\item 
+\hyperlink{classFPDF_a63}{\_\-dounderline} (\$x, \$y, \$txt)
+\item 
+\hyperlink{classFPDF_a64}{\_\-parsejpg} (\$file)
+\item 
+\hyperlink{classFPDF_a65}{\_\-parsepng} (\$file)
+\item 
+\hyperlink{classFPDF_a66}{\_\-freadint} (\$f)
+\item 
+\hyperlink{classFPDF_a67}{\_\-textstring} (\$s)
+\item 
+\hyperlink{classFPDF_a68}{\_\-escape} (\$s)
+\item 
+\hyperlink{classFPDF_a69}{\_\-putstream} (\$s)
+\item 
+\hyperlink{classFPDF_a70}{\_\-out} (\$s)
+\item 
+\hyperlink{classFPDF_a71}{FPDF} (\$orientation='P', \$unit='mm', \$format='A4')
+\item 
+\hyperlink{classFPDF_a72}{Rotate} (\$angle, \$x=-1, \$y=-1)
+\item 
+\hyperlink{classFPDF_a73}{Rotated\-Text} (\$x, \$y, \$txt, \$angle)
+\item 
+\hyperlink{classFPDF_a74}{Rotated\-Image} (\$file, \$x, \$y, \$w, \$h, \$angle)
+\item 
+\hyperlink{classFPDF_a75}{Set\-Margins} (\$left, \$top, \$right=-1)
+\item 
+\hyperlink{classFPDF_a76}{Set\-Left\-Margin} (\$margin)
+\item 
+\hyperlink{classFPDF_a77}{Set\-Top\-Margin} (\$margin)
+\item 
+\hyperlink{classFPDF_a78}{Set\-Right\-Margin} (\$margin)
+\item 
+\hyperlink{classFPDF_a79}{Set\-Auto\-Page\-Break} (\$auto, \$margin=0)
+\item 
+\hyperlink{classFPDF_a80}{Set\-Display\-Mode} (\$zoom, \$layout='continuous')
+\item 
+\hyperlink{classFPDF_a81}{Set\-Compression} (\$compress)
+\item 
+\hyperlink{classFPDF_a82}{Set\-Title} (\$title)
+\item 
+\hyperlink{classFPDF_a83}{Set\-Subject} (\$subject)
+\item 
+\hyperlink{classFPDF_a84}{Set\-Author} (\$author)
+\item 
+\hyperlink{classFPDF_a85}{Set\-Keywords} (\$keywords)
+\item 
+\hyperlink{classFPDF_a86}{Set\-Creator} (\$creator)
+\item 
+\hyperlink{classFPDF_a87}{Alias\-Nb\-Pages} (\$alias='\{nb\}')
+\item 
+\hyperlink{classFPDF_a88}{Error} (\$msg)
+\item 
+\hyperlink{classFPDF_a89}{Open} ()
+\item 
+\hyperlink{classFPDF_a90}{Close} ()
+\item 
+\hyperlink{classFPDF_a91}{Add\-Page} (\$orientation='')
+\item 
+\hyperlink{classFPDF_a92}{Header} ()
+\item 
+\hyperlink{classFPDF_a93}{Footer} ()
+\item 
+\hyperlink{classFPDF_a94}{Page\-No} ()
+\item 
+\hyperlink{classFPDF_a95}{Set\-Draw\-Color} (\$r, \$g=-1, \$b=-1)
+\item 
+\hyperlink{classFPDF_a96}{Set\-Fill\-Color} (\$r, \$g=-1, \$b=-1)
+\item 
+\hyperlink{classFPDF_a97}{Set\-Text\-Color} (\$r, \$g=-1, \$b=-1)
+\item 
+\hyperlink{classFPDF_a98}{Get\-String\-Width} (\$s)
+\item 
+\hyperlink{classFPDF_a99}{Set\-Line\-Width} (\$width)
+\item 
+\hyperlink{classFPDF_a100}{Line} (\$x1, \$y1, \$x2, \$y2)
+\item 
+\hyperlink{classFPDF_a101}{Rect} (\$x, \$y, \$w, \$h, \$style='')
+\item 
+\hyperlink{classFPDF_a102}{Add\-Font} (\$family, \$style='', \$file='')
+\item 
+\hyperlink{classFPDF_a103}{Set\-Font} (\$family, \$style='', \$size=0)
+\item 
+\hyperlink{classFPDF_a104}{Set\-Font\-Size} (\$size)
+\item 
+\hyperlink{classFPDF_a105}{Add\-Link} ()
+\item 
+\hyperlink{classFPDF_a106}{Set\-Link} (\$link, \$y=0, \$page=-1)
+\item 
+\hyperlink{classFPDF_a107}{Link} (\$x, \$y, \$w, \$h, \$link)
+\item 
+\hyperlink{classFPDF_a108}{Text} (\$x, \$y, \$txt)
+\item 
+\hyperlink{classFPDF_a109}{Accept\-Page\-Break} ()
+\item 
+\hyperlink{classFPDF_a110}{Cell} (\$w, \$h=0, \$txt='', \$border=0, \$ln=0, \$align='', \$fill=0, \$link='')
+\item 
+\hyperlink{classFPDF_a111}{Multi\-Cell} (\$w, \$h, \$txt, \$border=0, \$align='J', \$fill=0)
+\item 
+\hyperlink{classFPDF_a112}{Write} (\$h, \$txt, \$link='')
+\item 
+\hyperlink{classFPDF_a113}{Image} (\$file, \$x, \$y, \$w=0, \$h=0, \$type='', \$link='')
+\item 
+\hyperlink{classFPDF_a114}{Ln} (\$h='')
+\item 
+\hyperlink{classFPDF_a115}{Get\-X} ()
+\item 
+\hyperlink{classFPDF_a116}{Set\-X} (\$x)
+\item 
+\hyperlink{classFPDF_a117}{Get\-Y} ()
+\item 
+\hyperlink{classFPDF_a118}{Set\-Y} (\$y)
+\item 
+\hyperlink{classFPDF_a119}{Set\-XY} (\$x, \$y)
+\item 
+\hyperlink{classFPDF_a120}{Output} (\$name='', \$dest='')
+\item 
+\hyperlink{classFPDF_a121}{\_\-dochecks} ()
+\item 
+\hyperlink{classFPDF_a122}{\_\-getfontpath} ()
+\item 
+\hyperlink{classFPDF_a123}{\_\-putpages} ()
+\item 
+\hyperlink{classFPDF_a124}{\_\-putfonts} ()
+\item 
+\hyperlink{classFPDF_a125}{\_\-putimages} ()
+\item 
+\hyperlink{classFPDF_a126}{\_\-putxobjectdict} ()
+\item 
+\hyperlink{classFPDF_a127}{\_\-putresourcedict} ()
+\item 
+\hyperlink{classFPDF_a128}{\_\-putresources} ()
+\item 
+\hyperlink{classFPDF_a129}{\_\-putinfo} ()
+\item 
+\hyperlink{classFPDF_a130}{\_\-putcatalog} ()
+\item 
+\hyperlink{classFPDF_a131}{\_\-putheader} ()
+\item 
+\hyperlink{classFPDF_a132}{\_\-puttrailer} ()
+\item 
+\hyperlink{classFPDF_a133}{\_\-enddoc} ()
+\item 
+\hyperlink{classFPDF_a134}{\_\-beginpage} (\$orientation)
+\item 
+\hyperlink{classFPDF_a135}{\_\-endpage} ()
+\item 
+\hyperlink{classFPDF_a136}{\_\-newobj} ()
+\item 
+\hyperlink{classFPDF_a137}{\_\-dounderline} (\$x, \$y, \$txt)
+\item 
+\hyperlink{classFPDF_a138}{\_\-parsejpg} (\$file)
+\item 
+\hyperlink{classFPDF_a139}{\_\-parsepng} (\$file)
+\item 
+\hyperlink{classFPDF_a140}{\_\-freadint} (\$f)
+\item 
+\hyperlink{classFPDF_a141}{\_\-textstring} (\$s)
+\item 
+\hyperlink{classFPDF_a142}{\_\-escape} (\$s)
+\item 
+\hyperlink{classFPDF_a143}{\_\-putstream} (\$s)
+\item 
+\hyperlink{classFPDF_a144}{\_\-out} (\$s)
+\end{CompactItemize}
+\subsection*{Attributs publics}
+\begin{CompactItemize}
+\item 
+\hyperlink{classFPDF_o0}{\$page}
+\item 
+\hyperlink{classFPDF_o1}{\$n}
+\item 
+\hyperlink{classFPDF_o2}{\$offsets}
+\item 
+\hyperlink{classFPDF_o3}{\$buffer}
+\item 
+\hyperlink{classFPDF_o4}{\$pages}
+\item 
+\hyperlink{classFPDF_o5}{\$state}
+\item 
+\hyperlink{classFPDF_o6}{\$compress}
+\item 
+\hyperlink{classFPDF_o7}{\$Def\-Orientation}
+\item 
+\hyperlink{classFPDF_o8}{\$Cur\-Orientation}
+\item 
+\hyperlink{classFPDF_o9}{\$Orientation\-Changes}
+\item 
+\hyperlink{classFPDF_o10}{\$k}
+\item 
+\hyperlink{classFPDF_o11}{\$fw\-Pt}
+\item 
+\hyperlink{classFPDF_o12}{\$fh\-Pt}
+\item 
+\hyperlink{classFPDF_o13}{\$fw}
+\item 
+\hyperlink{classFPDF_o14}{\$fh}
+\item 
+\hyperlink{classFPDF_o15}{\$w\-Pt}
+\item 
+\hyperlink{classFPDF_o16}{\$h\-Pt}
+\item 
+\hyperlink{classFPDF_o17}{\$w}
+\item 
+\hyperlink{classFPDF_o18}{\$h}
+\item 
+\hyperlink{classFPDF_o19}{\$l\-Margin}
+\item 
+\hyperlink{classFPDF_o20}{\$t\-Margin}
+\item 
+\hyperlink{classFPDF_o21}{\$r\-Margin}
+\item 
+\hyperlink{classFPDF_o22}{\$b\-Margin}
+\item 
+\hyperlink{classFPDF_o23}{\$c\-Margin}
+\item 
+\hyperlink{classFPDF_o24}{\$x}
+\item 
+\hyperlink{classFPDF_o25}{\$y}
+\item 
+\hyperlink{classFPDF_o26}{\$lasth}
+\item 
+\hyperlink{classFPDF_o27}{\$Line\-Width}
+\item 
+\hyperlink{classFPDF_o28}{\$Core\-Fonts}
+\item 
+\hyperlink{classFPDF_o29}{\$fonts}
+\item 
+\hyperlink{classFPDF_o30}{\$Font\-Files}
+\item 
+\hyperlink{classFPDF_o31}{\$diffs}
+\item 
+\hyperlink{classFPDF_o32}{\$images}
+\item 
+\hyperlink{classFPDF_o33}{\$Page\-Links}
+\item 
+\hyperlink{classFPDF_o34}{\$links}
+\item 
+\hyperlink{classFPDF_o35}{\$Font\-Family}
+\item 
+\hyperlink{classFPDF_o36}{\$Font\-Style}
+\item 
+\hyperlink{classFPDF_o37}{\$underline}
+\item 
+\hyperlink{classFPDF_o38}{\$Current\-Font}
+\item 
+\hyperlink{classFPDF_o39}{\$Font\-Size\-Pt}
+\item 
+\hyperlink{classFPDF_o40}{\$Font\-Size}
+\item 
+\hyperlink{classFPDF_o41}{\$Draw\-Color}
+\item 
+\hyperlink{classFPDF_o42}{\$Fill\-Color}
+\item 
+\hyperlink{classFPDF_o43}{\$Text\-Color}
+\item 
+\hyperlink{classFPDF_o44}{\$Color\-Flag}
+\item 
+\hyperlink{classFPDF_o45}{\$ws}
+\item 
+\hyperlink{classFPDF_o46}{\$Auto\-Page\-Break}
+\item 
+\hyperlink{classFPDF_o47}{\$Page\-Break\-Trigger}
+\item 
+\hyperlink{classFPDF_o48}{\$In\-Footer}
+\item 
+\hyperlink{classFPDF_o49}{\$Zoom\-Mode}
+\item 
+\hyperlink{classFPDF_o50}{\$Layout\-Mode}
+\item 
+\hyperlink{classFPDF_o51}{\$title}
+\item 
+\hyperlink{classFPDF_o52}{\$subject}
+\item 
+\hyperlink{classFPDF_o53}{\$author}
+\item 
+\hyperlink{classFPDF_o54}{\$keywords}
+\item 
+\hyperlink{classFPDF_o55}{\$creator}
+\item 
+\hyperlink{classFPDF_o56}{\$Alias\-Nb\-Pages}
+\item 
+\hyperlink{classFPDF_o57}{\$PDFVersion}
+\item 
+\hyperlink{classFPDF_o58}{\$angle}
+\end{CompactItemize}
+
+
+\subsection{Documentation des contructeurs et destructeur}
+\hypertarget{classFPDF_a0}{
+\index{FPDF@{FPDF}!FPDF@{FPDF}}
+\index{FPDF@{FPDF}!FPDF@{FPDF}}
+\subsubsection[FPDF]{\setlength{\rightskip}{0pt plus 5cm}FPDF::FPDF (\$ {\em orientation} = {\tt 'P'}, \$ {\em unit} = {\tt 'mm'}, \$ {\em format} = {\tt 'A4'})}}
+\label{classFPDF_a0}
+
+
+\hypertarget{classFPDF_a71}{
+\index{FPDF@{FPDF}!FPDF@{FPDF}}
+\index{FPDF@{FPDF}!FPDF@{FPDF}}
+\subsubsection[FPDF]{\setlength{\rightskip}{0pt plus 5cm}FPDF::FPDF (\$ {\em orientation} = {\tt 'P'}, \$ {\em unit} = {\tt 'mm'}, \$ {\em format} = {\tt 'A4'})}}
+\label{classFPDF_a71}
+
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classFPDF_a134}{
+\index{FPDF@{FPDF}!_beginpage@{\_\-beginpage}}
+\index{_beginpage@{\_\-beginpage}!FPDF@{FPDF}}
+\subsubsection[\_\-beginpage]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-beginpage (\$ {\em orientation})}}
+\label{classFPDF_a134}
+
+
+\hypertarget{classFPDF_a60}{
+\index{FPDF@{FPDF}!_beginpage@{\_\-beginpage}}
+\index{_beginpage@{\_\-beginpage}!FPDF@{FPDF}}
+\subsubsection[\_\-beginpage]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-beginpage (\$ {\em orientation})}}
+\label{classFPDF_a60}
+
+
+\hypertarget{classFPDF_a121}{
+\index{FPDF@{FPDF}!_dochecks@{\_\-dochecks}}
+\index{_dochecks@{\_\-dochecks}!FPDF@{FPDF}}
+\subsubsection[\_\-dochecks]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-dochecks ()}}
+\label{classFPDF_a121}
+
+
+\hypertarget{classFPDF_a47}{
+\index{FPDF@{FPDF}!_dochecks@{\_\-dochecks}}
+\index{_dochecks@{\_\-dochecks}!FPDF@{FPDF}}
+\subsubsection[\_\-dochecks]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-dochecks ()}}
+\label{classFPDF_a47}
+
+
+\hypertarget{classFPDF_a137}{
+\index{FPDF@{FPDF}!_dounderline@{\_\-dounderline}}
+\index{_dounderline@{\_\-dounderline}!FPDF@{FPDF}}
+\subsubsection[\_\-dounderline]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-dounderline (\$ {\em x}, \$ {\em y}, \$ {\em txt})}}
+\label{classFPDF_a137}
+
+
+\hypertarget{classFPDF_a63}{
+\index{FPDF@{FPDF}!_dounderline@{\_\-dounderline}}
+\index{_dounderline@{\_\-dounderline}!FPDF@{FPDF}}
+\subsubsection[\_\-dounderline]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-dounderline (\$ {\em x}, \$ {\em y}, \$ {\em txt})}}
+\label{classFPDF_a63}
+
+
+\hypertarget{classFPDF_a133}{
+\index{FPDF@{FPDF}!_enddoc@{\_\-enddoc}}
+\index{_enddoc@{\_\-enddoc}!FPDF@{FPDF}}
+\subsubsection[\_\-enddoc]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-enddoc ()}}
+\label{classFPDF_a133}
+
+
+\hypertarget{classFPDF_a59}{
+\index{FPDF@{FPDF}!_enddoc@{\_\-enddoc}}
+\index{_enddoc@{\_\-enddoc}!FPDF@{FPDF}}
+\subsubsection[\_\-enddoc]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-enddoc ()}}
+\label{classFPDF_a59}
+
+
+\hypertarget{classFPDF_a135}{
+\index{FPDF@{FPDF}!_endpage@{\_\-endpage}}
+\index{_endpage@{\_\-endpage}!FPDF@{FPDF}}
+\subsubsection[\_\-endpage]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-endpage ()}}
+\label{classFPDF_a135}
+
+
+\hypertarget{classFPDF_a61}{
+\index{FPDF@{FPDF}!_endpage@{\_\-endpage}}
+\index{_endpage@{\_\-endpage}!FPDF@{FPDF}}
+\subsubsection[\_\-endpage]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-endpage ()}}
+\label{classFPDF_a61}
+
+
+\hypertarget{classFPDF_a142}{
+\index{FPDF@{FPDF}!_escape@{\_\-escape}}
+\index{_escape@{\_\-escape}!FPDF@{FPDF}}
+\subsubsection[\_\-escape]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-escape (\$ {\em s})}}
+\label{classFPDF_a142}
+
+
+\hypertarget{classFPDF_a68}{
+\index{FPDF@{FPDF}!_escape@{\_\-escape}}
+\index{_escape@{\_\-escape}!FPDF@{FPDF}}
+\subsubsection[\_\-escape]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-escape (\$ {\em s})}}
+\label{classFPDF_a68}
+
+
+\hypertarget{classFPDF_a140}{
+\index{FPDF@{FPDF}!_freadint@{\_\-freadint}}
+\index{_freadint@{\_\-freadint}!FPDF@{FPDF}}
+\subsubsection[\_\-freadint]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-freadint (\$ {\em f})}}
+\label{classFPDF_a140}
+
+
+\hypertarget{classFPDF_a66}{
+\index{FPDF@{FPDF}!_freadint@{\_\-freadint}}
+\index{_freadint@{\_\-freadint}!FPDF@{FPDF}}
+\subsubsection[\_\-freadint]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-freadint (\$ {\em f})}}
+\label{classFPDF_a66}
+
+
+\hypertarget{classFPDF_a122}{
+\index{FPDF@{FPDF}!_getfontpath@{\_\-getfontpath}}
+\index{_getfontpath@{\_\-getfontpath}!FPDF@{FPDF}}
+\subsubsection[\_\-getfontpath]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-getfontpath ()}}
+\label{classFPDF_a122}
+
+
+\hypertarget{classFPDF_a48}{
+\index{FPDF@{FPDF}!_getfontpath@{\_\-getfontpath}}
+\index{_getfontpath@{\_\-getfontpath}!FPDF@{FPDF}}
+\subsubsection[\_\-getfontpath]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-getfontpath ()}}
+\label{classFPDF_a48}
+
+
+\hypertarget{classFPDF_a136}{
+\index{FPDF@{FPDF}!_newobj@{\_\-newobj}}
+\index{_newobj@{\_\-newobj}!FPDF@{FPDF}}
+\subsubsection[\_\-newobj]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-newobj ()}}
+\label{classFPDF_a136}
+
+
+\hypertarget{classFPDF_a62}{
+\index{FPDF@{FPDF}!_newobj@{\_\-newobj}}
+\index{_newobj@{\_\-newobj}!FPDF@{FPDF}}
+\subsubsection[\_\-newobj]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-newobj ()}}
+\label{classFPDF_a62}
+
+
+\hypertarget{classFPDF_a144}{
+\index{FPDF@{FPDF}!_out@{\_\-out}}
+\index{_out@{\_\-out}!FPDF@{FPDF}}
+\subsubsection[\_\-out]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-out (\$ {\em s})}}
+\label{classFPDF_a144}
+
+
+\hypertarget{classFPDF_a70}{
+\index{FPDF@{FPDF}!_out@{\_\-out}}
+\index{_out@{\_\-out}!FPDF@{FPDF}}
+\subsubsection[\_\-out]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-out (\$ {\em s})}}
+\label{classFPDF_a70}
+
+
+\hypertarget{classFPDF_a138}{
+\index{FPDF@{FPDF}!_parsejpg@{\_\-parsejpg}}
+\index{_parsejpg@{\_\-parsejpg}!FPDF@{FPDF}}
+\subsubsection[\_\-parsejpg]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-parsejpg (\$ {\em file})}}
+\label{classFPDF_a138}
+
+
+\hypertarget{classFPDF_a64}{
+\index{FPDF@{FPDF}!_parsejpg@{\_\-parsejpg}}
+\index{_parsejpg@{\_\-parsejpg}!FPDF@{FPDF}}
+\subsubsection[\_\-parsejpg]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-parsejpg (\$ {\em file})}}
+\label{classFPDF_a64}
+
+
+\hypertarget{classFPDF_a139}{
+\index{FPDF@{FPDF}!_parsepng@{\_\-parsepng}}
+\index{_parsepng@{\_\-parsepng}!FPDF@{FPDF}}
+\subsubsection[\_\-parsepng]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-parsepng (\$ {\em file})}}
+\label{classFPDF_a139}
+
+
+\hypertarget{classFPDF_a65}{
+\index{FPDF@{FPDF}!_parsepng@{\_\-parsepng}}
+\index{_parsepng@{\_\-parsepng}!FPDF@{FPDF}}
+\subsubsection[\_\-parsepng]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-parsepng (\$ {\em file})}}
+\label{classFPDF_a65}
+
+
+\hypertarget{classFPDF_a130}{
+\index{FPDF@{FPDF}!_putcatalog@{\_\-putcatalog}}
+\index{_putcatalog@{\_\-putcatalog}!FPDF@{FPDF}}
+\subsubsection[\_\-putcatalog]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putcatalog ()}}
+\label{classFPDF_a130}
+
+
+\hypertarget{classFPDF_a56}{
+\index{FPDF@{FPDF}!_putcatalog@{\_\-putcatalog}}
+\index{_putcatalog@{\_\-putcatalog}!FPDF@{FPDF}}
+\subsubsection[\_\-putcatalog]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putcatalog ()}}
+\label{classFPDF_a56}
+
+
+\hypertarget{classFPDF_a124}{
+\index{FPDF@{FPDF}!_putfonts@{\_\-putfonts}}
+\index{_putfonts@{\_\-putfonts}!FPDF@{FPDF}}
+\subsubsection[\_\-putfonts]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putfonts ()}}
+\label{classFPDF_a124}
+
+
+\hypertarget{classFPDF_a50}{
+\index{FPDF@{FPDF}!_putfonts@{\_\-putfonts}}
+\index{_putfonts@{\_\-putfonts}!FPDF@{FPDF}}
+\subsubsection[\_\-putfonts]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putfonts ()}}
+\label{classFPDF_a50}
+
+
+\hypertarget{classFPDF_a131}{
+\index{FPDF@{FPDF}!_putheader@{\_\-putheader}}
+\index{_putheader@{\_\-putheader}!FPDF@{FPDF}}
+\subsubsection[\_\-putheader]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putheader ()}}
+\label{classFPDF_a131}
+
+
+\hypertarget{classFPDF_a57}{
+\index{FPDF@{FPDF}!_putheader@{\_\-putheader}}
+\index{_putheader@{\_\-putheader}!FPDF@{FPDF}}
+\subsubsection[\_\-putheader]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putheader ()}}
+\label{classFPDF_a57}
+
+
+\hypertarget{classFPDF_a125}{
+\index{FPDF@{FPDF}!_putimages@{\_\-putimages}}
+\index{_putimages@{\_\-putimages}!FPDF@{FPDF}}
+\subsubsection[\_\-putimages]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putimages ()}}
+\label{classFPDF_a125}
+
+
+\hypertarget{classFPDF_a51}{
+\index{FPDF@{FPDF}!_putimages@{\_\-putimages}}
+\index{_putimages@{\_\-putimages}!FPDF@{FPDF}}
+\subsubsection[\_\-putimages]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putimages ()}}
+\label{classFPDF_a51}
+
+
+\hypertarget{classFPDF_a129}{
+\index{FPDF@{FPDF}!_putinfo@{\_\-putinfo}}
+\index{_putinfo@{\_\-putinfo}!FPDF@{FPDF}}
+\subsubsection[\_\-putinfo]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putinfo ()}}
+\label{classFPDF_a129}
+
+
+\hypertarget{classFPDF_a55}{
+\index{FPDF@{FPDF}!_putinfo@{\_\-putinfo}}
+\index{_putinfo@{\_\-putinfo}!FPDF@{FPDF}}
+\subsubsection[\_\-putinfo]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putinfo ()}}
+\label{classFPDF_a55}
+
+
+\hypertarget{classFPDF_a123}{
+\index{FPDF@{FPDF}!_putpages@{\_\-putpages}}
+\index{_putpages@{\_\-putpages}!FPDF@{FPDF}}
+\subsubsection[\_\-putpages]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putpages ()}}
+\label{classFPDF_a123}
+
+
+\hypertarget{classFPDF_a49}{
+\index{FPDF@{FPDF}!_putpages@{\_\-putpages}}
+\index{_putpages@{\_\-putpages}!FPDF@{FPDF}}
+\subsubsection[\_\-putpages]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putpages ()}}
+\label{classFPDF_a49}
+
+
+\hypertarget{classFPDF_a127}{
+\index{FPDF@{FPDF}!_putresourcedict@{\_\-putresourcedict}}
+\index{_putresourcedict@{\_\-putresourcedict}!FPDF@{FPDF}}
+\subsubsection[\_\-putresourcedict]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putresourcedict ()}}
+\label{classFPDF_a127}
+
+
+\hypertarget{classFPDF_a53}{
+\index{FPDF@{FPDF}!_putresourcedict@{\_\-putresourcedict}}
+\index{_putresourcedict@{\_\-putresourcedict}!FPDF@{FPDF}}
+\subsubsection[\_\-putresourcedict]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putresourcedict ()}}
+\label{classFPDF_a53}
+
+
+\hypertarget{classFPDF_a128}{
+\index{FPDF@{FPDF}!_putresources@{\_\-putresources}}
+\index{_putresources@{\_\-putresources}!FPDF@{FPDF}}
+\subsubsection[\_\-putresources]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putresources ()}}
+\label{classFPDF_a128}
+
+
+\hypertarget{classFPDF_a54}{
+\index{FPDF@{FPDF}!_putresources@{\_\-putresources}}
+\index{_putresources@{\_\-putresources}!FPDF@{FPDF}}
+\subsubsection[\_\-putresources]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putresources ()}}
+\label{classFPDF_a54}
+
+
+\hypertarget{classFPDF_a143}{
+\index{FPDF@{FPDF}!_putstream@{\_\-putstream}}
+\index{_putstream@{\_\-putstream}!FPDF@{FPDF}}
+\subsubsection[\_\-putstream]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putstream (\$ {\em s})}}
+\label{classFPDF_a143}
+
+
+\hypertarget{classFPDF_a69}{
+\index{FPDF@{FPDF}!_putstream@{\_\-putstream}}
+\index{_putstream@{\_\-putstream}!FPDF@{FPDF}}
+\subsubsection[\_\-putstream]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putstream (\$ {\em s})}}
+\label{classFPDF_a69}
+
+
+\hypertarget{classFPDF_a132}{
+\index{FPDF@{FPDF}!_puttrailer@{\_\-puttrailer}}
+\index{_puttrailer@{\_\-puttrailer}!FPDF@{FPDF}}
+\subsubsection[\_\-puttrailer]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-puttrailer ()}}
+\label{classFPDF_a132}
+
+
+\hypertarget{classFPDF_a58}{
+\index{FPDF@{FPDF}!_puttrailer@{\_\-puttrailer}}
+\index{_puttrailer@{\_\-puttrailer}!FPDF@{FPDF}}
+\subsubsection[\_\-puttrailer]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-puttrailer ()}}
+\label{classFPDF_a58}
+
+
+\hypertarget{classFPDF_a126}{
+\index{FPDF@{FPDF}!_putxobjectdict@{\_\-putxobjectdict}}
+\index{_putxobjectdict@{\_\-putxobjectdict}!FPDF@{FPDF}}
+\subsubsection[\_\-putxobjectdict]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putxobjectdict ()}}
+\label{classFPDF_a126}
+
+
+\hypertarget{classFPDF_a52}{
+\index{FPDF@{FPDF}!_putxobjectdict@{\_\-putxobjectdict}}
+\index{_putxobjectdict@{\_\-putxobjectdict}!FPDF@{FPDF}}
+\subsubsection[\_\-putxobjectdict]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-putxobjectdict ()}}
+\label{classFPDF_a52}
+
+
+\hypertarget{classFPDF_a141}{
+\index{FPDF@{FPDF}!_textstring@{\_\-textstring}}
+\index{_textstring@{\_\-textstring}!FPDF@{FPDF}}
+\subsubsection[\_\-textstring]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-textstring (\$ {\em s})}}
+\label{classFPDF_a141}
+
+
+\hypertarget{classFPDF_a67}{
+\index{FPDF@{FPDF}!_textstring@{\_\-textstring}}
+\index{_textstring@{\_\-textstring}!FPDF@{FPDF}}
+\subsubsection[\_\-textstring]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\_\-textstring (\$ {\em s})}}
+\label{classFPDF_a67}
+
+
+\hypertarget{classFPDF_a109}{
+\index{FPDF@{FPDF}!AcceptPageBreak@{AcceptPageBreak}}
+\index{AcceptPageBreak@{AcceptPageBreak}!FPDF@{FPDF}}
+\subsubsection[AcceptPageBreak]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Accept\-Page\-Break ()}}
+\label{classFPDF_a109}
+
+
+\hypertarget{classFPDF_a35}{
+\index{FPDF@{FPDF}!AcceptPageBreak@{AcceptPageBreak}}
+\index{AcceptPageBreak@{AcceptPageBreak}!FPDF@{FPDF}}
+\subsubsection[AcceptPageBreak]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Accept\-Page\-Break ()}}
+\label{classFPDF_a35}
+
+
+\hypertarget{classFPDF_a102}{
+\index{FPDF@{FPDF}!AddFont@{AddFont}}
+\index{AddFont@{AddFont}!FPDF@{FPDF}}
+\subsubsection[AddFont]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Add\-Font (\$ {\em family}, \$ {\em style} = {\tt ''}, \$ {\em file} = {\tt ''})}}
+\label{classFPDF_a102}
+
+
+\hypertarget{classFPDF_a28}{
+\index{FPDF@{FPDF}!AddFont@{AddFont}}
+\index{AddFont@{AddFont}!FPDF@{FPDF}}
+\subsubsection[AddFont]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Add\-Font (\$ {\em family}, \$ {\em style} = {\tt ''}, \$ {\em file} = {\tt ''})}}
+\label{classFPDF_a28}
+
+
+\hypertarget{classFPDF_a105}{
+\index{FPDF@{FPDF}!AddLink@{AddLink}}
+\index{AddLink@{AddLink}!FPDF@{FPDF}}
+\subsubsection[AddLink]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Add\-Link ()}}
+\label{classFPDF_a105}
+
+
+\hypertarget{classFPDF_a31}{
+\index{FPDF@{FPDF}!AddLink@{AddLink}}
+\index{AddLink@{AddLink}!FPDF@{FPDF}}
+\subsubsection[AddLink]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Add\-Link ()}}
+\label{classFPDF_a31}
+
+
+\hypertarget{classFPDF_a91}{
+\index{FPDF@{FPDF}!AddPage@{AddPage}}
+\index{AddPage@{AddPage}!FPDF@{FPDF}}
+\subsubsection[AddPage]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Add\-Page (\$ {\em orientation} = {\tt ''})}}
+\label{classFPDF_a91}
+
+
+\hypertarget{classFPDF_a17}{
+\index{FPDF@{FPDF}!AddPage@{AddPage}}
+\index{AddPage@{AddPage}!FPDF@{FPDF}}
+\subsubsection[AddPage]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Add\-Page (\$ {\em orientation} = {\tt ''})}}
+\label{classFPDF_a17}
+
+
+\hypertarget{classFPDF_a87}{
+\index{FPDF@{FPDF}!AliasNbPages@{AliasNbPages}}
+\index{AliasNbPages@{AliasNbPages}!FPDF@{FPDF}}
+\subsubsection[AliasNbPages]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Alias\-Nb\-Pages ()}}
+\label{classFPDF_a87}
+
+
+\hypertarget{classFPDF_a13}{
+\index{FPDF@{FPDF}!AliasNbPages@{AliasNbPages}}
+\index{AliasNbPages@{AliasNbPages}!FPDF@{FPDF}}
+\subsubsection[AliasNbPages]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Alias\-Nb\-Pages ()}}
+\label{classFPDF_a13}
+
+
+\hypertarget{classFPDF_a110}{
+\index{FPDF@{FPDF}!Cell@{Cell}}
+\index{Cell@{Cell}!FPDF@{FPDF}}
+\subsubsection[Cell]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Cell (\$ {\em w}, \$ {\em h} = {\tt 0}, \$ {\em txt} = {\tt ''}, \$ {\em border} = {\tt 0}, \$ {\em ln} = {\tt 0}, \$ {\em align} = {\tt ''}, \$ {\em fill} = {\tt 0}, \$ {\em link} = {\tt ''})}}
+\label{classFPDF_a110}
+
+
+\hypertarget{classFPDF_a36}{
+\index{FPDF@{FPDF}!Cell@{Cell}}
+\index{Cell@{Cell}!FPDF@{FPDF}}
+\subsubsection[Cell]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Cell (\$ {\em w}, \$ {\em h} = {\tt 0}, \$ {\em txt} = {\tt ''}, \$ {\em border} = {\tt 0}, \$ {\em ln} = {\tt 0}, \$ {\em align} = {\tt ''}, \$ {\em fill} = {\tt 0}, \$ {\em link} = {\tt ''})}}
+\label{classFPDF_a36}
+
+
+\hypertarget{classFPDF_a90}{
+\index{FPDF@{FPDF}!Close@{Close}}
+\index{Close@{Close}!FPDF@{FPDF}}
+\subsubsection[Close]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Close ()}}
+\label{classFPDF_a90}
+
+
+\hypertarget{classFPDF_a16}{
+\index{FPDF@{FPDF}!Close@{Close}}
+\index{Close@{Close}!FPDF@{FPDF}}
+\subsubsection[Close]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Close ()}}
+\label{classFPDF_a16}
+
+
+\hypertarget{classFPDF_a88}{
+\index{FPDF@{FPDF}!Error@{Error}}
+\index{Error@{Error}!FPDF@{FPDF}}
+\subsubsection[Error]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Error (\$ {\em msg})}}
+\label{classFPDF_a88}
+
+
+\hypertarget{classFPDF_a14}{
+\index{FPDF@{FPDF}!Error@{Error}}
+\index{Error@{Error}!FPDF@{FPDF}}
+\subsubsection[Error]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Error (\$ {\em msg})}}
+\label{classFPDF_a14}
+
+
+\hypertarget{classFPDF_a93}{
+\index{FPDF@{FPDF}!Footer@{Footer}}
+\index{Footer@{Footer}!FPDF@{FPDF}}
+\subsubsection[Footer]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Footer ()}}
+\label{classFPDF_a93}
+
+
+
+
+R\'{e}impl\'{e}ment\'{e}e dans \hyperlink{classPDF_a1}{PDF}.\hypertarget{classFPDF_a19}{
+\index{FPDF@{FPDF}!Footer@{Footer}}
+\index{Footer@{Footer}!FPDF@{FPDF}}
+\subsubsection[Footer]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Footer ()}}
+\label{classFPDF_a19}
+
+
+
+
+R\'{e}impl\'{e}ment\'{e}e dans \hyperlink{classPDF_a1}{PDF}.\hypertarget{classFPDF_a98}{
+\index{FPDF@{FPDF}!GetStringWidth@{GetStringWidth}}
+\index{GetStringWidth@{GetStringWidth}!FPDF@{FPDF}}
+\subsubsection[GetStringWidth]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Get\-String\-Width (\$ {\em s})}}
+\label{classFPDF_a98}
+
+
+\hypertarget{classFPDF_a24}{
+\index{FPDF@{FPDF}!GetStringWidth@{GetStringWidth}}
+\index{GetStringWidth@{GetStringWidth}!FPDF@{FPDF}}
+\subsubsection[GetStringWidth]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Get\-String\-Width (\$ {\em s})}}
+\label{classFPDF_a24}
+
+
+\hypertarget{classFPDF_a115}{
+\index{FPDF@{FPDF}!GetX@{GetX}}
+\index{GetX@{GetX}!FPDF@{FPDF}}
+\subsubsection[GetX]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Get\-X ()}}
+\label{classFPDF_a115}
+
+
+\hypertarget{classFPDF_a41}{
+\index{FPDF@{FPDF}!GetX@{GetX}}
+\index{GetX@{GetX}!FPDF@{FPDF}}
+\subsubsection[GetX]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Get\-X ()}}
+\label{classFPDF_a41}
+
+
+\hypertarget{classFPDF_a117}{
+\index{FPDF@{FPDF}!GetY@{GetY}}
+\index{GetY@{GetY}!FPDF@{FPDF}}
+\subsubsection[GetY]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Get\-Y ()}}
+\label{classFPDF_a117}
+
+
+\hypertarget{classFPDF_a43}{
+\index{FPDF@{FPDF}!GetY@{GetY}}
+\index{GetY@{GetY}!FPDF@{FPDF}}
+\subsubsection[GetY]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Get\-Y ()}}
+\label{classFPDF_a43}
+
+
+\hypertarget{classFPDF_a92}{
+\index{FPDF@{FPDF}!Header@{Header}}
+\index{Header@{Header}!FPDF@{FPDF}}
+\subsubsection[Header]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Header ()}}
+\label{classFPDF_a92}
+
+
+
+
+R\'{e}impl\'{e}ment\'{e}e dans \hyperlink{classPDF_a0}{PDF}.\hypertarget{classFPDF_a18}{
+\index{FPDF@{FPDF}!Header@{Header}}
+\index{Header@{Header}!FPDF@{FPDF}}
+\subsubsection[Header]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Header ()}}
+\label{classFPDF_a18}
+
+
+
+
+R\'{e}impl\'{e}ment\'{e}e dans \hyperlink{classPDF_a0}{PDF}.\hypertarget{classFPDF_a113}{
+\index{FPDF@{FPDF}!Image@{Image}}
+\index{Image@{Image}!FPDF@{FPDF}}
+\subsubsection[Image]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Image (\$ {\em file}, \$ {\em x}, \$ {\em y}, \$ {\em w} = {\tt 0}, \$ {\em h} = {\tt 0}, \$ {\em type} = {\tt ''}, \$ {\em link} = {\tt ''})}}
+\label{classFPDF_a113}
+
+
+\hypertarget{classFPDF_a39}{
+\index{FPDF@{FPDF}!Image@{Image}}
+\index{Image@{Image}!FPDF@{FPDF}}
+\subsubsection[Image]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Image (\$ {\em file}, \$ {\em x}, \$ {\em y}, \$ {\em w} = {\tt 0}, \$ {\em h} = {\tt 0}, \$ {\em type} = {\tt ''}, \$ {\em link} = {\tt ''})}}
+\label{classFPDF_a39}
+
+
+\hypertarget{classFPDF_a100}{
+\index{FPDF@{FPDF}!Line@{Line}}
+\index{Line@{Line}!FPDF@{FPDF}}
+\subsubsection[Line]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Line (\$ {\em x1}, \$ {\em y1}, \$ {\em x2}, \$ {\em y2})}}
+\label{classFPDF_a100}
+
+
+\hypertarget{classFPDF_a26}{
+\index{FPDF@{FPDF}!Line@{Line}}
+\index{Line@{Line}!FPDF@{FPDF}}
+\subsubsection[Line]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Line (\$ {\em x1}, \$ {\em y1}, \$ {\em x2}, \$ {\em y2})}}
+\label{classFPDF_a26}
+
+
+\hypertarget{classFPDF_a107}{
+\index{FPDF@{FPDF}!Link@{Link}}
+\index{Link@{Link}!FPDF@{FPDF}}
+\subsubsection[Link]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Link (\$ {\em x}, \$ {\em y}, \$ {\em w}, \$ {\em h}, \$ {\em link})}}
+\label{classFPDF_a107}
+
+
+\hypertarget{classFPDF_a33}{
+\index{FPDF@{FPDF}!Link@{Link}}
+\index{Link@{Link}!FPDF@{FPDF}}
+\subsubsection[Link]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Link (\$ {\em x}, \$ {\em y}, \$ {\em w}, \$ {\em h}, \$ {\em link})}}
+\label{classFPDF_a33}
+
+
+\hypertarget{classFPDF_a114}{
+\index{FPDF@{FPDF}!Ln@{Ln}}
+\index{Ln@{Ln}!FPDF@{FPDF}}
+\subsubsection[Ln]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Ln (\$ {\em h} = {\tt ''})}}
+\label{classFPDF_a114}
+
+
+\hypertarget{classFPDF_a40}{
+\index{FPDF@{FPDF}!Ln@{Ln}}
+\index{Ln@{Ln}!FPDF@{FPDF}}
+\subsubsection[Ln]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Ln (\$ {\em h} = {\tt ''})}}
+\label{classFPDF_a40}
+
+
+\hypertarget{classFPDF_a111}{
+\index{FPDF@{FPDF}!MultiCell@{MultiCell}}
+\index{MultiCell@{MultiCell}!FPDF@{FPDF}}
+\subsubsection[MultiCell]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Multi\-Cell (\$ {\em w}, \$ {\em h}, \$ {\em txt}, \$ {\em border} = {\tt 0}, \$ {\em align} = {\tt 'J'}, \$ {\em fill} = {\tt 0})}}
+\label{classFPDF_a111}
+
+
+\hypertarget{classFPDF_a37}{
+\index{FPDF@{FPDF}!MultiCell@{MultiCell}}
+\index{MultiCell@{MultiCell}!FPDF@{FPDF}}
+\subsubsection[MultiCell]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Multi\-Cell (\$ {\em w}, \$ {\em h}, \$ {\em txt}, \$ {\em border} = {\tt 0}, \$ {\em align} = {\tt 'J'}, \$ {\em fill} = {\tt 0})}}
+\label{classFPDF_a37}
+
+
+\hypertarget{classFPDF_a89}{
+\index{FPDF@{FPDF}!Open@{Open}}
+\index{Open@{Open}!FPDF@{FPDF}}
+\subsubsection[Open]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Open ()}}
+\label{classFPDF_a89}
+
+
+\hypertarget{classFPDF_a15}{
+\index{FPDF@{FPDF}!Open@{Open}}
+\index{Open@{Open}!FPDF@{FPDF}}
+\subsubsection[Open]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Open ()}}
+\label{classFPDF_a15}
+
+
+\hypertarget{classFPDF_a120}{
+\index{FPDF@{FPDF}!Output@{Output}}
+\index{Output@{Output}!FPDF@{FPDF}}
+\subsubsection[Output]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Output (\$ {\em name} = {\tt ''}, \$ {\em dest} = {\tt ''})}}
+\label{classFPDF_a120}
+
+
+\hypertarget{classFPDF_a46}{
+\index{FPDF@{FPDF}!Output@{Output}}
+\index{Output@{Output}!FPDF@{FPDF}}
+\subsubsection[Output]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Output (\$ {\em name} = {\tt ''}, \$ {\em dest} = {\tt ''})}}
+\label{classFPDF_a46}
+
+
+\hypertarget{classFPDF_a94}{
+\index{FPDF@{FPDF}!PageNo@{PageNo}}
+\index{PageNo@{PageNo}!FPDF@{FPDF}}
+\subsubsection[PageNo]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Page\-No ()}}
+\label{classFPDF_a94}
+
+
+\hypertarget{classFPDF_a20}{
+\index{FPDF@{FPDF}!PageNo@{PageNo}}
+\index{PageNo@{PageNo}!FPDF@{FPDF}}
+\subsubsection[PageNo]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Page\-No ()}}
+\label{classFPDF_a20}
+
+
+\hypertarget{classFPDF_a101}{
+\index{FPDF@{FPDF}!Rect@{Rect}}
+\index{Rect@{Rect}!FPDF@{FPDF}}
+\subsubsection[Rect]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Rect (\$ {\em x}, \$ {\em y}, \$ {\em w}, \$ {\em h}, \$ {\em style} = {\tt ''})}}
+\label{classFPDF_a101}
+
+
+\hypertarget{classFPDF_a27}{
+\index{FPDF@{FPDF}!Rect@{Rect}}
+\index{Rect@{Rect}!FPDF@{FPDF}}
+\subsubsection[Rect]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Rect (\$ {\em x}, \$ {\em y}, \$ {\em w}, \$ {\em h}, \$ {\em style} = {\tt ''})}}
+\label{classFPDF_a27}
+
+
+\hypertarget{classFPDF_a72}{
+\index{FPDF@{FPDF}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!FPDF@{FPDF}}
+\subsubsection[Rotate]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Rotate (\$ {\em angle}, \$ {\em x} = {\tt -1}, \$ {\em y} = {\tt -1})}}
+\label{classFPDF_a72}
+
+
+\hypertarget{classFPDF_a74}{
+\index{FPDF@{FPDF}!RotatedImage@{RotatedImage}}
+\index{RotatedImage@{RotatedImage}!FPDF@{FPDF}}
+\subsubsection[RotatedImage]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Rotated\-Image (\$ {\em file}, \$ {\em x}, \$ {\em y}, \$ {\em w}, \$ {\em h}, \$ {\em angle})}}
+\label{classFPDF_a74}
+
+
+\hypertarget{classFPDF_a73}{
+\index{FPDF@{FPDF}!RotatedText@{RotatedText}}
+\index{RotatedText@{RotatedText}!FPDF@{FPDF}}
+\subsubsection[RotatedText]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Rotated\-Text (\$ {\em x}, \$ {\em y}, \$ {\em txt}, \$ {\em angle})}}
+\label{classFPDF_a73}
+
+
+\hypertarget{classFPDF_a84}{
+\index{FPDF@{FPDF}!SetAuthor@{SetAuthor}}
+\index{SetAuthor@{SetAuthor}!FPDF@{FPDF}}
+\subsubsection[SetAuthor]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Author (\$ {\em author})}}
+\label{classFPDF_a84}
+
+
+\hypertarget{classFPDF_a10}{
+\index{FPDF@{FPDF}!SetAuthor@{SetAuthor}}
+\index{SetAuthor@{SetAuthor}!FPDF@{FPDF}}
+\subsubsection[SetAuthor]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Author (\$ {\em author})}}
+\label{classFPDF_a10}
+
+
+\hypertarget{classFPDF_a79}{
+\index{FPDF@{FPDF}!SetAutoPageBreak@{SetAutoPageBreak}}
+\index{SetAutoPageBreak@{SetAutoPageBreak}!FPDF@{FPDF}}
+\subsubsection[SetAutoPageBreak]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Auto\-Page\-Break (\$ {\em auto}, \$ {\em margin} = {\tt 0})}}
+\label{classFPDF_a79}
+
+
+\hypertarget{classFPDF_a5}{
+\index{FPDF@{FPDF}!SetAutoPageBreak@{SetAutoPageBreak}}
+\index{SetAutoPageBreak@{SetAutoPageBreak}!FPDF@{FPDF}}
+\subsubsection[SetAutoPageBreak]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Auto\-Page\-Break (\$ {\em auto}, \$ {\em margin} = {\tt 0})}}
+\label{classFPDF_a5}
+
+
+\hypertarget{classFPDF_a81}{
+\index{FPDF@{FPDF}!SetCompression@{SetCompression}}
+\index{SetCompression@{SetCompression}!FPDF@{FPDF}}
+\subsubsection[SetCompression]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Compression (\$ {\em compress})}}
+\label{classFPDF_a81}
+
+
+\hypertarget{classFPDF_a7}{
+\index{FPDF@{FPDF}!SetCompression@{SetCompression}}
+\index{SetCompression@{SetCompression}!FPDF@{FPDF}}
+\subsubsection[SetCompression]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Compression (\$ {\em compress})}}
+\label{classFPDF_a7}
+
+
+\hypertarget{classFPDF_a86}{
+\index{FPDF@{FPDF}!SetCreator@{SetCreator}}
+\index{SetCreator@{SetCreator}!FPDF@{FPDF}}
+\subsubsection[SetCreator]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Creator (\$ {\em creator})}}
+\label{classFPDF_a86}
+
+
+\hypertarget{classFPDF_a12}{
+\index{FPDF@{FPDF}!SetCreator@{SetCreator}}
+\index{SetCreator@{SetCreator}!FPDF@{FPDF}}
+\subsubsection[SetCreator]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Creator (\$ {\em creator})}}
+\label{classFPDF_a12}
+
+
+\hypertarget{classFPDF_a80}{
+\index{FPDF@{FPDF}!SetDisplayMode@{SetDisplayMode}}
+\index{SetDisplayMode@{SetDisplayMode}!FPDF@{FPDF}}
+\subsubsection[SetDisplayMode]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Display\-Mode (\$ {\em zoom}, \$ {\em layout} = {\tt 'continuous'})}}
+\label{classFPDF_a80}
+
+
+\hypertarget{classFPDF_a6}{
+\index{FPDF@{FPDF}!SetDisplayMode@{SetDisplayMode}}
+\index{SetDisplayMode@{SetDisplayMode}!FPDF@{FPDF}}
+\subsubsection[SetDisplayMode]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Display\-Mode (\$ {\em zoom}, \$ {\em layout} = {\tt 'continuous'})}}
+\label{classFPDF_a6}
+
+
+\hypertarget{classFPDF_a95}{
+\index{FPDF@{FPDF}!SetDrawColor@{SetDrawColor}}
+\index{SetDrawColor@{SetDrawColor}!FPDF@{FPDF}}
+\subsubsection[SetDrawColor]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Draw\-Color (\$ {\em r}, \$ {\em g} = {\tt -1}, \$ {\em b} = {\tt -1})}}
+\label{classFPDF_a95}
+
+
+\hypertarget{classFPDF_a21}{
+\index{FPDF@{FPDF}!SetDrawColor@{SetDrawColor}}
+\index{SetDrawColor@{SetDrawColor}!FPDF@{FPDF}}
+\subsubsection[SetDrawColor]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Draw\-Color (\$ {\em r}, \$ {\em g} = {\tt -1}, \$ {\em b} = {\tt -1})}}
+\label{classFPDF_a21}
+
+
+\hypertarget{classFPDF_a96}{
+\index{FPDF@{FPDF}!SetFillColor@{SetFillColor}}
+\index{SetFillColor@{SetFillColor}!FPDF@{FPDF}}
+\subsubsection[SetFillColor]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Fill\-Color (\$ {\em r}, \$ {\em g} = {\tt -1}, \$ {\em b} = {\tt -1})}}
+\label{classFPDF_a96}
+
+
+\hypertarget{classFPDF_a22}{
+\index{FPDF@{FPDF}!SetFillColor@{SetFillColor}}
+\index{SetFillColor@{SetFillColor}!FPDF@{FPDF}}
+\subsubsection[SetFillColor]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Fill\-Color (\$ {\em r}, \$ {\em g} = {\tt -1}, \$ {\em b} = {\tt -1})}}
+\label{classFPDF_a22}
+
+
+\hypertarget{classFPDF_a103}{
+\index{FPDF@{FPDF}!SetFont@{SetFont}}
+\index{SetFont@{SetFont}!FPDF@{FPDF}}
+\subsubsection[SetFont]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Font (\$ {\em family}, \$ {\em style} = {\tt ''}, \$ {\em size} = {\tt 0})}}
+\label{classFPDF_a103}
+
+
+\hypertarget{classFPDF_a29}{
+\index{FPDF@{FPDF}!SetFont@{SetFont}}
+\index{SetFont@{SetFont}!FPDF@{FPDF}}
+\subsubsection[SetFont]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Font (\$ {\em family}, \$ {\em style} = {\tt ''}, \$ {\em size} = {\tt 0})}}
+\label{classFPDF_a29}
+
+
+\hypertarget{classFPDF_a104}{
+\index{FPDF@{FPDF}!SetFontSize@{SetFontSize}}
+\index{SetFontSize@{SetFontSize}!FPDF@{FPDF}}
+\subsubsection[SetFontSize]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Font\-Size (\$ {\em size})}}
+\label{classFPDF_a104}
+
+
+\hypertarget{classFPDF_a30}{
+\index{FPDF@{FPDF}!SetFontSize@{SetFontSize}}
+\index{SetFontSize@{SetFontSize}!FPDF@{FPDF}}
+\subsubsection[SetFontSize]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Font\-Size (\$ {\em size})}}
+\label{classFPDF_a30}
+
+
+\hypertarget{classFPDF_a85}{
+\index{FPDF@{FPDF}!SetKeywords@{SetKeywords}}
+\index{SetKeywords@{SetKeywords}!FPDF@{FPDF}}
+\subsubsection[SetKeywords]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Keywords (\$ {\em keywords})}}
+\label{classFPDF_a85}
+
+
+\hypertarget{classFPDF_a11}{
+\index{FPDF@{FPDF}!SetKeywords@{SetKeywords}}
+\index{SetKeywords@{SetKeywords}!FPDF@{FPDF}}
+\subsubsection[SetKeywords]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Keywords (\$ {\em keywords})}}
+\label{classFPDF_a11}
+
+
+\hypertarget{classFPDF_a76}{
+\index{FPDF@{FPDF}!SetLeftMargin@{SetLeftMargin}}
+\index{SetLeftMargin@{SetLeftMargin}!FPDF@{FPDF}}
+\subsubsection[SetLeftMargin]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Left\-Margin (\$ {\em margin})}}
+\label{classFPDF_a76}
+
+
+\hypertarget{classFPDF_a2}{
+\index{FPDF@{FPDF}!SetLeftMargin@{SetLeftMargin}}
+\index{SetLeftMargin@{SetLeftMargin}!FPDF@{FPDF}}
+\subsubsection[SetLeftMargin]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Left\-Margin (\$ {\em margin})}}
+\label{classFPDF_a2}
+
+
+\hypertarget{classFPDF_a99}{
+\index{FPDF@{FPDF}!SetLineWidth@{SetLineWidth}}
+\index{SetLineWidth@{SetLineWidth}!FPDF@{FPDF}}
+\subsubsection[SetLineWidth]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Line\-Width (\$ {\em width})}}
+\label{classFPDF_a99}
+
+
+\hypertarget{classFPDF_a25}{
+\index{FPDF@{FPDF}!SetLineWidth@{SetLineWidth}}
+\index{SetLineWidth@{SetLineWidth}!FPDF@{FPDF}}
+\subsubsection[SetLineWidth]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Line\-Width (\$ {\em width})}}
+\label{classFPDF_a25}
+
+
+\hypertarget{classFPDF_a106}{
+\index{FPDF@{FPDF}!SetLink@{SetLink}}
+\index{SetLink@{SetLink}!FPDF@{FPDF}}
+\subsubsection[SetLink]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Link (\$ {\em link}, \$ {\em y} = {\tt 0}, \$ {\em page} = {\tt -1})}}
+\label{classFPDF_a106}
+
+
+\hypertarget{classFPDF_a32}{
+\index{FPDF@{FPDF}!SetLink@{SetLink}}
+\index{SetLink@{SetLink}!FPDF@{FPDF}}
+\subsubsection[SetLink]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Link (\$ {\em link}, \$ {\em y} = {\tt 0}, \$ {\em page} = {\tt -1})}}
+\label{classFPDF_a32}
+
+
+\hypertarget{classFPDF_a75}{
+\index{FPDF@{FPDF}!SetMargins@{SetMargins}}
+\index{SetMargins@{SetMargins}!FPDF@{FPDF}}
+\subsubsection[SetMargins]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Margins (\$ {\em left}, \$ {\em top}, \$ {\em right} = {\tt -1})}}
+\label{classFPDF_a75}
+
+
+\hypertarget{classFPDF_a1}{
+\index{FPDF@{FPDF}!SetMargins@{SetMargins}}
+\index{SetMargins@{SetMargins}!FPDF@{FPDF}}
+\subsubsection[SetMargins]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Margins (\$ {\em left}, \$ {\em top}, \$ {\em right} = {\tt -1})}}
+\label{classFPDF_a1}
+
+
+\hypertarget{classFPDF_a78}{
+\index{FPDF@{FPDF}!SetRightMargin@{SetRightMargin}}
+\index{SetRightMargin@{SetRightMargin}!FPDF@{FPDF}}
+\subsubsection[SetRightMargin]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Right\-Margin (\$ {\em margin})}}
+\label{classFPDF_a78}
+
+
+\hypertarget{classFPDF_a4}{
+\index{FPDF@{FPDF}!SetRightMargin@{SetRightMargin}}
+\index{SetRightMargin@{SetRightMargin}!FPDF@{FPDF}}
+\subsubsection[SetRightMargin]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Right\-Margin (\$ {\em margin})}}
+\label{classFPDF_a4}
+
+
+\hypertarget{classFPDF_a83}{
+\index{FPDF@{FPDF}!SetSubject@{SetSubject}}
+\index{SetSubject@{SetSubject}!FPDF@{FPDF}}
+\subsubsection[SetSubject]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Subject (\$ {\em subject})}}
+\label{classFPDF_a83}
+
+
+\hypertarget{classFPDF_a9}{
+\index{FPDF@{FPDF}!SetSubject@{SetSubject}}
+\index{SetSubject@{SetSubject}!FPDF@{FPDF}}
+\subsubsection[SetSubject]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Subject (\$ {\em subject})}}
+\label{classFPDF_a9}
+
+
+\hypertarget{classFPDF_a97}{
+\index{FPDF@{FPDF}!SetTextColor@{SetTextColor}}
+\index{SetTextColor@{SetTextColor}!FPDF@{FPDF}}
+\subsubsection[SetTextColor]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Text\-Color (\$ {\em r}, \$ {\em g} = {\tt -1}, \$ {\em b} = {\tt -1})}}
+\label{classFPDF_a97}
+
+
+\hypertarget{classFPDF_a23}{
+\index{FPDF@{FPDF}!SetTextColor@{SetTextColor}}
+\index{SetTextColor@{SetTextColor}!FPDF@{FPDF}}
+\subsubsection[SetTextColor]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Text\-Color (\$ {\em r}, \$ {\em g} = {\tt -1}, \$ {\em b} = {\tt -1})}}
+\label{classFPDF_a23}
+
+
+\hypertarget{classFPDF_a82}{
+\index{FPDF@{FPDF}!SetTitle@{SetTitle}}
+\index{SetTitle@{SetTitle}!FPDF@{FPDF}}
+\subsubsection[SetTitle]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Title (\$ {\em title})}}
+\label{classFPDF_a82}
+
+
+\hypertarget{classFPDF_a8}{
+\index{FPDF@{FPDF}!SetTitle@{SetTitle}}
+\index{SetTitle@{SetTitle}!FPDF@{FPDF}}
+\subsubsection[SetTitle]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Title (\$ {\em title})}}
+\label{classFPDF_a8}
+
+
+\hypertarget{classFPDF_a77}{
+\index{FPDF@{FPDF}!SetTopMargin@{SetTopMargin}}
+\index{SetTopMargin@{SetTopMargin}!FPDF@{FPDF}}
+\subsubsection[SetTopMargin]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Top\-Margin (\$ {\em margin})}}
+\label{classFPDF_a77}
+
+
+\hypertarget{classFPDF_a3}{
+\index{FPDF@{FPDF}!SetTopMargin@{SetTopMargin}}
+\index{SetTopMargin@{SetTopMargin}!FPDF@{FPDF}}
+\subsubsection[SetTopMargin]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Top\-Margin (\$ {\em margin})}}
+\label{classFPDF_a3}
+
+
+\hypertarget{classFPDF_a116}{
+\index{FPDF@{FPDF}!SetX@{SetX}}
+\index{SetX@{SetX}!FPDF@{FPDF}}
+\subsubsection[SetX]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-X (\$ {\em x})}}
+\label{classFPDF_a116}
+
+
+\hypertarget{classFPDF_a42}{
+\index{FPDF@{FPDF}!SetX@{SetX}}
+\index{SetX@{SetX}!FPDF@{FPDF}}
+\subsubsection[SetX]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-X (\$ {\em x})}}
+\label{classFPDF_a42}
+
+
+\hypertarget{classFPDF_a119}{
+\index{FPDF@{FPDF}!SetXY@{SetXY}}
+\index{SetXY@{SetXY}!FPDF@{FPDF}}
+\subsubsection[SetXY]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-XY (\$ {\em x}, \$ {\em y})}}
+\label{classFPDF_a119}
+
+
+\hypertarget{classFPDF_a45}{
+\index{FPDF@{FPDF}!SetXY@{SetXY}}
+\index{SetXY@{SetXY}!FPDF@{FPDF}}
+\subsubsection[SetXY]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-XY (\$ {\em x}, \$ {\em y})}}
+\label{classFPDF_a45}
+
+
+\hypertarget{classFPDF_a118}{
+\index{FPDF@{FPDF}!SetY@{SetY}}
+\index{SetY@{SetY}!FPDF@{FPDF}}
+\subsubsection[SetY]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Y (\$ {\em y})}}
+\label{classFPDF_a118}
+
+
+\hypertarget{classFPDF_a44}{
+\index{FPDF@{FPDF}!SetY@{SetY}}
+\index{SetY@{SetY}!FPDF@{FPDF}}
+\subsubsection[SetY]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Set\-Y (\$ {\em y})}}
+\label{classFPDF_a44}
+
+
+\hypertarget{classFPDF_a108}{
+\index{FPDF@{FPDF}!Text@{Text}}
+\index{Text@{Text}!FPDF@{FPDF}}
+\subsubsection[Text]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Text (\$ {\em x}, \$ {\em y}, \$ {\em txt})}}
+\label{classFPDF_a108}
+
+
+\hypertarget{classFPDF_a34}{
+\index{FPDF@{FPDF}!Text@{Text}}
+\index{Text@{Text}!FPDF@{FPDF}}
+\subsubsection[Text]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Text (\$ {\em x}, \$ {\em y}, \$ {\em txt})}}
+\label{classFPDF_a34}
+
+
+\hypertarget{classFPDF_a112}{
+\index{FPDF@{FPDF}!Write@{Write}}
+\index{Write@{Write}!FPDF@{FPDF}}
+\subsubsection[Write]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Write (\$ {\em h}, \$ {\em txt}, \$ {\em link} = {\tt ''})}}
+\label{classFPDF_a112}
+
+
+\hypertarget{classFPDF_a38}{
+\index{FPDF@{FPDF}!Write@{Write}}
+\index{Write@{Write}!FPDF@{FPDF}}
+\subsubsection[Write]{\setlength{\rightskip}{0pt plus 5cm}FPDF::Write (\$ {\em h}, \$ {\em txt}, \$ {\em link} = {\tt ''})}}
+\label{classFPDF_a38}
+
+
+
+
+\subsection{Documentation des donn\'{e}es membres}
+\hypertarget{classFPDF_o56}{
+\index{FPDF@{FPDF}!$AliasNbPages@{\$AliasNbPages}}
+\index{$AliasNbPages@{\$AliasNbPages}!FPDF@{FPDF}}
+\subsubsection[\$AliasNbPages]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Alias\-Nb\-Pages}}
+\label{classFPDF_o56}
+
+
+\hypertarget{classFPDF_o58}{
+\index{FPDF@{FPDF}!$angle@{\$angle}}
+\index{$angle@{\$angle}!FPDF@{FPDF}}
+\subsubsection[\$angle]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$angle}}
+\label{classFPDF_o58}
+
+
+\hypertarget{classFPDF_o53}{
+\index{FPDF@{FPDF}!$author@{\$author}}
+\index{$author@{\$author}!FPDF@{FPDF}}
+\subsubsection[\$author]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$author}}
+\label{classFPDF_o53}
+
+
+\hypertarget{classFPDF_o46}{
+\index{FPDF@{FPDF}!$AutoPageBreak@{\$AutoPageBreak}}
+\index{$AutoPageBreak@{\$AutoPageBreak}!FPDF@{FPDF}}
+\subsubsection[\$AutoPageBreak]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Auto\-Page\-Break}}
+\label{classFPDF_o46}
+
+
+\hypertarget{classFPDF_o22}{
+\index{FPDF@{FPDF}!$bMargin@{\$bMargin}}
+\index{$bMargin@{\$bMargin}!FPDF@{FPDF}}
+\subsubsection[\$bMargin]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$b\-Margin}}
+\label{classFPDF_o22}
+
+
+\hypertarget{classFPDF_o3}{
+\index{FPDF@{FPDF}!$buffer@{\$buffer}}
+\index{$buffer@{\$buffer}!FPDF@{FPDF}}
+\subsubsection[\$buffer]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$buffer}}
+\label{classFPDF_o3}
+
+
+\hypertarget{classFPDF_o23}{
+\index{FPDF@{FPDF}!$cMargin@{\$cMargin}}
+\index{$cMargin@{\$cMargin}!FPDF@{FPDF}}
+\subsubsection[\$cMargin]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$c\-Margin}}
+\label{classFPDF_o23}
+
+
+\hypertarget{classFPDF_o44}{
+\index{FPDF@{FPDF}!$ColorFlag@{\$ColorFlag}}
+\index{$ColorFlag@{\$ColorFlag}!FPDF@{FPDF}}
+\subsubsection[\$ColorFlag]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Color\-Flag}}
+\label{classFPDF_o44}
+
+
+\hypertarget{classFPDF_o6}{
+\index{FPDF@{FPDF}!$compress@{\$compress}}
+\index{$compress@{\$compress}!FPDF@{FPDF}}
+\subsubsection[\$compress]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$compress}}
+\label{classFPDF_o6}
+
+
+\hypertarget{classFPDF_o28}{
+\index{FPDF@{FPDF}!$CoreFonts@{\$CoreFonts}}
+\index{$CoreFonts@{\$CoreFonts}!FPDF@{FPDF}}
+\subsubsection[\$CoreFonts]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Core\-Fonts}}
+\label{classFPDF_o28}
+
+
+\hypertarget{classFPDF_o55}{
+\index{FPDF@{FPDF}!$creator@{\$creator}}
+\index{$creator@{\$creator}!FPDF@{FPDF}}
+\subsubsection[\$creator]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$creator}}
+\label{classFPDF_o55}
+
+
+\hypertarget{classFPDF_o8}{
+\index{FPDF@{FPDF}!$CurOrientation@{\$CurOrientation}}
+\index{$CurOrientation@{\$CurOrientation}!FPDF@{FPDF}}
+\subsubsection[\$CurOrientation]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Cur\-Orientation}}
+\label{classFPDF_o8}
+
+
+\hypertarget{classFPDF_o38}{
+\index{FPDF@{FPDF}!$CurrentFont@{\$CurrentFont}}
+\index{$CurrentFont@{\$CurrentFont}!FPDF@{FPDF}}
+\subsubsection[\$CurrentFont]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Current\-Font}}
+\label{classFPDF_o38}
+
+
+\hypertarget{classFPDF_o7}{
+\index{FPDF@{FPDF}!$DefOrientation@{\$DefOrientation}}
+\index{$DefOrientation@{\$DefOrientation}!FPDF@{FPDF}}
+\subsubsection[\$DefOrientation]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Def\-Orientation}}
+\label{classFPDF_o7}
+
+
+\hypertarget{classFPDF_o31}{
+\index{FPDF@{FPDF}!$diffs@{\$diffs}}
+\index{$diffs@{\$diffs}!FPDF@{FPDF}}
+\subsubsection[\$diffs]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$diffs}}
+\label{classFPDF_o31}
+
+
+\hypertarget{classFPDF_o41}{
+\index{FPDF@{FPDF}!$DrawColor@{\$DrawColor}}
+\index{$DrawColor@{\$DrawColor}!FPDF@{FPDF}}
+\subsubsection[\$DrawColor]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Draw\-Color}}
+\label{classFPDF_o41}
+
+
+\hypertarget{classFPDF_o14}{
+\index{FPDF@{FPDF}!$fh@{\$fh}}
+\index{$fh@{\$fh}!FPDF@{FPDF}}
+\subsubsection[\$fh]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$fh}}
+\label{classFPDF_o14}
+
+
+\hypertarget{classFPDF_o12}{
+\index{FPDF@{FPDF}!$fhPt@{\$fhPt}}
+\index{$fhPt@{\$fhPt}!FPDF@{FPDF}}
+\subsubsection[\$fhPt]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$fh\-Pt}}
+\label{classFPDF_o12}
+
+
+\hypertarget{classFPDF_o42}{
+\index{FPDF@{FPDF}!$FillColor@{\$FillColor}}
+\index{$FillColor@{\$FillColor}!FPDF@{FPDF}}
+\subsubsection[\$FillColor]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Fill\-Color}}
+\label{classFPDF_o42}
+
+
+\hypertarget{classFPDF_o35}{
+\index{FPDF@{FPDF}!$FontFamily@{\$FontFamily}}
+\index{$FontFamily@{\$FontFamily}!FPDF@{FPDF}}
+\subsubsection[\$FontFamily]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Font\-Family}}
+\label{classFPDF_o35}
+
+
+\hypertarget{classFPDF_o30}{
+\index{FPDF@{FPDF}!$FontFiles@{\$FontFiles}}
+\index{$FontFiles@{\$FontFiles}!FPDF@{FPDF}}
+\subsubsection[\$FontFiles]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Font\-Files}}
+\label{classFPDF_o30}
+
+
+\hypertarget{classFPDF_o29}{
+\index{FPDF@{FPDF}!$fonts@{\$fonts}}
+\index{$fonts@{\$fonts}!FPDF@{FPDF}}
+\subsubsection[\$fonts]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$fonts}}
+\label{classFPDF_o29}
+
+
+\hypertarget{classFPDF_o40}{
+\index{FPDF@{FPDF}!$FontSize@{\$FontSize}}
+\index{$FontSize@{\$FontSize}!FPDF@{FPDF}}
+\subsubsection[\$FontSize]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Font\-Size}}
+\label{classFPDF_o40}
+
+
+\hypertarget{classFPDF_o39}{
+\index{FPDF@{FPDF}!$FontSizePt@{\$FontSizePt}}
+\index{$FontSizePt@{\$FontSizePt}!FPDF@{FPDF}}
+\subsubsection[\$FontSizePt]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Font\-Size\-Pt}}
+\label{classFPDF_o39}
+
+
+\hypertarget{classFPDF_o36}{
+\index{FPDF@{FPDF}!$FontStyle@{\$FontStyle}}
+\index{$FontStyle@{\$FontStyle}!FPDF@{FPDF}}
+\subsubsection[\$FontStyle]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Font\-Style}}
+\label{classFPDF_o36}
+
+
+\hypertarget{classFPDF_o13}{
+\index{FPDF@{FPDF}!$fw@{\$fw}}
+\index{$fw@{\$fw}!FPDF@{FPDF}}
+\subsubsection[\$fw]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$fw}}
+\label{classFPDF_o13}
+
+
+\hypertarget{classFPDF_o11}{
+\index{FPDF@{FPDF}!$fwPt@{\$fwPt}}
+\index{$fwPt@{\$fwPt}!FPDF@{FPDF}}
+\subsubsection[\$fwPt]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$fw\-Pt}}
+\label{classFPDF_o11}
+
+
+\hypertarget{classFPDF_o18}{
+\index{FPDF@{FPDF}!$h@{\$h}}
+\index{$h@{\$h}!FPDF@{FPDF}}
+\subsubsection[\$h]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$h}}
+\label{classFPDF_o18}
+
+
+\hypertarget{classFPDF_o16}{
+\index{FPDF@{FPDF}!$hPt@{\$hPt}}
+\index{$hPt@{\$hPt}!FPDF@{FPDF}}
+\subsubsection[\$hPt]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$h\-Pt}}
+\label{classFPDF_o16}
+
+
+\hypertarget{classFPDF_o32}{
+\index{FPDF@{FPDF}!$images@{\$images}}
+\index{$images@{\$images}!FPDF@{FPDF}}
+\subsubsection[\$images]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$images}}
+\label{classFPDF_o32}
+
+
+\hypertarget{classFPDF_o48}{
+\index{FPDF@{FPDF}!$InFooter@{\$InFooter}}
+\index{$InFooter@{\$InFooter}!FPDF@{FPDF}}
+\subsubsection[\$InFooter]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$In\-Footer}}
+\label{classFPDF_o48}
+
+
+\hypertarget{classFPDF_o10}{
+\index{FPDF@{FPDF}!$k@{\$k}}
+\index{$k@{\$k}!FPDF@{FPDF}}
+\subsubsection[\$k]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$k}}
+\label{classFPDF_o10}
+
+
+\hypertarget{classFPDF_o54}{
+\index{FPDF@{FPDF}!$keywords@{\$keywords}}
+\index{$keywords@{\$keywords}!FPDF@{FPDF}}
+\subsubsection[\$keywords]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$keywords}}
+\label{classFPDF_o54}
+
+
+\hypertarget{classFPDF_o26}{
+\index{FPDF@{FPDF}!$lasth@{\$lasth}}
+\index{$lasth@{\$lasth}!FPDF@{FPDF}}
+\subsubsection[\$lasth]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$lasth}}
+\label{classFPDF_o26}
+
+
+\hypertarget{classFPDF_o50}{
+\index{FPDF@{FPDF}!$LayoutMode@{\$LayoutMode}}
+\index{$LayoutMode@{\$LayoutMode}!FPDF@{FPDF}}
+\subsubsection[\$LayoutMode]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Layout\-Mode}}
+\label{classFPDF_o50}
+
+
+\hypertarget{classFPDF_o27}{
+\index{FPDF@{FPDF}!$LineWidth@{\$LineWidth}}
+\index{$LineWidth@{\$LineWidth}!FPDF@{FPDF}}
+\subsubsection[\$LineWidth]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Line\-Width}}
+\label{classFPDF_o27}
+
+
+\hypertarget{classFPDF_o34}{
+\index{FPDF@{FPDF}!$links@{\$links}}
+\index{$links@{\$links}!FPDF@{FPDF}}
+\subsubsection[\$links]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$links}}
+\label{classFPDF_o34}
+
+
+\hypertarget{classFPDF_o19}{
+\index{FPDF@{FPDF}!$lMargin@{\$lMargin}}
+\index{$lMargin@{\$lMargin}!FPDF@{FPDF}}
+\subsubsection[\$lMargin]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$l\-Margin}}
+\label{classFPDF_o19}
+
+
+\hypertarget{classFPDF_o1}{
+\index{FPDF@{FPDF}!$n@{\$n}}
+\index{$n@{\$n}!FPDF@{FPDF}}
+\subsubsection[\$n]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$\hyperlink{utilitaires_2html_8php_a0}{n}}}
+\label{classFPDF_o1}
+
+
+\hypertarget{classFPDF_o2}{
+\index{FPDF@{FPDF}!$offsets@{\$offsets}}
+\index{$offsets@{\$offsets}!FPDF@{FPDF}}
+\subsubsection[\$offsets]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$offsets}}
+\label{classFPDF_o2}
+
+
+\hypertarget{classFPDF_o9}{
+\index{FPDF@{FPDF}!$OrientationChanges@{\$OrientationChanges}}
+\index{$OrientationChanges@{\$OrientationChanges}!FPDF@{FPDF}}
+\subsubsection[\$OrientationChanges]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Orientation\-Changes}}
+\label{classFPDF_o9}
+
+
+\hypertarget{classFPDF_o0}{
+\index{FPDF@{FPDF}!$page@{\$page}}
+\index{$page@{\$page}!FPDF@{FPDF}}
+\subsubsection[\$page]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$page}}
+\label{classFPDF_o0}
+
+
+\hypertarget{classFPDF_o47}{
+\index{FPDF@{FPDF}!$PageBreakTrigger@{\$PageBreakTrigger}}
+\index{$PageBreakTrigger@{\$PageBreakTrigger}!FPDF@{FPDF}}
+\subsubsection[\$PageBreakTrigger]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Page\-Break\-Trigger}}
+\label{classFPDF_o47}
+
+
+\hypertarget{classFPDF_o33}{
+\index{FPDF@{FPDF}!$PageLinks@{\$PageLinks}}
+\index{$PageLinks@{\$PageLinks}!FPDF@{FPDF}}
+\subsubsection[\$PageLinks]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Page\-Links}}
+\label{classFPDF_o33}
+
+
+\hypertarget{classFPDF_o4}{
+\index{FPDF@{FPDF}!$pages@{\$pages}}
+\index{$pages@{\$pages}!FPDF@{FPDF}}
+\subsubsection[\$pages]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$pages}}
+\label{classFPDF_o4}
+
+
+\hypertarget{classFPDF_o57}{
+\index{FPDF@{FPDF}!$PDFVersion@{\$PDFVersion}}
+\index{$PDFVersion@{\$PDFVersion}!FPDF@{FPDF}}
+\subsubsection[\$PDFVersion]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$PDFVersion}}
+\label{classFPDF_o57}
+
+
+\hypertarget{classFPDF_o21}{
+\index{FPDF@{FPDF}!$rMargin@{\$rMargin}}
+\index{$rMargin@{\$rMargin}!FPDF@{FPDF}}
+\subsubsection[\$rMargin]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$r\-Margin}}
+\label{classFPDF_o21}
+
+
+\hypertarget{classFPDF_o5}{
+\index{FPDF@{FPDF}!$state@{\$state}}
+\index{$state@{\$state}!FPDF@{FPDF}}
+\subsubsection[\$state]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$state}}
+\label{classFPDF_o5}
+
+
+\hypertarget{classFPDF_o52}{
+\index{FPDF@{FPDF}!$subject@{\$subject}}
+\index{$subject@{\$subject}!FPDF@{FPDF}}
+\subsubsection[\$subject]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$subject}}
+\label{classFPDF_o52}
+
+
+\hypertarget{classFPDF_o43}{
+\index{FPDF@{FPDF}!$TextColor@{\$TextColor}}
+\index{$TextColor@{\$TextColor}!FPDF@{FPDF}}
+\subsubsection[\$TextColor]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Text\-Color}}
+\label{classFPDF_o43}
+
+
+\hypertarget{classFPDF_o51}{
+\index{FPDF@{FPDF}!$title@{\$title}}
+\index{$title@{\$title}!FPDF@{FPDF}}
+\subsubsection[\$title]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$title}}
+\label{classFPDF_o51}
+
+
+\hypertarget{classFPDF_o20}{
+\index{FPDF@{FPDF}!$tMargin@{\$tMargin}}
+\index{$tMargin@{\$tMargin}!FPDF@{FPDF}}
+\subsubsection[\$tMargin]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$t\-Margin}}
+\label{classFPDF_o20}
+
+
+\hypertarget{classFPDF_o37}{
+\index{FPDF@{FPDF}!$underline@{\$underline}}
+\index{$underline@{\$underline}!FPDF@{FPDF}}
+\subsubsection[\$underline]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$underline}}
+\label{classFPDF_o37}
+
+
+\hypertarget{classFPDF_o17}{
+\index{FPDF@{FPDF}!$w@{\$w}}
+\index{$w@{\$w}!FPDF@{FPDF}}
+\subsubsection[\$w]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$w}}
+\label{classFPDF_o17}
+
+
+\hypertarget{classFPDF_o15}{
+\index{FPDF@{FPDF}!$wPt@{\$wPt}}
+\index{$wPt@{\$wPt}!FPDF@{FPDF}}
+\subsubsection[\$wPt]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$w\-Pt}}
+\label{classFPDF_o15}
+
+
+\hypertarget{classFPDF_o45}{
+\index{FPDF@{FPDF}!$ws@{\$ws}}
+\index{$ws@{\$ws}!FPDF@{FPDF}}
+\subsubsection[\$ws]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$ws}}
+\label{classFPDF_o45}
+
+
+\hypertarget{classFPDF_o24}{
+\index{FPDF@{FPDF}!$x@{\$x}}
+\index{$x@{\$x}!FPDF@{FPDF}}
+\subsubsection[\$x]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$x}}
+\label{classFPDF_o24}
+
+
+\hypertarget{classFPDF_o25}{
+\index{FPDF@{FPDF}!$y@{\$y}}
+\index{$y@{\$y}!FPDF@{FPDF}}
+\subsubsection[\$y]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$y}}
+\label{classFPDF_o25}
+
+
+\hypertarget{classFPDF_o49}{
+\index{FPDF@{FPDF}!$ZoomMode@{\$ZoomMode}}
+\index{$ZoomMode@{\$ZoomMode}!FPDF@{FPDF}}
+\subsubsection[\$ZoomMode]{\setlength{\rightskip}{0pt plus 5cm}FPDF::\$Zoom\-Mode}}
+\label{classFPDF_o49}
+
+
+
+
+La documentation de cette classe a \'{e}t\'{e} g\'{e}n\'{e}r\'{e}e \`{a} partir des fichiers suivants:\begin{CompactItemize}
+\item 
+\hyperlink{fpdf_8php}{fpdf.php}\item 
+\hyperlink{pdf_2fpdf_8php}{pdf/fpdf.php}\end{CompactItemize}

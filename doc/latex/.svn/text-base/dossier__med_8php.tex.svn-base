@@ -1,0 +1,28 @@
+\hypertarget{dossier__med_8php}{
+\section{R\'{e}f\'{e}rence du fichier dossier\_\-med.php}
+\label{dossier__med_8php}\index{dossier_med.php@{dossier\_\-med.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{dossier__med_8php_a0}{\$t} = array()
+\item 
+\hyperlink{dossier__med_8php_a1}{\$n} = 9
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{dossier__med_8php_a1}{
+\index{dossier_med.php@{dossier\_\-med.php}!$n@{\$n}}
+\index{$n@{\$n}!dossier_med.php@{dossier\_\-med.php}}
+\subsubsection[\$n]{\setlength{\rightskip}{0pt plus 5cm}\$\hyperlink{utilitaires_2html_8php_a0}{n} = 9}}
+\label{dossier__med_8php_a1}
+
+
+\hypertarget{dossier__med_8php_a0}{
+\index{dossier_med.php@{dossier\_\-med.php}!$t@{\$t}}
+\index{$t@{\$t}!dossier_med.php@{dossier\_\-med.php}}
+\subsubsection[\$t]{\setlength{\rightskip}{0pt plus 5cm}\$t = array()}}
+\label{dossier__med_8php_a0}
+
+

@@ -1,0 +1,82 @@
+\hypertarget{stock__saisie_8php}{
+\section{R\'{e}f\'{e}rence du fichier stock\_\-saisie.php}
+\label{stock__saisie_8php}\index{stock_saisie.php@{stock\_\-saisie.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{stock__saisie_8php_a0}{\$back} = \char`\"{}biotox\_\-materiel.php\char`\"{}
+\item 
+\hyperlink{stock__saisie_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{stock__saisie_8php_a2}{\$ville} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{stock__saisie_8php_a3}{\$requete} = \char`\"{}SELECT materiel\_\-nom FROM materiel WHERE materiel\_\-ID = '\$\_\-GET\mbox{[}type\_\-materiels\mbox{]}'\char`\"{}
+\item 
+\hyperlink{stock__saisie_8php_a4}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{stock__saisie_8php_a5}{\$mat} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{stock__saisie_8php_a6}{\$num\_\-rows} = 0
+\item 
+\hyperlink{stock__saisie_8php_a7}{\$inventaire\_\-id} = array()
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{stock__saisie_8php_a0}{
+\index{stock_saisie.php@{stock\_\-saisie.php}!$back@{\$back}}
+\index{$back@{\$back}!stock_saisie.php@{stock\_\-saisie.php}}
+\subsubsection[\$back]{\setlength{\rightskip}{0pt plus 5cm}\$back = \char`\"{}biotox\_\-materiel.php\char`\"{}}}
+\label{stock__saisie_8php_a0}
+
+
+\hypertarget{stock__saisie_8php_a1}{
+\index{stock_saisie.php@{stock\_\-saisie.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!stock_saisie.php@{stock\_\-saisie.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{stock__saisie_8php_a1}
+
+
+\hypertarget{stock__saisie_8php_a7}{
+\index{stock_saisie.php@{stock\_\-saisie.php}!$inventaire_id@{\$inventaire\_\-id}}
+\index{$inventaire_id@{\$inventaire\_\-id}!stock_saisie.php@{stock\_\-saisie.php}}
+\subsubsection[\$inventaire\_\-id]{\setlength{\rightskip}{0pt plus 5cm}\$inventaire\_\-id = array()}}
+\label{stock__saisie_8php_a7}
+
+
+\hypertarget{stock__saisie_8php_a5}{
+\index{stock_saisie.php@{stock\_\-saisie.php}!$mat@{\$mat}}
+\index{$mat@{\$mat}!stock_saisie.php@{stock\_\-saisie.php}}
+\subsubsection[\$mat]{\setlength{\rightskip}{0pt plus 5cm}\$mat = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{stock__saisie_8php_a5}
+
+
+\hypertarget{stock__saisie_8php_a6}{
+\index{stock_saisie.php@{stock\_\-saisie.php}!$num_rows@{\$num\_\-rows}}
+\index{$num_rows@{\$num\_\-rows}!stock_saisie.php@{stock\_\-saisie.php}}
+\subsubsection[\$num\_\-rows]{\setlength{\rightskip}{0pt plus 5cm}\$num\_\-rows = 0}}
+\label{stock__saisie_8php_a6}
+
+
+\hypertarget{stock__saisie_8php_a3}{
+\index{stock_saisie.php@{stock\_\-saisie.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!stock_saisie.php@{stock\_\-saisie.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$requete = \char`\"{}SELECT materiel\_\-nom FROM materiel WHERE materiel\_\-ID = '\$\_\-GET\mbox{[}type\_\-materiels\mbox{]}'\char`\"{}}}
+\label{stock__saisie_8php_a3}
+
+
+\hypertarget{stock__saisie_8php_a4}{
+\index{stock_saisie.php@{stock\_\-saisie.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!stock_saisie.php@{stock\_\-saisie.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{stock__saisie_8php_a4}
+
+
+\hypertarget{stock__saisie_8php_a2}{
+\index{stock_saisie.php@{stock\_\-saisie.php}!$ville@{\$ville}}
+\index{$ville@{\$ville}!stock_saisie.php@{stock\_\-saisie.php}}
+\subsubsection[\$ville]{\setlength{\rightskip}{0pt plus 5cm}\$\hyperlink{apa__zone_8php_a33}{ville} = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{stock__saisie_8php_a2}
+
+

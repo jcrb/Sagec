@@ -1,0 +1,19 @@
+\hypertarget{communes__secteurs_8php}{
+\section{R\'{e}f\'{e}rence du fichier communes\_\-secteurs.php}
+\label{communes__secteurs_8php}\index{communes_secteurs.php@{communes\_\-secteurs.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{communes__secteurs_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{communes__secteurs_8php_a0}{
+\index{communes_secteurs.php@{communes\_\-secteurs.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!communes_secteurs.php@{communes\_\-secteurs.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{communes__secteurs_8php_a0}
+
+

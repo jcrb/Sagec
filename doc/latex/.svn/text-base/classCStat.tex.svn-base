@@ -1,0 +1,123 @@
+\hypertarget{classCStat}{
+\section{R\'{e}f\'{e}rence de la classe CStat}
+\label{classCStat}\index{CStat@{CStat}}
+}
+\subsection*{Fonctions membres publiques}
+\begin{CompactItemize}
+\item 
+\hyperlink{classCStat_a0}{CStat} ()
+\item 
+\hyperlink{classCStat_a1}{addx} (\$x)
+\item 
+\hyperlink{classCStat_a2}{size} ()
+\item 
+\hyperlink{classCStat_a3}{moyenne} ()
+\item 
+\hyperlink{classCStat_a4}{variance} ()
+\item 
+\hyperlink{classCStat_a5}{ecart\_\-type} ()
+\item 
+\hyperlink{classCStat_a6}{min} ()
+\item 
+\hyperlink{classCStat_a7}{max} ()
+\end{CompactItemize}
+\subsection*{Attributs publics}
+\begin{CompactItemize}
+\item 
+\hyperlink{classCStat_o0}{\$vx}
+\item 
+\hyperlink{classCStat_o1}{\$sx}
+\item 
+\hyperlink{classCStat_o2}{\$sx2}
+\end{CompactItemize}
+
+
+\subsection{Documentation des contructeurs et destructeur}
+\hypertarget{classCStat_a0}{
+\index{CStat@{CStat}!CStat@{CStat}}
+\index{CStat@{CStat}!CStat@{CStat}}
+\subsubsection[CStat]{\setlength{\rightskip}{0pt plus 5cm}CStat::CStat ()}}
+\label{classCStat_a0}
+
+
+Constructeur
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classCStat_a1}{
+\index{CStat@{CStat}!addx@{addx}}
+\index{addx@{addx}!CStat@{CStat}}
+\subsubsection[addx]{\setlength{\rightskip}{0pt plus 5cm}CStat::addx (\$ {\em x})}}
+\label{classCStat_a1}
+
+
+\hyperlink{serveur_8php_a8}{add()}\hypertarget{classCStat_a5}{
+\index{CStat@{CStat}!ecart_type@{ecart\_\-type}}
+\index{ecart_type@{ecart\_\-type}!CStat@{CStat}}
+\subsubsection[ecart\_\-type]{\setlength{\rightskip}{0pt plus 5cm}CStat::ecart\_\-type ()}}
+\label{classCStat_a5}
+
+
+\hypertarget{classCStat_a7}{
+\index{CStat@{CStat}!max@{max}}
+\index{max@{max}!CStat@{CStat}}
+\subsubsection[max]{\setlength{\rightskip}{0pt plus 5cm}CStat::max ()}}
+\label{classCStat_a7}
+
+
+\hypertarget{classCStat_a6}{
+\index{CStat@{CStat}!min@{min}}
+\index{min@{min}!CStat@{CStat}}
+\subsubsection[min]{\setlength{\rightskip}{0pt plus 5cm}CStat::min ()}}
+\label{classCStat_a6}
+
+
+\hypertarget{classCStat_a3}{
+\index{CStat@{CStat}!moyenne@{moyenne}}
+\index{moyenne@{moyenne}!CStat@{CStat}}
+\subsubsection[moyenne]{\setlength{\rightskip}{0pt plus 5cm}CStat::moyenne ()}}
+\label{classCStat_a3}
+
+
+\hypertarget{classCStat_a2}{
+\index{CStat@{CStat}!size@{size}}
+\index{size@{size}!CStat@{CStat}}
+\subsubsection[size]{\setlength{\rightskip}{0pt plus 5cm}CStat::size ()}}
+\label{classCStat_a2}
+
+
+\hyperlink{classCStat_a2}{size()}\hypertarget{classCStat_a4}{
+\index{CStat@{CStat}!variance@{variance}}
+\index{variance@{variance}!CStat@{CStat}}
+\subsubsection[variance]{\setlength{\rightskip}{0pt plus 5cm}CStat::variance ()}}
+\label{classCStat_a4}
+
+
+
+
+\subsection{Documentation des donn\'{e}es membres}
+\hypertarget{classCStat_o1}{
+\index{CStat@{CStat}!$sx@{\$sx}}
+\index{$sx@{\$sx}!CStat@{CStat}}
+\subsubsection[\$sx]{\setlength{\rightskip}{0pt plus 5cm}CStat::\$sx}}
+\label{classCStat_o1}
+
+
+\hypertarget{classCStat_o2}{
+\index{CStat@{CStat}!$sx2@{\$sx2}}
+\index{$sx2@{\$sx2}!CStat@{CStat}}
+\subsubsection[\$sx2]{\setlength{\rightskip}{0pt plus 5cm}CStat::\$sx2}}
+\label{classCStat_o2}
+
+
+\hypertarget{classCStat_o0}{
+\index{CStat@{CStat}!$vx@{\$vx}}
+\index{$vx@{\$vx}!CStat@{CStat}}
+\subsubsection[\$vx]{\setlength{\rightskip}{0pt plus 5cm}CStat::\$\hyperlink{apa__zone_8php_a34}{vx}}}
+\label{classCStat_o0}
+
+
+
+
+La documentation de cette classe a \'{e}t\'{e} g\'{e}n\'{e}r\'{e}e \`{a} partir du fichier suivant:\begin{CompactItemize}
+\item 
+\hyperlink{classe__stat_8php}{classe\_\-stat.php}\end{CompactItemize}

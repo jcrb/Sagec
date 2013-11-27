@@ -1,0 +1,64 @@
+\hypertarget{intervenants__selection_8php}{
+\section{R\'{e}f\'{e}rence du fichier intervenants\_\-selection.php}
+\label{intervenants__selection_8php}\index{intervenants_selection.php@{intervenants\_\-selection.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{intervenants__selection_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{intervenants__selection_8php_a1}{\$mot} = \$string\_\-lang\mbox{[}'SELECTIONNER\_\-INTERVENANT'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{intervenants__selection_8php_a2}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{intervenants__selection_8php_a3}{\$check} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{intervenants__selection_8php_a4}{\$requete} = \char`\"{}UPDATE personnel SET alerte = '\$check' WHERE Pers\_\-ID = '\$\_\-GET\mbox{[}maj\mbox{]}'\char`\"{}
+\item 
+\hyperlink{intervenants__selection_8php_a5}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{intervenants__selection_8php_a3}{
+\index{intervenants_selection.php@{intervenants\_\-selection.php}!$check@{\$check}}
+\index{$check@{\$check}!intervenants_selection.php@{intervenants\_\-selection.php}}
+\subsubsection[\$check]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$check = \char`\"{}\char`\"{}}}
+\label{intervenants__selection_8php_a3}
+
+
+\hypertarget{intervenants__selection_8php_a2}{
+\index{intervenants_selection.php@{intervenants\_\-selection.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!intervenants_selection.php@{intervenants\_\-selection.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{intervenants__selection_8php_a2}
+
+
+\hypertarget{intervenants__selection_8php_a0}{
+\index{intervenants_selection.php@{intervenants\_\-selection.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!intervenants_selection.php@{intervenants\_\-selection.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{intervenants__selection_8php_a0}
+
+
+\hypertarget{intervenants__selection_8php_a1}{
+\index{intervenants_selection.php@{intervenants\_\-selection.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!intervenants_selection.php@{intervenants\_\-selection.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'SELECTIONNER\_\-INTERVENANT'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{intervenants__selection_8php_a1}
+
+
+\hypertarget{intervenants__selection_8php_a4}{
+\index{intervenants_selection.php@{intervenants\_\-selection.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!intervenants_selection.php@{intervenants\_\-selection.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}UPDATE personnel SET alerte = '\$check' WHERE Pers\_\-ID = '\$\_\-GET\mbox{[}maj\mbox{]}'\char`\"{}}}
+\label{intervenants__selection_8php_a4}
+
+
+\hypertarget{intervenants__selection_8php_a5}{
+\index{intervenants_selection.php@{intervenants\_\-selection.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!intervenants_selection.php@{intervenants\_\-selection.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{intervenants__selection_8php_a5}
+
+

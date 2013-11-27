@@ -1,0 +1,8 @@
+UPDATE contact SET
+				type_contact_ID = '1',
+				nature_contact_ID = '4',
+				contact_lieu = '2',
+				confidentialite_ID = '1',
+				valeur = '+33 (0)3 83 22 54 54',
+				contact_nom = 'emergency - urgences'
+			WHERE contact_ID = '296'

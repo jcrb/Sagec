@@ -1,0 +1,64 @@
+\hypertarget{synoptique__sup_8php}{
+\section{R\'{e}f\'{e}rence du fichier synoptique\_\-sup.php}
+\label{synoptique__sup_8php}\index{synoptique_sup.php@{synoptique\_\-sup.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{synoptique__sup_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{synoptique__sup_8php_a1}{\$a} = \char`\"{}$<$a href=$\backslash$\char`\"{}../login2.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-parent$\backslash$\char`\"{}$>$\char`\"{}.\$string\_\-lang\mbox{[}'RETOUR'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{}$<$/a$>$\char`\"{}
+\item 
+\hyperlink{synoptique__sup_8php_a2}{\$mot} = \$string\_\-lang\mbox{[}'Fermetures lits'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{synoptique__sup_8php_a3}{\$b} = \char`\"{}$<$a href=$\backslash$\char`\"{}../services/fermeture\_\-regionale.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}droite$\backslash$\char`\"{}$>$\$mot$<$/a$>$\char`\"{}
+\item 
+\hyperlink{synoptique__sup_8php_a4}{\$c} = \char`\"{}$<$a href=$\backslash$\char`\"{}../logout.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-parent$\backslash$\char`\"{}$>$\$mot$<$/a$>$\char`\"{}
+\item 
+\hyperlink{synoptique__sup_8php_a5}{\$menu} = \$a.\char`\"{} $|$ \char`\"{}.\$b.\char`\"{} $|$ \char`\"{}.\$c
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{synoptique__sup_8php_a1}{
+\index{synoptique_sup.php@{synoptique\_\-sup.php}!$a@{\$a}}
+\index{$a@{\$a}!synoptique_sup.php@{synoptique\_\-sup.php}}
+\subsubsection[\$a]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$a = \char`\"{}$<$a href=$\backslash$\char`\"{}../login2.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-parent$\backslash$\char`\"{}$>$\char`\"{}.\$string\_\-lang\mbox{[}'RETOUR'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{}$<$/a$>$\char`\"{}}}
+\label{synoptique__sup_8php_a1}
+
+
+\hypertarget{synoptique__sup_8php_a3}{
+\index{synoptique_sup.php@{synoptique\_\-sup.php}!$b@{\$b}}
+\index{$b@{\$b}!synoptique_sup.php@{synoptique\_\-sup.php}}
+\subsubsection[\$b]{\setlength{\rightskip}{0pt plus 5cm}\$b = \char`\"{}$<$a href=$\backslash$\char`\"{}../services/fermeture\_\-regionale.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}droite$\backslash$\char`\"{}$>$\$mot$<$/a$>$\char`\"{}}}
+\label{synoptique__sup_8php_a3}
+
+
+\hypertarget{synoptique__sup_8php_a4}{
+\index{synoptique_sup.php@{synoptique\_\-sup.php}!$c@{\$c}}
+\index{$c@{\$c}!synoptique_sup.php@{synoptique\_\-sup.php}}
+\subsubsection[\$c]{\setlength{\rightskip}{0pt plus 5cm}\$c = \char`\"{}$<$a href=$\backslash$\char`\"{}../logout.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-parent$\backslash$\char`\"{}$>$\$mot$<$/a$>$\char`\"{}}}
+\label{synoptique__sup_8php_a4}
+
+
+\hypertarget{synoptique__sup_8php_a0}{
+\index{synoptique_sup.php@{synoptique\_\-sup.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!synoptique_sup.php@{synoptique\_\-sup.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{synoptique__sup_8php_a0}
+
+
+\hypertarget{synoptique__sup_8php_a5}{
+\index{synoptique_sup.php@{synoptique\_\-sup.php}!$menu@{\$menu}}
+\index{$menu@{\$menu}!synoptique_sup.php@{synoptique\_\-sup.php}}
+\subsubsection[\$menu]{\setlength{\rightskip}{0pt plus 5cm}\$menu = \$a.\char`\"{} $|$ \char`\"{}.\$b.\char`\"{} $|$ \char`\"{}.\$c}}
+\label{synoptique__sup_8php_a5}
+
+
+\hypertarget{synoptique__sup_8php_a2}{
+\index{synoptique_sup.php@{synoptique\_\-sup.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!synoptique_sup.php@{synoptique\_\-sup.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'Fermetures lits'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{synoptique__sup_8php_a2}
+
+

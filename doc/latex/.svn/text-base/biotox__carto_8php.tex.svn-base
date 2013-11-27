@@ -1,0 +1,251 @@
+\hypertarget{biotox__carto_8php}{
+\section{R\'{e}f\'{e}rence du fichier biotox\_\-carto.php}
+\label{biotox__carto_8php}\index{biotox_carto.php@{biotox\_\-carto.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{biotox__carto_8php_a0}{\$image\_\-width} = 660
+\item 
+\hyperlink{biotox__carto_8php_a1}{\$image\_\-heigth} = 800
+\item 
+\hyperlink{biotox__carto_8php_a2}{\$zone\_\-defense} = 1
+\item 
+\hyperlink{biotox__carto_8php_a3}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{biotox__carto_8php_a4}{\$requete}
+\item 
+\hyperlink{biotox__carto_8php_a5}{\$resultat} = mysql\_\-query(\$requete,\$connexion)
+\item 
+\hyperlink{biotox__carto_8php_a6}{\$nb\_\-departement} = 0
+\item 
+\hyperlink{biotox__carto_8php_a7}{\$zone} = array(array())
+\item 
+\hyperlink{biotox__carto_8php_a8}{\$region} = array()
+\item 
+\hyperlink{biotox__carto_8php_a9}{\$departement} = array()
+\item 
+\hyperlink{biotox__carto_8php_a10}{\$d} = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$U\_\-haut,\$U\_\-gauche,\$U\_\-bas,\$U\_\-droit)
+\item 
+\hyperlink{biotox__carto_8php_a11}{\$vert} = Image\-Color\-Allocate(\$d $\rightarrow$ pic,0,255,0)
+\item 
+\hyperlink{biotox__carto_8php_a12}{\$rouge} = Image\-Color\-Allocate(\$d $\rightarrow$ pic,255,0,0)
+\item 
+\hyperlink{biotox__carto_8php_a13}{\$black} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0,0,0)
+\item 
+\hyperlink{biotox__carto_8php_a14}{\$palegoldenrod} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0xee,0xe8,0xaa)
+\item 
+\hyperlink{biotox__carto_8php_a15}{\$lavande} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-E6,0x\-E6,0x\-FA)
+\item 
+\hyperlink{biotox__carto_8php_a16}{\$khaki} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-F0,0x\-E6,0x8C)
+\item 
+\hyperlink{biotox__carto_8php_a17}{\$lavenderblush} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0x\-F0,0x\-F5)
+\item 
+\hyperlink{biotox__carto_8php_a18}{\$mistyrose} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0x\-E4,0x\-E1)
+\item 
+\hyperlink{biotox__carto_8php_a19}{\$moccasin} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0x\-E4,0x\-B5)
+\item 
+\hyperlink{biotox__carto_8php_a20}{\$peachpuff} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0xda,0x\-B9)
+\item 
+\hyperlink{biotox__carto_8php_a21}{\$p1} = array()
+\item 
+\hyperlink{biotox__carto_8php_a22}{\$p2} = array()
+\item 
+\hyperlink{biotox__carto_8php_a23}{\$rayon} = 12
+\item 
+\hyperlink{biotox__carto_8php_a24}{\$dx} = 5
+\item 
+\hyperlink{biotox__carto_8php_a25}{\$dy} = -20
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{biotox__carto_8php_a13}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$black@{\$black}}
+\index{$black@{\$black}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$black]{\setlength{\rightskip}{0pt plus 5cm}\$black = imagecolor\-Allocate(\$d $\rightarrow$ pic,0,0,0)}}
+\label{biotox__carto_8php_a13}
+
+
+\hypertarget{biotox__carto_8php_a3}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{biotox__carto_8php_a3}
+
+
+\hypertarget{biotox__carto_8php_a10}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$d@{\$d}}
+\index{$d@{\$d}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$d]{\setlength{\rightskip}{0pt plus 5cm}\$d = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$U\_\-haut,\$U\_\-gauche,\$U\_\-bas,\$U\_\-droit)}}
+\label{biotox__carto_8php_a10}
+
+
+\hypertarget{biotox__carto_8php_a9}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$departement@{\$departement}}
+\index{$departement@{\$departement}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$departement]{\setlength{\rightskip}{0pt plus 5cm}\$departement\mbox{[}\$nb\_\-departement\mbox{]} = array()}}
+\label{biotox__carto_8php_a9}
+
+
+\hypertarget{biotox__carto_8php_a24}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$dx@{\$dx}}
+\index{$dx@{\$dx}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$dx]{\setlength{\rightskip}{0pt plus 5cm}\$dx = 5}}
+\label{biotox__carto_8php_a24}
+
+
+\hypertarget{biotox__carto_8php_a25}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$dy@{\$dy}}
+\index{$dy@{\$dy}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$dy]{\setlength{\rightskip}{0pt plus 5cm}\$dy = -20}}
+\label{biotox__carto_8php_a25}
+
+
+\hypertarget{biotox__carto_8php_a1}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$image_heigth@{\$image\_\-heigth}}
+\index{$image_heigth@{\$image\_\-heigth}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$image\_\-heigth]{\setlength{\rightskip}{0pt plus 5cm}\$image\_\-heigth = 800}}
+\label{biotox__carto_8php_a1}
+
+
+\hypertarget{biotox__carto_8php_a0}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$image_width@{\$image\_\-width}}
+\index{$image_width@{\$image\_\-width}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$image\_\-width]{\setlength{\rightskip}{0pt plus 5cm}\$image\_\-width = 660}}
+\label{biotox__carto_8php_a0}
+
+
+\hypertarget{biotox__carto_8php_a16}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$khaki@{\$khaki}}
+\index{$khaki@{\$khaki}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$khaki]{\setlength{\rightskip}{0pt plus 5cm}\$khaki = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-F0,0x\-E6,0x8C)}}
+\label{biotox__carto_8php_a16}
+
+
+\hypertarget{biotox__carto_8php_a15}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$lavande@{\$lavande}}
+\index{$lavande@{\$lavande}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$lavande]{\setlength{\rightskip}{0pt plus 5cm}\$lavande = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-E6,0x\-E6,0x\-FA)}}
+\label{biotox__carto_8php_a15}
+
+
+\hypertarget{biotox__carto_8php_a17}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$lavenderblush@{\$lavenderblush}}
+\index{$lavenderblush@{\$lavenderblush}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$lavenderblush]{\setlength{\rightskip}{0pt plus 5cm}\$lavenderblush = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0x\-F0,0x\-F5)}}
+\label{biotox__carto_8php_a17}
+
+
+\hypertarget{biotox__carto_8php_a18}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$mistyrose@{\$mistyrose}}
+\index{$mistyrose@{\$mistyrose}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$mistyrose]{\setlength{\rightskip}{0pt plus 5cm}\$mistyrose = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0x\-E4,0x\-E1)}}
+\label{biotox__carto_8php_a18}
+
+
+\hypertarget{biotox__carto_8php_a19}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$moccasin@{\$moccasin}}
+\index{$moccasin@{\$moccasin}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$moccasin]{\setlength{\rightskip}{0pt plus 5cm}\$moccasin = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0x\-E4,0x\-B5)}}
+\label{biotox__carto_8php_a19}
+
+
+\hypertarget{biotox__carto_8php_a6}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$nb_departement@{\$nb\_\-departement}}
+\index{$nb_departement@{\$nb\_\-departement}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$nb\_\-departement]{\setlength{\rightskip}{0pt plus 5cm}\$nb\_\-departement = 0}}
+\label{biotox__carto_8php_a6}
+
+
+\hypertarget{biotox__carto_8php_a21}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$p1@{\$p1}}
+\index{$p1@{\$p1}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$p1]{\setlength{\rightskip}{0pt plus 5cm}\$p1 = array()}}
+\label{biotox__carto_8php_a21}
+
+
+\hypertarget{biotox__carto_8php_a22}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$p2@{\$p2}}
+\index{$p2@{\$p2}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$p2]{\setlength{\rightskip}{0pt plus 5cm}\$p2 = array()}}
+\label{biotox__carto_8php_a22}
+
+
+\hypertarget{biotox__carto_8php_a14}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$palegoldenrod@{\$palegoldenrod}}
+\index{$palegoldenrod@{\$palegoldenrod}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$palegoldenrod]{\setlength{\rightskip}{0pt plus 5cm}\$palegoldenrod = imagecolor\-Allocate(\$d $\rightarrow$ pic,0xee,0xe8,0xaa)}}
+\label{biotox__carto_8php_a14}
+
+
+\hypertarget{biotox__carto_8php_a20}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$peachpuff@{\$peachpuff}}
+\index{$peachpuff@{\$peachpuff}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$peachpuff]{\setlength{\rightskip}{0pt plus 5cm}\$peachpuff = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0xda,0x\-B9)}}
+\label{biotox__carto_8php_a20}
+
+
+\hypertarget{biotox__carto_8php_a23}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$rayon@{\$rayon}}
+\index{$rayon@{\$rayon}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$rayon]{\setlength{\rightskip}{0pt plus 5cm}\$rayon = 12}}
+\label{biotox__carto_8php_a23}
+
+
+\hypertarget{biotox__carto_8php_a8}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$region@{\$region}}
+\index{$region@{\$region}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$region]{\setlength{\rightskip}{0pt plus 5cm}\$region\mbox{[}\$nb\_\-departement\mbox{]} = array()}}
+\label{biotox__carto_8php_a8}
+
+
+\hypertarget{biotox__carto_8php_a4}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{biotox__carto_8php_a4}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "SELECT departement_ID, departement_nom, departement.region_ID
+                        FROM  region, departement
+                        WHERE departement.region_ID = region.region_ID
+                        AND region.zone_ID = '$zone_defense'"
+\end{verbatim}\normalsize 
+\hypertarget{biotox__carto_8php_a5}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = mysql\_\-query(\$requete,\$connexion)}}
+\label{biotox__carto_8php_a5}
+
+
+\hypertarget{biotox__carto_8php_a12}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$rouge@{\$rouge}}
+\index{$rouge@{\$rouge}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$rouge]{\setlength{\rightskip}{0pt plus 5cm}\$rouge = Image\-Color\-Allocate(\$d $\rightarrow$ pic,255,0,0)}}
+\label{biotox__carto_8php_a12}
+
+
+\hypertarget{biotox__carto_8php_a11}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$vert@{\$vert}}
+\index{$vert@{\$vert}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$vert]{\setlength{\rightskip}{0pt plus 5cm}\$vert = Image\-Color\-Allocate(\$d $\rightarrow$ pic,0,255,0)}}
+\label{biotox__carto_8php_a11}
+
+
+\hypertarget{biotox__carto_8php_a7}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$zone@{\$zone}}
+\index{$zone@{\$zone}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$zone]{\setlength{\rightskip}{0pt plus 5cm}\$zone = array(array())}}
+\label{biotox__carto_8php_a7}
+
+
+\hypertarget{biotox__carto_8php_a2}{
+\index{biotox_carto.php@{biotox\_\-carto.php}!$zone_defense@{\$zone\_\-defense}}
+\index{$zone_defense@{\$zone\_\-defense}!biotox_carto.php@{biotox\_\-carto.php}}
+\subsubsection[\$zone\_\-defense]{\setlength{\rightskip}{0pt plus 5cm}\$zone\_\-defense = 1}}
+\label{biotox__carto_8php_a2}
+
+

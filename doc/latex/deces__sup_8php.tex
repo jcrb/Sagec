@@ -1,0 +1,100 @@
+\hypertarget{deces__sup_8php}{
+\section{R\'{e}f\'{e}rence du fichier deces\_\-sup.php}
+\label{deces__sup_8php}\index{deces_sup.php@{deces\_\-sup.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{deces__sup_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{deces__sup_8php_a1}{\$service} = \$\_\-GET\mbox{[}'service'\mbox{]}
+\item 
+\hyperlink{deces__sup_8php_a2}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{deces__sup_8php_a3}{\$requete} = \char`\"{}SELECT service\_\-nom FROM service WHERE service\_\-ID = '\$\_\-GET\mbox{[}service\mbox{]}'\char`\"{}
+\item 
+\hyperlink{deces__sup_8php_a4}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{deces__sup_8php_a5}{\$rub} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{deces__sup_8php_a6}{\$a} = \char`\"{}$<$a href=$\backslash$\char`\"{}deces.php?service=\$service$\backslash$\char`\"{}$>$nouveau$<$/a$>$\char`\"{}
+\item 
+\hyperlink{deces__sup_8php_a7}{\$b} = \char`\"{}$<$a href=$\backslash$\char`\"{}deces\_\-liste.php?service=\$service$\backslash$\char`\"{}$>$liste$<$/a$>$\char`\"{}
+\item 
+\hyperlink{deces__sup_8php_a8}{\$c} = \char`\"{}$<$a href=$\backslash$\char`\"{}$\backslash$\char`\"{}$>$statistiques$<$/a$>$\char`\"{}
+\item 
+\hyperlink{deces__sup_8php_a9}{\$menu} = \$a.\char`\"{} $|$ \char`\"{}.\$b.\char`\"{} $|$ \char`\"{}.\$c
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{deces__sup_8php_a6}{
+\index{deces_sup.php@{deces\_\-sup.php}!$a@{\$a}}
+\index{$a@{\$a}!deces_sup.php@{deces\_\-sup.php}}
+\subsubsection[\$a]{\setlength{\rightskip}{0pt plus 5cm}\$a = \char`\"{}$<$a href=$\backslash$\char`\"{}deces.php?service=\$service$\backslash$\char`\"{}$>$nouveau$<$/a$>$\char`\"{}}}
+\label{deces__sup_8php_a6}
+
+
+\hypertarget{deces__sup_8php_a7}{
+\index{deces_sup.php@{deces\_\-sup.php}!$b@{\$b}}
+\index{$b@{\$b}!deces_sup.php@{deces\_\-sup.php}}
+\subsubsection[\$b]{\setlength{\rightskip}{0pt plus 5cm}\$b = \char`\"{}$<$a href=$\backslash$\char`\"{}deces\_\-liste.php?service=\$service$\backslash$\char`\"{}$>$liste$<$/a$>$\char`\"{}}}
+\label{deces__sup_8php_a7}
+
+
+\hypertarget{deces__sup_8php_a8}{
+\index{deces_sup.php@{deces\_\-sup.php}!$c@{\$c}}
+\index{$c@{\$c}!deces_sup.php@{deces\_\-sup.php}}
+\subsubsection[\$c]{\setlength{\rightskip}{0pt plus 5cm}\$c = \char`\"{}$<$a href=$\backslash$\char`\"{}$\backslash$\char`\"{}$>$statistiques$<$/a$>$\char`\"{}}}
+\label{deces__sup_8php_a8}
+
+
+\hypertarget{deces__sup_8php_a2}{
+\index{deces_sup.php@{deces\_\-sup.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!deces_sup.php@{deces\_\-sup.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{deces__sup_8php_a2}
+
+
+\hypertarget{deces__sup_8php_a0}{
+\index{deces_sup.php@{deces\_\-sup.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!deces_sup.php@{deces\_\-sup.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{deces__sup_8php_a0}
+
+
+\hypertarget{deces__sup_8php_a9}{
+\index{deces_sup.php@{deces\_\-sup.php}!$menu@{\$menu}}
+\index{$menu@{\$menu}!deces_sup.php@{deces\_\-sup.php}}
+\subsubsection[\$menu]{\setlength{\rightskip}{0pt plus 5cm}\$menu = \$a.\char`\"{} $|$ \char`\"{}.\$b.\char`\"{} $|$ \char`\"{}.\$c}}
+\label{deces__sup_8php_a9}
+
+
+\hypertarget{deces__sup_8php_a3}{
+\index{deces_sup.php@{deces\_\-sup.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!deces_sup.php@{deces\_\-sup.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT service\_\-nom FROM service WHERE service\_\-ID = '\$\_\-GET\mbox{[}service\mbox{]}'\char`\"{}}}
+\label{deces__sup_8php_a3}
+
+
+\hypertarget{deces__sup_8php_a4}{
+\index{deces_sup.php@{deces\_\-sup.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!deces_sup.php@{deces\_\-sup.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{deces__sup_8php_a4}
+
+
+\hypertarget{deces__sup_8php_a5}{
+\index{deces_sup.php@{deces\_\-sup.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!deces_sup.php@{deces\_\-sup.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{deces__sup_8php_a5}
+
+
+\hypertarget{deces__sup_8php_a1}{
+\index{deces_sup.php@{deces\_\-sup.php}!$service@{\$service}}
+\index{$service@{\$service}!deces_sup.php@{deces\_\-sup.php}}
+\subsubsection[\$service]{\setlength{\rightskip}{0pt plus 5cm}\$service = \$\_\-GET\mbox{[}'service'\mbox{]}}}
+\label{deces__sup_8php_a1}
+
+

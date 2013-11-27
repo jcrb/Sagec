@@ -1,0 +1,14 @@
+\hypertarget{classe__dessin_8php}{
+\section{R\'{e}f\'{e}rence du fichier classe\_\-dessin.php}
+\label{classe__dessin_8php}\index{classe_dessin.php@{classe\_\-dessin.php}}
+}
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespaceCDessin}{CDessin}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classCDessin}{CDessin}
+\end{CompactItemize}

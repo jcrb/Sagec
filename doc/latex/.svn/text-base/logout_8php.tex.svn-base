@@ -1,0 +1,28 @@
+\hypertarget{logout_8php}{
+\section{R\'{e}f\'{e}rence du fichier logout.php}
+\label{logout_8php}\index{logout.php@{logout.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{logout_8php_a0}{\$old\_\-user} = \$\_\-SESSION\mbox{[}\char`\"{}member\_\-id\char`\"{}\mbox{]}
+\item 
+\hyperlink{logout_8php_a1}{\$langue} = \$\_\-SESSION\mbox{[}\char`\"{}langue\char`\"{}\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{logout_8php_a1}{
+\index{logout.php@{logout.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!logout.php@{logout.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}\char`\"{}langue\char`\"{}\mbox{]}}}
+\label{logout_8php_a1}
+
+
+\hypertarget{logout_8php_a0}{
+\index{logout.php@{logout.php}!$old_user@{\$old\_\-user}}
+\index{$old_user@{\$old\_\-user}!logout.php@{logout.php}}
+\subsubsection[\$old\_\-user]{\setlength{\rightskip}{0pt plus 5cm}\$old\_\-user = \$\_\-SESSION\mbox{[}\char`\"{}member\_\-id\char`\"{}\mbox{]}}}
+\label{logout_8php_a0}
+
+

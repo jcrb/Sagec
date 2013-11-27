@@ -1,0 +1,108 @@
+body
+{
+	margin: 10px 0 ;
+	padding: 0 ;
+	text-align: center ;
+	font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+	background: #dea ;
+}
+/* On définit les marges haute et basse à 10px et les marges droite et gauche à 0 */
+/* On met le padding à 0 pour le navigateur Opera qui définit des padding par défaut pour le body */
+/* On utilise text-align: center ; pour Internet Explorer, c'est la seule façon de centrer les éléments de type block avec ce navigateur */
+/* On a ajouté de quoi mettre une police de caractère et une couleur de fond vert pomme*/
+
+div#conteneur
+{
+	width: 860px ;
+	margin: 0 auto ;
+	text-align: left ;
+	border: 2px solid #ab4 ;
+	background: #fff ;
+}
+/* On définit la largeur de la division qui contient l'ensemble de la page à 770 pixels */
+/* margin: 0 auto ; est la méthode correcte pour centrer les éléments de type block (comme les divisions), nous centrons donc cette division */
+/* Il faut rétablir l'alignement à gauche que nous avons changé plus haut */
+
+h1#header
+{
+	height: 80px ;
+	background: url(Logo_SAGEC3.png) no-repeat left top;
+	<span>margin: 0 ;
+}
+/* On définit la hauteur de la partie header, contenant le titre du site */
+
+h1#header a
+{
+	width: 400px ;
+	height: 70px ;
+	display: block ;
+	background: url(title.gif) no-repeat ;
+	position: relative ;
+	left: 350px ;
+	top: 15px ;
+}/* On donne les mêmes dimensions au lien, chose possible grâce à la propriété display: block ; qui transforme le lien en élément de type block, auquel on peut donner des propriétés de taille. On met aussi l'image de fond qui a les mêmes dimensions que le cadre ainsi créé */;
+
+h1#header a span
+{
+	display: none ;
+}/* Le span entourant le texte est fait pour pouvoir ne supprimer que le texte, ce que nous voulons, il suffit donc de donner à la propriété display la valeur none pour ne pas afficher le texte */
+
+
+
+pre
+{
+	overflow: auto ;
+}
+
+/* En passant on définit l'overflow de la balise pre à auto pour permettre d'afficher des barres de défilement si le texte contenu dans cette balise est trop grand */
+* html pre
+{
+	width: 636px ;
+}
+/* On doit donner une largeur au pre à cause d'Internet Explorer, on ne va donc l'appliquer qu'à Internet Explorer en utilisant un "hack", la combinaison " * html " permet de n'appliquer ce qui suis qu'à Internet Explorer */
+
+ul#menu
+{
+	height: 35px ;
+	margin: 0 ;
+	padding: 0 ;
+	background: url(fond.png) repeat-x 0 -25px ;
+	list-style-type: none ;
+}
+/* On donne une hauteur au menu, correspondant a la taille de l'image utilisée en fond, on met ensuite l'image de fond avec un décalage de 25 pixels vers le haut pour utiliser la technique de roll over expliquée dans un autre tutoriel; */
+ul#menu li
+{
+	float: left ;
+	text-align: center ;
+}/* On rend les li en flottant pour pouvoir les afficher horizontalement, on cache les puces, et on centre le texte */
+
+ul#menu li a
+{
+	width: 210px ;
+	line-height: 25px ;
+	font-size: 1.2em ;
+	font-weight: bold ;
+	letter-spacing: 2px ;
+	color: #000 ;
+	display: block ;
+	text-decoration: none ;
+	border-right: 2px solid #dea ;
+}/* C'est sur les liens que le gros du travail est effectué, largeur, hauteur de ligne, taille de police, graisse de police, espacement des lettres, couleur, bordure et decoration du texte. Nous pouvons dimensionner les a grâce à la propriété display: block ; */
+
+ul#menu li a:hover
+{
+	background: url(fond.png) repeat-x 0 0 ;
+}/* Et pour finir on décale l'image de fond au passage de la souris pour laisser aparaître l'état survolé de l'image, voir le tutoriel sur les roll over pour plus de détails */
+
+
+
+div#contenu a
+{
+	color: #8a0 ;
+}
+
+div#contenu a:hover
+{
+	color: #9b2;
+}
+/* On met en forme les liens contenu dans la page */

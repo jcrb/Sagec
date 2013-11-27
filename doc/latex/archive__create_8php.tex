@@ -1,0 +1,104 @@
+\hypertarget{archive__create_8php}{
+\section{R\'{e}f\'{e}rence du fichier archive\_\-create.php}
+\label{archive__create_8php}\index{archive_create.php@{archive\_\-create.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{archive__create_8php_a8}{separateur} (\$symbole=\char`\"{}=\char`\"{})
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{archive__create_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{archive__create_8php_a1}{\$connect} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{archive__create_8php_a2}{\$filename} = \char`\"{}archives/archive1.txt\char`\"{}
+\item 
+\hyperlink{archive__create_8php_a3}{\$tab} = \char`\"{}$\backslash$t\char`\"{}
+\item 
+\hyperlink{archive__create_8php_a4}{\$return} = \char`\"{}$\backslash$n\char`\"{}
+\item 
+\hyperlink{archive__create_8php_a5}{\$f} = fopen(\$filename,\char`\"{}w\char`\"{})
+\item 
+\hyperlink{archive__create_8php_a6}{\$requete}
+\item 
+\hyperlink{archive__create_8php_a7}{\$result} = Exec\-Requete(\$requete,\$connect)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{archive__create_8php_a8}{
+\index{archive_create.php@{archive\_\-create.php}!separateur@{separateur}}
+\index{separateur@{separateur}!archive_create.php@{archive\_\-create.php}}
+\subsubsection[separateur]{\setlength{\rightskip}{0pt plus 5cm}separateur (\$ {\em symbole} = {\tt \char`\"{}=\char`\"{}})}}
+\label{archive__create_8php_a8}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{archive__create_8php_a1}{
+\index{archive_create.php@{archive\_\-create.php}!$connect@{\$connect}}
+\index{$connect@{\$connect}!archive_create.php@{archive\_\-create.php}}
+\subsubsection[\$connect]{\setlength{\rightskip}{0pt plus 5cm}\$connect = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{archive__create_8php_a1}
+
+
+\hypertarget{archive__create_8php_a5}{
+\index{archive_create.php@{archive\_\-create.php}!$f@{\$f}}
+\index{$f@{\$f}!archive_create.php@{archive\_\-create.php}}
+\subsubsection[\$f]{\setlength{\rightskip}{0pt plus 5cm}\$f = fopen(\$filename,\char`\"{}w\char`\"{})}}
+\label{archive__create_8php_a5}
+
+
+\hypertarget{archive__create_8php_a2}{
+\index{archive_create.php@{archive\_\-create.php}!$filename@{\$filename}}
+\index{$filename@{\$filename}!archive_create.php@{archive\_\-create.php}}
+\subsubsection[\$filename]{\setlength{\rightskip}{0pt plus 5cm}\$filename = \char`\"{}archives/archive1.txt\char`\"{}}}
+\label{archive__create_8php_a2}
+
+
+\hypertarget{archive__create_8php_a0}{
+\index{archive_create.php@{archive\_\-create.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!archive_create.php@{archive\_\-create.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{archive__create_8php_a0}
+
+
+\hypertarget{archive__create_8php_a6}{
+\index{archive_create.php@{archive\_\-create.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!archive_create.php@{archive\_\-create.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{archive__create_8php_a6}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}"SELECT LB_ID,LB_Date,LB_Expediteur,LB_Message,nom
+                FROM livrebord,utilisateurs
+                WHERE LB_Expediteur = ID_utilisateur
+                ORDER BY LB_Date ASC"
+\end{verbatim}\normalsize 
+\hypertarget{archive__create_8php_a7}{
+\index{archive_create.php@{archive\_\-create.php}!$result@{\$result}}
+\index{$result@{\$result}!archive_create.php@{archive\_\-create.php}}
+\subsubsection[\$result]{\setlength{\rightskip}{0pt plus 5cm}\$result = Exec\-Requete(\$requete,\$connect)}}
+\label{archive__create_8php_a7}
+
+
+\hypertarget{archive__create_8php_a4}{
+\index{archive_create.php@{archive\_\-create.php}!$return@{\$return}}
+\index{$return@{\$return}!archive_create.php@{archive\_\-create.php}}
+\subsubsection[\$return]{\setlength{\rightskip}{0pt plus 5cm}\$return = \char`\"{}$\backslash$n\char`\"{}}}
+\label{archive__create_8php_a4}
+
+
+\hypertarget{archive__create_8php_a3}{
+\index{archive_create.php@{archive\_\-create.php}!$tab@{\$tab}}
+\index{$tab@{\$tab}!archive_create.php@{archive\_\-create.php}}
+\subsubsection[\$tab]{\setlength{\rightskip}{0pt plus 5cm}\$tab = \char`\"{}$\backslash$t\char`\"{}}}
+\label{archive__create_8php_a3}
+
+

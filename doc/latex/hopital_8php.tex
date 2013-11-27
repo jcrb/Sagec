@@ -1,0 +1,138 @@
+\hypertarget{hopital_8php}{
+\section{R\'{e}f\'{e}rence du fichier hopital.php}
+\label{hopital_8php}\index{hopital.php@{hopital.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{hopital_8php_a12}{check} (\$name, \$x, \$titre)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{hopital_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{hopital_8php_a1}{\$requete} = \char`\"{}SELECT $\ast$ FROM hopital WHERE Hop\_\-ID='\$\_\-GET\mbox{[}ID\_\-hopital\mbox{]}'\char`\"{}
+\item 
+\hyperlink{hopital_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{hopital_8php_a3}{\$rub} = Ligne\-Suivante(\$resultat)
+\item 
+\hyperlink{hopital_8php_a4}{\$adresse\_\-ID} = \$rub $\rightarrow$ adresse\_\-ID
+\item 
+\hyperlink{hopital_8php_a5}{\$org} = Ligne\-Suivante(\$resultat)
+\item 
+\hyperlink{hopital_8php_a6}{\$mot} = \$string\_\-lang\mbox{[}'VALIDER'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{hopital_8php_a7}{\$hopid} = \$\_\-GET\mbox{[}'ID\_\-hopital'\mbox{]}
+\item 
+\hyperlink{hopital_8php_a8}{\$type} = 0
+\item 
+\hyperlink{hopital_8php_a9}{\$nature} = 5
+\item 
+\hyperlink{hopital_8php_a10}{\$back} = \char`\"{}hopital.php\char`\"{}
+\item 
+\hyperlink{hopital_8php_a11}{\$variable} = \char`\"{}ID\_\-hopital\char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{hopital_8php_a12}{
+\index{hopital.php@{hopital.php}!check@{check}}
+\index{check@{check}!hopital.php@{hopital.php}}
+\subsubsection[check]{\setlength{\rightskip}{0pt plus 5cm}check (\$ {\em name}, \$ {\em x}, \$ {\em titre})}}
+\label{hopital_8php_a12}
+
+
+Dessine une case \`{a} cocher et sa l\'{e}gende. En foction de la variable \$x, la case sera coch\'{e}e ou non \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em \$name}]nom interne de la case \`{a} cocher \item[{\em \$x}]indique si la case doit \^{e}tre coch\'{e}e ou non \item[{\em \$titre}]l\'{e}gende de la case \`{a} cocher \end{description}
+\end{Desc}
+
+
+\subsection{Documentation des variables}
+\hypertarget{hopital_8php_a4}{
+\index{hopital.php@{hopital.php}!$adresse_ID@{\$adresse\_\-ID}}
+\index{$adresse_ID@{\$adresse\_\-ID}!hopital.php@{hopital.php}}
+\subsubsection[\$adresse\_\-ID]{\setlength{\rightskip}{0pt plus 5cm}\$adresse\_\-ID = \$rub $\rightarrow$ adresse\_\-ID}}
+\label{hopital_8php_a4}
+
+
+\hypertarget{hopital_8php_a10}{
+\index{hopital.php@{hopital.php}!$back@{\$back}}
+\index{$back@{\$back}!hopital.php@{hopital.php}}
+\subsubsection[\$back]{\setlength{\rightskip}{0pt plus 5cm}\$back = \char`\"{}hopital.php\char`\"{}}}
+\label{hopital_8php_a10}
+
+
+\hypertarget{hopital_8php_a0}{
+\index{hopital.php@{hopital.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!hopital.php@{hopital.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{hopital_8php_a0}
+
+
+\hypertarget{hopital_8php_a7}{
+\index{hopital.php@{hopital.php}!$hopid@{\$hopid}}
+\index{$hopid@{\$hopid}!hopital.php@{hopital.php}}
+\subsubsection[\$hopid]{\setlength{\rightskip}{0pt plus 5cm}\$hopid = \$\_\-GET\mbox{[}'ID\_\-hopital'\mbox{]}}}
+\label{hopital_8php_a7}
+
+
+\hypertarget{hopital_8php_a6}{
+\index{hopital.php@{hopital.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!hopital.php@{hopital.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'VALIDER'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{hopital_8php_a6}
+
+
+\hypertarget{hopital_8php_a9}{
+\index{hopital.php@{hopital.php}!$nature@{\$nature}}
+\index{$nature@{\$nature}!hopital.php@{hopital.php}}
+\subsubsection[\$nature]{\setlength{\rightskip}{0pt plus 5cm}\$nature = 5}}
+\label{hopital_8php_a9}
+
+
+\hypertarget{hopital_8php_a5}{
+\index{hopital.php@{hopital.php}!$org@{\$org}}
+\index{$org@{\$org}!hopital.php@{hopital.php}}
+\subsubsection[\$org]{\setlength{\rightskip}{0pt plus 5cm}\$org = Ligne\-Suivante(\$resultat)}}
+\label{hopital_8php_a5}
+
+
+\hypertarget{hopital_8php_a1}{
+\index{hopital.php@{hopital.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!hopital.php@{hopital.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT $\ast$ FROM hopital WHERE Hop\_\-ID='\$\_\-GET\mbox{[}ID\_\-hopital\mbox{]}'\char`\"{}}}
+\label{hopital_8php_a1}
+
+
+\hypertarget{hopital_8php_a2}{
+\index{hopital.php@{hopital.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!hopital.php@{hopital.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{hopital_8php_a2}
+
+
+\hypertarget{hopital_8php_a3}{
+\index{hopital.php@{hopital.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!hopital.php@{hopital.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = Ligne\-Suivante(\$resultat)}}
+\label{hopital_8php_a3}
+
+
+\hypertarget{hopital_8php_a8}{
+\index{hopital.php@{hopital.php}!$type@{\$type}}
+\index{$type@{\$type}!hopital.php@{hopital.php}}
+\subsubsection[\$type]{\setlength{\rightskip}{0pt plus 5cm}\$type = 0}}
+\label{hopital_8php_a8}
+
+
+\hypertarget{hopital_8php_a11}{
+\index{hopital.php@{hopital.php}!$variable@{\$variable}}
+\index{$variable@{\$variable}!hopital.php@{hopital.php}}
+\subsubsection[\$variable]{\setlength{\rightskip}{0pt plus 5cm}\$variable = \char`\"{}ID\_\-hopital\char`\"{}}}
+\label{hopital_8php_a11}
+
+

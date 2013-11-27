@@ -1,0 +1,37 @@
+@CHARSET "ISO-8859-1";
+
+ul.navbar_big {
+	width: 40%;
+	font-size: 20px;
+	list-style-type: none;
+}
+
+ul.navbar_small {
+	list-style-type: none;
+	margin-left: 10px;
+}
+
+ul.navbar li {
+	background: #EEEEEE;
+	margin: 0.5em 0;
+	padding: 0.1em;
+	border-left: 0.5em solid gray;
+	border-right: 1px solid gray;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	margin-left: 10px;
+}
+
+ul.navbar a {
+	text-decoration: none
+}
+
+.titre_vert {
+	color: green;
+	font-weight: bold;
+}
+
+.titre_rouge {
+	color: red;
+	font-weight: bold;
+}

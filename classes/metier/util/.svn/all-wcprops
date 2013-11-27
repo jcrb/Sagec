@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/dev/!svn/ver/16500/applications/metier/sagec/branches/dev/SAGEC67/classes/metier/util
+END
+String.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/dev/!svn/ver/16500/applications/metier/sagec/branches/dev/SAGEC67/classes/metier/util/String.class.php
+END
+test.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/metier/util/test.php
+END
+Date.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/dev/!svn/ver/15051/applications/metier/sagec/branches/dev/SAGEC67/classes/metier/util/Date.class.php
+END
+host.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/dev/!svn/ver/15376/applications/metier/sagec/branches/dev/SAGEC67/classes/metier/util/host.class.php
+END
+Liste.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/dev/!svn/ver/16182/applications/metier/sagec/branches/dev/SAGEC67/classes/metier/util/Liste.class.php
+END
+Mail.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/metier/util/Mail.class.php
+END
+Security.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/dev/!svn/ver/15051/applications/metier/sagec/branches/dev/SAGEC67/classes/metier/util/Security.php
+END

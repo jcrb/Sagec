@@ -1,0 +1,100 @@
+\hypertarget{makefont_8php}{
+\section{R\'{e}f\'{e}rence du fichier makefont.php}
+\label{makefont_8php}\index{makefont.php@{makefont.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{makefont_8php_a0}{Read\-Map} (\$enc)
+\item 
+\hyperlink{makefont_8php_a1}{Read\-AFM} (\$file, \&\$map)
+\item 
+\hyperlink{makefont_8php_a2}{Make\-Font\-Descriptor} (\$fm, \$symbolic)
+\item 
+\hyperlink{makefont_8php_a3}{Make\-Width\-Array} (\$fm)
+\item 
+\hyperlink{makefont_8php_a4}{Make\-Font\-Encoding} (\$map)
+\item 
+\hyperlink{makefont_8php_a5}{Save\-To\-File} (\$file, \$s, \$mode='t')
+\item 
+\hyperlink{makefont_8php_a6}{Read\-Short} (\$f)
+\item 
+\hyperlink{makefont_8php_a7}{Read\-Long} (\$f)
+\item 
+\hyperlink{makefont_8php_a8}{Check\-TTF} (\$file)
+\item 
+\hyperlink{makefont_8php_a9}{Make\-Font} (\$fontfile, \$afmfile, \$enc='cp1252', \$patch=array(), \$type='True\-Type')
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{makefont_8php_a8}{
+\index{makefont.php@{makefont.php}!CheckTTF@{CheckTTF}}
+\index{CheckTTF@{CheckTTF}!makefont.php@{makefont.php}}
+\subsubsection[CheckTTF]{\setlength{\rightskip}{0pt plus 5cm}Check\-TTF (\$ {\em file})}}
+\label{makefont_8php_a8}
+
+
+\hypertarget{makefont_8php_a9}{
+\index{makefont.php@{makefont.php}!MakeFont@{MakeFont}}
+\index{MakeFont@{MakeFont}!makefont.php@{makefont.php}}
+\subsubsection[MakeFont]{\setlength{\rightskip}{0pt plus 5cm}Make\-Font (\$ {\em fontfile}, \$ {\em afmfile}, \$ {\em enc} = {\tt 'cp1252'}, \$ {\em patch} = {\tt array()}, \$ {\em type} = {\tt 'TrueType'})}}
+\label{makefont_8php_a9}
+
+
+\hypertarget{makefont_8php_a2}{
+\index{makefont.php@{makefont.php}!MakeFontDescriptor@{MakeFontDescriptor}}
+\index{MakeFontDescriptor@{MakeFontDescriptor}!makefont.php@{makefont.php}}
+\subsubsection[MakeFontDescriptor]{\setlength{\rightskip}{0pt plus 5cm}Make\-Font\-Descriptor (\$ {\em fm}, \$ {\em symbolic})}}
+\label{makefont_8php_a2}
+
+
+\hypertarget{makefont_8php_a4}{
+\index{makefont.php@{makefont.php}!MakeFontEncoding@{MakeFontEncoding}}
+\index{MakeFontEncoding@{MakeFontEncoding}!makefont.php@{makefont.php}}
+\subsubsection[MakeFontEncoding]{\setlength{\rightskip}{0pt plus 5cm}Make\-Font\-Encoding (\$ {\em map})}}
+\label{makefont_8php_a4}
+
+
+\hypertarget{makefont_8php_a3}{
+\index{makefont.php@{makefont.php}!MakeWidthArray@{MakeWidthArray}}
+\index{MakeWidthArray@{MakeWidthArray}!makefont.php@{makefont.php}}
+\subsubsection[MakeWidthArray]{\setlength{\rightskip}{0pt plus 5cm}Make\-Width\-Array (\$ {\em fm})}}
+\label{makefont_8php_a3}
+
+
+\hypertarget{makefont_8php_a1}{
+\index{makefont.php@{makefont.php}!ReadAFM@{ReadAFM}}
+\index{ReadAFM@{ReadAFM}!makefont.php@{makefont.php}}
+\subsubsection[ReadAFM]{\setlength{\rightskip}{0pt plus 5cm}Read\-AFM (\$ {\em file}, \&\$ {\em map})}}
+\label{makefont_8php_a1}
+
+
+\hypertarget{makefont_8php_a7}{
+\index{makefont.php@{makefont.php}!ReadLong@{ReadLong}}
+\index{ReadLong@{ReadLong}!makefont.php@{makefont.php}}
+\subsubsection[ReadLong]{\setlength{\rightskip}{0pt plus 5cm}Read\-Long (\$ {\em f})}}
+\label{makefont_8php_a7}
+
+
+\hypertarget{makefont_8php_a0}{
+\index{makefont.php@{makefont.php}!ReadMap@{ReadMap}}
+\index{ReadMap@{ReadMap}!makefont.php@{makefont.php}}
+\subsubsection[ReadMap]{\setlength{\rightskip}{0pt plus 5cm}Read\-Map (\$ {\em enc})}}
+\label{makefont_8php_a0}
+
+
+\hypertarget{makefont_8php_a6}{
+\index{makefont.php@{makefont.php}!ReadShort@{ReadShort}}
+\index{ReadShort@{ReadShort}!makefont.php@{makefont.php}}
+\subsubsection[ReadShort]{\setlength{\rightskip}{0pt plus 5cm}Read\-Short (\$ {\em f})}}
+\label{makefont_8php_a6}
+
+
+\hypertarget{makefont_8php_a5}{
+\index{makefont.php@{makefont.php}!SaveToFile@{SaveToFile}}
+\index{SaveToFile@{SaveToFile}!makefont.php@{makefont.php}}
+\subsubsection[SaveToFile]{\setlength{\rightskip}{0pt plus 5cm}Save\-To\-File (\$ {\em file}, \$ {\em s}, \$ {\em mode} = {\tt 't'})}}
+\label{makefont_8php_a5}
+
+

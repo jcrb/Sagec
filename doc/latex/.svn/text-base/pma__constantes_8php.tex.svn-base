@@ -1,0 +1,37 @@
+\hypertarget{pma__constantes_8php}{
+\section{R\'{e}f\'{e}rence du fichier pma\_\-constantes.php}
+\label{pma__constantes_8php}\index{pma_constantes.php@{pma\_\-constantes.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{pma__constantes_8php_a0}{\$item\_\-gravite} = array(1=$>$\char`\"{}UA (rouge)\char`\"{},\char`\"{}UR (jaune)\char`\"{},\char`\"{}U3 (vert)\char`\"{},\char`\"{}DCD\char`\"{})
+\item 
+\hyperlink{pma__constantes_8php_a1}{\$item\_\-gravite2} = array(1=$>$\char`\"{}UA\char`\"{},\char`\"{}UR\char`\"{},\char`\"{}U3\char`\"{},\char`\"{}DCD\char`\"{})
+\item 
+\hyperlink{pma__constantes_8php_a2}{\$item\_\-sexe} = array(\char`\"{}?\char`\"{},\char`\"{}H\char`\"{},\char`\"{}F\char`\"{})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{pma__constantes_8php_a0}{
+\index{pma_constantes.php@{pma\_\-constantes.php}!$item_gravite@{\$item\_\-gravite}}
+\index{$item_gravite@{\$item\_\-gravite}!pma_constantes.php@{pma\_\-constantes.php}}
+\subsubsection[\$item\_\-gravite]{\setlength{\rightskip}{0pt plus 5cm}\$item\_\-gravite = array(1=$>$\char`\"{}UA (rouge)\char`\"{},\char`\"{}UR (jaune)\char`\"{},\char`\"{}U3 (vert)\char`\"{},\char`\"{}DCD\char`\"{})}}
+\label{pma__constantes_8php_a0}
+
+
+\hypertarget{pma__constantes_8php_a1}{
+\index{pma_constantes.php@{pma\_\-constantes.php}!$item_gravite2@{\$item\_\-gravite2}}
+\index{$item_gravite2@{\$item\_\-gravite2}!pma_constantes.php@{pma\_\-constantes.php}}
+\subsubsection[\$item\_\-gravite2]{\setlength{\rightskip}{0pt plus 5cm}\$item\_\-gravite2 = array(1=$>$\char`\"{}UA\char`\"{},\char`\"{}UR\char`\"{},\char`\"{}U3\char`\"{},\char`\"{}DCD\char`\"{})}}
+\label{pma__constantes_8php_a1}
+
+
+\hypertarget{pma__constantes_8php_a2}{
+\index{pma_constantes.php@{pma\_\-constantes.php}!$item_sexe@{\$item\_\-sexe}}
+\index{$item_sexe@{\$item\_\-sexe}!pma_constantes.php@{pma\_\-constantes.php}}
+\subsubsection[\$item\_\-sexe]{\setlength{\rightskip}{0pt plus 5cm}\$item\_\-sexe = array(\char`\"{}?\char`\"{},\char`\"{}H\char`\"{},\char`\"{}F\char`\"{})}}
+\label{pma__constantes_8php_a2}
+
+

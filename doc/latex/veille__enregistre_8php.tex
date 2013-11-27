@@ -1,0 +1,64 @@
+\hypertarget{veille__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier veille\_\-enregistre.php}
+\label{veille__enregistre_8php}\index{veille_enregistre.php@{veille\_\-enregistre.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{veille__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{veille__enregistre_8php_a1}{\$date} = f\-Date2unix(\$\_\-GET\mbox{[}'date'\mbox{]})
+\item 
+\hyperlink{veille__enregistre_8php_a2}{\$requete} = \char`\"{}SELECT veille\_\-samu\_\-ID FROM veille\_\-samu WHERE date = '\$date' AND service\_\-ID = '\$\_\-SESSION\mbox{[}service\mbox{]}'\char`\"{}
+\item 
+\hyperlink{veille__enregistre_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{veille__enregistre_8php_a4}{\$rub} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{veille__enregistre_8php_a5}{\$id} = \$rub\mbox{[}veille\_\-samu\_\-ID\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{veille__enregistre_8php_a0}{
+\index{veille_enregistre.php@{veille\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!veille_enregistre.php@{veille\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{veille__enregistre_8php_a0}
+
+
+\hypertarget{veille__enregistre_8php_a1}{
+\index{veille_enregistre.php@{veille\_\-enregistre.php}!$date@{\$date}}
+\index{$date@{\$date}!veille_enregistre.php@{veille\_\-enregistre.php}}
+\subsubsection[\$date]{\setlength{\rightskip}{0pt plus 5cm}\$date = f\-Date2unix(\$\_\-GET\mbox{[}'date'\mbox{]})}}
+\label{veille__enregistre_8php_a1}
+
+
+\hypertarget{veille__enregistre_8php_a5}{
+\index{veille_enregistre.php@{veille\_\-enregistre.php}!$id@{\$id}}
+\index{$id@{\$id}!veille_enregistre.php@{veille\_\-enregistre.php}}
+\subsubsection[\$id]{\setlength{\rightskip}{0pt plus 5cm}\$id = \$rub\mbox{[}veille\_\-samu\_\-ID\mbox{]}}}
+\label{veille__enregistre_8php_a5}
+
+
+\hypertarget{veille__enregistre_8php_a2}{
+\index{veille_enregistre.php@{veille\_\-enregistre.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!veille_enregistre.php@{veille\_\-enregistre.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT veille\_\-samu\_\-ID FROM veille\_\-samu WHERE date = '\$date' AND service\_\-ID = '\$\_\-SESSION\mbox{[}service\mbox{]}'\char`\"{}}}
+\label{veille__enregistre_8php_a2}
+
+
+\hypertarget{veille__enregistre_8php_a3}{
+\index{veille_enregistre.php@{veille\_\-enregistre.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!veille_enregistre.php@{veille\_\-enregistre.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{veille__enregistre_8php_a3}
+
+
+\hypertarget{veille__enregistre_8php_a4}{
+\index{veille_enregistre.php@{veille\_\-enregistre.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!veille_enregistre.php@{veille\_\-enregistre.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{veille__enregistre_8php_a4}
+
+

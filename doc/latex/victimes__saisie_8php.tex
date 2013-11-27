@@ -1,0 +1,163 @@
+\hypertarget{victimes__saisie_8php}{
+\section{R\'{e}f\'{e}rence du fichier victimes\_\-saisie.php}
+\label{victimes__saisie_8php}\index{victimes_saisie.php@{victimes\_\-saisie.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{victimes__saisie_8php_a0}{\$timestamp} = date(\char`\"{}Y-m-j H:i:s\char`\"{})
+\item 
+\hyperlink{victimes__saisie_8php_a1}{\$connexion} = connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{victimes__saisie_8php_a2}{\$victime} = cherche\-ID(\$\_\-GET\mbox{[}identifiant\mbox{]},\$connexion)
+\item 
+\hyperlink{victimes__saisie_8php_a3}{\$valider} = strtoupper(\$string\_\-lang\mbox{[}VALIDER\mbox{]}\mbox{[}\$langue\mbox{]})
+\item 
+\hyperlink{victimes__saisie_8php_a4}{\$\_\-style} = \char`\"{}A0\char`\"{}
+\item 
+\hyperlink{victimes__saisie_8php_a5}{\$requete} = \char`\"{}SELECT gravite\_\-couleur FROM gravite WHERE gravite\_\-ID = '\$victime $\rightarrow$ gravite'\char`\"{}
+\item 
+\hyperlink{victimes__saisie_8php_a6}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{victimes__saisie_8php_a7}{\$rub} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{victimes__saisie_8php_a8}{\$c} = \char`\"{}\#\char`\"{}.\$rub\mbox{[}gravite\_\-couleur\mbox{]}
+\item 
+\hyperlink{victimes__saisie_8php_a9}{\$adulte} = \$string\_\-lang\mbox{[}'ADULTE'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{victimes__saisie_8php_a10}{\$ado} = \$string\_\-lang\mbox{[}'ADO'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{victimes__saisie_8php_a11}{\$enfant} = \$string\_\-lang\mbox{[}'ENFANT'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{victimes__saisie_8php_a12}{\$oui} = \$string\_\-lang\mbox{[}'OUI'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{victimes__saisie_8php_a13}{\$non} = \$string\_\-lang\mbox{[}'NON'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{victimes__saisie_8php_a14}{\$image} = \char`\"{}photos/radio.jpeg\char`\"{}
+\item 
+\hyperlink{victimes__saisie_8php_a15}{\$mot} = \$string\_\-lang\mbox{[}'ADRESSE'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{victimes__saisie_8php_a16}{\$source\_\-image} = \$victime $\rightarrow$ photo
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{victimes__saisie_8php_a4}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$_style@{\$\_\-style}}
+\index{$_style@{\$\_\-style}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$\_\-style]{\setlength{\rightskip}{0pt plus 5cm}\$\_\-style = \char`\"{}A0\char`\"{}}}
+\label{victimes__saisie_8php_a4}
+
+
+\hypertarget{victimes__saisie_8php_a10}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$ado@{\$ado}}
+\index{$ado@{\$ado}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$ado]{\setlength{\rightskip}{0pt plus 5cm}\$ado = \$string\_\-lang\mbox{[}'ADO'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{victimes__saisie_8php_a10}
+
+
+\hypertarget{victimes__saisie_8php_a9}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$adulte@{\$adulte}}
+\index{$adulte@{\$adulte}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$adulte]{\setlength{\rightskip}{0pt plus 5cm}\$adulte = \$string\_\-lang\mbox{[}'ADULTE'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{victimes__saisie_8php_a9}
+
+
+\hypertarget{victimes__saisie_8php_a8}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$c@{\$c}}
+\index{$c@{\$c}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$c]{\setlength{\rightskip}{0pt plus 5cm}\$c = \char`\"{}\#\char`\"{}.\$rub\mbox{[}gravite\_\-couleur\mbox{]}}}
+\label{victimes__saisie_8php_a8}
+
+
+\hypertarget{victimes__saisie_8php_a1}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{victimes__saisie_8php_a1}
+
+
+\hypertarget{victimes__saisie_8php_a11}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$enfant@{\$enfant}}
+\index{$enfant@{\$enfant}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$enfant]{\setlength{\rightskip}{0pt plus 5cm}\$enfant = \$string\_\-lang\mbox{[}'ENFANT'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{victimes__saisie_8php_a11}
+
+
+\hypertarget{victimes__saisie_8php_a14}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$image@{\$image}}
+\index{$image@{\$image}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$image]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$image = \char`\"{}photos/radio.jpeg\char`\"{}}}
+\label{victimes__saisie_8php_a14}
+
+
+\hypertarget{victimes__saisie_8php_a15}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'ADRESSE'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{victimes__saisie_8php_a15}
+
+
+\hypertarget{victimes__saisie_8php_a13}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$non@{\$non}}
+\index{$non@{\$non}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$non]{\setlength{\rightskip}{0pt plus 5cm}\$non = \$string\_\-lang\mbox{[}'NON'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{victimes__saisie_8php_a13}
+
+
+\hypertarget{victimes__saisie_8php_a12}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$oui@{\$oui}}
+\index{$oui@{\$oui}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$oui]{\setlength{\rightskip}{0pt plus 5cm}\$oui = \$string\_\-lang\mbox{[}'OUI'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{victimes__saisie_8php_a12}
+
+
+\hypertarget{victimes__saisie_8php_a5}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT gravite\_\-couleur FROM gravite WHERE gravite\_\-ID = '\$victime $\rightarrow$ gravite'\char`\"{}}}
+\label{victimes__saisie_8php_a5}
+
+
+\hypertarget{victimes__saisie_8php_a6}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{victimes__saisie_8php_a6}
+
+
+\hypertarget{victimes__saisie_8php_a7}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{victimes__saisie_8php_a7}
+
+
+\hypertarget{victimes__saisie_8php_a16}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$source_image@{\$source\_\-image}}
+\index{$source_image@{\$source\_\-image}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$source\_\-image]{\setlength{\rightskip}{0pt plus 5cm}\$source\_\-image = \$victime $\rightarrow$ photo}}
+\label{victimes__saisie_8php_a16}
+
+
+\hypertarget{victimes__saisie_8php_a0}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$timestamp@{\$timestamp}}
+\index{$timestamp@{\$timestamp}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$timestamp]{\setlength{\rightskip}{0pt plus 5cm}\$timestamp = date(\char`\"{}Y-m-j H:i:s\char`\"{})}}
+\label{victimes__saisie_8php_a0}
+
+
+\hypertarget{victimes__saisie_8php_a3}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$valider@{\$valider}}
+\index{$valider@{\$valider}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$valider]{\setlength{\rightskip}{0pt plus 5cm}\$valider = strtoupper(\$string\_\-lang\mbox{[}VALIDER\mbox{]}\mbox{[}\$langue\mbox{]})}}
+\label{victimes__saisie_8php_a3}
+
+
+\hypertarget{victimes__saisie_8php_a2}{
+\index{victimes_saisie.php@{victimes\_\-saisie.php}!$victime@{\$victime}}
+\index{$victime@{\$victime}!victimes_saisie.php@{victimes\_\-saisie.php}}
+\subsubsection[\$victime]{\setlength{\rightskip}{0pt plus 5cm}\$victime = cherche\-ID(\$\_\-GET\mbox{[}identifiant\mbox{]},\$connexion)}}
+\label{victimes__saisie_8php_a2}
+
+

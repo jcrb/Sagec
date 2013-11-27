@@ -1,0 +1,37 @@
+\hypertarget{cryptage__gpg_8php}{
+\section{R\'{e}f\'{e}rence du fichier cryptage\_\-gpg.php}
+\label{cryptage__gpg_8php}\index{cryptage_gpg.php@{cryptage\_\-gpg.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{cryptage__gpg_8php_a0}{crypte} (\$filename, \$Key\-ID1, \$Key\-ID2, \$pass)
+\item 
+\hyperlink{cryptage__gpg_8php_a1}{decrypte} (\$filename, \$Key\-ID1, \$pass)
+\item 
+\hyperlink{cryptage__gpg_8php_a2}{liste\_\-des\_\-cles} (\$cle='public')
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{cryptage__gpg_8php_a0}{
+\index{cryptage_gpg.php@{cryptage\_\-gpg.php}!crypte@{crypte}}
+\index{crypte@{crypte}!cryptage_gpg.php@{cryptage\_\-gpg.php}}
+\subsubsection[crypte]{\setlength{\rightskip}{0pt plus 5cm}crypte (\$ {\em filename}, \$ {\em Key\-ID1}, \$ {\em Key\-ID2}, \$ {\em pass})}}
+\label{cryptage__gpg_8php_a0}
+
+
+\hypertarget{cryptage__gpg_8php_a1}{
+\index{cryptage_gpg.php@{cryptage\_\-gpg.php}!decrypte@{decrypte}}
+\index{decrypte@{decrypte}!cryptage_gpg.php@{cryptage\_\-gpg.php}}
+\subsubsection[decrypte]{\setlength{\rightskip}{0pt plus 5cm}decrypte (\$ {\em filename}, \$ {\em Key\-ID1}, \$ {\em pass})}}
+\label{cryptage__gpg_8php_a1}
+
+
+\hypertarget{cryptage__gpg_8php_a2}{
+\index{cryptage_gpg.php@{cryptage\_\-gpg.php}!liste_des_cles@{liste\_\-des\_\-cles}}
+\index{liste_des_cles@{liste\_\-des\_\-cles}!cryptage_gpg.php@{cryptage\_\-gpg.php}}
+\subsubsection[liste\_\-des\_\-cles]{\setlength{\rightskip}{0pt plus 5cm}liste\_\-des\_\-cles (\$ {\em cle} = {\tt 'public'})}}
+\label{cryptage__gpg_8php_a2}
+
+

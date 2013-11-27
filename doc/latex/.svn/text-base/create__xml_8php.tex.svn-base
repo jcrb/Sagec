@@ -1,0 +1,190 @@
+\hypertarget{create__xml_8php}{
+\section{R\'{e}f\'{e}rence du fichier create\_\-xml.php}
+\label{create__xml_8php}\index{create_xml.php@{create\_\-xml.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{create__xml_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{create__xml_8php_a1}{\$now} = time()
+\item 
+\hyperlink{create__xml_8php_a2}{\$date} = date(\char`\"{}Y/m/d H:i:s\char`\"{},\$now)
+\item 
+\hyperlink{create__xml_8php_a3}{\$date\_\-fichier} = date(\char`\"{}Ymd\-His\char`\"{},\$now)
+\item 
+\hyperlink{create__xml_8php_a4}{\$nom\_\-fichier} = \char`\"{}ARH42\char`\"{}.\$date\_\-fichier
+\item 
+\hyperlink{create__xml_8php_a5}{\$requete} = \char`\"{}SELECT cron\_\-intervalle,cron\_\-adresse,cron\_\-login,cron\_\-password FROM cron\char`\"{}
+\item 
+\hyperlink{create__xml_8php_a6}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{create__xml_8php_a7}{\$crondata} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{create__xml_8php_a8}{\$date1} = \$date2 - \$crondata\mbox{[}'cron\_\-intervalle'\mbox{]}$\ast$24$\ast$3600
+\item 
+\hyperlink{create__xml_8php_a9}{\$f} = fopen(\$nom\_\-fichier,\char`\"{}w\char`\"{})
+\item 
+\hyperlink{create__xml_8php_a10}{\$texte} = \char`\"{}$<$?xml version=$\backslash$\char`\"{}1.0$\backslash$\char`\"{} encoding=$\backslash$\char`\"{}ISO-8859-1$\backslash$\char`\"{}?$>$$\backslash$n\char`\"{}
+\item 
+\hyperlink{create__xml_8php_a11}{\$smur} = \$rub\mbox{[}'nb\_\-primaires'\mbox{]}+\$rub\mbox{[}'nb\_\-secondaires'\mbox{]}
+\item 
+\hyperlink{create__xml_8php_a12}{\$cle1} = \char`\"{}31CBF89DBCB3E59E\char`\"{}
+\item 
+\hyperlink{create__xml_8php_a13}{\$cle2} = \char`\"{}31CBF89DBCB3E59E\char`\"{}
+\item 
+\hyperlink{create__xml_8php_a14}{\$pass} = 'truc'
+\item 
+\hyperlink{create__xml_8php_a15}{\$fichier\_\-gpg} = \$nom\_\-fichier.\char`\"{}.gpg\char`\"{}
+\item 
+\hyperlink{create__xml_8php_a16}{\$site\_\-ftp} = \$crondata\mbox{[}'cron\_\-adresse'\mbox{]}
+\item 
+\hyperlink{create__xml_8php_a17}{\$username} = \$crondata\mbox{[}'cron\_\-login'\mbox{]}
+\item 
+\hyperlink{create__xml_8php_a18}{\$password} = \$crondata\mbox{[}'cron\_\-password'\mbox{]}
+\item 
+\hyperlink{create__xml_8php_a19}{\$ftp} = new \hyperlink{classsagec__ftp}{sagec\_\-ftp}(\$site\_\-ftp,\$username,\$password)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{create__xml_8php_a12}{
+\index{create_xml.php@{create\_\-xml.php}!$cle1@{\$cle1}}
+\index{$cle1@{\$cle1}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$cle1]{\setlength{\rightskip}{0pt plus 5cm}\$cle1 = \char`\"{}31CBF89DBCB3E59E\char`\"{}}}
+\label{create__xml_8php_a12}
+
+
+\hypertarget{create__xml_8php_a13}{
+\index{create_xml.php@{create\_\-xml.php}!$cle2@{\$cle2}}
+\index{$cle2@{\$cle2}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$cle2]{\setlength{\rightskip}{0pt plus 5cm}\$cle2 = \char`\"{}31CBF89DBCB3E59E\char`\"{}}}
+\label{create__xml_8php_a13}
+
+
+\hypertarget{create__xml_8php_a0}{
+\index{create_xml.php@{create\_\-xml.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{create__xml_8php_a0}
+
+
+\hypertarget{create__xml_8php_a7}{
+\index{create_xml.php@{create\_\-xml.php}!$crondata@{\$crondata}}
+\index{$crondata@{\$crondata}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$crondata]{\setlength{\rightskip}{0pt plus 5cm}\$crondata = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{create__xml_8php_a7}
+
+
+\hypertarget{create__xml_8php_a2}{
+\index{create_xml.php@{create\_\-xml.php}!$date@{\$date}}
+\index{$date@{\$date}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$date]{\setlength{\rightskip}{0pt plus 5cm}\$date = date(\char`\"{}Y/m/d H:i:s\char`\"{},\$now)}}
+\label{create__xml_8php_a2}
+
+
+\hypertarget{create__xml_8php_a8}{
+\index{create_xml.php@{create\_\-xml.php}!$date1@{\$date1}}
+\index{$date1@{\$date1}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$date1]{\setlength{\rightskip}{0pt plus 5cm}\$date1 = \$date2 - \$crondata\mbox{[}'cron\_\-intervalle'\mbox{]}$\ast$24$\ast$3600}}
+\label{create__xml_8php_a8}
+
+
+\hypertarget{create__xml_8php_a3}{
+\index{create_xml.php@{create\_\-xml.php}!$date_fichier@{\$date\_\-fichier}}
+\index{$date_fichier@{\$date\_\-fichier}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$date\_\-fichier]{\setlength{\rightskip}{0pt plus 5cm}\$date\_\-fichier = date(\char`\"{}Ymd\-His\char`\"{},\$now)}}
+\label{create__xml_8php_a3}
+
+
+\hypertarget{create__xml_8php_a9}{
+\index{create_xml.php@{create\_\-xml.php}!$f@{\$f}}
+\index{$f@{\$f}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$f]{\setlength{\rightskip}{0pt plus 5cm}\$f = fopen(\$nom\_\-fichier,\char`\"{}w\char`\"{})}}
+\label{create__xml_8php_a9}
+
+
+\hypertarget{create__xml_8php_a15}{
+\index{create_xml.php@{create\_\-xml.php}!$fichier_gpg@{\$fichier\_\-gpg}}
+\index{$fichier_gpg@{\$fichier\_\-gpg}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$fichier\_\-gpg]{\setlength{\rightskip}{0pt plus 5cm}\$fichier\_\-gpg = \$nom\_\-fichier.\char`\"{}.gpg\char`\"{}}}
+\label{create__xml_8php_a15}
+
+
+\hypertarget{create__xml_8php_a19}{
+\index{create_xml.php@{create\_\-xml.php}!$ftp@{\$ftp}}
+\index{$ftp@{\$ftp}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$ftp]{\setlength{\rightskip}{0pt plus 5cm}\$ftp = new \hyperlink{classsagec__ftp}{sagec\_\-ftp}(\$site\_\-ftp,\$username,\$password)}}
+\label{create__xml_8php_a19}
+
+
+\hypertarget{create__xml_8php_a4}{
+\index{create_xml.php@{create\_\-xml.php}!$nom_fichier@{\$nom\_\-fichier}}
+\index{$nom_fichier@{\$nom\_\-fichier}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$nom\_\-fichier]{\setlength{\rightskip}{0pt plus 5cm}\$nom\_\-fichier = \char`\"{}ARH42\char`\"{}.\$date\_\-fichier}}
+\label{create__xml_8php_a4}
+
+
+\hypertarget{create__xml_8php_a1}{
+\index{create_xml.php@{create\_\-xml.php}!$now@{\$now}}
+\index{$now@{\$now}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$now]{\setlength{\rightskip}{0pt plus 5cm}\$now = time()}}
+\label{create__xml_8php_a1}
+
+
+\hypertarget{create__xml_8php_a14}{
+\index{create_xml.php@{create\_\-xml.php}!$pass@{\$pass}}
+\index{$pass@{\$pass}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$pass]{\setlength{\rightskip}{0pt plus 5cm}\$pass = 'truc'}}
+\label{create__xml_8php_a14}
+
+
+\hypertarget{create__xml_8php_a18}{
+\index{create_xml.php@{create\_\-xml.php}!$password@{\$password}}
+\index{$password@{\$password}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$password]{\setlength{\rightskip}{0pt plus 5cm}\$password = \$crondata\mbox{[}'cron\_\-password'\mbox{]}}}
+\label{create__xml_8php_a18}
+
+
+\hypertarget{create__xml_8php_a5}{
+\index{create_xml.php@{create\_\-xml.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT cron\_\-intervalle,cron\_\-adresse,cron\_\-login,cron\_\-password FROM cron\char`\"{}}}
+\label{create__xml_8php_a5}
+
+
+\hypertarget{create__xml_8php_a6}{
+\index{create_xml.php@{create\_\-xml.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{create__xml_8php_a6}
+
+
+\hypertarget{create__xml_8php_a16}{
+\index{create_xml.php@{create\_\-xml.php}!$site_ftp@{\$site\_\-ftp}}
+\index{$site_ftp@{\$site\_\-ftp}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$site\_\-ftp]{\setlength{\rightskip}{0pt plus 5cm}\$site\_\-ftp = \$crondata\mbox{[}'cron\_\-adresse'\mbox{]}}}
+\label{create__xml_8php_a16}
+
+
+\hypertarget{create__xml_8php_a11}{
+\index{create_xml.php@{create\_\-xml.php}!$smur@{\$smur}}
+\index{$smur@{\$smur}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$smur]{\setlength{\rightskip}{0pt plus 5cm}\$smur = \$rub\mbox{[}'nb\_\-primaires'\mbox{]}+\$rub\mbox{[}'nb\_\-secondaires'\mbox{]}}}
+\label{create__xml_8php_a11}
+
+
+\hypertarget{create__xml_8php_a10}{
+\index{create_xml.php@{create\_\-xml.php}!$texte@{\$texte}}
+\index{$texte@{\$texte}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$texte]{\setlength{\rightskip}{0pt plus 5cm}\$texte = \char`\"{}$<$?xml version=$\backslash$\char`\"{}1.0$\backslash$\char`\"{} encoding=$\backslash$\char`\"{}ISO-8859-1$\backslash$\char`\"{}?$>$$\backslash$n\char`\"{}}}
+\label{create__xml_8php_a10}
+
+
+\hypertarget{create__xml_8php_a17}{
+\index{create_xml.php@{create\_\-xml.php}!$username@{\$username}}
+\index{$username@{\$username}!create_xml.php@{create\_\-xml.php}}
+\subsubsection[\$username]{\setlength{\rightskip}{0pt plus 5cm}\$username = \$crondata\mbox{[}'cron\_\-login'\mbox{]}}}
+\label{create__xml_8php_a17}
+
+

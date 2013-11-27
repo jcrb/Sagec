@@ -1,0 +1,46 @@
+\hypertarget{apa__supprime_8php}{
+\section{R\'{e}f\'{e}rence du fichier apa\_\-supprime.php}
+\label{apa__supprime_8php}\index{apa_supprime.php@{apa\_\-supprime.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{apa__supprime_8php_a0}{\$connect} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{apa__supprime_8php_a1}{\$query} = \char`\"{}SELECT org\_\-nom FROM organisme WHERE org\_\-ID = '\$\_\-SESSION\mbox{[}organisation\mbox{]}'\char`\"{}
+\item 
+\hyperlink{apa__supprime_8php_a2}{\$result} = Exec\-Requete(\$query,\$connect)
+\item 
+\hyperlink{apa__supprime_8php_a3}{\$apa} = Ligne\-Suivante(\$result)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{apa__supprime_8php_a3}{
+\index{apa_supprime.php@{apa\_\-supprime.php}!$apa@{\$apa}}
+\index{$apa@{\$apa}!apa_supprime.php@{apa\_\-supprime.php}}
+\subsubsection[\$apa]{\setlength{\rightskip}{0pt plus 5cm}\$apa = Ligne\-Suivante(\$result)}}
+\label{apa__supprime_8php_a3}
+
+
+\hypertarget{apa__supprime_8php_a0}{
+\index{apa_supprime.php@{apa\_\-supprime.php}!$connect@{\$connect}}
+\index{$connect@{\$connect}!apa_supprime.php@{apa\_\-supprime.php}}
+\subsubsection[\$connect]{\setlength{\rightskip}{0pt plus 5cm}\$connect = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{apa__supprime_8php_a0}
+
+
+\hypertarget{apa__supprime_8php_a1}{
+\index{apa_supprime.php@{apa\_\-supprime.php}!$query@{\$query}}
+\index{$query@{\$query}!apa_supprime.php@{apa\_\-supprime.php}}
+\subsubsection[\$query]{\setlength{\rightskip}{0pt plus 5cm}\$query = \char`\"{}SELECT org\_\-nom FROM organisme WHERE org\_\-ID = '\$\_\-SESSION\mbox{[}organisation\mbox{]}'\char`\"{}}}
+\label{apa__supprime_8php_a1}
+
+
+\hypertarget{apa__supprime_8php_a2}{
+\index{apa_supprime.php@{apa\_\-supprime.php}!$result@{\$result}}
+\index{$result@{\$result}!apa_supprime.php@{apa\_\-supprime.php}}
+\subsubsection[\$result]{\setlength{\rightskip}{0pt plus 5cm}\$result = Exec\-Requete(\$query,\$connect)}}
+\label{apa__supprime_8php_a2}
+
+

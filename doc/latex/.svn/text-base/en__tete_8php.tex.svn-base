@@ -1,0 +1,19 @@
+\hypertarget{en__tete_8php}{
+\section{R\'{e}f\'{e}rence du fichier en\_\-tete.php}
+\label{en__tete_8php}\index{en_tete.php@{en\_\-tete.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{en__tete_8php_a0}{entete} (\$member\_\-id, \$langue)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{en__tete_8php_a0}{
+\index{en_tete.php@{en\_\-tete.php}!entete@{entete}}
+\index{entete@{entete}!en_tete.php@{en\_\-tete.php}}
+\subsubsection[entete]{\setlength{\rightskip}{0pt plus 5cm}entete (\$ {\em member\_\-id}, \$ {\em langue})}}
+\label{en__tete_8php_a0}
+
+

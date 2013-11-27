@@ -1,0 +1,46 @@
+\hypertarget{arh__sup_8php}{
+\section{R\'{e}f\'{e}rence du fichier arh\_\-sup.php}
+\label{arh__sup_8php}\index{arh_sup.php@{arh\_\-sup.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{arh__sup_8php_a0}{\$a} = \char`\"{}$<$a href=$\backslash$\char`\"{}../login2.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-top$\backslash$\char`\"{}$>$Retour$<$/a$>$\char`\"{}
+\item 
+\hyperlink{arh__sup_8php_a1}{\$b} = \char`\"{}$<$a href=$\backslash$\char`\"{}../../docs/sagec.pdf$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-blank$\backslash$\char`\"{}$>$Aide$<$/a$>$\char`\"{}
+\item 
+\hyperlink{arh__sup_8php_a2}{\$c} = \char`\"{}$<$a href=$\backslash$\char`\"{}explications.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-blank$\backslash$\char`\"{}$>$glossaire$<$/a$>$\char`\"{}
+\item 
+\hyperlink{arh__sup_8php_a3}{\$menu} = \$a.' $|$ '.\$b.' $|$ '.\$c
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{arh__sup_8php_a0}{
+\index{arh_sup.php@{arh\_\-sup.php}!$a@{\$a}}
+\index{$a@{\$a}!arh_sup.php@{arh\_\-sup.php}}
+\subsubsection[\$a]{\setlength{\rightskip}{0pt plus 5cm}\$a = \char`\"{}$<$a href=$\backslash$\char`\"{}../login2.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-top$\backslash$\char`\"{}$>$Retour$<$/a$>$\char`\"{}}}
+\label{arh__sup_8php_a0}
+
+
+\hypertarget{arh__sup_8php_a1}{
+\index{arh_sup.php@{arh\_\-sup.php}!$b@{\$b}}
+\index{$b@{\$b}!arh_sup.php@{arh\_\-sup.php}}
+\subsubsection[\$b]{\setlength{\rightskip}{0pt plus 5cm}\$b = \char`\"{}$<$a href=$\backslash$\char`\"{}../../docs/sagec.pdf$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-blank$\backslash$\char`\"{}$>$Aide$<$/a$>$\char`\"{}}}
+\label{arh__sup_8php_a1}
+
+
+\hypertarget{arh__sup_8php_a2}{
+\index{arh_sup.php@{arh\_\-sup.php}!$c@{\$c}}
+\index{$c@{\$c}!arh_sup.php@{arh\_\-sup.php}}
+\subsubsection[\$c]{\setlength{\rightskip}{0pt plus 5cm}\$c = \char`\"{}$<$a href=$\backslash$\char`\"{}explications.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-blank$\backslash$\char`\"{}$>$glossaire$<$/a$>$\char`\"{}}}
+\label{arh__sup_8php_a2}
+
+
+\hypertarget{arh__sup_8php_a3}{
+\index{arh_sup.php@{arh\_\-sup.php}!$menu@{\$menu}}
+\index{$menu@{\$menu}!arh_sup.php@{arh\_\-sup.php}}
+\subsubsection[\$menu]{\setlength{\rightskip}{0pt plus 5cm}\$menu = \$a.' $|$ '.\$b.' $|$ '.\$c}}
+\label{arh__sup_8php_a3}
+
+

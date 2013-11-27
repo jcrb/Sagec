@@ -1,0 +1,5 @@
+Date: Sunday 30 June 2013 à 13:05
+==================================== Sauvegarde du bloc-note =================================
+LB_ID,org_ID,LB_Expediteur,LB_Date,LB_Message,LB_visible,Localisation_ID,IQR
+
+======================================== Fin des données =======================================

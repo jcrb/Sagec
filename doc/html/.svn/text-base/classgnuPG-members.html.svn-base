@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>SAGEC: Liste des membres</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.3.7 -->
+<div class="qindex"><a class="qindex" href="index.html">Page&nbsp;principale</a> | <a class="qindex" href="namespaces.html">Liste des namespaces</a> | <a class="qindex" href="hierarchy.html">Hiérarchie&nbsp;des&nbsp;classes</a> | <a class="qindex" href="annotated.html">Liste&nbsp;des&nbsp;classes</a> | <a class="qindex" href="files.html">Liste&nbsp;des&nbsp;fichiers</a> | <a class="qindex" href="functions.html">Membres&nbsp;de&nbsp;classe</a> | <a class="qindex" href="globals.html">Membres&nbsp;de&nbsp;fichier</a></div>
+<h1>gnuPG Liste des membres</h1>Liste complète des membres de <a class="el" href="classgnuPG.html">gnuPG</a>, y compris les membres hérités:<p><table>
+  <tr class="memlist"><td><a class="el" href="classgnuPG.html#o2">$error</a></td><td><a class="el" href="classgnuPG.html">gnuPG</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classgnuPG.html#o1">$home_directory</a></td><td><a class="el" href="classgnuPG.html">gnuPG</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classgnuPG.html#o3">$output</a></td><td><a class="el" href="classgnuPG.html">gnuPG</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classgnuPG.html#o0">$program_path</a></td><td><a class="el" href="classgnuPG.html">gnuPG</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classgnuPG.html#a1">_fork_process</a>($command, $input=false, &amp;$output)</td><td><a class="el" href="classgnuPG.html">gnuPG</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classgnuPG.html#a7">Decrypt</a>($KeyID, $Passphrase, $Text)</td><td><a class="el" href="classgnuPG.html">gnuPG</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classgnuPG.html#a8">DeleteKey</a>($KeyID, $KeyKind= 'public')</td><td><a class="el" href="classgnuPG.html">gnuPG</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classgnuPG.html#a6">Encrypt</a>($KeyID, $Passphrase, $RecipientKeyID, $Text)</td><td><a class="el" href="classgnuPG.html">gnuPG</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classgnuPG.html#a3">Export</a>($KeyID=false)</td><td><a class="el" href="classgnuPG.html">gnuPG</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classgnuPG.html#a5">GenKey</a>($RealName, $Comment, $Email, $Passphrase= '', $ExpireDate=0, $KeyType= 'DSA', $KeyLength=1024, $SubkeyType= 'ELG-E', $SubkeyLength=1024)</td><td><a class="el" href="classgnuPG.html">gnuPG</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classgnuPG.html#a0">gnuPG</a>($program_path=false, $home_directory=false)</td><td><a class="el" href="classgnuPG.html">gnuPG</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classgnuPG.html#a4">Import</a>($KeyBlock)</td><td><a class="el" href="classgnuPG.html">gnuPG</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classgnuPG.html#a2">ListKeys</a>($KeyKind= 'public')</td><td><a class="el" href="classgnuPG.html">gnuPG</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classgnuPG.html#a9">SignKey</a>($KeyID, $Passphrase, $KeyIDToSign, $CheckLevel=0)</td><td><a class="el" href="classgnuPG.html">gnuPG</a></td><td></td></tr>
+</table><hr size="1"><address style="align: right;"><small>Généré le Sun Oct 23 18:17:19 2005 pour SAGEC par
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 ></a> 1.3.7 </small></address>
+</body>
+</html>

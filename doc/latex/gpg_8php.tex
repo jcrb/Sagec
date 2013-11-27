@@ -1,0 +1,99 @@
+\hypertarget{gpg_8php}{
+\section{R\'{e}f\'{e}rence du fichier gpg.php}
+\label{gpg_8php}\index{gpg.php@{gpg.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{gpg_8php_a0}{\$gpg} = '/usr/local/bin/gpg'
+\item 
+\hyperlink{gpg_8php_a1}{\$switches} = ' --always-trust -a --batch --no-tty'
+\item 
+\hyperlink{gpg_8php_a2}{\$recipient} = 'some@pgp\_\-user.com'
+\item 
+\hyperlink{gpg_8php_a3}{\$command} = \char`\"{}\$gpg \$switches -\hyperlink{apa__zone_8php_a37}{e} -r \$recipient\char`\"{}
+\item 
+\hyperlink{gpg_8php_a4}{\$message} = \$\_\-GET\mbox{[}'plain'\mbox{]}
+\item 
+\hyperlink{gpg_8php_a5}{\$descriptorspec}
+\item 
+\hyperlink{gpg_8php_a6}{\$process} = proc\_\-open(\$command, \$descriptorspec, \$pipes)
+\item 
+\hyperlink{gpg_8php_a7}{\$return\_\-value} = proc\_\-close(\$process)
+\item 
+\hyperlink{gpg_8php_a8}{\$\_\-GET} \mbox{[}'crypted'\mbox{]} = \$encrypted\_\-message
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{gpg_8php_a8}{
+\index{gpg.php@{gpg.php}!$_GET@{\$\_\-GET}}
+\index{$_GET@{\$\_\-GET}!gpg.php@{gpg.php}}
+\subsubsection[\$\_\-GET]{\setlength{\rightskip}{0pt plus 5cm}\$\_\-GET\mbox{[}'crypted'\mbox{]} = \$encrypted\_\-message}}
+\label{gpg_8php_a8}
+
+
+\hypertarget{gpg_8php_a3}{
+\index{gpg.php@{gpg.php}!$command@{\$command}}
+\index{$command@{\$command}!gpg.php@{gpg.php}}
+\subsubsection[\$command]{\setlength{\rightskip}{0pt plus 5cm}\$command = \char`\"{}\$gpg \$switches -\hyperlink{apa__zone_8php_a37}{e} -r \$recipient\char`\"{}}}
+\label{gpg_8php_a3}
+
+
+\hypertarget{gpg_8php_a5}{
+\index{gpg.php@{gpg.php}!$descriptorspec@{\$descriptorspec}}
+\index{$descriptorspec@{\$descriptorspec}!gpg.php@{gpg.php}}
+\subsubsection[\$descriptorspec]{\setlength{\rightskip}{0pt plus 5cm}\$descriptorspec}}
+\label{gpg_8php_a5}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} array(
+        0 => array("pipe", "r"), // stdin is a pipe that the child will read from
+        1 => array("pipe", "w"), // stdout is a pipe that the child will write to
+        2 => array("file", "/tmp/error-output.txt", "a") // stderr is a file to write to
+    )
+\end{verbatim}\normalsize 
+\hypertarget{gpg_8php_a0}{
+\index{gpg.php@{gpg.php}!$gpg@{\$gpg}}
+\index{$gpg@{\$gpg}!gpg.php@{gpg.php}}
+\subsubsection[\$gpg]{\setlength{\rightskip}{0pt plus 5cm}\$gpg = '/usr/local/bin/gpg'}}
+\label{gpg_8php_a0}
+
+
+\hypertarget{gpg_8php_a4}{
+\index{gpg.php@{gpg.php}!$message@{\$message}}
+\index{$message@{\$message}!gpg.php@{gpg.php}}
+\subsubsection[\$message]{\setlength{\rightskip}{0pt plus 5cm}\$message = \$\_\-GET\mbox{[}'plain'\mbox{]}}}
+\label{gpg_8php_a4}
+
+
+\hypertarget{gpg_8php_a6}{
+\index{gpg.php@{gpg.php}!$process@{\$process}}
+\index{$process@{\$process}!gpg.php@{gpg.php}}
+\subsubsection[\$process]{\setlength{\rightskip}{0pt plus 5cm}\$process = proc\_\-open(\$command, \$descriptorspec, \$pipes)}}
+\label{gpg_8php_a6}
+
+
+\hypertarget{gpg_8php_a2}{
+\index{gpg.php@{gpg.php}!$recipient@{\$recipient}}
+\index{$recipient@{\$recipient}!gpg.php@{gpg.php}}
+\subsubsection[\$recipient]{\setlength{\rightskip}{0pt plus 5cm}\$recipient = 'some@pgp\_\-user.com'}}
+\label{gpg_8php_a2}
+
+
+\hypertarget{gpg_8php_a7}{
+\index{gpg.php@{gpg.php}!$return_value@{\$return\_\-value}}
+\index{$return_value@{\$return\_\-value}!gpg.php@{gpg.php}}
+\subsubsection[\$return\_\-value]{\setlength{\rightskip}{0pt plus 5cm}\$return\_\-value = proc\_\-close(\$process)}}
+\label{gpg_8php_a7}
+
+
+\hypertarget{gpg_8php_a1}{
+\index{gpg.php@{gpg.php}!$switches@{\$switches}}
+\index{$switches@{\$switches}!gpg.php@{gpg.php}}
+\subsubsection[\$switches]{\setlength{\rightskip}{0pt plus 5cm}\$switches = ' --always-trust -a --batch --no-tty'}}
+\label{gpg_8php_a1}
+
+

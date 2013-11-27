@@ -1,0 +1,19 @@
+\hypertarget{apa__doc_8php}{
+\section{R\'{e}f\'{e}rence du fichier apa\_\-doc.php}
+\label{apa__doc_8php}\index{apa_doc.php@{apa\_\-doc.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{apa__doc_8php_a0}{\$back} = \char`\"{}apa\_\-info.php\char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{apa__doc_8php_a0}{
+\index{apa_doc.php@{apa\_\-doc.php}!$back@{\$back}}
+\index{$back@{\$back}!apa_doc.php@{apa\_\-doc.php}}
+\subsubsection[\$back]{\setlength{\rightskip}{0pt plus 5cm}\$back = \char`\"{}apa\_\-info.php\char`\"{}}}
+\label{apa__doc_8php_a0}
+
+

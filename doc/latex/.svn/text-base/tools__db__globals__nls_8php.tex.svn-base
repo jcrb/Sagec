@@ -1,0 +1,39 @@
+\hypertarget{tools__db__globals__nls_8php}{
+\section{R\'{e}f\'{e}rence du fichier tools\_\-db\_\-globals\_\-nls.php}
+\label{tools__db__globals__nls_8php}\index{tools_db_globals_nls.php@{tools\_\-db\_\-globals\_\-nls.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{tools__db__globals__nls_8php_a0}{\$db\_\-string\_\-lang}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{tools__db__globals__nls_8php_a0}{
+\index{tools_db_globals_nls.php@{tools\_\-db\_\-globals\_\-nls.php}!$db_string_lang@{\$db\_\-string\_\-lang}}
+\index{$db_string_lang@{\$db\_\-string\_\-lang}!tools_db_globals_nls.php@{tools\_\-db\_\-globals\_\-nls.php}}
+\subsubsection[\$db\_\-string\_\-lang]{\setlength{\rightskip}{0pt plus 5cm}\$db\_\-string\_\-lang}}
+\label{tools__db__globals__nls_8php_a0}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} array(
+        ERROR_DB => array(
+                'FR' => "Erreur: "
+        ),
+        ERROR_DB_CONNECT => array(
+                'FR' =>"Erreur lors de la connexion à %s, en tant q'utilisateur %s"
+        ),
+        ERROR_DB_SELECT => array(
+                'FR' =>"Erreur lors de la sélection de la base de données %s"
+        ),
+        ERROR_DB_QUERY => array(
+                'FR' =>"Erreur d'éxécution de l'instruction %s"
+        ),
+        ERROR_DB_DISCONNECT => array(
+                'FR' =>"Erreur lors de la déconnexion de %s"
+        )
+)
+\end{verbatim}\normalsize 

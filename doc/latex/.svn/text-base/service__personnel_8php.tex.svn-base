@@ -1,0 +1,28 @@
+\hypertarget{service__personnel_8php}{
+\section{R\'{e}f\'{e}rence du fichier service\_\-personnel.php}
+\label{service__personnel_8php}\index{service_personnel.php@{service\_\-personnel.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{service__personnel_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{service__personnel_8php_a1}{\$un\_\-service} = nom\_\-service(\$\_\-SESSION\mbox{[}service\mbox{]},\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{service__personnel_8php_a0}{
+\index{service_personnel.php@{service\_\-personnel.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!service_personnel.php@{service\_\-personnel.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{service__personnel_8php_a0}
+
+
+\hypertarget{service__personnel_8php_a1}{
+\index{service_personnel.php@{service\_\-personnel.php}!$un_service@{\$un\_\-service}}
+\index{$un_service@{\$un\_\-service}!service_personnel.php@{service\_\-personnel.php}}
+\subsubsection[\$un\_\-service]{\setlength{\rightskip}{0pt plus 5cm}\$un\_\-service = nom\_\-service(\$\_\-SESSION\mbox{[}service\mbox{]},\$connexion)}}
+\label{service__personnel_8php_a1}
+
+

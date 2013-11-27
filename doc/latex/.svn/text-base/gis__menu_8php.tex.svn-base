@@ -1,0 +1,19 @@
+\hypertarget{gis__menu_8php}{
+\section{R\'{e}f\'{e}rence du fichier gis\_\-menu.php}
+\label{gis__menu_8php}\index{gis_menu.php@{gis\_\-menu.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{gis__menu_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{gis__menu_8php_a0}{
+\index{gis_menu.php@{gis\_\-menu.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!gis_menu.php@{gis\_\-menu.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{gis__menu_8php_a0}
+
+

@@ -1,0 +1,28 @@
+\hypertarget{service__menu_8php}{
+\section{R\'{e}f\'{e}rence du fichier service\_\-menu.php}
+\label{service__menu_8php}\index{service_menu.php@{service\_\-menu.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{service__menu_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{service__menu_8php_a1}{\$mot} = \$string\_\-lang\mbox{[}\char`\"{}POSSIBILITE\char`\"{}\mbox{]}\mbox{[}\$langue\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{service__menu_8php_a0}{
+\index{service_menu.php@{service\_\-menu.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!service_menu.php@{service\_\-menu.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{service__menu_8php_a0}
+
+
+\hypertarget{service__menu_8php_a1}{
+\index{service_menu.php@{service\_\-menu.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!service_menu.php@{service\_\-menu.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}\char`\"{}POSSIBILITE\char`\"{}\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{service__menu_8php_a1}
+
+

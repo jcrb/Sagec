@@ -1,0 +1,71 @@
+\hypertarget{blocnote__lire_8php}{
+\section{R\'{e}f\'{e}rence du fichier blocnote\_\-lire.php}
+\label{blocnote__lire_8php}\index{blocnote_lire.php@{blocnote\_\-lire.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{blocnote__lire_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{blocnote__lire_8php_a1}{\$\_\-style} = \char`\"{}A2\char`\"{}
+\item 
+\hyperlink{blocnote__lire_8php_a2}{\$mot} = \$string\_\-lang\mbox{[}'DATE'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{blocnote__lire_8php_a3}{\$connect} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{blocnote__lire_8php_a4}{\$requete}
+\item 
+\hyperlink{blocnote__lire_8php_a5}{\$result} = Exec\-Requete(\$requete,\$connect)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{blocnote__lire_8php_a1}{
+\index{blocnote_lire.php@{blocnote\_\-lire.php}!$_style@{\$\_\-style}}
+\index{$_style@{\$\_\-style}!blocnote_lire.php@{blocnote\_\-lire.php}}
+\subsubsection[\$\_\-style]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$\_\-style = \char`\"{}A2\char`\"{}}}
+\label{blocnote__lire_8php_a1}
+
+
+\hypertarget{blocnote__lire_8php_a3}{
+\index{blocnote_lire.php@{blocnote\_\-lire.php}!$connect@{\$connect}}
+\index{$connect@{\$connect}!blocnote_lire.php@{blocnote\_\-lire.php}}
+\subsubsection[\$connect]{\setlength{\rightskip}{0pt plus 5cm}\$connect = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{blocnote__lire_8php_a3}
+
+
+\hypertarget{blocnote__lire_8php_a0}{
+\index{blocnote_lire.php@{blocnote\_\-lire.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!blocnote_lire.php@{blocnote\_\-lire.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{blocnote__lire_8php_a0}
+
+
+\hypertarget{blocnote__lire_8php_a2}{
+\index{blocnote_lire.php@{blocnote\_\-lire.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!blocnote_lire.php@{blocnote\_\-lire.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'DATE'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{blocnote__lire_8php_a2}
+
+
+\hypertarget{blocnote__lire_8php_a4}{
+\index{blocnote_lire.php@{blocnote\_\-lire.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!blocnote_lire.php@{blocnote\_\-lire.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{blocnote__lire_8php_a4}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}"SELECT LB_ID,LB_Date,LB_Expediteur,LB_Message,nom
+                FROM livrebord,utilisateurs
+                WHERE LB_Expediteur = ID_utilisateur
+                ORDER BY LB_Date DESC"
+\end{verbatim}\normalsize 
+\hypertarget{blocnote__lire_8php_a5}{
+\index{blocnote_lire.php@{blocnote\_\-lire.php}!$result@{\$result}}
+\index{$result@{\$result}!blocnote_lire.php@{blocnote\_\-lire.php}}
+\subsubsection[\$result]{\setlength{\rightskip}{0pt plus 5cm}\$result = Exec\-Requete(\$requete,\$connect)}}
+\label{blocnote__lire_8php_a5}
+
+

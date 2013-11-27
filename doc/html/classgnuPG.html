@@ -1,0 +1,660 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>SAGEC: gnuPG class Reference</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.3.7 -->
+<div class="qindex"><a class="qindex" href="index.html">Page&nbsp;principale</a> | <a class="qindex" href="namespaces.html">Liste des namespaces</a> | <a class="qindex" href="hierarchy.html">Hiérarchie&nbsp;des&nbsp;classes</a> | <a class="qindex" href="annotated.html">Liste&nbsp;des&nbsp;classes</a> | <a class="qindex" href="files.html">Liste&nbsp;des&nbsp;fichiers</a> | <a class="qindex" href="functions.html">Membres&nbsp;de&nbsp;classe</a> | <a class="qindex" href="globals.html">Membres&nbsp;de&nbsp;fichier</a></div>
+<h1>Référence de la classe gnuPG</h1><a href="classgnuPG-members.html">Liste de tous les membres</a><table border=0 cellpadding=0 cellspacing=0>
+<tr><td></td></tr>
+<tr><td colspan=2><br><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classgnuPG.html#a0">gnuPG</a> ($program_path=false, $home_directory=false)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classgnuPG.html#a1">_fork_process</a> ($command, $input=false, &amp;$output)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classgnuPG.html#a2">ListKeys</a> ($KeyKind= 'public')</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classgnuPG.html#a3">Export</a> ($KeyID=false)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classgnuPG.html#a4">Import</a> ($KeyBlock)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classgnuPG.html#a5">GenKey</a> ($RealName, $Comment, $Email, $Passphrase= '', $ExpireDate=0, $KeyType= 'DSA', $KeyLength=1024, $SubkeyType= 'ELG-E', $SubkeyLength=1024)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classgnuPG.html#a6">Encrypt</a> ($KeyID, $Passphrase, $RecipientKeyID, $Text)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classgnuPG.html#a7">Decrypt</a> ($KeyID, $Passphrase, $Text)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classgnuPG.html#a8">DeleteKey</a> ($KeyID, $KeyKind= 'public')</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classgnuPG.html#a9">SignKey</a> ($KeyID, $Passphrase, $KeyIDToSign, $CheckLevel=0)</td></tr>
+
+<tr><td colspan=2><br><h2>Attributs publics</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classgnuPG.html#o0">$program_path</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classgnuPG.html#o1">$home_directory</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classgnuPG.html#o2">$error</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classgnuPG.html#o3">$output</a></td></tr>
+
+</table>
+<hr><h2>Documentation des contructeurs et destructeur</h2>
+<a class="anchor" name="a0" doxytag="gnuPG::gnuPG" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gnuPG::gnuPG           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">$&nbsp;</td>
+          <td class="mdname" nowrap> <em>program_path</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>home_directory</em> = <code>false</code></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Create the gnuPG object.<p>
+Set the program path for the GNUPG and the home directory of the keyring. If this parameters are not specified, according to the OS the function derive the values.<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$program_path Full program path for the GNUPG </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$home_directory Home directory of the keyring </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>void</dd></dl>
+    </td>
+  </tr>
+</table>
+<hr><h2>Documentation des fonctions membres</h2>
+<a class="anchor" name="a1" doxytag="gnuPG::_fork_process" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gnuPG::_fork_process           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">$&nbsp;</td>
+          <td class="mdname" nowrap> <em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>input</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>&amp;$&nbsp;</td>
+          <td class="mdname" nowrap> <em>output</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Call a subprogram redirecting the standard pipes<p>
+private <dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$command The full command to execute </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$input The input data </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$output The output data </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>bool true on success, false on error</dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a7" doxytag="gnuPG::Decrypt" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gnuPG::Decrypt           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">$&nbsp;</td>
+          <td class="mdname" nowrap> <em>KeyID</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>Passphrase</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>Text</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Decrypt the data.<p>
+If the decrypted file is signed, the signature is also verified.<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$KeyID the key id to decrypt </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$Passphrase the passphrase to open the key used to decrypt </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$Text data to decrypt </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>mixed false on error, the clear (decrypted) data on success</dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a8" doxytag="gnuPG::DeleteKey" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gnuPG::DeleteKey           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">$&nbsp;</td>
+          <td class="mdname" nowrap> <em>KeyID</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>KeyKind</em> = <code>'public'</code></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Remove key from the public keyring.<p>
+If secret is specified it try to remove the key from from the secret and public keyring. The returned error codes are: 1 = no such key 2 = must delete secret key first 3 = ambiguos specification<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$KeyID the key id to be removed, if this is the secret key you must specify the fingerprint </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$KeyKind the kind of the keys, can be secret or public </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>mixed true on success, otherwise false or the delete error code</dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a6" doxytag="gnuPG::Encrypt" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gnuPG::Encrypt           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">$&nbsp;</td>
+          <td class="mdname" nowrap> <em>KeyID</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>Passphrase</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>RecipientKeyID</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>Text</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Encrypt and sign data.<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$KeyID the key id used to encrypt </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$Passphrase the passphrase to open the key used to encrypt </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$RecipientKeyID the recipient key id </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$Text data to encrypt </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>mixed false on error, the encrypted data on success</dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a3" doxytag="gnuPG::Export" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gnuPG::Export           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">$&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>KeyID</em> = <code>false</code>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Export a key.<p>
+Export all keys from all keyrings, or if at least one name is given, those of the given name.<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$KeyID The Key ID to export </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>mixed false on error, the key block with the exported keys</dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a5" doxytag="gnuPG::GenKey" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gnuPG::GenKey           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">$&nbsp;</td>
+          <td class="mdname" nowrap> <em>RealName</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>Comment</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>Email</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>Passphrase</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>ExpireDate</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>KeyType</em> = <code>'DSA'</code>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>KeyLength</em> = <code>1024</code>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>SubkeyType</em> = <code>'ELG-E'</code>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>SubkeyLength</em> = <code>1024</code></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Generate a new key pair.<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$RealName The real name of the user or key. </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$Comment Any explanatory commentary. </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$Email The e-mail for the user. </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$Passphrase Passphrase for the secret key, default is not to use any passphrase. </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$ExpireDate Set the expiration date for the key (and the subkey). It may either be entered in ISO date format (2000-08-15) or as number of days, weeks, month or years (&lt;number&gt;[d|w|m|y]). Without a letter days are assumed. </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$KeyType Set the type of the key, the allowed values are DSA and RSA, default is DSA. </td></tr>
+    <tr><td></td><td valign=top><em>int</em>&nbsp;</td><td>$KeyLength Length of the key in bits, default is 1024. </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$SubkeyType This generates a secondary key, currently only one subkey can be handled ELG-E. </td></tr>
+    <tr><td></td><td valign=top><em>int</em>&nbsp;</td><td>$SubkeyLength Length of the subkey in bits, default is 1024. </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>mixed false on error, the fingerprint of the created key pair in success</dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a4" doxytag="gnuPG::Import" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gnuPG::Import           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">$&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>KeyBlock</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Import/merge keys.<p>
+This adds the given keys to the keyring. New keys are appended to your keyring and already existing keys are updated. Note that GnuPG does not import keys that are not self-signed.<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$KeyBlock The PGP block with the key(s). </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>mixed false on error, the array with [KeyID, UserID] elements of imported keys on success.</dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a2" doxytag="gnuPG::ListKeys" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gnuPG::ListKeys           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">$&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>KeyKind</em> = <code>'public'</code>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Get the keys from the KeyRing.<p>
+The returned array get the following elements: [RecordType, CalculatedTrust, KeyLength, Algorithm, KeyID, CreationDate, ExpirationDate, LocalID, Ownertrust, UserID]<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$KeyKind the kind of the keys, can be secret or public </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>mixed false on error, the array with the keys in the keyring in success</dd></dl>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="a9" doxytag="gnuPG::SignKey" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gnuPG::SignKey           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">$&nbsp;</td>
+          <td class="mdname" nowrap> <em>KeyID</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>Passphrase</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>KeyIDToSign</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td></td>
+          <td class="md" nowrap>$&nbsp;</td>
+          <td class="mdname" nowrap> <em>CheckLevel</em> = <code>0</code></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Make a signature on key.<p>
+If the key is not yet signed by the specified user.<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$KeyID the key id used to sign </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$Passphrase the passphrase to open the key used to sign </td></tr>
+    <tr><td></td><td valign=top><em>string</em>&nbsp;</td><td>$KeyIDToSign the key to be signed </td></tr>
+    <tr><td></td><td valign=top><em>int</em>&nbsp;</td><td>$CheckLevel the check level (0, 1, 2, 3 -casual to extensive-) </td></tr>
+  </table>
+</dl>
+<dl compact><dt><b>Renvoie:</b></dt><dd>bool true on success, otherwise false</dd></dl>
+    </td>
+  </tr>
+</table>
+<hr><h2>Documentation des données membres</h2>
+<a class="anchor" name="o2" doxytag="gnuPG::$error" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gnuPG::$error          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="o1" doxytag="gnuPG::$home_directory" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gnuPG::$home_directory          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="o3" doxytag="gnuPG::$output" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gnuPG::$output          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="o0" doxytag="gnuPG::$program_path" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> gnuPG::$program_path          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<hr>La documentation de cette classe a été générée à partir du fichier suivant:<ul>
+<li><a class="el" href="gnuPG__class_8inc.html">gnuPG_class.inc</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Sun Oct 23 18:17:19 2005 pour SAGEC par
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 ></a> 1.3.7 </small></address>
+</body>
+</html>

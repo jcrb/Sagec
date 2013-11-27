@@ -1,0 +1,91 @@
+\hypertarget{garde__assu__cus_8php}{
+\section{R\'{e}f\'{e}rence du fichier garde\_\-assu\_\-cus.php}
+\label{garde__assu__cus_8php}\index{garde_assu_cus.php@{garde\_\-assu\_\-cus.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{garde__assu__cus_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{garde__assu__cus_8php_a1}{\$aujourdui} = \$\_\-GET\mbox{[}'date'\mbox{]}
+\item 
+\hyperlink{garde__assu__cus_8php_a2}{\$requete} = \char`\"{}SELECT apa\_\-assu.org\_\-ID,org\_\-nom FROM apa\_\-assu,organisme WHERE secteur\_\-apa\_\-ID = 6 AND apa\_\-assu.org\_\-ID = organisme.org\_\-ID\char`\"{}
+\item 
+\hyperlink{garde__assu__cus_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{garde__assu__cus_8php_a4}{\$max\_\-nuit}
+\item 
+\hyperlink{garde__assu__cus_8php_a5}{\$max\_\-jour}
+\item 
+\hyperlink{garde__assu__cus_8php_a6}{\$moment} = \char`\"{}J\char`\"{}
+\item 
+\hyperlink{garde__assu__cus_8php_a7}{\$ordre} = \$max\_\-jour
+\item 
+\hyperlink{garde__assu__cus_8php_a8}{\$nb\_\-assu\_\-disponible} = 5
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{garde__assu__cus_8php_a1}{
+\index{garde_assu_cus.php@{garde\_\-assu\_\-cus.php}!$aujourdui@{\$aujourdui}}
+\index{$aujourdui@{\$aujourdui}!garde_assu_cus.php@{garde\_\-assu\_\-cus.php}}
+\subsubsection[\$aujourdui]{\setlength{\rightskip}{0pt plus 5cm}\$aujourdui = \$\_\-GET\mbox{[}'date'\mbox{]}}}
+\label{garde__assu__cus_8php_a1}
+
+
+\hypertarget{garde__assu__cus_8php_a0}{
+\index{garde_assu_cus.php@{garde\_\-assu\_\-cus.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!garde_assu_cus.php@{garde\_\-assu\_\-cus.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{garde__assu__cus_8php_a0}
+
+
+\hypertarget{garde__assu__cus_8php_a5}{
+\index{garde_assu_cus.php@{garde\_\-assu\_\-cus.php}!$max_jour@{\$max\_\-jour}}
+\index{$max_jour@{\$max\_\-jour}!garde_assu_cus.php@{garde\_\-assu\_\-cus.php}}
+\subsubsection[\$max\_\-jour]{\setlength{\rightskip}{0pt plus 5cm}\$max\_\-jour}}
+\label{garde__assu__cus_8php_a5}
+
+
+\hypertarget{garde__assu__cus_8php_a4}{
+\index{garde_assu_cus.php@{garde\_\-assu\_\-cus.php}!$max_nuit@{\$max\_\-nuit}}
+\index{$max_nuit@{\$max\_\-nuit}!garde_assu_cus.php@{garde\_\-assu\_\-cus.php}}
+\subsubsection[\$max\_\-nuit]{\setlength{\rightskip}{0pt plus 5cm}\$max\_\-nuit}}
+\label{garde__assu__cus_8php_a4}
+
+
+\hypertarget{garde__assu__cus_8php_a6}{
+\index{garde_assu_cus.php@{garde\_\-assu\_\-cus.php}!$moment@{\$moment}}
+\index{$moment@{\$moment}!garde_assu_cus.php@{garde\_\-assu\_\-cus.php}}
+\subsubsection[\$moment]{\setlength{\rightskip}{0pt plus 5cm}\$moment = \char`\"{}J\char`\"{}}}
+\label{garde__assu__cus_8php_a6}
+
+
+\hypertarget{garde__assu__cus_8php_a8}{
+\index{garde_assu_cus.php@{garde\_\-assu\_\-cus.php}!$nb_assu_disponible@{\$nb\_\-assu\_\-disponible}}
+\index{$nb_assu_disponible@{\$nb\_\-assu\_\-disponible}!garde_assu_cus.php@{garde\_\-assu\_\-cus.php}}
+\subsubsection[\$nb\_\-assu\_\-disponible]{\setlength{\rightskip}{0pt plus 5cm}\$nb\_\-assu\_\-disponible = 5}}
+\label{garde__assu__cus_8php_a8}
+
+
+\$nb\_\-assu\_\-disponible Limite \`{a} 5 le nombre d'ASSU simultann\'{e}ment disponibles sur la CUS \hypertarget{garde__assu__cus_8php_a7}{
+\index{garde_assu_cus.php@{garde\_\-assu\_\-cus.php}!$ordre@{\$ordre}}
+\index{$ordre@{\$ordre}!garde_assu_cus.php@{garde\_\-assu\_\-cus.php}}
+\subsubsection[\$ordre]{\setlength{\rightskip}{0pt plus 5cm}\$ordre = \$max\_\-jour}}
+\label{garde__assu__cus_8php_a7}
+
+
+\hypertarget{garde__assu__cus_8php_a2}{
+\index{garde_assu_cus.php@{garde\_\-assu\_\-cus.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!garde_assu_cus.php@{garde\_\-assu\_\-cus.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT apa\_\-assu.org\_\-ID,org\_\-nom FROM apa\_\-assu,organisme WHERE secteur\_\-apa\_\-ID = 6 AND apa\_\-assu.org\_\-ID = organisme.org\_\-ID\char`\"{}}}
+\label{garde__assu__cus_8php_a2}
+
+
+\hypertarget{garde__assu__cus_8php_a3}{
+\index{garde_assu_cus.php@{garde\_\-assu\_\-cus.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!garde_assu_cus.php@{garde\_\-assu\_\-cus.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{garde__assu__cus_8php_a3}
+
+

@@ -1,0 +1,52 @@
+\hypertarget{resultat_8php}{
+\section{R\'{e}f\'{e}rence du fichier resultat.php}
+\label{resultat_8php}\index{resultat.php@{resultat.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{resultat_8php_a3}{Check\-Valid\-Name} (\$str1)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{resultat_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{resultat_8php_a1}{\$connect} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{resultat_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connect)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{resultat_8php_a3}{
+\index{resultat.php@{resultat.php}!CheckValidName@{CheckValidName}}
+\index{CheckValidName@{CheckValidName}!resultat.php@{resultat.php}}
+\subsubsection[CheckValidName]{\setlength{\rightskip}{0pt plus 5cm}Check\-Valid\-Name (\$ {\em str1})}}
+\label{resultat_8php_a3}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{resultat_8php_a1}{
+\index{resultat.php@{resultat.php}!$connect@{\$connect}}
+\index{$connect@{\$connect}!resultat.php@{resultat.php}}
+\subsubsection[\$connect]{\setlength{\rightskip}{0pt plus 5cm}\$connect = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{resultat_8php_a1}
+
+
+\hypertarget{resultat_8php_a0}{
+\index{resultat.php@{resultat.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!resultat.php@{resultat.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{resultat_8php_a0}
+
+
+\hypertarget{resultat_8php_a2}{
+\index{resultat.php@{resultat.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!resultat.php@{resultat.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connect)}}
+\label{resultat_8php_a2}
+
+

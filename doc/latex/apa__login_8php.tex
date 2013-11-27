@@ -1,0 +1,100 @@
+\hypertarget{apa__login_8php}{
+\section{R\'{e}f\'{e}rence du fichier apa\_\-login.php}
+\label{apa__login_8php}\index{apa_login.php@{apa\_\-login.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{apa__login_8php_a0}{\$connect} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{apa__login_8php_a1}{\$query} = \char`\"{}SELECT apa\_\-member\_\-ID, org\_\-ID,apa\_\-member\_\-admin FROM apa\_\-member WHERE apa\_\-member\_\-login ='\$login' AND apa\_\-member\_\-pass='\$password'\char`\"{}
+\item 
+\hyperlink{apa__login_8php_a2}{\$result} = Exec\-Requete(\$query,\$connect)
+\item 
+\hyperlink{apa__login_8php_a3}{\$utilisateur} = Ligne\-Suivante(\$result)
+\item 
+\hyperlink{apa__login_8php_a4}{\$administrateur} = \$utilisateur $\rightarrow$ admin
+\item 
+\hyperlink{apa__login_8php_a5}{\$langue} = \char`\"{}FR\char`\"{}
+\item 
+\hyperlink{apa__login_8php_a6}{\$nomenu} = \char`\"{}1\char`\"{}
+\item 
+\hyperlink{apa__login_8php_a7}{\$date\_\-maj} = date(\char`\"{}Y-m-j H:i:s\char`\"{})
+\item 
+\hyperlink{apa__login_8php_a8}{\$ip} = getenv(\char`\"{}REMOTE\_\-ADDR\char`\"{})
+\item 
+\hyperlink{apa__login_8php_a9}{\$requete} = \char`\"{}INSERT INTO connexion VALUES('','\$apa\_\-id','\$date\_\-maj','\$ip','\$organisme\_\-id')\char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{apa__login_8php_a4}{
+\index{apa_login.php@{apa\_\-login.php}!$administrateur@{\$administrateur}}
+\index{$administrateur@{\$administrateur}!apa_login.php@{apa\_\-login.php}}
+\subsubsection[\$administrateur]{\setlength{\rightskip}{0pt plus 5cm}\$administrateur = \$utilisateur $\rightarrow$ admin}}
+\label{apa__login_8php_a4}
+
+
+\hypertarget{apa__login_8php_a0}{
+\index{apa_login.php@{apa\_\-login.php}!$connect@{\$connect}}
+\index{$connect@{\$connect}!apa_login.php@{apa\_\-login.php}}
+\subsubsection[\$connect]{\setlength{\rightskip}{0pt plus 5cm}\$connect = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{apa__login_8php_a0}
+
+
+\hypertarget{apa__login_8php_a7}{
+\index{apa_login.php@{apa\_\-login.php}!$date_maj@{\$date\_\-maj}}
+\index{$date_maj@{\$date\_\-maj}!apa_login.php@{apa\_\-login.php}}
+\subsubsection[\$date\_\-maj]{\setlength{\rightskip}{0pt plus 5cm}\$date\_\-maj = date(\char`\"{}Y-m-j H:i:s\char`\"{})}}
+\label{apa__login_8php_a7}
+
+
+\hypertarget{apa__login_8php_a8}{
+\index{apa_login.php@{apa\_\-login.php}!$ip@{\$ip}}
+\index{$ip@{\$ip}!apa_login.php@{apa\_\-login.php}}
+\subsubsection[\$ip]{\setlength{\rightskip}{0pt plus 5cm}\$ip = getenv(\char`\"{}REMOTE\_\-ADDR\char`\"{})}}
+\label{apa__login_8php_a8}
+
+
+\hypertarget{apa__login_8php_a5}{
+\index{apa_login.php@{apa\_\-login.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!apa_login.php@{apa\_\-login.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \char`\"{}FR\char`\"{}}}
+\label{apa__login_8php_a5}
+
+
+\hypertarget{apa__login_8php_a6}{
+\index{apa_login.php@{apa\_\-login.php}!$nomenu@{\$nomenu}}
+\index{$nomenu@{\$nomenu}!apa_login.php@{apa\_\-login.php}}
+\subsubsection[\$nomenu]{\setlength{\rightskip}{0pt plus 5cm}\$nomenu = \char`\"{}1\char`\"{}}}
+\label{apa__login_8php_a6}
+
+
+\hypertarget{apa__login_8php_a1}{
+\index{apa_login.php@{apa\_\-login.php}!$query@{\$query}}
+\index{$query@{\$query}!apa_login.php@{apa\_\-login.php}}
+\subsubsection[\$query]{\setlength{\rightskip}{0pt plus 5cm}\$query = \char`\"{}SELECT apa\_\-member\_\-ID, org\_\-ID,apa\_\-member\_\-admin FROM apa\_\-member WHERE apa\_\-member\_\-login ='\$login' AND apa\_\-member\_\-pass='\$password'\char`\"{}}}
+\label{apa__login_8php_a1}
+
+
+\hypertarget{apa__login_8php_a9}{
+\index{apa_login.php@{apa\_\-login.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!apa_login.php@{apa\_\-login.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}INSERT INTO connexion VALUES('','\$apa\_\-id','\$date\_\-maj','\$ip','\$organisme\_\-id')\char`\"{}}}
+\label{apa__login_8php_a9}
+
+
+\hypertarget{apa__login_8php_a2}{
+\index{apa_login.php@{apa\_\-login.php}!$result@{\$result}}
+\index{$result@{\$result}!apa_login.php@{apa\_\-login.php}}
+\subsubsection[\$result]{\setlength{\rightskip}{0pt plus 5cm}\$result = Exec\-Requete(\$query,\$connect)}}
+\label{apa__login_8php_a2}
+
+
+\hypertarget{apa__login_8php_a3}{
+\index{apa_login.php@{apa\_\-login.php}!$utilisateur@{\$utilisateur}}
+\index{$utilisateur@{\$utilisateur}!apa_login.php@{apa\_\-login.php}}
+\subsubsection[\$utilisateur]{\setlength{\rightskip}{0pt plus 5cm}\$utilisateur = Ligne\-Suivante(\$result)}}
+\label{apa__login_8php_a3}
+
+

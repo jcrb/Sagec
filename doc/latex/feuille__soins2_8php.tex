@@ -1,0 +1,297 @@
+\hypertarget{feuille__soins2_8php}{
+\section{R\'{e}f\'{e}rence du fichier feuille\_\-soins2.php}
+\label{feuille__soins2_8php}\index{feuille_soins2.php@{feuille\_\-soins2.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{feuille__soins2_8php_a0}{\$image\_\-width} = 900
+\item 
+\hyperlink{feuille__soins2_8php_a1}{\$image\_\-heigth} = 400
+\item 
+\hyperlink{feuille__soins2_8php_a2}{\$victime} = \$\_\-GET\mbox{[}'dossier'\mbox{]}
+\item 
+\hyperlink{feuille__soins2_8php_a3}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{feuille__soins2_8php_a4}{\$requete} = \char`\"{}SELECT date,exam\_\-ID,resultat FROM dm\_\-constantes2 WHERE victime\_\-ID = '\$victime' ORDER BY date\char`\"{}
+\item 
+\hyperlink{feuille__soins2_8php_a5}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{feuille__soins2_8php_a6}{\$tmin} = strtotime(\char`\"{}now\char`\"{})
+\item 
+\hyperlink{feuille__soins2_8php_a7}{\$tmax} = 0
+\item 
+\hyperlink{feuille__soins2_8php_a8}{\$t} \mbox{[}\$rub\mbox{[}'exam\_\-ID'\mbox{]}\mbox{]}\mbox{[}$\,$\mbox{]} = \$rub\mbox{[}'date'\mbox{]}
+\item 
+\hyperlink{feuille__soins2_8php_a9}{\$r} \mbox{[}\$rub\mbox{[}'exam\_\-ID'\mbox{]}\mbox{]}\mbox{[}$\,$\mbox{]} = \$rub\mbox{[}'resultat'\mbox{]}
+\item 
+\hyperlink{feuille__soins2_8php_a10}{\$tx} = \$tmin
+\item 
+\hyperlink{feuille__soins2_8php_a11}{\$U\_\-haut} = 250
+\item 
+\hyperlink{feuille__soins2_8php_a12}{\$U\_\-bas} = 0
+\item 
+\hyperlink{feuille__soins2_8php_a13}{\$U\_\-gauche} = \$tmin
+\item 
+\hyperlink{feuille__soins2_8php_a14}{\$U\_\-droit} = \$tmax
+\item 
+\hyperlink{feuille__soins2_8php_a15}{\$dfc} = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$U\_\-haut,\$U\_\-gauche,\$U\_\-bas,\$U\_\-droit)
+\item 
+\hyperlink{feuille__soins2_8php_a16}{\$rouge} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x00,0x00)
+\item 
+\hyperlink{feuille__soins2_8php_a17}{\$bleu} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0x00,0xff)
+\item 
+\hyperlink{feuille__soins2_8php_a18}{\$vert} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0xff,0x00)
+\item 
+\hyperlink{feuille__soins2_8php_a19}{\$vert\_\-clair} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x99,0xff,0x66)
+\item 
+\hyperlink{feuille__soins2_8php_a20}{\$jaune} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0xff,0x00)
+\item 
+\hyperlink{feuille__soins2_8php_a21}{\$orange} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x66,0x00)
+\item 
+\hyperlink{feuille__soins2_8php_a22}{\$bleuclair} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xcc,0xcc,0xff)
+\item 
+\$dfc \hyperlink{feuille__soins2_8php_a23}{\$couleur\_\-courante} = \$vert\_\-clair
+\item 
+\hyperlink{feuille__soins2_8php_a24}{\$t0} = date(\char`\"{}H\char`\"{},\$tmin)+1
+\item 
+\hyperlink{feuille__soins2_8php_a25}{\$tdepart} = strtotime(\$t0)
+\item 
+\hyperlink{feuille__soins2_8php_a26}{\$p1} = 2
+\item 
+\hyperlink{feuille__soins2_8php_a27}{\$p2} = 3
+\item 
+\hyperlink{feuille__soins2_8php_a28}{\$poly}
+\item 
+\hyperlink{feuille__soins2_8php_a29}{\$pl2} = \$dfc $\rightarrow$ polygone\-U2E(\$poly)
+\item 
+\hyperlink{feuille__soins2_8php_a30}{\$rayon} = 8
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{feuille__soins2_8php_a17}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$bleu@{\$bleu}}
+\index{$bleu@{\$bleu}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$bleu]{\setlength{\rightskip}{0pt plus 5cm}\$bleu = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0x00,0xff)}}
+\label{feuille__soins2_8php_a17}
+
+
+\hypertarget{feuille__soins2_8php_a22}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$bleuclair@{\$bleuclair}}
+\index{$bleuclair@{\$bleuclair}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$bleuclair]{\setlength{\rightskip}{0pt plus 5cm}\$bleuclair = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xcc,0xcc,0xff)}}
+\label{feuille__soins2_8php_a22}
+
+
+\hypertarget{feuille__soins2_8php_a3}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{feuille__soins2_8php_a3}
+
+
+\hypertarget{feuille__soins2_8php_a23}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$couleur_courante@{\$couleur\_\-courante}}
+\index{$couleur_courante@{\$couleur\_\-courante}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$couleur\_\-courante]{\setlength{\rightskip}{0pt plus 5cm}\$dfc \$couleur\_\-courante = \$vert\_\-clair}}
+\label{feuille__soins2_8php_a23}
+
+
+\hypertarget{feuille__soins2_8php_a15}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$dfc@{\$dfc}}
+\index{$dfc@{\$dfc}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$dfc]{\setlength{\rightskip}{0pt plus 5cm}\$dfc = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$U\_\-haut,\$U\_\-gauche,\$U\_\-bas,\$U\_\-droit)}}
+\label{feuille__soins2_8php_a15}
+
+
+\hypertarget{feuille__soins2_8php_a1}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$image_heigth@{\$image\_\-heigth}}
+\index{$image_heigth@{\$image\_\-heigth}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$image\_\-heigth]{\setlength{\rightskip}{0pt plus 5cm}\$image\_\-heigth = 400}}
+\label{feuille__soins2_8php_a1}
+
+
+\hypertarget{feuille__soins2_8php_a0}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$image_width@{\$image\_\-width}}
+\index{$image_width@{\$image\_\-width}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$image\_\-width]{\setlength{\rightskip}{0pt plus 5cm}\$image\_\-width = 900}}
+\label{feuille__soins2_8php_a0}
+
+
+\hypertarget{feuille__soins2_8php_a20}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$jaune@{\$jaune}}
+\index{$jaune@{\$jaune}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$jaune]{\setlength{\rightskip}{0pt plus 5cm}\$jaune = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0xff,0x00)}}
+\label{feuille__soins2_8php_a20}
+
+
+\hypertarget{feuille__soins2_8php_a21}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$orange@{\$orange}}
+\index{$orange@{\$orange}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$orange]{\setlength{\rightskip}{0pt plus 5cm}\$orange = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x66,0x00)}}
+\label{feuille__soins2_8php_a21}
+
+
+\hypertarget{feuille__soins2_8php_a26}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$p1@{\$p1}}
+\index{$p1@{\$p1}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$p1]{\setlength{\rightskip}{0pt plus 5cm}\$p1 = 2}}
+\label{feuille__soins2_8php_a26}
+
+
+\hypertarget{feuille__soins2_8php_a27}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$p2@{\$p2}}
+\index{$p2@{\$p2}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$p2]{\setlength{\rightskip}{0pt plus 5cm}\$p2 = 3}}
+\label{feuille__soins2_8php_a27}
+
+
+\hypertarget{feuille__soins2_8php_a29}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$pl2@{\$pl2}}
+\index{$pl2@{\$pl2}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$pl2]{\setlength{\rightskip}{0pt plus 5cm}\$pl2 = \$dfc $\rightarrow$ polygone\-U2E(\$poly)}}
+\label{feuille__soins2_8php_a29}
+
+
+\hypertarget{feuille__soins2_8php_a28}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$poly@{\$poly}}
+\index{$poly@{\$poly}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$poly]{\setlength{\rightskip}{0pt plus 5cm}\$poly}}
+\label{feuille__soins2_8php_a28}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}array($t[$p1][$i-1],$r[$p1][$i-1],
+                        $t[$p1][$i],$r[$p1][$i],
+                        $t[$p2][$i],$r[$p2][$i],
+                        $t[$p2][$i-1],$r[$p2][$i-1]
+                        )
+\end{verbatim}\normalsize 
+\hypertarget{feuille__soins2_8php_a9}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$r@{\$r}}
+\index{$r@{\$r}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$r]{\setlength{\rightskip}{0pt plus 5cm}\$r\mbox{[}\$rub\mbox{[}'exam\_\-ID'\mbox{]}\mbox{]}\mbox{[}$\,$\mbox{]} = \$rub\mbox{[}'resultat'\mbox{]}}}
+\label{feuille__soins2_8php_a9}
+
+
+\hypertarget{feuille__soins2_8php_a30}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$rayon@{\$rayon}}
+\index{$rayon@{\$rayon}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$rayon]{\setlength{\rightskip}{0pt plus 5cm}\$rayon = 8}}
+\label{feuille__soins2_8php_a30}
+
+
+\hypertarget{feuille__soins2_8php_a4}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT date,exam\_\-ID,resultat FROM dm\_\-constantes2 WHERE victime\_\-ID = '\$victime' ORDER BY date\char`\"{}}}
+\label{feuille__soins2_8php_a4}
+
+
+\hypertarget{feuille__soins2_8php_a5}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{feuille__soins2_8php_a5}
+
+
+\hypertarget{feuille__soins2_8php_a16}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$rouge@{\$rouge}}
+\index{$rouge@{\$rouge}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$rouge]{\setlength{\rightskip}{0pt plus 5cm}\$rouge = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x00,0x00)}}
+\label{feuille__soins2_8php_a16}
+
+
+\hypertarget{feuille__soins2_8php_a8}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$t@{\$t}}
+\index{$t@{\$t}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$t]{\setlength{\rightskip}{0pt plus 5cm}\$t\mbox{[}\$rub\mbox{[}'exam\_\-ID'\mbox{]}\mbox{]}\mbox{[}$\,$\mbox{]} = \$rub\mbox{[}'date'\mbox{]}}}
+\label{feuille__soins2_8php_a8}
+
+
+\hypertarget{feuille__soins2_8php_a24}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$t0@{\$t0}}
+\index{$t0@{\$t0}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$t0]{\setlength{\rightskip}{0pt plus 5cm}\$t0 = date(\char`\"{}H\char`\"{},\$tmin)+1}}
+\label{feuille__soins2_8php_a24}
+
+
+\hypertarget{feuille__soins2_8php_a25}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$tdepart@{\$tdepart}}
+\index{$tdepart@{\$tdepart}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$tdepart]{\setlength{\rightskip}{0pt plus 5cm}\$tdepart = strtotime(\$t0)}}
+\label{feuille__soins2_8php_a25}
+
+
+\hypertarget{feuille__soins2_8php_a7}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$tmax@{\$tmax}}
+\index{$tmax@{\$tmax}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$tmax]{\setlength{\rightskip}{0pt plus 5cm}\$tmax = 0}}
+\label{feuille__soins2_8php_a7}
+
+
+\hypertarget{feuille__soins2_8php_a6}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$tmin@{\$tmin}}
+\index{$tmin@{\$tmin}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$tmin]{\setlength{\rightskip}{0pt plus 5cm}\$tmin = strtotime(\char`\"{}now\char`\"{})}}
+\label{feuille__soins2_8php_a6}
+
+
+\hypertarget{feuille__soins2_8php_a10}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$tx@{\$tx}}
+\index{$tx@{\$tx}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$tx]{\setlength{\rightskip}{0pt plus 5cm}\$tx = \$tmin}}
+\label{feuille__soins2_8php_a10}
+
+
+\hypertarget{feuille__soins2_8php_a12}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$U_bas@{\$U\_\-bas}}
+\index{$U_bas@{\$U\_\-bas}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$U\_\-bas]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-bas = 0}}
+\label{feuille__soins2_8php_a12}
+
+
+\hypertarget{feuille__soins2_8php_a14}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$U_droit@{\$U\_\-droit}}
+\index{$U_droit@{\$U\_\-droit}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$U\_\-droit]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-droit = \$tmax}}
+\label{feuille__soins2_8php_a14}
+
+
+\hypertarget{feuille__soins2_8php_a13}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$U_gauche@{\$U\_\-gauche}}
+\index{$U_gauche@{\$U\_\-gauche}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$U\_\-gauche]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-gauche = \$tmin}}
+\label{feuille__soins2_8php_a13}
+
+
+\hypertarget{feuille__soins2_8php_a11}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$U_haut@{\$U\_\-haut}}
+\index{$U_haut@{\$U\_\-haut}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$U\_\-haut]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-haut = 250}}
+\label{feuille__soins2_8php_a11}
+
+
+\hypertarget{feuille__soins2_8php_a18}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$vert@{\$vert}}
+\index{$vert@{\$vert}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$vert]{\setlength{\rightskip}{0pt plus 5cm}\$vert = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0xff,0x00)}}
+\label{feuille__soins2_8php_a18}
+
+
+\hypertarget{feuille__soins2_8php_a19}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$vert_clair@{\$vert\_\-clair}}
+\index{$vert_clair@{\$vert\_\-clair}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$vert\_\-clair]{\setlength{\rightskip}{0pt plus 5cm}\$vert\_\-clair = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x99,0xff,0x66)}}
+\label{feuille__soins2_8php_a19}
+
+
+\hypertarget{feuille__soins2_8php_a2}{
+\index{feuille_soins2.php@{feuille\_\-soins2.php}!$victime@{\$victime}}
+\index{$victime@{\$victime}!feuille_soins2.php@{feuille\_\-soins2.php}}
+\subsubsection[\$victime]{\setlength{\rightskip}{0pt plus 5cm}\$victime = \$\_\-GET\mbox{[}'dossier'\mbox{]}}}
+\label{feuille__soins2_8php_a2}
+
+

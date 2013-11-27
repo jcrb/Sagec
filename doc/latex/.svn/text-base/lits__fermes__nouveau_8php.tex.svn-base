@@ -1,0 +1,145 @@
+\hypertarget{lits__fermes__nouveau_8php}{
+\section{R\'{e}f\'{e}rence du fichier lits\_\-fermes\_\-nouveau.php}
+\label{lits__fermes__nouveau_8php}\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{lits__fermes__nouveau_8php_a0}{break}
+\item 
+case \hyperlink{lits__fermes__nouveau_8php_a1}{\_\-\_\-pad4\_\-\_\-}
+\item 
+case \hyperlink{lits__fermes__nouveau_8php_a2}{\_\-\_\-pad5\_\-\_\-}
+\item 
+case \hyperlink{lits__fermes__nouveau_8php_a3}{\_\-\_\-pad6\_\-\_\-}
+\item 
+case \hyperlink{lits__fermes__nouveau_8php_a4}{\_\-\_\-pad7\_\-\_\-}
+\item 
+case \hyperlink{lits__fermes__nouveau_8php_a5}{\_\-\_\-pad8\_\-\_\-}
+\item 
+case \hyperlink{lits__fermes__nouveau_8php_a6}{\_\-\_\-pad9\_\-\_\-}
+\item 
+case \hyperlink{lits__fermes__nouveau_8php_a7}{\_\-\_\-pad10\_\-\_\-}
+\item 
+\hyperlink{lits__fermes__nouveau_8php_a8}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{lits__fermes__nouveau_8php_a9}{\$rub} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{lits__fermes__nouveau_8php_a10}{\$\_\-service} = \$rub\mbox{[}'service\_\-ID'\mbox{]}
+\item 
+\hyperlink{lits__fermes__nouveau_8php_a11}{\$service\_\-nom} = \$rub\mbox{[}'service\_\-nom'\mbox{]}
+\item 
+\hyperlink{lits__fermes__nouveau_8php_a12}{\$vd} = date(\char`\"{}j/m/Y\char`\"{},\$rub\mbox{[}debut\mbox{]})
+\item 
+\hyperlink{lits__fermes__nouveau_8php_a13}{\$vf} = date(\char`\"{}j/m/Y\char`\"{},\$rub\mbox{[}'fin'\mbox{]})
+\item 
+\hyperlink{lits__fermes__nouveau_8php_a14}{\$lf} = \$rub\mbox{[}'nb\_\-lits\_\-fermes'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{lits__fermes__nouveau_8php_a10}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!$_service@{\$\_\-service}}
+\index{$_service@{\$\_\-service}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[\$\_\-service]{\setlength{\rightskip}{0pt plus 5cm}\$\_\-service = \$rub\mbox{[}'service\_\-ID'\mbox{]}}}
+\label{lits__fermes__nouveau_8php_a10}
+
+
+\hypertarget{lits__fermes__nouveau_8php_a14}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!$lf@{\$lf}}
+\index{$lf@{\$lf}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[\$lf]{\setlength{\rightskip}{0pt plus 5cm}\$lf = \$rub\mbox{[}'nb\_\-lits\_\-fermes'\mbox{]}}}
+\label{lits__fermes__nouveau_8php_a14}
+
+
+\hypertarget{lits__fermes__nouveau_8php_a8}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{lits__fermes__nouveau_8php_a8}
+
+
+\hypertarget{lits__fermes__nouveau_8php_a9}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{lits__fermes__nouveau_8php_a9}
+
+
+\hypertarget{lits__fermes__nouveau_8php_a11}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!$service_nom@{\$service\_\-nom}}
+\index{$service_nom@{\$service\_\-nom}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[\$service\_\-nom]{\setlength{\rightskip}{0pt plus 5cm}\$service\_\-nom = \$rub\mbox{[}'service\_\-nom'\mbox{]}}}
+\label{lits__fermes__nouveau_8php_a11}
+
+
+\hypertarget{lits__fermes__nouveau_8php_a12}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!$vd@{\$vd}}
+\index{$vd@{\$vd}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[\$vd]{\setlength{\rightskip}{0pt plus 5cm}\$vd = date(\char`\"{}j/m/Y\char`\"{},\$rub\mbox{[}debut\mbox{]})}}
+\label{lits__fermes__nouveau_8php_a12}
+
+
+\hypertarget{lits__fermes__nouveau_8php_a13}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!$vf@{\$vf}}
+\index{$vf@{\$vf}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[\$vf]{\setlength{\rightskip}{0pt plus 5cm}\$vf = date(\char`\"{}j/m/Y\char`\"{},\$rub\mbox{[}'fin'\mbox{]})}}
+\label{lits__fermes__nouveau_8php_a13}
+
+
+\hypertarget{lits__fermes__nouveau_8php_a7}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!__pad10__@{\_\-\_\-pad10\_\-\_\-}}
+\index{__pad10__@{\_\-\_\-pad10\_\-\_\-}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[\_\-\_\-pad10\_\-\_\-]{\setlength{\rightskip}{0pt plus 5cm}case \hyperlink{lits__fermes__nouveau_8php_a7}{\_\-\_\-pad10\_\-\_\-}}}
+\label{lits__fermes__nouveau_8php_a7}
+
+
+\hypertarget{lits__fermes__nouveau_8php_a1}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!__pad4__@{\_\-\_\-pad4\_\-\_\-}}
+\index{__pad4__@{\_\-\_\-pad4\_\-\_\-}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[\_\-\_\-pad4\_\-\_\-]{\setlength{\rightskip}{0pt plus 5cm}case \hyperlink{lits__fermes__nouveau_8php_a1}{\_\-\_\-pad4\_\-\_\-}}}
+\label{lits__fermes__nouveau_8php_a1}
+
+
+\hypertarget{lits__fermes__nouveau_8php_a2}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!__pad5__@{\_\-\_\-pad5\_\-\_\-}}
+\index{__pad5__@{\_\-\_\-pad5\_\-\_\-}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[\_\-\_\-pad5\_\-\_\-]{\setlength{\rightskip}{0pt plus 5cm}case \hyperlink{lits__fermes__nouveau_8php_a2}{\_\-\_\-pad5\_\-\_\-}}}
+\label{lits__fermes__nouveau_8php_a2}
+
+
+\hypertarget{lits__fermes__nouveau_8php_a3}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!__pad6__@{\_\-\_\-pad6\_\-\_\-}}
+\index{__pad6__@{\_\-\_\-pad6\_\-\_\-}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[\_\-\_\-pad6\_\-\_\-]{\setlength{\rightskip}{0pt plus 5cm}case \hyperlink{lits__fermes__nouveau_8php_a3}{\_\-\_\-pad6\_\-\_\-}}}
+\label{lits__fermes__nouveau_8php_a3}
+
+
+\hypertarget{lits__fermes__nouveau_8php_a4}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!__pad7__@{\_\-\_\-pad7\_\-\_\-}}
+\index{__pad7__@{\_\-\_\-pad7\_\-\_\-}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[\_\-\_\-pad7\_\-\_\-]{\setlength{\rightskip}{0pt plus 5cm}case \hyperlink{lits__fermes__nouveau_8php_a4}{\_\-\_\-pad7\_\-\_\-}}}
+\label{lits__fermes__nouveau_8php_a4}
+
+
+\hypertarget{lits__fermes__nouveau_8php_a5}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!__pad8__@{\_\-\_\-pad8\_\-\_\-}}
+\index{__pad8__@{\_\-\_\-pad8\_\-\_\-}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[\_\-\_\-pad8\_\-\_\-]{\setlength{\rightskip}{0pt plus 5cm}case \hyperlink{lits__fermes__nouveau_8php_a5}{\_\-\_\-pad8\_\-\_\-}}}
+\label{lits__fermes__nouveau_8php_a5}
+
+
+\hypertarget{lits__fermes__nouveau_8php_a6}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!__pad9__@{\_\-\_\-pad9\_\-\_\-}}
+\index{__pad9__@{\_\-\_\-pad9\_\-\_\-}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[\_\-\_\-pad9\_\-\_\-]{\setlength{\rightskip}{0pt plus 5cm}case \hyperlink{lits__fermes__nouveau_8php_a6}{\_\-\_\-pad9\_\-\_\-}}}
+\label{lits__fermes__nouveau_8php_a6}
+
+
+\hypertarget{lits__fermes__nouveau_8php_a0}{
+\index{lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}!break@{break}}
+\index{break@{break}!lits_fermes_nouveau.php@{lits\_\-fermes\_\-nouveau.php}}
+\subsubsection[break]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{lits__fermes__nouveau_8php_a0}{break}}}
+\label{lits__fermes__nouveau_8php_a0}
+
+

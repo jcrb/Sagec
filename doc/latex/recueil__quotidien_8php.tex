@@ -1,0 +1,325 @@
+\hypertarget{recueil__quotidien_8php}{
+\section{R\'{e}f\'{e}rence du fichier recueil\_\-quotidien.php}
+\label{recueil__quotidien_8php}\index{recueil_quotidien.php@{recueil\_\-quotidien.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{recueil__quotidien_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{recueil__quotidien_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{recueil__quotidien_8php_a2}{\$date} = \char`\"{}16/08/2005\char`\"{}
+\item 
+\hyperlink{recueil__quotidien_8php_a3}{\$date1} = f\-Date2unix(\$date)
+\item 
+\hyperlink{recueil__quotidien_8php_a4}{\$date2} = \$date1 - 3$\ast$\$un\_\-jour
+\item 
+\hyperlink{recueil__quotidien_8php_a5}{\$type\_\-jour} = date(\char`\"{}w\char`\"{},\$date1)
+\item 
+\hyperlink{recueil__quotidien_8php_a6}{\$requete} = \char`\"{}SELECT date,nb\_\-affaires,nb\_\-primaires, nb\_\-secondaires FROM veille\_\-samu WHERE date BETWEEN '\$date2' AND '\$date1' ORDER BY date DESC\char`\"{}
+\item 
+\hyperlink{recueil__quotidien_8php_a7}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{recueil__quotidien_8php_a8}{\$num\_\-rows} = mysql\_\-num\_\-rows(\$resultat)
+\item 
+\hyperlink{recueil__quotidien_8php_a9}{\$rub1} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{recueil__quotidien_8php_a10}{\$rub2} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{recueil__quotidien_8php_a11}{\$nb\_\-affaires} = \$rub1\mbox{[}'nb\_\-affaires'\mbox{]}+\$rub2\mbox{[}'nb\_\-affaires'\mbox{]}
+\item 
+\hyperlink{recueil__quotidien_8php_a12}{\$nb\_\-interventions} = \$rub1\mbox{[}'nb\_\-primaires'\mbox{]}+\$rub2\mbox{[}'nb\_\-primaires'\mbox{]}+\$rub1\mbox{[}'nb\_\-secondaires'\mbox{]}+\$rub2\mbox{[}'nb\_\-secondaires'\mbox{]}
+\item 
+\hyperlink{recueil__quotidien_8php_a13}{\$somme\_\-affaires} = 0
+\item 
+\hyperlink{recueil__quotidien_8php_a14}{\$somme\_\-interventions} = 0
+\item 
+\hyperlink{recueil__quotidien_8php_a15}{\$i}
+\item 
+\hyperlink{recueil__quotidien_8php_a16}{\$date3} = \$date1 - \$sept\_\-jour
+\item 
+\hyperlink{recueil__quotidien_8php_a17}{\$date4} = \$date3 - \$sept\_\-jour
+\item 
+\hyperlink{recueil__quotidien_8php_a18}{\$date5} = \$date4 - \$sept\_\-jour
+\item 
+\hyperlink{recueil__quotidien_8php_a19}{\$somme\_\-affaires2} = \$rub1\mbox{[}'nb\_\-affaires'\mbox{]}+\$rub2\mbox{[}'nb\_\-affaires'\mbox{]}
+\item 
+\hyperlink{recueil__quotidien_8php_a20}{\$somme\_\-interventions2} = \$rub1\mbox{[}'nb\_\-primaires'\mbox{]}+\$rub2\mbox{[}'nb\_\-primaires'\mbox{]}+\$rub1\mbox{[}'nb\_\-secondaires'\mbox{]}+\$rub2\mbox{[}'nb\_\-secondaires'\mbox{]}
+\item 
+\hyperlink{recueil__quotidien_8php_a21}{\$evolution} = intval(0.5+(\$nb\_\-affaires/\$somme\_\-affaires-1)$\ast$100).\char`\"{} \%\char`\"{}
+\item 
+\hyperlink{recueil__quotidien_8php_a22}{\$n} = 0
+\item 
+\hyperlink{recueil__quotidien_8php_a23}{\$moyenne\_\-nb\_\-1an} = intval(0.5+\$moyenne\_\-nb\_\-1an/3)
+\item 
+\hyperlink{recueil__quotidien_8php_a24}{\$moyenne\_\-nb\_\-uhcd} = intval(0.5+\$moyenne\_\-nb\_\-uhcd/3)
+\item 
+\hyperlink{recueil__quotidien_8php_a25}{\$moyenne\_\-bn\_\-75ans} = intval(0.5+\$moyenne\_\-bn\_\-75ans/3)
+\item 
+\hyperlink{recueil__quotidien_8php_a26}{\$moyenne\_\-nb\_\-entre} = intval(0.5+\$moyenne\_\-nb\_\-entre/3)
+\item 
+\hyperlink{recueil__quotidien_8php_a27}{\$moyenne\_\-nb\_\-hosp} = intval(0.5+\$moyenne\_\-nb\_\-hosp/3)
+\item 
+\hyperlink{recueil__quotidien_8php_a28}{\$moyenne\_\-nb\_\-transferts} = intval(0.5+\$moyenne\_\-nb\_\-transferts/3)
+\item 
+\hyperlink{recueil__quotidien_8php_a29}{\$m\_\-nb\_\-1an} = intval(0.5+\$m\_\-nb\_\-1an/3)
+\item 
+\hyperlink{recueil__quotidien_8php_a30}{\$m\_\-nb\_\-uhcd} = intval(0.5+\$m\_\-nb\_\-uhcd/3)
+\item 
+\hyperlink{recueil__quotidien_8php_a31}{\$m\_\-bn\_\-75ans} = intval(0.5+\$m\_\-bn\_\-75ans/3)
+\item 
+\hyperlink{recueil__quotidien_8php_a32}{\$m\_\-nb\_\-entre} = intval(0.5+\$m\_\-nb\_\-entre/3)
+\item 
+\hyperlink{recueil__quotidien_8php_a33}{\$m\_\-nb\_\-hosp} = intval(0.5+\$m\_\-nb\_\-hosp/3)
+\item 
+\hyperlink{recueil__quotidien_8php_a34}{\$m\_\-nb\_\-transferts} = intval(0.5+\$m\_\-nb\_\-transferts/3)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{recueil__quotidien_8php_a1}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{recueil__quotidien_8php_a1}
+
+
+\hypertarget{recueil__quotidien_8php_a2}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$date@{\$date}}
+\index{$date@{\$date}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$date]{\setlength{\rightskip}{0pt plus 5cm}\$date = \char`\"{}16/08/2005\char`\"{}}}
+\label{recueil__quotidien_8php_a2}
+
+
+\hypertarget{recueil__quotidien_8php_a3}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$date1@{\$date1}}
+\index{$date1@{\$date1}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$date1]{\setlength{\rightskip}{0pt plus 5cm}\$date1 = f\-Date2unix(\$date)}}
+\label{recueil__quotidien_8php_a3}
+
+
+\hypertarget{recueil__quotidien_8php_a4}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$date2@{\$date2}}
+\index{$date2@{\$date2}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$date2]{\setlength{\rightskip}{0pt plus 5cm}\$date2 = \$date1 - 3$\ast$\$un\_\-jour}}
+\label{recueil__quotidien_8php_a4}
+
+
+\hypertarget{recueil__quotidien_8php_a16}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$date3@{\$date3}}
+\index{$date3@{\$date3}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$date3]{\setlength{\rightskip}{0pt plus 5cm}\$date3 = \$date1 - \$sept\_\-jour}}
+\label{recueil__quotidien_8php_a16}
+
+
+\hypertarget{recueil__quotidien_8php_a17}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$date4@{\$date4}}
+\index{$date4@{\$date4}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$date4]{\setlength{\rightskip}{0pt plus 5cm}\$date4 = \$date3 - \$sept\_\-jour}}
+\label{recueil__quotidien_8php_a17}
+
+
+\hypertarget{recueil__quotidien_8php_a18}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$date5@{\$date5}}
+\index{$date5@{\$date5}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$date5]{\setlength{\rightskip}{0pt plus 5cm}\$date5 = \$date4 - \$sept\_\-jour}}
+\label{recueil__quotidien_8php_a18}
+
+
+\hypertarget{recueil__quotidien_8php_a21}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$evolution@{\$evolution}}
+\index{$evolution@{\$evolution}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$evolution]{\setlength{\rightskip}{0pt plus 5cm}\$evolution = intval(0.5+(\$nb\_\-affaires/\$somme\_\-affaires-1)$\ast$100).\char`\"{} \%\char`\"{}}}
+\label{recueil__quotidien_8php_a21}
+
+
+\hypertarget{recueil__quotidien_8php_a15}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$i@{\$i}}
+\index{$i@{\$i}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$i]{\setlength{\rightskip}{0pt plus 5cm}\$i}}
+\label{recueil__quotidien_8php_a15}
+
+
+\hypertarget{recueil__quotidien_8php_a0}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{recueil__quotidien_8php_a0}
+
+
+\hypertarget{recueil__quotidien_8php_a31}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$m_bn_75ans@{\$m\_\-bn\_\-75ans}}
+\index{$m_bn_75ans@{\$m\_\-bn\_\-75ans}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$m\_\-bn\_\-75ans]{\setlength{\rightskip}{0pt plus 5cm}\$m\_\-bn\_\-75ans = intval(0.5+\$m\_\-bn\_\-75ans/3)}}
+\label{recueil__quotidien_8php_a31}
+
+
+\hypertarget{recueil__quotidien_8php_a29}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$m_nb_1an@{\$m\_\-nb\_\-1an}}
+\index{$m_nb_1an@{\$m\_\-nb\_\-1an}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$m\_\-nb\_\-1an]{\setlength{\rightskip}{0pt plus 5cm}\$m\_\-nb\_\-1an = intval(0.5+\$m\_\-nb\_\-1an/3)}}
+\label{recueil__quotidien_8php_a29}
+
+
+\hypertarget{recueil__quotidien_8php_a32}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$m_nb_entre@{\$m\_\-nb\_\-entre}}
+\index{$m_nb_entre@{\$m\_\-nb\_\-entre}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$m\_\-nb\_\-entre]{\setlength{\rightskip}{0pt plus 5cm}\$m\_\-nb\_\-entre = intval(0.5+\$m\_\-nb\_\-entre/3)}}
+\label{recueil__quotidien_8php_a32}
+
+
+\hypertarget{recueil__quotidien_8php_a33}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$m_nb_hosp@{\$m\_\-nb\_\-hosp}}
+\index{$m_nb_hosp@{\$m\_\-nb\_\-hosp}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$m\_\-nb\_\-hosp]{\setlength{\rightskip}{0pt plus 5cm}\$m\_\-nb\_\-hosp = intval(0.5+\$m\_\-nb\_\-hosp/3)}}
+\label{recueil__quotidien_8php_a33}
+
+
+\hypertarget{recueil__quotidien_8php_a34}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$m_nb_transferts@{\$m\_\-nb\_\-transferts}}
+\index{$m_nb_transferts@{\$m\_\-nb\_\-transferts}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$m\_\-nb\_\-transferts]{\setlength{\rightskip}{0pt plus 5cm}\$m\_\-nb\_\-transferts = intval(0.5+\$m\_\-nb\_\-transferts/3)}}
+\label{recueil__quotidien_8php_a34}
+
+
+\hypertarget{recueil__quotidien_8php_a30}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$m_nb_uhcd@{\$m\_\-nb\_\-uhcd}}
+\index{$m_nb_uhcd@{\$m\_\-nb\_\-uhcd}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$m\_\-nb\_\-uhcd]{\setlength{\rightskip}{0pt plus 5cm}\$m\_\-nb\_\-uhcd = intval(0.5+\$m\_\-nb\_\-uhcd/3)}}
+\label{recueil__quotidien_8php_a30}
+
+
+\hypertarget{recueil__quotidien_8php_a25}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$moyenne_bn_75ans@{\$moyenne\_\-bn\_\-75ans}}
+\index{$moyenne_bn_75ans@{\$moyenne\_\-bn\_\-75ans}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$moyenne\_\-bn\_\-75ans]{\setlength{\rightskip}{0pt plus 5cm}\$moyenne\_\-bn\_\-75ans = intval(0.5+\$moyenne\_\-bn\_\-75ans/3)}}
+\label{recueil__quotidien_8php_a25}
+
+
+\hypertarget{recueil__quotidien_8php_a23}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$moyenne_nb_1an@{\$moyenne\_\-nb\_\-1an}}
+\index{$moyenne_nb_1an@{\$moyenne\_\-nb\_\-1an}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$moyenne\_\-nb\_\-1an]{\setlength{\rightskip}{0pt plus 5cm}\$moyenne\_\-nb\_\-1an = intval(0.5+\$moyenne\_\-nb\_\-1an/3)}}
+\label{recueil__quotidien_8php_a23}
+
+
+\hypertarget{recueil__quotidien_8php_a26}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$moyenne_nb_entre@{\$moyenne\_\-nb\_\-entre}}
+\index{$moyenne_nb_entre@{\$moyenne\_\-nb\_\-entre}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$moyenne\_\-nb\_\-entre]{\setlength{\rightskip}{0pt plus 5cm}\$moyenne\_\-nb\_\-entre = intval(0.5+\$moyenne\_\-nb\_\-entre/3)}}
+\label{recueil__quotidien_8php_a26}
+
+
+\hypertarget{recueil__quotidien_8php_a27}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$moyenne_nb_hosp@{\$moyenne\_\-nb\_\-hosp}}
+\index{$moyenne_nb_hosp@{\$moyenne\_\-nb\_\-hosp}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$moyenne\_\-nb\_\-hosp]{\setlength{\rightskip}{0pt plus 5cm}\$moyenne\_\-nb\_\-hosp = intval(0.5+\$moyenne\_\-nb\_\-hosp/3)}}
+\label{recueil__quotidien_8php_a27}
+
+
+\hypertarget{recueil__quotidien_8php_a28}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$moyenne_nb_transferts@{\$moyenne\_\-nb\_\-transferts}}
+\index{$moyenne_nb_transferts@{\$moyenne\_\-nb\_\-transferts}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$moyenne\_\-nb\_\-transferts]{\setlength{\rightskip}{0pt plus 5cm}\$moyenne\_\-nb\_\-transferts = intval(0.5+\$moyenne\_\-nb\_\-transferts/3)}}
+\label{recueil__quotidien_8php_a28}
+
+
+\hypertarget{recueil__quotidien_8php_a24}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$moyenne_nb_uhcd@{\$moyenne\_\-nb\_\-uhcd}}
+\index{$moyenne_nb_uhcd@{\$moyenne\_\-nb\_\-uhcd}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$moyenne\_\-nb\_\-uhcd]{\setlength{\rightskip}{0pt plus 5cm}\$moyenne\_\-nb\_\-uhcd = intval(0.5+\$moyenne\_\-nb\_\-uhcd/3)}}
+\label{recueil__quotidien_8php_a24}
+
+
+\hypertarget{recueil__quotidien_8php_a22}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$n@{\$n}}
+\index{$n@{\$n}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$n]{\setlength{\rightskip}{0pt plus 5cm}\$\hyperlink{utilitaires_2html_8php_a0}{n} = 0}}
+\label{recueil__quotidien_8php_a22}
+
+
+\hypertarget{recueil__quotidien_8php_a11}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$nb_affaires@{\$nb\_\-affaires}}
+\index{$nb_affaires@{\$nb\_\-affaires}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$nb\_\-affaires]{\setlength{\rightskip}{0pt plus 5cm}\$nb\_\-affaires = \$rub1\mbox{[}'nb\_\-affaires'\mbox{]}+\$rub2\mbox{[}'nb\_\-affaires'\mbox{]}}}
+\label{recueil__quotidien_8php_a11}
+
+
+\hypertarget{recueil__quotidien_8php_a12}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$nb_interventions@{\$nb\_\-interventions}}
+\index{$nb_interventions@{\$nb\_\-interventions}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$nb\_\-interventions]{\setlength{\rightskip}{0pt plus 5cm}\$nb\_\-interventions = \$rub1\mbox{[}'nb\_\-primaires'\mbox{]}+\$rub2\mbox{[}'nb\_\-primaires'\mbox{]}+\$rub1\mbox{[}'nb\_\-secondaires'\mbox{]}+\$rub2\mbox{[}'nb\_\-secondaires'\mbox{]}}}
+\label{recueil__quotidien_8php_a12}
+
+
+\hypertarget{recueil__quotidien_8php_a8}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$num_rows@{\$num\_\-rows}}
+\index{$num_rows@{\$num\_\-rows}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$num\_\-rows]{\setlength{\rightskip}{0pt plus 5cm}\$num\_\-rows = mysql\_\-num\_\-rows(\$resultat)}}
+\label{recueil__quotidien_8php_a8}
+
+
+\hypertarget{recueil__quotidien_8php_a6}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT date,nb\_\-affaires,nb\_\-primaires, nb\_\-secondaires FROM veille\_\-samu WHERE date BETWEEN '\$date2' AND '\$date1' ORDER BY date DESC\char`\"{}}}
+\label{recueil__quotidien_8php_a6}
+
+
+\hypertarget{recueil__quotidien_8php_a7}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{recueil__quotidien_8php_a7}
+
+
+\hypertarget{recueil__quotidien_8php_a9}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$rub1@{\$rub1}}
+\index{$rub1@{\$rub1}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$rub1]{\setlength{\rightskip}{0pt plus 5cm}\$rub1 = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{recueil__quotidien_8php_a9}
+
+
+\hypertarget{recueil__quotidien_8php_a10}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$rub2@{\$rub2}}
+\index{$rub2@{\$rub2}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$rub2]{\setlength{\rightskip}{0pt plus 5cm}\$rub2 = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{recueil__quotidien_8php_a10}
+
+
+\hypertarget{recueil__quotidien_8php_a13}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$somme_affaires@{\$somme\_\-affaires}}
+\index{$somme_affaires@{\$somme\_\-affaires}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$somme\_\-affaires]{\setlength{\rightskip}{0pt plus 5cm}\$somme\_\-affaires = 0}}
+\label{recueil__quotidien_8php_a13}
+
+
+\hypertarget{recueil__quotidien_8php_a19}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$somme_affaires2@{\$somme\_\-affaires2}}
+\index{$somme_affaires2@{\$somme\_\-affaires2}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$somme\_\-affaires2]{\setlength{\rightskip}{0pt plus 5cm}\$somme\_\-affaires2 = \$rub1\mbox{[}'nb\_\-affaires'\mbox{]}+\$rub2\mbox{[}'nb\_\-affaires'\mbox{]}}}
+\label{recueil__quotidien_8php_a19}
+
+
+\hypertarget{recueil__quotidien_8php_a14}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$somme_interventions@{\$somme\_\-interventions}}
+\index{$somme_interventions@{\$somme\_\-interventions}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$somme\_\-interventions]{\setlength{\rightskip}{0pt plus 5cm}\$somme\_\-interventions = 0}}
+\label{recueil__quotidien_8php_a14}
+
+
+\hypertarget{recueil__quotidien_8php_a20}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$somme_interventions2@{\$somme\_\-interventions2}}
+\index{$somme_interventions2@{\$somme\_\-interventions2}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$somme\_\-interventions2]{\setlength{\rightskip}{0pt plus 5cm}\$somme\_\-interventions2 = \$rub1\mbox{[}'nb\_\-primaires'\mbox{]}+\$rub2\mbox{[}'nb\_\-primaires'\mbox{]}+\$rub1\mbox{[}'nb\_\-secondaires'\mbox{]}+\$rub2\mbox{[}'nb\_\-secondaires'\mbox{]}}}
+\label{recueil__quotidien_8php_a20}
+
+
+\hypertarget{recueil__quotidien_8php_a5}{
+\index{recueil_quotidien.php@{recueil\_\-quotidien.php}!$type_jour@{\$type\_\-jour}}
+\index{$type_jour@{\$type\_\-jour}!recueil_quotidien.php@{recueil\_\-quotidien.php}}
+\subsubsection[\$type\_\-jour]{\setlength{\rightskip}{0pt plus 5cm}\$type\_\-jour = date(\char`\"{}w\char`\"{},\$date1)}}
+\label{recueil__quotidien_8php_a5}
+
+

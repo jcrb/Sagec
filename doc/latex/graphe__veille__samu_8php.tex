@@ -1,0 +1,291 @@
+\hypertarget{graphe__veille__samu_8php}{
+\section{R\'{e}f\'{e}rence du fichier graphe\_\-veille\_\-samu.php}
+\label{graphe__veille__samu_8php}\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{graphe__veille__samu_8php_a29}{affaires} (\$resultat, \$dfc, \$couleur, \$c2)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+global \hyperlink{graphe__veille__samu_8php_a0}{\$date1} = f\-Date2unix(\$\_\-GET\mbox{[}date1\mbox{]})-\$jour
+\item 
+global \hyperlink{graphe__veille__samu_8php_a1}{\$nb\_\-jour} = (\$date2-\$date1)/\$jour
+\item 
+global \hyperlink{graphe__veille__samu_8php_a2}{\$orange} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x66,0x00)
+\item 
+global \hyperlink{graphe__veille__samu_8php_a3}{\$vert} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0xff,0x00)
+\item 
+\hyperlink{graphe__veille__samu_8php_a4}{\$image\_\-width} = 1095
+\item 
+\hyperlink{graphe__veille__samu_8php_a5}{\$image\_\-heigth} = 400
+\item 
+\hyperlink{graphe__veille__samu_8php_a6}{\$jour} = 24$\ast$60$\ast$60
+\item 
+\hyperlink{graphe__veille__samu_8php_a7}{\$date2} = f\-Date2unix(\$\_\-GET\mbox{[}date2\mbox{]})+\$jour
+\item 
+\hyperlink{graphe__veille__samu_8php_a8}{\$U\_\-haut} = 1500
+\item 
+\hyperlink{graphe__veille__samu_8php_a9}{\$U\_\-bas} = 0
+\item 
+\hyperlink{graphe__veille__samu_8php_a10}{\$U\_\-gauche} = \$date1
+\item 
+\hyperlink{graphe__veille__samu_8php_a11}{\$U\_\-droit} = \$date2
+\item 
+\hyperlink{graphe__veille__samu_8php_a12}{\$dfc} = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$U\_\-haut,\$U\_\-gauche,\$U\_\-bas,\$U\_\-droit)
+\item 
+\hyperlink{graphe__veille__samu_8php_a13}{\$haute} = 20
+\item 
+\hyperlink{graphe__veille__samu_8php_a14}{\$basse} = 100
+\item 
+\hyperlink{graphe__veille__samu_8php_a15}{\$gauche} = 35
+\item 
+\hyperlink{graphe__veille__samu_8php_a16}{\$droite} = 20
+\item 
+\hyperlink{graphe__veille__samu_8php_a17}{\$vert\_\-clair} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x99,0xff,0x66)
+\item 
+\hyperlink{graphe__veille__samu_8php_a18}{\$rouge} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x00,0x00)
+\item 
+\hyperlink{graphe__veille__samu_8php_a19}{\$bleu} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0x66,0xff)
+\item 
+\hyperlink{graphe__veille__samu_8php_a20}{\$xinc} = 1$\ast$\$jour
+\item 
+\hyperlink{graphe__veille__samu_8php_a21}{\$xinter} = 1
+\item 
+\hyperlink{graphe__veille__samu_8php_a22}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{graphe__veille__samu_8php_a23}{\$samu} = \$\_\-SESSION\mbox{[}'service'\mbox{]}
+\item 
+\hyperlink{graphe__veille__samu_8php_a24}{\$requete} = \char`\"{}SELECT service\_\-nom FROM service WHERE service\_\-ID='\$samu'\char`\"{}
+\item 
+\hyperlink{graphe__veille__samu_8php_a25}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{graphe__veille__samu_8php_a26}{\$rub} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{graphe__veille__samu_8php_a27}{\$service\_\-nom} = \$rub\mbox{[}'service\_\-nom'\mbox{]}
+\item 
+\hyperlink{graphe__veille__samu_8php_a28}{\$titre} = \$service\_\-nom.\char`\"{} - Nombre d'affaires trait\'{e}es (P\'{e}riode du \char`\"{}.date(j/m/Y,\$date1).\char`\"{} au \char`\"{}.date(j/m/Y,\$date2).\char`\"{})\char`\"{}.\$samu
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{graphe__veille__samu_8php_a29}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!affaires@{affaires}}
+\index{affaires@{affaires}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[affaires]{\setlength{\rightskip}{0pt plus 5cm}affaires (\$ {\em resultat}, \$ {\em dfc}, \$ {\em couleur}, \$ {\em c2})}}
+\label{graphe__veille__samu_8php_a29}
+
+
+Dessine une grillehorizontale \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em \$d}]adresse de la zone de dessin \item[{\em \$ymax}]ordonn\'{e}e la plus haute \item[{\em \$ymin}]ordonn\'{e}e la plus basse \item[{\em \$yinc}]incr\'{e}ment entre 2 lignes \item[{\em \$yinter}]ligne horizontale interm\'{e}diaire plus \'{e}paisse. 0 pour ne pas en mettre \item[{\em \$xmin}]abcisse minimale du trait \item[{\em \$xmax}]abcisse maximale du trait \item[{\em \$c1}]couleur du trait usuel \item[{\em \$c2}]couleur du trait \'{e}pais \end{description}
+\end{Desc}
+
+
+\subsection{Documentation des variables}
+\hypertarget{graphe__veille__samu_8php_a14}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$basse@{\$basse}}
+\index{$basse@{\$basse}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$basse]{\setlength{\rightskip}{0pt plus 5cm}\$basse = 100}}
+\label{graphe__veille__samu_8php_a14}
+
+
+\hypertarget{graphe__veille__samu_8php_a19}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$bleu@{\$bleu}}
+\index{$bleu@{\$bleu}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$bleu]{\setlength{\rightskip}{0pt plus 5cm}\$bleu = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0x66,0xff)}}
+\label{graphe__veille__samu_8php_a19}
+
+
+\hypertarget{graphe__veille__samu_8php_a22}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{graphe__veille__samu_8php_a22}
+
+
+\hypertarget{graphe__veille__samu_8php_a0}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$date1@{\$date1}}
+\index{$date1@{\$date1}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$date1]{\setlength{\rightskip}{0pt plus 5cm}\$date1 = f\-Date2unix(\$\_\-GET\mbox{[}date1\mbox{]})-\$jour}}
+\label{graphe__veille__samu_8php_a0}
+
+
+\hypertarget{graphe__veille__samu_8php_a7}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$date2@{\$date2}}
+\index{$date2@{\$date2}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$date2]{\setlength{\rightskip}{0pt plus 5cm}\$date2 = f\-Date2unix(\$\_\-GET\mbox{[}date2\mbox{]})+\$jour}}
+\label{graphe__veille__samu_8php_a7}
+
+
+\hypertarget{graphe__veille__samu_8php_a12}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$dfc@{\$dfc}}
+\index{$dfc@{\$dfc}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$dfc]{\setlength{\rightskip}{0pt plus 5cm}\$dfc = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$U\_\-haut,\$U\_\-gauche,\$U\_\-bas,\$U\_\-droit)}}
+\label{graphe__veille__samu_8php_a12}
+
+
+\hypertarget{graphe__veille__samu_8php_a16}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$droite@{\$droite}}
+\index{$droite@{\$droite}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$droite]{\setlength{\rightskip}{0pt plus 5cm}\$droite = 20}}
+\label{graphe__veille__samu_8php_a16}
+
+
+\hypertarget{graphe__veille__samu_8php_a15}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$gauche@{\$gauche}}
+\index{$gauche@{\$gauche}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$gauche]{\setlength{\rightskip}{0pt plus 5cm}\$gauche = 35}}
+\label{graphe__veille__samu_8php_a15}
+
+
+\hypertarget{graphe__veille__samu_8php_a13}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$haute@{\$haute}}
+\index{$haute@{\$haute}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$haute]{\setlength{\rightskip}{0pt plus 5cm}\$haute = 20}}
+\label{graphe__veille__samu_8php_a13}
+
+
+\hypertarget{graphe__veille__samu_8php_a5}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$image_heigth@{\$image\_\-heigth}}
+\index{$image_heigth@{\$image\_\-heigth}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$image\_\-heigth]{\setlength{\rightskip}{0pt plus 5cm}\$image\_\-heigth = 400}}
+\label{graphe__veille__samu_8php_a5}
+
+
+\hypertarget{graphe__veille__samu_8php_a4}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$image_width@{\$image\_\-width}}
+\index{$image_width@{\$image\_\-width}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$image\_\-width]{\setlength{\rightskip}{0pt plus 5cm}\$image\_\-width = 1095}}
+\label{graphe__veille__samu_8php_a4}
+
+
+\hypertarget{graphe__veille__samu_8php_a6}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$jour@{\$jour}}
+\index{$jour@{\$jour}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$jour]{\setlength{\rightskip}{0pt plus 5cm}\$jour = 24$\ast$60$\ast$60}}
+\label{graphe__veille__samu_8php_a6}
+
+
+\hypertarget{graphe__veille__samu_8php_a1}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$nb_jour@{\$nb\_\-jour}}
+\index{$nb_jour@{\$nb\_\-jour}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$nb\_\-jour]{\setlength{\rightskip}{0pt plus 5cm}\$nb\_\-jour = (\$date2-\$date1)/\$jour}}
+\label{graphe__veille__samu_8php_a1}
+
+
+\hypertarget{graphe__veille__samu_8php_a2}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$orange@{\$orange}}
+\index{$orange@{\$orange}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$orange]{\setlength{\rightskip}{0pt plus 5cm}\$orange = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x66,0x00)}}
+\label{graphe__veille__samu_8php_a2}
+
+
+\hypertarget{graphe__veille__samu_8php_a24}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT service\_\-nom FROM service WHERE service\_\-ID='\$samu'\char`\"{}}}
+\label{graphe__veille__samu_8php_a24}
+
+
+\hypertarget{graphe__veille__samu_8php_a25}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{graphe__veille__samu_8php_a25}
+
+
+\hypertarget{graphe__veille__samu_8php_a18}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$rouge@{\$rouge}}
+\index{$rouge@{\$rouge}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$rouge]{\setlength{\rightskip}{0pt plus 5cm}\$rouge = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x00,0x00)}}
+\label{graphe__veille__samu_8php_a18}
+
+
+\hypertarget{graphe__veille__samu_8php_a26}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{graphe__veille__samu_8php_a26}
+
+
+\hypertarget{graphe__veille__samu_8php_a23}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$samu@{\$samu}}
+\index{$samu@{\$samu}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$samu]{\setlength{\rightskip}{0pt plus 5cm}\$samu = \$\_\-SESSION\mbox{[}'service'\mbox{]}}}
+\label{graphe__veille__samu_8php_a23}
+
+
+\hypertarget{graphe__veille__samu_8php_a27}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$service_nom@{\$service\_\-nom}}
+\index{$service_nom@{\$service\_\-nom}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$service\_\-nom]{\setlength{\rightskip}{0pt plus 5cm}\$service\_\-nom = \$rub\mbox{[}'service\_\-nom'\mbox{]}}}
+\label{graphe__veille__samu_8php_a27}
+
+
+\hypertarget{graphe__veille__samu_8php_a28}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$titre@{\$titre}}
+\index{$titre@{\$titre}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$titre]{\setlength{\rightskip}{0pt plus 5cm}\$titre = \$service\_\-nom.\char`\"{} - Nombre d'affaires trait\'{e}es (P\'{e}riode du \char`\"{}.date(j/m/Y,\$date1).\char`\"{} au \char`\"{}.date(j/m/Y,\$date2).\char`\"{})\char`\"{}.\$samu}}
+\label{graphe__veille__samu_8php_a28}
+
+
+\hypertarget{graphe__veille__samu_8php_a9}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$U_bas@{\$U\_\-bas}}
+\index{$U_bas@{\$U\_\-bas}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$U\_\-bas]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-bas = 0}}
+\label{graphe__veille__samu_8php_a9}
+
+
+\hypertarget{graphe__veille__samu_8php_a11}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$U_droit@{\$U\_\-droit}}
+\index{$U_droit@{\$U\_\-droit}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$U\_\-droit]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-droit = \$date2}}
+\label{graphe__veille__samu_8php_a11}
+
+
+\hypertarget{graphe__veille__samu_8php_a10}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$U_gauche@{\$U\_\-gauche}}
+\index{$U_gauche@{\$U\_\-gauche}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$U\_\-gauche]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-gauche = \$date1}}
+\label{graphe__veille__samu_8php_a10}
+
+
+\hypertarget{graphe__veille__samu_8php_a8}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$U_haut@{\$U\_\-haut}}
+\index{$U_haut@{\$U\_\-haut}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$U\_\-haut]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-haut = 1500}}
+\label{graphe__veille__samu_8php_a8}
+
+
+\hypertarget{graphe__veille__samu_8php_a3}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$vert@{\$vert}}
+\index{$vert@{\$vert}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$vert]{\setlength{\rightskip}{0pt plus 5cm}\$vert = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0xff,0x00)}}
+\label{graphe__veille__samu_8php_a3}
+
+
+\hypertarget{graphe__veille__samu_8php_a17}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$vert_clair@{\$vert\_\-clair}}
+\index{$vert_clair@{\$vert\_\-clair}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$vert\_\-clair]{\setlength{\rightskip}{0pt plus 5cm}\$vert\_\-clair = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x99,0xff,0x66)}}
+\label{graphe__veille__samu_8php_a17}
+
+
+\hypertarget{graphe__veille__samu_8php_a20}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$xinc@{\$xinc}}
+\index{$xinc@{\$xinc}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$xinc]{\setlength{\rightskip}{0pt plus 5cm}\$xinc = 1$\ast$\$jour}}
+\label{graphe__veille__samu_8php_a20}
+
+
+\hypertarget{graphe__veille__samu_8php_a21}{
+\index{graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}!$xinter@{\$xinter}}
+\index{$xinter@{\$xinter}!graphe_veille_samu.php@{graphe\_\-veille\_\-samu.php}}
+\subsubsection[\$xinter]{\setlength{\rightskip}{0pt plus 5cm}\$xinter = 1}}
+\label{graphe__veille__samu_8php_a21}
+
+

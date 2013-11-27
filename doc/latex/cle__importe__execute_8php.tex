@@ -1,0 +1,82 @@
+\hypertarget{cle__importe__execute_8php}{
+\section{R\'{e}f\'{e}rence du fichier cle\_\-importe\_\-execute.php}
+\label{cle__importe__execute_8php}\index{cle_importe_execute.php@{cle\_\-importe\_\-execute.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{cle__importe__execute_8php_a0}{\$fichier} = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'name'\mbox{]}
+\item 
+\hyperlink{cle__importe__execute_8php_a1}{\$taille} = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'size'\mbox{]}
+\item 
+\hyperlink{cle__importe__execute_8php_a2}{\$tmp} = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'tmp\_\-name'\mbox{]}
+\item 
+\hyperlink{cle__importe__execute_8php_a3}{\$type} = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'type'\mbox{]}
+\item 
+\hyperlink{cle__importe__execute_8php_a4}{\$erreur} = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'error'\mbox{]}
+\item 
+\hyperlink{cle__importe__execute_8php_a5}{\$fp} = @fopen(\$tmp,\char`\"{}r\char`\"{})
+\item 
+\hyperlink{cle__importe__execute_8php_a6}{\$Key\-Block} = fread (\$fp, filesize (\$tmp))
+\item 
+\hyperlink{cle__importe__execute_8php_a7}{\$k} = \$gpg $\rightarrow$ Import(\$Key\-Block)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{cle__importe__execute_8php_a4}{
+\index{cle_importe_execute.php@{cle\_\-importe\_\-execute.php}!$erreur@{\$erreur}}
+\index{$erreur@{\$erreur}!cle_importe_execute.php@{cle\_\-importe\_\-execute.php}}
+\subsubsection[\$erreur]{\setlength{\rightskip}{0pt plus 5cm}\$erreur = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'error'\mbox{]}}}
+\label{cle__importe__execute_8php_a4}
+
+
+\hypertarget{cle__importe__execute_8php_a0}{
+\index{cle_importe_execute.php@{cle\_\-importe\_\-execute.php}!$fichier@{\$fichier}}
+\index{$fichier@{\$fichier}!cle_importe_execute.php@{cle\_\-importe\_\-execute.php}}
+\subsubsection[\$fichier]{\setlength{\rightskip}{0pt plus 5cm}\$fichier = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'name'\mbox{]}}}
+\label{cle__importe__execute_8php_a0}
+
+
+\hypertarget{cle__importe__execute_8php_a5}{
+\index{cle_importe_execute.php@{cle\_\-importe\_\-execute.php}!$fp@{\$fp}}
+\index{$fp@{\$fp}!cle_importe_execute.php@{cle\_\-importe\_\-execute.php}}
+\subsubsection[\$fp]{\setlength{\rightskip}{0pt plus 5cm}\$fp = @fopen(\$tmp,\char`\"{}r\char`\"{})}}
+\label{cle__importe__execute_8php_a5}
+
+
+\hypertarget{cle__importe__execute_8php_a7}{
+\index{cle_importe_execute.php@{cle\_\-importe\_\-execute.php}!$k@{\$k}}
+\index{$k@{\$k}!cle_importe_execute.php@{cle\_\-importe\_\-execute.php}}
+\subsubsection[\$k]{\setlength{\rightskip}{0pt plus 5cm}\$k = \$gpg $\rightarrow$ Import(\$Key\-Block)}}
+\label{cle__importe__execute_8php_a7}
+
+
+\hypertarget{cle__importe__execute_8php_a6}{
+\index{cle_importe_execute.php@{cle\_\-importe\_\-execute.php}!$KeyBlock@{\$KeyBlock}}
+\index{$KeyBlock@{\$KeyBlock}!cle_importe_execute.php@{cle\_\-importe\_\-execute.php}}
+\subsubsection[\$KeyBlock]{\setlength{\rightskip}{0pt plus 5cm}\$Key\-Block = fread (\$fp, filesize (\$tmp))}}
+\label{cle__importe__execute_8php_a6}
+
+
+\hypertarget{cle__importe__execute_8php_a1}{
+\index{cle_importe_execute.php@{cle\_\-importe\_\-execute.php}!$taille@{\$taille}}
+\index{$taille@{\$taille}!cle_importe_execute.php@{cle\_\-importe\_\-execute.php}}
+\subsubsection[\$taille]{\setlength{\rightskip}{0pt plus 5cm}\$taille = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'size'\mbox{]}}}
+\label{cle__importe__execute_8php_a1}
+
+
+\hypertarget{cle__importe__execute_8php_a2}{
+\index{cle_importe_execute.php@{cle\_\-importe\_\-execute.php}!$tmp@{\$tmp}}
+\index{$tmp@{\$tmp}!cle_importe_execute.php@{cle\_\-importe\_\-execute.php}}
+\subsubsection[\$tmp]{\setlength{\rightskip}{0pt plus 5cm}\$tmp = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'tmp\_\-name'\mbox{]}}}
+\label{cle__importe__execute_8php_a2}
+
+
+\hypertarget{cle__importe__execute_8php_a3}{
+\index{cle_importe_execute.php@{cle\_\-importe\_\-execute.php}!$type@{\$type}}
+\index{$type@{\$type}!cle_importe_execute.php@{cle\_\-importe\_\-execute.php}}
+\subsubsection[\$type]{\setlength{\rightskip}{0pt plus 5cm}\$type = \$\_\-FILES\mbox{[}'fichier'\mbox{]}\mbox{[}'type'\mbox{]}}}
+\label{cle__importe__execute_8php_a3}
+
+

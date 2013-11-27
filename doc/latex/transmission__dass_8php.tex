@@ -1,0 +1,77 @@
+\hypertarget{transmission__dass_8php}{
+\section{R\'{e}f\'{e}rence du fichier transmission\_\-dass.php}
+\label{transmission__dass_8php}\index{transmission_dass.php@{transmission\_\-dass.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{transmission__dass_8php_a3}{sendmail} (\$file)
+\item 
+\hyperlink{transmission__dass_8php_a4}{create\_\-file} (\$date, \$resultat)
+\item 
+\hyperlink{transmission__dass_8php_a5}{imprime} (\$resultat, \$date)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{transmission__dass_8php_a0}{\$d} = \$\_\-GET\mbox{[}date\mbox{]}.\char`\"{}\%\char`\"{}
+\item 
+\hyperlink{transmission__dass_8php_a1}{\$requete}
+\item 
+\hyperlink{transmission__dass_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{transmission__dass_8php_a4}{
+\index{transmission_dass.php@{transmission\_\-dass.php}!create_file@{create\_\-file}}
+\index{create_file@{create\_\-file}!transmission_dass.php@{transmission\_\-dass.php}}
+\subsubsection[create\_\-file]{\setlength{\rightskip}{0pt plus 5cm}create\_\-file (\$ {\em date}, \$ {\em resultat})}}
+\label{transmission__dass_8php_a4}
+
+
+\hypertarget{transmission__dass_8php_a5}{
+\index{transmission_dass.php@{transmission\_\-dass.php}!imprime@{imprime}}
+\index{imprime@{imprime}!transmission_dass.php@{transmission\_\-dass.php}}
+\subsubsection[imprime]{\setlength{\rightskip}{0pt plus 5cm}imprime (\$ {\em resultat}, \$ {\em date})}}
+\label{transmission__dass_8php_a5}
+
+
+\hypertarget{transmission__dass_8php_a3}{
+\index{transmission_dass.php@{transmission\_\-dass.php}!sendmail@{sendmail}}
+\index{sendmail@{sendmail}!transmission_dass.php@{transmission\_\-dass.php}}
+\subsubsection[sendmail]{\setlength{\rightskip}{0pt plus 5cm}sendmail (\$ {\em file})}}
+\label{transmission__dass_8php_a3}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{transmission__dass_8php_a0}{
+\index{transmission_dass.php@{transmission\_\-dass.php}!$d@{\$d}}
+\index{$d@{\$d}!transmission_dass.php@{transmission\_\-dass.php}}
+\subsubsection[\$d]{\setlength{\rightskip}{0pt plus 5cm}\$d = \$\_\-GET\mbox{[}date\mbox{]}.\char`\"{}\%\char`\"{}}}
+\label{transmission__dass_8php_a0}
+
+
+\hypertarget{transmission__dass_8php_a1}{
+\index{transmission_dass.php@{transmission\_\-dass.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!transmission_dass.php@{transmission\_\-dass.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{transmission__dass_8php_a1}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "SELECT date,dossier,dispo,org_nom
+                        FROM apa_tour_enregistre,organisme
+                        WHERE organisme.org_ID = apa_tour_enregistre.org_ID
+                        AND date LIKE '$d'"
+\end{verbatim}\normalsize 
+\hypertarget{transmission__dass_8php_a2}{
+\index{transmission_dass.php@{transmission\_\-dass.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!transmission_dass.php@{transmission\_\-dass.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{transmission__dass_8php_a2}
+
+

@@ -1,0 +1,64 @@
+\hypertarget{lits__fermes__voir_8php}{
+\section{R\'{e}f\'{e}rence du fichier lits\_\-fermes\_\-voir.php}
+\label{lits__fermes__voir_8php}\index{lits_fermes_voir.php@{lits\_\-fermes\_\-voir.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{lits__fermes__voir_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{lits__fermes__voir_8php_a1}{\$mot} = \char`\"{}Etat des fermetures de lits\char`\"{}
+\item 
+\hyperlink{lits__fermes__voir_8php_a2}{\$\_\-service} = \$\_\-GET\mbox{[}'\_\-service'\mbox{]}
+\item 
+\hyperlink{lits__fermes__voir_8php_a3}{\$service\_\-nom} = \$\_\-GET\mbox{[}'nom'\mbox{]}
+\item 
+\hyperlink{lits__fermes__voir_8php_a4}{\$requete} = \char`\"{}SELECT $\ast$ FROM lits\_\-fermes WHERE service\_\-ID = '\$\_\-service' ORDER BY debut\char`\"{}
+\item 
+\hyperlink{lits__fermes__voir_8php_a5}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{lits__fermes__voir_8php_a2}{
+\index{lits_fermes_voir.php@{lits\_\-fermes\_\-voir.php}!$_service@{\$\_\-service}}
+\index{$_service@{\$\_\-service}!lits_fermes_voir.php@{lits\_\-fermes\_\-voir.php}}
+\subsubsection[\$\_\-service]{\setlength{\rightskip}{0pt plus 5cm}\$\_\-service = \$\_\-GET\mbox{[}'\_\-service'\mbox{]}}}
+\label{lits__fermes__voir_8php_a2}
+
+
+\hypertarget{lits__fermes__voir_8php_a0}{
+\index{lits_fermes_voir.php@{lits\_\-fermes\_\-voir.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!lits_fermes_voir.php@{lits\_\-fermes\_\-voir.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{lits__fermes__voir_8php_a0}
+
+
+\hypertarget{lits__fermes__voir_8php_a1}{
+\index{lits_fermes_voir.php@{lits\_\-fermes\_\-voir.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!lits_fermes_voir.php@{lits\_\-fermes\_\-voir.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \char`\"{}Etat des fermetures de lits\char`\"{}}}
+\label{lits__fermes__voir_8php_a1}
+
+
+\hypertarget{lits__fermes__voir_8php_a4}{
+\index{lits_fermes_voir.php@{lits\_\-fermes\_\-voir.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!lits_fermes_voir.php@{lits\_\-fermes\_\-voir.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT $\ast$ FROM lits\_\-fermes WHERE service\_\-ID = '\$\_\-service' ORDER BY debut\char`\"{}}}
+\label{lits__fermes__voir_8php_a4}
+
+
+\hypertarget{lits__fermes__voir_8php_a5}{
+\index{lits_fermes_voir.php@{lits\_\-fermes\_\-voir.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!lits_fermes_voir.php@{lits\_\-fermes\_\-voir.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{lits__fermes__voir_8php_a5}
+
+
+\hypertarget{lits__fermes__voir_8php_a3}{
+\index{lits_fermes_voir.php@{lits\_\-fermes\_\-voir.php}!$service_nom@{\$service\_\-nom}}
+\index{$service_nom@{\$service\_\-nom}!lits_fermes_voir.php@{lits\_\-fermes\_\-voir.php}}
+\subsubsection[\$service\_\-nom]{\setlength{\rightskip}{0pt plus 5cm}\$service\_\-nom = \$\_\-GET\mbox{[}'nom'\mbox{]}}}
+\label{lits__fermes__voir_8php_a3}
+
+

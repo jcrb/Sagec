@@ -1,0 +1,64 @@
+\hypertarget{have_8php}{
+\section{R\'{e}f\'{e}rence du fichier have.php}
+\label{have_8php}\index{have.php@{have.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{have_8php_a0}{\$msg} = \char`\"{}$<$hospital\-Status$>$\char`\"{}
+\item 
+\hyperlink{have_8php_a1}{\$fp} = fopen(\char`\"{}have.xml\char`\"{}, 'w+')
+\item 
+\hyperlink{have_8php_a2}{\$doc\_\-xml\_\-vide} = domxml\_\-new\_\-xmldoc(\char`\"{}1.0\char`\"{})
+\item 
+\hyperlink{have_8php_a3}{\$ref\_\-racine} = domxml\_\-add\_\-root(\$doc\_\-xml\_\-vide, \char`\"{}element\_\-racine\char`\"{})
+\item 
+\hyperlink{have_8php_a4}{\$ref\_\-enfant} = domxml\_\-new\_\-child(\$ref\_\-racine,\char`\"{}element\_\-enfant\char`\"{}, \char`\"{}valeur du noeud\char`\"{})
+\item 
+\hyperlink{have_8php_a5}{\$ref\_\-attribut} = domxml\_\-set\_\-attribute(\$ref\_\-enfant, \char`\"{}nom\_\-attribut\char`\"{}, \char`\"{}valeur de l'attribut\char`\"{})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{have_8php_a2}{
+\index{have.php@{have.php}!$doc_xml_vide@{\$doc\_\-xml\_\-vide}}
+\index{$doc_xml_vide@{\$doc\_\-xml\_\-vide}!have.php@{have.php}}
+\subsubsection[\$doc\_\-xml\_\-vide]{\setlength{\rightskip}{0pt plus 5cm}\$doc\_\-xml\_\-vide = domxml\_\-new\_\-xmldoc(\char`\"{}1.0\char`\"{})}}
+\label{have_8php_a2}
+
+
+\hypertarget{have_8php_a1}{
+\index{have.php@{have.php}!$fp@{\$fp}}
+\index{$fp@{\$fp}!have.php@{have.php}}
+\subsubsection[\$fp]{\setlength{\rightskip}{0pt plus 5cm}\$fp = fopen(\char`\"{}have.xml\char`\"{}, 'w+')}}
+\label{have_8php_a1}
+
+
+\hypertarget{have_8php_a0}{
+\index{have.php@{have.php}!$msg@{\$msg}}
+\index{$msg@{\$msg}!have.php@{have.php}}
+\subsubsection[\$msg]{\setlength{\rightskip}{0pt plus 5cm}\$msg = \char`\"{}$<$hospital\-Status$>$\char`\"{}}}
+\label{have_8php_a0}
+
+
+\hypertarget{have_8php_a5}{
+\index{have.php@{have.php}!$ref_attribut@{\$ref\_\-attribut}}
+\index{$ref_attribut@{\$ref\_\-attribut}!have.php@{have.php}}
+\subsubsection[\$ref\_\-attribut]{\setlength{\rightskip}{0pt plus 5cm}\$ref\_\-attribut = domxml\_\-set\_\-attribute(\$ref\_\-enfant, \char`\"{}nom\_\-attribut\char`\"{}, \char`\"{}valeur de l'attribut\char`\"{})}}
+\label{have_8php_a5}
+
+
+\hypertarget{have_8php_a4}{
+\index{have.php@{have.php}!$ref_enfant@{\$ref\_\-enfant}}
+\index{$ref_enfant@{\$ref\_\-enfant}!have.php@{have.php}}
+\subsubsection[\$ref\_\-enfant]{\setlength{\rightskip}{0pt plus 5cm}\$ref\_\-enfant = domxml\_\-new\_\-child(\$ref\_\-racine,\char`\"{}element\_\-enfant\char`\"{}, \char`\"{}valeur du noeud\char`\"{})}}
+\label{have_8php_a4}
+
+
+\hypertarget{have_8php_a3}{
+\index{have.php@{have.php}!$ref_racine@{\$ref\_\-racine}}
+\index{$ref_racine@{\$ref\_\-racine}!have.php@{have.php}}
+\subsubsection[\$ref\_\-racine]{\setlength{\rightskip}{0pt plus 5cm}\$ref\_\-racine = domxml\_\-add\_\-root(\$doc\_\-xml\_\-vide, \char`\"{}element\_\-racine\char`\"{})}}
+\label{have_8php_a3}
+
+

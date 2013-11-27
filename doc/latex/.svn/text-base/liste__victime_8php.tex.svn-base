@@ -1,0 +1,140 @@
+\hypertarget{liste__victime_8php}{
+\section{R\'{e}f\'{e}rence du fichier liste\_\-victime.php}
+\label{liste__victime_8php}\index{liste_victime.php@{liste\_\-victime.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{liste__victime_8php_a12}{cellule} (\$mot, \$langue)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{liste__victime_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{liste__victime_8php_a1}{\$event} = evenement\_\-courant(\$connexion,\$\_\-SESSION\mbox{[}evenement\mbox{]})
+\item 
+\hyperlink{liste__victime_8php_a2}{\$tri} = \$\_\-GET\mbox{[}'tri'\mbox{]}
+\item 
+\hyperlink{liste__victime_8php_a3}{\$requete}
+\item 
+\hyperlink{liste__victime_8php_a4}{\$\_\-style} = \char`\"{}A2\char`\"{}
+\item 
+\hyperlink{liste__victime_8php_a5}{\$mot} = Str\-To\-Upper(\$string\_\-lang\mbox{[}'\hyperlink{pma__connect_8php_a0}{NOM}'\mbox{]}\mbox{[}\$langue\mbox{]})
+\item 
+\hyperlink{liste__victime_8php_a6}{\$identifiant} = \$victime $\rightarrow$ no\_\-ordre
+\item 
+\hyperlink{liste__victime_8php_a7}{\$sexe} = \$item\_\-sexe\mbox{[}\$victime $\rightarrow$ sexe\mbox{]}
+\item 
+\hyperlink{liste__victime_8php_a8}{\$resultat2} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{liste__victime_8php_a9}{\$localisation} = Ligne\-Suivante(\$resultat2)
+\item 
+\hyperlink{liste__victime_8php_a10}{\$hopital} = Cherche\-Nom\-Hopital(\$victime $\rightarrow$ Hop\_\-ID,\$connexion)
+\item 
+\hyperlink{liste__victime_8php_a11}{\$service} = Cherche\-Service(\$victime $\rightarrow$ service\_\-ID,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{liste__victime_8php_a12}{
+\index{liste_victime.php@{liste\_\-victime.php}!cellule@{cellule}}
+\index{cellule@{cellule}!liste_victime.php@{liste\_\-victime.php}}
+\subsubsection[cellule]{\setlength{\rightskip}{0pt plus 5cm}cellule (\$ {\em mot}, \$ {\em langue})}}
+\label{liste__victime_8php_a12}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{liste__victime_8php_a4}{
+\index{liste_victime.php@{liste\_\-victime.php}!$_style@{\$\_\-style}}
+\index{$_style@{\$\_\-style}!liste_victime.php@{liste\_\-victime.php}}
+\subsubsection[\$\_\-style]{\setlength{\rightskip}{0pt plus 5cm}\$\_\-style = \char`\"{}A2\char`\"{}}}
+\label{liste__victime_8php_a4}
+
+
+\hypertarget{liste__victime_8php_a0}{
+\index{liste_victime.php@{liste\_\-victime.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!liste_victime.php@{liste\_\-victime.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{liste__victime_8php_a0}
+
+
+\hypertarget{liste__victime_8php_a1}{
+\index{liste_victime.php@{liste\_\-victime.php}!$event@{\$event}}
+\index{$event@{\$event}!liste_victime.php@{liste\_\-victime.php}}
+\subsubsection[\$event]{\setlength{\rightskip}{0pt plus 5cm}\$event = evenement\_\-courant(\$connexion,\$\_\-SESSION\mbox{[}evenement\mbox{]})}}
+\label{liste__victime_8php_a1}
+
+
+\hypertarget{liste__victime_8php_a10}{
+\index{liste_victime.php@{liste\_\-victime.php}!$hopital@{\$hopital}}
+\index{$hopital@{\$hopital}!liste_victime.php@{liste\_\-victime.php}}
+\subsubsection[\$hopital]{\setlength{\rightskip}{0pt plus 5cm}\$hopital = Cherche\-Nom\-Hopital(\$victime $\rightarrow$ Hop\_\-ID,\$connexion)}}
+\label{liste__victime_8php_a10}
+
+
+\hypertarget{liste__victime_8php_a6}{
+\index{liste_victime.php@{liste\_\-victime.php}!$identifiant@{\$identifiant}}
+\index{$identifiant@{\$identifiant}!liste_victime.php@{liste\_\-victime.php}}
+\subsubsection[\$identifiant]{\setlength{\rightskip}{0pt plus 5cm}\$identifiant = \$victime $\rightarrow$ no\_\-ordre}}
+\label{liste__victime_8php_a6}
+
+
+\hypertarget{liste__victime_8php_a9}{
+\index{liste_victime.php@{liste\_\-victime.php}!$localisation@{\$localisation}}
+\index{$localisation@{\$localisation}!liste_victime.php@{liste\_\-victime.php}}
+\subsubsection[\$localisation]{\setlength{\rightskip}{0pt plus 5cm}\$localisation = Ligne\-Suivante(\$resultat2)}}
+\label{liste__victime_8php_a9}
+
+
+\hypertarget{liste__victime_8php_a5}{
+\index{liste_victime.php@{liste\_\-victime.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!liste_victime.php@{liste\_\-victime.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = Str\-To\-Upper(\$string\_\-lang\mbox{[}'\hyperlink{pma__connect_8php_a0}{NOM}'\mbox{]}\mbox{[}\$langue\mbox{]})}}
+\label{liste__victime_8php_a5}
+
+
+\hypertarget{liste__victime_8php_a3}{
+\index{liste_victime.php@{liste\_\-victime.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!liste_victime.php@{liste\_\-victime.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{liste__victime_8php_a3}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}"SELECT victime_ID,nom,prenom,no_ordre,sexe,age1,age2,gravite,localisation_ID,Hop_ID,service_ID,conta_N,conta_B,conta_C,gravite_couleur,gravite_nom
+        FROM victime,gravite
+        WHERE gravite = gravite_ID
+        "
+\end{verbatim}\normalsize 
+\hypertarget{liste__victime_8php_a8}{
+\index{liste_victime.php@{liste\_\-victime.php}!$resultat2@{\$resultat2}}
+\index{$resultat2@{\$resultat2}!liste_victime.php@{liste\_\-victime.php}}
+\subsubsection[\$resultat2]{\setlength{\rightskip}{0pt plus 5cm}\$resultat2 = Exec\-Requete(\$requete,\$connexion)}}
+\label{liste__victime_8php_a8}
+
+
+\hypertarget{liste__victime_8php_a11}{
+\index{liste_victime.php@{liste\_\-victime.php}!$service@{\$service}}
+\index{$service@{\$service}!liste_victime.php@{liste\_\-victime.php}}
+\subsubsection[\$service]{\setlength{\rightskip}{0pt plus 5cm}\$service = Cherche\-Service(\$victime $\rightarrow$ service\_\-ID,\$connexion)}}
+\label{liste__victime_8php_a11}
+
+
+\hypertarget{liste__victime_8php_a7}{
+\index{liste_victime.php@{liste\_\-victime.php}!$sexe@{\$sexe}}
+\index{$sexe@{\$sexe}!liste_victime.php@{liste\_\-victime.php}}
+\subsubsection[\$sexe]{\setlength{\rightskip}{0pt plus 5cm}\$sexe = \$item\_\-sexe\mbox{[}\$victime $\rightarrow$ sexe\mbox{]}}}
+\label{liste__victime_8php_a7}
+
+
+\hypertarget{liste__victime_8php_a2}{
+\index{liste_victime.php@{liste\_\-victime.php}!$tri@{\$tri}}
+\index{$tri@{\$tri}!liste_victime.php@{liste\_\-victime.php}}
+\subsubsection[\$tri]{\setlength{\rightskip}{0pt plus 5cm}\$tri = \$\_\-GET\mbox{[}'tri'\mbox{]}}}
+\label{liste__victime_8php_a2}
+
+

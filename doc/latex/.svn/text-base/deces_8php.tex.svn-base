@@ -1,0 +1,37 @@
+\hypertarget{deces_8php}{
+\section{R\'{e}f\'{e}rence du fichier deces.php}
+\label{deces_8php}\index{deces.php@{deces.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{deces_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{deces_8php_a1}{\$val} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{deces_8php_a2}{\$today} = date(\char`\"{}Y/m/j\char`\"{})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{deces_8php_a0}{
+\index{deces.php@{deces.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!deces.php@{deces.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{deces_8php_a0}
+
+
+\hypertarget{deces_8php_a2}{
+\index{deces.php@{deces.php}!$today@{\$today}}
+\index{$today@{\$today}!deces.php@{deces.php}}
+\subsubsection[\$today]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$today = date(\char`\"{}Y/m/j\char`\"{})}}
+\label{deces_8php_a2}
+
+
+\hypertarget{deces_8php_a1}{
+\index{deces.php@{deces.php}!$val@{\$val}}
+\index{$val@{\$val}!deces.php@{deces.php}}
+\subsubsection[\$val]{\setlength{\rightskip}{0pt plus 5cm}\$val = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{deces_8php_a1}
+
+

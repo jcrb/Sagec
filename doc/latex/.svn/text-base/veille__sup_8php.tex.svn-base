@@ -1,0 +1,46 @@
+\hypertarget{veille__sup_8php}{
+\section{R\'{e}f\'{e}rence du fichier veille\_\-sup.php}
+\label{veille__sup_8php}\index{veille_sup.php@{veille\_\-sup.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{veille__sup_8php_a0}{\$a} = \char`\"{}$<$a href=$\backslash$\char`\"{}../sagec67.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-parent$\backslash$\char`\"{}$>$retour$<$/a$>$\char`\"{}
+\item 
+\hyperlink{veille__sup_8php_a1}{\$b} = \char`\"{}$<$a href=$\backslash$\char`\"{}$\backslash$\char`\"{}$>$test 2$<$/a$>$\char`\"{}
+\item 
+\hyperlink{veille__sup_8php_a2}{\$c} = \char`\"{}$<$a href=$\backslash$\char`\"{}$\backslash$\char`\"{}$>$test 3$<$/a$>$\char`\"{}
+\item 
+\hyperlink{veille__sup_8php_a3}{\$menu} = \$a.\char`\"{} $|$ \char`\"{}.\$b.\char`\"{} $|$ \char`\"{}.\$c
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{veille__sup_8php_a0}{
+\index{veille_sup.php@{veille\_\-sup.php}!$a@{\$a}}
+\index{$a@{\$a}!veille_sup.php@{veille\_\-sup.php}}
+\subsubsection[\$a]{\setlength{\rightskip}{0pt plus 5cm}\$a = \char`\"{}$<$a href=$\backslash$\char`\"{}../sagec67.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-parent$\backslash$\char`\"{}$>$retour$<$/a$>$\char`\"{}}}
+\label{veille__sup_8php_a0}
+
+
+\hypertarget{veille__sup_8php_a1}{
+\index{veille_sup.php@{veille\_\-sup.php}!$b@{\$b}}
+\index{$b@{\$b}!veille_sup.php@{veille\_\-sup.php}}
+\subsubsection[\$b]{\setlength{\rightskip}{0pt plus 5cm}\$b = \char`\"{}$<$a href=$\backslash$\char`\"{}$\backslash$\char`\"{}$>$test 2$<$/a$>$\char`\"{}}}
+\label{veille__sup_8php_a1}
+
+
+\hypertarget{veille__sup_8php_a2}{
+\index{veille_sup.php@{veille\_\-sup.php}!$c@{\$c}}
+\index{$c@{\$c}!veille_sup.php@{veille\_\-sup.php}}
+\subsubsection[\$c]{\setlength{\rightskip}{0pt plus 5cm}\$c = \char`\"{}$<$a href=$\backslash$\char`\"{}$\backslash$\char`\"{}$>$test 3$<$/a$>$\char`\"{}}}
+\label{veille__sup_8php_a2}
+
+
+\hypertarget{veille__sup_8php_a3}{
+\index{veille_sup.php@{veille\_\-sup.php}!$menu@{\$menu}}
+\index{$menu@{\$menu}!veille_sup.php@{veille\_\-sup.php}}
+\subsubsection[\$menu]{\setlength{\rightskip}{0pt plus 5cm}\$menu = \$a.\char`\"{} $|$ \char`\"{}.\$b.\char`\"{} $|$ \char`\"{}.\$c}}
+\label{veille__sup_8php_a3}
+
+

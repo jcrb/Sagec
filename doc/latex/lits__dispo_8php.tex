@@ -1,0 +1,133 @@
+\hypertarget{lits__dispo_8php}{
+\section{R\'{e}f\'{e}rence du fichier lits\_\-dispo.php}
+\label{lits__dispo_8php}\index{lits_dispo.php@{lits\_\-dispo.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{lits__dispo_8php_a8}{heure\_\-limite} (\$jour, \$heure)
+\item 
+\hyperlink{lits__dispo_8php_a9}{lits\_\-dispo\_\-par\_\-heure} (\$resultat)
+\item 
+\hyperlink{lits__dispo_8php_a10}{calcule\_\-lits\_\-disponibles2} (\$resultat)
+\item 
+\hyperlink{lits__dispo_8php_a11}{calcule\_\-lits\_\-disponibles} (\$resultat)
+\item 
+\hyperlink{lits__dispo_8php_a12}{calculs} (\$specialite, \$date1, \$type=0)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{lits__dispo_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+global \hyperlink{lits__dispo_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+global \hyperlink{lits__dispo_8php_a2}{\$DEBUG} = false
+\item 
+\hyperlink{lits__dispo_8php_a3}{\$date} = \$\_\-GET\mbox{[}'date'\mbox{]}
+\item 
+\hyperlink{lits__dispo_8php_a4}{\$date1} = f\-Datetime2unix(\$date)
+\item 
+\hyperlink{lits__dispo_8php_a5}{\$type\_\-jour} = date(\char`\"{}w\char`\"{},\$date1)
+\item 
+\hyperlink{lits__dispo_8php_a6}{\$date\_\-point} = u\-Date2Frenchdatetime(heure\_\-limite(\$date1,16))
+\item 
+\hyperlink{lits__dispo_8php_a7}{\$calcul} = intval(0.5+100$\ast$\$total\_\-litsmed\_\-installes2/\$total\_\-litsmed\_\-installes)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{lits__dispo_8php_a11}{
+\index{lits_dispo.php@{lits\_\-dispo.php}!calcule_lits_disponibles@{calcule\_\-lits\_\-disponibles}}
+\index{calcule_lits_disponibles@{calcule\_\-lits\_\-disponibles}!lits_dispo.php@{lits\_\-dispo.php}}
+\subsubsection[calcule\_\-lits\_\-disponibles]{\setlength{\rightskip}{0pt plus 5cm}calcule\_\-lits\_\-disponibles (\$ {\em resultat})}}
+\label{lits__dispo_8php_a11}
+
+
+/$\ast$ calcule les lits dispobibles sur les 3 derniers jours \hypertarget{lits__dispo_8php_a10}{
+\index{lits_dispo.php@{lits\_\-dispo.php}!calcule_lits_disponibles2@{calcule\_\-lits\_\-disponibles2}}
+\index{calcule_lits_disponibles2@{calcule\_\-lits\_\-disponibles2}!lits_dispo.php@{lits\_\-dispo.php}}
+\subsubsection[calcule\_\-lits\_\-disponibles2]{\setlength{\rightskip}{0pt plus 5cm}calcule\_\-lits\_\-disponibles2 (\$ {\em resultat})}}
+\label{lits__dispo_8php_a10}
+
+
+/$\ast$ calcule les lits dispobibles sur les 3 derniers jours, nouvelle version /$\ast$ \$resultat contient la liste des des services retenus class\'{e}s par service et pour caque service par date croisssante \hypertarget{lits__dispo_8php_a12}{
+\index{lits_dispo.php@{lits\_\-dispo.php}!calculs@{calculs}}
+\index{calculs@{calculs}!lits_dispo.php@{lits\_\-dispo.php}}
+\subsubsection[calculs]{\setlength{\rightskip}{0pt plus 5cm}calculs (\$ {\em specialite}, \$ {\em date1}, \$ {\em type} = {\tt 0})}}
+\label{lits__dispo_8php_a12}
+
+
+\hypertarget{lits__dispo_8php_a8}{
+\index{lits_dispo.php@{lits\_\-dispo.php}!heure_limite@{heure\_\-limite}}
+\index{heure_limite@{heure\_\-limite}!lits_dispo.php@{lits\_\-dispo.php}}
+\subsubsection[heure\_\-limite]{\setlength{\rightskip}{0pt plus 5cm}heure\_\-limite (\$ {\em jour}, \$ {\em heure})}}
+\label{lits__dispo_8php_a8}
+
+
+/$\ast$ \hyperlink{lits__dispo_8php_a8}{heure\_\-limite()} renvoie soius la forme d'une date unix la valeur correspondant \`{a} un jour donn\'{e} \`{a} une heure donn\'{e}e /$\ast$ \$jour un timestamp unix quelconque /$\ast$ \$heure une heure entre 0 et 23 heures \hypertarget{lits__dispo_8php_a9}{
+\index{lits_dispo.php@{lits\_\-dispo.php}!lits_dispo_par_heure@{lits\_\-dispo\_\-par\_\-heure}}
+\index{lits_dispo_par_heure@{lits\_\-dispo\_\-par\_\-heure}!lits_dispo.php@{lits\_\-dispo.php}}
+\subsubsection[lits\_\-dispo\_\-par\_\-heure]{\setlength{\rightskip}{0pt plus 5cm}lits\_\-dispo\_\-par\_\-heure (\$ {\em resultat})}}
+\label{lits__dispo_8php_a9}
+
+
+/$\ast$ cxalcule les lists disponibles sur les 3 derniers jours pour une sp\'{e}cialit\'{e} /$\ast$ les donn\'{e}es n\'{e}cessaires se trouvent dans \$resultat /$\ast$ peremt notamment de tracer une courbe 
+
+\subsection{Documentation des variables}
+\hypertarget{lits__dispo_8php_a7}{
+\index{lits_dispo.php@{lits\_\-dispo.php}!$calcul@{\$calcul}}
+\index{$calcul@{\$calcul}!lits_dispo.php@{lits\_\-dispo.php}}
+\subsubsection[\$calcul]{\setlength{\rightskip}{0pt plus 5cm}\$calcul = intval(0.5+100$\ast$\$total\_\-litsmed\_\-installes2/\$total\_\-litsmed\_\-installes)}}
+\label{lits__dispo_8php_a7}
+
+
+\hypertarget{lits__dispo_8php_a1}{
+\index{lits_dispo.php@{lits\_\-dispo.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!lits_dispo.php@{lits\_\-dispo.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{lits__dispo_8php_a1}
+
+
+\hypertarget{lits__dispo_8php_a3}{
+\index{lits_dispo.php@{lits\_\-dispo.php}!$date@{\$date}}
+\index{$date@{\$date}!lits_dispo.php@{lits\_\-dispo.php}}
+\subsubsection[\$date]{\setlength{\rightskip}{0pt plus 5cm}\$date = \$\_\-GET\mbox{[}'date'\mbox{]}}}
+\label{lits__dispo_8php_a3}
+
+
+\hypertarget{lits__dispo_8php_a4}{
+\index{lits_dispo.php@{lits\_\-dispo.php}!$date1@{\$date1}}
+\index{$date1@{\$date1}!lits_dispo.php@{lits\_\-dispo.php}}
+\subsubsection[\$date1]{\setlength{\rightskip}{0pt plus 5cm}\$date1 = f\-Datetime2unix(\$date)}}
+\label{lits__dispo_8php_a4}
+
+
+\hypertarget{lits__dispo_8php_a6}{
+\index{lits_dispo.php@{lits\_\-dispo.php}!$date_point@{\$date\_\-point}}
+\index{$date_point@{\$date\_\-point}!lits_dispo.php@{lits\_\-dispo.php}}
+\subsubsection[\$date\_\-point]{\setlength{\rightskip}{0pt plus 5cm}\$date\_\-point = u\-Date2Frenchdatetime(heure\_\-limite(\$date1,16))}}
+\label{lits__dispo_8php_a6}
+
+
+\hypertarget{lits__dispo_8php_a2}{
+\index{lits_dispo.php@{lits\_\-dispo.php}!$DEBUG@{\$DEBUG}}
+\index{$DEBUG@{\$DEBUG}!lits_dispo.php@{lits\_\-dispo.php}}
+\subsubsection[\$DEBUG]{\setlength{\rightskip}{0pt plus 5cm}\$DEBUG = false}}
+\label{lits__dispo_8php_a2}
+
+
+\hypertarget{lits__dispo_8php_a0}{
+\index{lits_dispo.php@{lits\_\-dispo.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!lits_dispo.php@{lits\_\-dispo.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{lits__dispo_8php_a0}
+
+
+\hypertarget{lits__dispo_8php_a5}{
+\index{lits_dispo.php@{lits\_\-dispo.php}!$type_jour@{\$type\_\-jour}}
+\index{$type_jour@{\$type\_\-jour}!lits_dispo.php@{lits\_\-dispo.php}}
+\subsubsection[\$type\_\-jour]{\setlength{\rightskip}{0pt plus 5cm}\$type\_\-jour = date(\char`\"{}w\char`\"{},\$date1)}}
+\label{lits__dispo_8php_a5}
+
+

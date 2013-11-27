@@ -1,0 +1,72 @@
+\hypertarget{liste__victimes_8php}{
+\section{R\'{e}f\'{e}rence du fichier liste\_\-victimes.php}
+\label{liste__victimes_8php}\index{liste_victimes.php@{liste\_\-victimes.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{liste__victimes_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{liste__victimes_8php_a1}{\$member\_\-id} = \$\_\-SESSION\mbox{[}'member\_\-id'\mbox{]}
+\item 
+\hyperlink{liste__victimes_8php_a2}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{liste__victimes_8php_a3}{\$requete}
+\item 
+\hyperlink{liste__victimes_8php_a4}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{liste__victimes_8php_a5}{\$age} = \$rub\mbox{[}'age1'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{liste__victimes_8php_a5}{
+\index{liste_victimes.php@{liste\_\-victimes.php}!$age@{\$age}}
+\index{$age@{\$age}!liste_victimes.php@{liste\_\-victimes.php}}
+\subsubsection[\$age]{\setlength{\rightskip}{0pt plus 5cm}\$age = \$rub\mbox{[}'age1'\mbox{]}}}
+\label{liste__victimes_8php_a5}
+
+
+\hypertarget{liste__victimes_8php_a2}{
+\index{liste_victimes.php@{liste\_\-victimes.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!liste_victimes.php@{liste\_\-victimes.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{liste__victimes_8php_a2}
+
+
+\hypertarget{liste__victimes_8php_a0}{
+\index{liste_victimes.php@{liste\_\-victimes.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!liste_victimes.php@{liste\_\-victimes.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{liste__victimes_8php_a0}
+
+
+\hypertarget{liste__victimes_8php_a1}{
+\index{liste_victimes.php@{liste\_\-victimes.php}!$member_id@{\$member\_\-id}}
+\index{$member_id@{\$member\_\-id}!liste_victimes.php@{liste\_\-victimes.php}}
+\subsubsection[\$member\_\-id]{\setlength{\rightskip}{0pt plus 5cm}\$member\_\-id = \$\_\-SESSION\mbox{[}'member\_\-id'\mbox{]}}}
+\label{liste__victimes_8php_a1}
+
+
+\hypertarget{liste__victimes_8php_a3}{
+\index{liste_victimes.php@{liste\_\-victimes.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!liste_victimes.php@{liste\_\-victimes.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{liste__victimes_8php_a3}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "SELECT no_ordre,nom, prenom,gravite_nom,gravite_couleur,age1,age2,signes,lesions,traitement,photo
+                        FROM victime, gravite
+                        WHERE service_ID = '$_SESSION[service]'
+                        AND gravite.gravite_ID = victime.gravite
+                        "
+\end{verbatim}\normalsize 
+\hypertarget{liste__victimes_8php_a4}{
+\index{liste_victimes.php@{liste\_\-victimes.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!liste_victimes.php@{liste\_\-victimes.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{liste__victimes_8php_a4}
+
+

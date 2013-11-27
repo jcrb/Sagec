@@ -1,0 +1,625 @@
+\hypertarget{utilitairesHTML_8php}{
+\section{R\'{e}f\'{e}rence du fichier utilitaires\-HTML.php}
+\label{utilitairesHTML_8php}\index{utilitairesHTML.php@{utilitairesHTML.php}}
+}
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespaceutilitairesHTML_1_1php}{utilitaires\-HTML::php}
+\end{CompactItemize}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{utilitairesHTML_8php_a0}{date\_\-allemande} ()
+\item 
+\hyperlink{utilitairesHTML_8php_a1}{Date\-Heure} (\$langue=\char`\"{}FR\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a2}{ma\-Date} (\$d, \$param=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a3}{Num\-Tel} (\$tel)
+\item 
+\hyperlink{utilitairesHTML_8php_a4}{Select} (\$titre, \$liste\_\-valeurs, \$item\_\-select, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a5}{Recupere\_\-Enum} (\$ma\_\-table, \$ma\_\-colonne, \$item\_\-select, \$connexion)
+\item 
+\hyperlink{utilitairesHTML_8php_a6}{select\_\-hopital} (\$connexion, \$item\_\-select, \$langue, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a7}{select\_\-hopital2} (\$connexion, \$item\_\-select, \$langue, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a8}{Cherche\-Nom\-Hopital} (\$id, \$connexion)
+\item 
+\hyperlink{utilitairesHTML_8php_a9}{select\_\-samu} (\$connexion, \$item\_\-select)
+\item 
+\hyperlink{utilitairesHTML_8php_a10}{select\_\-service} (\$connexion, \$organisme, \$item\_\-select)
+\item 
+\hyperlink{utilitairesHTML_8php_a11}{select\_\-service2} (\$connexion, \$hopital, \$item\_\-select)
+\item 
+\hyperlink{utilitairesHTML_8php_a12}{Select\-Tous\-Service} (\$connexion, \$item\_\-select, \$langue, \$multiple=0)
+\item 
+\hyperlink{utilitairesHTML_8php_a13}{Select\-Type\-Service} (\$connexion, \$item\_\-select, \$langue, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a14}{Cherche\-Type\-Service} (\$id, \$connexion)
+\item 
+\hyperlink{utilitairesHTML_8php_a15}{Cherche\-Service} (\$id, \$connexion)
+\item 
+\hyperlink{utilitairesHTML_8php_a16}{Table\_\-Service} (\$connexion, \$langue)
+\item 
+\hyperlink{utilitairesHTML_8php_a17}{MAZ\_\-Lits\_\-cata} (\$connexion)
+\item 
+\hyperlink{utilitairesHTML_8php_a18}{MAJ\_\-Lits\_\-cata} (\$connexion)
+\item 
+\hyperlink{utilitairesHTML_8php_a19}{Table\_\-Lits} (\$connexion, \$hop\-ID=\char`\"{}0\char`\"{}, \$type\_\-service=\char`\"{}0\char`\"{}, \$langue, \$back=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a20}{explode\_\-dpt} (\$dpt)
+\item 
+\hyperlink{utilitairesHTML_8php_a21}{lits2\_\-cree\-Requete} (\$connexion, \$org\-ID=\char`\"{}0\char`\"{}, \$type\_\-service=\char`\"{}0\char`\"{}, \$dpt=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a22}{Table\_\-Lits2} (\$connexion, \$org\-ID=\char`\"{}0\char`\"{}, \$type\_\-service=\char`\"{}0\char`\"{}, \$langue, \$back=\char`\"{}\char`\"{}, \$dpt=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a23}{Cherche\-Lit} (\$id\_\-service, \$connexion)
+\item 
+\hyperlink{utilitairesHTML_8php_a24}{Table\_\-Vecteurs} (\$connexion, \$type=\char`\"{}\char`\"{}, \$type\_\-v=\char`\"{}\char`\"{}, \$engage=\char`\"{}\char`\"{}, \$langue, \$back=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a25}{Cherche\-Vecteur} (\$id, \$connexion)
+\item 
+\hyperlink{utilitairesHTML_8php_a26}{Select\-Tous\-Vecteur} (\$connexion, \$item\_\-select)
+\item 
+\hyperlink{utilitairesHTML_8php_a27}{Select\-Vecteur\-Engages} (\$connexion, \$item\_\-select)
+\item 
+\hyperlink{utilitairesHTML_8php_a28}{Select\-Org\-Vecteur} (\$connexion, \$org\_\-id)
+\item 
+\hyperlink{utilitairesHTML_8php_a29}{Select\-Etat\-Vecteur} (\$connexion, \$item\_\-select, \$langue)
+\item 
+\hyperlink{utilitairesHTML_8php_a30}{Cherche\-Type\-Etat\-Vecteur} (\$id, \$connexion)
+\item 
+\hyperlink{utilitairesHTML_8php_a31}{Cherche\-Nom\-Type\-Etat\-Vecteur} (\$id, \$connexion, \$langue)
+\item 
+\hyperlink{utilitairesHTML_8php_a32}{Cherche\-Type\-Vecteur} (\$id, \$connexion)
+\item 
+\hyperlink{utilitairesHTML_8php_a33}{Select\-Type\-Vecteur} (\$connexion, \$item\_\-select, \$langue)
+\item 
+\hyperlink{utilitairesHTML_8php_a34}{Select\-Type\-Organisme} (\$connexion, \$item\_\-select, \$langue)
+\item 
+\hyperlink{utilitairesHTML_8php_a35}{Select\-Organisme} (\$connexion, \$item\_\-select, \$langue, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a36}{Cherche\-Organisme} (\$id, \$connexion)
+\item 
+\hyperlink{utilitairesHTML_8php_a37}{Get\-Organisme\_\-nom} (\$connexion, \$item\_\-select)
+\item 
+\hyperlink{utilitairesHTML_8php_a38}{Select\-Metier} (\$connexion, \$item\_\-select, \$langue)
+\item 
+\hyperlink{utilitairesHTML_8php_a39}{Select\-Localisation} (\$connexion, \$item\_\-select, \$langue)
+\item 
+\hyperlink{utilitairesHTML_8php_a40}{Select\-Civilite} (\$connexion, \$item\_\-select, \$short, \$langue=\char`\"{}FR\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a41}{select\_\-commune} (\$connexion, \$item\_\-select, \$langue, \$change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a42}{get\_\-carac\_\-commune} (\$connexion, \$ID\_\-commune)
+\item 
+\hyperlink{utilitairesHTML_8php_a43}{get\_\-smur} (\$connexion, \$secteur\_\-smur)
+\item 
+\hyperlink{utilitairesHTML_8php_a44}{est\_\-apa\_\-disponible} (\$connexion, \$ID\_\-APA)
+\item 
+\hyperlink{utilitairesHTML_8php_a45}{apa\_\-du\_\-secteur} (\$connexion, \$ID\_\-Secteur)
+\item 
+\hyperlink{utilitairesHTML_8php_a46}{liste\_\-apa\_\-du\_\-secteur} (\$connexion, \$ID\_\-Secteur, \$item\_\-select=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a47}{est\_\-secteur\_\-disponible} (\$connexion, \$ID\_\-Secteur)
+\item 
+\hyperlink{utilitairesHTML_8php_a48}{Select\-Intervenant} (\$connexion, \$item\_\-select, \$langue)
+\item 
+\hyperlink{utilitairesHTML_8php_a49}{Cherche\-Intervenant} (\$id, \$connexion)
+\item 
+\hyperlink{utilitairesHTML_8php_a50}{Select\-Type\-Intervenant} (\$connexion, \$item\_\-select, \$langue)
+\item 
+\hyperlink{utilitairesHTML_8php_a51}{Table\_\-Intervenants} (\$connexion, \$type=\char`\"{}\char`\"{}, \$organisme=\char`\"{}\char`\"{}, \$alerte=\char`\"{}\char`\"{}, \$langue)
+\item 
+\hyperlink{utilitairesHTML_8php_a52}{Select\-Secteur} (\$connexion, \$item\_\-select)
+\item 
+\hyperlink{utilitairesHTML_8php_a53}{Liste\_\-des\_\-communes} (\$connexion, \$item\_\-select)
+\item 
+\hyperlink{utilitairesHTML_8php_a54}{select\_\-medicalisation} (\$connexion, \$item\_\-select, \$langue, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a55}{select\_\-contamination} (\$connexion, \$item\_\-select, \$langue, \$name, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a56}{select\_\-gravite} (\$connexion, \$item\_\-select, \$langue, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a57}{select\_\-ville} (\$connexion, \$item\_\-select, \$langue, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a58}{select\_\-ville2} (\$connexion, \$item\_\-select, \$langue, \$on\-Change=\char`\"{}\char`\"{}, \$name=\char`\"{}id\_\-ville\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a59}{select\_\-zone} (\$connexion, \$item\_\-select, \$langue, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a60}{select\_\-region} (\$connexion, \$item\_\-select, \$langue, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a61}{select\_\-pays} (\$connexion, \$item\_\-select, \$langue, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a62}{select\_\-type\_\-etablissement} (\$connexion, \$item\_\-select, \$langue, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a63}{select\_\-territoire} (\$connexion, \$organisme, \$langue, \$change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a64}{select\_\-specialite} (\$connexion, \$item\_\-select, \$langue, \$change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitairesHTML_8php_a65}{evenement\_\-courant} (\$connexion, \$evenement\_\-ID)
+\item 
+\hyperlink{utilitairesHTML_8php_a66}{Select\-Departement} (\$connexion, \$item\_\-select, \$langue, \$multiple=0)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{utilitairesHTML_8php_a45}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!apa_du_secteur@{apa\_\-du\_\-secteur}}
+\index{apa_du_secteur@{apa\_\-du\_\-secteur}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[apa\_\-du\_\-secteur]{\setlength{\rightskip}{0pt plus 5cm}apa\_\-du\_\-secteur (\$ {\em connexion}, \$ {\em ID\_\-Secteur})}}
+\label{utilitairesHTML_8php_a45}
+
+
+\hypertarget{utilitairesHTML_8php_a49}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!ChercheIntervenant@{ChercheIntervenant}}
+\index{ChercheIntervenant@{ChercheIntervenant}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[ChercheIntervenant]{\setlength{\rightskip}{0pt plus 5cm}Cherche\-Intervenant (\$ {\em id}, \$ {\em connexion})}}
+\label{utilitairesHTML_8php_a49}
+
+
+\hypertarget{utilitairesHTML_8php_a23}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!ChercheLit@{ChercheLit}}
+\index{ChercheLit@{ChercheLit}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[ChercheLit]{\setlength{\rightskip}{0pt plus 5cm}Cherche\-Lit (\$ {\em id\_\-service}, \$ {\em connexion})}}
+\label{utilitairesHTML_8php_a23}
+
+
+\hypertarget{utilitairesHTML_8php_a8}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!ChercheNomHopital@{ChercheNomHopital}}
+\index{ChercheNomHopital@{ChercheNomHopital}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[ChercheNomHopital]{\setlength{\rightskip}{0pt plus 5cm}Cherche\-Nom\-Hopital (\$ {\em id}, \$ {\em connexion})}}
+\label{utilitairesHTML_8php_a8}
+
+
+\hypertarget{utilitairesHTML_8php_a31}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!ChercheNomTypeEtatVecteur@{ChercheNomTypeEtatVecteur}}
+\index{ChercheNomTypeEtatVecteur@{ChercheNomTypeEtatVecteur}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[ChercheNomTypeEtatVecteur]{\setlength{\rightskip}{0pt plus 5cm}Cherche\-Nom\-Type\-Etat\-Vecteur (\$ {\em id}, \$ {\em connexion}, \$ {\em langue})}}
+\label{utilitairesHTML_8php_a31}
+
+
+\hypertarget{utilitairesHTML_8php_a36}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!ChercheOrganisme@{ChercheOrganisme}}
+\index{ChercheOrganisme@{ChercheOrganisme}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[ChercheOrganisme]{\setlength{\rightskip}{0pt plus 5cm}Cherche\-Organisme (\$ {\em id}, \$ {\em connexion})}}
+\label{utilitairesHTML_8php_a36}
+
+
+\hypertarget{utilitairesHTML_8php_a15}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!ChercheService@{ChercheService}}
+\index{ChercheService@{ChercheService}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[ChercheService]{\setlength{\rightskip}{0pt plus 5cm}Cherche\-Service (\$ {\em id}, \$ {\em connexion})}}
+\label{utilitairesHTML_8php_a15}
+
+
+\hypertarget{utilitairesHTML_8php_a30}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!ChercheTypeEtatVecteur@{ChercheTypeEtatVecteur}}
+\index{ChercheTypeEtatVecteur@{ChercheTypeEtatVecteur}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[ChercheTypeEtatVecteur]{\setlength{\rightskip}{0pt plus 5cm}Cherche\-Type\-Etat\-Vecteur (\$ {\em id}, \$ {\em connexion})}}
+\label{utilitairesHTML_8php_a30}
+
+
+\hypertarget{utilitairesHTML_8php_a14}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!ChercheTypeService@{ChercheTypeService}}
+\index{ChercheTypeService@{ChercheTypeService}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[ChercheTypeService]{\setlength{\rightskip}{0pt plus 5cm}Cherche\-Type\-Service (\$ {\em id}, \$ {\em connexion})}}
+\label{utilitairesHTML_8php_a14}
+
+
+\hypertarget{utilitairesHTML_8php_a32}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!ChercheTypeVecteur@{ChercheTypeVecteur}}
+\index{ChercheTypeVecteur@{ChercheTypeVecteur}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[ChercheTypeVecteur]{\setlength{\rightskip}{0pt plus 5cm}Cherche\-Type\-Vecteur (\$ {\em id}, \$ {\em connexion})}}
+\label{utilitairesHTML_8php_a32}
+
+
+\hypertarget{utilitairesHTML_8php_a25}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!ChercheVecteur@{ChercheVecteur}}
+\index{ChercheVecteur@{ChercheVecteur}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[ChercheVecteur]{\setlength{\rightskip}{0pt plus 5cm}Cherche\-Vecteur (\$ {\em id}, \$ {\em connexion})}}
+\label{utilitairesHTML_8php_a25}
+
+
+\hypertarget{utilitairesHTML_8php_a0}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!date_allemande@{date\_\-allemande}}
+\index{date_allemande@{date\_\-allemande}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[date\_\-allemande]{\setlength{\rightskip}{0pt plus 5cm}date\_\-allemande ()}}
+\label{utilitairesHTML_8php_a0}
+
+
+\hypertarget{utilitairesHTML_8php_a1}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!DateHeure@{DateHeure}}
+\index{DateHeure@{DateHeure}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[DateHeure]{\setlength{\rightskip}{0pt plus 5cm}Date\-Heure (\$ {\em langue} = {\tt \char`\"{}FR\char`\"{}})}}
+\label{utilitairesHTML_8php_a1}
+
+
+\hypertarget{utilitairesHTML_8php_a44}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!est_apa_disponible@{est\_\-apa\_\-disponible}}
+\index{est_apa_disponible@{est\_\-apa\_\-disponible}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[est\_\-apa\_\-disponible]{\setlength{\rightskip}{0pt plus 5cm}est\_\-apa\_\-disponible (\$ {\em connexion}, \$ {\em ID\_\-APA})}}
+\label{utilitairesHTML_8php_a44}
+
+
+\hypertarget{utilitairesHTML_8php_a47}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!est_secteur_disponible@{est\_\-secteur\_\-disponible}}
+\index{est_secteur_disponible@{est\_\-secteur\_\-disponible}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[est\_\-secteur\_\-disponible]{\setlength{\rightskip}{0pt plus 5cm}est\_\-secteur\_\-disponible (\$ {\em connexion}, \$ {\em ID\_\-Secteur})}}
+\label{utilitairesHTML_8php_a47}
+
+
+\hypertarget{utilitairesHTML_8php_a65}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!evenement_courant@{evenement\_\-courant}}
+\index{evenement_courant@{evenement\_\-courant}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[evenement\_\-courant]{\setlength{\rightskip}{0pt plus 5cm}evenement\_\-courant (\$ {\em connexion}, \$ {\em evenement\_\-ID})}}
+\label{utilitairesHTML_8php_a65}
+
+
+\hypertarget{utilitairesHTML_8php_a20}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!explode_dpt@{explode\_\-dpt}}
+\index{explode_dpt@{explode\_\-dpt}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[explode\_\-dpt]{\setlength{\rightskip}{0pt plus 5cm}explode\_\-dpt (\$ {\em dpt})}}
+\label{utilitairesHTML_8php_a20}
+
+
+\hypertarget{utilitairesHTML_8php_a42}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!get_carac_commune@{get\_\-carac\_\-commune}}
+\index{get_carac_commune@{get\_\-carac\_\-commune}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[get\_\-carac\_\-commune]{\setlength{\rightskip}{0pt plus 5cm}get\_\-carac\_\-commune (\$ {\em connexion}, \$ {\em ID\_\-commune})}}
+\label{utilitairesHTML_8php_a42}
+
+
+\hypertarget{utilitairesHTML_8php_a43}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!get_smur@{get\_\-smur}}
+\index{get_smur@{get\_\-smur}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[get\_\-smur]{\setlength{\rightskip}{0pt plus 5cm}get\_\-smur (\$ {\em connexion}, \$ {\em secteur\_\-smur})}}
+\label{utilitairesHTML_8php_a43}
+
+
+\hypertarget{utilitairesHTML_8php_a37}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!GetOrganisme_nom@{GetOrganisme\_\-nom}}
+\index{GetOrganisme_nom@{GetOrganisme\_\-nom}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[GetOrganisme\_\-nom]{\setlength{\rightskip}{0pt plus 5cm}Get\-Organisme\_\-nom (\$ {\em connexion}, \$ {\em item\_\-select})}}
+\label{utilitairesHTML_8php_a37}
+
+
+\hypertarget{utilitairesHTML_8php_a46}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!liste_apa_du_secteur@{liste\_\-apa\_\-du\_\-secteur}}
+\index{liste_apa_du_secteur@{liste\_\-apa\_\-du\_\-secteur}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[liste\_\-apa\_\-du\_\-secteur]{\setlength{\rightskip}{0pt plus 5cm}liste\_\-apa\_\-du\_\-secteur (\$ {\em connexion}, \$ {\em ID\_\-Secteur}, \$ {\em item\_\-select} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a46}
+
+
+\hypertarget{utilitairesHTML_8php_a53}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!Liste_des_communes@{Liste\_\-des\_\-communes}}
+\index{Liste_des_communes@{Liste\_\-des\_\-communes}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[Liste\_\-des\_\-communes]{\setlength{\rightskip}{0pt plus 5cm}Liste\_\-des\_\-communes (\$ {\em connexion}, \$ {\em item\_\-select})}}
+\label{utilitairesHTML_8php_a53}
+
+
+\hypertarget{utilitairesHTML_8php_a21}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!lits2_creeRequete@{lits2\_\-creeRequete}}
+\index{lits2_creeRequete@{lits2\_\-creeRequete}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[lits2\_\-creeRequete]{\setlength{\rightskip}{0pt plus 5cm}lits2\_\-cree\-Requete (\$ {\em connexion}, \$ {\em org\-ID} = {\tt \char`\"{}0\char`\"{}}, \$ {\em type\_\-service} = {\tt \char`\"{}0\char`\"{}}, \$ {\em dpt} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a21}
+
+
+\hypertarget{utilitairesHTML_8php_a2}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!maDate@{maDate}}
+\index{maDate@{maDate}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[maDate]{\setlength{\rightskip}{0pt plus 5cm}ma\-Date (\$ {\em d}, \$ {\em param} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a2}
+
+
+\hypertarget{utilitairesHTML_8php_a18}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!MAJ_Lits_cata@{MAJ\_\-Lits\_\-cata}}
+\index{MAJ_Lits_cata@{MAJ\_\-Lits\_\-cata}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[MAJ\_\-Lits\_\-cata]{\setlength{\rightskip}{0pt plus 5cm}MAJ\_\-Lits\_\-cata (\$ {\em connexion})}}
+\label{utilitairesHTML_8php_a18}
+
+
+\hypertarget{utilitairesHTML_8php_a17}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!MAZ_Lits_cata@{MAZ\_\-Lits\_\-cata}}
+\index{MAZ_Lits_cata@{MAZ\_\-Lits\_\-cata}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[MAZ\_\-Lits\_\-cata]{\setlength{\rightskip}{0pt plus 5cm}MAZ\_\-Lits\_\-cata (\$ {\em connexion})}}
+\label{utilitairesHTML_8php_a17}
+
+
+\hypertarget{utilitairesHTML_8php_a3}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!NumTel@{NumTel}}
+\index{NumTel@{NumTel}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[NumTel]{\setlength{\rightskip}{0pt plus 5cm}Num\-Tel (\$ {\em tel})}}
+\label{utilitairesHTML_8php_a3}
+
+
+\hypertarget{utilitairesHTML_8php_a5}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!Recupere_Enum@{Recupere\_\-Enum}}
+\index{Recupere_Enum@{Recupere\_\-Enum}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[Recupere\_\-Enum]{\setlength{\rightskip}{0pt plus 5cm}Recupere\_\-Enum (\$ {\em ma\_\-table}, \$ {\em ma\_\-colonne}, \$ {\em item\_\-select}, \$ {\em connexion})}}
+\label{utilitairesHTML_8php_a5}
+
+
+\hypertarget{utilitairesHTML_8php_a4}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!Select@{Select}}
+\index{Select@{Select}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[Select]{\setlength{\rightskip}{0pt plus 5cm}Select (\$ {\em titre}, \$ {\em liste\_\-valeurs}, \$ {\em item\_\-select}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a4}
+
+
+\hypertarget{utilitairesHTML_8php_a41}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_commune@{select\_\-commune}}
+\index{select_commune@{select\_\-commune}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-commune]{\setlength{\rightskip}{0pt plus 5cm}select\_\-commune (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a41}
+
+
+\hypertarget{utilitairesHTML_8php_a55}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_contamination@{select\_\-contamination}}
+\index{select_contamination@{select\_\-contamination}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-contamination]{\setlength{\rightskip}{0pt plus 5cm}select\_\-contamination (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em name}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a55}
+
+
+\hypertarget{utilitairesHTML_8php_a56}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_gravite@{select\_\-gravite}}
+\index{select_gravite@{select\_\-gravite}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-gravite]{\setlength{\rightskip}{0pt plus 5cm}select\_\-gravite (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a56}
+
+
+\hypertarget{utilitairesHTML_8php_a6}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_hopital@{select\_\-hopital}}
+\index{select_hopital@{select\_\-hopital}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-hopital]{\setlength{\rightskip}{0pt plus 5cm}select\_\-hopital (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a6}
+
+
+\hypertarget{utilitairesHTML_8php_a7}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_hopital2@{select\_\-hopital2}}
+\index{select_hopital2@{select\_\-hopital2}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-hopital2]{\setlength{\rightskip}{0pt plus 5cm}select\_\-hopital2 (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a7}
+
+
+\hypertarget{utilitairesHTML_8php_a54}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_medicalisation@{select\_\-medicalisation}}
+\index{select_medicalisation@{select\_\-medicalisation}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-medicalisation]{\setlength{\rightskip}{0pt plus 5cm}select\_\-medicalisation (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a54}
+
+
+\hypertarget{utilitairesHTML_8php_a61}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_pays@{select\_\-pays}}
+\index{select_pays@{select\_\-pays}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-pays]{\setlength{\rightskip}{0pt plus 5cm}select\_\-pays (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a61}
+
+
+\hypertarget{utilitairesHTML_8php_a60}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_region@{select\_\-region}}
+\index{select_region@{select\_\-region}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-region]{\setlength{\rightskip}{0pt plus 5cm}select\_\-region (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a60}
+
+
+\hypertarget{utilitairesHTML_8php_a9}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_samu@{select\_\-samu}}
+\index{select_samu@{select\_\-samu}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-samu]{\setlength{\rightskip}{0pt plus 5cm}select\_\-samu (\$ {\em connexion}, \$ {\em item\_\-select})}}
+\label{utilitairesHTML_8php_a9}
+
+
+\hypertarget{utilitairesHTML_8php_a10}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_service@{select\_\-service}}
+\index{select_service@{select\_\-service}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-service]{\setlength{\rightskip}{0pt plus 5cm}select\_\-service (\$ {\em connexion}, \$ {\em organisme}, \$ {\em item\_\-select})}}
+\label{utilitairesHTML_8php_a10}
+
+
+\hypertarget{utilitairesHTML_8php_a11}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_service2@{select\_\-service2}}
+\index{select_service2@{select\_\-service2}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-service2]{\setlength{\rightskip}{0pt plus 5cm}select\_\-service2 (\$ {\em connexion}, \$ {\em hopital}, \$ {\em item\_\-select})}}
+\label{utilitairesHTML_8php_a11}
+
+
+\hypertarget{utilitairesHTML_8php_a64}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_specialite@{select\_\-specialite}}
+\index{select_specialite@{select\_\-specialite}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-specialite]{\setlength{\rightskip}{0pt plus 5cm}select\_\-specialite (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a64}
+
+
+\hypertarget{utilitairesHTML_8php_a63}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_territoire@{select\_\-territoire}}
+\index{select_territoire@{select\_\-territoire}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-territoire]{\setlength{\rightskip}{0pt plus 5cm}select\_\-territoire (\$ {\em connexion}, \$ {\em organisme}, \$ {\em langue}, \$ {\em change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a63}
+
+
+\hypertarget{utilitairesHTML_8php_a62}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_type_etablissement@{select\_\-type\_\-etablissement}}
+\index{select_type_etablissement@{select\_\-type\_\-etablissement}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-type\_\-etablissement]{\setlength{\rightskip}{0pt plus 5cm}select\_\-type\_\-etablissement (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a62}
+
+
+\hypertarget{utilitairesHTML_8php_a57}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_ville@{select\_\-ville}}
+\index{select_ville@{select\_\-ville}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-ville]{\setlength{\rightskip}{0pt plus 5cm}select\_\-ville (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a57}
+
+
+\hypertarget{utilitairesHTML_8php_a58}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_ville2@{select\_\-ville2}}
+\index{select_ville2@{select\_\-ville2}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-ville2]{\setlength{\rightskip}{0pt plus 5cm}select\_\-ville2 (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}}, \$ {\em name} = {\tt \char`\"{}id\_\-ville\char`\"{}})}}
+\label{utilitairesHTML_8php_a58}
+
+
+\hypertarget{utilitairesHTML_8php_a59}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!select_zone@{select\_\-zone}}
+\index{select_zone@{select\_\-zone}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[select\_\-zone]{\setlength{\rightskip}{0pt plus 5cm}select\_\-zone (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a59}
+
+
+\hypertarget{utilitairesHTML_8php_a40}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectCivilite@{SelectCivilite}}
+\index{SelectCivilite@{SelectCivilite}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectCivilite]{\setlength{\rightskip}{0pt plus 5cm}Select\-Civilite (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em short}, \$ {\em langue} = {\tt \char`\"{}FR\char`\"{}})}}
+\label{utilitairesHTML_8php_a40}
+
+
+\hypertarget{utilitairesHTML_8php_a66}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectDepartement@{SelectDepartement}}
+\index{SelectDepartement@{SelectDepartement}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectDepartement]{\setlength{\rightskip}{0pt plus 5cm}Select\-Departement (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em multiple} = {\tt 0})}}
+\label{utilitairesHTML_8php_a66}
+
+
+\hypertarget{utilitairesHTML_8php_a29}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectEtatVecteur@{SelectEtatVecteur}}
+\index{SelectEtatVecteur@{SelectEtatVecteur}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectEtatVecteur]{\setlength{\rightskip}{0pt plus 5cm}Select\-Etat\-Vecteur (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue})}}
+\label{utilitairesHTML_8php_a29}
+
+
+\hypertarget{utilitairesHTML_8php_a48}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectIntervenant@{SelectIntervenant}}
+\index{SelectIntervenant@{SelectIntervenant}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectIntervenant]{\setlength{\rightskip}{0pt plus 5cm}Select\-Intervenant (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue})}}
+\label{utilitairesHTML_8php_a48}
+
+
+\hypertarget{utilitairesHTML_8php_a39}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectLocalisation@{SelectLocalisation}}
+\index{SelectLocalisation@{SelectLocalisation}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectLocalisation]{\setlength{\rightskip}{0pt plus 5cm}Select\-Localisation (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue})}}
+\label{utilitairesHTML_8php_a39}
+
+
+\hypertarget{utilitairesHTML_8php_a38}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectMetier@{SelectMetier}}
+\index{SelectMetier@{SelectMetier}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectMetier]{\setlength{\rightskip}{0pt plus 5cm}Select\-Metier (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue})}}
+\label{utilitairesHTML_8php_a38}
+
+
+\hypertarget{utilitairesHTML_8php_a35}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectOrganisme@{SelectOrganisme}}
+\index{SelectOrganisme@{SelectOrganisme}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectOrganisme]{\setlength{\rightskip}{0pt plus 5cm}Select\-Organisme (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a35}
+
+
+\hypertarget{utilitairesHTML_8php_a28}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectOrgVecteur@{SelectOrgVecteur}}
+\index{SelectOrgVecteur@{SelectOrgVecteur}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectOrgVecteur]{\setlength{\rightskip}{0pt plus 5cm}Select\-Org\-Vecteur (\$ {\em connexion}, \$ {\em org\_\-id})}}
+\label{utilitairesHTML_8php_a28}
+
+
+\hypertarget{utilitairesHTML_8php_a52}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectSecteur@{SelectSecteur}}
+\index{SelectSecteur@{SelectSecteur}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectSecteur]{\setlength{\rightskip}{0pt plus 5cm}Select\-Secteur (\$ {\em connexion}, \$ {\em item\_\-select})}}
+\label{utilitairesHTML_8php_a52}
+
+
+\hypertarget{utilitairesHTML_8php_a12}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectTousService@{SelectTousService}}
+\index{SelectTousService@{SelectTousService}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectTousService]{\setlength{\rightskip}{0pt plus 5cm}Select\-Tous\-Service (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em multiple} = {\tt 0})}}
+\label{utilitairesHTML_8php_a12}
+
+
+\hyperlink{utilitairesHTML_8php_a12}{Select\-Tous\-Service()} Cr\'{e}e une liste d\'{e}roulante avec la liste des services \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em \$connexion}]variable de connexion \item[{\em \$item\_\-select}]service\_\-ID du service s\'{e}lectionn\'{e} \item[{\em \$multiple:}]autorise ou non la s\'{e}lection multiple. Si \$multiple est $>$ 0 \item[{\em \$multiple}]indique le nombre de lignes \`{a} afficher. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]Au retour \$ttservice contient le service\_\-ID du service s\'{e}lectionn\'{e} En cas de s\'{e}lection multiple retourne le tableau \$ttservice\mbox{[}\mbox{]} \end{Desc}
+\hypertarget{utilitairesHTML_8php_a26}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectTousVecteur@{SelectTousVecteur}}
+\index{SelectTousVecteur@{SelectTousVecteur}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectTousVecteur]{\setlength{\rightskip}{0pt plus 5cm}Select\-Tous\-Vecteur (\$ {\em connexion}, \$ {\em item\_\-select})}}
+\label{utilitairesHTML_8php_a26}
+
+
+\hypertarget{utilitairesHTML_8php_a50}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectTypeIntervenant@{SelectTypeIntervenant}}
+\index{SelectTypeIntervenant@{SelectTypeIntervenant}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectTypeIntervenant]{\setlength{\rightskip}{0pt plus 5cm}Select\-Type\-Intervenant (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue})}}
+\label{utilitairesHTML_8php_a50}
+
+
+\hypertarget{utilitairesHTML_8php_a34}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectTypeOrganisme@{SelectTypeOrganisme}}
+\index{SelectTypeOrganisme@{SelectTypeOrganisme}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectTypeOrganisme]{\setlength{\rightskip}{0pt plus 5cm}Select\-Type\-Organisme (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue})}}
+\label{utilitairesHTML_8php_a34}
+
+
+\hypertarget{utilitairesHTML_8php_a13}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectTypeService@{SelectTypeService}}
+\index{SelectTypeService@{SelectTypeService}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectTypeService]{\setlength{\rightskip}{0pt plus 5cm}Select\-Type\-Service (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a13}
+
+
+\hypertarget{utilitairesHTML_8php_a33}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectTypeVecteur@{SelectTypeVecteur}}
+\index{SelectTypeVecteur@{SelectTypeVecteur}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectTypeVecteur]{\setlength{\rightskip}{0pt plus 5cm}Select\-Type\-Vecteur (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue})}}
+\label{utilitairesHTML_8php_a33}
+
+
+\hypertarget{utilitairesHTML_8php_a27}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!SelectVecteurEngages@{SelectVecteurEngages}}
+\index{SelectVecteurEngages@{SelectVecteurEngages}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[SelectVecteurEngages]{\setlength{\rightskip}{0pt plus 5cm}Select\-Vecteur\-Engages (\$ {\em connexion}, \$ {\em item\_\-select})}}
+\label{utilitairesHTML_8php_a27}
+
+
+\hypertarget{utilitairesHTML_8php_a51}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!Table_Intervenants@{Table\_\-Intervenants}}
+\index{Table_Intervenants@{Table\_\-Intervenants}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[Table\_\-Intervenants]{\setlength{\rightskip}{0pt plus 5cm}Table\_\-Intervenants (\$ {\em connexion}, \$ {\em type} = {\tt \char`\"{}\char`\"{}}, \$ {\em organisme} = {\tt \char`\"{}\char`\"{}}, \$ {\em alerte} = {\tt \char`\"{}\char`\"{}}, \$ {\em langue})}}
+\label{utilitairesHTML_8php_a51}
+
+
+\hypertarget{utilitairesHTML_8php_a19}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!Table_Lits@{Table\_\-Lits}}
+\index{Table_Lits@{Table\_\-Lits}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[Table\_\-Lits]{\setlength{\rightskip}{0pt plus 5cm}Table\_\-Lits (\$ {\em connexion}, \$ {\em hop\-ID} = {\tt \char`\"{}0\char`\"{}}, \$ {\em type\_\-service} = {\tt \char`\"{}0\char`\"{}}, \$ {\em langue}, \$ {\em back} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a19}
+
+
+\hypertarget{utilitairesHTML_8php_a22}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!Table_Lits2@{Table\_\-Lits2}}
+\index{Table_Lits2@{Table\_\-Lits2}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[Table\_\-Lits2]{\setlength{\rightskip}{0pt plus 5cm}Table\_\-Lits2 (\$ {\em connexion}, \$ {\em org\-ID} = {\tt \char`\"{}0\char`\"{}}, \$ {\em type\_\-service} = {\tt \char`\"{}0\char`\"{}}, \$ {\em langue}, \$ {\em back} = {\tt \char`\"{}\char`\"{}}, \$ {\em dpt} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a22}
+
+
+\hypertarget{utilitairesHTML_8php_a16}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!Table_Service@{Table\_\-Service}}
+\index{Table_Service@{Table\_\-Service}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[Table\_\-Service]{\setlength{\rightskip}{0pt plus 5cm}Table\_\-Service (\$ {\em connexion}, \$ {\em langue})}}
+\label{utilitairesHTML_8php_a16}
+
+
+\hypertarget{utilitairesHTML_8php_a24}{
+\index{utilitairesHTML.php@{utilitaires\-HTML.php}!Table_Vecteurs@{Table\_\-Vecteurs}}
+\index{Table_Vecteurs@{Table\_\-Vecteurs}!utilitairesHTML.php@{utilitaires\-HTML.php}}
+\subsubsection[Table\_\-Vecteurs]{\setlength{\rightskip}{0pt plus 5cm}Table\_\-Vecteurs (\$ {\em connexion}, \$ {\em type} = {\tt \char`\"{}\char`\"{}}, \$ {\em type\_\-v} = {\tt \char`\"{}\char`\"{}}, \$ {\em engage} = {\tt \char`\"{}\char`\"{}}, \$ {\em langue}, \$ {\em back} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitairesHTML_8php_a24}
+
+

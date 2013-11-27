@@ -1,0 +1,46 @@
+\hypertarget{biotox__utilitaires_8php}{
+\section{R\'{e}f\'{e}rence du fichier biotox\_\-utilitaires.php}
+\label{biotox__utilitaires_8php}\index{biotox_utilitaires.php@{biotox\_\-utilitaires.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{biotox__utilitaires_8php_a0}{liste\_\-materiel} (\$connexion, \$item\_\-select=\char`\"{}\char`\"{})
+\item 
+\hyperlink{biotox__utilitaires_8php_a1}{liste\_\-ville} (\$connexion, \$item\_\-select=\char`\"{}\char`\"{})
+\item 
+\hyperlink{biotox__utilitaires_8php_a2}{liste\_\-acheteur} (\$connexion, \$item\_\-select=\char`\"{}\char`\"{})
+\item 
+\hyperlink{biotox__utilitaires_8php_a3}{liste\_\-fournisseurs} (\$connexion, \$item\_\-select=\char`\"{}\char`\"{})
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{biotox__utilitaires_8php_a2}{
+\index{biotox_utilitaires.php@{biotox\_\-utilitaires.php}!liste_acheteur@{liste\_\-acheteur}}
+\index{liste_acheteur@{liste\_\-acheteur}!biotox_utilitaires.php@{biotox\_\-utilitaires.php}}
+\subsubsection[liste\_\-acheteur]{\setlength{\rightskip}{0pt plus 5cm}liste\_\-acheteur (\$ {\em connexion}, \$ {\em item\_\-select} = {\tt \char`\"{}\char`\"{}})}}
+\label{biotox__utilitaires_8php_a2}
+
+
+\hypertarget{biotox__utilitaires_8php_a3}{
+\index{biotox_utilitaires.php@{biotox\_\-utilitaires.php}!liste_fournisseurs@{liste\_\-fournisseurs}}
+\index{liste_fournisseurs@{liste\_\-fournisseurs}!biotox_utilitaires.php@{biotox\_\-utilitaires.php}}
+\subsubsection[liste\_\-fournisseurs]{\setlength{\rightskip}{0pt plus 5cm}liste\_\-fournisseurs (\$ {\em connexion}, \$ {\em item\_\-select} = {\tt \char`\"{}\char`\"{}})}}
+\label{biotox__utilitaires_8php_a3}
+
+
+\hypertarget{biotox__utilitaires_8php_a0}{
+\index{biotox_utilitaires.php@{biotox\_\-utilitaires.php}!liste_materiel@{liste\_\-materiel}}
+\index{liste_materiel@{liste\_\-materiel}!biotox_utilitaires.php@{biotox\_\-utilitaires.php}}
+\subsubsection[liste\_\-materiel]{\setlength{\rightskip}{0pt plus 5cm}liste\_\-materiel (\$ {\em connexion}, \$ {\em item\_\-select} = {\tt \char`\"{}\char`\"{}})}}
+\label{biotox__utilitaires_8php_a0}
+
+
+\hypertarget{biotox__utilitaires_8php_a1}{
+\index{biotox_utilitaires.php@{biotox\_\-utilitaires.php}!liste_ville@{liste\_\-ville}}
+\index{liste_ville@{liste\_\-ville}!biotox_utilitaires.php@{biotox\_\-utilitaires.php}}
+\subsubsection[liste\_\-ville]{\setlength{\rightskip}{0pt plus 5cm}liste\_\-ville (\$ {\em connexion}, \$ {\em item\_\-select} = {\tt \char`\"{}\char`\"{}})}}
+\label{biotox__utilitaires_8php_a1}
+
+

@@ -1,0 +1,174 @@
+\hypertarget{classsagec__ftp}{
+\section{R\'{e}f\'{e}rence de la classe sagec\_\-ftp}
+\label{classsagec__ftp}\index{sagec_ftp@{sagec\_\-ftp}}
+}
+\subsection*{Fonctions membres publiques}
+\begin{CompactItemize}
+\item 
+\hyperlink{classsagec__ftp_a0}{sagec\_\-ftp} (\$site, \$login, \$pass)
+\item 
+\hyperlink{classsagec__ftp_a1}{set\_\-tmax} (\$t)
+\item 
+\hyperlink{classsagec__ftp_a2}{connexion} ()
+\item 
+\hyperlink{classsagec__ftp_a3}{deconnexion} ()
+\item 
+\hyperlink{classsagec__ftp_a4}{put} (\$local, \$remote)
+\item 
+\hyperlink{classsagec__ftp_a5}{get} (\$local, \$remote)
+\item 
+\hyperlink{classsagec__ftp_a6}{rename} (\$old\_\-name, \$new\_\-name)
+\end{CompactItemize}
+\subsection*{Attributs publics}
+\begin{CompactItemize}
+\item 
+\hyperlink{classsagec__ftp_o0}{\$site\_\-ftp}
+\item 
+\hyperlink{classsagec__ftp_o1}{\$username}
+\item 
+\hyperlink{classsagec__ftp_o2}{\$password}
+\item 
+\hyperlink{classsagec__ftp_o3}{\$connect}
+\item 
+\hyperlink{classsagec__ftp_o4}{\$error}
+\item 
+\hyperlink{classsagec__ftp_o5}{\$tmax}
+\end{CompactItemize}
+
+
+\subsection{Documentation des contructeurs et destructeur}
+\hypertarget{classsagec__ftp_a0}{
+\index{sagec_ftp@{sagec\_\-ftp}!sagec_ftp@{sagec\_\-ftp}}
+\index{sagec_ftp@{sagec\_\-ftp}!sagec_ftp@{sagec\_\-ftp}}
+\subsubsection[sagec\_\-ftp]{\setlength{\rightskip}{0pt plus 5cm}sagec\_\-ftp::sagec\_\-ftp (\$ {\em site}, \$ {\em login}, \$ {\em pass})}}
+\label{classsagec__ftp_a0}
+
+
+Create the FTP object.
+
+Set the program path for the GNUPG and the home directory of the keyring. If \$this parameters are not specified, according to the OS the function derive the values.
+
+\begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em string}]\$site adresse du site FTP \item[{\em string}]\$login code d'acc\`{e}s \item[{\em string}]\$pass mot de pase \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]void\end{Desc}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classsagec__ftp_a2}{
+\index{sagec_ftp@{sagec\_\-ftp}!connexion@{connexion}}
+\index{connexion@{connexion}!sagec_ftp@{sagec\_\-ftp}}
+\subsubsection[connexion]{\setlength{\rightskip}{0pt plus 5cm}sagec\_\-ftp::connexion ()}}
+\label{classsagec__ftp_a2}
+
+
+\hypertarget{classsagec__ftp_a3}{
+\index{sagec_ftp@{sagec\_\-ftp}!deconnexion@{deconnexion}}
+\index{deconnexion@{deconnexion}!sagec_ftp@{sagec\_\-ftp}}
+\subsubsection[deconnexion]{\setlength{\rightskip}{0pt plus 5cm}sagec\_\-ftp::deconnexion ()}}
+\label{classsagec__ftp_a3}
+
+
+\hypertarget{classsagec__ftp_a5}{
+\index{sagec_ftp@{sagec\_\-ftp}!get@{get}}
+\index{get@{get}!sagec_ftp@{sagec\_\-ftp}}
+\subsubsection[get]{\setlength{\rightskip}{0pt plus 5cm}sagec\_\-ftp::get (\$ {\em local}, \$ {\em remote})}}
+\label{classsagec__ftp_a5}
+
+
+Envoie un fichier vers le site FTP.
+
+Set the program path for the GNUPG and the home directory of the keyring. If \$this parameters are not specified, according to the OS the function derive the values.
+
+\begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em string}]\$local nom et chemin d'acc\`{e}s du fichier local \item[{\em string}]\$remote nom et chemin d'acc\`{e}s du fichier sur le site FTP \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]true en cas de succ\`{e}s, flase sinon\end{Desc}
+\hypertarget{classsagec__ftp_a4}{
+\index{sagec_ftp@{sagec\_\-ftp}!put@{put}}
+\index{put@{put}!sagec_ftp@{sagec\_\-ftp}}
+\subsubsection[put]{\setlength{\rightskip}{0pt plus 5cm}sagec\_\-ftp::put (\$ {\em local}, \$ {\em remote})}}
+\label{classsagec__ftp_a4}
+
+
+Envoie un fichier vers le site FTP.
+
+Set the program path for the GNUPG and the home directory of the keyring. If \$this parameters are not specified, according to the OS the function derive the values.
+
+\begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em string}]\$local nom et chemin d'acc\`{e}s du fichier local \item[{\em string}]\$remote nom et chemin d'acc\`{e}s du fichier sur le site FTP \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]true en cas de succ\`{e}s, flase sinon\end{Desc}
+\hypertarget{classsagec__ftp_a6}{
+\index{sagec_ftp@{sagec\_\-ftp}!rename@{rename}}
+\index{rename@{rename}!sagec_ftp@{sagec\_\-ftp}}
+\subsubsection[rename]{\setlength{\rightskip}{0pt plus 5cm}sagec\_\-ftp::rename (\$ {\em old\_\-name}, \$ {\em new\_\-name})}}
+\label{classsagec__ftp_a6}
+
+
+\hypertarget{classsagec__ftp_a1}{
+\index{sagec_ftp@{sagec\_\-ftp}!set_tmax@{set\_\-tmax}}
+\index{set_tmax@{set\_\-tmax}!sagec_ftp@{sagec\_\-ftp}}
+\subsubsection[set\_\-tmax]{\setlength{\rightskip}{0pt plus 5cm}sagec\_\-ftp::set\_\-tmax (\$ {\em t})}}
+\label{classsagec__ftp_a1}
+
+
+
+
+\subsection{Documentation des donn\'{e}es membres}
+\hypertarget{classsagec__ftp_o3}{
+\index{sagec_ftp@{sagec\_\-ftp}!$connect@{\$connect}}
+\index{$connect@{\$connect}!sagec_ftp@{sagec\_\-ftp}}
+\subsubsection[\$connect]{\setlength{\rightskip}{0pt plus 5cm}sagec\_\-ftp::\$connect}}
+\label{classsagec__ftp_o3}
+
+
+\hypertarget{classsagec__ftp_o4}{
+\index{sagec_ftp@{sagec\_\-ftp}!$error@{\$error}}
+\index{$error@{\$error}!sagec_ftp@{sagec\_\-ftp}}
+\subsubsection[\$error]{\setlength{\rightskip}{0pt plus 5cm}sagec\_\-ftp::\$error}}
+\label{classsagec__ftp_o4}
+
+
+\hypertarget{classsagec__ftp_o2}{
+\index{sagec_ftp@{sagec\_\-ftp}!$password@{\$password}}
+\index{$password@{\$password}!sagec_ftp@{sagec\_\-ftp}}
+\subsubsection[\$password]{\setlength{\rightskip}{0pt plus 5cm}sagec\_\-ftp::\$password}}
+\label{classsagec__ftp_o2}
+
+
+\hypertarget{classsagec__ftp_o0}{
+\index{sagec_ftp@{sagec\_\-ftp}!$site_ftp@{\$site\_\-ftp}}
+\index{$site_ftp@{\$site\_\-ftp}!sagec_ftp@{sagec\_\-ftp}}
+\subsubsection[\$site\_\-ftp]{\setlength{\rightskip}{0pt plus 5cm}sagec\_\-ftp::\$site\_\-ftp}}
+\label{classsagec__ftp_o0}
+
+
+\hypertarget{classsagec__ftp_o5}{
+\index{sagec_ftp@{sagec\_\-ftp}!$tmax@{\$tmax}}
+\index{$tmax@{\$tmax}!sagec_ftp@{sagec\_\-ftp}}
+\subsubsection[\$tmax]{\setlength{\rightskip}{0pt plus 5cm}sagec\_\-ftp::\$tmax}}
+\label{classsagec__ftp_o5}
+
+
+\hypertarget{classsagec__ftp_o1}{
+\index{sagec_ftp@{sagec\_\-ftp}!$username@{\$username}}
+\index{$username@{\$username}!sagec_ftp@{sagec\_\-ftp}}
+\subsubsection[\$username]{\setlength{\rightskip}{0pt plus 5cm}sagec\_\-ftp::\$username}}
+\label{classsagec__ftp_o1}
+
+
+
+
+La documentation de cette classe a \'{e}t\'{e} g\'{e}n\'{e}r\'{e}e \`{a} partir du fichier suivant:\begin{CompactItemize}
+\item 
+\hyperlink{sagec__ftp_8php}{sagec\_\-ftp.php}\end{CompactItemize}

@@ -1,0 +1,46 @@
+\hypertarget{cle__supprime_8php}{
+\section{R\'{e}f\'{e}rence du fichier cle\_\-supprime.php}
+\label{cle__supprime_8php}\index{cle_supprime.php@{cle\_\-supprime.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{cle__supprime_8php_a0}{\$gpg} = new \hyperlink{classgnuPG}{gnu\-PG}(/usr/local/bin/gpg, /var/www/html/SAGEC67\_\-v3/veille\_\-sanitaire)
+\item 
+\hyperlink{cle__supprime_8php_a1}{\$e} = \$gpg $\rightarrow$ Delete\-Key(\$\_\-GET\mbox{[}'cle'\mbox{]})
+\item 
+\hyperlink{cle__supprime_8php_a2}{\$Keys} = \$gpg $\rightarrow$ List\-Keys(public)
+\item 
+\hyperlink{cle__supprime_8php_a3}{\$cle} = \$Keys\mbox{[}\$i\mbox{]}\mbox{[}'Key\-ID'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{cle__supprime_8php_a3}{
+\index{cle_supprime.php@{cle\_\-supprime.php}!$cle@{\$cle}}
+\index{$cle@{\$cle}!cle_supprime.php@{cle\_\-supprime.php}}
+\subsubsection[\$cle]{\setlength{\rightskip}{0pt plus 5cm}\$cle = \$Keys\mbox{[}\$i\mbox{]}\mbox{[}'Key\-ID'\mbox{]}}}
+\label{cle__supprime_8php_a3}
+
+
+\hypertarget{cle__supprime_8php_a1}{
+\index{cle_supprime.php@{cle\_\-supprime.php}!$e@{\$e}}
+\index{$e@{\$e}!cle_supprime.php@{cle\_\-supprime.php}}
+\subsubsection[\$e]{\setlength{\rightskip}{0pt plus 5cm}\$\hyperlink{apa__zone_8php_a37}{e} = \$gpg $\rightarrow$ Delete\-Key(\$\_\-GET\mbox{[}'cle'\mbox{]})}}
+\label{cle__supprime_8php_a1}
+
+
+\hypertarget{cle__supprime_8php_a0}{
+\index{cle_supprime.php@{cle\_\-supprime.php}!$gpg@{\$gpg}}
+\index{$gpg@{\$gpg}!cle_supprime.php@{cle\_\-supprime.php}}
+\subsubsection[\$gpg]{\setlength{\rightskip}{0pt plus 5cm}\$gpg = new \hyperlink{classgnuPG}{gnu\-PG}(/usr/local/bin/gpg, /var/www/html/SAGEC67\_\-v3/veille\_\-sanitaire)}}
+\label{cle__supprime_8php_a0}
+
+
+\hypertarget{cle__supprime_8php_a2}{
+\index{cle_supprime.php@{cle\_\-supprime.php}!$Keys@{\$Keys}}
+\index{$Keys@{\$Keys}!cle_supprime.php@{cle\_\-supprime.php}}
+\subsubsection[\$Keys]{\setlength{\rightskip}{0pt plus 5cm}\$Keys = \$gpg $\rightarrow$ List\-Keys(public)}}
+\label{cle__supprime_8php_a2}
+
+

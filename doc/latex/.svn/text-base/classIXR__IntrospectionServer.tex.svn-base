@@ -1,0 +1,95 @@
+\hypertarget{classIXR__IntrospectionServer}{
+\section{R\'{e}f\'{e}rence de la classe IXR\_\-Introspection\-Server}
+\label{classIXR__IntrospectionServer}\index{IXR_IntrospectionServer@{IXR\_\-IntrospectionServer}}
+}
+Graphe d'h\'{e}ritage de IXR\_\-Introspection\-Server::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classIXR__IntrospectionServer}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{CompactItemize}
+\item 
+\hyperlink{classIXR__IntrospectionServer_a0}{IXR\_\-Introspection\-Server} ()
+\item 
+\hyperlink{classIXR__IntrospectionServer_a1}{add\-Callback} (\$method, \$callback, \$args, \$help)
+\item 
+\hyperlink{classIXR__IntrospectionServer_a2}{call} (\$methodname, \$args)
+\item 
+\hyperlink{classIXR__IntrospectionServer_a3}{method\-Signature} (\$method)
+\item 
+\hyperlink{classIXR__IntrospectionServer_a4}{method\-Help} (\$method)
+\end{CompactItemize}
+\subsection*{Attributs publics}
+\begin{CompactItemize}
+\item 
+\hyperlink{classIXR__IntrospectionServer_o0}{\$signatures}
+\item 
+\hyperlink{classIXR__IntrospectionServer_o1}{\$help}
+\end{CompactItemize}
+
+
+\subsection{Documentation des contructeurs et destructeur}
+\hypertarget{classIXR__IntrospectionServer_a0}{
+\index{IXR_IntrospectionServer@{IXR\_\-Introspection\-Server}!IXR_IntrospectionServer@{IXR\_\-IntrospectionServer}}
+\index{IXR_IntrospectionServer@{IXR\_\-IntrospectionServer}!IXR_IntrospectionServer@{IXR\_\-Introspection\-Server}}
+\subsubsection[IXR\_\-IntrospectionServer]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Introspection\-Server::IXR\_\-Introspection\-Server ()}}
+\label{classIXR__IntrospectionServer_a0}
+
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classIXR__IntrospectionServer_a1}{
+\index{IXR_IntrospectionServer@{IXR\_\-Introspection\-Server}!addCallback@{addCallback}}
+\index{addCallback@{addCallback}!IXR_IntrospectionServer@{IXR\_\-Introspection\-Server}}
+\subsubsection[addCallback]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Introspection\-Server::add\-Callback (\$ {\em method}, \$ {\em callback}, \$ {\em args}, \$ {\em help})}}
+\label{classIXR__IntrospectionServer_a1}
+
+
+\hypertarget{classIXR__IntrospectionServer_a2}{
+\index{IXR_IntrospectionServer@{IXR\_\-Introspection\-Server}!call@{call}}
+\index{call@{call}!IXR_IntrospectionServer@{IXR\_\-Introspection\-Server}}
+\subsubsection[call]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Introspection\-Server::call (\$ {\em methodname}, \$ {\em args})}}
+\label{classIXR__IntrospectionServer_a2}
+
+
+
+
+R\'{e}impl\'{e}ment\'{e}e \`{a} partir de \hyperlink{classIXR__Server_a2}{IXR\_\-Server}.\hypertarget{classIXR__IntrospectionServer_a4}{
+\index{IXR_IntrospectionServer@{IXR\_\-Introspection\-Server}!methodHelp@{methodHelp}}
+\index{methodHelp@{methodHelp}!IXR_IntrospectionServer@{IXR\_\-Introspection\-Server}}
+\subsubsection[methodHelp]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Introspection\-Server::method\-Help (\$ {\em method})}}
+\label{classIXR__IntrospectionServer_a4}
+
+
+\hypertarget{classIXR__IntrospectionServer_a3}{
+\index{IXR_IntrospectionServer@{IXR\_\-Introspection\-Server}!methodSignature@{methodSignature}}
+\index{methodSignature@{methodSignature}!IXR_IntrospectionServer@{IXR\_\-Introspection\-Server}}
+\subsubsection[methodSignature]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Introspection\-Server::method\-Signature (\$ {\em method})}}
+\label{classIXR__IntrospectionServer_a3}
+
+
+
+
+\subsection{Documentation des donn\'{e}es membres}
+\hypertarget{classIXR__IntrospectionServer_o1}{
+\index{IXR_IntrospectionServer@{IXR\_\-Introspection\-Server}!$help@{\$help}}
+\index{$help@{\$help}!IXR_IntrospectionServer@{IXR\_\-Introspection\-Server}}
+\subsubsection[\$help]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Introspection\-Server::\$help}}
+\label{classIXR__IntrospectionServer_o1}
+
+
+\hypertarget{classIXR__IntrospectionServer_o0}{
+\index{IXR_IntrospectionServer@{IXR\_\-Introspection\-Server}!$signatures@{\$signatures}}
+\index{$signatures@{\$signatures}!IXR_IntrospectionServer@{IXR\_\-Introspection\-Server}}
+\subsubsection[\$signatures]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Introspection\-Server::\$signatures}}
+\label{classIXR__IntrospectionServer_o0}
+
+
+
+
+La documentation de cette classe a \'{e}t\'{e} g\'{e}n\'{e}r\'{e}e \`{a} partir du fichier suivant:\begin{CompactItemize}
+\item 
+\hyperlink{IXR__Library_8inc_8php}{IXR\_\-Library.inc.php}\end{CompactItemize}

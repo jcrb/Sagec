@@ -1,0 +1,91 @@
+\hypertarget{sauvegarde__table_8php}{
+\section{R\'{e}f\'{e}rence du fichier sauvegarde\_\-table.php}
+\label{sauvegarde__table_8php}\index{sauvegarde_table.php@{sauvegarde\_\-table.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{sauvegarde__table_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{sauvegarde__table_8php_a1}{\$tab} = \char`\"{}$\backslash$t\char`\"{}
+\item 
+\hyperlink{sauvegarde__table_8php_a2}{\$connect} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{sauvegarde__table_8php_a3}{\$racine} = \char`\"{}../temp/\char`\"{}
+\item 
+\hyperlink{sauvegarde__table_8php_a4}{\$v} = \$racine.\$\_\-GET\mbox{[}'table'\mbox{]}.\char`\"{}.txt\char`\"{}
+\item 
+\hyperlink{sauvegarde__table_8php_a5}{\$fp} = fopen(\$v,\char`\"{}w\char`\"{})
+\item 
+\hyperlink{sauvegarde__table_8php_a6}{\$requete} = \char`\"{}SELECT $\ast$ FROM \$\_\-GET\mbox{[}table\mbox{]}\char`\"{}
+\item 
+\hyperlink{sauvegarde__table_8php_a7}{\$resultat} = Exec\-Requete(\$requete,\$connect)
+\item 
+\hyperlink{sauvegarde__table_8php_a8}{\$ligne} = \char`\"{}\char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{sauvegarde__table_8php_a2}{
+\index{sauvegarde_table.php@{sauvegarde\_\-table.php}!$connect@{\$connect}}
+\index{$connect@{\$connect}!sauvegarde_table.php@{sauvegarde\_\-table.php}}
+\subsubsection[\$connect]{\setlength{\rightskip}{0pt plus 5cm}\$connect = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{sauvegarde__table_8php_a2}
+
+
+\hypertarget{sauvegarde__table_8php_a5}{
+\index{sauvegarde_table.php@{sauvegarde\_\-table.php}!$fp@{\$fp}}
+\index{$fp@{\$fp}!sauvegarde_table.php@{sauvegarde\_\-table.php}}
+\subsubsection[\$fp]{\setlength{\rightskip}{0pt plus 5cm}\$fp = fopen(\$v,\char`\"{}w\char`\"{})}}
+\label{sauvegarde__table_8php_a5}
+
+
+\hypertarget{sauvegarde__table_8php_a0}{
+\index{sauvegarde_table.php@{sauvegarde\_\-table.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!sauvegarde_table.php@{sauvegarde\_\-table.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{sauvegarde__table_8php_a0}
+
+
+\hypertarget{sauvegarde__table_8php_a8}{
+\index{sauvegarde_table.php@{sauvegarde\_\-table.php}!$ligne@{\$ligne}}
+\index{$ligne@{\$ligne}!sauvegarde_table.php@{sauvegarde\_\-table.php}}
+\subsubsection[\$ligne]{\setlength{\rightskip}{0pt plus 5cm}\$ligne = \char`\"{}\char`\"{}}}
+\label{sauvegarde__table_8php_a8}
+
+
+\hypertarget{sauvegarde__table_8php_a3}{
+\index{sauvegarde_table.php@{sauvegarde\_\-table.php}!$racine@{\$racine}}
+\index{$racine@{\$racine}!sauvegarde_table.php@{sauvegarde\_\-table.php}}
+\subsubsection[\$racine]{\setlength{\rightskip}{0pt plus 5cm}\$racine = \char`\"{}../temp/\char`\"{}}}
+\label{sauvegarde__table_8php_a3}
+
+
+\hypertarget{sauvegarde__table_8php_a6}{
+\index{sauvegarde_table.php@{sauvegarde\_\-table.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!sauvegarde_table.php@{sauvegarde\_\-table.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT $\ast$ FROM \$\_\-GET\mbox{[}table\mbox{]}\char`\"{}}}
+\label{sauvegarde__table_8php_a6}
+
+
+\hypertarget{sauvegarde__table_8php_a7}{
+\index{sauvegarde_table.php@{sauvegarde\_\-table.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!sauvegarde_table.php@{sauvegarde\_\-table.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connect)}}
+\label{sauvegarde__table_8php_a7}
+
+
+\hypertarget{sauvegarde__table_8php_a1}{
+\index{sauvegarde_table.php@{sauvegarde\_\-table.php}!$tab@{\$tab}}
+\index{$tab@{\$tab}!sauvegarde_table.php@{sauvegarde\_\-table.php}}
+\subsubsection[\$tab]{\setlength{\rightskip}{0pt plus 5cm}\$tab = \char`\"{}$\backslash$t\char`\"{}}}
+\label{sauvegarde__table_8php_a1}
+
+
+\hypertarget{sauvegarde__table_8php_a4}{
+\index{sauvegarde_table.php@{sauvegarde\_\-table.php}!$v@{\$v}}
+\index{$v@{\$v}!sauvegarde_table.php@{sauvegarde\_\-table.php}}
+\subsubsection[\$v]{\setlength{\rightskip}{0pt plus 5cm}\$v = \$racine.\$\_\-GET\mbox{[}'table'\mbox{]}.\char`\"{}.txt\char`\"{}}}
+\label{sauvegarde__table_8php_a4}
+
+

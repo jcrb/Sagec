@@ -1,0 +1,254 @@
+\hypertarget{classgnuPG}{
+\section{R\'{e}f\'{e}rence de la classe gnu\-PG}
+\label{classgnuPG}\index{gnuPG@{gnuPG}}
+}
+\subsection*{Fonctions membres publiques}
+\begin{CompactItemize}
+\item 
+\hyperlink{classgnuPG_a0}{gnu\-PG} (\$program\_\-path=false, \$home\_\-directory=false)
+\item 
+\hyperlink{classgnuPG_a1}{\_\-fork\_\-process} (\$command, \$input=false, \&\$output)
+\item 
+\hyperlink{classgnuPG_a2}{List\-Keys} (\$Key\-Kind= 'public')
+\item 
+\hyperlink{classgnuPG_a3}{Export} (\$Key\-ID=false)
+\item 
+\hyperlink{classgnuPG_a4}{Import} (\$Key\-Block)
+\item 
+\hyperlink{classgnuPG_a5}{Gen\-Key} (\$Real\-Name, \$Comment, \$Email, \$Passphrase= '', \$Expire\-Date=0, \$Key\-Type= 'DSA', \$Key\-Length=1024, \$Subkey\-Type= 'ELG-E', \$Subkey\-Length=1024)
+\item 
+\hyperlink{classgnuPG_a6}{Encrypt} (\$Key\-ID, \$Passphrase, \$Recipient\-Key\-ID, \$Text)
+\item 
+\hyperlink{classgnuPG_a7}{Decrypt} (\$Key\-ID, \$Passphrase, \$Text)
+\item 
+\hyperlink{classgnuPG_a8}{Delete\-Key} (\$Key\-ID, \$Key\-Kind= 'public')
+\item 
+\hyperlink{classgnuPG_a9}{Sign\-Key} (\$Key\-ID, \$Passphrase, \$Key\-IDTo\-Sign, \$Check\-Level=0)
+\end{CompactItemize}
+\subsection*{Attributs publics}
+\begin{CompactItemize}
+\item 
+\hyperlink{classgnuPG_o0}{\$program\_\-path}
+\item 
+\hyperlink{classgnuPG_o1}{\$home\_\-directory}
+\item 
+\hyperlink{classgnuPG_o2}{\$error}
+\item 
+\hyperlink{classgnuPG_o3}{\$output}
+\end{CompactItemize}
+
+
+\subsection{Documentation des contructeurs et destructeur}
+\hypertarget{classgnuPG_a0}{
+\index{gnuPG@{gnu\-PG}!gnuPG@{gnuPG}}
+\index{gnuPG@{gnuPG}!gnuPG@{gnu\-PG}}
+\subsubsection[gnuPG]{\setlength{\rightskip}{0pt plus 5cm}gnu\-PG::gnu\-PG (\$ {\em program\_\-path} = {\tt false}, \$ {\em home\_\-directory} = {\tt false})}}
+\label{classgnuPG_a0}
+
+
+Create the gnu\-PG object.
+
+Set the program path for the GNUPG and the home directory of the keyring. If this parameters are not specified, according to the OS the function derive the values.
+
+\begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em string}]\$program\_\-path Full program path for the GNUPG \item[{\em string}]\$home\_\-directory Home directory of the keyring \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]void\end{Desc}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classgnuPG_a1}{
+\index{gnuPG@{gnu\-PG}!_fork_process@{\_\-fork\_\-process}}
+\index{_fork_process@{\_\-fork\_\-process}!gnuPG@{gnu\-PG}}
+\subsubsection[\_\-fork\_\-process]{\setlength{\rightskip}{0pt plus 5cm}gnu\-PG::\_\-fork\_\-process (\$ {\em command}, \$ {\em input} = {\tt false}, \&\$ {\em output})}}
+\label{classgnuPG_a1}
+
+
+Call a subprogram redirecting the standard pipes
+
+private \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em string}]\$command The full command to execute \item[{\em string}]\$input The input data \item[{\em string}]\$output The output data \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]bool true on success, false on error\end{Desc}
+\hypertarget{classgnuPG_a7}{
+\index{gnuPG@{gnu\-PG}!Decrypt@{Decrypt}}
+\index{Decrypt@{Decrypt}!gnuPG@{gnu\-PG}}
+\subsubsection[Decrypt]{\setlength{\rightskip}{0pt plus 5cm}gnu\-PG::Decrypt (\$ {\em Key\-ID}, \$ {\em Passphrase}, \$ {\em Text})}}
+\label{classgnuPG_a7}
+
+
+Decrypt the data.
+
+If the decrypted file is signed, the signature is also verified.
+
+\begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em string}]\$Key\-ID the key id to decrypt \item[{\em string}]\$Passphrase the passphrase to open the key used to decrypt \item[{\em string}]\$Text data to decrypt \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]mixed false on error, the clear (decrypted) data on success\end{Desc}
+\hypertarget{classgnuPG_a8}{
+\index{gnuPG@{gnu\-PG}!DeleteKey@{DeleteKey}}
+\index{DeleteKey@{DeleteKey}!gnuPG@{gnu\-PG}}
+\subsubsection[DeleteKey]{\setlength{\rightskip}{0pt plus 5cm}gnu\-PG::Delete\-Key (\$ {\em Key\-ID}, \$ {\em Key\-Kind} = {\tt 'public'})}}
+\label{classgnuPG_a8}
+
+
+Remove key from the public keyring.
+
+If secret is specified it try to remove the key from from the secret and public keyring. The returned error codes are: 1 = no such key 2 = must delete secret key first 3 = ambiguos specification
+
+\begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em string}]\$Key\-ID the key id to be removed, if this is the secret key you must specify the fingerprint \item[{\em string}]\$Key\-Kind the kind of the keys, can be secret or public \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]mixed true on success, otherwise false or the delete error code\end{Desc}
+\hypertarget{classgnuPG_a6}{
+\index{gnuPG@{gnu\-PG}!Encrypt@{Encrypt}}
+\index{Encrypt@{Encrypt}!gnuPG@{gnu\-PG}}
+\subsubsection[Encrypt]{\setlength{\rightskip}{0pt plus 5cm}gnu\-PG::Encrypt (\$ {\em Key\-ID}, \$ {\em Passphrase}, \$ {\em Recipient\-Key\-ID}, \$ {\em Text})}}
+\label{classgnuPG_a6}
+
+
+Encrypt and sign data.
+
+\begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em string}]\$Key\-ID the key id used to encrypt \item[{\em string}]\$Passphrase the passphrase to open the key used to encrypt \item[{\em string}]\$Recipient\-Key\-ID the recipient key id \item[{\em string}]\$Text data to encrypt \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]mixed false on error, the encrypted data on success\end{Desc}
+\hypertarget{classgnuPG_a3}{
+\index{gnuPG@{gnu\-PG}!Export@{Export}}
+\index{Export@{Export}!gnuPG@{gnu\-PG}}
+\subsubsection[Export]{\setlength{\rightskip}{0pt plus 5cm}gnu\-PG::Export (\$ {\em Key\-ID} = {\tt false})}}
+\label{classgnuPG_a3}
+
+
+Export a key.
+
+Export all keys from all keyrings, or if at least one name is given, those of the given name.
+
+\begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em string}]\$Key\-ID The Key ID to export \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]mixed false on error, the key block with the exported keys\end{Desc}
+\hypertarget{classgnuPG_a5}{
+\index{gnuPG@{gnu\-PG}!GenKey@{GenKey}}
+\index{GenKey@{GenKey}!gnuPG@{gnu\-PG}}
+\subsubsection[GenKey]{\setlength{\rightskip}{0pt plus 5cm}gnu\-PG::Gen\-Key (\$ {\em Real\-Name}, \$ {\em Comment}, \$ {\em Email}, \$ {\em Passphrase} = {\tt ''}, \$ {\em Expire\-Date} = {\tt 0}, \$ {\em Key\-Type} = {\tt 'DSA'}, \$ {\em Key\-Length} = {\tt 1024}, \$ {\em Subkey\-Type} = {\tt 'ELG-E'}, \$ {\em Subkey\-Length} = {\tt 1024})}}
+\label{classgnuPG_a5}
+
+
+Generate a new key pair.
+
+\begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em string}]\$Real\-Name The real name of the user or key. \item[{\em string}]\$Comment Any explanatory commentary. \item[{\em string}]\$Email The e-mail for the user. \item[{\em string}]\$Passphrase Passphrase for the secret key, default is not to use any passphrase. \item[{\em string}]\$Expire\-Date Set the expiration date for the key (and the subkey). It may either be entered in ISO date format (2000-08-15) or as number of days, weeks, month or years ($<$number$>$\mbox{[}d$|$w$|$m$|$y\mbox{]}). Without a letter days are assumed. \item[{\em string}]\$Key\-Type Set the type of the key, the allowed values are DSA and RSA, default is DSA. \item[{\em int}]\$Key\-Length Length of the key in bits, default is 1024. \item[{\em string}]\$Subkey\-Type This generates a secondary key, currently only one subkey can be handled ELG-E. \item[{\em int}]\$Subkey\-Length Length of the subkey in bits, default is 1024. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]mixed false on error, the fingerprint of the created key pair in success\end{Desc}
+\hypertarget{classgnuPG_a4}{
+\index{gnuPG@{gnu\-PG}!Import@{Import}}
+\index{Import@{Import}!gnuPG@{gnu\-PG}}
+\subsubsection[Import]{\setlength{\rightskip}{0pt plus 5cm}gnu\-PG::Import (\$ {\em Key\-Block})}}
+\label{classgnuPG_a4}
+
+
+Import/merge keys.
+
+This adds the given keys to the keyring. New keys are appended to your keyring and already existing keys are updated. Note that Gnu\-PG does not import keys that are not self-signed.
+
+\begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em string}]\$Key\-Block The PGP block with the key(s). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]mixed false on error, the array with \mbox{[}Key\-ID, User\-ID\mbox{]} elements of imported keys on success.\end{Desc}
+\hypertarget{classgnuPG_a2}{
+\index{gnuPG@{gnu\-PG}!ListKeys@{ListKeys}}
+\index{ListKeys@{ListKeys}!gnuPG@{gnu\-PG}}
+\subsubsection[ListKeys]{\setlength{\rightskip}{0pt plus 5cm}gnu\-PG::List\-Keys (\$ {\em Key\-Kind} = {\tt 'public'})}}
+\label{classgnuPG_a2}
+
+
+Get the keys from the Key\-Ring.
+
+The returned array get the following elements: \mbox{[}Record\-Type, Calculated\-Trust, Key\-Length, Algorithm, Key\-ID, Creation\-Date, Expiration\-Date, Local\-ID, Ownertrust, User\-ID\mbox{]}
+
+\begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em string}]\$Key\-Kind the kind of the keys, can be secret or public \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]mixed false on error, the array with the keys in the keyring in success\end{Desc}
+\hypertarget{classgnuPG_a9}{
+\index{gnuPG@{gnu\-PG}!SignKey@{SignKey}}
+\index{SignKey@{SignKey}!gnuPG@{gnu\-PG}}
+\subsubsection[SignKey]{\setlength{\rightskip}{0pt plus 5cm}gnu\-PG::Sign\-Key (\$ {\em Key\-ID}, \$ {\em Passphrase}, \$ {\em Key\-IDTo\-Sign}, \$ {\em Check\-Level} = {\tt 0})}}
+\label{classgnuPG_a9}
+
+
+Make a signature on key.
+
+If the key is not yet signed by the specified user.
+
+\begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em string}]\$Key\-ID the key id used to sign \item[{\em string}]\$Passphrase the passphrase to open the key used to sign \item[{\em string}]\$Key\-IDTo\-Sign the key to be signed \item[{\em int}]\$Check\-Level the check level (0, 1, 2, 3 -casual to extensive-) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]bool true on success, otherwise false\end{Desc}
+
+
+\subsection{Documentation des donn\'{e}es membres}
+\hypertarget{classgnuPG_o2}{
+\index{gnuPG@{gnu\-PG}!$error@{\$error}}
+\index{$error@{\$error}!gnuPG@{gnu\-PG}}
+\subsubsection[\$error]{\setlength{\rightskip}{0pt plus 5cm}gnu\-PG::\$error}}
+\label{classgnuPG_o2}
+
+
+\hypertarget{classgnuPG_o1}{
+\index{gnuPG@{gnu\-PG}!$home_directory@{\$home\_\-directory}}
+\index{$home_directory@{\$home\_\-directory}!gnuPG@{gnu\-PG}}
+\subsubsection[\$home\_\-directory]{\setlength{\rightskip}{0pt plus 5cm}gnu\-PG::\$home\_\-directory}}
+\label{classgnuPG_o1}
+
+
+\hypertarget{classgnuPG_o3}{
+\index{gnuPG@{gnu\-PG}!$output@{\$output}}
+\index{$output@{\$output}!gnuPG@{gnu\-PG}}
+\subsubsection[\$output]{\setlength{\rightskip}{0pt plus 5cm}gnu\-PG::\$output}}
+\label{classgnuPG_o3}
+
+
+\hypertarget{classgnuPG_o0}{
+\index{gnuPG@{gnu\-PG}!$program_path@{\$program\_\-path}}
+\index{$program_path@{\$program\_\-path}!gnuPG@{gnu\-PG}}
+\subsubsection[\$program\_\-path]{\setlength{\rightskip}{0pt plus 5cm}gnu\-PG::\$program\_\-path}}
+\label{classgnuPG_o0}
+
+
+
+
+La documentation de cette classe a \'{e}t\'{e} g\'{e}n\'{e}r\'{e}e \`{a} partir du fichier suivant:\begin{CompactItemize}
+\item 
+\hyperlink{gnuPG__class_8inc}{gnu\-PG\_\-class.inc}\end{CompactItemize}

@@ -1,0 +1,22 @@
+\hypertarget{namespaceutilitairesHTML_1_1php}{
+\section{R\'{e}f\'{e}rence du namespace utilitaires\-HTML::php}
+\label{namespaceutilitairesHTML_1_1php}\index{utilitairesHTML::php@{utilitairesHTML::php}}
+}
+
+
+
+
+\subsection{Description d\'{e}taill\'{e}e}
+Retourne la Liste des plans de secours.
+
+\begin{Desc}
+\item[Renvoie:]rien \end{Desc}
+\begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em int}]param\`{e}tre de connexion \item[{\em int}]item s\'{e}lectionn\'{e} par d\'{e}faut \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]1.0 \end{Desc}
+
+

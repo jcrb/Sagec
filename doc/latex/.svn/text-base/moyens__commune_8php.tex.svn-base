@@ -1,0 +1,100 @@
+\hypertarget{moyens__commune_8php}{
+\section{R\'{e}f\'{e}rence du fichier moyens\_\-commune.php}
+\label{moyens__commune_8php}\index{moyens_commune.php@{moyens\_\-commune.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{moyens__commune_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{moyens__commune_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{moyens__commune_8php_a2}{\$mot} = \$string\_\-lang\mbox{[}'SELECTIONNER\_\-COMMUNE'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{moyens__commune_8php_a3}{\$rub} = get\_\-carac\_\-commune(\$connexion,\$\_\-POST\mbox{[}commune\_\-id\mbox{]})
+\item 
+\hyperlink{moyens__commune_8php_a4}{\$ligne\_\-color} = \char`\"{}tomato\char`\"{}
+\item 
+\hyperlink{moyens__commune_8php_a5}{\$requete}
+\item 
+\hyperlink{moyens__commune_8php_a6}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{moyens__commune_8php_a7}{\$i} = mysql\_\-num\_\-rows(\$resultat) + 1
+\item 
+\hyperlink{moyens__commune_8php_a8}{\$nb\_\-vehicules} = \$rep\mbox{[}0\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{moyens__commune_8php_a1}{
+\index{moyens_commune.php@{moyens\_\-commune.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!moyens_commune.php@{moyens\_\-commune.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{moyens__commune_8php_a1}
+
+
+\hypertarget{moyens__commune_8php_a7}{
+\index{moyens_commune.php@{moyens\_\-commune.php}!$i@{\$i}}
+\index{$i@{\$i}!moyens_commune.php@{moyens\_\-commune.php}}
+\subsubsection[\$i]{\setlength{\rightskip}{0pt plus 5cm}\$i = mysql\_\-num\_\-rows(\$resultat) + 1}}
+\label{moyens__commune_8php_a7}
+
+
+\hypertarget{moyens__commune_8php_a0}{
+\index{moyens_commune.php@{moyens\_\-commune.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!moyens_commune.php@{moyens\_\-commune.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{moyens__commune_8php_a0}
+
+
+\hypertarget{moyens__commune_8php_a4}{
+\index{moyens_commune.php@{moyens\_\-commune.php}!$ligne_color@{\$ligne\_\-color}}
+\index{$ligne_color@{\$ligne\_\-color}!moyens_commune.php@{moyens\_\-commune.php}}
+\subsubsection[\$ligne\_\-color]{\setlength{\rightskip}{0pt plus 5cm}\$ligne\_\-color = \char`\"{}tomato\char`\"{}}}
+\label{moyens__commune_8php_a4}
+
+
+\hypertarget{moyens__commune_8php_a2}{
+\index{moyens_commune.php@{moyens\_\-commune.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!moyens_commune.php@{moyens\_\-commune.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'SELECTIONNER\_\-COMMUNE'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{moyens__commune_8php_a2}
+
+
+\hypertarget{moyens__commune_8php_a8}{
+\index{moyens_commune.php@{moyens\_\-commune.php}!$nb_vehicules@{\$nb\_\-vehicules}}
+\index{$nb_vehicules@{\$nb\_\-vehicules}!moyens_commune.php@{moyens\_\-commune.php}}
+\subsubsection[\$nb\_\-vehicules]{\setlength{\rightskip}{0pt plus 5cm}\$nb\_\-vehicules = \$rep\mbox{[}0\mbox{]}}}
+\label{moyens__commune_8php_a8}
+
+
+\hypertarget{moyens__commune_8php_a5}{
+\index{moyens_commune.php@{moyens\_\-commune.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!moyens_commune.php@{moyens\_\-commune.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{moyens__commune_8php_a5}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}        "SELECT org_ID,org_nom,tel1,com_nom     
+                                        FROM organisme,commune
+                                        WHERE organisme.organisme_type_ID = '4'
+                                        AND commune.secteur_apa_ID = '$rub[3]'
+                                        AND organisme.com_ID = commune.com_ID
+                                        "
+\end{verbatim}\normalsize 
+\hypertarget{moyens__commune_8php_a6}{
+\index{moyens_commune.php@{moyens\_\-commune.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!moyens_commune.php@{moyens\_\-commune.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{moyens__commune_8php_a6}
+
+
+\hypertarget{moyens__commune_8php_a3}{
+\index{moyens_commune.php@{moyens\_\-commune.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!moyens_commune.php@{moyens\_\-commune.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = get\_\-carac\_\-commune(\$connexion,\$\_\-POST\mbox{[}commune\_\-id\mbox{]})}}
+\label{moyens__commune_8php_a3}
+
+

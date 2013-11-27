@@ -1,0 +1,73 @@
+\hypertarget{intervenants__synoptique_8php}{
+\section{R\'{e}f\'{e}rence du fichier intervenants\_\-synoptique.php}
+\label{intervenants__synoptique_8php}\index{intervenants_synoptique.php@{intervenants\_\-synoptique.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{intervenants__synoptique_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{intervenants__synoptique_8php_a1}{\$mot} = Date\-Heure(\$langue)
+\item 
+\hyperlink{intervenants__synoptique_8php_a2}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{intervenants__synoptique_8php_a3}{\$table} = array(array())
+\item 
+\hyperlink{intervenants__synoptique_8php_a4}{\$requete} = \char`\"{}SELECT perso\_\-cat\_\-ID, localisation\_\-ID FROM personnel WHERE arrive = 'o'\char`\"{}
+\item 
+\hyperlink{intervenants__synoptique_8php_a5}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{intervenants__synoptique_8php_a6}{\$categorie} = 1
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{intervenants__synoptique_8php_a6}{
+\index{intervenants_synoptique.php@{intervenants\_\-synoptique.php}!$categorie@{\$categorie}}
+\index{$categorie@{\$categorie}!intervenants_synoptique.php@{intervenants\_\-synoptique.php}}
+\subsubsection[\$categorie]{\setlength{\rightskip}{0pt plus 5cm}\$categorie = 1}}
+\label{intervenants__synoptique_8php_a6}
+
+
+\hypertarget{intervenants__synoptique_8php_a2}{
+\index{intervenants_synoptique.php@{intervenants\_\-synoptique.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!intervenants_synoptique.php@{intervenants\_\-synoptique.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{intervenants__synoptique_8php_a2}
+
+
+\hypertarget{intervenants__synoptique_8php_a0}{
+\index{intervenants_synoptique.php@{intervenants\_\-synoptique.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!intervenants_synoptique.php@{intervenants\_\-synoptique.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{intervenants__synoptique_8php_a0}
+
+
+\hypertarget{intervenants__synoptique_8php_a1}{
+\index{intervenants_synoptique.php@{intervenants\_\-synoptique.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!intervenants_synoptique.php@{intervenants\_\-synoptique.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = Date\-Heure(\$langue)}}
+\label{intervenants__synoptique_8php_a1}
+
+
+\hypertarget{intervenants__synoptique_8php_a4}{
+\index{intervenants_synoptique.php@{intervenants\_\-synoptique.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!intervenants_synoptique.php@{intervenants\_\-synoptique.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT perso\_\-cat\_\-ID, localisation\_\-ID FROM personnel WHERE arrive = 'o'\char`\"{}}}
+\label{intervenants__synoptique_8php_a4}
+
+
+\hypertarget{intervenants__synoptique_8php_a5}{
+\index{intervenants_synoptique.php@{intervenants\_\-synoptique.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!intervenants_synoptique.php@{intervenants\_\-synoptique.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{intervenants__synoptique_8php_a5}
+
+
+\hypertarget{intervenants__synoptique_8php_a3}{
+\index{intervenants_synoptique.php@{intervenants\_\-synoptique.php}!$table@{\$table}}
+\index{$table@{\$table}!intervenants_synoptique.php@{intervenants\_\-synoptique.php}}
+\subsubsection[\$table]{\setlength{\rightskip}{0pt plus 5cm}\$table = array(array())}}
+\label{intervenants__synoptique_8php_a3}
+
+

@@ -1,0 +1,73 @@
+\hypertarget{service__saisie_8php}{
+\section{R\'{e}f\'{e}rence du fichier service\_\-saisie.php}
+\label{service__saisie_8php}\index{service_saisie.php@{service\_\-saisie.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{service__saisie_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{service__saisie_8php_a1}{\$requete}
+\item 
+\hyperlink{service__saisie_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{service__saisie_8php_a3}{\$i} = Ligne\-Suivante(\$resultat)
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{service__saisie_8php_a4}{\$c} = ''
+\item 
+\hyperlink{service__saisie_8php_a5}{\$mot} = \$string\_\-lang\mbox{[}'ENFANT\_\-ACCEPTE'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{}, \char`\"{}.\$string\_\-lang\mbox{[}'A\_\-PARTIR'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{} \char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{service__saisie_8php_a4}{
+\index{service_saisie.php@{service\_\-saisie.php}!$c@{\$c}}
+\index{$c@{\$c}!service_saisie.php@{service\_\-saisie.php}}
+\subsubsection[\$c]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$c = ''}}
+\label{service__saisie_8php_a4}
+
+
+\hypertarget{service__saisie_8php_a0}{
+\index{service_saisie.php@{service\_\-saisie.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!service_saisie.php@{service\_\-saisie.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{service__saisie_8php_a0}
+
+
+\hypertarget{service__saisie_8php_a3}{
+\index{service_saisie.php@{service\_\-saisie.php}!$i@{\$i}}
+\index{$i@{\$i}!service_saisie.php@{service\_\-saisie.php}}
+\subsubsection[\$i]{\setlength{\rightskip}{0pt plus 5cm}\$i = Ligne\-Suivante(\$resultat)}}
+\label{service__saisie_8php_a3}
+
+
+\hypertarget{service__saisie_8php_a5}{
+\index{service_saisie.php@{service\_\-saisie.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!service_saisie.php@{service\_\-saisie.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'ENFANT\_\-ACCEPTE'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{}, \char`\"{}.\$string\_\-lang\mbox{[}'A\_\-PARTIR'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{} \char`\"{}}}
+\label{service__saisie_8php_a5}
+
+
+\hypertarget{service__saisie_8php_a1}{
+\index{service_saisie.php@{service\_\-saisie.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!service_saisie.php@{service\_\-saisie.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{service__saisie_8php_a1}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}        "SELECT service.service_ID,service_nom,service_code,service_tel,service_fax,service_etage,
+service_batiment,lits_sp,service_adulte, service_enfant,age_min
+                FROM service, lits
+                WHERE service.service_ID = '$_POST[service]'
+                AND service.service_ID = lits.service_ID
+                "
+\end{verbatim}\normalsize 
+\hypertarget{service__saisie_8php_a2}{
+\index{service_saisie.php@{service\_\-saisie.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!service_saisie.php@{service\_\-saisie.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{service__saisie_8php_a2}
+
+

@@ -1,0 +1,28 @@
+\hypertarget{batiment__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier batiment\_\-enregistre.php}
+\label{batiment__enregistre_8php}\index{batiment_enregistre.php@{batiment\_\-enregistre.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{batiment__enregistre_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{batiment__enregistre_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{batiment__enregistre_8php_a1}{
+\index{batiment_enregistre.php@{batiment\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!batiment_enregistre.php@{batiment\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{batiment__enregistre_8php_a1}
+
+
+\hypertarget{batiment__enregistre_8php_a0}{
+\index{batiment_enregistre.php@{batiment\_\-enregistre.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!batiment_enregistre.php@{batiment\_\-enregistre.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{batiment__enregistre_8php_a0}
+
+

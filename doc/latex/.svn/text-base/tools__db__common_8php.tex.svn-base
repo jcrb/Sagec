@@ -1,0 +1,64 @@
+\hypertarget{tools__db__common_8php}{
+\section{R\'{e}f\'{e}rence du fichier tools\_\-db\_\-common.php}
+\label{tools__db__common_8php}\index{tools_db_common.php@{tools\_\-db\_\-common.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{tools__db__common_8php_a0}{db\_\-error\_\-display} (\$err\_\-msg, \$link)
+\item 
+\hyperlink{tools__db__common_8php_a1}{db\_\-connect} (\$DSN)
+\item 
+\hyperlink{tools__db__common_8php_a2}{db\_\-select} (\$DSN, \$link)
+\item 
+\hyperlink{tools__db__common_8php_a3}{db\_\-disconnect} (\$link)
+\item 
+\hyperlink{tools__db__common_8php_a4}{db\_\-query} (\$link, \$query)
+\item 
+\hyperlink{tools__db__common_8php_a5}{db\_\-doquery} (\$DSN, \$query)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{tools__db__common_8php_a1}{
+\index{tools_db_common.php@{tools\_\-db\_\-common.php}!db_connect@{db\_\-connect}}
+\index{db_connect@{db\_\-connect}!tools_db_common.php@{tools\_\-db\_\-common.php}}
+\subsubsection[db\_\-connect]{\setlength{\rightskip}{0pt plus 5cm}db\_\-connect (\$ {\em DSN})}}
+\label{tools__db__common_8php_a1}
+
+
+\hypertarget{tools__db__common_8php_a3}{
+\index{tools_db_common.php@{tools\_\-db\_\-common.php}!db_disconnect@{db\_\-disconnect}}
+\index{db_disconnect@{db\_\-disconnect}!tools_db_common.php@{tools\_\-db\_\-common.php}}
+\subsubsection[db\_\-disconnect]{\setlength{\rightskip}{0pt plus 5cm}db\_\-disconnect (\$ {\em link})}}
+\label{tools__db__common_8php_a3}
+
+
+\hypertarget{tools__db__common_8php_a5}{
+\index{tools_db_common.php@{tools\_\-db\_\-common.php}!db_doquery@{db\_\-doquery}}
+\index{db_doquery@{db\_\-doquery}!tools_db_common.php@{tools\_\-db\_\-common.php}}
+\subsubsection[db\_\-doquery]{\setlength{\rightskip}{0pt plus 5cm}db\_\-doquery (\$ {\em DSN}, \$ {\em query})}}
+\label{tools__db__common_8php_a5}
+
+
+\hypertarget{tools__db__common_8php_a0}{
+\index{tools_db_common.php@{tools\_\-db\_\-common.php}!db_error_display@{db\_\-error\_\-display}}
+\index{db_error_display@{db\_\-error\_\-display}!tools_db_common.php@{tools\_\-db\_\-common.php}}
+\subsubsection[db\_\-error\_\-display]{\setlength{\rightskip}{0pt plus 5cm}db\_\-error\_\-display (\$ {\em err\_\-msg}, \$ {\em link})}}
+\label{tools__db__common_8php_a0}
+
+
+\hypertarget{tools__db__common_8php_a4}{
+\index{tools_db_common.php@{tools\_\-db\_\-common.php}!db_query@{db\_\-query}}
+\index{db_query@{db\_\-query}!tools_db_common.php@{tools\_\-db\_\-common.php}}
+\subsubsection[db\_\-query]{\setlength{\rightskip}{0pt plus 5cm}db\_\-query (\$ {\em link}, \$ {\em query})}}
+\label{tools__db__common_8php_a4}
+
+
+\hypertarget{tools__db__common_8php_a2}{
+\index{tools_db_common.php@{tools\_\-db\_\-common.php}!db_select@{db\_\-select}}
+\index{db_select@{db\_\-select}!tools_db_common.php@{tools\_\-db\_\-common.php}}
+\subsubsection[db\_\-select]{\setlength{\rightskip}{0pt plus 5cm}db\_\-select (\$ {\em DSN}, \$ {\em link})}}
+\label{tools__db__common_8php_a2}
+
+

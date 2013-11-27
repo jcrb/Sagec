@@ -1,0 +1,92 @@
+\hypertarget{service__fermeture_8php}{
+\section{R\'{e}f\'{e}rence du fichier service\_\-fermeture.php}
+\label{service__fermeture_8php}\index{service_fermeture.php@{service\_\-fermeture.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{service__fermeture_8php_a0}{\$mot} = \$string\_\-lang\mbox{[}'LISTE\_\-SERVICE\_\-HOPITAL'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{service__fermeture_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{service__fermeture_8php_a2}{\$requete}
+\item 
+\hyperlink{service__fermeture_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{service__fermeture_8php_a4}{\$\_\-style} = \char`\"{}A5\char`\"{}
+\item 
+\hyperlink{service__fermeture_8php_a5}{\$total} = array()
+\item 
+\hyperlink{service__fermeture_8php_a6}{\$identifiant} = \$i $\rightarrow$ service\_\-ID
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{service__fermeture_8php_a7}{\$d} = date(\char`\"{}j/m/Y H:i\char`\"{},\$i $\rightarrow$ date\_\-maj)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{service__fermeture_8php_a4}{
+\index{service_fermeture.php@{service\_\-fermeture.php}!$_style@{\$\_\-style}}
+\index{$_style@{\$\_\-style}!service_fermeture.php@{service\_\-fermeture.php}}
+\subsubsection[\$\_\-style]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$\_\-style = \char`\"{}A5\char`\"{}}}
+\label{service__fermeture_8php_a4}
+
+
+\hypertarget{service__fermeture_8php_a1}{
+\index{service_fermeture.php@{service\_\-fermeture.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!service_fermeture.php@{service\_\-fermeture.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{service__fermeture_8php_a1}
+
+
+\hypertarget{service__fermeture_8php_a7}{
+\index{service_fermeture.php@{service\_\-fermeture.php}!$d@{\$d}}
+\index{$d@{\$d}!service_fermeture.php@{service\_\-fermeture.php}}
+\subsubsection[\$d]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$d = date(\char`\"{}j/m/Y H:i\char`\"{},\$i $\rightarrow$ date\_\-maj)}}
+\label{service__fermeture_8php_a7}
+
+
+\hypertarget{service__fermeture_8php_a6}{
+\index{service_fermeture.php@{service\_\-fermeture.php}!$identifiant@{\$identifiant}}
+\index{$identifiant@{\$identifiant}!service_fermeture.php@{service\_\-fermeture.php}}
+\subsubsection[\$identifiant]{\setlength{\rightskip}{0pt plus 5cm}\$identifiant = \$i $\rightarrow$ service\_\-ID}}
+\label{service__fermeture_8php_a6}
+
+
+\hypertarget{service__fermeture_8php_a0}{
+\index{service_fermeture.php@{service\_\-fermeture.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!service_fermeture.php@{service\_\-fermeture.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'LISTE\_\-SERVICE\_\-HOPITAL'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{service__fermeture_8php_a0}
+
+
+\hypertarget{service__fermeture_8php_a2}{
+\index{service_fermeture.php@{service\_\-fermeture.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!service_fermeture.php@{service\_\-fermeture.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$requete}}
+\label{service__fermeture_8php_a2}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "SELECT service.service_ID,service_nom,service_code, lits_sp,lits_ferme,date_maj,type_nom
+                                FROM service, lits,type_service
+                                WHERE service.org_ID = $_SESSION[organisation]
+                                AND service.service_ID = lits.service_ID
+                                AND service.Type_ID = type_service.Type_ID
+                                ORDER BY type_nom
+                                "
+\end{verbatim}\normalsize 
+\hypertarget{service__fermeture_8php_a3}{
+\index{service_fermeture.php@{service\_\-fermeture.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!service_fermeture.php@{service\_\-fermeture.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{service__fermeture_8php_a3}
+
+
+\hypertarget{service__fermeture_8php_a5}{
+\index{service_fermeture.php@{service\_\-fermeture.php}!$total@{\$total}}
+\index{$total@{\$total}!service_fermeture.php@{service\_\-fermeture.php}}
+\subsubsection[\$total]{\setlength{\rightskip}{0pt plus 5cm}\$total\mbox{[}\$i $\rightarrow$ type\_\-nom\mbox{]} = array()}}
+\label{service__fermeture_8php_a5}
+
+

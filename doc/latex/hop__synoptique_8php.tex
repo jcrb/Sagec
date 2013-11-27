@@ -1,0 +1,81 @@
+\hypertarget{hop__synoptique_8php}{
+\section{R\'{e}f\'{e}rence du fichier hop\_\-synoptique.php}
+\label{hop__synoptique_8php}\index{hop_synoptique.php@{hop\_\-synoptique.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{hop__synoptique_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{hop__synoptique_8php_a1}{\$requete}
+\item 
+\hyperlink{hop__synoptique_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{hop__synoptique_8php_a3}{\$nombre} = array()
+\item 
+\hyperlink{hop__synoptique_8php_a4}{\$color} = array(\char`\"{}\#009999\char`\"{},\char`\"{}\#f48b809\char`\"{},\char`\"{}\#ffff80\char`\"{},\char`\"{}\#8bf878\char`\"{},\char`\"{}\#999999\char`\"{},\char`\"{}\#dde6ee\char`\"{})
+\item 
+\hyperlink{hop__synoptique_8php_a5}{\$mot} = Date\-Heure(\$langue)
+\item 
+\hyperlink{hop__synoptique_8php_a6}{\$total} = 0
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{hop__synoptique_8php_a4}{
+\index{hop_synoptique.php@{hop\_\-synoptique.php}!$color@{\$color}}
+\index{$color@{\$color}!hop_synoptique.php@{hop\_\-synoptique.php}}
+\subsubsection[\$color]{\setlength{\rightskip}{0pt plus 5cm}\$color = array(\char`\"{}\#009999\char`\"{},\char`\"{}\#f48b809\char`\"{},\char`\"{}\#ffff80\char`\"{},\char`\"{}\#8bf878\char`\"{},\char`\"{}\#999999\char`\"{},\char`\"{}\#dde6ee\char`\"{})}}
+\label{hop__synoptique_8php_a4}
+
+
+\hypertarget{hop__synoptique_8php_a0}{
+\index{hop_synoptique.php@{hop\_\-synoptique.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!hop_synoptique.php@{hop\_\-synoptique.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{hop__synoptique_8php_a0}
+
+
+\hypertarget{hop__synoptique_8php_a5}{
+\index{hop_synoptique.php@{hop\_\-synoptique.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!hop_synoptique.php@{hop\_\-synoptique.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = Date\-Heure(\$langue)}}
+\label{hop__synoptique_8php_a5}
+
+
+\hypertarget{hop__synoptique_8php_a3}{
+\index{hop_synoptique.php@{hop\_\-synoptique.php}!$nombre@{\$nombre}}
+\index{$nombre@{\$nombre}!hop_synoptique.php@{hop\_\-synoptique.php}}
+\subsubsection[\$nombre]{\setlength{\rightskip}{0pt plus 5cm}\$nombre = array()}}
+\label{hop__synoptique_8php_a3}
+
+
+\hypertarget{hop__synoptique_8php_a1}{
+\index{hop_synoptique.php@{hop\_\-synoptique.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!hop_synoptique.php@{hop\_\-synoptique.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{hop__synoptique_8php_a1}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}"SELECT gravite, org_nom
+                FROM victime, organisme
+                WHERE victime.Hop_ID = organisme.org_ID
+                ORDER by gravite
+                "
+\end{verbatim}\normalsize 
+\hypertarget{hop__synoptique_8php_a2}{
+\index{hop_synoptique.php@{hop\_\-synoptique.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!hop_synoptique.php@{hop\_\-synoptique.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{hop__synoptique_8php_a2}
+
+
+\hypertarget{hop__synoptique_8php_a6}{
+\index{hop_synoptique.php@{hop\_\-synoptique.php}!$total@{\$total}}
+\index{$total@{\$total}!hop_synoptique.php@{hop\_\-synoptique.php}}
+\subsubsection[\$total]{\setlength{\rightskip}{0pt plus 5cm}\$total = 0}}
+\label{hop__synoptique_8php_a6}
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Google Maps JavaScript API Example - EZ Google Map Digitizer</title>
+	<!--
+	<style type="text/css">
+    	v\:* { behavior:url(#default#VML);}
+	</style> -->
+    	
+	<!-- Ceci est spécifique de Sagec, localhost  -->
+    <script src = "key.js"></script>
+	 <script>
+	 	var myKey = 'ABQIAAAAOiFPV0Y5zzLw7M6z-aRD5RT2yXp_ZAY8_ufC3CFXhHIE1NvwkxS8vUbquNcde2ShUfiL9Y-_elhw5A';
+    	var scriptTag = '<' + 'script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key='+ myKey +'"type="text/javascript">'+'<'+'/script>';
+    	document.write(scriptTag);
+    </script>
+
+    <!-- <script src="digitalise_data.php" type="text/javascript"></script> -->
+    <link href="map.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onunload="GUnload()">
+<h3>Digitaliseur Sagec - Google Maps</h3>
+  <h4>Chercher une localisation (par g&eacute;ocodage et/ou dragging)</h4>
+
+<form action="#" onsubmit="showAddress(this.address.value); return false">
+  <p>
+    <input type="text" size="40" name="address" value="mairie, Vendenheim, France" />
+    <input type="submit" value="Geocode!" />
+  </p>
+</form>
+</p>
+Mode de dessin:
+<input type="radio" name="drawMode" id="drawMode_polyline" value="polyline" onclick="toggleDrawMode();" checked="checked"/>
+Ligne
+<input type="radio" name="drawMode" id="drawMode_polygon" value="polygon" onclick="toggleDrawMode();"/>
+Polygone
+<input type="radio" name="drawMode" id="drawMode_point" value="point" onclick="toggleDrawMode();"/>Point
+<input type="radio" name="drawMode" id="drawMode_none" value="none" onclick="toggleDrawMode();"/>Stop
+   &nbsp;&nbsp;
+
+<input type="button" onclick="deleteLastPoint();" value="Supprimer le dernier point"/>
+<input type="button" onclick="clearMap();" value="Effacer tout"/>
+Fichier: 
+<input type="radio" name="fileMode" id="fileMode_kml" value="KML" onclick="toggleFileMode();" checked="checked"/> KML
+<input type="radio" name="fileMode" id="fileMode_txt" value="TEXT" onclick="toggleFileMode();"/> Texte 
+<br/>
+<br/>
+
+<table>
+  <tr valign="top">
+    <td>
+    	<div id="map">TEXTE</div>
+    </td>
+    <td>
+    	<div id="status">
+        <textarea id="coords" cols="40" rows="20" readonly="true" onclick="this.select();">&lt;-- Cliquer sur la carte pour digitaliser</textarea>
+       <br/>
+       KML output (Copier et coller dans un fichier .kml et ouvrez dans Google Earth!)
+      </div>
+     </td>
+  </tr>
+</table>
+
+</body>
+</html>
+

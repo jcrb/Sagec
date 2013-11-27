@@ -1,0 +1,19 @@
+\hypertarget{BD__Connect_8php}{
+\section{R\'{e}f\'{e}rence du fichier BD\_\-Connect.php}
+\label{BD__Connect_8php}\index{BD_Connect.php@{BD\_\-Connect.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{BD__Connect_8php_a0}{\$connexion} = mysql\_\-connect(\hyperlink{pma__connect_8php_a6}{SERVEUR\_\-DISTANT},\hyperlink{pma__connect_8php_a4}{NOM2},\hyperlink{pma__connect_8php_a5}{PASSE2})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{BD__Connect_8php_a0}{
+\index{BD_Connect.php@{BD\_\-Connect.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!BD_Connect.php@{BD\_\-Connect.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = mysql\_\-connect(\hyperlink{pma__connect_8php_a6}{SERVEUR\_\-DISTANT},\hyperlink{pma__connect_8php_a4}{NOM2},\hyperlink{pma__connect_8php_a5}{PASSE2})}}
+\label{BD__Connect_8php_a0}
+
+

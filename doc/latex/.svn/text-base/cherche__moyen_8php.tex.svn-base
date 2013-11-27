@@ -1,0 +1,46 @@
+\hypertarget{cherche__moyen_8php}{
+\section{R\'{e}f\'{e}rence du fichier cherche\_\-moyen.php}
+\label{cherche__moyen_8php}\index{cherche_moyen.php@{cherche\_\-moyen.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{cherche__moyen_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{cherche__moyen_8php_a1}{\$requete}
+\item 
+\hyperlink{cherche__moyen_8php_a2}{\$resultat} = \$resultat = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{cherche__moyen_8php_a0}{
+\index{cherche_moyen.php@{cherche\_\-moyen.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!cherche_moyen.php@{cherche\_\-moyen.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{cherche__moyen_8php_a0}
+
+
+\hypertarget{cherche__moyen_8php_a1}{
+\index{cherche_moyen.php@{cherche\_\-moyen.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!cherche_moyen.php@{cherche\_\-moyen.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{cherche__moyen_8php_a1}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "SELECT ville_nom, ville_lambertX, ville_lambertY,organisme.org_ID
+                FROM ville, organisme,hopital
+                WHERE ville.ville_ID = organisme.ville_ID
+                AND organisme.org_ID = hopital.org_ID
+                AND Hop_Smur = 'o'
+                "
+\end{verbatim}\normalsize 
+\hypertarget{cherche__moyen_8php_a2}{
+\index{cherche_moyen.php@{cherche\_\-moyen.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!cherche_moyen.php@{cherche\_\-moyen.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = \$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{cherche__moyen_8php_a2}
+
+

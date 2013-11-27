@@ -1,0 +1,33 @@
+@CHARSET "ISO-8859-1";
+
+.entete_table{
+	width: 100%;
+	background-color: #FFAA55;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #DD6F00;
+	border-collapse:collapse
+}
+.entete_logo{
+	width: 21%;
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #DD6F00;
+}
+.entete_titre {
+	width: 79%;
+	background-color: #FFDCB9;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #DD6F00;
+	
+	font-size:20px;
+	font-weight:bold;	
+}
+
+.entete_menu {
+	color: #DD6F00;
+	background-color: #cccccc;
+	text-decoration: none;
+}

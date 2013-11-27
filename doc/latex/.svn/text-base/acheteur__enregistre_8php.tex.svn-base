@@ -1,0 +1,55 @@
+\hypertarget{acheteur__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier acheteur\_\-enregistre.php}
+\label{acheteur__enregistre_8php}\index{acheteur_enregistre.php@{acheteur\_\-enregistre.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{acheteur__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{acheteur__enregistre_8php_a1}{\$requete} = \char`\"{}SELECT acheteur\_\-ID,acheteur\_\-nom FROM acheteur WHERE acheteur\_\-nom='\$\_\-GET\mbox{[}nom\mbox{]}'\char`\"{}
+\item 
+\hyperlink{acheteur__enregistre_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{acheteur__enregistre_8php_a3}{\$donnees} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{acheteur__enregistre_8php_a4}{\$id\_\-fournisseur} = mysql\_\-insert\_\-id()
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{acheteur__enregistre_8php_a0}{
+\index{acheteur_enregistre.php@{acheteur\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!acheteur_enregistre.php@{acheteur\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{acheteur__enregistre_8php_a0}
+
+
+\hypertarget{acheteur__enregistre_8php_a3}{
+\index{acheteur_enregistre.php@{acheteur\_\-enregistre.php}!$donnees@{\$donnees}}
+\index{$donnees@{\$donnees}!acheteur_enregistre.php@{acheteur\_\-enregistre.php}}
+\subsubsection[\$donnees]{\setlength{\rightskip}{0pt plus 5cm}\$donnees = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{acheteur__enregistre_8php_a3}
+
+
+\hypertarget{acheteur__enregistre_8php_a4}{
+\index{acheteur_enregistre.php@{acheteur\_\-enregistre.php}!$id_fournisseur@{\$id\_\-fournisseur}}
+\index{$id_fournisseur@{\$id\_\-fournisseur}!acheteur_enregistre.php@{acheteur\_\-enregistre.php}}
+\subsubsection[\$id\_\-fournisseur]{\setlength{\rightskip}{0pt plus 5cm}\$id\_\-fournisseur = mysql\_\-insert\_\-id()}}
+\label{acheteur__enregistre_8php_a4}
+
+
+\hypertarget{acheteur__enregistre_8php_a1}{
+\index{acheteur_enregistre.php@{acheteur\_\-enregistre.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!acheteur_enregistre.php@{acheteur\_\-enregistre.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT acheteur\_\-ID,acheteur\_\-nom FROM acheteur WHERE acheteur\_\-nom='\$\_\-GET\mbox{[}nom\mbox{]}'\char`\"{}}}
+\label{acheteur__enregistre_8php_a1}
+
+
+\hypertarget{acheteur__enregistre_8php_a2}{
+\index{acheteur_enregistre.php@{acheteur\_\-enregistre.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!acheteur_enregistre.php@{acheteur\_\-enregistre.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{acheteur__enregistre_8php_a2}
+
+

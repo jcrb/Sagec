@@ -1,0 +1,167 @@
+\hypertarget{classIXR__Server}{
+\section{R\'{e}f\'{e}rence de la classe IXR\_\-Server}
+\label{classIXR__Server}\index{IXR_Server@{IXR\_\-Server}}
+}
+Graphe d'h\'{e}ritage de IXR\_\-Server::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classIXR__Server}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{CompactItemize}
+\item 
+\hyperlink{classIXR__Server_a0}{IXR\_\-Server} (\$callbacks=false, \$data=false)
+\item 
+\hyperlink{classIXR__Server_a1}{serve} (\$data=false)
+\item 
+\hyperlink{classIXR__Server_a2}{call} (\$methodname, \$args)
+\item 
+\hyperlink{classIXR__Server_a3}{error} (\$error, \$message=false)
+\item 
+\hyperlink{classIXR__Server_a4}{output} (\$xml)
+\item 
+\hyperlink{classIXR__Server_a5}{has\-Method} (\$method)
+\item 
+\hyperlink{classIXR__Server_a6}{set\-Capabilities} ()
+\item 
+\hyperlink{classIXR__Server_a7}{get\-Capabilities} (\$args)
+\item 
+\hyperlink{classIXR__Server_a8}{set\-Callbacks} ()
+\item 
+\hyperlink{classIXR__Server_a9}{list\-Methods} (\$args)
+\item 
+\hyperlink{classIXR__Server_a10}{multi\-Call} (\$methodcalls)
+\end{CompactItemize}
+\subsection*{Attributs publics}
+\begin{CompactItemize}
+\item 
+\hyperlink{classIXR__Server_o0}{\$data}
+\item 
+\hyperlink{classIXR__Server_o1}{\$callbacks} = array()
+\item 
+\hyperlink{classIXR__Server_o2}{\$message}
+\item 
+\hyperlink{classIXR__Server_o3}{\$capabilities}
+\end{CompactItemize}
+
+
+\subsection{Documentation des contructeurs et destructeur}
+\hypertarget{classIXR__Server_a0}{
+\index{IXR_Server@{IXR\_\-Server}!IXR_Server@{IXR\_\-Server}}
+\index{IXR_Server@{IXR\_\-Server}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[IXR\_\-Server]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::IXR\_\-Server (\$ {\em callbacks} = {\tt false}, \$ {\em data} = {\tt false})}}
+\label{classIXR__Server_a0}
+
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classIXR__Server_a2}{
+\index{IXR_Server@{IXR\_\-Server}!call@{call}}
+\index{call@{call}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[call]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::call (\$ {\em methodname}, \$ {\em args})}}
+\label{classIXR__Server_a2}
+
+
+
+
+R\'{e}impl\'{e}ment\'{e}e dans \hyperlink{classIXR__IntrospectionServer_a2}{IXR\_\-Introspection\-Server}.\hypertarget{classIXR__Server_a3}{
+\index{IXR_Server@{IXR\_\-Server}!error@{error}}
+\index{error@{error}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[error]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::error (\$ {\em error}, \$ {\em message} = {\tt false})}}
+\label{classIXR__Server_a3}
+
+
+\hypertarget{classIXR__Server_a7}{
+\index{IXR_Server@{IXR\_\-Server}!getCapabilities@{getCapabilities}}
+\index{getCapabilities@{getCapabilities}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[getCapabilities]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::get\-Capabilities (\$ {\em args})}}
+\label{classIXR__Server_a7}
+
+
+\hypertarget{classIXR__Server_a5}{
+\index{IXR_Server@{IXR\_\-Server}!hasMethod@{hasMethod}}
+\index{hasMethod@{hasMethod}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[hasMethod]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::has\-Method (\$ {\em method})}}
+\label{classIXR__Server_a5}
+
+
+\hypertarget{classIXR__Server_a9}{
+\index{IXR_Server@{IXR\_\-Server}!listMethods@{listMethods}}
+\index{listMethods@{listMethods}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[listMethods]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::list\-Methods (\$ {\em args})}}
+\label{classIXR__Server_a9}
+
+
+\hypertarget{classIXR__Server_a10}{
+\index{IXR_Server@{IXR\_\-Server}!multiCall@{multiCall}}
+\index{multiCall@{multiCall}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[multiCall]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::multi\-Call (\$ {\em methodcalls})}}
+\label{classIXR__Server_a10}
+
+
+\hypertarget{classIXR__Server_a4}{
+\index{IXR_Server@{IXR\_\-Server}!output@{output}}
+\index{output@{output}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[output]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::output (\$ {\em xml})}}
+\label{classIXR__Server_a4}
+
+
+\hypertarget{classIXR__Server_a1}{
+\index{IXR_Server@{IXR\_\-Server}!serve@{serve}}
+\index{serve@{serve}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[serve]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::serve (\$ {\em data} = {\tt false})}}
+\label{classIXR__Server_a1}
+
+
+\hypertarget{classIXR__Server_a8}{
+\index{IXR_Server@{IXR\_\-Server}!setCallbacks@{setCallbacks}}
+\index{setCallbacks@{setCallbacks}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[setCallbacks]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::set\-Callbacks ()}}
+\label{classIXR__Server_a8}
+
+
+\hypertarget{classIXR__Server_a6}{
+\index{IXR_Server@{IXR\_\-Server}!setCapabilities@{setCapabilities}}
+\index{setCapabilities@{setCapabilities}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[setCapabilities]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::set\-Capabilities ()}}
+\label{classIXR__Server_a6}
+
+
+
+
+\subsection{Documentation des donn\'{e}es membres}
+\hypertarget{classIXR__Server_o1}{
+\index{IXR_Server@{IXR\_\-Server}!$callbacks@{\$callbacks}}
+\index{$callbacks@{\$callbacks}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[\$callbacks]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::\$callbacks = array()}}
+\label{classIXR__Server_o1}
+
+
+\hypertarget{classIXR__Server_o3}{
+\index{IXR_Server@{IXR\_\-Server}!$capabilities@{\$capabilities}}
+\index{$capabilities@{\$capabilities}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[\$capabilities]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::\$capabilities}}
+\label{classIXR__Server_o3}
+
+
+\hypertarget{classIXR__Server_o0}{
+\index{IXR_Server@{IXR\_\-Server}!$data@{\$data}}
+\index{$data@{\$data}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[\$data]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::\$data}}
+\label{classIXR__Server_o0}
+
+
+\hypertarget{classIXR__Server_o2}{
+\index{IXR_Server@{IXR\_\-Server}!$message@{\$message}}
+\index{$message@{\$message}!IXR_Server@{IXR\_\-Server}}
+\subsubsection[\$message]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Server::\$message}}
+\label{classIXR__Server_o2}
+
+
+
+
+La documentation de cette classe a \'{e}t\'{e} g\'{e}n\'{e}r\'{e}e \`{a} partir du fichier suivant:\begin{CompactItemize}
+\item 
+\hyperlink{IXR__Library_8inc_8php}{IXR\_\-Library.inc.php}\end{CompactItemize}

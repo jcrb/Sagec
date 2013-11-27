@@ -1,0 +1,28 @@
+\hypertarget{service__maj_8php}{
+\section{R\'{e}f\'{e}rence du fichier service\_\-maj.php}
+\label{service__maj_8php}\index{service_maj.php@{service\_\-maj.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{service__maj_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{service__maj_8php_a1}{\$mot} = \$string\_\-lang\mbox{[}'AJOUTER\_\-SERVICE'\mbox{]}\mbox{[}\$langue\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{service__maj_8php_a0}{
+\index{service_maj.php@{service\_\-maj.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!service_maj.php@{service\_\-maj.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{service__maj_8php_a0}
+
+
+\hypertarget{service__maj_8php_a1}{
+\index{service_maj.php@{service\_\-maj.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!service_maj.php@{service\_\-maj.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'AJOUTER\_\-SERVICE'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{service__maj_8php_a1}
+
+

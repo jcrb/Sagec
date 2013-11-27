@@ -1,0 +1,55 @@
+\hypertarget{materiel_2affiche__stock_8php}{
+\section{R\'{e}f\'{e}rence du fichier affiche\_\-stock.php}
+\label{materiel_2affiche__stock_8php}\index{affiche_stock.php@{affiche\_\-stock.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{materiel_2affiche__stock_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{materiel_2affiche__stock_8php_a1}{\$requete}
+\item 
+\hyperlink{materiel_2affiche__stock_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{materiel_2affiche__stock_8php_a3}{\$rub} = mysql\_\-fetch\_\-array(\$resultat)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{materiel_2affiche__stock_8php_a0}{
+\index{materiel/affiche_stock.php@{materiel/affiche\_\-stock.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!materiel/affiche_stock.php@{materiel/affiche\_\-stock.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{materiel_2affiche__stock_8php_a0}
+
+
+\hypertarget{materiel_2affiche__stock_8php_a1}{
+\index{materiel/affiche_stock.php@{materiel/affiche\_\-stock.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!materiel/affiche_stock.php@{materiel/affiche\_\-stock.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{materiel_2affiche__stock_8php_a1}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "SELECT ville_ID,materiel_ID,dotation_qte , fournisseur_ID, acheteur_ID, date_achat,marque_ID
+                        FROM dotation
+                        WHERE ville_ID = '$_GET[type_ville]',
+                        AND materiel_ID = '$_GET[type_materiels]',
+                        AND fournisseur_ID = '$_GET[type_fournisseur]'
+                        "
+\end{verbatim}\normalsize 
+\hypertarget{materiel_2affiche__stock_8php_a2}{
+\index{materiel/affiche_stock.php@{materiel/affiche\_\-stock.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!materiel/affiche_stock.php@{materiel/affiche\_\-stock.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{materiel_2affiche__stock_8php_a2}
+
+
+\hypertarget{materiel_2affiche__stock_8php_a3}{
+\index{materiel/affiche_stock.php@{materiel/affiche\_\-stock.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!materiel/affiche_stock.php@{materiel/affiche\_\-stock.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{materiel_2affiche__stock_8php_a3}
+
+

@@ -1,0 +1,151 @@
+\hypertarget{allemagne_8php}{
+\section{R\'{e}f\'{e}rence du fichier allemagne.php}
+\label{allemagne_8php}\index{allemagne.php@{allemagne.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{allemagne_8php_a13}{lire\_\-pays} (\$nom)
+\item 
+\hyperlink{allemagne_8php_a14}{dessine\_\-pays} (\$d, \$p, \$couleur)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{allemagne_8php_a0}{\$france} = lire\_\-pays(\char`\"{}../carto/europe.txt\char`\"{})
+\item 
+\hyperlink{allemagne_8php_a1}{\$e} = \$france $\rightarrow$ get\-Enveloppe()
+\item 
+\hyperlink{allemagne_8php_a2}{\$image\_\-width} = 660
+\item 
+\hyperlink{allemagne_8php_a3}{\$image\_\-heigth} = 800
+\item 
+\hyperlink{allemagne_8php_a4}{\$univers\_\-h} = \$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}3\mbox{]} - \$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}1\mbox{]}
+\item 
+\hyperlink{allemagne_8php_a5}{\$univers\_\-w} = \$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}2\mbox{]} - \$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}0\mbox{]}
+\item 
+\hyperlink{allemagne_8php_a6}{\$d} = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}3\mbox{]},\$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}0\mbox{]},\$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}1\mbox{]},\$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}2\mbox{]})
+\item 
+\hyperlink{allemagne_8php_a7}{\$peachpuff} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0xda,0x\-B9)
+\item 
+\hyperlink{allemagne_8php_a8}{\$moccasin} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0x\-E4,0x\-B5)
+\item 
+\hyperlink{allemagne_8php_a9}{\$bleu} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x00,0x00,0xff)
+\item 
+\hyperlink{allemagne_8php_a10}{\$rouge} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0xff,0x00,0x00)
+\item 
+\hyperlink{allemagne_8php_a11}{\$x} = 8250
+\item 
+\hyperlink{allemagne_8php_a12}{\$y} = -13950
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{allemagne_8php_a14}{
+\index{allemagne.php@{allemagne.php}!dessine_pays@{dessine\_\-pays}}
+\index{dessine_pays@{dessine\_\-pays}!allemagne.php@{allemagne.php}}
+\subsubsection[dessine\_\-pays]{\setlength{\rightskip}{0pt plus 5cm}dessine\_\-pays (\$ {\em d}, \$ {\em p}, \$ {\em couleur})}}
+\label{allemagne_8php_a14}
+
+
+/$\ast$ dessine le contour d'un pays et peint le polygone avec \$couleur /$\ast$ \$d = objet de dessin /$\ast$ \$p = objet polygone en coord.r\'{e}elles \hypertarget{allemagne_8php_a13}{
+\index{allemagne.php@{allemagne.php}!lire_pays@{lire\_\-pays}}
+\index{lire_pays@{lire\_\-pays}!allemagne.php@{allemagne.php}}
+\subsubsection[lire\_\-pays]{\setlength{\rightskip}{0pt plus 5cm}lire\_\-pays (\$ {\em nom})}}
+\label{allemagne_8php_a13}
+
+
+/$\ast$ Lit les coordonn\'{e}es d'un pays et retourne un objet polygone le contenant 
+
+\subsection{Documentation des variables}
+\hypertarget{allemagne_8php_a9}{
+\index{allemagne.php@{allemagne.php}!$bleu@{\$bleu}}
+\index{$bleu@{\$bleu}!allemagne.php@{allemagne.php}}
+\subsubsection[\$bleu]{\setlength{\rightskip}{0pt plus 5cm}\$bleu = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x00,0x00,0xff)}}
+\label{allemagne_8php_a9}
+
+
+\hypertarget{allemagne_8php_a6}{
+\index{allemagne.php@{allemagne.php}!$d@{\$d}}
+\index{$d@{\$d}!allemagne.php@{allemagne.php}}
+\subsubsection[\$d]{\setlength{\rightskip}{0pt plus 5cm}\$d = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}3\mbox{]},\$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}0\mbox{]},\$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}1\mbox{]},\$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}2\mbox{]})}}
+\label{allemagne_8php_a6}
+
+
+\hypertarget{allemagne_8php_a1}{
+\index{allemagne.php@{allemagne.php}!$e@{\$e}}
+\index{$e@{\$e}!allemagne.php@{allemagne.php}}
+\subsubsection[\$e]{\setlength{\rightskip}{0pt plus 5cm}\$\hyperlink{apa__zone_8php_a37}{e} = \$france $\rightarrow$ get\-Enveloppe()}}
+\label{allemagne_8php_a1}
+
+
+\hypertarget{allemagne_8php_a0}{
+\index{allemagne.php@{allemagne.php}!$france@{\$france}}
+\index{$france@{\$france}!allemagne.php@{allemagne.php}}
+\subsubsection[\$france]{\setlength{\rightskip}{0pt plus 5cm}\$france = lire\_\-pays(\char`\"{}../carto/europe.txt\char`\"{})}}
+\label{allemagne_8php_a0}
+
+
+\hypertarget{allemagne_8php_a3}{
+\index{allemagne.php@{allemagne.php}!$image_heigth@{\$image\_\-heigth}}
+\index{$image_heigth@{\$image\_\-heigth}!allemagne.php@{allemagne.php}}
+\subsubsection[\$image\_\-heigth]{\setlength{\rightskip}{0pt plus 5cm}\$image\_\-heigth = 800}}
+\label{allemagne_8php_a3}
+
+
+\hypertarget{allemagne_8php_a2}{
+\index{allemagne.php@{allemagne.php}!$image_width@{\$image\_\-width}}
+\index{$image_width@{\$image\_\-width}!allemagne.php@{allemagne.php}}
+\subsubsection[\$image\_\-width]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$image\_\-width = 660}}
+\label{allemagne_8php_a2}
+
+
+\hypertarget{allemagne_8php_a8}{
+\index{allemagne.php@{allemagne.php}!$moccasin@{\$moccasin}}
+\index{$moccasin@{\$moccasin}!allemagne.php@{allemagne.php}}
+\subsubsection[\$moccasin]{\setlength{\rightskip}{0pt plus 5cm}\$moccasin = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0x\-E4,0x\-B5)}}
+\label{allemagne_8php_a8}
+
+
+\hypertarget{allemagne_8php_a7}{
+\index{allemagne.php@{allemagne.php}!$peachpuff@{\$peachpuff}}
+\index{$peachpuff@{\$peachpuff}!allemagne.php@{allemagne.php}}
+\subsubsection[\$peachpuff]{\setlength{\rightskip}{0pt plus 5cm}\$peachpuff = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0xda,0x\-B9)}}
+\label{allemagne_8php_a7}
+
+
+\hypertarget{allemagne_8php_a10}{
+\index{allemagne.php@{allemagne.php}!$rouge@{\$rouge}}
+\index{$rouge@{\$rouge}!allemagne.php@{allemagne.php}}
+\subsubsection[\$rouge]{\setlength{\rightskip}{0pt plus 5cm}\$rouge = imagecolor\-Allocate(\$d $\rightarrow$ pic,0xff,0x00,0x00)}}
+\label{allemagne_8php_a10}
+
+
+\hypertarget{allemagne_8php_a4}{
+\index{allemagne.php@{allemagne.php}!$univers_h@{\$univers\_\-h}}
+\index{$univers_h@{\$univers\_\-h}!allemagne.php@{allemagne.php}}
+\subsubsection[\$univers\_\-h]{\setlength{\rightskip}{0pt plus 5cm}\$univers\_\-h = \$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}3\mbox{]} - \$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}1\mbox{]}}}
+\label{allemagne_8php_a4}
+
+
+\hypertarget{allemagne_8php_a5}{
+\index{allemagne.php@{allemagne.php}!$univers_w@{\$univers\_\-w}}
+\index{$univers_w@{\$univers\_\-w}!allemagne.php@{allemagne.php}}
+\subsubsection[\$univers\_\-w]{\setlength{\rightskip}{0pt plus 5cm}\$univers\_\-w = \$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}2\mbox{]} - \$\hyperlink{apa__zone_8php_a37}{e}\mbox{[}0\mbox{]}}}
+\label{allemagne_8php_a5}
+
+
+\hypertarget{allemagne_8php_a11}{
+\index{allemagne.php@{allemagne.php}!$x@{\$x}}
+\index{$x@{\$x}!allemagne.php@{allemagne.php}}
+\subsubsection[\$x]{\setlength{\rightskip}{0pt plus 5cm}\$x = 8250}}
+\label{allemagne_8php_a11}
+
+
+\hypertarget{allemagne_8php_a12}{
+\index{allemagne.php@{allemagne.php}!$y@{\$y}}
+\index{$y@{\$y}!allemagne.php@{allemagne.php}}
+\subsubsection[\$y]{\setlength{\rightskip}{0pt plus 5cm}\$y = -13950}}
+\label{allemagne_8php_a12}
+
+

@@ -1,0 +1,73 @@
+\hypertarget{apa_8php}{
+\section{R\'{e}f\'{e}rence du fichier apa.php}
+\label{apa_8php}\index{apa.php@{apa.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{apa_8php_a0}{\$back} = \char`\"{}apa\_\-menu.php\char`\"{}
+\item 
+\hyperlink{apa_8php_a1}{\$org\_\-type} = \$\_\-SESSION\mbox{[}\char`\"{}organisation\char`\"{}\mbox{]}
+\item 
+\hyperlink{apa_8php_a2}{\$query} = \char`\"{}SELECT org\_\-nom FROM organisme WHERE org\_\-ID = '\$\_\-SESSION\mbox{[}organisation\mbox{]}'\char`\"{}
+\item 
+\hyperlink{apa_8php_a3}{\$result} = Exec\-Requete(\$query,\$connect)
+\item 
+\hyperlink{apa_8php_a4}{\$apa} = Ligne\-Suivante(\$result)
+\item 
+\hyperlink{apa_8php_a5}{\$\_\-style} = \char`\"{}A2\char`\"{}
+\item 
+\hyperlink{apa_8php_a6}{\$check} = \char`\"{}\char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{apa_8php_a5}{
+\index{apa.php@{apa.php}!$_style@{\$\_\-style}}
+\index{$_style@{\$\_\-style}!apa.php@{apa.php}}
+\subsubsection[\$\_\-style]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$\_\-style = \char`\"{}A2\char`\"{}}}
+\label{apa_8php_a5}
+
+
+\hypertarget{apa_8php_a4}{
+\index{apa.php@{apa.php}!$apa@{\$apa}}
+\index{$apa@{\$apa}!apa.php@{apa.php}}
+\subsubsection[\$apa]{\setlength{\rightskip}{0pt plus 5cm}\$apa = Ligne\-Suivante(\$result)}}
+\label{apa_8php_a4}
+
+
+\hypertarget{apa_8php_a0}{
+\index{apa.php@{apa.php}!$back@{\$back}}
+\index{$back@{\$back}!apa.php@{apa.php}}
+\subsubsection[\$back]{\setlength{\rightskip}{0pt plus 5cm}\$back = \char`\"{}apa\_\-menu.php\char`\"{}}}
+\label{apa_8php_a0}
+
+
+\hypertarget{apa_8php_a6}{
+\index{apa.php@{apa.php}!$check@{\$check}}
+\index{$check@{\$check}!apa.php@{apa.php}}
+\subsubsection[\$check]{\setlength{\rightskip}{0pt plus 5cm}\$check = \char`\"{}\char`\"{}}}
+\label{apa_8php_a6}
+
+
+\hypertarget{apa_8php_a1}{
+\index{apa.php@{apa.php}!$org_type@{\$org\_\-type}}
+\index{$org_type@{\$org\_\-type}!apa.php@{apa.php}}
+\subsubsection[\$org\_\-type]{\setlength{\rightskip}{0pt plus 5cm}\$org\_\-type = \$\_\-SESSION\mbox{[}\char`\"{}organisation\char`\"{}\mbox{]}}}
+\label{apa_8php_a1}
+
+
+\hypertarget{apa_8php_a2}{
+\index{apa.php@{apa.php}!$query@{\$query}}
+\index{$query@{\$query}!apa.php@{apa.php}}
+\subsubsection[\$query]{\setlength{\rightskip}{0pt plus 5cm}\$query = \char`\"{}SELECT org\_\-nom FROM organisme WHERE org\_\-ID = '\$\_\-SESSION\mbox{[}organisation\mbox{]}'\char`\"{}}}
+\label{apa_8php_a2}
+
+
+\hypertarget{apa_8php_a3}{
+\index{apa.php@{apa.php}!$result@{\$result}}
+\index{$result@{\$result}!apa.php@{apa.php}}
+\subsubsection[\$result]{\setlength{\rightskip}{0pt plus 5cm}\$result = Exec\-Requete(\$query,\$connect)}}
+\label{apa_8php_a3}
+
+

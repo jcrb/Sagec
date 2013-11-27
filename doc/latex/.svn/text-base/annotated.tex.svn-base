@@ -1,0 +1,23 @@
+\section{SAGEC Liste des classes}
+Liste des classes, structures, unions et interfaces avec une br\`{e}ve description:\begin{CompactList}
+\item\contentsline{section}{\hyperlink{classCDessin}{CDessin} }{\pageref{classCDessin}}{}
+\item\contentsline{section}{\hyperlink{classCStat}{CStat} }{\pageref{classCStat}}{}
+\item\contentsline{section}{\hyperlink{classdebora}{debora} }{\pageref{classdebora}}{}
+\item\contentsline{section}{\hyperlink{classFPDF}{FPDF} }{\pageref{classFPDF}}{}
+\item\contentsline{section}{\hyperlink{classgnuPG}{gnu\-PG} }{\pageref{classgnuPG}}{}
+\item\contentsline{section}{\hyperlink{classIXR__Base64}{IXR\_\-Base64} }{\pageref{classIXR__Base64}}{}
+\item\contentsline{section}{\hyperlink{classIXR__Client}{IXR\_\-Client} }{\pageref{classIXR__Client}}{}
+\item\contentsline{section}{\hyperlink{classIXR__ClientMulticall}{IXR\_\-Client\-Multicall} }{\pageref{classIXR__ClientMulticall}}{}
+\item\contentsline{section}{\hyperlink{classIXR__Date}{IXR\_\-Date} }{\pageref{classIXR__Date}}{}
+\item\contentsline{section}{\hyperlink{classIXR__Error}{IXR\_\-Error} }{\pageref{classIXR__Error}}{}
+\item\contentsline{section}{\hyperlink{classIXR__IntrospectionServer}{IXR\_\-Introspection\-Server} }{\pageref{classIXR__IntrospectionServer}}{}
+\item\contentsline{section}{\hyperlink{classIXR__Message}{IXR\_\-Message} }{\pageref{classIXR__Message}}{}
+\item\contentsline{section}{\hyperlink{classIXR__Request}{IXR\_\-Request} }{\pageref{classIXR__Request}}{}
+\item\contentsline{section}{\hyperlink{classIXR__Server}{IXR\_\-Server} }{\pageref{classIXR__Server}}{}
+\item\contentsline{section}{\hyperlink{classIXR__Value}{IXR\_\-Value} }{\pageref{classIXR__Value}}{}
+\item\contentsline{section}{\hyperlink{classMail}{Mail} }{\pageref{classMail}}{}
+\item\contentsline{section}{\hyperlink{classPDF}{PDF} }{\pageref{classPDF}}{}
+\item\contentsline{section}{\hyperlink{classpolygone}{polygone} }{\pageref{classpolygone}}{}
+\item\contentsline{section}{\hyperlink{classsagec__ftp}{sagec\_\-ftp} }{\pageref{classsagec__ftp}}{}
+\item\contentsline{section}{\hyperlink{classStack}{Stack} }{\pageref{classStack}}{}
+\end{CompactList}

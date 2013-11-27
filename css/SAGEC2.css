@@ -1,0 +1,70 @@
+.titre_bloc{
+        color: #2B3856;
+        font-weight:bold;
+        font-size: larger;
+        border-bottom: thin solid #2B3856;
+}
+
+.libelle_gauche{
+	float: left;
+	font-weight:bold;
+	background-color: #EEEEEE;
+	border: thin solid #808080;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 23px;
+	vertical-align: middle;
+}
+
+.libelle{
+	float: left;
+	margin-left: 0px;
+	border-bottom: thin solid #808080;
+	border-top: thin solid #808080;
+	border-right: thin solid #808080;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 23px;
+	vertical-align: middle;
+}
+
+.tab{
+	border: none;
+	border-collapse: collapse;
+}
+
+.tab_titre_gauche{
+	color: black;
+	font-weight:bold;
+	text-align:left;
+	padding:5px;
+	border-bottom: medium solid #808080;
+	border-left: none;
+}
+
+.tab_titre{
+	color: black;
+	font-weight:bold;
+	text-align:left;
+	padding:5px;
+	border-bottom: medium solid #808080;
+	border-left: thin solid #808080;
+}
+
+.tab_cel_gauche{
+	color: black;
+	font-weight:normal;
+	text-align:left;
+	padding:5px;
+	border-bottom: thin solid #808080;
+	border-left: none;
+}
+
+.tab_cel{
+	color: black;
+	font-weight:normal;
+	text-align:left;
+	padding:5px;
+	border-bottom: thin solid #808080;
+	border-left: thin solid #808080;
+}

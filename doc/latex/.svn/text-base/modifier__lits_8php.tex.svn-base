@@ -1,0 +1,55 @@
+\hypertarget{modifier__lits_8php}{
+\section{R\'{e}f\'{e}rence du fichier modifier\_\-lits.php}
+\label{modifier__lits_8php}\index{modifier_lits.php@{modifier\_\-lits.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{modifier__lits_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{modifier__lits_8php_a1}{\$service} = \$\_\-GET\mbox{[}'service'\mbox{]}
+\item 
+\hyperlink{modifier__lits_8php_a2}{\$service\_\-nom} = \$\_\-GET\mbox{[}'nom'\mbox{]}
+\item 
+\hyperlink{modifier__lits_8php_a3}{\$requete} = \char`\"{}SELECT $\ast$ FROM lits\_\-journal WHERE service\_\-ID = '\$service'\char`\"{}
+\item 
+\hyperlink{modifier__lits_8php_a4}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{modifier__lits_8php_a0}{
+\index{modifier_lits.php@{modifier\_\-lits.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!modifier_lits.php@{modifier\_\-lits.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{modifier__lits_8php_a0}
+
+
+\hypertarget{modifier__lits_8php_a3}{
+\index{modifier_lits.php@{modifier\_\-lits.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!modifier_lits.php@{modifier\_\-lits.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT $\ast$ FROM lits\_\-journal WHERE service\_\-ID = '\$service'\char`\"{}}}
+\label{modifier__lits_8php_a3}
+
+
+\hypertarget{modifier__lits_8php_a4}{
+\index{modifier_lits.php@{modifier\_\-lits.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!modifier_lits.php@{modifier\_\-lits.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{modifier__lits_8php_a4}
+
+
+\hypertarget{modifier__lits_8php_a1}{
+\index{modifier_lits.php@{modifier\_\-lits.php}!$service@{\$service}}
+\index{$service@{\$service}!modifier_lits.php@{modifier\_\-lits.php}}
+\subsubsection[\$service]{\setlength{\rightskip}{0pt plus 5cm}\$service = \$\_\-GET\mbox{[}'service'\mbox{]}}}
+\label{modifier__lits_8php_a1}
+
+
+\hypertarget{modifier__lits_8php_a2}{
+\index{modifier_lits.php@{modifier\_\-lits.php}!$service_nom@{\$service\_\-nom}}
+\index{$service_nom@{\$service\_\-nom}!modifier_lits.php@{modifier\_\-lits.php}}
+\subsubsection[\$service\_\-nom]{\setlength{\rightskip}{0pt plus 5cm}\$service\_\-nom = \$\_\-GET\mbox{[}'nom'\mbox{]}}}
+\label{modifier__lits_8php_a2}
+
+

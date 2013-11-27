@@ -1,0 +1,79 @@
+\hypertarget{tourDeRole__modifie_8php}{
+\section{R\'{e}f\'{e}rence du fichier tour\-De\-Role\_\-modifie.php}
+\label{tourDeRole__modifie_8php}\index{tourDeRole_modifie.php@{tourDeRole\_\-modifie.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{tourDeRole__modifie_8php_a6}{ajoute} ()
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{tourDeRole__modifie_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{tourDeRole__modifie_8php_a1}{\$requete} = \char`\"{}SELECT $\ast$ FROM apa\_\-tour\char`\"{}
+\item 
+\hyperlink{tourDeRole__modifie_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{tourDeRole__modifie_8php_a3}{\$nb\_\-lines} = 0
+\item 
+\hyperlink{tourDeRole__modifie_8php_a4}{\$ordre} = \$nb\_\-lines-1
+\item 
+\hyperlink{tourDeRole__modifie_8php_a5}{\$n} = \$i+1
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{tourDeRole__modifie_8php_a6}{
+\index{tourDeRole_modifie.php@{tour\-De\-Role\_\-modifie.php}!ajoute@{ajoute}}
+\index{ajoute@{ajoute}!tourDeRole_modifie.php@{tour\-De\-Role\_\-modifie.php}}
+\subsubsection[ajoute]{\setlength{\rightskip}{0pt plus 5cm}ajoute ()}}
+\label{tourDeRole__modifie_8php_a6}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{tourDeRole__modifie_8php_a0}{
+\index{tourDeRole_modifie.php@{tour\-De\-Role\_\-modifie.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!tourDeRole_modifie.php@{tour\-De\-Role\_\-modifie.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{tourDeRole__modifie_8php_a0}
+
+
+\hypertarget{tourDeRole__modifie_8php_a5}{
+\index{tourDeRole_modifie.php@{tour\-De\-Role\_\-modifie.php}!$n@{\$n}}
+\index{$n@{\$n}!tourDeRole_modifie.php@{tour\-De\-Role\_\-modifie.php}}
+\subsubsection[\$n]{\setlength{\rightskip}{0pt plus 5cm}\$\hyperlink{utilitaires_2html_8php_a0}{n} = \$i+1}}
+\label{tourDeRole__modifie_8php_a5}
+
+
+\hypertarget{tourDeRole__modifie_8php_a3}{
+\index{tourDeRole_modifie.php@{tour\-De\-Role\_\-modifie.php}!$nb_lines@{\$nb\_\-lines}}
+\index{$nb_lines@{\$nb\_\-lines}!tourDeRole_modifie.php@{tour\-De\-Role\_\-modifie.php}}
+\subsubsection[\$nb\_\-lines]{\setlength{\rightskip}{0pt plus 5cm}\$nb\_\-lines = 0}}
+\label{tourDeRole__modifie_8php_a3}
+
+
+\hypertarget{tourDeRole__modifie_8php_a4}{
+\index{tourDeRole_modifie.php@{tour\-De\-Role\_\-modifie.php}!$ordre@{\$ordre}}
+\index{$ordre@{\$ordre}!tourDeRole_modifie.php@{tour\-De\-Role\_\-modifie.php}}
+\subsubsection[\$ordre]{\setlength{\rightskip}{0pt plus 5cm}\$ordre = \$nb\_\-lines-1}}
+\label{tourDeRole__modifie_8php_a4}
+
+
+\hypertarget{tourDeRole__modifie_8php_a1}{
+\index{tourDeRole_modifie.php@{tour\-De\-Role\_\-modifie.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!tourDeRole_modifie.php@{tour\-De\-Role\_\-modifie.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT $\ast$ FROM apa\_\-tour\char`\"{}}}
+\label{tourDeRole__modifie_8php_a1}
+
+
+\hypertarget{tourDeRole__modifie_8php_a2}{
+\index{tourDeRole_modifie.php@{tour\-De\-Role\_\-modifie.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!tourDeRole_modifie.php@{tour\-De\-Role\_\-modifie.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{tourDeRole__modifie_8php_a2}
+
+

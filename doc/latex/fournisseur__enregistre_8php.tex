@@ -1,0 +1,55 @@
+\hypertarget{fournisseur__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier fournisseur\_\-enregistre.php}
+\label{fournisseur__enregistre_8php}\index{fournisseur_enregistre.php@{fournisseur\_\-enregistre.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{fournisseur__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{fournisseur__enregistre_8php_a1}{\$requete} = \char`\"{}SELECT fournisseur\_\-ID,fournisseur\_\-nom FROM fournisseur WHERE fournisseur\_\-nom='\$\_\-GET\mbox{[}nom\mbox{]}'\char`\"{}
+\item 
+\hyperlink{fournisseur__enregistre_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{fournisseur__enregistre_8php_a3}{\$donnees} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{fournisseur__enregistre_8php_a4}{\$id\_\-fournisseur} = mysql\_\-insert\_\-id()
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{fournisseur__enregistre_8php_a0}{
+\index{fournisseur_enregistre.php@{fournisseur\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!fournisseur_enregistre.php@{fournisseur\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{fournisseur__enregistre_8php_a0}
+
+
+\hypertarget{fournisseur__enregistre_8php_a3}{
+\index{fournisseur_enregistre.php@{fournisseur\_\-enregistre.php}!$donnees@{\$donnees}}
+\index{$donnees@{\$donnees}!fournisseur_enregistre.php@{fournisseur\_\-enregistre.php}}
+\subsubsection[\$donnees]{\setlength{\rightskip}{0pt plus 5cm}\$donnees = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{fournisseur__enregistre_8php_a3}
+
+
+\hypertarget{fournisseur__enregistre_8php_a4}{
+\index{fournisseur_enregistre.php@{fournisseur\_\-enregistre.php}!$id_fournisseur@{\$id\_\-fournisseur}}
+\index{$id_fournisseur@{\$id\_\-fournisseur}!fournisseur_enregistre.php@{fournisseur\_\-enregistre.php}}
+\subsubsection[\$id\_\-fournisseur]{\setlength{\rightskip}{0pt plus 5cm}\$id\_\-fournisseur = mysql\_\-insert\_\-id()}}
+\label{fournisseur__enregistre_8php_a4}
+
+
+\hypertarget{fournisseur__enregistre_8php_a1}{
+\index{fournisseur_enregistre.php@{fournisseur\_\-enregistre.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!fournisseur_enregistre.php@{fournisseur\_\-enregistre.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT fournisseur\_\-ID,fournisseur\_\-nom FROM fournisseur WHERE fournisseur\_\-nom='\$\_\-GET\mbox{[}nom\mbox{]}'\char`\"{}}}
+\label{fournisseur__enregistre_8php_a1}
+
+
+\hypertarget{fournisseur__enregistre_8php_a2}{
+\index{fournisseur_enregistre.php@{fournisseur\_\-enregistre.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!fournisseur_enregistre.php@{fournisseur\_\-enregistre.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{fournisseur__enregistre_8php_a2}
+
+

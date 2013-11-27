@@ -1,0 +1,28 @@
+\hypertarget{ville__liste_8php}{
+\section{R\'{e}f\'{e}rence du fichier ville\_\-liste.php}
+\label{ville__liste_8php}\index{ville_liste.php@{ville\_\-liste.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{ville__liste_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{ville__liste_8php_a1}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{ville__liste_8php_a0}{
+\index{ville_liste.php@{ville\_\-liste.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!ville_liste.php@{ville\_\-liste.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{ville__liste_8php_a0}
+
+
+\hypertarget{ville__liste_8php_a1}{
+\index{ville_liste.php@{ville\_\-liste.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!ville_liste.php@{ville\_\-liste.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{ville__liste_8php_a1}
+
+

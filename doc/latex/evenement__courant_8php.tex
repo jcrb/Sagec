@@ -1,0 +1,64 @@
+\hypertarget{evenement__courant_8php}{
+\section{R\'{e}f\'{e}rence du fichier evenement\_\-courant.php}
+\label{evenement__courant_8php}\index{evenement_courant.php@{evenement\_\-courant.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{evenement__courant_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{evenement__courant_8php_a1}{\$connect} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{evenement__courant_8php_a2}{\$requete} = \char`\"{}SELECT $\ast$ FROM evenement WHERE evenement\_\-ID = '\$\_\-SESSION\mbox{[}evenement\mbox{]}'\char`\"{}
+\item 
+\hyperlink{evenement__courant_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connect)
+\item 
+\hyperlink{evenement__courant_8php_a4}{\$event} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{evenement__courant_8php_a5}{\$result} = Exec\-Requete(\$requete,\$connect)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{evenement__courant_8php_a1}{
+\index{evenement_courant.php@{evenement\_\-courant.php}!$connect@{\$connect}}
+\index{$connect@{\$connect}!evenement_courant.php@{evenement\_\-courant.php}}
+\subsubsection[\$connect]{\setlength{\rightskip}{0pt plus 5cm}\$connect = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{evenement__courant_8php_a1}
+
+
+\hypertarget{evenement__courant_8php_a4}{
+\index{evenement_courant.php@{evenement\_\-courant.php}!$event@{\$event}}
+\index{$event@{\$event}!evenement_courant.php@{evenement\_\-courant.php}}
+\subsubsection[\$event]{\setlength{\rightskip}{0pt plus 5cm}\$event = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{evenement__courant_8php_a4}
+
+
+\hypertarget{evenement__courant_8php_a0}{
+\index{evenement_courant.php@{evenement\_\-courant.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!evenement_courant.php@{evenement\_\-courant.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{evenement__courant_8php_a0}
+
+
+\hypertarget{evenement__courant_8php_a2}{
+\index{evenement_courant.php@{evenement\_\-courant.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!evenement_courant.php@{evenement\_\-courant.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT $\ast$ FROM evenement WHERE evenement\_\-ID = '\$\_\-SESSION\mbox{[}evenement\mbox{]}'\char`\"{}}}
+\label{evenement__courant_8php_a2}
+
+
+\hypertarget{evenement__courant_8php_a5}{
+\index{evenement_courant.php@{evenement\_\-courant.php}!$result@{\$result}}
+\index{$result@{\$result}!evenement_courant.php@{evenement\_\-courant.php}}
+\subsubsection[\$result]{\setlength{\rightskip}{0pt plus 5cm}\$result = Exec\-Requete(\$requete,\$connect)}}
+\label{evenement__courant_8php_a5}
+
+
+\hypertarget{evenement__courant_8php_a3}{
+\index{evenement_courant.php@{evenement\_\-courant.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!evenement_courant.php@{evenement\_\-courant.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connect)}}
+\label{evenement__courant_8php_a3}
+
+

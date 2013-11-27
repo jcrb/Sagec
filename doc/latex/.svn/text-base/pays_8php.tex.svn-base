@@ -1,0 +1,55 @@
+\hypertarget{pays_8php}{
+\section{R\'{e}f\'{e}rence du fichier pays.php}
+\label{pays_8php}\index{pays.php@{pays.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{pays_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{pays_8php_a1}{\$maj} = \$\_\-GET\mbox{[}'ID\_\-pays'\mbox{]}
+\item 
+\hyperlink{pays_8php_a2}{\$rub} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{pays_8php_a3}{\$requete} = \char`\"{}SELECT $\ast$ FROM pays ORDER BY pays\_\-nom\char`\"{}
+\item 
+\hyperlink{pays_8php_a4}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{pays_8php_a0}{
+\index{pays.php@{pays.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!pays.php@{pays.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{pays_8php_a0}
+
+
+\hypertarget{pays_8php_a1}{
+\index{pays.php@{pays.php}!$maj@{\$maj}}
+\index{$maj@{\$maj}!pays.php@{pays.php}}
+\subsubsection[\$maj]{\setlength{\rightskip}{0pt plus 5cm}\$maj = \$\_\-GET\mbox{[}'ID\_\-pays'\mbox{]}}}
+\label{pays_8php_a1}
+
+
+\hypertarget{pays_8php_a3}{
+\index{pays.php@{pays.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!pays.php@{pays.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT $\ast$ FROM pays ORDER BY pays\_\-nom\char`\"{}}}
+\label{pays_8php_a3}
+
+
+\hypertarget{pays_8php_a4}{
+\index{pays.php@{pays.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!pays.php@{pays.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{pays_8php_a4}
+
+
+\hypertarget{pays_8php_a2}{
+\index{pays.php@{pays.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!pays.php@{pays.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{pays_8php_a2}
+
+

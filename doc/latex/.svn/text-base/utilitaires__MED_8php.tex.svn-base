@@ -1,0 +1,195 @@
+\hypertarget{utilitaires__MED_8php}{
+\section{R\'{e}f\'{e}rence du fichier utilitaires\_\-MED.php}
+\label{utilitaires__MED_8php}\index{utilitaires_MED.php@{utilitaires\_\-MED.php}}
+}
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespaceutilitaires__MED_1_1php}{utilitaires\_\-MED::php}
+\end{CompactItemize}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{utilitaires__MED_8php_a0}{select\_\-dci} (\$connexion, \$item\_\-select, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitaires__MED_8php_a1}{select\_\-presentation} (\$connexion, \$item\_\-select, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitaires__MED_8php_a2}{select\_\-unite} (\$connexion, \$item\_\-select, \$nom=\char`\"{}ID\_\-unite\char`\"{}, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitaires__MED_8php_a3}{select\_\-psm} (\$connexion, \$item\_\-select, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitaires__MED_8php_a4}{select\_\-med\_\-localisation} (\$connexion, \$item\_\-select, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitaires__MED_8php_a5}{select\_\-malle} (\$connexion, \$item\_\-select, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitaires__MED_8php_a6}{select\_\-specialites} (\$connexion, \$item\_\-select, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitaires__MED_8php_a7}{select\_\-stock} (\$connexion, \$item\_\-select, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitaires__MED_8php_a8}{liste\_\-med} (\$connexion)
+\item 
+\hyperlink{utilitaires__MED_8php_a9}{get\_\-med} (\$connexion, \$med)
+\item 
+\hyperlink{utilitaires__MED_8php_a10}{liste\_\-med2} (\$connexion, \$item\_\-select)
+\item 
+\hyperlink{utilitaires__MED_8php_a11}{select\_\-stockage} (\$connexion, \$item\_\-select, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitaires__MED_8php_a12}{select\_\-rangement} (\$connexion, \$item\_\-select, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitaires__MED_8php_a13}{get\_\-stockage} (\$connexion, \$i)
+\item 
+\hyperlink{utilitaires__MED_8php_a14}{stockage\_\-table} (\$connexion)
+\item 
+\hyperlink{utilitaires__MED_8php_a15}{Selectlocal} (\$connexion, \$item\_\-select, \$langue, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitaires__MED_8php_a16}{Select\-Batiment} (\$connexion, \$org\_\-ID, \$item\_\-select, \$langue, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitaires__MED_8php_a17}{liste\_\-lot} (\$connexion)
+\item 
+\hyperlink{utilitaires__MED_8php_a18}{liste\_\-famille} (\$connexion, \$item\_\-select, \$on\-Change=\char`\"{}\char`\"{})
+\item 
+\hyperlink{utilitaires__MED_8php_a19}{liste\_\-medicament} (\$connexion, \$item\_\-select, \$on\-Change=\char`\"{}\char`\"{})
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{utilitaires__MED_8php_a9}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!get_med@{get\_\-med}}
+\index{get_med@{get\_\-med}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[get\_\-med]{\setlength{\rightskip}{0pt plus 5cm}get\_\-med (\$ {\em connexion}, \$ {\em med})}}
+\label{utilitaires__MED_8php_a9}
+
+
+\hypertarget{utilitaires__MED_8php_a13}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!get_stockage@{get\_\-stockage}}
+\index{get_stockage@{get\_\-stockage}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[get\_\-stockage]{\setlength{\rightskip}{0pt plus 5cm}get\_\-stockage (\$ {\em connexion}, \$ {\em i})}}
+\label{utilitaires__MED_8php_a13}
+
+
+\hypertarget{utilitaires__MED_8php_a18}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!liste_famille@{liste\_\-famille}}
+\index{liste_famille@{liste\_\-famille}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[liste\_\-famille]{\setlength{\rightskip}{0pt plus 5cm}liste\_\-famille (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitaires__MED_8php_a18}
+
+
+\hypertarget{utilitaires__MED_8php_a17}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!liste_lot@{liste\_\-lot}}
+\index{liste_lot@{liste\_\-lot}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[liste\_\-lot]{\setlength{\rightskip}{0pt plus 5cm}liste\_\-lot (\$ {\em connexion})}}
+\label{utilitaires__MED_8php_a17}
+
+
+\hypertarget{utilitaires__MED_8php_a8}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!liste_med@{liste\_\-med}}
+\index{liste_med@{liste\_\-med}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[liste\_\-med]{\setlength{\rightskip}{0pt plus 5cm}liste\_\-med (\$ {\em connexion})}}
+\label{utilitaires__MED_8php_a8}
+
+
+\hypertarget{utilitaires__MED_8php_a10}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!liste_med2@{liste\_\-med2}}
+\index{liste_med2@{liste\_\-med2}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[liste\_\-med2]{\setlength{\rightskip}{0pt plus 5cm}liste\_\-med2 (\$ {\em connexion}, \$ {\em item\_\-select})}}
+\label{utilitaires__MED_8php_a10}
+
+
+\hypertarget{utilitaires__MED_8php_a19}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!liste_medicament@{liste\_\-medicament}}
+\index{liste_medicament@{liste\_\-medicament}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[liste\_\-medicament]{\setlength{\rightskip}{0pt plus 5cm}liste\_\-medicament (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitaires__MED_8php_a19}
+
+
+\hypertarget{utilitaires__MED_8php_a0}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!select_dci@{select\_\-dci}}
+\index{select_dci@{select\_\-dci}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[select\_\-dci]{\setlength{\rightskip}{0pt plus 5cm}select\_\-dci (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitaires__MED_8php_a0}
+
+
+\hypertarget{utilitaires__MED_8php_a5}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!select_malle@{select\_\-malle}}
+\index{select_malle@{select\_\-malle}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[select\_\-malle]{\setlength{\rightskip}{0pt plus 5cm}select\_\-malle (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitaires__MED_8php_a5}
+
+
+\hypertarget{utilitaires__MED_8php_a4}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!select_med_localisation@{select\_\-med\_\-localisation}}
+\index{select_med_localisation@{select\_\-med\_\-localisation}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[select\_\-med\_\-localisation]{\setlength{\rightskip}{0pt plus 5cm}select\_\-med\_\-localisation (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitaires__MED_8php_a4}
+
+
+\hypertarget{utilitaires__MED_8php_a1}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!select_presentation@{select\_\-presentation}}
+\index{select_presentation@{select\_\-presentation}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[select\_\-presentation]{\setlength{\rightskip}{0pt plus 5cm}select\_\-presentation (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitaires__MED_8php_a1}
+
+
+\hypertarget{utilitaires__MED_8php_a3}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!select_psm@{select\_\-psm}}
+\index{select_psm@{select\_\-psm}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[select\_\-psm]{\setlength{\rightskip}{0pt plus 5cm}select\_\-psm (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitaires__MED_8php_a3}
+
+
+\hypertarget{utilitaires__MED_8php_a12}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!select_rangement@{select\_\-rangement}}
+\index{select_rangement@{select\_\-rangement}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[select\_\-rangement]{\setlength{\rightskip}{0pt plus 5cm}select\_\-rangement (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitaires__MED_8php_a12}
+
+
+\hypertarget{utilitaires__MED_8php_a6}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!select_specialites@{select\_\-specialites}}
+\index{select_specialites@{select\_\-specialites}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[select\_\-specialites]{\setlength{\rightskip}{0pt plus 5cm}select\_\-specialites (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitaires__MED_8php_a6}
+
+
+\hypertarget{utilitaires__MED_8php_a7}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!select_stock@{select\_\-stock}}
+\index{select_stock@{select\_\-stock}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[select\_\-stock]{\setlength{\rightskip}{0pt plus 5cm}select\_\-stock (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitaires__MED_8php_a7}
+
+
+\hypertarget{utilitaires__MED_8php_a11}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!select_stockage@{select\_\-stockage}}
+\index{select_stockage@{select\_\-stockage}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[select\_\-stockage]{\setlength{\rightskip}{0pt plus 5cm}select\_\-stockage (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitaires__MED_8php_a11}
+
+
+\hypertarget{utilitaires__MED_8php_a2}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!select_unite@{select\_\-unite}}
+\index{select_unite@{select\_\-unite}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[select\_\-unite]{\setlength{\rightskip}{0pt plus 5cm}select\_\-unite (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em nom} = {\tt \char`\"{}ID\_\-unite\char`\"{}}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitaires__MED_8php_a2}
+
+
+\hypertarget{utilitaires__MED_8php_a16}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!SelectBatiment@{SelectBatiment}}
+\index{SelectBatiment@{SelectBatiment}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[SelectBatiment]{\setlength{\rightskip}{0pt plus 5cm}Select\-Batiment (\$ {\em connexion}, \$ {\em org\_\-ID}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitaires__MED_8php_a16}
+
+
+\hypertarget{utilitaires__MED_8php_a15}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!Selectlocal@{Selectlocal}}
+\index{Selectlocal@{Selectlocal}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[Selectlocal]{\setlength{\rightskip}{0pt plus 5cm}Selectlocal (\$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em langue}, \$ {\em on\-Change} = {\tt \char`\"{}\char`\"{}})}}
+\label{utilitaires__MED_8php_a15}
+
+
+\hypertarget{utilitaires__MED_8php_a14}{
+\index{utilitaires_MED.php@{utilitaires\_\-MED.php}!stockage_table@{stockage\_\-table}}
+\index{stockage_table@{stockage\_\-table}!utilitaires_MED.php@{utilitaires\_\-MED.php}}
+\subsubsection[stockage\_\-table]{\setlength{\rightskip}{0pt plus 5cm}stockage\_\-table (\$ {\em connexion})}}
+\label{utilitaires__MED_8php_a14}
+
+

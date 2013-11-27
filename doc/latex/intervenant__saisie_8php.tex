@@ -1,0 +1,80 @@
+\hypertarget{intervenant__saisie_8php}{
+\section{R\'{e}f\'{e}rence du fichier intervenant\_\-saisie.php}
+\label{intervenant__saisie_8php}\index{intervenant_saisie.php@{intervenant\_\-saisie.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{intervenant__saisie_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{intervenant__saisie_8php_a1}{\$back} = \$\_\-GET\mbox{[}back\mbox{]}
+\item 
+\hyperlink{intervenant__saisie_8php_a2}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{intervenant__saisie_8php_a3}{\$requete}
+\item 
+\hyperlink{intervenant__saisie_8php_a4}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{intervenant__saisie_8php_a5}{\$mot1} = \char`\"{}'../intervenant\_\-saisie.php'\char`\"{}
+\item 
+\hyperlink{intervenant__saisie_8php_a6}{\$mot2} = \char`\"{}'personnel\-ID'\char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{intervenant__saisie_8php_a1}{
+\index{intervenant_saisie.php@{intervenant\_\-saisie.php}!$back@{\$back}}
+\index{$back@{\$back}!intervenant_saisie.php@{intervenant\_\-saisie.php}}
+\subsubsection[\$back]{\setlength{\rightskip}{0pt plus 5cm}\$back = \$\_\-GET\mbox{[}back\mbox{]}}}
+\label{intervenant__saisie_8php_a1}
+
+
+\hypertarget{intervenant__saisie_8php_a2}{
+\index{intervenant_saisie.php@{intervenant\_\-saisie.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!intervenant_saisie.php@{intervenant\_\-saisie.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{intervenant__saisie_8php_a2}
+
+
+\hypertarget{intervenant__saisie_8php_a0}{
+\index{intervenant_saisie.php@{intervenant\_\-saisie.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!intervenant_saisie.php@{intervenant\_\-saisie.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{intervenant__saisie_8php_a0}
+
+
+\hypertarget{intervenant__saisie_8php_a5}{
+\index{intervenant_saisie.php@{intervenant\_\-saisie.php}!$mot1@{\$mot1}}
+\index{$mot1@{\$mot1}!intervenant_saisie.php@{intervenant\_\-saisie.php}}
+\subsubsection[\$mot1]{\setlength{\rightskip}{0pt plus 5cm}\$mot1 = \char`\"{}'../intervenant\_\-saisie.php'\char`\"{}}}
+\label{intervenant__saisie_8php_a5}
+
+
+\hypertarget{intervenant__saisie_8php_a6}{
+\index{intervenant_saisie.php@{intervenant\_\-saisie.php}!$mot2@{\$mot2}}
+\index{$mot2@{\$mot2}!intervenant_saisie.php@{intervenant\_\-saisie.php}}
+\subsubsection[\$mot2]{\setlength{\rightskip}{0pt plus 5cm}\$mot2 = \char`\"{}'personnel\-ID'\char`\"{}}}
+\label{intervenant__saisie_8php_a6}
+
+
+\hypertarget{intervenant__saisie_8php_a3}{
+\index{intervenant_saisie.php@{intervenant\_\-saisie.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!intervenant_saisie.php@{intervenant\_\-saisie.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{intervenant__saisie_8php_a3}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "SELECT langue_nom,langue.langue_ID
+                        FROM langue, langue_parlee
+                        WHERE Pers_ID='$_GET[personnelID]'
+                        AND langue.langue_ID = langue_parlee.langue_ID"
+\end{verbatim}\normalsize 
+\hypertarget{intervenant__saisie_8php_a4}{
+\index{intervenant_saisie.php@{intervenant\_\-saisie.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!intervenant_saisie.php@{intervenant\_\-saisie.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{intervenant__saisie_8php_a4}
+
+

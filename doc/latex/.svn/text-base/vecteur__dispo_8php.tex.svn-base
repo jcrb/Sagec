@@ -1,0 +1,100 @@
+\hypertarget{vecteur__dispo_8php}{
+\section{R\'{e}f\'{e}rence du fichier vecteur\_\-dispo.php}
+\label{vecteur__dispo_8php}\index{vecteur_dispo.php@{vecteur\_\-dispo.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{vecteur__dispo_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}langue\mbox{]}
+\item 
+\hyperlink{vecteur__dispo_8php_a1}{\$mot} = \$string\_\-lang\mbox{[}'LANGUE'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{vecteur__dispo_8php_a2}{\$date\-FR} = str\-FTime(\char`\"{}\%A \%d \%B \%Y\char`\"{})
+\item 
+\hyperlink{vecteur__dispo_8php_a3}{\$heure} = date(\char`\"{}H:i\char`\"{})
+\item 
+\hyperlink{vecteur__dispo_8php_a4}{\$mot2} = \$string\_\-lang\mbox{[}'A'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{vecteur__dispo_8php_a5}{\$legende} = \$mot.\char`\"{} \char`\"{}.\$date\-FR.\char`\"{} \char`\"{}.\$mot2.\char`\"{} \char`\"{}.\$heure
+\item 
+\hyperlink{vecteur__dispo_8php_a6}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{vecteur__dispo_8php_a7}{\$requete} = \char`\"{}SELECT Vec\_\-Type,Vec\_\-Etat FROM vecteur WHERE Vec\_\-Etat='3'\char`\"{}
+\item 
+\hyperlink{vecteur__dispo_8php_a8}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{vecteur__dispo_8php_a9}{\$max} = 0
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{vecteur__dispo_8php_a6}{
+\index{vecteur_dispo.php@{vecteur\_\-dispo.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!vecteur_dispo.php@{vecteur\_\-dispo.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{vecteur__dispo_8php_a6}
+
+
+\hypertarget{vecteur__dispo_8php_a2}{
+\index{vecteur_dispo.php@{vecteur\_\-dispo.php}!$dateFR@{\$dateFR}}
+\index{$dateFR@{\$dateFR}!vecteur_dispo.php@{vecteur\_\-dispo.php}}
+\subsubsection[\$dateFR]{\setlength{\rightskip}{0pt plus 5cm}\$date\-FR = str\-FTime(\char`\"{}\%A \%d \%B \%Y\char`\"{})}}
+\label{vecteur__dispo_8php_a2}
+
+
+\hypertarget{vecteur__dispo_8php_a3}{
+\index{vecteur_dispo.php@{vecteur\_\-dispo.php}!$heure@{\$heure}}
+\index{$heure@{\$heure}!vecteur_dispo.php@{vecteur\_\-dispo.php}}
+\subsubsection[\$heure]{\setlength{\rightskip}{0pt plus 5cm}\$heure = date(\char`\"{}H:i\char`\"{})}}
+\label{vecteur__dispo_8php_a3}
+
+
+\hypertarget{vecteur__dispo_8php_a0}{
+\index{vecteur_dispo.php@{vecteur\_\-dispo.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!vecteur_dispo.php@{vecteur\_\-dispo.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}langue\mbox{]}}}
+\label{vecteur__dispo_8php_a0}
+
+
+\hypertarget{vecteur__dispo_8php_a5}{
+\index{vecteur_dispo.php@{vecteur\_\-dispo.php}!$legende@{\$legende}}
+\index{$legende@{\$legende}!vecteur_dispo.php@{vecteur\_\-dispo.php}}
+\subsubsection[\$legende]{\setlength{\rightskip}{0pt plus 5cm}\$legende = \$mot.\char`\"{} \char`\"{}.\$date\-FR.\char`\"{} \char`\"{}.\$mot2.\char`\"{} \char`\"{}.\$heure}}
+\label{vecteur__dispo_8php_a5}
+
+
+\hypertarget{vecteur__dispo_8php_a9}{
+\index{vecteur_dispo.php@{vecteur\_\-dispo.php}!$max@{\$max}}
+\index{$max@{\$max}!vecteur_dispo.php@{vecteur\_\-dispo.php}}
+\subsubsection[\$max]{\setlength{\rightskip}{0pt plus 5cm}\$max = 0}}
+\label{vecteur__dispo_8php_a9}
+
+
+\hypertarget{vecteur__dispo_8php_a1}{
+\index{vecteur_dispo.php@{vecteur\_\-dispo.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!vecteur_dispo.php@{vecteur\_\-dispo.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'LANGUE'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{vecteur__dispo_8php_a1}
+
+
+\hypertarget{vecteur__dispo_8php_a4}{
+\index{vecteur_dispo.php@{vecteur\_\-dispo.php}!$mot2@{\$mot2}}
+\index{$mot2@{\$mot2}!vecteur_dispo.php@{vecteur\_\-dispo.php}}
+\subsubsection[\$mot2]{\setlength{\rightskip}{0pt plus 5cm}\$mot2 = \$string\_\-lang\mbox{[}'A'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{vecteur__dispo_8php_a4}
+
+
+\hypertarget{vecteur__dispo_8php_a7}{
+\index{vecteur_dispo.php@{vecteur\_\-dispo.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!vecteur_dispo.php@{vecteur\_\-dispo.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT Vec\_\-Type,Vec\_\-Etat FROM vecteur WHERE Vec\_\-Etat='3'\char`\"{}}}
+\label{vecteur__dispo_8php_a7}
+
+
+\hypertarget{vecteur__dispo_8php_a8}{
+\index{vecteur_dispo.php@{vecteur\_\-dispo.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!vecteur_dispo.php@{vecteur\_\-dispo.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{vecteur__dispo_8php_a8}
+
+

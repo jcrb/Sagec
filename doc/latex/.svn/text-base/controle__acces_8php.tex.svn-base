@@ -1,0 +1,20 @@
+\hypertarget{controle__acces_8php}{
+\section{R\'{e}f\'{e}rence du fichier controle\_\-acces.php}
+\label{controle__acces_8php}\index{controle_acces.php@{controle\_\-acces.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{controle__acces_8php_a0}{autorise} (\$login, \$password)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{controle__acces_8php_a0}{
+\index{controle_acces.php@{controle\_\-acces.php}!autorise@{autorise}}
+\index{autorise@{autorise}!controle_acces.php@{controle\_\-acces.php}}
+\subsubsection[autorise]{\setlength{\rightskip}{0pt plus 5cm}autorise (\$ {\em login}, \$ {\em password})}}
+\label{controle__acces_8php_a0}
+
+
+function autorise(\$login, \$password) return le pr\'{e}nom + le nom de l'utilisateur ou \char`\"{}\char`\"{} si inconnu 

@@ -1,0 +1,28 @@
+\hypertarget{stockage__saisie_8php}{
+\section{R\'{e}f\'{e}rence du fichier stockage\_\-saisie.php}
+\label{stockage__saisie_8php}\index{stockage_saisie.php@{stockage\_\-saisie.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{stockage__saisie_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{stockage__saisie_8php_a1}{\$stock} = mysql\_\-fetch\_\-array(\$resultat)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{stockage__saisie_8php_a0}{
+\index{stockage_saisie.php@{stockage\_\-saisie.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!stockage_saisie.php@{stockage\_\-saisie.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{stockage__saisie_8php_a0}
+
+
+\hypertarget{stockage__saisie_8php_a1}{
+\index{stockage_saisie.php@{stockage\_\-saisie.php}!$stock@{\$stock}}
+\index{$stock@{\$stock}!stockage_saisie.php@{stockage\_\-saisie.php}}
+\subsubsection[\$stock]{\setlength{\rightskip}{0pt plus 5cm}\$stock = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{stockage__saisie_8php_a1}
+
+

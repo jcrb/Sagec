@@ -1,0 +1,82 @@
+\hypertarget{secteurs__synoptique_8php}{
+\section{R\'{e}f\'{e}rence du fichier secteurs\_\-synoptique.php}
+\label{secteurs__synoptique_8php}\index{secteurs_synoptique.php@{secteurs\_\-synoptique.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{secteurs__synoptique_8php_a0}{\$langue} = \char`\"{}FR\char`\"{}
+\item 
+\hyperlink{secteurs__synoptique_8php_a1}{\$mot} = \char`\"{}Disponibilit\'{e}s en transport sanitaire\char`\"{}
+\item 
+\hyperlink{secteurs__synoptique_8php_a2}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{secteurs__synoptique_8php_a3}{\$requete} = \char`\"{}SELECT secteur\_\-apa\_\-nom FROM secteur\_\-apa WHERE '1'\char`\"{}
+\item 
+\hyperlink{secteurs__synoptique_8php_a4}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{secteurs__synoptique_8php_a5}{\$gr} = \$\_\-GET\mbox{[}'rg'\mbox{]}
+\item 
+\hyperlink{secteurs__synoptique_8php_a6}{\$\_\-style} = \char`\"{}gold\char`\"{}
+\item 
+\hyperlink{secteurs__synoptique_8php_a7}{\$rg} = \$i + 1
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{secteurs__synoptique_8php_a6}{
+\index{secteurs_synoptique.php@{secteurs\_\-synoptique.php}!$_style@{\$\_\-style}}
+\index{$_style@{\$\_\-style}!secteurs_synoptique.php@{secteurs\_\-synoptique.php}}
+\subsubsection[\$\_\-style]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$\_\-style = \char`\"{}gold\char`\"{}}}
+\label{secteurs__synoptique_8php_a6}
+
+
+\hypertarget{secteurs__synoptique_8php_a2}{
+\index{secteurs_synoptique.php@{secteurs\_\-synoptique.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!secteurs_synoptique.php@{secteurs\_\-synoptique.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{secteurs__synoptique_8php_a2}
+
+
+\hypertarget{secteurs__synoptique_8php_a5}{
+\index{secteurs_synoptique.php@{secteurs\_\-synoptique.php}!$gr@{\$gr}}
+\index{$gr@{\$gr}!secteurs_synoptique.php@{secteurs\_\-synoptique.php}}
+\subsubsection[\$gr]{\setlength{\rightskip}{0pt plus 5cm}\$gr = \$\_\-GET\mbox{[}'rg'\mbox{]}}}
+\label{secteurs__synoptique_8php_a5}
+
+
+\hypertarget{secteurs__synoptique_8php_a0}{
+\index{secteurs_synoptique.php@{secteurs\_\-synoptique.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!secteurs_synoptique.php@{secteurs\_\-synoptique.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \char`\"{}FR\char`\"{}}}
+\label{secteurs__synoptique_8php_a0}
+
+
+\hypertarget{secteurs__synoptique_8php_a1}{
+\index{secteurs_synoptique.php@{secteurs\_\-synoptique.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!secteurs_synoptique.php@{secteurs\_\-synoptique.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \char`\"{}Disponibilit\'{e}s en transport sanitaire\char`\"{}}}
+\label{secteurs__synoptique_8php_a1}
+
+
+\hypertarget{secteurs__synoptique_8php_a3}{
+\index{secteurs_synoptique.php@{secteurs\_\-synoptique.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!secteurs_synoptique.php@{secteurs\_\-synoptique.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT secteur\_\-apa\_\-nom FROM secteur\_\-apa WHERE '1'\char`\"{}}}
+\label{secteurs__synoptique_8php_a3}
+
+
+\hypertarget{secteurs__synoptique_8php_a4}{
+\index{secteurs_synoptique.php@{secteurs\_\-synoptique.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!secteurs_synoptique.php@{secteurs\_\-synoptique.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{secteurs__synoptique_8php_a4}
+
+
+\hypertarget{secteurs__synoptique_8php_a7}{
+\index{secteurs_synoptique.php@{secteurs\_\-synoptique.php}!$rg@{\$rg}}
+\index{$rg@{\$rg}!secteurs_synoptique.php@{secteurs\_\-synoptique.php}}
+\subsubsection[\$rg]{\setlength{\rightskip}{0pt plus 5cm}\$rg = \$i + 1}}
+\label{secteurs__synoptique_8php_a7}
+
+

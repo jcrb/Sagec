@@ -1,0 +1,145 @@
+\hypertarget{services_8php}{
+\section{R\'{e}f\'{e}rence du fichier services.php}
+\label{services_8php}\index{services.php@{services.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{services_8php_a0}{\$sservice} = \$\_\-SESSION\mbox{[}\char`\"{}service\char`\"{}\mbox{]}
+\item 
+\hyperlink{services_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{services_8php_a2}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{services_8php_a3}{\$ttservice} = \$\_\-GET\mbox{[}'ttservice'\mbox{]}
+\item 
+\hyperlink{services_8php_a4}{\$back} = \$\_\-GET\mbox{[}'back'\mbox{]}
+\item 
+\hyperlink{services_8php_a5}{\$service\_\-carac} = Cherche\-Service(\$ttservice,\$connexion)
+\item 
+\hyperlink{services_8php_a6}{\$lits\_\-du\_\-service} = Cherche\-Lit(\$service\_\-carac $\rightarrow$ service\_\-ID,\$connexion)
+\item 
+\hyperlink{services_8php_a7}{\$mot} = \$string\_\-lang\mbox{[}'IDENTIFICATION'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{services_8php_a8}{\$c} = ''
+\item 
+\hyperlink{services_8php_a9}{\$service\_\-caracid} = \$ttservice
+\item 
+\hyperlink{services_8php_a10}{\$type} = 0
+\item 
+\hyperlink{services_8php_a11}{\$nature} = 4
+\item 
+\hyperlink{services_8php_a12}{\$variable} = \char`\"{}ttservice\char`\"{}
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{services_8php_a13}{\$check} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{services_8php_a14}{\$lv} = \$lits\_\-du\_\-service $\rightarrow$ lits\_\-sp - \$lits\_\-du\_\-service $\rightarrow$ lits\_\-occ
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{services_8php_a4}{
+\index{services.php@{services.php}!$back@{\$back}}
+\index{$back@{\$back}!services.php@{services.php}}
+\subsubsection[\$back]{\setlength{\rightskip}{0pt plus 5cm}\$back = \$\_\-GET\mbox{[}'back'\mbox{]}}}
+\label{services_8php_a4}
+
+
+\hypertarget{services_8php_a8}{
+\index{services.php@{services.php}!$c@{\$c}}
+\index{$c@{\$c}!services.php@{services.php}}
+\subsubsection[\$c]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$c = ''}}
+\label{services_8php_a8}
+
+
+\hypertarget{services_8php_a13}{
+\index{services.php@{services.php}!$check@{\$check}}
+\index{$check@{\$check}!services.php@{services.php}}
+\subsubsection[\$check]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$check = \char`\"{}\char`\"{}}}
+\label{services_8php_a13}
+
+
+\hypertarget{services_8php_a1}{
+\index{services.php@{services.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!services.php@{services.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{services_8php_a1}
+
+
+\hypertarget{services_8php_a2}{
+\index{services.php@{services.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!services.php@{services.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{services_8php_a2}
+
+
+\hypertarget{services_8php_a6}{
+\index{services.php@{services.php}!$lits_du_service@{\$lits\_\-du\_\-service}}
+\index{$lits_du_service@{\$lits\_\-du\_\-service}!services.php@{services.php}}
+\subsubsection[\$lits\_\-du\_\-service]{\setlength{\rightskip}{0pt plus 5cm}\$lits\_\-du\_\-service = Cherche\-Lit(\$service\_\-carac $\rightarrow$ service\_\-ID,\$connexion)}}
+\label{services_8php_a6}
+
+
+\hypertarget{services_8php_a14}{
+\index{services.php@{services.php}!$lv@{\$lv}}
+\index{$lv@{\$lv}!services.php@{services.php}}
+\subsubsection[\$lv]{\setlength{\rightskip}{0pt plus 5cm}\$lv = \$lits\_\-du\_\-service $\rightarrow$ lits\_\-sp - \$lits\_\-du\_\-service $\rightarrow$ lits\_\-occ}}
+\label{services_8php_a14}
+
+
+\hypertarget{services_8php_a7}{
+\index{services.php@{services.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!services.php@{services.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'IDENTIFICATION'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{services_8php_a7}
+
+
+\hypertarget{services_8php_a11}{
+\index{services.php@{services.php}!$nature@{\$nature}}
+\index{$nature@{\$nature}!services.php@{services.php}}
+\subsubsection[\$nature]{\setlength{\rightskip}{0pt plus 5cm}\$nature = 4}}
+\label{services_8php_a11}
+
+
+\hypertarget{services_8php_a5}{
+\index{services.php@{services.php}!$service_carac@{\$service\_\-carac}}
+\index{$service_carac@{\$service\_\-carac}!services.php@{services.php}}
+\subsubsection[\$service\_\-carac]{\setlength{\rightskip}{0pt plus 5cm}\$service\_\-carac = Cherche\-Service(\$ttservice,\$connexion)}}
+\label{services_8php_a5}
+
+
+\hypertarget{services_8php_a9}{
+\index{services.php@{services.php}!$service_caracid@{\$service\_\-caracid}}
+\index{$service_caracid@{\$service\_\-caracid}!services.php@{services.php}}
+\subsubsection[\$service\_\-caracid]{\setlength{\rightskip}{0pt plus 5cm}\$service\_\-caracid = \$ttservice}}
+\label{services_8php_a9}
+
+
+\hypertarget{services_8php_a0}{
+\index{services.php@{services.php}!$sservice@{\$sservice}}
+\index{$sservice@{\$sservice}!services.php@{services.php}}
+\subsubsection[\$sservice]{\setlength{\rightskip}{0pt plus 5cm}\$sservice = \$\_\-SESSION\mbox{[}\char`\"{}service\char`\"{}\mbox{]}}}
+\label{services_8php_a0}
+
+
+\hypertarget{services_8php_a3}{
+\index{services.php@{services.php}!$ttservice@{\$ttservice}}
+\index{$ttservice@{\$ttservice}!services.php@{services.php}}
+\subsubsection[\$ttservice]{\setlength{\rightskip}{0pt plus 5cm}\$ttservice = \$\_\-GET\mbox{[}'ttservice'\mbox{]}}}
+\label{services_8php_a3}
+
+
+\hypertarget{services_8php_a10}{
+\index{services.php@{services.php}!$type@{\$type}}
+\index{$type@{\$type}!services.php@{services.php}}
+\subsubsection[\$type]{\setlength{\rightskip}{0pt plus 5cm}\$type = 0}}
+\label{services_8php_a10}
+
+
+\hypertarget{services_8php_a12}{
+\index{services.php@{services.php}!$variable@{\$variable}}
+\index{$variable@{\$variable}!services.php@{services.php}}
+\subsubsection[\$variable]{\setlength{\rightskip}{0pt plus 5cm}\$variable = \char`\"{}ttservice\char`\"{}}}
+\label{services_8php_a12}
+
+

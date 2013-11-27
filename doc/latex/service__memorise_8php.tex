@@ -1,0 +1,46 @@
+\hypertarget{service__memorise_8php}{
+\section{R\'{e}f\'{e}rence du fichier service\_\-memorise.php}
+\label{service__memorise_8php}\index{service_memorise.php@{service\_\-memorise.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{service__memorise_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{service__memorise_8php_a1}{\$date\_\-maj} = time()
+\item 
+\hyperlink{service__memorise_8php_a2}{\$requete} = \char`\"{}INSERT INTO lits\_\-journal VALUES('\$date\_\-maj','\$\_\-POST\mbox{[}service\_\-ID\mbox{]}','\$\_\-POST\mbox{[}lits\_\-dispo\mbox{]}','\$\_\-SESSION\mbox{[}member\_\-id\mbox{]}')\char`\"{}
+\item 
+\hyperlink{service__memorise_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{service__memorise_8php_a0}{
+\index{service_memorise.php@{service\_\-memorise.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!service_memorise.php@{service\_\-memorise.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{service__memorise_8php_a0}
+
+
+\hypertarget{service__memorise_8php_a1}{
+\index{service_memorise.php@{service\_\-memorise.php}!$date_maj@{\$date\_\-maj}}
+\index{$date_maj@{\$date\_\-maj}!service_memorise.php@{service\_\-memorise.php}}
+\subsubsection[\$date\_\-maj]{\setlength{\rightskip}{0pt plus 5cm}\$date\_\-maj = time()}}
+\label{service__memorise_8php_a1}
+
+
+\hypertarget{service__memorise_8php_a2}{
+\index{service_memorise.php@{service\_\-memorise.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!service_memorise.php@{service\_\-memorise.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}INSERT INTO lits\_\-journal VALUES('\$date\_\-maj','\$\_\-POST\mbox{[}service\_\-ID\mbox{]}','\$\_\-POST\mbox{[}lits\_\-dispo\mbox{]}','\$\_\-SESSION\mbox{[}member\_\-id\mbox{]}')\char`\"{}}}
+\label{service__memorise_8php_a2}
+
+
+\hypertarget{service__memorise_8php_a3}{
+\index{service_memorise.php@{service\_\-memorise.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!service_memorise.php@{service\_\-memorise.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{service__memorise_8php_a3}
+
+

@@ -1,0 +1,82 @@
+\hypertarget{lits__disponibles_8php}{
+\section{R\'{e}f\'{e}rence du fichier lits\_\-disponibles.php}
+\label{lits__disponibles_8php}\index{lits_disponibles.php@{lits\_\-disponibles.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{lits__disponibles_8php_a0}{\$titre} = \$string\_\-lang\mbox{[}'GESTION\_\-LITS'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{lits__disponibles_8php_a1}{\$mot} = str\-To\-Upper(\$string\_\-lang\mbox{[}'LITS'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{}/\char`\"{}.\$string\_\-lang\mbox{[}HOPITAL\mbox{]}\mbox{[}\$langue\mbox{]})
+\item 
+\hyperlink{lits__disponibles_8php_a2}{\$m1} = \char`\"{}$<$a href=$\backslash$\char`\"{}lits\_\-service.php$\backslash$\char`\"{}$>$$<$B$>$\$mot$<$/B$>$$<$/a$>$\char`\"{}
+\item 
+\hyperlink{lits__disponibles_8php_a3}{\$m2} = \char`\"{}$<$a href=$\backslash$\char`\"{}lits\_\-synoptique.php$\backslash$\char`\"{}$>$$<$B$>$\$mot$<$/B$>$$<$/a$>$\char`\"{}
+\item 
+\hyperlink{lits__disponibles_8php_a4}{\$m3} = \char`\"{}$<$a href=$\backslash$\char`\"{}lits\_\-hopitaux\_\-table.php$\backslash$\char`\"{}$>$$<$B$>$\$mot$<$/B$>$\char`\"{}
+\item 
+\hyperlink{lits__disponibles_8php_a5}{\$m4} = \char`\"{}$<$a href=$\backslash$\char`\"{}lits\_\-hopitaux\_\-maj.php$\backslash$\char`\"{}$>$$<$B$>$\$mot$<$/B$>$\char`\"{}
+\item 
+\hyperlink{lits__disponibles_8php_a6}{\$m5} = \char`\"{}$<$a href=$\backslash$\char`\"{}sagec67.php$\backslash$\char`\"{}$>$$<$B$>$\$mot$<$/B$>$\char`\"{}
+\item 
+\hyperlink{lits__disponibles_8php_a7}{\$menus} = \$m1.\char`\"{} $|$ \char`\"{}.\$m2.\char`\"{} $|$ \char`\"{}.\$m3.\char`\"{} $|$ \char`\"{}.\$m4.\char`\"{} $|$ \char`\"{}.\$m5
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{lits__disponibles_8php_a2}{
+\index{lits_disponibles.php@{lits\_\-disponibles.php}!$m1@{\$m1}}
+\index{$m1@{\$m1}!lits_disponibles.php@{lits\_\-disponibles.php}}
+\subsubsection[\$m1]{\setlength{\rightskip}{0pt plus 5cm}\$m1 = \char`\"{}$<$a href=$\backslash$\char`\"{}lits\_\-service.php$\backslash$\char`\"{}$>$$<$B$>$\$mot$<$/B$>$$<$/a$>$\char`\"{}}}
+\label{lits__disponibles_8php_a2}
+
+
+\hypertarget{lits__disponibles_8php_a3}{
+\index{lits_disponibles.php@{lits\_\-disponibles.php}!$m2@{\$m2}}
+\index{$m2@{\$m2}!lits_disponibles.php@{lits\_\-disponibles.php}}
+\subsubsection[\$m2]{\setlength{\rightskip}{0pt plus 5cm}\$m2 = \char`\"{}$<$a href=$\backslash$\char`\"{}lits\_\-synoptique.php$\backslash$\char`\"{}$>$$<$B$>$\$mot$<$/B$>$$<$/a$>$\char`\"{}}}
+\label{lits__disponibles_8php_a3}
+
+
+\hypertarget{lits__disponibles_8php_a4}{
+\index{lits_disponibles.php@{lits\_\-disponibles.php}!$m3@{\$m3}}
+\index{$m3@{\$m3}!lits_disponibles.php@{lits\_\-disponibles.php}}
+\subsubsection[\$m3]{\setlength{\rightskip}{0pt plus 5cm}\$m3 = \char`\"{}$<$a href=$\backslash$\char`\"{}lits\_\-hopitaux\_\-table.php$\backslash$\char`\"{}$>$$<$B$>$\$mot$<$/B$>$\char`\"{}}}
+\label{lits__disponibles_8php_a4}
+
+
+\hypertarget{lits__disponibles_8php_a5}{
+\index{lits_disponibles.php@{lits\_\-disponibles.php}!$m4@{\$m4}}
+\index{$m4@{\$m4}!lits_disponibles.php@{lits\_\-disponibles.php}}
+\subsubsection[\$m4]{\setlength{\rightskip}{0pt plus 5cm}\$m4 = \char`\"{}$<$a href=$\backslash$\char`\"{}lits\_\-hopitaux\_\-maj.php$\backslash$\char`\"{}$>$$<$B$>$\$mot$<$/B$>$\char`\"{}}}
+\label{lits__disponibles_8php_a5}
+
+
+\hypertarget{lits__disponibles_8php_a6}{
+\index{lits_disponibles.php@{lits\_\-disponibles.php}!$m5@{\$m5}}
+\index{$m5@{\$m5}!lits_disponibles.php@{lits\_\-disponibles.php}}
+\subsubsection[\$m5]{\setlength{\rightskip}{0pt plus 5cm}\$m5 = \char`\"{}$<$a href=$\backslash$\char`\"{}sagec67.php$\backslash$\char`\"{}$>$$<$B$>$\$mot$<$/B$>$\char`\"{}}}
+\label{lits__disponibles_8php_a6}
+
+
+\hypertarget{lits__disponibles_8php_a7}{
+\index{lits_disponibles.php@{lits\_\-disponibles.php}!$menus@{\$menus}}
+\index{$menus@{\$menus}!lits_disponibles.php@{lits\_\-disponibles.php}}
+\subsubsection[\$menus]{\setlength{\rightskip}{0pt plus 5cm}\$menus = \$m1.\char`\"{} $|$ \char`\"{}.\$m2.\char`\"{} $|$ \char`\"{}.\$m3.\char`\"{} $|$ \char`\"{}.\$m4.\char`\"{} $|$ \char`\"{}.\$m5}}
+\label{lits__disponibles_8php_a7}
+
+
+\hypertarget{lits__disponibles_8php_a1}{
+\index{lits_disponibles.php@{lits\_\-disponibles.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!lits_disponibles.php@{lits\_\-disponibles.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = str\-To\-Upper(\$string\_\-lang\mbox{[}'LITS'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{}/\char`\"{}.\$string\_\-lang\mbox{[}HOPITAL\mbox{]}\mbox{[}\$langue\mbox{]})}}
+\label{lits__disponibles_8php_a1}
+
+
+\hypertarget{lits__disponibles_8php_a0}{
+\index{lits_disponibles.php@{lits\_\-disponibles.php}!$titre@{\$titre}}
+\index{$titre@{\$titre}!lits_disponibles.php@{lits\_\-disponibles.php}}
+\subsubsection[\$titre]{\setlength{\rightskip}{0pt plus 5cm}\$titre = \$string\_\-lang\mbox{[}'GESTION\_\-LITS'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{lits__disponibles_8php_a0}
+
+

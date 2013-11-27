@@ -1,0 +1,124 @@
+\hypertarget{centaure__execute_8php}{
+\section{R\'{e}f\'{e}rence du fichier centaure\_\-execute.php}
+\label{centaure__execute_8php}\index{centaure_execute.php@{centaure\_\-execute.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{centaure__execute_8php_a9}{initialise} ()
+\item 
+\hyperlink{centaure__execute_8php_a10}{affiche} (\$date, \$primaires, \$secondaires, \$apa, \$smur, \$sdis, \$med, \$conseil)
+\item 
+\hyperlink{centaure__execute_8php_a11}{enregistre} (\$timestamp, \$service, \$primaires, \$secondaires, \$apa, \$smur, \$sdis, \$med, \$conseil)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{centaure__execute_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{centaure__execute_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+global \hyperlink{centaure__execute_8php_a2}{\$smur}
+\item 
+global \hyperlink{centaure__execute_8php_a3}{\$sdis}
+\item 
+global \hyperlink{centaure__execute_8php_a4}{\$apa}
+\item 
+global \hyperlink{centaure__execute_8php_a5}{\$conseil}
+\item 
+global \hyperlink{centaure__execute_8php_a6}{\$med}
+\item 
+\hyperlink{centaure__execute_8php_a7}{\$mot} = fgets(\$fp,4096)
+\item 
+\hyperlink{centaure__execute_8php_a8}{\$valid} = checkdate(\$rub\mbox{[}1\mbox{]},\$rub\mbox{[}2\mbox{]},\$rub\mbox{[}0\mbox{]})
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{centaure__execute_8php_a10}{
+\index{centaure_execute.php@{centaure\_\-execute.php}!affiche@{affiche}}
+\index{affiche@{affiche}!centaure_execute.php@{centaure\_\-execute.php}}
+\subsubsection[affiche]{\setlength{\rightskip}{0pt plus 5cm}affiche (\$ {\em date}, \$ {\em primaires}, \$ {\em secondaires}, \$ {\em apa}, \$ {\em smur}, \$ {\em sdis}, \$ {\em med}, \$ {\em conseil})}}
+\label{centaure__execute_8php_a10}
+
+
+\hypertarget{centaure__execute_8php_a11}{
+\index{centaure_execute.php@{centaure\_\-execute.php}!enregistre@{enregistre}}
+\index{enregistre@{enregistre}!centaure_execute.php@{centaure\_\-execute.php}}
+\subsubsection[enregistre]{\setlength{\rightskip}{0pt plus 5cm}enregistre (\$ {\em timestamp}, \$ {\em service}, \$ {\em primaires}, \$ {\em secondaires}, \$ {\em apa}, \$ {\em smur}, \$ {\em sdis}, \$ {\em med}, \$ {\em conseil})}}
+\label{centaure__execute_8php_a11}
+
+
+\hypertarget{centaure__execute_8php_a9}{
+\index{centaure_execute.php@{centaure\_\-execute.php}!initialise@{initialise}}
+\index{initialise@{initialise}!centaure_execute.php@{centaure\_\-execute.php}}
+\subsubsection[initialise]{\setlength{\rightskip}{0pt plus 5cm}initialise ()}}
+\label{centaure__execute_8php_a9}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{centaure__execute_8php_a4}{
+\index{centaure_execute.php@{centaure\_\-execute.php}!$apa@{\$apa}}
+\index{$apa@{\$apa}!centaure_execute.php@{centaure\_\-execute.php}}
+\subsubsection[\$apa]{\setlength{\rightskip}{0pt plus 5cm}global \$apa}}
+\label{centaure__execute_8php_a4}
+
+
+\hypertarget{centaure__execute_8php_a1}{
+\index{centaure_execute.php@{centaure\_\-execute.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!centaure_execute.php@{centaure\_\-execute.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{centaure__execute_8php_a1}
+
+
+\hypertarget{centaure__execute_8php_a5}{
+\index{centaure_execute.php@{centaure\_\-execute.php}!$conseil@{\$conseil}}
+\index{$conseil@{\$conseil}!centaure_execute.php@{centaure\_\-execute.php}}
+\subsubsection[\$conseil]{\setlength{\rightskip}{0pt plus 5cm}global \$conseil}}
+\label{centaure__execute_8php_a5}
+
+
+\hypertarget{centaure__execute_8php_a0}{
+\index{centaure_execute.php@{centaure\_\-execute.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!centaure_execute.php@{centaure\_\-execute.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{centaure__execute_8php_a0}
+
+
+\hypertarget{centaure__execute_8php_a6}{
+\index{centaure_execute.php@{centaure\_\-execute.php}!$med@{\$med}}
+\index{$med@{\$med}!centaure_execute.php@{centaure\_\-execute.php}}
+\subsubsection[\$med]{\setlength{\rightskip}{0pt plus 5cm}global \$med}}
+\label{centaure__execute_8php_a6}
+
+
+\hypertarget{centaure__execute_8php_a7}{
+\index{centaure_execute.php@{centaure\_\-execute.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!centaure_execute.php@{centaure\_\-execute.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = fgets(\$fp,4096)}}
+\label{centaure__execute_8php_a7}
+
+
+\hypertarget{centaure__execute_8php_a3}{
+\index{centaure_execute.php@{centaure\_\-execute.php}!$sdis@{\$sdis}}
+\index{$sdis@{\$sdis}!centaure_execute.php@{centaure\_\-execute.php}}
+\subsubsection[\$sdis]{\setlength{\rightskip}{0pt plus 5cm}global \$sdis}}
+\label{centaure__execute_8php_a3}
+
+
+\hypertarget{centaure__execute_8php_a2}{
+\index{centaure_execute.php@{centaure\_\-execute.php}!$smur@{\$smur}}
+\index{$smur@{\$smur}!centaure_execute.php@{centaure\_\-execute.php}}
+\subsubsection[\$smur]{\setlength{\rightskip}{0pt plus 5cm}global \$smur}}
+\label{centaure__execute_8php_a2}
+
+
+\hypertarget{centaure__execute_8php_a8}{
+\index{centaure_execute.php@{centaure\_\-execute.php}!$valid@{\$valid}}
+\index{$valid@{\$valid}!centaure_execute.php@{centaure\_\-execute.php}}
+\subsubsection[\$valid]{\setlength{\rightskip}{0pt plus 5cm}\$valid = checkdate(\$rub\mbox{[}1\mbox{]},\$rub\mbox{[}2\mbox{]},\$rub\mbox{[}0\mbox{]})}}
+\label{centaure__execute_8php_a8}
+
+

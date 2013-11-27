@@ -1,0 +1,82 @@
+\hypertarget{lits__service_8php}{
+\section{R\'{e}f\'{e}rence du fichier lits\_\-service.php}
+\label{lits__service_8php}\index{lits_service.php@{lits\_\-service.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{lits__service_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{lits__service_8php_a1}{\$titre} = \$string\_\-lang\mbox{[}'GESTION\_\-LITS'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{lits__service_8php_a2}{\$mot} = \$string\_\-lang\mbox{[}'LISTE\_\-SERVICE\_\-HOPITAL'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{lits__service_8php_a3}{\$requete} = \char`\"{}SELECT $\ast$ FROM pays ORDER BY pays\_\-nom\char`\"{}
+\item 
+\hyperlink{lits__service_8php_a4}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{lits__service_8php_a5}{\$n} = 0
+\item 
+\hyperlink{lits__service_8php_a6}{\$back} = \char`\"{}lits\_\-service.php\char`\"{}
+\item 
+\hyperlink{lits__service_8php_a7}{\$tri} = \$\_\-GET\mbox{[}'tri'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{lits__service_8php_a6}{
+\index{lits_service.php@{lits\_\-service.php}!$back@{\$back}}
+\index{$back@{\$back}!lits_service.php@{lits\_\-service.php}}
+\subsubsection[\$back]{\setlength{\rightskip}{0pt plus 5cm}\$back = \char`\"{}lits\_\-service.php\char`\"{}}}
+\label{lits__service_8php_a6}
+
+
+\hypertarget{lits__service_8php_a0}{
+\index{lits_service.php@{lits\_\-service.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!lits_service.php@{lits\_\-service.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{lits__service_8php_a0}
+
+
+\hypertarget{lits__service_8php_a2}{
+\index{lits_service.php@{lits\_\-service.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!lits_service.php@{lits\_\-service.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'LISTE\_\-SERVICE\_\-HOPITAL'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{lits__service_8php_a2}
+
+
+\hypertarget{lits__service_8php_a5}{
+\index{lits_service.php@{lits\_\-service.php}!$n@{\$n}}
+\index{$n@{\$n}!lits_service.php@{lits\_\-service.php}}
+\subsubsection[\$n]{\setlength{\rightskip}{0pt plus 5cm}\$\hyperlink{utilitaires_2html_8php_a0}{n} = 0}}
+\label{lits__service_8php_a5}
+
+
+\hypertarget{lits__service_8php_a3}{
+\index{lits_service.php@{lits\_\-service.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!lits_service.php@{lits\_\-service.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT $\ast$ FROM pays ORDER BY pays\_\-nom\char`\"{}}}
+\label{lits__service_8php_a3}
+
+
+\hypertarget{lits__service_8php_a4}{
+\index{lits_service.php@{lits\_\-service.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!lits_service.php@{lits\_\-service.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{lits__service_8php_a4}
+
+
+\hypertarget{lits__service_8php_a1}{
+\index{lits_service.php@{lits\_\-service.php}!$titre@{\$titre}}
+\index{$titre@{\$titre}!lits_service.php@{lits\_\-service.php}}
+\subsubsection[\$titre]{\setlength{\rightskip}{0pt plus 5cm}\$titre = \$string\_\-lang\mbox{[}'GESTION\_\-LITS'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{lits__service_8php_a1}
+
+
+\hypertarget{lits__service_8php_a7}{
+\index{lits_service.php@{lits\_\-service.php}!$tri@{\$tri}}
+\index{$tri@{\$tri}!lits_service.php@{lits\_\-service.php}}
+\subsubsection[\$tri]{\setlength{\rightskip}{0pt plus 5cm}\$tri = \$\_\-GET\mbox{[}'tri'\mbox{]}}}
+\label{lits__service_8php_a7}
+
+

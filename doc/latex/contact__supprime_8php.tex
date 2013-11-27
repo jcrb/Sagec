@@ -1,0 +1,55 @@
+\hypertarget{contact__supprime_8php}{
+\section{R\'{e}f\'{e}rence du fichier contact\_\-supprime.php}
+\label{contact__supprime_8php}\index{contact_supprime.php@{contact\_\-supprime.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{contact__supprime_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{contact__supprime_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{contact__supprime_8php_a2}{\$requete} = \char`\"{}DELETE FROM contact WHERE contact\_\-ID = '\$\_\-GET\mbox{[}enregistrement\_\-ID\mbox{]}'\char`\"{}
+\item 
+\hyperlink{contact__supprime_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{contact__supprime_8php_a4}{\$retour} = \$\_\-GET\mbox{[}'back'\mbox{]}.\char`\"{}?\char`\"{}.\$\_\-GET\mbox{[}'param'\mbox{]}.\char`\"{}=\char`\"{}.\$\_\-GET\mbox{[}'id'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{contact__supprime_8php_a1}{
+\index{contact_supprime.php@{contact\_\-supprime.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!contact_supprime.php@{contact\_\-supprime.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{contact__supprime_8php_a1}
+
+
+\hypertarget{contact__supprime_8php_a0}{
+\index{contact_supprime.php@{contact\_\-supprime.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!contact_supprime.php@{contact\_\-supprime.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{contact__supprime_8php_a0}
+
+
+\hypertarget{contact__supprime_8php_a2}{
+\index{contact_supprime.php@{contact\_\-supprime.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!contact_supprime.php@{contact\_\-supprime.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}DELETE FROM contact WHERE contact\_\-ID = '\$\_\-GET\mbox{[}enregistrement\_\-ID\mbox{]}'\char`\"{}}}
+\label{contact__supprime_8php_a2}
+
+
+\hypertarget{contact__supprime_8php_a3}{
+\index{contact_supprime.php@{contact\_\-supprime.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!contact_supprime.php@{contact\_\-supprime.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{contact__supprime_8php_a3}
+
+
+\hypertarget{contact__supprime_8php_a4}{
+\index{contact_supprime.php@{contact\_\-supprime.php}!$retour@{\$retour}}
+\index{$retour@{\$retour}!contact_supprime.php@{contact\_\-supprime.php}}
+\subsubsection[\$retour]{\setlength{\rightskip}{0pt plus 5cm}\$retour = \$\_\-GET\mbox{[}'back'\mbox{]}.\char`\"{}?\char`\"{}.\$\_\-GET\mbox{[}'param'\mbox{]}.\char`\"{}=\char`\"{}.\$\_\-GET\mbox{[}'id'\mbox{]}}}
+\label{contact__supprime_8php_a4}
+
+

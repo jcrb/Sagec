@@ -1,0 +1,19 @@
+\hypertarget{vecteurs__menu_8php}{
+\section{R\'{e}f\'{e}rence du fichier vecteurs\_\-menu.php}
+\label{vecteurs__menu_8php}\index{vecteurs_menu.php@{vecteurs\_\-menu.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{vecteurs__menu_8php_a0}{Menu\-Vecteurs} (\$langue)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{vecteurs__menu_8php_a0}{
+\index{vecteurs_menu.php@{vecteurs\_\-menu.php}!MenuVecteurs@{MenuVecteurs}}
+\index{MenuVecteurs@{MenuVecteurs}!vecteurs_menu.php@{vecteurs\_\-menu.php}}
+\subsubsection[MenuVecteurs]{\setlength{\rightskip}{0pt plus 5cm}Menu\-Vecteurs (\$ {\em langue})}}
+\label{vecteurs__menu_8php_a0}
+
+

@@ -1,0 +1,37 @@
+8
+
+dir
+16836
+http://subversion/dev/applications/metier/sagec/branches/dev/SAGEC67/classes
+http://subversion/dev
+
+
+
+2009-11-19T11:32:28.982704Z
+16747
+nolddomi
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+66cce6ef-e1d4-0310-aa0e-9de41584db37
+
+dao
+dir
+
+objet
+dir
+
+metier
+dir
+

@@ -1,0 +1,100 @@
+\hypertarget{service__entete_8php}{
+\section{R\'{e}f\'{e}rence du fichier service\_\-entete.php}
+\label{service__entete_8php}\index{service_entete.php@{service\_\-entete.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{service__entete_8php_a0}{entete\_\-service} (\$hopital, \$service)
+\item 
+\hyperlink{service__entete_8php_a1}{menu\_\-service} (\$i=\char`\"{}\char`\"{}, \$back=\char`\"{}\char`\"{})
+\item 
+\hyperlink{service__entete_8php_a2}{nom\_\-service} (\$ID\_\-service, \$connexion)
+\item 
+\hyperlink{service__entete_8php_a3}{entete\_\-superviseur} (\$hopital)
+\item 
+\hyperlink{service__entete_8php_a4}{menu\_\-superviseur} (\$i=\char`\"{}\char`\"{})
+\item 
+\hyperlink{service__entete_8php_a5}{menu\_\-superviseur\_\-service} (\$i=\char`\"{}\char`\"{})
+\item 
+\hyperlink{service__entete_8php_a6}{liste\_\-des\_\-services} (\$hopital, \$connexion, \$item\_\-select, \$back=\char`\"{}\char`\"{})
+\item 
+\hyperlink{service__entete_8php_a7}{coordonnee\_\-service} ()
+\item 
+\hyperlink{service__entete_8php_a8}{validation} (\$texte, \$back=\char`\"{}\char`\"{})
+\item 
+\hyperlink{service__entete_8php_a9}{synoptique\_\-lits\_\-par\_\-types} (\$hopital, \$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{service__entete_8php_a7}{
+\index{service_entete.php@{service\_\-entete.php}!coordonnee_service@{coordonnee\_\-service}}
+\index{coordonnee_service@{coordonnee\_\-service}!service_entete.php@{service\_\-entete.php}}
+\subsubsection[coordonnee\_\-service]{\setlength{\rightskip}{0pt plus 5cm}coordonnee\_\-service ()}}
+\label{service__entete_8php_a7}
+
+
+\hypertarget{service__entete_8php_a0}{
+\index{service_entete.php@{service\_\-entete.php}!entete_service@{entete\_\-service}}
+\index{entete_service@{entete\_\-service}!service_entete.php@{service\_\-entete.php}}
+\subsubsection[entete\_\-service]{\setlength{\rightskip}{0pt plus 5cm}entete\_\-service (\$ {\em hopital}, \$ {\em service})}}
+\label{service__entete_8php_a0}
+
+
+\hypertarget{service__entete_8php_a3}{
+\index{service_entete.php@{service\_\-entete.php}!entete_superviseur@{entete\_\-superviseur}}
+\index{entete_superviseur@{entete\_\-superviseur}!service_entete.php@{service\_\-entete.php}}
+\subsubsection[entete\_\-superviseur]{\setlength{\rightskip}{0pt plus 5cm}entete\_\-superviseur (\$ {\em hopital})}}
+\label{service__entete_8php_a3}
+
+
+\hypertarget{service__entete_8php_a6}{
+\index{service_entete.php@{service\_\-entete.php}!liste_des_services@{liste\_\-des\_\-services}}
+\index{liste_des_services@{liste\_\-des\_\-services}!service_entete.php@{service\_\-entete.php}}
+\subsubsection[liste\_\-des\_\-services]{\setlength{\rightskip}{0pt plus 5cm}liste\_\-des\_\-services (\$ {\em hopital}, \$ {\em connexion}, \$ {\em item\_\-select}, \$ {\em back} = {\tt \char`\"{}\char`\"{}})}}
+\label{service__entete_8php_a6}
+
+
+\hypertarget{service__entete_8php_a1}{
+\index{service_entete.php@{service\_\-entete.php}!menu_service@{menu\_\-service}}
+\index{menu_service@{menu\_\-service}!service_entete.php@{service\_\-entete.php}}
+\subsubsection[menu\_\-service]{\setlength{\rightskip}{0pt plus 5cm}menu\_\-service (\$ {\em i} = {\tt \char`\"{}\char`\"{}}, \$ {\em back} = {\tt \char`\"{}\char`\"{}})}}
+\label{service__entete_8php_a1}
+
+
+\hypertarget{service__entete_8php_a4}{
+\index{service_entete.php@{service\_\-entete.php}!menu_superviseur@{menu\_\-superviseur}}
+\index{menu_superviseur@{menu\_\-superviseur}!service_entete.php@{service\_\-entete.php}}
+\subsubsection[menu\_\-superviseur]{\setlength{\rightskip}{0pt plus 5cm}menu\_\-superviseur (\$ {\em i} = {\tt \char`\"{}\char`\"{}})}}
+\label{service__entete_8php_a4}
+
+
+\hypertarget{service__entete_8php_a5}{
+\index{service_entete.php@{service\_\-entete.php}!menu_superviseur_service@{menu\_\-superviseur\_\-service}}
+\index{menu_superviseur_service@{menu\_\-superviseur\_\-service}!service_entete.php@{service\_\-entete.php}}
+\subsubsection[menu\_\-superviseur\_\-service]{\setlength{\rightskip}{0pt plus 5cm}menu\_\-superviseur\_\-service (\$ {\em i} = {\tt \char`\"{}\char`\"{}})}}
+\label{service__entete_8php_a5}
+
+
+\hypertarget{service__entete_8php_a2}{
+\index{service_entete.php@{service\_\-entete.php}!nom_service@{nom\_\-service}}
+\index{nom_service@{nom\_\-service}!service_entete.php@{service\_\-entete.php}}
+\subsubsection[nom\_\-service]{\setlength{\rightskip}{0pt plus 5cm}nom\_\-service (\$ {\em ID\_\-service}, \$ {\em connexion})}}
+\label{service__entete_8php_a2}
+
+
+\hypertarget{service__entete_8php_a9}{
+\index{service_entete.php@{service\_\-entete.php}!synoptique_lits_par_types@{synoptique\_\-lits\_\-par\_\-types}}
+\index{synoptique_lits_par_types@{synoptique\_\-lits\_\-par\_\-types}!service_entete.php@{service\_\-entete.php}}
+\subsubsection[synoptique\_\-lits\_\-par\_\-types]{\setlength{\rightskip}{0pt plus 5cm}synoptique\_\-lits\_\-par\_\-types (\$ {\em hopital}, \$ {\em connexion})}}
+\label{service__entete_8php_a9}
+
+
+\hypertarget{service__entete_8php_a8}{
+\index{service_entete.php@{service\_\-entete.php}!validation@{validation}}
+\index{validation@{validation}!service_entete.php@{service\_\-entete.php}}
+\subsubsection[validation]{\setlength{\rightskip}{0pt plus 5cm}validation (\$ {\em texte}, \$ {\em back} = {\tt \char`\"{}\char`\"{}})}}
+\label{service__entete_8php_a8}
+
+

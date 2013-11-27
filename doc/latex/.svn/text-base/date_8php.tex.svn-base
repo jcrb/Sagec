@@ -1,0 +1,107 @@
+\hypertarget{date_8php}{
+\section{R\'{e}f\'{e}rence du fichier date.php}
+\label{date_8php}\index{date.php@{date.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{date_8php_a3}{f\-Date2unix} (\$d)
+\item 
+\hyperlink{date_8php_a4}{f\-Datetime2unix} (\$d)
+\item 
+\hyperlink{date_8php_a5}{u\-Date2French} (\$u)
+\item 
+\hyperlink{date_8php_a6}{u\-Date2Frenchtime} (\$u)
+\item 
+\hyperlink{date_8php_a7}{u\-Date2Frenchdatetime} (\$u)
+\item 
+\hyperlink{date_8php_a8}{u\-Datetime2French} (\$u)
+\item 
+\hyperlink{date_8php_a9}{round\_\-u\_\-date} (\$u)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{date_8php_a0}{\$un\_\-jour} = 60$\ast$60$\ast$24
+\item 
+\hyperlink{date_8php_a1}{\$sept\_\-jour} = 7$\ast$\$un\_\-jour
+\item 
+\hyperlink{date_8php_a2}{\$semaine} = array(dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{date_8php_a3}{
+\index{date.php@{date.php}!fDate2unix@{fDate2unix}}
+\index{fDate2unix@{fDate2unix}!date.php@{date.php}}
+\subsubsection[fDate2unix]{\setlength{\rightskip}{0pt plus 5cm}f\-Date2unix (\$ {\em d})}}
+\label{date_8php_a3}
+
+
+Transforme une date au format fran\c{c}ais jj/mm/aaaa en timestamp unix \hypertarget{date_8php_a4}{
+\index{date.php@{date.php}!fDatetime2unix@{fDatetime2unix}}
+\index{fDatetime2unix@{fDatetime2unix}!date.php@{date.php}}
+\subsubsection[fDatetime2unix]{\setlength{\rightskip}{0pt plus 5cm}f\-Datetime2unix (\$ {\em d})}}
+\label{date_8php_a4}
+
+
+Transforme une date au format fran\c{c}ais jj/mm/aaaa hh:mm:ss en timestamp unix \hypertarget{date_8php_a9}{
+\index{date.php@{date.php}!round_u_date@{round\_\-u\_\-date}}
+\index{round_u_date@{round\_\-u\_\-date}!date.php@{date.php}}
+\subsubsection[round\_\-u\_\-date]{\setlength{\rightskip}{0pt plus 5cm}round\_\-u\_\-date (\$ {\em u})}}
+\label{date_8php_a9}
+
+
+Arrondi une date unix en supprimant la partie horaire \hypertarget{date_8php_a5}{
+\index{date.php@{date.php}!uDate2French@{uDate2French}}
+\index{uDate2French@{uDate2French}!date.php@{date.php}}
+\subsubsection[uDate2French]{\setlength{\rightskip}{0pt plus 5cm}u\-Date2French (\$ {\em u})}}
+\label{date_8php_a5}
+
+
+Transforme un timestamp unix en date fran\c{c}aise \hypertarget{date_8php_a7}{
+\index{date.php@{date.php}!uDate2Frenchdatetime@{uDate2Frenchdatetime}}
+\index{uDate2Frenchdatetime@{uDate2Frenchdatetime}!date.php@{date.php}}
+\subsubsection[uDate2Frenchdatetime]{\setlength{\rightskip}{0pt plus 5cm}u\-Date2Frenchdatetime (\$ {\em u})}}
+\label{date_8php_a7}
+
+
+Transforme un timestamp unix en date:heure fran\c{c}aise \hypertarget{date_8php_a6}{
+\index{date.php@{date.php}!uDate2Frenchtime@{uDate2Frenchtime}}
+\index{uDate2Frenchtime@{uDate2Frenchtime}!date.php@{date.php}}
+\subsubsection[uDate2Frenchtime]{\setlength{\rightskip}{0pt plus 5cm}u\-Date2Frenchtime (\$ {\em u})}}
+\label{date_8php_a6}
+
+
+Transforme un timestamp unix en heure fran\c{c}aise \hypertarget{date_8php_a8}{
+\index{date.php@{date.php}!uDatetime2French@{uDatetime2French}}
+\index{uDatetime2French@{uDatetime2French}!date.php@{date.php}}
+\subsubsection[uDatetime2French]{\setlength{\rightskip}{0pt plus 5cm}u\-Datetime2French (\$ {\em u})}}
+\label{date_8php_a8}
+
+
+Transforme un timestamp unix en date fran\c{c}aise 
+
+\subsection{Documentation des variables}
+\hypertarget{date_8php_a2}{
+\index{date.php@{date.php}!$semaine@{\$semaine}}
+\index{$semaine@{\$semaine}!date.php@{date.php}}
+\subsubsection[\$semaine]{\setlength{\rightskip}{0pt plus 5cm}\$semaine = array(dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi)}}
+\label{date_8php_a2}
+
+
+\hypertarget{date_8php_a1}{
+\index{date.php@{date.php}!$sept_jour@{\$sept\_\-jour}}
+\index{$sept_jour@{\$sept\_\-jour}!date.php@{date.php}}
+\subsubsection[\$sept\_\-jour]{\setlength{\rightskip}{0pt plus 5cm}\$sept\_\-jour = 7$\ast$\$un\_\-jour}}
+\label{date_8php_a1}
+
+
+\hypertarget{date_8php_a0}{
+\index{date.php@{date.php}!$un_jour@{\$un\_\-jour}}
+\index{$un_jour@{\$un\_\-jour}!date.php@{date.php}}
+\subsubsection[\$un\_\-jour]{\setlength{\rightskip}{0pt plus 5cm}\$un\_\-jour = 60$\ast$60$\ast$24}}
+\label{date_8php_a0}
+
+
+Constantes 

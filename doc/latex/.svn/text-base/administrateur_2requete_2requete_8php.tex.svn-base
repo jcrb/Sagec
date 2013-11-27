@@ -1,0 +1,19 @@
+\hypertarget{administrateur_2requete_2requete_8php}{
+\section{R\'{e}f\'{e}rence du fichier requete.php}
+\label{administrateur_2requete_2requete_8php}\index{requete.php@{requete.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{administrateur_2requete_2requete_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{administrateur_2requete_2requete_8php_a0}{
+\index{administrateur/requete/requete.php@{administrateur/requete/requete.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!administrateur/requete/requete.php@{administrateur/requete/requete.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{administrateur_2requete_2requete_8php_a0}
+
+

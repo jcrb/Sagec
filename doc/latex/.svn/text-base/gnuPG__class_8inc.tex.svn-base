@@ -1,0 +1,14 @@
+\hypertarget{gnuPG__class_8inc}{
+\section{R\'{e}f\'{e}rence du fichier gnu\-PG\_\-class.inc}
+\label{gnuPG__class_8inc}\index{gnuPG_class.inc@{gnuPG\_\-class.inc}}
+}
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespacegnuPG__class}{gnu\-PG\_\-class}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classgnuPG}{gnu\-PG}
+\end{CompactItemize}

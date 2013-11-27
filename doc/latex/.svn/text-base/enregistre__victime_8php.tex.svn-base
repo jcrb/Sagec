@@ -1,0 +1,102 @@
+\hypertarget{enregistre__victime_8php}{
+\section{R\'{e}f\'{e}rence du fichier enregistre\_\-victime.php}
+\label{enregistre__victime_8php}\index{enregistre_victime.php@{enregistre\_\-victime.php}}
+}
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespaceSAGEC67}{SAGEC67}
+\end{CompactItemize}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{enregistre__victime_8php_a8}{enregistre\_\-gravite} (\$connexion, \$victime\_\-ID, \$gravite, \$localisation\_\-ID, \$heure)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{enregistre__victime_8php_a0}{\$fichier} = \$\_\-FILES\mbox{[}'photo\_\-victime'\mbox{]}\mbox{[}'name'\mbox{]}
+\item 
+\hyperlink{enregistre__victime_8php_a1}{\$taille} = \$\_\-FILES\mbox{[}'photo\_\-victime'\mbox{]}\mbox{[}'size'\mbox{]}
+\item 
+\hyperlink{enregistre__victime_8php_a2}{\$tmp} = \$\_\-FILES\mbox{[}'photo\_\-victime'\mbox{]}\mbox{[}'tmp\_\-name'\mbox{]}
+\item 
+\hyperlink{enregistre__victime_8php_a3}{\$type} = \$\_\-FILES\mbox{[}'photo\_\-victime'\mbox{]}\mbox{[}'type'\mbox{]}
+\item 
+\hyperlink{enregistre__victime_8php_a4}{\$erreur} = \$\_\-FILES\mbox{[}'photo\_\-victime'\mbox{]}\mbox{[}'error'\mbox{]}
+\item 
+\hyperlink{enregistre__victime_8php_a5}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{enregistre__victime_8php_a6}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{enregistre__victime_8php_a7}{\$victime\_\-ID} = mysql\_\-insert\_\-id()
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{enregistre__victime_8php_a8}{
+\index{enregistre_victime.php@{enregistre\_\-victime.php}!enregistre_gravite@{enregistre\_\-gravite}}
+\index{enregistre_gravite@{enregistre\_\-gravite}!enregistre_victime.php@{enregistre\_\-victime.php}}
+\subsubsection[enregistre\_\-gravite]{\setlength{\rightskip}{0pt plus 5cm}enregistre\_\-gravite (\$ {\em connexion}, \$ {\em victime\_\-ID}, \$ {\em gravite}, \$ {\em localisation\_\-ID}, \$ {\em heure})}}
+\label{enregistre__victime_8php_a8}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{enregistre__victime_8php_a5}{
+\index{enregistre_victime.php@{enregistre\_\-victime.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!enregistre_victime.php@{enregistre\_\-victime.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{enregistre__victime_8php_a5}
+
+
+\hypertarget{enregistre__victime_8php_a4}{
+\index{enregistre_victime.php@{enregistre\_\-victime.php}!$erreur@{\$erreur}}
+\index{$erreur@{\$erreur}!enregistre_victime.php@{enregistre\_\-victime.php}}
+\subsubsection[\$erreur]{\setlength{\rightskip}{0pt plus 5cm}\$erreur = \$\_\-FILES\mbox{[}'photo\_\-victime'\mbox{]}\mbox{[}'error'\mbox{]}}}
+\label{enregistre__victime_8php_a4}
+
+
+\hypertarget{enregistre__victime_8php_a0}{
+\index{enregistre_victime.php@{enregistre\_\-victime.php}!$fichier@{\$fichier}}
+\index{$fichier@{\$fichier}!enregistre_victime.php@{enregistre\_\-victime.php}}
+\subsubsection[\$fichier]{\setlength{\rightskip}{0pt plus 5cm}\$fichier = \$\_\-FILES\mbox{[}'photo\_\-victime'\mbox{]}\mbox{[}'name'\mbox{]}}}
+\label{enregistre__victime_8php_a0}
+
+
+\hypertarget{enregistre__victime_8php_a6}{
+\index{enregistre_victime.php@{enregistre\_\-victime.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!enregistre_victime.php@{enregistre\_\-victime.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{enregistre__victime_8php_a6}
+
+
+\hypertarget{enregistre__victime_8php_a1}{
+\index{enregistre_victime.php@{enregistre\_\-victime.php}!$taille@{\$taille}}
+\index{$taille@{\$taille}!enregistre_victime.php@{enregistre\_\-victime.php}}
+\subsubsection[\$taille]{\setlength{\rightskip}{0pt plus 5cm}\$taille = \$\_\-FILES\mbox{[}'photo\_\-victime'\mbox{]}\mbox{[}'size'\mbox{]}}}
+\label{enregistre__victime_8php_a1}
+
+
+\hypertarget{enregistre__victime_8php_a2}{
+\index{enregistre_victime.php@{enregistre\_\-victime.php}!$tmp@{\$tmp}}
+\index{$tmp@{\$tmp}!enregistre_victime.php@{enregistre\_\-victime.php}}
+\subsubsection[\$tmp]{\setlength{\rightskip}{0pt plus 5cm}\$tmp = \$\_\-FILES\mbox{[}'photo\_\-victime'\mbox{]}\mbox{[}'tmp\_\-name'\mbox{]}}}
+\label{enregistre__victime_8php_a2}
+
+
+\hypertarget{enregistre__victime_8php_a3}{
+\index{enregistre_victime.php@{enregistre\_\-victime.php}!$type@{\$type}}
+\index{$type@{\$type}!enregistre_victime.php@{enregistre\_\-victime.php}}
+\subsubsection[\$type]{\setlength{\rightskip}{0pt plus 5cm}\$type = \$\_\-FILES\mbox{[}'photo\_\-victime'\mbox{]}\mbox{[}'type'\mbox{]}}}
+\label{enregistre__victime_8php_a3}
+
+
+\hypertarget{enregistre__victime_8php_a7}{
+\index{enregistre_victime.php@{enregistre\_\-victime.php}!$victime_ID@{\$victime\_\-ID}}
+\index{$victime_ID@{\$victime\_\-ID}!enregistre_victime.php@{enregistre\_\-victime.php}}
+\subsubsection[\$victime\_\-ID]{\setlength{\rightskip}{0pt plus 5cm}\$victime\_\-ID = mysql\_\-insert\_\-id()}}
+\label{enregistre__victime_8php_a7}
+
+

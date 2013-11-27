@@ -1,0 +1,43 @@
+\hypertarget{ville__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier ville\_\-enregistre.php}
+\label{ville__enregistre_8php}\index{ville_enregistre.php@{ville\_\-enregistre.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{ville__enregistre_8php_a2}{ville\_\-existe} (\$nom, \$connexion)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{ville__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{ville__enregistre_8php_a1}{\$\_\-GET} \mbox{[}\char`\"{}id\_\-ville\char`\"{}\mbox{]} = 0
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{ville__enregistre_8php_a2}{
+\index{ville_enregistre.php@{ville\_\-enregistre.php}!ville_existe@{ville\_\-existe}}
+\index{ville_existe@{ville\_\-existe}!ville_enregistre.php@{ville\_\-enregistre.php}}
+\subsubsection[ville\_\-existe]{\setlength{\rightskip}{0pt plus 5cm}ville\_\-existe (\$ {\em nom}, \$ {\em connexion})}}
+\label{ville__enregistre_8php_a2}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{ville__enregistre_8php_a1}{
+\index{ville_enregistre.php@{ville\_\-enregistre.php}!$_GET@{\$\_\-GET}}
+\index{$_GET@{\$\_\-GET}!ville_enregistre.php@{ville\_\-enregistre.php}}
+\subsubsection[\$\_\-GET]{\setlength{\rightskip}{0pt plus 5cm}\$\_\-GET\mbox{[}\char`\"{}id\_\-ville\char`\"{}\mbox{]} = 0}}
+\label{ville__enregistre_8php_a1}
+
+
+\hypertarget{ville__enregistre_8php_a0}{
+\index{ville_enregistre.php@{ville\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!ville_enregistre.php@{ville\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{ville__enregistre_8php_a0}
+
+

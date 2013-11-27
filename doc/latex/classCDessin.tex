@@ -1,0 +1,499 @@
+\hypertarget{classCDessin}{
+\section{R\'{e}f\'{e}rence de la classe CDessin}
+\label{classCDessin}\index{CDessin@{CDessin}}
+}
+\subsection*{Fonctions membres publiques}
+\begin{CompactItemize}
+\item 
+\hyperlink{classCDessin_a0}{CDessin} (\$hauteur\_\-image, \$largeur\_\-image, \$univers\_\-top, \$univers\_\-left, \$univers\_\-bottom, \$univers\_\-right, \$image=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classCDessin_a1}{set\-Univers} (\$univers\_\-top, \$univers\_\-left, \$univers\_\-bottom, \$univers\_\-right)
+\item 
+\hyperlink{classCDessin_a2}{set\-Marges} (\$haute, \$basse, \$gauche, \$droite)
+\item 
+\hyperlink{classCDessin_a3}{initialise} ()
+\item 
+\hyperlink{classCDessin_a4}{calcul\_\-coef} ()
+\item 
+\hyperlink{classCDessin_a5}{xe} (\$x)
+\item 
+\hyperlink{classCDessin_a6}{ye} (\$y)
+\item 
+\hyperlink{classCDessin_a7}{va\_\-en} (\$x, \$y)
+\item 
+\hyperlink{classCDessin_a8}{trace\_\-vers} (\$x, \$y)
+\item 
+\hyperlink{classCDessin_a9}{line} (\$x1, \$y1, \$x2, \$y2)
+\item 
+\hyperlink{classCDessin_a10}{echelle} (\$km)
+\item 
+\hyperlink{classCDessin_a11}{writetxt} (\$fontsize, \$fontangle, \$x, \$y, \$dx, \$dy, \$color, \$texte)
+\item 
+\hyperlink{classCDessin_a12}{polygone\-U2E} (\$poly)
+\item 
+\hyperlink{classCDessin_a13}{dessine\_\-polygone} (\$poly, \$couleur\_\-fond=\char`\"{}\char`\"{}, \$couleur\_\-trait=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classCDessin_a14}{enregistre\_\-image} (\$titre=\char`\"{}pic.png\char`\"{})
+\item 
+\hyperlink{classCDessin_a15}{affiche\_\-image} (\$titre=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classCDessin_a16}{cercle} (\$x, \$y, \$rayon=\char`\"{}5\char`\"{}, \$couleur\_\-fond=\char`\"{}\char`\"{}, \$couleur\_\-trait=\char`\"{}\char`\"{}, \$titre=\char`\"{}\char`\"{}, \$plein=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classCDessin_a17}{isocercle} (\$x, \$y, \$rayon, \$couleur=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classCDessin_a18}{rectangle} (\$xg, \$yh, \$xd, \$yb, \$c)
+\item 
+\hyperlink{classCDessin_a19}{ecrire} (\$mot, \$x, \$y, \$dx=\char`\"{}\char`\"{}, \$dy=\char`\"{}\char`\"{}, \$color=\char`\"{}0\char`\"{}, \$font\_\-size=\char`\"{}10\char`\"{}, \$alignment='L', \$angle=0)
+\item 
+\hyperlink{classCDessin_a20}{pprint} (\$mot, \$x, \$y, \$dx=\char`\"{}\char`\"{}, \$dy=\char`\"{}\char`\"{}, \$color=\char`\"{}0\char`\"{}, \$font\_\-size=\char`\"{}10\char`\"{}, \$alignment='L', \$angle=0)
+\item 
+\hyperlink{classCDessin_a21}{ecrire2} ()
+\item 
+\hyperlink{classCDessin_a22}{grille\-H} (\$ymax, \$ymin, \$yinc, \$yinter, \$xmin, \$xmax, \$c1, \$c2)
+\item 
+\hyperlink{classCDessin_a23}{grille\-V} (\$xmin, \$xmax, \$xinc, \$xinter, \$ymin, \$ymax, \$c1, \$c2)
+\end{CompactItemize}
+\subsection*{Attributs publics}
+\begin{CompactItemize}
+\item 
+\hyperlink{classCDessin_o0}{\$a8}
+\item 
+\hyperlink{classCDessin_o1}{\$a9}
+\item 
+\hyperlink{classCDessin_o2}{\$b8}
+\item 
+\hyperlink{classCDessin_o3}{\$b9}
+\item 
+\hyperlink{classCDessin_o4}{\$marge\_\-haute}
+\item 
+\hyperlink{classCDessin_o5}{\$marge\_\-basse}
+\item 
+\hyperlink{classCDessin_o6}{\$marge\_\-gauche}
+\item 
+\hyperlink{classCDessin_o7}{\$marge\_\-droite}
+\item 
+\hyperlink{classCDessin_o8}{\$image\_\-heigth}
+\item 
+\hyperlink{classCDessin_o9}{\$image\_\-width}
+\item 
+\hyperlink{classCDessin_o10}{\$U\_\-droit}
+\item 
+\hyperlink{classCDessin_o11}{\$U\_\-gauche}
+\item 
+\hyperlink{classCDessin_o12}{\$U\_\-haut}
+\item 
+\hyperlink{classCDessin_o13}{\$U\_\-bas}
+\item 
+\hyperlink{classCDessin_o14}{\$pic}
+\item 
+\hyperlink{classCDessin_o15}{\$blanc}
+\item 
+\hyperlink{classCDessin_o16}{\$noir}
+\item 
+\hyperlink{classCDessin_o17}{\$xcourant}
+\item 
+\hyperlink{classCDessin_o18}{\$ycourant}
+\item 
+\hyperlink{classCDessin_o19}{\$couleur\_\-courante}
+\item 
+\hyperlink{classCDessin_o20}{\$arial} = \char`\"{}../fontes/arial.ttf\char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Documentation des contructeurs et destructeur}
+\hypertarget{classCDessin_a0}{
+\index{CDessin@{CDessin}!CDessin@{CDessin}}
+\index{CDessin@{CDessin}!CDessin@{CDessin}}
+\subsubsection[CDessin]{\setlength{\rightskip}{0pt plus 5cm}CDessin::CDessin (\$ {\em hauteur\_\-image}, \$ {\em largeur\_\-image}, \$ {\em univers\_\-top}, \$ {\em univers\_\-left}, \$ {\em univers\_\-bottom}, \$ {\em univers\_\-right}, \$ {\em image} = {\tt \char`\"{}\char`\"{}})}}
+\label{classCDessin_a0}
+
+
+Constructeur d'un objet de dessin. \begin{Desc}
+\item[Renvoie:]un pointeur sur la classe dessin  \end{Desc}
+\begin{Desc}
+\item[Depuis:]1.0 \end{Desc}
+\begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em integer}]hauteur de l'image \`{a} l'\'{e}cran (en pixels). \item[{\em integer}]largeur de l'image \`{a} l'\'{e}cran (en pixels). \item[{\em double}]point haut (y) du rectangle utilisateur (coordonn\'{e}es de l'utilisteur). \item[{\em double}]point gauche (x) du rectangle utilisateur (coordonn\'{e}es de l'utilisteur). \item[{\em double}]point bas (y) du rectangle utilisateur (coordonn\'{e}es de l'utilisteur). \item[{\em double}]point droit (x) du rectangle utilisateur (coordonn\'{e}es de l'utilisteur). \item[{\em mixed}]pointeur sur une zone de m\'{e}moire dessin allou\'{e}e par imagecreatetruecolor. Si cette valeur est vide, le constructeur se charge de la r\'{e}server.\end{description}
+\end{Desc}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classCDessin_a15}{
+\index{CDessin@{CDessin}!affiche_image@{affiche\_\-image}}
+\index{affiche_image@{affiche\_\-image}!CDessin@{CDessin}}
+\subsubsection[affiche\_\-image]{\setlength{\rightskip}{0pt plus 5cm}CDessin::affiche\_\-image (\$ {\em titre} = {\tt \char`\"{}\char`\"{}})}}
+\label{classCDessin_a15}
+
+
+\hypertarget{classCDessin_a4}{
+\index{CDessin@{CDessin}!calcul_coef@{calcul\_\-coef}}
+\index{calcul_coef@{calcul\_\-coef}!CDessin@{CDessin}}
+\subsubsection[calcul\_\-coef]{\setlength{\rightskip}{0pt plus 5cm}CDessin::calcul\_\-coef ()}}
+\label{classCDessin_a4}
+
+
+Calcul des coefficients de mise \`{a} l'\'{e}chelle. Ces coefficients permettent de transformer un point en coordonn\'{e}es univers, en coordonn\'{e}es \'{e}cran et r\'{e}ciproquement.\hypertarget{classCDessin_a16}{
+\index{CDessin@{CDessin}!cercle@{cercle}}
+\index{cercle@{cercle}!CDessin@{CDessin}}
+\subsubsection[cercle]{\setlength{\rightskip}{0pt plus 5cm}CDessin::cercle (\$ {\em x}, \$ {\em y}, \$ {\em rayon} = {\tt \char`\"{}5\char`\"{}}, \$ {\em couleur\_\-fond} = {\tt \char`\"{}\char`\"{}}, \$ {\em couleur\_\-trait} = {\tt \char`\"{}\char`\"{}}, \$ {\em titre} = {\tt \char`\"{}\char`\"{}}, \$ {\em plein} = {\tt \char`\"{}\char`\"{}})}}
+\label{classCDessin_a16}
+
+
+\hypertarget{classCDessin_a13}{
+\index{CDessin@{CDessin}!dessine_polygone@{dessine\_\-polygone}}
+\index{dessine_polygone@{dessine\_\-polygone}!CDessin@{CDessin}}
+\subsubsection[dessine\_\-polygone]{\setlength{\rightskip}{0pt plus 5cm}CDessin::dessine\_\-polygone (\$ {\em poly}, \$ {\em couleur\_\-fond} = {\tt \char`\"{}\char`\"{}}, \$ {\em couleur\_\-trait} = {\tt \char`\"{}\char`\"{}})}}
+\label{classCDessin_a13}
+
+
+\hypertarget{classCDessin_a10}{
+\index{CDessin@{CDessin}!echelle@{echelle}}
+\index{echelle@{echelle}!CDessin@{CDessin}}
+\subsubsection[echelle]{\setlength{\rightskip}{0pt plus 5cm}CDessin::echelle (\$ {\em km})}}
+\label{classCDessin_a10}
+
+
+Dessine un symbole en forme de halt\`{e}res repr\'{e}sentant l'\'{e}chelle d'une carte avec son titre \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em \'{e}chelle}]de la carte: ex 50 = 50 km\end{description}
+\end{Desc}
+\hypertarget{classCDessin_a19}{
+\index{CDessin@{CDessin}!ecrire@{ecrire}}
+\index{ecrire@{ecrire}!CDessin@{CDessin}}
+\subsubsection[ecrire]{\setlength{\rightskip}{0pt plus 5cm}CDessin::ecrire (\$ {\em mot}, \$ {\em x}, \$ {\em y}, \$ {\em dx} = {\tt \char`\"{}\char`\"{}}, \$ {\em dy} = {\tt \char`\"{}\char`\"{}}, \$ {\em color} = {\tt \char`\"{}0\char`\"{}}, \$ {\em font\_\-size} = {\tt \char`\"{}10\char`\"{}}, \$ {\em alignment} = {\tt 'L'}, \$ {\em angle} = {\tt 0})}}
+\label{classCDessin_a19}
+
+
+\hypertarget{classCDessin_a21}{
+\index{CDessin@{CDessin}!ecrire2@{ecrire2}}
+\index{ecrire2@{ecrire2}!CDessin@{CDessin}}
+\subsubsection[ecrire2]{\setlength{\rightskip}{0pt plus 5cm}CDessin::ecrire2 ()}}
+\label{classCDessin_a21}
+
+
+\hypertarget{classCDessin_a14}{
+\index{CDessin@{CDessin}!enregistre_image@{enregistre\_\-image}}
+\index{enregistre_image@{enregistre\_\-image}!CDessin@{CDessin}}
+\subsubsection[enregistre\_\-image]{\setlength{\rightskip}{0pt plus 5cm}CDessin::enregistre\_\-image (\$ {\em titre} = {\tt \char`\"{}pic.png\char`\"{}})}}
+\label{classCDessin_a14}
+
+
+\hypertarget{classCDessin_a22}{
+\index{CDessin@{CDessin}!grilleH@{grilleH}}
+\index{grilleH@{grilleH}!CDessin@{CDessin}}
+\subsubsection[grilleH]{\setlength{\rightskip}{0pt plus 5cm}CDessin::grille\-H (\$ {\em ymax}, \$ {\em ymin}, \$ {\em yinc}, \$ {\em yinter}, \$ {\em xmin}, \$ {\em xmax}, \$ {\em c1}, \$ {\em c2})}}
+\label{classCDessin_a22}
+
+
+Dessine une grillehorizontale \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em \$ymax}]ordonn\'{e}e la plus haute \item[{\em \$ymin}]ordonn\'{e}e la plus basse \item[{\em \$yinc}]incr\'{e}ment entre 2 lignes \item[{\em \$yinter}]ligne horizontale interm\'{e}diaire plus \'{e}paisse. 0 pour ne pas en mettre \item[{\em \$xmin}]abcisse minimale du trait \item[{\em \$xmax}]abcisse maximale du trait \item[{\em \$c1}]couleur du trait usuel \item[{\em \$c2}]couleur du trait \'{e}pais\end{description}
+\end{Desc}
+\hypertarget{classCDessin_a23}{
+\index{CDessin@{CDessin}!grilleV@{grilleV}}
+\index{grilleV@{grilleV}!CDessin@{CDessin}}
+\subsubsection[grilleV]{\setlength{\rightskip}{0pt plus 5cm}CDessin::grille\-V (\$ {\em xmin}, \$ {\em xmax}, \$ {\em xinc}, \$ {\em xinter}, \$ {\em ymin}, \$ {\em ymax}, \$ {\em c1}, \$ {\em c2})}}
+\label{classCDessin_a23}
+
+
+\hypertarget{classCDessin_a3}{
+\index{CDessin@{CDessin}!initialise@{initialise}}
+\index{initialise@{initialise}!CDessin@{CDessin}}
+\subsubsection[initialise]{\setlength{\rightskip}{0pt plus 5cm}CDessin::initialise ()}}
+\label{classCDessin_a3}
+
+
+Initialisation de l'objet dessin. Cette m\'{e}thode est appel\'{e}e par le contructeur pour d\'{e}finir un certain nombre de valeurs par d\'{e}faut.\hypertarget{classCDessin_a17}{
+\index{CDessin@{CDessin}!isocercle@{isocercle}}
+\index{isocercle@{isocercle}!CDessin@{CDessin}}
+\subsubsection[isocercle]{\setlength{\rightskip}{0pt plus 5cm}CDessin::isocercle (\$ {\em x}, \$ {\em y}, \$ {\em rayon}, \$ {\em couleur} = {\tt \char`\"{}\char`\"{}})}}
+\label{classCDessin_a17}
+
+
+Dessine un cercle vide centr\'{e} sur le point(x,y) de rayon R et dans la couleur C. \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em abcisse}]x du point en coordonn\'{e}es r\'{e}elles \item[{\em abcisse}]y du point en coordonn\'{e}es r\'{e}elles \item[{\em rayon}]du cercle en coordonn\'{e}es r\'{e}elles \item[{\em couleur}]du cercle (noir par d\'{e}faut)\end{description}
+\end{Desc}
+\hypertarget{classCDessin_a9}{
+\index{CDessin@{CDessin}!line@{line}}
+\index{line@{line}!CDessin@{CDessin}}
+\subsubsection[line]{\setlength{\rightskip}{0pt plus 5cm}CDessin::line (\$ {\em x1}, \$ {\em y1}, \$ {\em x2}, \$ {\em y2})}}
+\label{classCDessin_a9}
+
+
+trace une ligne entre les points (x1,y1) et (x2,y2) \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em double}]abcisse x d'un point de l'univers \item[{\em double}]ordonn\'{e}e y d'un point de l'univers \item[{\em double}]abcisse x d'un point de l'univers \item[{\em double}]ordonn\'{e}e y d'un point de l'univers\end{description}
+\end{Desc}
+\hypertarget{classCDessin_a12}{
+\index{CDessin@{CDessin}!polygoneU2E@{polygoneU2E}}
+\index{polygoneU2E@{polygoneU2E}!CDessin@{CDessin}}
+\subsubsection[polygoneU2E]{\setlength{\rightskip}{0pt plus 5cm}CDessin::polygone\-U2E (\$ {\em poly})}}
+\label{classCDessin_a12}
+
+
+Transforme un polygone r\'{e}el, en polygone \'{e}cran (pixel). \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em array}]Tableau contenant la liste des points constituant le polygone sous la forme \$polygone = array(x1,y1,x2,y2,...,xn,yn). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]array contenant les m\^{e}mes points mais en coordonn\'{e}es \'{e}cran.\end{Desc}
+\hypertarget{classCDessin_a20}{
+\index{CDessin@{CDessin}!pprint@{pprint}}
+\index{pprint@{pprint}!CDessin@{CDessin}}
+\subsubsection[pprint]{\setlength{\rightskip}{0pt plus 5cm}CDessin::pprint (\$ {\em mot}, \$ {\em x}, \$ {\em y}, \$ {\em dx} = {\tt \char`\"{}\char`\"{}}, \$ {\em dy} = {\tt \char`\"{}\char`\"{}}, \$ {\em color} = {\tt \char`\"{}0\char`\"{}}, \$ {\em font\_\-size} = {\tt \char`\"{}10\char`\"{}}, \$ {\em alignment} = {\tt 'L'}, \$ {\em angle} = {\tt 0})}}
+\label{classCDessin_a20}
+
+
+\hypertarget{classCDessin_a18}{
+\index{CDessin@{CDessin}!rectangle@{rectangle}}
+\index{rectangle@{rectangle}!CDessin@{CDessin}}
+\subsubsection[rectangle]{\setlength{\rightskip}{0pt plus 5cm}CDessin::rectangle (\$ {\em xg}, \$ {\em yh}, \$ {\em xd}, \$ {\em yb}, \$ {\em c})}}
+\label{classCDessin_a18}
+
+
+Dessine un rectangle plein \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em xg}]abcisse du point sup/gauche \item[{\em yh}]ordonn\'{e}e du point sup/gauche \item[{\em xd}]abcisse du point sup/droit \item[{\em yb}]ordonn\'{e}e du point sup/droit \item[{\em c}]couleur de remplissage\end{description}
+\end{Desc}
+\hypertarget{classCDessin_a2}{
+\index{CDessin@{CDessin}!setMarges@{setMarges}}
+\index{setMarges@{setMarges}!CDessin@{CDessin}}
+\subsubsection[setMarges]{\setlength{\rightskip}{0pt plus 5cm}CDessin::set\-Marges (\$ {\em haute}, \$ {\em basse}, \$ {\em gauche}, \$ {\em droite})}}
+\label{classCDessin_a2}
+
+
+Red\'{e}finit les marges par d\'{e}faut. La zone de dessin et les coefficients de transformation sont automatiquement r\'{e}ajust\'{e}s.\hypertarget{classCDessin_a1}{
+\index{CDessin@{CDessin}!setUnivers@{setUnivers}}
+\index{setUnivers@{setUnivers}!CDessin@{CDessin}}
+\subsubsection[setUnivers]{\setlength{\rightskip}{0pt plus 5cm}CDessin::set\-Univers (\$ {\em univers\_\-top}, \$ {\em univers\_\-left}, \$ {\em univers\_\-bottom}, \$ {\em univers\_\-right})}}
+\label{classCDessin_a1}
+
+
+Re-Initialisation de l'objet dessin. On garde la m\^{e}me disposition mais la taille de l'univers est modifi\'{e}e ce qui permet de superposer des images d'\'{e}chelles diff\'{e}rentes sur le m\^{e}me graphe.\hypertarget{classCDessin_a8}{
+\index{CDessin@{CDessin}!trace_vers@{trace\_\-vers}}
+\index{trace_vers@{trace\_\-vers}!CDessin@{CDessin}}
+\subsubsection[trace\_\-vers]{\setlength{\rightskip}{0pt plus 5cm}CDessin::trace\_\-vers (\$ {\em x}, \$ {\em y})}}
+\label{classCDessin_a8}
+
+
+D\'{e}place la pointe du crayon depuis le point courant vers le point de coordonn\'{e}es univers \$x,\$y en tra\c{c}ant une ligne. \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em double}]abcisse x d'un point de l'univers \item[{\em double}]ordonn\'{e}e y d'un point de l'univers\end{description}
+\end{Desc}
+\hypertarget{classCDessin_a7}{
+\index{CDessin@{CDessin}!va_en@{va\_\-en}}
+\index{va_en@{va\_\-en}!CDessin@{CDessin}}
+\subsubsection[va\_\-en]{\setlength{\rightskip}{0pt plus 5cm}CDessin::va\_\-en (\$ {\em x}, \$ {\em y})}}
+\label{classCDessin_a7}
+
+
+L\`{e}ve la pointe du crayon et la d\'{e}place vers le point de coordonn\'{e}es univers \$x,\$y. \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em double}]abcisse x d'un point de l'univers \item[{\em double}]ordonn\'{e}e y d'un point de l'univers\end{description}
+\end{Desc}
+\hypertarget{classCDessin_a11}{
+\index{CDessin@{CDessin}!writetxt@{writetxt}}
+\index{writetxt@{writetxt}!CDessin@{CDessin}}
+\subsubsection[writetxt]{\setlength{\rightskip}{0pt plus 5cm}CDessin::writetxt (\$ {\em fontsize}, \$ {\em fontangle}, \$ {\em x}, \$ {\em y}, \$ {\em dx}, \$ {\em dy}, \$ {\em color}, \$ {\em texte})}}
+\label{classCDessin_a11}
+
+
+Dessine un texte en utilisant la fonte arial si elle est pr\'{e}sente ou une fonte syst\`{e}me par d\'{e}faut \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em taille}]de la fonte en points. \item[{\em angle}]d'\'{e}criture (ne fonctionne qu'avec les fontes true type). \item[{\em abcisse}]du d\'{e}but du texte en pixels. \item[{\em ordonn\'{e}e}]du d\'{e}but du texte en pixels. \item[{\em d\'{e}calage}]horizontal du texte en pixels. \item[{\em d\'{e}calage}]vertical du texte en pixels. \item[{\em couleur}]du texte. \item[{\em texte}]\`{a} afficher.\end{description}
+\end{Desc}
+\hypertarget{classCDessin_a5}{
+\index{CDessin@{CDessin}!xe@{xe}}
+\index{xe@{xe}!CDessin@{CDessin}}
+\subsubsection[xe]{\setlength{\rightskip}{0pt plus 5cm}CDessin::xe (\$ {\em x})}}
+\label{classCDessin_a5}
+
+
+Transforme une abcisse r\'{e}lle, en abcisse \'{e}cran (pixel). \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em double}]abcisse x d'un point de l'univers \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]integer abcisse du point en coordonn\'{e}es \'{e}cran\end{Desc}
+\hypertarget{classCDessin_a6}{
+\index{CDessin@{CDessin}!ye@{ye}}
+\index{ye@{ye}!CDessin@{CDessin}}
+\subsubsection[ye]{\setlength{\rightskip}{0pt plus 5cm}CDessin::ye (\$ {\em y})}}
+\label{classCDessin_a6}
+
+
+Transforme une ordonn\'{e}e r\'{e}lle, en ordonn\'{e}e \'{e}cran (pixel). \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em double}]ordonn\'{e}e y d'un point de l'univers \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Renvoie:]integer ordonn\'{e}e du point en coordonn\'{e}es \'{e}cran\end{Desc}
+
+
+\subsection{Documentation des donn\'{e}es membres}
+\hypertarget{classCDessin_o0}{
+\index{CDessin@{CDessin}!$a8@{\$a8}}
+\index{$a8@{\$a8}!CDessin@{CDessin}}
+\subsubsection[\$a8]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$a8}}
+\label{classCDessin_o0}
+
+
+\hypertarget{classCDessin_o1}{
+\index{CDessin@{CDessin}!$a9@{\$a9}}
+\index{$a9@{\$a9}!CDessin@{CDessin}}
+\subsubsection[\$a9]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$a9}}
+\label{classCDessin_o1}
+
+
+\hypertarget{classCDessin_o20}{
+\index{CDessin@{CDessin}!$arial@{\$arial}}
+\index{$arial@{\$arial}!CDessin@{CDessin}}
+\subsubsection[\$arial]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$arial = \char`\"{}../fontes/arial.ttf\char`\"{}}}
+\label{classCDessin_o20}
+
+
+\hypertarget{classCDessin_o2}{
+\index{CDessin@{CDessin}!$b8@{\$b8}}
+\index{$b8@{\$b8}!CDessin@{CDessin}}
+\subsubsection[\$b8]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$b8}}
+\label{classCDessin_o2}
+
+
+\hypertarget{classCDessin_o3}{
+\index{CDessin@{CDessin}!$b9@{\$b9}}
+\index{$b9@{\$b9}!CDessin@{CDessin}}
+\subsubsection[\$b9]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$b9}}
+\label{classCDessin_o3}
+
+
+\hypertarget{classCDessin_o15}{
+\index{CDessin@{CDessin}!$blanc@{\$blanc}}
+\index{$blanc@{\$blanc}!CDessin@{CDessin}}
+\subsubsection[\$blanc]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$blanc}}
+\label{classCDessin_o15}
+
+
+\hypertarget{classCDessin_o19}{
+\index{CDessin@{CDessin}!$couleur_courante@{\$couleur\_\-courante}}
+\index{$couleur_courante@{\$couleur\_\-courante}!CDessin@{CDessin}}
+\subsubsection[\$couleur\_\-courante]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$couleur\_\-courante}}
+\label{classCDessin_o19}
+
+
+\hypertarget{classCDessin_o8}{
+\index{CDessin@{CDessin}!$image_heigth@{\$image\_\-heigth}}
+\index{$image_heigth@{\$image\_\-heigth}!CDessin@{CDessin}}
+\subsubsection[\$image\_\-heigth]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$image\_\-heigth}}
+\label{classCDessin_o8}
+
+
+\hypertarget{classCDessin_o9}{
+\index{CDessin@{CDessin}!$image_width@{\$image\_\-width}}
+\index{$image_width@{\$image\_\-width}!CDessin@{CDessin}}
+\subsubsection[\$image\_\-width]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$image\_\-width}}
+\label{classCDessin_o9}
+
+
+\hypertarget{classCDessin_o5}{
+\index{CDessin@{CDessin}!$marge_basse@{\$marge\_\-basse}}
+\index{$marge_basse@{\$marge\_\-basse}!CDessin@{CDessin}}
+\subsubsection[\$marge\_\-basse]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$marge\_\-basse}}
+\label{classCDessin_o5}
+
+
+\hypertarget{classCDessin_o7}{
+\index{CDessin@{CDessin}!$marge_droite@{\$marge\_\-droite}}
+\index{$marge_droite@{\$marge\_\-droite}!CDessin@{CDessin}}
+\subsubsection[\$marge\_\-droite]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$marge\_\-droite}}
+\label{classCDessin_o7}
+
+
+\hypertarget{classCDessin_o6}{
+\index{CDessin@{CDessin}!$marge_gauche@{\$marge\_\-gauche}}
+\index{$marge_gauche@{\$marge\_\-gauche}!CDessin@{CDessin}}
+\subsubsection[\$marge\_\-gauche]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$marge\_\-gauche}}
+\label{classCDessin_o6}
+
+
+\hypertarget{classCDessin_o4}{
+\index{CDessin@{CDessin}!$marge_haute@{\$marge\_\-haute}}
+\index{$marge_haute@{\$marge\_\-haute}!CDessin@{CDessin}}
+\subsubsection[\$marge\_\-haute]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$marge\_\-haute}}
+\label{classCDessin_o4}
+
+
+\hypertarget{classCDessin_o16}{
+\index{CDessin@{CDessin}!$noir@{\$noir}}
+\index{$noir@{\$noir}!CDessin@{CDessin}}
+\subsubsection[\$noir]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$noir}}
+\label{classCDessin_o16}
+
+
+\hypertarget{classCDessin_o14}{
+\index{CDessin@{CDessin}!$pic@{\$pic}}
+\index{$pic@{\$pic}!CDessin@{CDessin}}
+\subsubsection[\$pic]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$pic}}
+\label{classCDessin_o14}
+
+
+\hypertarget{classCDessin_o13}{
+\index{CDessin@{CDessin}!$U_bas@{\$U\_\-bas}}
+\index{$U_bas@{\$U\_\-bas}!CDessin@{CDessin}}
+\subsubsection[\$U\_\-bas]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$U\_\-bas}}
+\label{classCDessin_o13}
+
+
+\hypertarget{classCDessin_o10}{
+\index{CDessin@{CDessin}!$U_droit@{\$U\_\-droit}}
+\index{$U_droit@{\$U\_\-droit}!CDessin@{CDessin}}
+\subsubsection[\$U\_\-droit]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$U\_\-droit}}
+\label{classCDessin_o10}
+
+
+\hypertarget{classCDessin_o11}{
+\index{CDessin@{CDessin}!$U_gauche@{\$U\_\-gauche}}
+\index{$U_gauche@{\$U\_\-gauche}!CDessin@{CDessin}}
+\subsubsection[\$U\_\-gauche]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$U\_\-gauche}}
+\label{classCDessin_o11}
+
+
+\hypertarget{classCDessin_o12}{
+\index{CDessin@{CDessin}!$U_haut@{\$U\_\-haut}}
+\index{$U_haut@{\$U\_\-haut}!CDessin@{CDessin}}
+\subsubsection[\$U\_\-haut]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$U\_\-haut}}
+\label{classCDessin_o12}
+
+
+\hypertarget{classCDessin_o17}{
+\index{CDessin@{CDessin}!$xcourant@{\$xcourant}}
+\index{$xcourant@{\$xcourant}!CDessin@{CDessin}}
+\subsubsection[\$xcourant]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$xcourant}}
+\label{classCDessin_o17}
+
+
+\hypertarget{classCDessin_o18}{
+\index{CDessin@{CDessin}!$ycourant@{\$ycourant}}
+\index{$ycourant@{\$ycourant}!CDessin@{CDessin}}
+\subsubsection[\$ycourant]{\setlength{\rightskip}{0pt plus 5cm}CDessin::\$ycourant}}
+\label{classCDessin_o18}
+
+
+
+
+La documentation de cette classe a \'{e}t\'{e} g\'{e}n\'{e}r\'{e}e \`{a} partir du fichier suivant:\begin{CompactItemize}
+\item 
+\hyperlink{classe__dessin_8php}{classe\_\-dessin.php}\end{CompactItemize}

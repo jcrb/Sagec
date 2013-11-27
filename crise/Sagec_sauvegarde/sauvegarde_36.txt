@@ -1,0 +1,143 @@
+Date: Sunday 30 June 2013 à 12:55
+==================================== Sauvegarde du bloc-note =================================
+LB_ID,org_ID,LB_Expediteur,LB_Date,LB_Message,LB_visible,Localisation_ID,IQR
+37,85,212,0000-00-00 00:00:00,<p>message</p>,o,,
+1,85,2,2010-09-26 15:33:46,=== RALLYE ALSACE-FRANCE ==  [modifié par 2],o,,1
+2,98,330,2010-09-26 15:48:25,qqq,n,,3
+3,98,330,2010-09-26 15:51:45,123,n,,3
+4,98,330,2010-09-26 15:55:54,qqq,n,,3
+5,98,330,2010-09-26 15:56:11,123,n,,3
+6,98,330,2010-09-26 15:57:15,salutations du samu 88   [modifié par 330],o,,1
+24,0,2,2011-04-09 14:39:21,PH d'astreinte alerté,o,,1
+25,0,2,2011-04-09 14:39:25,<br>Equipe NRBC alertÃ©e === ANNULE PAR [2] le 2011-04-09 14:39:30 ===,n,,1
+26,0,2,2011-04-09 14:42:46,Equipe NRBC alertÃ©e<br> === ANNULE PAR [] le 2011-04-22 23:02:37 ===,n,,1
+27,0,2,2011-04-09 14:43:18,Equipe NRBC alertÃ©e,o,,1
+28,85,2,2011-04-20 11:05:17,<p><strong>test</strong></p>,o,,1
+29,85,2,2011-04-20 11:06:33,<p>test main courante&nbsp;&Phi;</p>
+<hr /> [modifié par 2],o,,1
+30,85,2,2011-04-20 11:28:27,<p>OK pour le test</p>,n,,3
+31,85,2,2011-04-20 15:27:59,<p>test <span style=\"color: #00ff00;\"><strong>nouveaux</strong></span> <span style=\"background-color: #ffff00;\">messages</span></p>,o,,1
+32,85,2,2011-04-20 16:15:31,<p>test <img title=\"Langue tir&eacute;e\" src=\"../tinymce/tiny_mce/plugins/emotions/img/smiley-tongue-out.gif\" alt=\"Langue tir&eacute;e\" border=\"0\" /></p>,o,,1
+33,85,2,2011-04-20 17:16:52,<p>ma r&eacute;ponse</p>,n,,3
+34,85,2,2011-04-25 20:33:17,<p><span style=\"background-color: #ff6600;\">mon <span style=\"color: #ffff00;\">test</span></span></p>,o,,1
+35,85,212,2011-05-07 07:55:15,,o,,
+36,85,212,2011-05-07 08:48:40,,o,,
+38,85,212,2011-05-07 12:36:37,<p>test <img title=\"Cool\" src=\"../tinymce/tiny_mce/plugins/emotions/img/smiley-cool.gif\" alt=\"Cool\" border=\"0\" /></p> (copie SAMU),o,,
+39,85,2,2011-05-09 21:45:41,,o,,1
+40,85,2,2011-05-09 21:47:28,,o,,1
+41,85,2,2011-05-09 21:49:11,,o,,1
+42,85,2,2011-05-09 21:49:59,,o,,1
+43,85,2,2011-05-09 21:51:19,,o,,1
+44,85,2,2011-05-09 21:52:09,<p>oooooooooooo</p>,o,,1
+45,85,2,2011-05-09 21:52:59,<p>&eacute;quipe alert&eacute;e</p> [modifié par 2],o,,1
+46,0,2,2011-05-19 23:32:05,<p>MALADIES INFECTIEUSES INFORMEES</p>,o,,1
+47,0,0,2011-05-20 09:21:28,PH d'astreinte alerté,o,,1
+48,0,0,2011-05-20 09:25:11,Equipe NRBC alertÃ©e<br> === ANNULE PAR [] le 2011-05-20 09:27:05 ===,n,,1
+49,0,2,2011-05-20 09:27:41,PH d'astreinte alerté,o,,1
+50,0,2,2011-05-20 09:27:44,Equipe NRBC alertÃ©e<br> === ANNULE PAR [2] le 2011-08-27 12:59:04 ===,n,,1
+51,0,2,2011-08-27 13:01:15,,o,,1
+52,85,334,2011-09-03 19:07:51,<p>plan blanc activ&eacute;</p>,o,,
+53,85,2,2011-09-18 09:58:38,<p>test</p>,o,,1
+54,0,2,2011-09-18 12:15:36,Equipe NRBC alertÃ©e<br> === ANNULE PAR [2] le 2012-10-18 17:09:54 ===,n,,1
+55,85,44,2011-09-24 09:41:00,<p>pc activ&eacute;</p>,o,,1
+56,3,320,2011-09-24 09:51:54,<p>sdis connect&eacute;</p>,o,,1
+57,85,2,2011-10-02 12:46:27,<table style="width: 75%;" border="0" cellspacing="1" cellpadding="0">
+<tbody>
+<tr>
+<td bgcolor="#dde6ee" width="300">&nbsp;</td>
+<td bgcolor="#000099" width="45"><center><strong><span style="color: #ffffff; font-family: arial; font-size: medium;">U</span></strong></center></td>
+<td bgcolor="#ff0000" width="45"><center><strong><span style="color: #ffffff; font-family: arial;">UA</span></strong></center></td>
+<td bgcolor="#ffff00" width="45"><center><strong><span style="color: #000000; font-family: arial;">UR</span></strong></center></td>
+<td bgcolor="#00ff00" width="45"><center><strong><span style="color: #000000; font-family: arial;">U3</span></strong></center></td>
+<td bgcolor="#000000" width="45"><center><strong><span style="color: #ffffff; font-family: arial;">DCD</span></strong></center></td>
+<td bgcolor="#dde6ee" width="80"><center><strong><span style="color: #000000; font-family: arial;">Total</span></strong></center></td>
+</tr>
+<tr>
+<td bgcolor="#dde6ee" width="300"><span style="font-size: x-small;">CHU de Strasbourg (Hop. Civil)</span></td>
+<td bgcolor="#009999" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#f4b890" width="45"><center><span style="font-size: x-small;">1</span></center></td>
+<td bgcolor="#ffff80" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#8bf878" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#999999" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#dde6ee" width="80"><center><span style="font-size: x-small;">1</span></center></td>
+</tr>
+<tr>
+<td bgcolor="#dde6ee" width="300"><span style="font-size: x-small;">CHU de Strasbourg(Hautepierre)</span></td>
+<td bgcolor="#009999" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#f4b890" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#ffff80" width="45"><center><span style="font-size: x-small;">1</span></center></td>
+<td bgcolor="#8bf878" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#999999" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#dde6ee" width="80"><center><span style="font-size: x-small;">1</span></center></td>
+</tr>
+<tr>
+<td bgcolor="#dde6ee" width="300"><span style="font-size: x-small;">CH de Colmar (Louis Pasteur)</span></td>
+<td bgcolor="#009999" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#f4b890" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#ffff80" width="45"><center><span style="font-size: x-small;">3</span></center></td>
+<td bgcolor="#8bf878" width="45"><center><span style="font-size: x-small;">1</span></center></td>
+<td bgcolor="#999999" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#dde6ee" width="80"><center><span style="font-size: x-small;">4</span></center></td>
+</tr>
+<tr>
+<td bgcolor="#dde6ee" width="300"><span style="font-size: x-small;">CH de Haguenau</span></td>
+<td bgcolor="#009999" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#f4b890" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#ffff80" width="45"><center><span style="font-size: x-small;">1</span></center></td>
+<td bgcolor="#8bf878" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#999999" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#dde6ee" width="80"><center><span style="font-size: x-small;">1</span></center></td>
+</tr>
+<tr>
+<td bgcolor="#dde6ee" width="300"><span style="font-size: x-small;">CH de Thann</span></td>
+<td bgcolor="#009999" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#f4b890" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#ffff80" width="45"><center><span style="font-size: x-small;">1</span></center></td>
+<td bgcolor="#8bf878" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#999999" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#dde6ee" width="80"><center><span style="font-size: x-small;">1</span></center></td>
+</tr>
+<tr>
+<td bgcolor="#dde6ee" width=""><span style="font-size: x-small;"> TOTAL </span></td>
+<td bgcolor="#009999" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#f4b890" width="45"><center><span style="font-size: x-small;">1</span></center></td>
+<td bgcolor="#ffff80" width="45"><center><span style="font-size: x-small;">6</span></center></td>
+<td bgcolor="#8bf878" width="45"><center><span style="font-size: x-small;">1</span></center></td>
+<td bgcolor="#999999" width="45"><center>&nbsp;</center></td>
+<td bgcolor="#dde6ee" width="80"><center><span style="font-size: x-small;">8</span></center></td>
+</tr>
+</tbody>
+</table>
+<p>&#65279;</p>,o,,1
+58,85,2,2012-01-19 18:43:01,<p>message test</p>,o,,
+59,85,2,2012-05-17 19:19:36,<p>Ouverture du <span style="color: #ff0000;">COD</span></p>,o,,
+60,0,2,2012-10-18 17:54:19,PH d'astreinte alerté,o,,1
+61,0,2,2012-10-18 17:55:50,PH d'astreinte alerté,o,,1
+62,0,2,2012-10-18 19:12:20,<p>SAGEC ACTIVE - Check-list en cours</p><br> === ANNULE PAR [2] le 2012-10-18 19:13:31 ===,n,,1
+63,0,2,2012-10-18 19:12:26,<p>SDIS&nbsp; avis&eacute;</p><br> === ANNULE PAR [2] le 2012-10-18 19:13:36 ===,n,,1
+64,0,2,2012-10-18 19:14:53,<p>SAGEC ACTIVE - Check-list en cours</p><br> === ANNULE PAR [2] le 2012-10-18 19:29:52 ===,n,,1
+65,0,2,2012-10-18 19:26:51,<p>SDIS&nbsp; avis&eacute;</p><br> === ANNULE PAR [2] le 2012-10-18 19:27:43 ===,n,,1
+66,0,2,2012-10-18 19:30:05,<p>SAGEC ACTIVE - Check-list en cours</p><br> === ANNULE PAR [2] le 2012-10-18 19:39:39 ===,n,,1
+67,0,2,2012-10-18 19:30:25,<p>SDIS&nbsp; avis&eacute;</p><br> === ANNULE PAR [2] le 2012-10-18 19:39:44 ===,n,,1
+68,0,2,2012-10-18 19:44:00,<p>SAGEC ACTIVE - Check-list en cours</p><br> === ANNULE PAR [2] le 2012-10-18 19:44:08 ===,n,,1
+69,0,2,2012-10-18 19:48:26,<p>SAGEC ACTIVE - Check-list en cours</p><br> === ANNULE PAR [2] le 2012-10-18 19:48:47 ===,n,,1
+70,0,2,2012-10-18 19:50:36,<p>SAGEC ACTIVE - Check-list en cours</p><br> === ANNULE PAR [2] le 2012-10-18 19:50:45 ===,n,,1
+71,0,2,2012-10-18 19:52:00,<p>SAGEC ACTIVE - Check-list en cours</p><br> === ANNULE PAR [2] le 2012-10-18 19:52:10 ===,n,,1
+72,0,2,2012-10-18 19:53:49,<p>SAGEC ACTIVE - Check-list en cours</p><br> === ANNULE PAR [2] le 2012-10-18 19:54:00 ===,n,,1
+73,0,2,2012-10-18 19:54:37,<p>SAGEC ACTIVE - Check-list en cours</p><br> === ANNULE PAR [2] le 2012-10-18 19:54:45 ===,n,,1
+74,0,2,2012-10-18 19:57:14,<p>SAGEC ACTIVE - Check-list en cours</p>,o,,1
+75,0,2,2012-10-18 20:02:32,<p>SDIS&nbsp; avis&eacute;</p>,o,,1
+76,0,2,2012-10-18 20:08:11,<p>PH astreinte alerte</p>,o,,1
+77,0,2,2012-10-18 20:16:52,<p>PH astreinte alerte</p>,o,,1
+78,0,2,2012-10-18 20:17:10,<p>PH astreinte alerte</p><br> === ANNULE PAR [2] le 2012-10-18 20:28:12 ===,n,,1
+79,0,2,2012-10-18 20:28:21,<p>PH d'astreinte alerté</p><br> === ANNULE PAR [2] le 2012-10-18 20:30:06 ===,n,,1
+80,0,2,2012-10-18 20:40:57,<p>CORG avis&eacute;</p>,o,,1
+81,0,2,2012-10-18 20:41:02,<p>PH d'astreinte alerté</p>,o,,1
+82,0,2,2012-10-18 20:41:14,<p>Dir SAMU Avis&eacute;</p>,o,,1
+83,0,2,2012-10-18 20:41:19,<p>RAPPEL PERSONNELS DECLENCHE</p>,o,,1
+84,0,2,2012-10-18 20:41:22,<p>CADRE SAMU ALERTE</p>,o,,1
+85,0,2,2012-10-18 20:41:27,<p>Repr&eacute;sentant au PCO d&eacute;sign&eacute;&#65279;</p>,o,,1
+86,0,2,2012-10-18 20:41:33,<p>Repr&eacute;sentant au COD d&eacute;sign&eacute;&#65279;</p>,o,,1
+87,0,2,2012-10-18 20:41:37,<p>PREMIERS MOYENS SMUR ENGAGES</p>,o,,1
+
+======================================== Fin des données =======================================

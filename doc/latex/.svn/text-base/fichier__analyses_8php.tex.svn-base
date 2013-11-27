@@ -1,0 +1,100 @@
+\hypertarget{fichier__analyses_8php}{
+\section{R\'{e}f\'{e}rence du fichier fichier\_\-analyses.php}
+\label{fichier__analyses_8php}\index{fichier_analyses.php@{fichier\_\-analyses.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{fichier__analyses_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{fichier__analyses_8php_a1}{\$fichier} = \$\_\-GET\mbox{[}'fichier'\mbox{]}
+\item 
+\hyperlink{fichier__analyses_8php_a2}{\$fichier2} = \char`\"{}/home/jcb/Desktop/Tableau/\char`\"{}.\$fichier
+\item 
+\hyperlink{fichier__analyses_8php_a3}{\$fp} = fopen(\$fichier2,\char`\"{}r\char`\"{})
+\item 
+\hyperlink{fichier__analyses_8php_a4}{\$i} = 0
+\item 
+\hyperlink{fichier__analyses_8php_a5}{\$moyen} = \$i\mbox{[}0\mbox{]}
+\item 
+\hyperlink{fichier__analyses_8php_a6}{\$date} = strtotime(\$i\mbox{[}1\mbox{]})
+\item 
+\hyperlink{fichier__analyses_8php_a7}{\$n} = \$i\mbox{[}2\mbox{]}
+\item 
+\hyperlink{fichier__analyses_8php_a8}{\$requete} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{fichier__analyses_8php_a9}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{fichier__analyses_8php_a0}{
+\index{fichier_analyses.php@{fichier\_\-analyses.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!fichier_analyses.php@{fichier\_\-analyses.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{fichier__analyses_8php_a0}
+
+
+\hypertarget{fichier__analyses_8php_a6}{
+\index{fichier_analyses.php@{fichier\_\-analyses.php}!$date@{\$date}}
+\index{$date@{\$date}!fichier_analyses.php@{fichier\_\-analyses.php}}
+\subsubsection[\$date]{\setlength{\rightskip}{0pt plus 5cm}\$date = strtotime(\$i\mbox{[}1\mbox{]})}}
+\label{fichier__analyses_8php_a6}
+
+
+\hypertarget{fichier__analyses_8php_a1}{
+\index{fichier_analyses.php@{fichier\_\-analyses.php}!$fichier@{\$fichier}}
+\index{$fichier@{\$fichier}!fichier_analyses.php@{fichier\_\-analyses.php}}
+\subsubsection[\$fichier]{\setlength{\rightskip}{0pt plus 5cm}\$fichier = \$\_\-GET\mbox{[}'fichier'\mbox{]}}}
+\label{fichier__analyses_8php_a1}
+
+
+\hypertarget{fichier__analyses_8php_a2}{
+\index{fichier_analyses.php@{fichier\_\-analyses.php}!$fichier2@{\$fichier2}}
+\index{$fichier2@{\$fichier2}!fichier_analyses.php@{fichier\_\-analyses.php}}
+\subsubsection[\$fichier2]{\setlength{\rightskip}{0pt plus 5cm}\$fichier2 = \char`\"{}/home/jcb/Desktop/Tableau/\char`\"{}.\$fichier}}
+\label{fichier__analyses_8php_a2}
+
+
+\hypertarget{fichier__analyses_8php_a3}{
+\index{fichier_analyses.php@{fichier\_\-analyses.php}!$fp@{\$fp}}
+\index{$fp@{\$fp}!fichier_analyses.php@{fichier\_\-analyses.php}}
+\subsubsection[\$fp]{\setlength{\rightskip}{0pt plus 5cm}\$fp = fopen(\$fichier2,\char`\"{}r\char`\"{})}}
+\label{fichier__analyses_8php_a3}
+
+
+\hypertarget{fichier__analyses_8php_a4}{
+\index{fichier_analyses.php@{fichier\_\-analyses.php}!$i@{\$i}}
+\index{$i@{\$i}!fichier_analyses.php@{fichier\_\-analyses.php}}
+\subsubsection[\$i]{\setlength{\rightskip}{0pt plus 5cm}\$i = 0}}
+\label{fichier__analyses_8php_a4}
+
+
+\hypertarget{fichier__analyses_8php_a5}{
+\index{fichier_analyses.php@{fichier\_\-analyses.php}!$moyen@{\$moyen}}
+\index{$moyen@{\$moyen}!fichier_analyses.php@{fichier\_\-analyses.php}}
+\subsubsection[\$moyen]{\setlength{\rightskip}{0pt plus 5cm}\$moyen = \$i\mbox{[}0\mbox{]}}}
+\label{fichier__analyses_8php_a5}
+
+
+\hypertarget{fichier__analyses_8php_a7}{
+\index{fichier_analyses.php@{fichier\_\-analyses.php}!$n@{\$n}}
+\index{$n@{\$n}!fichier_analyses.php@{fichier\_\-analyses.php}}
+\subsubsection[\$n]{\setlength{\rightskip}{0pt plus 5cm}\$\hyperlink{utilitaires_2html_8php_a0}{n} = \$i\mbox{[}2\mbox{]}}}
+\label{fichier__analyses_8php_a7}
+
+
+\hypertarget{fichier__analyses_8php_a8}{
+\index{fichier_analyses.php@{fichier\_\-analyses.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!fichier_analyses.php@{fichier\_\-analyses.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}\char`\"{}}}
+\label{fichier__analyses_8php_a8}
+
+
+\hypertarget{fichier__analyses_8php_a9}{
+\index{fichier_analyses.php@{fichier\_\-analyses.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!fichier_analyses.php@{fichier\_\-analyses.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{fichier__analyses_8php_a9}
+
+

@@ -1,0 +1,28 @@
+\hypertarget{vecteur__liste_8php}{
+\section{R\'{e}f\'{e}rence du fichier vecteur\_\-liste.php}
+\label{vecteur__liste_8php}\index{vecteur_liste.php@{vecteur\_\-liste.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{vecteur__liste_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}langue\mbox{]}
+\item 
+\hyperlink{vecteur__liste_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{vecteur__liste_8php_a1}{
+\index{vecteur_liste.php@{vecteur\_\-liste.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!vecteur_liste.php@{vecteur\_\-liste.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{vecteur__liste_8php_a1}
+
+
+\hypertarget{vecteur__liste_8php_a0}{
+\index{vecteur_liste.php@{vecteur\_\-liste.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!vecteur_liste.php@{vecteur\_\-liste.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}langue\mbox{]}}}
+\label{vecteur__liste_8php_a0}
+
+

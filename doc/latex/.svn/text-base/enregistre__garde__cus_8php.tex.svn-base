@@ -1,0 +1,46 @@
+\hypertarget{enregistre__garde__cus_8php}{
+\section{R\'{e}f\'{e}rence du fichier enregistre\_\-garde\_\-cus.php}
+\label{enregistre__garde__cus_8php}\index{enregistre_garde_cus.php@{enregistre\_\-garde\_\-cus.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{enregistre__garde__cus_8php_a0}{\$requete} = \char`\"{}DELETE FROM garde\_\-cus WHERE date='\$\_\-GET\mbox{[}date\mbox{]}'\char`\"{}
+\item 
+\hyperlink{enregistre__garde__cus_8php_a1}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{enregistre__garde__cus_8php_a2}{\$t} = \$\_\-GET\mbox{[}'ID\_\-assu'\mbox{]}
+\item 
+\hyperlink{enregistre__garde__cus_8php_a3}{\$ordre} = \$max\_\-nuit-1
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{enregistre__garde__cus_8php_a3}{
+\index{enregistre_garde_cus.php@{enregistre\_\-garde\_\-cus.php}!$ordre@{\$ordre}}
+\index{$ordre@{\$ordre}!enregistre_garde_cus.php@{enregistre\_\-garde\_\-cus.php}}
+\subsubsection[\$ordre]{\setlength{\rightskip}{0pt plus 5cm}\$ordre = \$max\_\-nuit-1}}
+\label{enregistre__garde__cus_8php_a3}
+
+
+\hypertarget{enregistre__garde__cus_8php_a0}{
+\index{enregistre_garde_cus.php@{enregistre\_\-garde\_\-cus.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!enregistre_garde_cus.php@{enregistre\_\-garde\_\-cus.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}DELETE FROM garde\_\-cus WHERE date='\$\_\-GET\mbox{[}date\mbox{]}'\char`\"{}}}
+\label{enregistre__garde__cus_8php_a0}
+
+
+\hypertarget{enregistre__garde__cus_8php_a1}{
+\index{enregistre_garde_cus.php@{enregistre\_\-garde\_\-cus.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!enregistre_garde_cus.php@{enregistre\_\-garde\_\-cus.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{enregistre__garde__cus_8php_a1}
+
+
+\hypertarget{enregistre__garde__cus_8php_a2}{
+\index{enregistre_garde_cus.php@{enregistre\_\-garde\_\-cus.php}!$t@{\$t}}
+\index{$t@{\$t}!enregistre_garde_cus.php@{enregistre\_\-garde\_\-cus.php}}
+\subsubsection[\$t]{\setlength{\rightskip}{0pt plus 5cm}\$t = \$\_\-GET\mbox{[}'ID\_\-assu'\mbox{]}}}
+\label{enregistre__garde__cus_8php_a2}
+
+

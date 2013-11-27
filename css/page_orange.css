@@ -1,0 +1,30 @@
+@CHARSET "ISO-8859-1";
+
+.titre_page {
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #FFAA55;
+	border: solid;
+	border-width: 1px;
+	border-color: #DD6F00;
+}
+
+.alt_tableau {
+	background-color: #FFDCB9;
+}
+
+.border_paragraphe {
+	border: solid;
+	border-width: 1px;
+	border-color: #DD6F00;
+}
+
+.titre_paragraphe {
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #FFAA55;
+}
+
+.libelle {
+	font-weight: bold;
+}

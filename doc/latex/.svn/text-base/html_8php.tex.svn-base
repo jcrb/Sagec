@@ -1,0 +1,61 @@
+\hypertarget{html_8php}{
+\section{R\'{e}f\'{e}rence du fichier html.php}
+\label{html_8php}\index{html.php@{html.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{html_8php_a1}{Image} (\$url, \$largeur=-1, \$hauteur=-1, \$bordure=0)
+\item 
+\hyperlink{html_8php_a2}{Url} (\$adresse, \$intitule)
+\item 
+\hyperlink{html_8php_a3}{entete\_\-sagec} (\$titre=\char`\"{}\&nbsp;\char`\"{}, \$place=\char`\"{}center\char`\"{}, \$profondeur=\char`\"{}0\char`\"{})
+\item 
+\hyperlink{html_8php_a4}{entete\_\-sagec2} (\$titre=\char`\"{}\&nbsp;\char`\"{}, \$place=\char`\"{}center\char`\"{}, \$menu=\char`\"{}\char`\"{})
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+return$<$ AHREF='\$url'\char`\"{}.\char`\"{}\$option\-Classe $>$ \$libelle$<$/A $>$ \hyperlink{html_8php_a0}{n}
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{html_8php_a3}{
+\index{html.php@{html.php}!entete_sagec@{entete\_\-sagec}}
+\index{entete_sagec@{entete\_\-sagec}!html.php@{html.php}}
+\subsubsection[entete\_\-sagec]{\setlength{\rightskip}{0pt plus 5cm}entete\_\-sagec (\$ {\em titre} = {\tt \char`\"{}\&nbsp;\char`\"{}}, \$ {\em place} = {\tt \char`\"{}center\char`\"{}}, \$ {\em profondeur} = {\tt \char`\"{}0\char`\"{}})}}
+\label{html_8php_a3}
+
+
+\hypertarget{html_8php_a4}{
+\index{html.php@{html.php}!entete_sagec2@{entete\_\-sagec2}}
+\index{entete_sagec2@{entete\_\-sagec2}!html.php@{html.php}}
+\subsubsection[entete\_\-sagec2]{\setlength{\rightskip}{0pt plus 5cm}entete\_\-sagec2 (\$ {\em titre} = {\tt \char`\"{}\&nbsp;\char`\"{}}, \$ {\em place} = {\tt \char`\"{}center\char`\"{}}, \$ {\em menu} = {\tt \char`\"{}\char`\"{}})}}
+\label{html_8php_a4}
+
+
+\hypertarget{html_8php_a1}{
+\index{html.php@{html.php}!Image@{Image}}
+\index{Image@{Image}!html.php@{html.php}}
+\subsubsection[Image]{\setlength{\rightskip}{0pt plus 5cm}Image (\$ {\em url}, \$ {\em largeur} = {\tt -1}, \$ {\em hauteur} = {\tt -1}, \$ {\em bordure} = {\tt 0})}}
+\label{html_8php_a1}
+
+
+\hypertarget{html_8php_a2}{
+\index{html.php@{html.php}!Url@{Url}}
+\index{Url@{Url}!html.php@{html.php}}
+\subsubsection[Url]{\setlength{\rightskip}{0pt plus 5cm}Url (\$ {\em adresse}, \$ {\em intitule})}}
+\label{html_8php_a2}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{html_8php_a0}{
+\index{html.php@{html.php}!n@{n}}
+\index{n@{n}!html.php@{html.php}}
+\subsubsection[n]{\setlength{\rightskip}{0pt plus 5cm}return$<$AHREF='\$url'\char`\"{}.\char`\"{}\$option\-Classe$>$ \$libelle$<$/A$>$ \hyperlink{utilitaires_2html_8php_a0}{n}}}
+\label{html_8php_a0}
+
+

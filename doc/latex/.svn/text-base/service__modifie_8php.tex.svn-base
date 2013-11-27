@@ -1,0 +1,63 @@
+\hypertarget{service__modifie_8php}{
+\section{R\'{e}f\'{e}rence du fichier service\_\-modifie.php}
+\label{service__modifie_8php}\index{service_modifie.php@{service\_\-modifie.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{service__modifie_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{service__modifie_8php_a1}{\$requete}
+\item 
+\hyperlink{service__modifie_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{service__modifie_8php_a3}{\$i} = Ligne\-Suivante(\$resultat)
+\item 
+\hyperlink{service__modifie_8php_a4}{\$mot} = \$string\_\-lang\mbox{[}\char`\"{}SERVICE\char`\"{}\mbox{]}\mbox{[}\$langue\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{service__modifie_8php_a0}{
+\index{service_modifie.php@{service\_\-modifie.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!service_modifie.php@{service\_\-modifie.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{service__modifie_8php_a0}
+
+
+\hypertarget{service__modifie_8php_a3}{
+\index{service_modifie.php@{service\_\-modifie.php}!$i@{\$i}}
+\index{$i@{\$i}!service_modifie.php@{service\_\-modifie.php}}
+\subsubsection[\$i]{\setlength{\rightskip}{0pt plus 5cm}\$i = Ligne\-Suivante(\$resultat)}}
+\label{service__modifie_8php_a3}
+
+
+\hypertarget{service__modifie_8php_a4}{
+\index{service_modifie.php@{service\_\-modifie.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!service_modifie.php@{service\_\-modifie.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}\char`\"{}SERVICE\char`\"{}\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{service__modifie_8php_a4}
+
+
+\hypertarget{service__modifie_8php_a1}{
+\index{service_modifie.php@{service\_\-modifie.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!service_modifie.php@{service\_\-modifie.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{service__modifie_8php_a1}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}        "SELECT service.service_ID,service_nom,Type_ID, lits_dispo,date_maj,lits_liberable,lits_supp,lits_sp,lits_respi,lits_pneg,lits_ferme,lits_reserve,lits_installe,lit_spe1,lit_spe2,lit_spe3,lit_spe4,lit_spe5,lit_spe6,lit_spe7
+                FROM service, lits
+                WHERE service.service_ID = '$_GET[service]'
+                AND service.service_ID = lits.service_ID
+                "
+\end{verbatim}\normalsize 
+\hypertarget{service__modifie_8php_a2}{
+\index{service_modifie.php@{service\_\-modifie.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!service_modifie.php@{service\_\-modifie.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{service__modifie_8php_a2}
+
+

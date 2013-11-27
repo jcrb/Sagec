@@ -1,0 +1,19 @@
+\hypertarget{vecteur__head_8php}{
+\section{R\'{e}f\'{e}rence du fichier vecteur\_\-head.php}
+\label{vecteur__head_8php}\index{vecteur_head.php@{vecteur\_\-head.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{vecteur__head_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{vecteur__head_8php_a0}{
+\index{vecteur_head.php@{vecteur\_\-head.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!vecteur_head.php@{vecteur\_\-head.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{vecteur__head_8php_a0}
+
+

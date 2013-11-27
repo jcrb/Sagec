@@ -1,0 +1,38 @@
+@CHARSET "ISO-8859-1";
+
+.entete_table{
+	width: 100%;
+	background-color: #EEEEEE;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #808080;
+	border-collapse:collapse
+}
+.entete_logo{
+	width: 21%;
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #808080;
+	text-align: center;
+}
+.entete_titre {
+	width: 79%;
+	background-color: #EEEEEE;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #808080;
+	
+	font-size:20px;
+	font-weight:bold;	
+}
+
+.entete_menu {
+	color: #DD6F00;
+	background-color: #cccccc;
+	text-decoration: none;
+}
+
+.entete_iframe {
+	border-style: none;
+}

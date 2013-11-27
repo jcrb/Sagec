@@ -1,0 +1,28 @@
+\hypertarget{ita__saisie_8php}{
+\section{R\'{e}f\'{e}rence du fichier ita\_\-saisie.php}
+\label{ita__saisie_8php}\index{ita_saisie.php@{ita\_\-saisie.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{ita__saisie_8php_a0}{\$rub} = NULL
+\item 
+\hyperlink{ita__saisie_8php_a1}{\$check} = Null
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{ita__saisie_8php_a1}{
+\index{ita_saisie.php@{ita\_\-saisie.php}!$check@{\$check}}
+\index{$check@{\$check}!ita_saisie.php@{ita\_\-saisie.php}}
+\subsubsection[\$check]{\setlength{\rightskip}{0pt plus 5cm}\$check = Null}}
+\label{ita__saisie_8php_a1}
+
+
+\hypertarget{ita__saisie_8php_a0}{
+\index{ita_saisie.php@{ita\_\-saisie.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!ita_saisie.php@{ita\_\-saisie.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = NULL}}
+\label{ita__saisie_8php_a0}
+
+

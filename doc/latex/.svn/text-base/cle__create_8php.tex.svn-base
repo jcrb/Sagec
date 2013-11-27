@@ -1,0 +1,19 @@
+\hypertarget{cle__create_8php}{
+\section{R\'{e}f\'{e}rence du fichier cle\_\-create.php}
+\label{cle__create_8php}\index{cle_create.php@{cle\_\-create.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{cle__create_8php_a0}{\$gpg} = new \hyperlink{classgnuPG}{gnu\-PG}(/usr/local/bin/gpg, /var/www/html/SAGEC67\_\-v3/veille\_\-sanitaire)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{cle__create_8php_a0}{
+\index{cle_create.php@{cle\_\-create.php}!$gpg@{\$gpg}}
+\index{$gpg@{\$gpg}!cle_create.php@{cle\_\-create.php}}
+\subsubsection[\$gpg]{\setlength{\rightskip}{0pt plus 5cm}\$gpg = new \hyperlink{classgnuPG}{gnu\-PG}(/usr/local/bin/gpg, /var/www/html/SAGEC67\_\-v3/veille\_\-sanitaire)}}
+\label{cle__create_8php_a0}
+
+

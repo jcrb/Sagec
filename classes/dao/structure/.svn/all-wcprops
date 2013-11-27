@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/dev/!svn/ver/16723/applications/metier/sagec/branches/dev/SAGEC67/classes/dao/structure
+END
+Uf.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/dev/!svn/ver/16657/applications/metier/sagec/branches/dev/SAGEC67/classes/dao/structure/Uf.class.php
+END
+DisciplineArh.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/dev/!svn/ver/16723/applications/metier/sagec/branches/dev/SAGEC67/classes/dao/structure/DisciplineArh.class.php
+END
+Etablissement.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/dev/!svn/ver/16438/applications/metier/sagec/branches/dev/SAGEC67/classes/dao/structure/Etablissement.class.php
+END
+Service.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/dev/!svn/ver/16612/applications/metier/sagec/branches/dev/SAGEC67/classes/dao/structure/Service.class.php
+END
+TypeStructure.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/dao/structure/TypeStructure.class.php
+END

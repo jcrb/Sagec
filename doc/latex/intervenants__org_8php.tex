@@ -1,0 +1,61 @@
+\hypertarget{intervenants__org_8php}{
+\section{R\'{e}f\'{e}rence du fichier intervenants\_\-org.php}
+\label{intervenants__org_8php}\index{intervenants_org.php@{intervenants\_\-org.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{intervenants__org_8php_a4}{affiche} (\$id, \$nom, \$cat)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{intervenants__org_8php_a0}{\$n} = Null
+\item 
+\hyperlink{intervenants__org_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{intervenants__org_8php_a2}{\$requete} = \char`\"{}SELECT Pers\_\-ID,Pers\_\-Nom,Pers\_\-Prenom,perso\_\-cat\_\-ID,localisation\_\-ID FROM personnel WHERE localisation\_\-ID $>$ '0'\char`\"{}
+\item 
+\hyperlink{intervenants__org_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{intervenants__org_8php_a4}{
+\index{intervenants_org.php@{intervenants\_\-org.php}!affiche@{affiche}}
+\index{affiche@{affiche}!intervenants_org.php@{intervenants\_\-org.php}}
+\subsubsection[affiche]{\setlength{\rightskip}{0pt plus 5cm}affiche (\$ {\em id}, \$ {\em nom}, \$ {\em cat})}}
+\label{intervenants__org_8php_a4}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{intervenants__org_8php_a1}{
+\index{intervenants_org.php@{intervenants\_\-org.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!intervenants_org.php@{intervenants\_\-org.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{intervenants__org_8php_a1}
+
+
+\hypertarget{intervenants__org_8php_a0}{
+\index{intervenants_org.php@{intervenants\_\-org.php}!$n@{\$n}}
+\index{$n@{\$n}!intervenants_org.php@{intervenants\_\-org.php}}
+\subsubsection[\$n]{\setlength{\rightskip}{0pt plus 5cm}\$\hyperlink{utilitaires_2html_8php_a0}{n} = Null}}
+\label{intervenants__org_8php_a0}
+
+
+\hypertarget{intervenants__org_8php_a2}{
+\index{intervenants_org.php@{intervenants\_\-org.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!intervenants_org.php@{intervenants\_\-org.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT Pers\_\-ID,Pers\_\-Nom,Pers\_\-Prenom,perso\_\-cat\_\-ID,localisation\_\-ID FROM personnel WHERE localisation\_\-ID $>$ '0'\char`\"{}}}
+\label{intervenants__org_8php_a2}
+
+
+\hypertarget{intervenants__org_8php_a3}{
+\index{intervenants_org.php@{intervenants\_\-org.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!intervenants_org.php@{intervenants\_\-org.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{intervenants__org_8php_a3}
+
+

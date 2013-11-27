@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs for page create_xml.php</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+		[ <a href="../classtrees_Sagec.html">Class Tree: Sagec</a> ]
+		[ <a href="../elementindex_Sagec.html">Index: Sagec</a> ]
+		[ <a href="../elementindex.html">All elements</a> ]
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">Sagec</div>
+		<div id="packageTitle">Sagec</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="packages">
+		Packages:
+					<p><a href="../li_Sagec.html">Sagec</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../Sagec/_create_xml.php.html">		create_xml.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+							</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Procedural File: create_xml.php</h1>
+	<p style="margin: 0px;">Source Location: /create_xml.php</p>
+	
+<br>
+<br>
+
+<div class="contents">
+<h2>Classes:</h2>
+<dl>
+</dl>
+</div>
+
+<h2>Page Details:</h2>
+<p align="center"><strong>create_xml.php
+</strong></p>
+<p>crée un fichier XML selon les specifications de l'INVS</p><h4>Tags:</h4>
+<ul>
+	<li><b>version</b> - 1.0</li>
+	<li><b>author</b> - jcb &lt;<a href="mailto:jcb-bartierg@wanadoo.fr">jcb-bartierg@wanadoo.fr</a>&gt;</li>
+</ul>
+<hr>
+Includes:<br>
+include("sagec_ftp.php") <span class="linenumber">[line 41]</span>
+<br />
+include("../date.php") <span class="linenumber">[line 42]</span>
+<br />
+include("cryptage_gpg.php") <span class="linenumber">[line 40]</span>
+<br />
+require("../pma_requete.php") <span class="linenumber">[line 39]</span>
+<br />
+require("../pma_connect.php") <span class="linenumber">[line 37]</span>
+<br />
+require("gnugpg/trousseau.php") <span class="linenumber">[line 468]</span>
+<br />
+<p align="center"><strong>Partie principale
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - timestamp unix</li>
+</ul>
+require("../pma_connexion.php") <span class="linenumber">[line 38]</span>
+<br />
+<hr>
+<div id="global">
+</div><hr>
+<div id="define">
+</div><hr>
+<div id="function">
+	<a name="functionlitsDispoParSpecialite_hopital"></a>
+	<h3>litsDispoParSpecialite_hopital</h3>
+	<div class="indent">
+		<code>text litsDispoParSpecialite_hopital(
+string $connexion, string $date1, string $date2, array $type_service, string $quote)</code>
+		<p class="linenumber">[line 59]</p>
+		<p align="center"><strong>Retourne les lits disponibles par spécialité avec un historique des n derniers jours
+</strong></p>
+		
+		<h4>Parameters</h4>
+		<ul>
+					<li>
+			<span class="type">string</span>
+			<b>$connexion</b> 
+			- 
+			paramètre de connexion à Mysql</li>
+					<li>
+			<span class="type">string</span>
+			<b>$date1</b> 
+			- 
+			date la plus ancienne</li>
+					<li>
+			<span class="type">string</span>
+			<b>$date2</b> 
+			- 
+			date la plus récente</li>
+					<li>
+			<span class="type">array</span>
+			<b>$type_service</b> 
+			- 
+			tableau de valeurs $rea = &quot;2,4&quot; (Réa + SI)</li>
+					<li>
+			<span class="type">string</span>
+			<b>$quote</b> 
+			- 
+			valeur du tag sans les chevrons. Par par ex.litsRea pour &lt;litsRea&gt;</li>
+				</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="functionplacesDispoParSpecialite_hopital"></a>
+	<h3>placesDispoParSpecialite_hopital</h3>
+	<div class="indent">
+		<code>text placesDispoParSpecialite_hopital(
+string $connexion, string $date1, string $date2, string $quote)</code>
+		<p class="linenumber">[line 151]</p>
+		<p align="center"><strong>Retourne les places disponibles par spécialité avec un historique des n derniers jours
+</strong></p>
+		
+		<h4>Parameters</h4>
+		<ul>
+					<li>
+			<span class="type">string</span>
+			<b>$connexion</b> 
+			- 
+			paramètre de connexion à Mysql</li>
+					<li>
+			<span class="type">string</span>
+			<b>$date1</b> 
+			- 
+			date la plus ancienne</li>
+					<li>
+			<span class="type">string</span>
+			<b>$date2</b> 
+			- 
+			date la plus récente</li>
+					<li>
+			<span class="type">string</span>
+			<b>$quote</b> 
+			- 
+			valeur du tag sans les chevrons. Par par ex.litsRea pour &lt;litsRea&gt;</li>
+				</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sat, 03 Jun 2006 22:55:22 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.3.0RC6</a>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+\hypertarget{IXR__Library_8inc_8php}{
+\section{R\'{e}f\'{e}rence du fichier IXR\_\-Library.inc.php}
+\label{IXR__Library_8inc_8php}\index{IXR_Library.inc.php@{IXR\_\-Library.inc.php}}
+}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classIXR__Value}{IXR\_\-Value}
+\item 
+class \hyperlink{classIXR__Message}{IXR\_\-Message}
+\item 
+class \hyperlink{classIXR__Server}{IXR\_\-Server}
+\item 
+class \hyperlink{classIXR__Request}{IXR\_\-Request}
+\item 
+class \hyperlink{classIXR__Client}{IXR\_\-Client}
+\item 
+class \hyperlink{classIXR__Error}{IXR\_\-Error}
+\item 
+class \hyperlink{classIXR__Date}{IXR\_\-Date}
+\item 
+class \hyperlink{classIXR__Base64}{IXR\_\-Base64}
+\item 
+class \hyperlink{classIXR__IntrospectionServer}{IXR\_\-Introspection\-Server}
+\item 
+class \hyperlink{classIXR__ClientMulticall}{IXR\_\-Client\-Multicall}
+\end{CompactItemize}

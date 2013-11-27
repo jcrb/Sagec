@@ -1,0 +1,19 @@
+\hypertarget{veille__sanitaire_2cron_2test_8php}{
+\section{R\'{e}f\'{e}rence du fichier test.php}
+\label{veille__sanitaire_2cron_2test_8php}\index{test.php@{test.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{veille__sanitaire_2cron_2test_8php_a0}{\$f} = fopen(\char`\"{}test.txt\char`\"{},\char`\"{}w\char`\"{})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{veille__sanitaire_2cron_2test_8php_a0}{
+\index{veille_sanitaire/cron/test.php@{veille\_\-sanitaire/cron/test.php}!$f@{\$f}}
+\index{$f@{\$f}!veille_sanitaire/cron/test.php@{veille\_\-sanitaire/cron/test.php}}
+\subsubsection[\$f]{\setlength{\rightskip}{0pt plus 5cm}\$f = fopen(\char`\"{}test.txt\char`\"{},\char`\"{}w\char`\"{})}}
+\label{veille__sanitaire_2cron_2test_8php_a0}
+
+

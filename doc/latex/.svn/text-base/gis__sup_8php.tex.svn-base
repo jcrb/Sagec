@@ -1,0 +1,46 @@
+\hypertarget{gis__sup_8php}{
+\section{R\'{e}f\'{e}rence du fichier gis\_\-sup.php}
+\label{gis__sup_8php}\index{gis_sup.php@{gis\_\-sup.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{gis__sup_8php_a0}{\$titre} = \char`\"{}SIG\char`\"{}
+\item 
+\hyperlink{gis__sup_8php_a1}{\$mot} = str\-To\-Upper(\$string\_\-lang\mbox{[}MENU\_\-PRINCIPAL\mbox{]}\mbox{[}\$langue\mbox{]})
+\item 
+\hyperlink{gis__sup_8php_a2}{\$m5} = \char`\"{}$<$a href=$\backslash$\char`\"{}../sagec67.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-parent$\backslash$\char`\"{}$>$$<$B$>$\$mot$<$/B$>$\char`\"{}
+\item 
+\hyperlink{gis__sup_8php_a3}{\$menus} = \$m5
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{gis__sup_8php_a2}{
+\index{gis_sup.php@{gis\_\-sup.php}!$m5@{\$m5}}
+\index{$m5@{\$m5}!gis_sup.php@{gis\_\-sup.php}}
+\subsubsection[\$m5]{\setlength{\rightskip}{0pt plus 5cm}\$m5 = \char`\"{}$<$a href=$\backslash$\char`\"{}../sagec67.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-parent$\backslash$\char`\"{}$>$$<$B$>$\$mot$<$/B$>$\char`\"{}}}
+\label{gis__sup_8php_a2}
+
+
+\hypertarget{gis__sup_8php_a3}{
+\index{gis_sup.php@{gis\_\-sup.php}!$menus@{\$menus}}
+\index{$menus@{\$menus}!gis_sup.php@{gis\_\-sup.php}}
+\subsubsection[\$menus]{\setlength{\rightskip}{0pt plus 5cm}\$menus = \$m5}}
+\label{gis__sup_8php_a3}
+
+
+\hypertarget{gis__sup_8php_a1}{
+\index{gis_sup.php@{gis\_\-sup.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!gis_sup.php@{gis\_\-sup.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = str\-To\-Upper(\$string\_\-lang\mbox{[}MENU\_\-PRINCIPAL\mbox{]}\mbox{[}\$langue\mbox{]})}}
+\label{gis__sup_8php_a1}
+
+
+\hypertarget{gis__sup_8php_a0}{
+\index{gis_sup.php@{gis\_\-sup.php}!$titre@{\$titre}}
+\index{$titre@{\$titre}!gis_sup.php@{gis\_\-sup.php}}
+\subsubsection[\$titre]{\setlength{\rightskip}{0pt plus 5cm}\$titre = \char`\"{}SIG\char`\"{}}}
+\label{gis__sup_8php_a0}
+
+

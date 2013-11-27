@@ -1,0 +1,58 @@
+<?php
+/**
+*	cod_carte.php
+*/
+
+$backPathToRoot = "../";
+include($backPathToRoot.'dbConnection.php'); 
+$titre_principal = "COD - Cartographie";
+include_once("cc_top.php");
+include_once("cc_menu.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+	<title>Nouveau DSA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" href="div.css" type="text/css" media="all" />
+	<link rel="shortcut icon" href="../images/sagec67.ico" />
+	<script  type="text/javascript" src="utilitaires.js"></script>
+
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="cod_carto_data.php" type="text/javascript"></script>
+	<script type="text/javascript"></script>
+</head>
+
+<body>
+ <!--  <div id="map_canvas" style="width:100%; height:100%"></div> -->
+  
+  <style>
+  #mapCanvas {
+    width: 1000px;
+    height: 1000px;
+    float: left;
+  }
+  #infoPanel {
+    float: left;
+    margin-left: 10px;
+  }
+  #infoPanel div {
+    margin-bottom: 5px;
+  }
+  </style>
+  
+  <div id="mapCanvas"></div>
+  <div id="infoPanel">
+    <b>Marker status:</b>
+
+    <div id="markerStatus"><i>Click and drag the marker.</i></div>
+    <b>Current position:</b>
+    <div id="info"></div>
+    <b>Closest matching address:</b>
+    <div id="address"></div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+\hypertarget{vecteur__enregistre2_8php}{
+\section{R\'{e}f\'{e}rence du fichier vecteur\_\-enregistre2.php}
+\label{vecteur__enregistre2_8php}\index{vecteur_enregistre2.php@{vecteur\_\-enregistre2.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{vecteur__enregistre2_8php_a4}{vecteur\_\-existe} (\$nom, \$connexion)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{vecteur__enregistre2_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{vecteur__enregistre2_8php_a1}{\$Type\_\-de\_\-vecteur} = 1
+\item 
+\hyperlink{vecteur__enregistre2_8php_a2}{\$requete}
+\item 
+\hyperlink{vecteur__enregistre2_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{vecteur__enregistre2_8php_a4}{
+\index{vecteur_enregistre2.php@{vecteur\_\-enregistre2.php}!vecteur_existe@{vecteur\_\-existe}}
+\index{vecteur_existe@{vecteur\_\-existe}!vecteur_enregistre2.php@{vecteur\_\-enregistre2.php}}
+\subsubsection[vecteur\_\-existe]{\setlength{\rightskip}{0pt plus 5cm}vecteur\_\-existe (\$ {\em nom}, \$ {\em connexion})}}
+\label{vecteur__enregistre2_8php_a4}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{vecteur__enregistre2_8php_a0}{
+\index{vecteur_enregistre2.php@{vecteur\_\-enregistre2.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!vecteur_enregistre2.php@{vecteur\_\-enregistre2.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{vecteur__enregistre2_8php_a0}
+
+
+\hypertarget{vecteur__enregistre2_8php_a2}{
+\index{vecteur_enregistre2.php@{vecteur\_\-enregistre2.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!vecteur_enregistre2.php@{vecteur\_\-enregistre2.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{vecteur__enregistre2_8php_a2}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}"UPDATE vecteur SET     Vec_ID = '$maj',
+                                                                Vec_Nom = '$nom',
+                                                                Vec_Engage = '$engage',
+                                                                Vec_Etat = '$type_v',
+                                                                Vec_Type = '$v_type',
+                                                                Vec_Indicatif = '$indicatif',
+                                                                Vec_Tel = '$tel',
+                                                                Vec_Maj = '$date_maj',
+                                                                org_ID = '$org_type'
+                                                        WHERE Vec_ID = '$maj'"
+\end{verbatim}\normalsize 
+\hypertarget{vecteur__enregistre2_8php_a3}{
+\index{vecteur_enregistre2.php@{vecteur\_\-enregistre2.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!vecteur_enregistre2.php@{vecteur\_\-enregistre2.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{vecteur__enregistre2_8php_a3}
+
+
+\hypertarget{vecteur__enregistre2_8php_a1}{
+\index{vecteur_enregistre2.php@{vecteur\_\-enregistre2.php}!$Type_de_vecteur@{\$Type\_\-de\_\-vecteur}}
+\index{$Type_de_vecteur@{\$Type\_\-de\_\-vecteur}!vecteur_enregistre2.php@{vecteur\_\-enregistre2.php}}
+\subsubsection[\$Type\_\-de\_\-vecteur]{\setlength{\rightskip}{0pt plus 5cm}\$Type\_\-de\_\-vecteur = 1}}
+\label{vecteur__enregistre2_8php_a1}
+
+

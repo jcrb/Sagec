@@ -1,0 +1,64 @@
+\hypertarget{identite_8php}{
+\section{R\'{e}f\'{e}rence du fichier identite.php}
+\label{identite_8php}\index{identite.php@{identite.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{identite_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{identite_8php_a1}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{identite_8php_a2}{\$dossier} = \$\_\-GET\mbox{[}'dossier'\mbox{]}
+\item 
+\hyperlink{identite_8php_a3}{\$requete} = \char`\"{}SELECT $\ast$ FROM victime WHERE no\_\-ordre = '\$dossier'\char`\"{}
+\item 
+\hyperlink{identite_8php_a4}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{identite_8php_a5}{\$rub} = mysql\_\-fetch\_\-array(\$resultat)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{identite_8php_a0}{
+\index{identite.php@{identite.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!identite.php@{identite.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{identite_8php_a0}
+
+
+\hypertarget{identite_8php_a2}{
+\index{identite.php@{identite.php}!$dossier@{\$dossier}}
+\index{$dossier@{\$dossier}!identite.php@{identite.php}}
+\subsubsection[\$dossier]{\setlength{\rightskip}{0pt plus 5cm}\$dossier = \$\_\-GET\mbox{[}'dossier'\mbox{]}}}
+\label{identite_8php_a2}
+
+
+\hypertarget{identite_8php_a1}{
+\index{identite.php@{identite.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!identite.php@{identite.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{identite_8php_a1}
+
+
+\hypertarget{identite_8php_a3}{
+\index{identite.php@{identite.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!identite.php@{identite.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT $\ast$ FROM victime WHERE no\_\-ordre = '\$dossier'\char`\"{}}}
+\label{identite_8php_a3}
+
+
+\hypertarget{identite_8php_a4}{
+\index{identite.php@{identite.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!identite.php@{identite.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{identite_8php_a4}
+
+
+\hypertarget{identite_8php_a5}{
+\index{identite.php@{identite.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!identite.php@{identite.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{identite_8php_a5}
+
+

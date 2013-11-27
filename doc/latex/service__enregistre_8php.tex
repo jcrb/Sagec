@@ -1,0 +1,111 @@
+\hypertarget{service__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier service\_\-enregistre.php}
+\label{service__enregistre_8php}\index{service_enregistre.php@{service\_\-enregistre.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{service__enregistre_8php_a5}{Lits\_\-existe} (\$service\_\-id, \$connexion)
+\item 
+\hyperlink{service__enregistre_8php_a6}{Create\_\-Lits} (\$connexion, \$id\_\-service, \$ID\_\-hopital, \$lits, \$lits\_\-sup, \$lits\_\-lib, \$lits\_\-vides)
+\item 
+\hyperlink{service__enregistre_8php_a7}{Update\_\-Lits} (\$connexion, \$maj, \$ID\_\-hopital, \$lits, \$lits\_\-sup, \$lits\_\-lib, \$lits\_\-vides)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{service__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{service__enregistre_8php_a1}{\$maj} = \$\_\-GET\mbox{[}'maj'\mbox{]}
+\item 
+\hyperlink{service__enregistre_8php_a2}{\$\_\-GET} \mbox{[}'fax'\mbox{]} = str\_\-replace(\char`\"{}.\char`\"{}, \char`\"{}\char`\"{}, \$\_\-GET\mbox{[}'fax'\mbox{]})
+\item 
+\hyperlink{service__enregistre_8php_a3}{\$requete}
+\item 
+\hyperlink{service__enregistre_8php_a4}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{service__enregistre_8php_a6}{
+\index{service_enregistre.php@{service\_\-enregistre.php}!Create_Lits@{Create\_\-Lits}}
+\index{Create_Lits@{Create\_\-Lits}!service_enregistre.php@{service\_\-enregistre.php}}
+\subsubsection[Create\_\-Lits]{\setlength{\rightskip}{0pt plus 5cm}Create\_\-Lits (\$ {\em connexion}, \$ {\em id\_\-service}, \$ {\em ID\_\-hopital}, \$ {\em lits}, \$ {\em lits\_\-sup}, \$ {\em lits\_\-lib}, \$ {\em lits\_\-vides})}}
+\label{service__enregistre_8php_a6}
+
+
+\hypertarget{service__enregistre_8php_a5}{
+\index{service_enregistre.php@{service\_\-enregistre.php}!Lits_existe@{Lits\_\-existe}}
+\index{Lits_existe@{Lits\_\-existe}!service_enregistre.php@{service\_\-enregistre.php}}
+\subsubsection[Lits\_\-existe]{\setlength{\rightskip}{0pt plus 5cm}Lits\_\-existe (\$ {\em service\_\-id}, \$ {\em connexion})}}
+\label{service__enregistre_8php_a5}
+
+
+\hypertarget{service__enregistre_8php_a7}{
+\index{service_enregistre.php@{service\_\-enregistre.php}!Update_Lits@{Update\_\-Lits}}
+\index{Update_Lits@{Update\_\-Lits}!service_enregistre.php@{service\_\-enregistre.php}}
+\subsubsection[Update\_\-Lits]{\setlength{\rightskip}{0pt plus 5cm}Update\_\-Lits (\$ {\em connexion}, \$ {\em maj}, \$ {\em ID\_\-hopital}, \$ {\em lits}, \$ {\em lits\_\-sup}, \$ {\em lits\_\-lib}, \$ {\em lits\_\-vides})}}
+\label{service__enregistre_8php_a7}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{service__enregistre_8php_a2}{
+\index{service_enregistre.php@{service\_\-enregistre.php}!$_GET@{\$\_\-GET}}
+\index{$_GET@{\$\_\-GET}!service_enregistre.php@{service\_\-enregistre.php}}
+\subsubsection[\$\_\-GET]{\setlength{\rightskip}{0pt plus 5cm}\$\_\-GET\mbox{[}'fax'\mbox{]} = str\_\-replace(\char`\"{}.\char`\"{}, \char`\"{}\char`\"{}, \$\_\-GET\mbox{[}'fax'\mbox{]})}}
+\label{service__enregistre_8php_a2}
+
+
+\hypertarget{service__enregistre_8php_a0}{
+\index{service_enregistre.php@{service\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!service_enregistre.php@{service\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{service__enregistre_8php_a0}
+
+
+\hypertarget{service__enregistre_8php_a1}{
+\index{service_enregistre.php@{service\_\-enregistre.php}!$maj@{\$maj}}
+\index{$maj@{\$maj}!service_enregistre.php@{service\_\-enregistre.php}}
+\subsubsection[\$maj]{\setlength{\rightskip}{0pt plus 5cm}\$maj = \$\_\-GET\mbox{[}'maj'\mbox{]}}}
+\label{service__enregistre_8php_a1}
+
+
+\hypertarget{service__enregistre_8php_a3}{
+\index{service_enregistre.php@{service\_\-enregistre.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!service_enregistre.php@{service\_\-enregistre.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{service__enregistre_8php_a3}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}"INSERT INTO service VALUES('',
+                                        '$_GET[orgID]',
+                                        '$_GET[ID_hopital]',
+                                        '$_GET[type_s]',
+                                        '$_GET[nom]',
+                                        '$_GET[code]',
+                                        '$_GET[tel]',
+                                        '$_GET[fax]',
+                                        '$_GET[etage]',
+                                        '$_GET[batiment]',
+                                        '$_GET[ascenceur]',
+                                        '$_GET[priorite]',
+                                        '$_GET[alerte]',
+                                        '$_GET[h_alerte]',
+                                        '$_GET[ID_specialite]',
+                                        '$_GET[adulte]',
+                                        '$_GET[enfant]',
+                                        '$_GET[age]',
+                                        '$_GET[samu]'
+                                        )"
+\end{verbatim}\normalsize 
+\hypertarget{service__enregistre_8php_a4}{
+\index{service_enregistre.php@{service\_\-enregistre.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!service_enregistre.php@{service\_\-enregistre.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{service__enregistre_8php_a4}
+
+

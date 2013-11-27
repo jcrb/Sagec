@@ -1,0 +1,19 @@
+\hypertarget{menu__carte_8php}{
+\section{R\'{e}f\'{e}rence du fichier menu\_\-carte.php}
+\label{menu__carte_8php}\index{menu_carte.php@{menu\_\-carte.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{menu__carte_8php_a0}{\$connexion} = connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{menu__carte_8php_a0}{
+\index{menu_carte.php@{menu\_\-carte.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!menu_carte.php@{menu\_\-carte.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{menu__carte_8php_a0}
+
+

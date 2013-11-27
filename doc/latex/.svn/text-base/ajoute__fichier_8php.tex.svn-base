@@ -1,0 +1,28 @@
+\hypertarget{ajoute__fichier_8php}{
+\section{R\'{e}f\'{e}rence du fichier ajoute\_\-fichier.php}
+\label{ajoute__fichier_8php}\index{ajoute_fichier.php@{ajoute\_\-fichier.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{ajoute__fichier_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{ajoute__fichier_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{ajoute__fichier_8php_a1}{
+\index{ajoute_fichier.php@{ajoute\_\-fichier.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!ajoute_fichier.php@{ajoute\_\-fichier.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{ajoute__fichier_8php_a1}
+
+
+\hypertarget{ajoute__fichier_8php_a0}{
+\index{ajoute_fichier.php@{ajoute\_\-fichier.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!ajoute_fichier.php@{ajoute\_\-fichier.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{ajoute__fichier_8php_a0}
+
+

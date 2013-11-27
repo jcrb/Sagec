@@ -1,0 +1,158 @@
+\hypertarget{classIXR__Client}{
+\section{R\'{e}f\'{e}rence de la classe IXR\_\-Client}
+\label{classIXR__Client}\index{IXR_Client@{IXR\_\-Client}}
+}
+Graphe d'h\'{e}ritage de IXR\_\-Client::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classIXR__Client}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{CompactItemize}
+\item 
+\hyperlink{classIXR__Client_a0}{IXR\_\-Client} (\$server, \$path=false, \$port=80)
+\item 
+\hyperlink{classIXR__Client_a1}{query} ()
+\item 
+\hyperlink{classIXR__Client_a2}{get\-Response} ()
+\item 
+\hyperlink{classIXR__Client_a3}{is\-Error} ()
+\item 
+\hyperlink{classIXR__Client_a4}{get\-Error\-Code} ()
+\item 
+\hyperlink{classIXR__Client_a5}{get\-Error\-Message} ()
+\end{CompactItemize}
+\subsection*{Attributs publics}
+\begin{CompactItemize}
+\item 
+\hyperlink{classIXR__Client_o0}{\$server}
+\item 
+\hyperlink{classIXR__Client_o1}{\$port}
+\item 
+\hyperlink{classIXR__Client_o2}{\$path}
+\item 
+\hyperlink{classIXR__Client_o3}{\$useragent}
+\item 
+\hyperlink{classIXR__Client_o4}{\$response}
+\item 
+\hyperlink{classIXR__Client_o5}{\$message} = false
+\item 
+\hyperlink{classIXR__Client_o6}{\$debug} = false
+\item 
+\hyperlink{classIXR__Client_o7}{\$error} = false
+\end{CompactItemize}
+
+
+\subsection{Documentation des contructeurs et destructeur}
+\hypertarget{classIXR__Client_a0}{
+\index{IXR_Client@{IXR\_\-Client}!IXR_Client@{IXR\_\-Client}}
+\index{IXR_Client@{IXR\_\-Client}!IXR_Client@{IXR\_\-Client}}
+\subsubsection[IXR\_\-Client]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Client::IXR\_\-Client (\$ {\em server}, \$ {\em path} = {\tt false}, \$ {\em port} = {\tt 80})}}
+\label{classIXR__Client_a0}
+
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classIXR__Client_a4}{
+\index{IXR_Client@{IXR\_\-Client}!getErrorCode@{getErrorCode}}
+\index{getErrorCode@{getErrorCode}!IXR_Client@{IXR\_\-Client}}
+\subsubsection[getErrorCode]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Client::get\-Error\-Code ()}}
+\label{classIXR__Client_a4}
+
+
+\hypertarget{classIXR__Client_a5}{
+\index{IXR_Client@{IXR\_\-Client}!getErrorMessage@{getErrorMessage}}
+\index{getErrorMessage@{getErrorMessage}!IXR_Client@{IXR\_\-Client}}
+\subsubsection[getErrorMessage]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Client::get\-Error\-Message ()}}
+\label{classIXR__Client_a5}
+
+
+\hypertarget{classIXR__Client_a2}{
+\index{IXR_Client@{IXR\_\-Client}!getResponse@{getResponse}}
+\index{getResponse@{getResponse}!IXR_Client@{IXR\_\-Client}}
+\subsubsection[getResponse]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Client::get\-Response ()}}
+\label{classIXR__Client_a2}
+
+
+\hypertarget{classIXR__Client_a3}{
+\index{IXR_Client@{IXR\_\-Client}!isError@{isError}}
+\index{isError@{isError}!IXR_Client@{IXR\_\-Client}}
+\subsubsection[isError]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Client::is\-Error ()}}
+\label{classIXR__Client_a3}
+
+
+\hypertarget{classIXR__Client_a1}{
+\index{IXR_Client@{IXR\_\-Client}!query@{query}}
+\index{query@{query}!IXR_Client@{IXR\_\-Client}}
+\subsubsection[query]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Client::query ()}}
+\label{classIXR__Client_a1}
+
+
+
+
+R\'{e}impl\'{e}ment\'{e}e dans \hyperlink{classIXR__ClientMulticall_a2}{IXR\_\-Client\-Multicall}.
+
+\subsection{Documentation des donn\'{e}es membres}
+\hypertarget{classIXR__Client_o6}{
+\index{IXR_Client@{IXR\_\-Client}!$debug@{\$debug}}
+\index{$debug@{\$debug}!IXR_Client@{IXR\_\-Client}}
+\subsubsection[\$debug]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Client::\$debug = false}}
+\label{classIXR__Client_o6}
+
+
+\hypertarget{classIXR__Client_o7}{
+\index{IXR_Client@{IXR\_\-Client}!$error@{\$error}}
+\index{$error@{\$error}!IXR_Client@{IXR\_\-Client}}
+\subsubsection[\$error]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Client::\$error = false}}
+\label{classIXR__Client_o7}
+
+
+\hypertarget{classIXR__Client_o5}{
+\index{IXR_Client@{IXR\_\-Client}!$message@{\$message}}
+\index{$message@{\$message}!IXR_Client@{IXR\_\-Client}}
+\subsubsection[\$message]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Client::\$message = false}}
+\label{classIXR__Client_o5}
+
+
+\hypertarget{classIXR__Client_o2}{
+\index{IXR_Client@{IXR\_\-Client}!$path@{\$path}}
+\index{$path@{\$path}!IXR_Client@{IXR\_\-Client}}
+\subsubsection[\$path]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Client::\$path}}
+\label{classIXR__Client_o2}
+
+
+\hypertarget{classIXR__Client_o1}{
+\index{IXR_Client@{IXR\_\-Client}!$port@{\$port}}
+\index{$port@{\$port}!IXR_Client@{IXR\_\-Client}}
+\subsubsection[\$port]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Client::\$port}}
+\label{classIXR__Client_o1}
+
+
+\hypertarget{classIXR__Client_o4}{
+\index{IXR_Client@{IXR\_\-Client}!$response@{\$response}}
+\index{$response@{\$response}!IXR_Client@{IXR\_\-Client}}
+\subsubsection[\$response]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Client::\$response}}
+\label{classIXR__Client_o4}
+
+
+\hypertarget{classIXR__Client_o0}{
+\index{IXR_Client@{IXR\_\-Client}!$server@{\$server}}
+\index{$server@{\$server}!IXR_Client@{IXR\_\-Client}}
+\subsubsection[\$server]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Client::\$server}}
+\label{classIXR__Client_o0}
+
+
+\hypertarget{classIXR__Client_o3}{
+\index{IXR_Client@{IXR\_\-Client}!$useragent@{\$useragent}}
+\index{$useragent@{\$useragent}!IXR_Client@{IXR\_\-Client}}
+\subsubsection[\$useragent]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Client::\$useragent}}
+\label{classIXR__Client_o3}
+
+
+
+
+La documentation de cette classe a \'{e}t\'{e} g\'{e}n\'{e}r\'{e}e \`{a} partir du fichier suivant:\begin{CompactItemize}
+\item 
+\hyperlink{IXR__Library_8inc_8php}{IXR\_\-Library.inc.php}\end{CompactItemize}

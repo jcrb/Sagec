@@ -1,0 +1,41 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {6.15}R\'{e}f\'{e}rence de la classe IXR\_\discretionary {-}{}{}Value}{63}{section.6.15}}
+\newlabel{classIXR__Value}{{6.15}{63}{R\'{e}f\'{e}rence de la classe IXR\_\-Value\relax }{section.6.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.15.1}Documentation des contructeurs et destructeur}{63}{subsection.6.15.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.15.1.1}IXR\_\discretionary {-}{}{}Value}{63}{subsubsection.6.15.1.1}}
+\newlabel{classIXR__Value_a0}{{6.15.1.1}{63}{IXR\_\-Value\relax }{subsubsection.6.15.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.15.2}Documentation des fonctions membres}{63}{subsection.6.15.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.15.2.1}calculateType}{63}{subsubsection.6.15.2.1}}
+\newlabel{classIXR__Value_a1}{{6.15.2.1}{63}{calculateType\relax }{subsubsection.6.15.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.15.2.2}getXml}{63}{subsubsection.6.15.2.2}}
+\newlabel{classIXR__Value_a2}{{6.15.2.2}{63}{getXml\relax }{subsubsection.6.15.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.15.2.3}isStruct}{63}{subsubsection.6.15.2.3}}
+\newlabel{classIXR__Value_a3}{{6.15.2.3}{63}{isStruct\relax }{subsubsection.6.15.2.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.15.3}Documentation des donn\'{e}es membres}{63}{subsection.6.15.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.15.3.1}\$data}{63}{subsubsection.6.15.3.1}}
+\newlabel{classIXR__Value_o0}{{6.15.3.1}{63}{\$data\relax }{subsubsection.6.15.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.15.3.2}\$type}{63}{subsubsection.6.15.3.2}}
+\newlabel{classIXR__Value_o1}{{6.15.3.2}{63}{\$type\relax }{subsubsection.6.15.3.2}{}}
+\@setckpt{classIXR__Value}{
+\setcounter{page}{64}
+\setcounter{equation}{0}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{6}
+\setcounter{section}{15}
+\setcounter{subsection}{3}
+\setcounter{subsubsection}{2}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{float@type}{4}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{0}
+\setcounter{section@level}{3}
+}

@@ -1,0 +1,73 @@
+\hypertarget{service__info_8php}{
+\section{R\'{e}f\'{e}rence du fichier service\_\-info.php}
+\label{service__info_8php}\index{service_info.php@{service\_\-info.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{service__info_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{service__info_8php_a1}{\$requete}
+\item 
+\hyperlink{service__info_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{service__info_8php_a3}{\$i} = Ligne\-Suivante(\$resultat)
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{service__info_8php_a4}{\$rep} = \$string\_\-lang\mbox{[}'NON'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{service__info_8php_a5}{\$mot} = \$string\_\-lang\mbox{[}'MODIFIER'\mbox{]}\mbox{[}\$langue\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{service__info_8php_a0}{
+\index{service_info.php@{service\_\-info.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!service_info.php@{service\_\-info.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{service__info_8php_a0}
+
+
+\hypertarget{service__info_8php_a3}{
+\index{service_info.php@{service\_\-info.php}!$i@{\$i}}
+\index{$i@{\$i}!service_info.php@{service\_\-info.php}}
+\subsubsection[\$i]{\setlength{\rightskip}{0pt plus 5cm}\$i = Ligne\-Suivante(\$resultat)}}
+\label{service__info_8php_a3}
+
+
+\hypertarget{service__info_8php_a5}{
+\index{service_info.php@{service\_\-info.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!service_info.php@{service\_\-info.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'MODIFIER'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{service__info_8php_a5}
+
+
+\hypertarget{service__info_8php_a4}{
+\index{service_info.php@{service\_\-info.php}!$rep@{\$rep}}
+\index{$rep@{\$rep}!service_info.php@{service\_\-info.php}}
+\subsubsection[\$rep]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$rep = \$string\_\-lang\mbox{[}'NON'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{service__info_8php_a4}
+
+
+\hypertarget{service__info_8php_a1}{
+\index{service_info.php@{service\_\-info.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!service_info.php@{service\_\-info.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{service__info_8php_a1}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}        "SELECT service.service_ID,service_nom,service_code,service_tel,service_fax,service_etage,
+service_batiment,lits_sp,service_adulte, service_enfant,age_min
+                FROM service, lits
+                WHERE service.service_ID = $_GET[service]
+                AND service.service_ID = lits.service_ID
+                "
+\end{verbatim}\normalsize 
+\hypertarget{service__info_8php_a2}{
+\index{service_info.php@{service\_\-info.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!service_info.php@{service\_\-info.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{service__info_8php_a2}
+
+

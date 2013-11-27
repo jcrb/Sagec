@@ -1,0 +1,57 @@
+\hypertarget{evenement__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier evenement\_\-enregistre.php}
+\label{evenement__enregistre_8php}\index{evenement_enregistre.php@{evenement\_\-enregistre.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{evenement__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{evenement__enregistre_8php_a1}{\$date} = date(\char`\"{}Y-m-j H:i:s\char`\"{})
+\item 
+\hyperlink{evenement__enregistre_8php_a2}{\$requete}
+\item 
+\hyperlink{evenement__enregistre_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{evenement__enregistre_8php_a0}{
+\index{evenement_enregistre.php@{evenement\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!evenement_enregistre.php@{evenement\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{evenement__enregistre_8php_a0}
+
+
+\hypertarget{evenement__enregistre_8php_a1}{
+\index{evenement_enregistre.php@{evenement\_\-enregistre.php}!$date@{\$date}}
+\index{$date@{\$date}!evenement_enregistre.php@{evenement\_\-enregistre.php}}
+\subsubsection[\$date]{\setlength{\rightskip}{0pt plus 5cm}\$date = date(\char`\"{}Y-m-j H:i:s\char`\"{})}}
+\label{evenement__enregistre_8php_a1}
+
+
+\hypertarget{evenement__enregistre_8php_a2}{
+\index{evenement_enregistre.php@{evenement\_\-enregistre.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!evenement_enregistre.php@{evenement\_\-enregistre.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{evenement__enregistre_8php_a2}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "UPDATE evenement SET
+                evenement_nom = '$_GET[titre]',
+                evenement_date1 = '$_GET[date1]',
+                evenement_heure1 = '$_GET[heure1]',
+                evenement_victime = '$_GET[victime]',
+                last_update = '$date'
+                WHERE evenement_ID = '$_SESSION[evenement]'
+                "
+\end{verbatim}\normalsize 
+\hypertarget{evenement__enregistre_8php_a3}{
+\index{evenement_enregistre.php@{evenement\_\-enregistre.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!evenement_enregistre.php@{evenement\_\-enregistre.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{evenement__enregistre_8php_a3}
+
+

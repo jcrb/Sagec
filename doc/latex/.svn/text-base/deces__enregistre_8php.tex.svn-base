@@ -1,0 +1,73 @@
+\hypertarget{deces__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier deces\_\-enregistre.php}
+\label{deces__enregistre_8php}\index{deces_enregistre.php@{deces\_\-enregistre.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{deces__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{deces__enregistre_8php_a1}{\$date} = strtotime(\$\_\-GET\mbox{[}date\mbox{]})
+\item 
+\hyperlink{deces__enregistre_8php_a2}{\$requete} = \char`\"{}SELECT veille\_\-dg\_\-ID FROM veille\_\-dg WHERE date = '\$date'AND org\_\-ID = '\$\_\-SESSION\mbox{[}organisation\mbox{]}'\char`\"{}
+\item 
+\hyperlink{deces__enregistre_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{deces__enregistre_8php_a4}{\$rub} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{deces__enregistre_8php_a5}{\$id} = \$rub\mbox{[}'veille\_\-dg\_\-ID'\mbox{]}
+\item 
+\hyperlink{deces__enregistre_8php_a6}{\$error} = 0
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{deces__enregistre_8php_a0}{
+\index{deces_enregistre.php@{deces\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!deces_enregistre.php@{deces\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{deces__enregistre_8php_a0}
+
+
+\hypertarget{deces__enregistre_8php_a1}{
+\index{deces_enregistre.php@{deces\_\-enregistre.php}!$date@{\$date}}
+\index{$date@{\$date}!deces_enregistre.php@{deces\_\-enregistre.php}}
+\subsubsection[\$date]{\setlength{\rightskip}{0pt plus 5cm}\$date = strtotime(\$\_\-GET\mbox{[}date\mbox{]})}}
+\label{deces__enregistre_8php_a1}
+
+
+\hypertarget{deces__enregistre_8php_a6}{
+\index{deces_enregistre.php@{deces\_\-enregistre.php}!$error@{\$error}}
+\index{$error@{\$error}!deces_enregistre.php@{deces\_\-enregistre.php}}
+\subsubsection[\$error]{\setlength{\rightskip}{0pt plus 5cm}\$error = 0}}
+\label{deces__enregistre_8php_a6}
+
+
+\hypertarget{deces__enregistre_8php_a5}{
+\index{deces_enregistre.php@{deces\_\-enregistre.php}!$id@{\$id}}
+\index{$id@{\$id}!deces_enregistre.php@{deces\_\-enregistre.php}}
+\subsubsection[\$id]{\setlength{\rightskip}{0pt plus 5cm}\$id = \$rub\mbox{[}'veille\_\-dg\_\-ID'\mbox{]}}}
+\label{deces__enregistre_8php_a5}
+
+
+\hypertarget{deces__enregistre_8php_a2}{
+\index{deces_enregistre.php@{deces\_\-enregistre.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!deces_enregistre.php@{deces\_\-enregistre.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT veille\_\-dg\_\-ID FROM veille\_\-dg WHERE date = '\$date'AND org\_\-ID = '\$\_\-SESSION\mbox{[}organisation\mbox{]}'\char`\"{}}}
+\label{deces__enregistre_8php_a2}
+
+
+\hypertarget{deces__enregistre_8php_a3}{
+\index{deces_enregistre.php@{deces\_\-enregistre.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!deces_enregistre.php@{deces\_\-enregistre.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{deces__enregistre_8php_a3}
+
+
+\hypertarget{deces__enregistre_8php_a4}{
+\index{deces_enregistre.php@{deces\_\-enregistre.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!deces_enregistre.php@{deces\_\-enregistre.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{deces__enregistre_8php_a4}
+
+

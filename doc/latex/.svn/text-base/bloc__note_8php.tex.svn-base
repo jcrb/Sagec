@@ -1,0 +1,82 @@
+\hypertarget{bloc__note_8php}{
+\section{R\'{e}f\'{e}rence du fichier bloc\_\-note.php}
+\label{bloc__note_8php}\index{bloc_note.php@{bloc\_\-note.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{bloc__note_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{bloc__note_8php_a1}{\$connect} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{bloc__note_8php_a2}{\$query} = \char`\"{}SELECT nom, prenom FROM utilisateurs WHERE ID\_\-utilisateur = '\$\_\-SESSION\mbox{[}member\_\-id\mbox{]}'\char`\"{}
+\item 
+\hyperlink{bloc__note_8php_a3}{\$result} = Exec\-Requete(\$query,\$connect)
+\item 
+\hyperlink{bloc__note_8php_a4}{\$utilisateur} = Ligne\-Suivante(\$result)
+\item 
+\hyperlink{bloc__note_8php_a5}{\$date\-FR} = str\-FTime(\char`\"{}\%A \%d \%B \%Y\char`\"{})
+\item 
+\hyperlink{bloc__note_8php_a6}{\$mot} = \$string\_\-lang\mbox{[}'BLOCNOTE'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{bloc__note_8php_a7}{\$timestamp} = date(\char`\"{}Y-m-j H:i:s\char`\"{})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{bloc__note_8php_a1}{
+\index{bloc_note.php@{bloc\_\-note.php}!$connect@{\$connect}}
+\index{$connect@{\$connect}!bloc_note.php@{bloc\_\-note.php}}
+\subsubsection[\$connect]{\setlength{\rightskip}{0pt plus 5cm}\$connect = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{bloc__note_8php_a1}
+
+
+\hypertarget{bloc__note_8php_a5}{
+\index{bloc_note.php@{bloc\_\-note.php}!$dateFR@{\$dateFR}}
+\index{$dateFR@{\$dateFR}!bloc_note.php@{bloc\_\-note.php}}
+\subsubsection[\$dateFR]{\setlength{\rightskip}{0pt plus 5cm}\$date\-FR = str\-FTime(\char`\"{}\%A \%d \%B \%Y\char`\"{})}}
+\label{bloc__note_8php_a5}
+
+
+\hypertarget{bloc__note_8php_a0}{
+\index{bloc_note.php@{bloc\_\-note.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!bloc_note.php@{bloc\_\-note.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{bloc__note_8php_a0}
+
+
+\hypertarget{bloc__note_8php_a6}{
+\index{bloc_note.php@{bloc\_\-note.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!bloc_note.php@{bloc\_\-note.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'BLOCNOTE'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{bloc__note_8php_a6}
+
+
+\hypertarget{bloc__note_8php_a2}{
+\index{bloc_note.php@{bloc\_\-note.php}!$query@{\$query}}
+\index{$query@{\$query}!bloc_note.php@{bloc\_\-note.php}}
+\subsubsection[\$query]{\setlength{\rightskip}{0pt plus 5cm}\$query = \char`\"{}SELECT nom, prenom FROM utilisateurs WHERE ID\_\-utilisateur = '\$\_\-SESSION\mbox{[}member\_\-id\mbox{]}'\char`\"{}}}
+\label{bloc__note_8php_a2}
+
+
+\hypertarget{bloc__note_8php_a3}{
+\index{bloc_note.php@{bloc\_\-note.php}!$result@{\$result}}
+\index{$result@{\$result}!bloc_note.php@{bloc\_\-note.php}}
+\subsubsection[\$result]{\setlength{\rightskip}{0pt plus 5cm}\$result = Exec\-Requete(\$query,\$connect)}}
+\label{bloc__note_8php_a3}
+
+
+\hypertarget{bloc__note_8php_a7}{
+\index{bloc_note.php@{bloc\_\-note.php}!$timestamp@{\$timestamp}}
+\index{$timestamp@{\$timestamp}!bloc_note.php@{bloc\_\-note.php}}
+\subsubsection[\$timestamp]{\setlength{\rightskip}{0pt plus 5cm}\$timestamp = date(\char`\"{}Y-m-j H:i:s\char`\"{})}}
+\label{bloc__note_8php_a7}
+
+
+\hypertarget{bloc__note_8php_a4}{
+\index{bloc_note.php@{bloc\_\-note.php}!$utilisateur@{\$utilisateur}}
+\index{$utilisateur@{\$utilisateur}!bloc_note.php@{bloc\_\-note.php}}
+\subsubsection[\$utilisateur]{\setlength{\rightskip}{0pt plus 5cm}\$utilisateur = Ligne\-Suivante(\$result)}}
+\label{bloc__note_8php_a4}
+
+

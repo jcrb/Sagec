@@ -1,0 +1,99 @@
+\hypertarget{synoptique__home_8php}{
+\section{R\'{e}f\'{e}rence du fichier synoptique\_\-home.php}
+\label{synoptique__home_8php}\index{synoptique_home.php@{synoptique\_\-home.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{synoptique__home_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{synoptique__home_8php_a1}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{synoptique__home_8php_a2}{\$mot} = \$string\_\-lang\mbox{[}'LITS\_\-DISPO'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{} \char`\"{}.\$string\_\-lang\mbox{[}'PAR'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{} \char`\"{}.\$string\_\-lang\mbox{[}'SPECIALITE'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{synoptique__home_8php_a3}{\$mot2} = \$string\_\-lang\mbox{[}'A'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{synoptique__home_8php_a4}{\$legende} = Date\-Heure(\$langue)
+\item 
+\hyperlink{synoptique__home_8php_a5}{\$d} = date(\char`\"{}Y-m-d\char`\"{})
+\item 
+\hyperlink{synoptique__home_8php_a6}{\$requete}
+\item 
+\hyperlink{synoptique__home_8php_a7}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{synoptique__home_8php_a8}{\$max} = 0
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{synoptique__home_8php_a0}{
+\index{synoptique_home.php@{synoptique\_\-home.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!synoptique_home.php@{synoptique\_\-home.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{synoptique__home_8php_a0}
+
+
+\hypertarget{synoptique__home_8php_a5}{
+\index{synoptique_home.php@{synoptique\_\-home.php}!$d@{\$d}}
+\index{$d@{\$d}!synoptique_home.php@{synoptique\_\-home.php}}
+\subsubsection[\$d]{\setlength{\rightskip}{0pt plus 5cm}\$d = date(\char`\"{}Y-m-d\char`\"{})}}
+\label{synoptique__home_8php_a5}
+
+
+\hypertarget{synoptique__home_8php_a1}{
+\index{synoptique_home.php@{synoptique\_\-home.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!synoptique_home.php@{synoptique\_\-home.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{synoptique__home_8php_a1}
+
+
+\hypertarget{synoptique__home_8php_a4}{
+\index{synoptique_home.php@{synoptique\_\-home.php}!$legende@{\$legende}}
+\index{$legende@{\$legende}!synoptique_home.php@{synoptique\_\-home.php}}
+\subsubsection[\$legende]{\setlength{\rightskip}{0pt plus 5cm}\$legende = Date\-Heure(\$langue)}}
+\label{synoptique__home_8php_a4}
+
+
+\hypertarget{synoptique__home_8php_a8}{
+\index{synoptique_home.php@{synoptique\_\-home.php}!$max@{\$max}}
+\index{$max@{\$max}!synoptique_home.php@{synoptique\_\-home.php}}
+\subsubsection[\$max]{\setlength{\rightskip}{0pt plus 5cm}\$max = 0}}
+\label{synoptique__home_8php_a8}
+
+
+\hypertarget{synoptique__home_8php_a2}{
+\index{synoptique_home.php@{synoptique\_\-home.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!synoptique_home.php@{synoptique\_\-home.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'LITS\_\-DISPO'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{} \char`\"{}.\$string\_\-lang\mbox{[}'PAR'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{} \char`\"{}.\$string\_\-lang\mbox{[}'SPECIALITE'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{synoptique__home_8php_a2}
+
+
+\hypertarget{synoptique__home_8php_a3}{
+\index{synoptique_home.php@{synoptique\_\-home.php}!$mot2@{\$mot2}}
+\index{$mot2@{\$mot2}!synoptique_home.php@{synoptique\_\-home.php}}
+\subsubsection[\$mot2]{\setlength{\rightskip}{0pt plus 5cm}\$mot2 = \$string\_\-lang\mbox{[}'A'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{synoptique__home_8php_a3}
+
+
+\hypertarget{synoptique__home_8php_a6}{
+\index{synoptique_home.php@{synoptique\_\-home.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!synoptique_home.php@{synoptique\_\-home.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{synoptique__home_8php_a6}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}"SELECT lits_dispo,lits.service_ID,service.Type_ID,service_nom
+                        FROM lits,service
+                        WHERE lits.service_ID = service.service_ID
+                        ORDER BY service.Type_ID
+                        "
+\end{verbatim}\normalsize 
+\hypertarget{synoptique__home_8php_a7}{
+\index{synoptique_home.php@{synoptique\_\-home.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!synoptique_home.php@{synoptique\_\-home.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{synoptique__home_8php_a7}
+
+

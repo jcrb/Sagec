@@ -1,0 +1,82 @@
+\hypertarget{bilan_8php}{
+\section{R\'{e}f\'{e}rence du fichier bilan.php}
+\label{bilan_8php}\index{bilan.php@{bilan.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{bilan_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{bilan_8php_a1}{\$event} = evenement\_\-courant(\$connexion,\$\_\-SESSION\mbox{[}evenement\mbox{]})
+\item 
+\hyperlink{bilan_8php_a2}{\$requete} = \char`\"{}SELECT gravite, localisation\_\-ID FROM victime\char`\"{}
+\item 
+\hyperlink{bilan_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{bilan_8php_a4}{\$UA} = 0
+\item 
+\hyperlink{bilan_8php_a5}{\$ev} = \$event\mbox{[}'evenement\_\-nom'\mbox{]}
+\item 
+\hyperlink{bilan_8php_a6}{\$mot} = \$string\_\-lang\mbox{[}'U'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+$<$ FONTFACE=\char`\"{}Arial\-Baltic\char`\"{}$>$$<$?phpprint(\$string\_\-lang \hyperlink{bilan_8php_a7}{nbsp} \mbox{[}'U3'\mbox{]}\mbox{[}\$langue\mbox{]})?$>$$<$/FONT $>$$<$/CENTER $>$$<$/TD $>$$<$ TDWIDTH=\char`\"{}45\char`\"{}BGCOLOR=\char`\"{}\#000000\char`\"{}$>$$<$ CENTER $>$ \&
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{bilan_8php_a0}{
+\index{bilan.php@{bilan.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!bilan.php@{bilan.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{bilan_8php_a0}
+
+
+\hypertarget{bilan_8php_a5}{
+\index{bilan.php@{bilan.php}!$ev@{\$ev}}
+\index{$ev@{\$ev}!bilan.php@{bilan.php}}
+\subsubsection[\$ev]{\setlength{\rightskip}{0pt plus 5cm}\$ev = \$event\mbox{[}'evenement\_\-nom'\mbox{]}}}
+\label{bilan_8php_a5}
+
+
+\hypertarget{bilan_8php_a1}{
+\index{bilan.php@{bilan.php}!$event@{\$event}}
+\index{$event@{\$event}!bilan.php@{bilan.php}}
+\subsubsection[\$event]{\setlength{\rightskip}{0pt plus 5cm}\$event = evenement\_\-courant(\$connexion,\$\_\-SESSION\mbox{[}evenement\mbox{]})}}
+\label{bilan_8php_a1}
+
+
+\hypertarget{bilan_8php_a6}{
+\index{bilan.php@{bilan.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!bilan.php@{bilan.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'U'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{bilan_8php_a6}
+
+
+\hypertarget{bilan_8php_a2}{
+\index{bilan.php@{bilan.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!bilan.php@{bilan.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT gravite, localisation\_\-ID FROM victime\char`\"{}}}
+\label{bilan_8php_a2}
+
+
+\hypertarget{bilan_8php_a3}{
+\index{bilan.php@{bilan.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!bilan.php@{bilan.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{bilan_8php_a3}
+
+
+\hypertarget{bilan_8php_a4}{
+\index{bilan.php@{bilan.php}!$UA@{\$UA}}
+\index{$UA@{\$UA}!bilan.php@{bilan.php}}
+\subsubsection[\$UA]{\setlength{\rightskip}{0pt plus 5cm}\$UA = 0}}
+\label{bilan_8php_a4}
+
+
+\hypertarget{bilan_8php_a7}{
+\index{bilan.php@{bilan.php}!nbsp@{nbsp}}
+\index{nbsp@{nbsp}!bilan.php@{bilan.php}}
+\subsubsection[nbsp]{\setlength{\rightskip}{0pt plus 5cm}$<$/p $>$$<$ p $>$ \& \hyperlink{login2_8php_a2}{nbsp}}}
+\label{bilan_8php_a7}
+
+

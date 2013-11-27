@@ -1,0 +1,82 @@
+\hypertarget{tourDeRole__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier tour\-De\-Role\_\-enregistre.php}
+\label{tourDeRole__enregistre_8php}\index{tourDeRole_enregistre.php@{tourDeRole\_\-enregistre.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{tourDeRole__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{tourDeRole__enregistre_8php_a1}{\$nb\_\-op} = mysql\_\-query ( \char`\"{}SELECT COUNT($\ast$) FROM apa\_\-tour\char`\"{})
+\item 
+\hyperlink{tourDeRole__enregistre_8php_a2}{\$nb\_\-lines} = mysql\_\-fetch\_\-row(\$nb\_\-op)
+\item 
+\hyperlink{tourDeRole__enregistre_8php_a3}{\$requete} = \char`\"{}UPDATE apa\_\-tour SET ordre = MOD(ordre+1,'\$nb\_\-lines\mbox{[}0\mbox{]}')\char`\"{}
+\item 
+\hyperlink{tourDeRole__enregistre_8php_a4}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{tourDeRole__enregistre_8php_a5}{\$dispo} = \$\_\-GET\mbox{[}disponible\mbox{]}\mbox{[}0\mbox{]}
+\item 
+\hyperlink{tourDeRole__enregistre_8php_a6}{\$date} = date(\char`\"{}Y-m-j H:i:s\char`\"{})
+\item 
+\hyperlink{tourDeRole__enregistre_8php_a7}{\$d} = \char`\"{}\char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{tourDeRole__enregistre_8php_a0}{
+\index{tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{tourDeRole__enregistre_8php_a0}
+
+
+\hypertarget{tourDeRole__enregistre_8php_a7}{
+\index{tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}!$d@{\$d}}
+\index{$d@{\$d}!tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}}
+\subsubsection[\$d]{\setlength{\rightskip}{0pt plus 5cm}\$d = \char`\"{}\char`\"{}}}
+\label{tourDeRole__enregistre_8php_a7}
+
+
+\hypertarget{tourDeRole__enregistre_8php_a6}{
+\index{tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}!$date@{\$date}}
+\index{$date@{\$date}!tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}}
+\subsubsection[\$date]{\setlength{\rightskip}{0pt plus 5cm}\$date = date(\char`\"{}Y-m-j H:i:s\char`\"{})}}
+\label{tourDeRole__enregistre_8php_a6}
+
+
+\hypertarget{tourDeRole__enregistre_8php_a5}{
+\index{tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}!$dispo@{\$dispo}}
+\index{$dispo@{\$dispo}!tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}}
+\subsubsection[\$dispo]{\setlength{\rightskip}{0pt plus 5cm}\$dispo = \$\_\-GET\mbox{[}disponible\mbox{]}\mbox{[}0\mbox{]}}}
+\label{tourDeRole__enregistre_8php_a5}
+
+
+\hypertarget{tourDeRole__enregistre_8php_a2}{
+\index{tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}!$nb_lines@{\$nb\_\-lines}}
+\index{$nb_lines@{\$nb\_\-lines}!tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}}
+\subsubsection[\$nb\_\-lines]{\setlength{\rightskip}{0pt plus 5cm}\$nb\_\-lines = mysql\_\-fetch\_\-row(\$nb\_\-op)}}
+\label{tourDeRole__enregistre_8php_a2}
+
+
+\hypertarget{tourDeRole__enregistre_8php_a1}{
+\index{tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}!$nb_op@{\$nb\_\-op}}
+\index{$nb_op@{\$nb\_\-op}!tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}}
+\subsubsection[\$nb\_\-op]{\setlength{\rightskip}{0pt plus 5cm}\$nb\_\-op = mysql\_\-query ( \char`\"{}SELECT COUNT($\ast$) FROM apa\_\-tour\char`\"{})}}
+\label{tourDeRole__enregistre_8php_a1}
+
+
+\hypertarget{tourDeRole__enregistre_8php_a3}{
+\index{tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}UPDATE apa\_\-tour SET ordre = MOD(ordre+1,'\$nb\_\-lines\mbox{[}0\mbox{]}')\char`\"{}}}
+\label{tourDeRole__enregistre_8php_a3}
+
+
+\hypertarget{tourDeRole__enregistre_8php_a4}{
+\index{tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!tourDeRole_enregistre.php@{tour\-De\-Role\_\-enregistre.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{tourDeRole__enregistre_8php_a4}
+
+

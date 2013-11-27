@@ -1,0 +1,106 @@
+\hypertarget{distance_8php}{
+\section{R\'{e}f\'{e}rence du fichier distance.php}
+\label{distance_8php}\index{distance.php@{distance.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{distance_8php_a8}{orthodro} (\$lat\-A, \$long\-A, \$lat\-B, \$long\-B)
+\item 
+\hyperlink{distance_8php_a9}{cmp} (\$a, \$b)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{distance_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{distance_8php_a1}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{distance_8php_a2}{\$rub1} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{distance_8php_a3}{\$rub2} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{distance_8php_a4}{\$distance} = orthodro(\$rub1\mbox{[}ville\_\-latitude\mbox{]},\$rub1\mbox{[}ville\_\-longitude\mbox{]},\$rub2\mbox{[}ville\_\-latitude\mbox{]},\$rub2\mbox{[}ville\_\-longitude\mbox{]})
+\item 
+\hyperlink{distance_8php_a5}{\$requete} = \char`\"{}SELECT ville\_\-nom,ville\_\-ID,ville\_\-longitude, ville\_\-latitude FROM \hyperlink{apa__zone_8php_a33}{ville} ORDER BY ville\_\-longitude,ville\_\-latitude\char`\"{}
+\item 
+\hyperlink{distance_8php_a6}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{distance_8php_a7}{\$c} = \char`\"{}\char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{distance_8php_a9}{
+\index{distance.php@{distance.php}!cmp@{cmp}}
+\index{cmp@{cmp}!distance.php@{distance.php}}
+\subsubsection[cmp]{\setlength{\rightskip}{0pt plus 5cm}cmp (\$ {\em a}, \$ {\em b})}}
+\label{distance_8php_a9}
+
+
+\hypertarget{distance_8php_a8}{
+\index{distance.php@{distance.php}!orthodro@{orthodro}}
+\index{orthodro@{orthodro}!distance.php@{distance.php}}
+\subsubsection[orthodro]{\setlength{\rightskip}{0pt plus 5cm}orthodro (\$ {\em lat\-A}, \$ {\em long\-A}, \$ {\em lat\-B}, \$ {\em long\-B})}}
+\label{distance_8php_a8}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{distance_8php_a7}{
+\index{distance.php@{distance.php}!$c@{\$c}}
+\index{$c@{\$c}!distance.php@{distance.php}}
+\subsubsection[\$c]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$c = \char`\"{}\char`\"{}}}
+\label{distance_8php_a7}
+
+
+\hypertarget{distance_8php_a0}{
+\index{distance.php@{distance.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!distance.php@{distance.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{distance_8php_a0}
+
+
+\hypertarget{distance_8php_a4}{
+\index{distance.php@{distance.php}!$distance@{\$distance}}
+\index{$distance@{\$distance}!distance.php@{distance.php}}
+\subsubsection[\$distance]{\setlength{\rightskip}{0pt plus 5cm}\$distance = orthodro(\$rub1\mbox{[}ville\_\-latitude\mbox{]},\$rub1\mbox{[}ville\_\-longitude\mbox{]},\$rub2\mbox{[}ville\_\-latitude\mbox{]},\$rub2\mbox{[}ville\_\-longitude\mbox{]})}}
+\label{distance_8php_a4}
+
+
+\hypertarget{distance_8php_a1}{
+\index{distance.php@{distance.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!distance.php@{distance.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{distance_8php_a1}
+
+
+\hypertarget{distance_8php_a5}{
+\index{distance.php@{distance.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!distance.php@{distance.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT ville\_\-nom,ville\_\-ID,ville\_\-longitude, ville\_\-latitude FROM \hyperlink{apa__zone_8php_a33}{ville} ORDER BY ville\_\-longitude,ville\_\-latitude\char`\"{}}}
+\label{distance_8php_a5}
+
+
+\hypertarget{distance_8php_a6}{
+\index{distance.php@{distance.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!distance.php@{distance.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{distance_8php_a6}
+
+
+\hypertarget{distance_8php_a2}{
+\index{distance.php@{distance.php}!$rub1@{\$rub1}}
+\index{$rub1@{\$rub1}!distance.php@{distance.php}}
+\subsubsection[\$rub1]{\setlength{\rightskip}{0pt plus 5cm}\$rub1 = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{distance_8php_a2}
+
+
+\hypertarget{distance_8php_a3}{
+\index{distance.php@{distance.php}!$rub2@{\$rub2}}
+\index{$rub2@{\$rub2}!distance.php@{distance.php}}
+\subsubsection[\$rub2]{\setlength{\rightskip}{0pt plus 5cm}\$rub2 = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{distance_8php_a3}
+
+

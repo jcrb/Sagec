@@ -1,0 +1,100 @@
+\hypertarget{sagec67_8php}{
+\section{R\'{e}f\'{e}rence du fichier sagec67.php}
+\label{sagec67_8php}\index{sagec67.php@{sagec67.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{sagec67_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{sagec67_8php_a1}{\$titre} = \$string\_\-lang\mbox{[}'SAGEC67'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{sagec67_8php_a2}{\$\_\-style} = \char`\"{}A2\char`\"{}
+\item 
+\hyperlink{sagec67_8php_a3}{\$mot} = str\-To\-Upper(\$string\_\-lang\mbox{[}VICTIMES\mbox{]}\mbox{[}\$langue\mbox{]})
+\item 
+\hyperlink{sagec67_8php_a4}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{sagec67_8php_a5}{\$requete} = \char`\"{}SELECT service\_\-ID from service WHERE service\_\-nom ='SAMU 67'\char`\"{}
+\item 
+\hyperlink{sagec67_8php_a6}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{sagec67_8php_a7}{\$rub} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{sagec67_8php_a8}{\$filname} = \char`\"{}essai\_\-archive.txt\char`\"{}
+\item 
+\hyperlink{sagec67_8php_a9}{\$dir} = \char`\"{}/var/www/html/SAGEC 67/archives\char`\"{}.\$filname
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{sagec67_8php_a2}{
+\index{sagec67.php@{sagec67.php}!$_style@{\$\_\-style}}
+\index{$_style@{\$\_\-style}!sagec67.php@{sagec67.php}}
+\subsubsection[\$\_\-style]{\setlength{\rightskip}{0pt plus 5cm}\$\_\-style = \char`\"{}A2\char`\"{}}}
+\label{sagec67_8php_a2}
+
+
+\hypertarget{sagec67_8php_a4}{
+\index{sagec67.php@{sagec67.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!sagec67.php@{sagec67.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{sagec67_8php_a4}
+
+
+\hypertarget{sagec67_8php_a9}{
+\index{sagec67.php@{sagec67.php}!$dir@{\$dir}}
+\index{$dir@{\$dir}!sagec67.php@{sagec67.php}}
+\subsubsection[\$dir]{\setlength{\rightskip}{0pt plus 5cm}\$dir = \char`\"{}/var/www/html/SAGEC 67/archives\char`\"{}.\$filname}}
+\label{sagec67_8php_a9}
+
+
+\hypertarget{sagec67_8php_a8}{
+\index{sagec67.php@{sagec67.php}!$filname@{\$filname}}
+\index{$filname@{\$filname}!sagec67.php@{sagec67.php}}
+\subsubsection[\$filname]{\setlength{\rightskip}{0pt plus 5cm}\$filname = \char`\"{}essai\_\-archive.txt\char`\"{}}}
+\label{sagec67_8php_a8}
+
+
+\hypertarget{sagec67_8php_a0}{
+\index{sagec67.php@{sagec67.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!sagec67.php@{sagec67.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{sagec67_8php_a0}
+
+
+\hypertarget{sagec67_8php_a3}{
+\index{sagec67.php@{sagec67.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!sagec67.php@{sagec67.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = str\-To\-Upper(\$string\_\-lang\mbox{[}VICTIMES\mbox{]}\mbox{[}\$langue\mbox{]})}}
+\label{sagec67_8php_a3}
+
+
+\hypertarget{sagec67_8php_a5}{
+\index{sagec67.php@{sagec67.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!sagec67.php@{sagec67.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT service\_\-ID from service WHERE service\_\-nom ='SAMU 67'\char`\"{}}}
+\label{sagec67_8php_a5}
+
+
+\hypertarget{sagec67_8php_a6}{
+\index{sagec67.php@{sagec67.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!sagec67.php@{sagec67.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{sagec67_8php_a6}
+
+
+\hypertarget{sagec67_8php_a7}{
+\index{sagec67.php@{sagec67.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!sagec67.php@{sagec67.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{sagec67_8php_a7}
+
+
+\hypertarget{sagec67_8php_a1}{
+\index{sagec67.php@{sagec67.php}!$titre@{\$titre}}
+\index{$titre@{\$titre}!sagec67.php@{sagec67.php}}
+\subsubsection[\$titre]{\setlength{\rightskip}{0pt plus 5cm}\$titre = \$string\_\-lang\mbox{[}'SAGEC67'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{sagec67_8php_a1}
+
+

@@ -1,0 +1,136 @@
+\hypertarget{cron__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier cron\_\-enregistre.php}
+\label{cron__enregistre_8php}\index{cron_enregistre.php@{cron\_\-enregistre.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{cron__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{cron__enregistre_8php_a1}{\$date1} = strtotime(\$\_\-POST\mbox{[}date1\mbox{]})
+\item 
+\hyperlink{cron__enregistre_8php_a2}{\$date2} = strtotime(\$\_\-POST\mbox{[}date2\mbox{]})
+\item 
+\hyperlink{cron__enregistre_8php_a3}{\$now} = time()
+\item 
+\hyperlink{cron__enregistre_8php_a4}{\$requete} = \char`\"{}UPDATE cron SET cron\_\-auto = '\hyperlink{utilitaires_2html_8php_a0}{n}'\char`\"{}
+\item 
+\hyperlink{cron__enregistre_8php_a5}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{cron__enregistre_8php_a6}{\$chp\-Heure} = \$\_\-POST\mbox{[}'heure'\mbox{]}
+\item 
+\hyperlink{cron__enregistre_8php_a7}{\$chp\-Minute} = \$\_\-POST\mbox{[}'minute'\mbox{]}
+\item 
+\hyperlink{cron__enregistre_8php_a8}{\$chp\-Jour\-Mois} = \char`\"{}$\ast$\char`\"{}
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{cron__enregistre_8php_a9}{\$chp\-Jour\-Semaine} = \$\_\-POST\mbox{[}'jour'\mbox{]}
+\item 
+\hyperlink{cron__enregistre_8php_a10}{\$chp\-Mois} = \char`\"{}$\ast$\char`\"{}
+\item 
+\hyperlink{cron__enregistre_8php_a11}{\$chp\-Commande} = \char`\"{}wget --delete-after http://localhost/SAGEC67\_\-v3/veille\_\-sanitaire/create\_\-xml.php\char`\"{}
+\item 
+\hyperlink{cron__enregistre_8php_a12}{\$chp\-Commentaire} = \char`\"{}test\char`\"{}
+\item 
+\hyperlink{cron__enregistre_8php_a13}{\$rep} = ajoute\-Script(\$chp\-Heure, \$chp\-Minute, \$chp\-Jour\-Mois, \$chp\-Jour\-Semaine, \$chp\-Mois, \$chp\-Commande, \$chp\-Commentaire)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{cron__enregistre_8php_a11}{
+\index{cron_enregistre.php@{cron\_\-enregistre.php}!$chpCommande@{\$chpCommande}}
+\index{$chpCommande@{\$chpCommande}!cron_enregistre.php@{cron\_\-enregistre.php}}
+\subsubsection[\$chpCommande]{\setlength{\rightskip}{0pt plus 5cm}\$chp\-Commande = \char`\"{}wget --delete-after http://localhost/SAGEC67\_\-v3/veille\_\-sanitaire/create\_\-xml.php\char`\"{}}}
+\label{cron__enregistre_8php_a11}
+
+
+\hypertarget{cron__enregistre_8php_a12}{
+\index{cron_enregistre.php@{cron\_\-enregistre.php}!$chpCommentaire@{\$chpCommentaire}}
+\index{$chpCommentaire@{\$chpCommentaire}!cron_enregistre.php@{cron\_\-enregistre.php}}
+\subsubsection[\$chpCommentaire]{\setlength{\rightskip}{0pt plus 5cm}\$chp\-Commentaire = \char`\"{}test\char`\"{}}}
+\label{cron__enregistre_8php_a12}
+
+
+\hypertarget{cron__enregistre_8php_a6}{
+\index{cron_enregistre.php@{cron\_\-enregistre.php}!$chpHeure@{\$chpHeure}}
+\index{$chpHeure@{\$chpHeure}!cron_enregistre.php@{cron\_\-enregistre.php}}
+\subsubsection[\$chpHeure]{\setlength{\rightskip}{0pt plus 5cm}\$chp\-Heure = \$\_\-POST\mbox{[}'heure'\mbox{]}}}
+\label{cron__enregistre_8php_a6}
+
+
+\hypertarget{cron__enregistre_8php_a8}{
+\index{cron_enregistre.php@{cron\_\-enregistre.php}!$chpJourMois@{\$chpJourMois}}
+\index{$chpJourMois@{\$chpJourMois}!cron_enregistre.php@{cron\_\-enregistre.php}}
+\subsubsection[\$chpJourMois]{\setlength{\rightskip}{0pt plus 5cm}\$chp\-Jour\-Mois = \char`\"{}$\ast$\char`\"{}}}
+\label{cron__enregistre_8php_a8}
+
+
+\hypertarget{cron__enregistre_8php_a9}{
+\index{cron_enregistre.php@{cron\_\-enregistre.php}!$chpJourSemaine@{\$chpJourSemaine}}
+\index{$chpJourSemaine@{\$chpJourSemaine}!cron_enregistre.php@{cron\_\-enregistre.php}}
+\subsubsection[\$chpJourSemaine]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$chp\-Jour\-Semaine = \$\_\-POST\mbox{[}'jour'\mbox{]}}}
+\label{cron__enregistre_8php_a9}
+
+
+\hypertarget{cron__enregistre_8php_a7}{
+\index{cron_enregistre.php@{cron\_\-enregistre.php}!$chpMinute@{\$chpMinute}}
+\index{$chpMinute@{\$chpMinute}!cron_enregistre.php@{cron\_\-enregistre.php}}
+\subsubsection[\$chpMinute]{\setlength{\rightskip}{0pt plus 5cm}\$chp\-Minute = \$\_\-POST\mbox{[}'minute'\mbox{]}}}
+\label{cron__enregistre_8php_a7}
+
+
+\hypertarget{cron__enregistre_8php_a10}{
+\index{cron_enregistre.php@{cron\_\-enregistre.php}!$chpMois@{\$chpMois}}
+\index{$chpMois@{\$chpMois}!cron_enregistre.php@{cron\_\-enregistre.php}}
+\subsubsection[\$chpMois]{\setlength{\rightskip}{0pt plus 5cm}\$chp\-Mois = \char`\"{}$\ast$\char`\"{}}}
+\label{cron__enregistre_8php_a10}
+
+
+\hypertarget{cron__enregistre_8php_a0}{
+\index{cron_enregistre.php@{cron\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!cron_enregistre.php@{cron\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{cron__enregistre_8php_a0}
+
+
+\hypertarget{cron__enregistre_8php_a1}{
+\index{cron_enregistre.php@{cron\_\-enregistre.php}!$date1@{\$date1}}
+\index{$date1@{\$date1}!cron_enregistre.php@{cron\_\-enregistre.php}}
+\subsubsection[\$date1]{\setlength{\rightskip}{0pt plus 5cm}\$date1 = strtotime(\$\_\-POST\mbox{[}date1\mbox{]})}}
+\label{cron__enregistre_8php_a1}
+
+
+\hypertarget{cron__enregistre_8php_a2}{
+\index{cron_enregistre.php@{cron\_\-enregistre.php}!$date2@{\$date2}}
+\index{$date2@{\$date2}!cron_enregistre.php@{cron\_\-enregistre.php}}
+\subsubsection[\$date2]{\setlength{\rightskip}{0pt plus 5cm}\$date2 = strtotime(\$\_\-POST\mbox{[}date2\mbox{]})}}
+\label{cron__enregistre_8php_a2}
+
+
+\hypertarget{cron__enregistre_8php_a3}{
+\index{cron_enregistre.php@{cron\_\-enregistre.php}!$now@{\$now}}
+\index{$now@{\$now}!cron_enregistre.php@{cron\_\-enregistre.php}}
+\subsubsection[\$now]{\setlength{\rightskip}{0pt plus 5cm}\$now = time()}}
+\label{cron__enregistre_8php_a3}
+
+
+\hypertarget{cron__enregistre_8php_a13}{
+\index{cron_enregistre.php@{cron\_\-enregistre.php}!$rep@{\$rep}}
+\index{$rep@{\$rep}!cron_enregistre.php@{cron\_\-enregistre.php}}
+\subsubsection[\$rep]{\setlength{\rightskip}{0pt plus 5cm}\$rep = ajoute\-Script(\$chp\-Heure, \$chp\-Minute, \$chp\-Jour\-Mois, \$chp\-Jour\-Semaine, \$chp\-Mois, \$chp\-Commande, \$chp\-Commentaire)}}
+\label{cron__enregistre_8php_a13}
+
+
+\hypertarget{cron__enregistre_8php_a4}{
+\index{cron_enregistre.php@{cron\_\-enregistre.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!cron_enregistre.php@{cron\_\-enregistre.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}UPDATE cron SET cron\_\-auto = '\hyperlink{utilitaires_2html_8php_a0}{n}'\char`\"{}}}
+\label{cron__enregistre_8php_a4}
+
+
+\hypertarget{cron__enregistre_8php_a5}{
+\index{cron_enregistre.php@{cron\_\-enregistre.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!cron_enregistre.php@{cron\_\-enregistre.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{cron__enregistre_8php_a5}
+
+

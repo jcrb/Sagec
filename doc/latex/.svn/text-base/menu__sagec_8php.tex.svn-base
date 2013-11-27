@@ -1,0 +1,55 @@
+\hypertarget{menu__sagec_8php}{
+\section{R\'{e}f\'{e}rence du fichier menu\_\-sagec.php}
+\label{menu__sagec_8php}\index{menu_sagec.php@{menu\_\-sagec.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{menu__sagec_8php_a0}{menu\_\-head} (\$titre)
+\item 
+\hyperlink{menu__sagec_8php_a1}{Menu\-Lits} (\$langue)
+\item 
+\hyperlink{menu__sagec_8php_a2}{gestion\_\-des\_\-lits} (\$langue)
+\item 
+\hyperlink{menu__sagec_8php_a3}{menu\_\-maj\_\-des\_\-lits} (\$langue)
+\item 
+\hyperlink{menu__sagec_8php_a4}{menu\_\-regulation} (\$langue)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{menu__sagec_8php_a2}{
+\index{menu_sagec.php@{menu\_\-sagec.php}!gestion_des_lits@{gestion\_\-des\_\-lits}}
+\index{gestion_des_lits@{gestion\_\-des\_\-lits}!menu_sagec.php@{menu\_\-sagec.php}}
+\subsubsection[gestion\_\-des\_\-lits]{\setlength{\rightskip}{0pt plus 5cm}gestion\_\-des\_\-lits (\$ {\em langue})}}
+\label{menu__sagec_8php_a2}
+
+
+\hypertarget{menu__sagec_8php_a0}{
+\index{menu_sagec.php@{menu\_\-sagec.php}!menu_head@{menu\_\-head}}
+\index{menu_head@{menu\_\-head}!menu_sagec.php@{menu\_\-sagec.php}}
+\subsubsection[menu\_\-head]{\setlength{\rightskip}{0pt plus 5cm}menu\_\-head (\$ {\em titre})}}
+\label{menu__sagec_8php_a0}
+
+
+\hypertarget{menu__sagec_8php_a3}{
+\index{menu_sagec.php@{menu\_\-sagec.php}!menu_maj_des_lits@{menu\_\-maj\_\-des\_\-lits}}
+\index{menu_maj_des_lits@{menu\_\-maj\_\-des\_\-lits}!menu_sagec.php@{menu\_\-sagec.php}}
+\subsubsection[menu\_\-maj\_\-des\_\-lits]{\setlength{\rightskip}{0pt plus 5cm}menu\_\-maj\_\-des\_\-lits (\$ {\em langue})}}
+\label{menu__sagec_8php_a3}
+
+
+\hypertarget{menu__sagec_8php_a4}{
+\index{menu_sagec.php@{menu\_\-sagec.php}!menu_regulation@{menu\_\-regulation}}
+\index{menu_regulation@{menu\_\-regulation}!menu_sagec.php@{menu\_\-sagec.php}}
+\subsubsection[menu\_\-regulation]{\setlength{\rightskip}{0pt plus 5cm}menu\_\-regulation (\$ {\em langue})}}
+\label{menu__sagec_8php_a4}
+
+
+\hypertarget{menu__sagec_8php_a1}{
+\index{menu_sagec.php@{menu\_\-sagec.php}!MenuLits@{MenuLits}}
+\index{MenuLits@{MenuLits}!menu_sagec.php@{menu\_\-sagec.php}}
+\subsubsection[MenuLits]{\setlength{\rightskip}{0pt plus 5cm}Menu\-Lits (\$ {\em langue})}}
+\label{menu__sagec_8php_a1}
+
+

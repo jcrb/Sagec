@@ -1,0 +1,268 @@
+\hypertarget{reporting__graphe_8php}{
+\section{R\'{e}f\'{e}rence du fichier reporting\_\-graphe.php}
+\label{reporting__graphe_8php}\index{reporting_graphe.php@{reporting\_\-graphe.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{reporting__graphe_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{reporting__graphe_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{reporting__graphe_8php_a2}{\$date1} = f\-Date2unix(\$\_\-GET\mbox{[}date1\mbox{]})
+\item 
+\hyperlink{reporting__graphe_8php_a3}{\$date2} = f\-Date2unix(\$\_\-GET\mbox{[}date2\mbox{]})
+\item 
+\hyperlink{reporting__graphe_8php_a4}{\$requete}
+\item 
+\hyperlink{reporting__graphe_8php_a5}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{reporting__graphe_8php_a6}{\$nb\_\-jour} = (\$date2-\$date1)/\$jour
+\item 
+\hyperlink{reporting__graphe_8php_a7}{\$U\_\-haut} = max(\$lits\_\-dispo)+5
+\item 
+\hyperlink{reporting__graphe_8php_a8}{\$U\_\-bas} = 0
+\item 
+\hyperlink{reporting__graphe_8php_a9}{\$U\_\-gauche} = \$date1
+\item 
+\hyperlink{reporting__graphe_8php_a10}{\$U\_\-droit} = \$date2
+\item 
+\hyperlink{reporting__graphe_8php_a11}{\$dfc} = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$U\_\-haut,\$U\_\-gauche,\$U\_\-bas,\$U\_\-droit)
+\item 
+\hyperlink{reporting__graphe_8php_a12}{\$haute} = 20
+\item 
+\hyperlink{reporting__graphe_8php_a13}{\$basse} = 100
+\item 
+\hyperlink{reporting__graphe_8php_a14}{\$gauche} = 35
+\item 
+\hyperlink{reporting__graphe_8php_a15}{\$droite} = 20
+\item 
+\hyperlink{reporting__graphe_8php_a16}{\$vert\_\-clair} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x99,0xff,0x66)
+\item 
+\hyperlink{reporting__graphe_8php_a17}{\$vert} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0xff,0x00)
+\item 
+\hyperlink{reporting__graphe_8php_a18}{\$orange} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x66,0x00)
+\item 
+\hyperlink{reporting__graphe_8php_a19}{\$rouge} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x00,0x00)
+\item 
+\hyperlink{reporting__graphe_8php_a20}{\$bleu} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0x66,0xff)
+\item 
+\hyperlink{reporting__graphe_8php_a21}{\$xinc} = 1$\ast$\$jour
+\item 
+\hyperlink{reporting__graphe_8php_a22}{\$xinter} = 1
+\item 
+\hyperlink{reporting__graphe_8php_a23}{\$mot} = \char`\"{}Nombre de lits disponibles\char`\"{}
+\item 
+\hyperlink{reporting__graphe_8php_a24}{\$y} = (400+strlen(\$mot)$\ast$5)/2
+\item 
+\$dfc \hyperlink{reporting__graphe_8php_a25}{\$couleur\_\-courante} = \$rouge
+\item 
+\hyperlink{reporting__graphe_8php_a26}{\$elem} = each(\$lits\_\-dispo)
+\item 
+\hyperlink{reporting__graphe_8php_a27}{\$x} = \$elem\mbox{[}'key'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{reporting__graphe_8php_a13}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$basse@{\$basse}}
+\index{$basse@{\$basse}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$basse]{\setlength{\rightskip}{0pt plus 5cm}\$basse = 100}}
+\label{reporting__graphe_8php_a13}
+
+
+\hypertarget{reporting__graphe_8php_a20}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$bleu@{\$bleu}}
+\index{$bleu@{\$bleu}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$bleu]{\setlength{\rightskip}{0pt plus 5cm}\$bleu = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0x66,0xff)}}
+\label{reporting__graphe_8php_a20}
+
+
+\hypertarget{reporting__graphe_8php_a1}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{reporting__graphe_8php_a1}
+
+
+\hypertarget{reporting__graphe_8php_a25}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$couleur_courante@{\$couleur\_\-courante}}
+\index{$couleur_courante@{\$couleur\_\-courante}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$couleur\_\-courante]{\setlength{\rightskip}{0pt plus 5cm}\$dfc \$couleur\_\-courante = \$rouge}}
+\label{reporting__graphe_8php_a25}
+
+
+\hypertarget{reporting__graphe_8php_a2}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$date1@{\$date1}}
+\index{$date1@{\$date1}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$date1]{\setlength{\rightskip}{0pt plus 5cm}\$date1 = f\-Date2unix(\$\_\-GET\mbox{[}date1\mbox{]})}}
+\label{reporting__graphe_8php_a2}
+
+
+\hypertarget{reporting__graphe_8php_a3}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$date2@{\$date2}}
+\index{$date2@{\$date2}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$date2]{\setlength{\rightskip}{0pt plus 5cm}\$date2 = f\-Date2unix(\$\_\-GET\mbox{[}date2\mbox{]})}}
+\label{reporting__graphe_8php_a3}
+
+
+\hypertarget{reporting__graphe_8php_a11}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$dfc@{\$dfc}}
+\index{$dfc@{\$dfc}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$dfc]{\setlength{\rightskip}{0pt plus 5cm}\$dfc = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$U\_\-haut,\$U\_\-gauche,\$U\_\-bas,\$U\_\-droit)}}
+\label{reporting__graphe_8php_a11}
+
+
+\hypertarget{reporting__graphe_8php_a15}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$droite@{\$droite}}
+\index{$droite@{\$droite}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$droite]{\setlength{\rightskip}{0pt plus 5cm}\$droite = 20}}
+\label{reporting__graphe_8php_a15}
+
+
+\hypertarget{reporting__graphe_8php_a26}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$elem@{\$elem}}
+\index{$elem@{\$elem}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$elem]{\setlength{\rightskip}{0pt plus 5cm}\$elem = each(\$lits\_\-dispo)}}
+\label{reporting__graphe_8php_a26}
+
+
+\hypertarget{reporting__graphe_8php_a14}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$gauche@{\$gauche}}
+\index{$gauche@{\$gauche}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$gauche]{\setlength{\rightskip}{0pt plus 5cm}\$gauche = 35}}
+\label{reporting__graphe_8php_a14}
+
+
+\hypertarget{reporting__graphe_8php_a12}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$haute@{\$haute}}
+\index{$haute@{\$haute}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$haute]{\setlength{\rightskip}{0pt plus 5cm}\$haute = 20}}
+\label{reporting__graphe_8php_a12}
+
+
+\hypertarget{reporting__graphe_8php_a0}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{reporting__graphe_8php_a0}
+
+
+\hypertarget{reporting__graphe_8php_a23}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \char`\"{}Nombre de lits disponibles\char`\"{}}}
+\label{reporting__graphe_8php_a23}
+
+
+\hypertarget{reporting__graphe_8php_a6}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$nb_jour@{\$nb\_\-jour}}
+\index{$nb_jour@{\$nb\_\-jour}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$nb\_\-jour]{\setlength{\rightskip}{0pt plus 5cm}\$nb\_\-jour = (\$date2-\$date1)/\$jour}}
+\label{reporting__graphe_8php_a6}
+
+
+\hypertarget{reporting__graphe_8php_a18}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$orange@{\$orange}}
+\index{$orange@{\$orange}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$orange]{\setlength{\rightskip}{0pt plus 5cm}\$orange = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x66,0x00)}}
+\label{reporting__graphe_8php_a18}
+
+
+\hypertarget{reporting__graphe_8php_a4}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{reporting__graphe_8php_a4}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "SELECT date, lits_dispo,lits_journal.service_ID
+                        FROM lits_journal, service
+                        WHERE lits_journal.service_ID = service.service_ID "
+\end{verbatim}\normalsize 
+\hypertarget{reporting__graphe_8php_a5}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{reporting__graphe_8php_a5}
+
+
+\hypertarget{reporting__graphe_8php_a19}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$rouge@{\$rouge}}
+\index{$rouge@{\$rouge}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$rouge]{\setlength{\rightskip}{0pt plus 5cm}\$rouge = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x00,0x00)}}
+\label{reporting__graphe_8php_a19}
+
+
+\hypertarget{reporting__graphe_8php_a8}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$U_bas@{\$U\_\-bas}}
+\index{$U_bas@{\$U\_\-bas}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$U\_\-bas]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-bas = 0}}
+\label{reporting__graphe_8php_a8}
+
+
+\hypertarget{reporting__graphe_8php_a10}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$U_droit@{\$U\_\-droit}}
+\index{$U_droit@{\$U\_\-droit}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$U\_\-droit]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-droit = \$date2}}
+\label{reporting__graphe_8php_a10}
+
+
+\hypertarget{reporting__graphe_8php_a9}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$U_gauche@{\$U\_\-gauche}}
+\index{$U_gauche@{\$U\_\-gauche}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$U\_\-gauche]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-gauche = \$date1}}
+\label{reporting__graphe_8php_a9}
+
+
+\hypertarget{reporting__graphe_8php_a7}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$U_haut@{\$U\_\-haut}}
+\index{$U_haut@{\$U\_\-haut}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$U\_\-haut]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-haut = max(\$lits\_\-dispo)+5}}
+\label{reporting__graphe_8php_a7}
+
+
+\hypertarget{reporting__graphe_8php_a17}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$vert@{\$vert}}
+\index{$vert@{\$vert}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$vert]{\setlength{\rightskip}{0pt plus 5cm}\$vert = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0xff,0x00)}}
+\label{reporting__graphe_8php_a17}
+
+
+\hypertarget{reporting__graphe_8php_a16}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$vert_clair@{\$vert\_\-clair}}
+\index{$vert_clair@{\$vert\_\-clair}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$vert\_\-clair]{\setlength{\rightskip}{0pt plus 5cm}\$vert\_\-clair = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x99,0xff,0x66)}}
+\label{reporting__graphe_8php_a16}
+
+
+\hypertarget{reporting__graphe_8php_a27}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$x@{\$x}}
+\index{$x@{\$x}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$x]{\setlength{\rightskip}{0pt plus 5cm}\$x = \$elem\mbox{[}'key'\mbox{]}}}
+\label{reporting__graphe_8php_a27}
+
+
+\hypertarget{reporting__graphe_8php_a21}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$xinc@{\$xinc}}
+\index{$xinc@{\$xinc}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$xinc]{\setlength{\rightskip}{0pt plus 5cm}\$xinc = 1$\ast$\$jour}}
+\label{reporting__graphe_8php_a21}
+
+
+\hypertarget{reporting__graphe_8php_a22}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$xinter@{\$xinter}}
+\index{$xinter@{\$xinter}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$xinter]{\setlength{\rightskip}{0pt plus 5cm}\$xinter = 1}}
+\label{reporting__graphe_8php_a22}
+
+
+\hypertarget{reporting__graphe_8php_a24}{
+\index{reporting_graphe.php@{reporting\_\-graphe.php}!$y@{\$y}}
+\index{$y@{\$y}!reporting_graphe.php@{reporting\_\-graphe.php}}
+\subsubsection[\$y]{\setlength{\rightskip}{0pt plus 5cm}\$y = (400+strlen(\$mot)$\ast$5)/2}}
+\label{reporting__graphe_8php_a24}
+
+

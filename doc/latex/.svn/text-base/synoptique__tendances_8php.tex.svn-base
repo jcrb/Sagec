@@ -1,0 +1,259 @@
+\hypertarget{synoptique__tendances_8php}{
+\section{R\'{e}f\'{e}rence du fichier synoptique\_\-tendances.php}
+\label{synoptique__tendances_8php}\index{synoptique_tendances.php@{synoptique\_\-tendances.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{synoptique__tendances_8php_a25}{grille\-H} (\$dfc, \$ymin, \$ymax, \$ystep, \$c1, \$c2, \$xmin, \$xmax)
+\item 
+\hyperlink{synoptique__tendances_8php_a26}{grille\-V} (\$dfc, \$xmin, \$xmax, \$xstep, \$c1, \$c2, \$ymin, \$ymax)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{synoptique__tendances_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{synoptique__tendances_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{synoptique__tendances_8php_a2}{\$service} = \char`\"{}3\char`\"{}
+\item 
+\hyperlink{synoptique__tendances_8php_a3}{\$one\-Day} = 86400
+\item 
+\hyperlink{synoptique__tendances_8php_a4}{\$requete} = \char`\"{}SELECT date,lits\_\-dispo FROM lits\_\-journal WHERE service\_\-ID = '\$service' ORDER BY date\char`\"{}
+\item 
+\hyperlink{synoptique__tendances_8php_a5}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{synoptique__tendances_8php_a6}{\$dx} = date(\char`\"{}Y-m-d\char`\"{},\$tmin)
+\item 
+\hyperlink{synoptique__tendances_8php_a7}{\$tmin} = strtotime(\$dx)
+\item 
+\hyperlink{synoptique__tendances_8php_a8}{\$tmax} = max(\$t)+\$one\-Day
+\item 
+\hyperlink{synoptique__tendances_8php_a9}{\$vmin} = min(\$v)
+\item 
+\hyperlink{synoptique__tendances_8php_a10}{\$vmax} = max(\$v)
+\item 
+\hyperlink{synoptique__tendances_8php_a11}{\$U\_\-haut} = \$vmax + 1
+\item 
+\hyperlink{synoptique__tendances_8php_a12}{\$U\_\-bas} = 0
+\item 
+\hyperlink{synoptique__tendances_8php_a13}{\$U\_\-gauche} = \$tmin
+\item 
+\hyperlink{synoptique__tendances_8php_a14}{\$U\_\-droit} = \$tmax
+\item 
+\hyperlink{synoptique__tendances_8php_a15}{\$image\_\-width} = 800
+\item 
+\hyperlink{synoptique__tendances_8php_a16}{\$image\_\-heigth} = 400
+\item 
+\hyperlink{synoptique__tendances_8php_a17}{\$dfc} = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$U\_\-haut,\$U\_\-gauche,\$U\_\-bas,\$U\_\-droit)
+\item 
+\hyperlink{synoptique__tendances_8php_a18}{\$rouge} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x00,0x00)
+\item 
+\hyperlink{synoptique__tendances_8php_a19}{\$bleu} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0x00,0xff)
+\item 
+\hyperlink{synoptique__tendances_8php_a20}{\$vert} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0xff,0x00)
+\item 
+\hyperlink{synoptique__tendances_8php_a21}{\$vert\_\-clair} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x99,0xff,0x66)
+\item 
+\$dfc \hyperlink{synoptique__tendances_8php_a22}{\$couleur\_\-courante} = \$rouge
+\item 
+\hyperlink{synoptique__tendances_8php_a23}{\$t0} = date(\char`\"{}d/M/Y\char`\"{},\$tmin)
+\item 
+\hyperlink{synoptique__tendances_8php_a24}{\$t1} = date(\char`\"{}d/M/Y\char`\"{},\$tmax)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{synoptique__tendances_8php_a25}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!grilleH@{grilleH}}
+\index{grilleH@{grilleH}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[grilleH]{\setlength{\rightskip}{0pt plus 5cm}grille\-H (\$ {\em dfc}, \$ {\em ymin}, \$ {\em ymax}, \$ {\em ystep}, \$ {\em c1}, \$ {\em c2}, \$ {\em xmin}, \$ {\em xmax})}}
+\label{synoptique__tendances_8php_a25}
+
+
+\hypertarget{synoptique__tendances_8php_a26}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!grilleV@{grilleV}}
+\index{grilleV@{grilleV}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[grilleV]{\setlength{\rightskip}{0pt plus 5cm}grille\-V (\$ {\em dfc}, \$ {\em xmin}, \$ {\em xmax}, \$ {\em xstep}, \$ {\em c1}, \$ {\em c2}, \$ {\em ymin}, \$ {\em ymax})}}
+\label{synoptique__tendances_8php_a26}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{synoptique__tendances_8php_a19}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$bleu@{\$bleu}}
+\index{$bleu@{\$bleu}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$bleu]{\setlength{\rightskip}{0pt plus 5cm}\$bleu = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0x00,0xff)}}
+\label{synoptique__tendances_8php_a19}
+
+
+\hypertarget{synoptique__tendances_8php_a1}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{synoptique__tendances_8php_a1}
+
+
+\hypertarget{synoptique__tendances_8php_a22}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$couleur_courante@{\$couleur\_\-courante}}
+\index{$couleur_courante@{\$couleur\_\-courante}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$couleur\_\-courante]{\setlength{\rightskip}{0pt plus 5cm}\$dfc \$couleur\_\-courante = \$rouge}}
+\label{synoptique__tendances_8php_a22}
+
+
+\hypertarget{synoptique__tendances_8php_a17}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$dfc@{\$dfc}}
+\index{$dfc@{\$dfc}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$dfc]{\setlength{\rightskip}{0pt plus 5cm}\$dfc = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$U\_\-haut,\$U\_\-gauche,\$U\_\-bas,\$U\_\-droit)}}
+\label{synoptique__tendances_8php_a17}
+
+
+\hypertarget{synoptique__tendances_8php_a6}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$dx@{\$dx}}
+\index{$dx@{\$dx}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$dx]{\setlength{\rightskip}{0pt plus 5cm}\$dx = date(\char`\"{}Y-m-d\char`\"{},\$tmin)}}
+\label{synoptique__tendances_8php_a6}
+
+
+\hypertarget{synoptique__tendances_8php_a16}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$image_heigth@{\$image\_\-heigth}}
+\index{$image_heigth@{\$image\_\-heigth}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$image\_\-heigth]{\setlength{\rightskip}{0pt plus 5cm}\$image\_\-heigth = 400}}
+\label{synoptique__tendances_8php_a16}
+
+
+\hypertarget{synoptique__tendances_8php_a15}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$image_width@{\$image\_\-width}}
+\index{$image_width@{\$image\_\-width}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$image\_\-width]{\setlength{\rightskip}{0pt plus 5cm}\$image\_\-width = 800}}
+\label{synoptique__tendances_8php_a15}
+
+
+\hypertarget{synoptique__tendances_8php_a0}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{synoptique__tendances_8php_a0}
+
+
+\hypertarget{synoptique__tendances_8php_a3}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$oneDay@{\$oneDay}}
+\index{$oneDay@{\$oneDay}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$oneDay]{\setlength{\rightskip}{0pt plus 5cm}\$one\-Day = 86400}}
+\label{synoptique__tendances_8php_a3}
+
+
+\hypertarget{synoptique__tendances_8php_a4}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT date,lits\_\-dispo FROM lits\_\-journal WHERE service\_\-ID = '\$service' ORDER BY date\char`\"{}}}
+\label{synoptique__tendances_8php_a4}
+
+
+\hypertarget{synoptique__tendances_8php_a5}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{synoptique__tendances_8php_a5}
+
+
+\hypertarget{synoptique__tendances_8php_a18}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$rouge@{\$rouge}}
+\index{$rouge@{\$rouge}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$rouge]{\setlength{\rightskip}{0pt plus 5cm}\$rouge = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x00,0x00)}}
+\label{synoptique__tendances_8php_a18}
+
+
+\hypertarget{synoptique__tendances_8php_a2}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$service@{\$service}}
+\index{$service@{\$service}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$service]{\setlength{\rightskip}{0pt plus 5cm}\$service = \char`\"{}3\char`\"{}}}
+\label{synoptique__tendances_8php_a2}
+
+
+\hypertarget{synoptique__tendances_8php_a23}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$t0@{\$t0}}
+\index{$t0@{\$t0}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$t0]{\setlength{\rightskip}{0pt plus 5cm}\$t0 = date(\char`\"{}d/M/Y\char`\"{},\$tmin)}}
+\label{synoptique__tendances_8php_a23}
+
+
+\hypertarget{synoptique__tendances_8php_a24}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$t1@{\$t1}}
+\index{$t1@{\$t1}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$t1]{\setlength{\rightskip}{0pt plus 5cm}\$t1 = date(\char`\"{}d/M/Y\char`\"{},\$tmax)}}
+\label{synoptique__tendances_8php_a24}
+
+
+\hypertarget{synoptique__tendances_8php_a8}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$tmax@{\$tmax}}
+\index{$tmax@{\$tmax}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$tmax]{\setlength{\rightskip}{0pt plus 5cm}\$tmax = max(\$t)+\$one\-Day}}
+\label{synoptique__tendances_8php_a8}
+
+
+\hypertarget{synoptique__tendances_8php_a7}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$tmin@{\$tmin}}
+\index{$tmin@{\$tmin}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$tmin]{\setlength{\rightskip}{0pt plus 5cm}\$tmin = strtotime(\$dx)}}
+\label{synoptique__tendances_8php_a7}
+
+
+\hypertarget{synoptique__tendances_8php_a12}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$U_bas@{\$U\_\-bas}}
+\index{$U_bas@{\$U\_\-bas}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$U\_\-bas]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-bas = 0}}
+\label{synoptique__tendances_8php_a12}
+
+
+\hypertarget{synoptique__tendances_8php_a14}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$U_droit@{\$U\_\-droit}}
+\index{$U_droit@{\$U\_\-droit}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$U\_\-droit]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-droit = \$tmax}}
+\label{synoptique__tendances_8php_a14}
+
+
+\hypertarget{synoptique__tendances_8php_a13}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$U_gauche@{\$U\_\-gauche}}
+\index{$U_gauche@{\$U\_\-gauche}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$U\_\-gauche]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-gauche = \$tmin}}
+\label{synoptique__tendances_8php_a13}
+
+
+\hypertarget{synoptique__tendances_8php_a11}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$U_haut@{\$U\_\-haut}}
+\index{$U_haut@{\$U\_\-haut}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$U\_\-haut]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-haut = \$vmax + 1}}
+\label{synoptique__tendances_8php_a11}
+
+
+\hypertarget{synoptique__tendances_8php_a20}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$vert@{\$vert}}
+\index{$vert@{\$vert}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$vert]{\setlength{\rightskip}{0pt plus 5cm}\$vert = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0xff,0x00)}}
+\label{synoptique__tendances_8php_a20}
+
+
+\hypertarget{synoptique__tendances_8php_a21}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$vert_clair@{\$vert\_\-clair}}
+\index{$vert_clair@{\$vert\_\-clair}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$vert\_\-clair]{\setlength{\rightskip}{0pt plus 5cm}\$vert\_\-clair = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x99,0xff,0x66)}}
+\label{synoptique__tendances_8php_a21}
+
+
+\hypertarget{synoptique__tendances_8php_a10}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$vmax@{\$vmax}}
+\index{$vmax@{\$vmax}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$vmax]{\setlength{\rightskip}{0pt plus 5cm}\$vmax = max(\$v)}}
+\label{synoptique__tendances_8php_a10}
+
+
+\hypertarget{synoptique__tendances_8php_a9}{
+\index{synoptique_tendances.php@{synoptique\_\-tendances.php}!$vmin@{\$vmin}}
+\index{$vmin@{\$vmin}!synoptique_tendances.php@{synoptique\_\-tendances.php}}
+\subsubsection[\$vmin]{\setlength{\rightskip}{0pt plus 5cm}\$vmin = min(\$v)}}
+\label{synoptique__tendances_8php_a9}
+
+

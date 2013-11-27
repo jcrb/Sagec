@@ -1,0 +1,46 @@
+/* brule.css */
+
+/**
+* le code qui suit est indispensable pour microsoft
+* car incompatibilité IE6 et position: absolute
+*/
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#map {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+ul#menu
+{
+	margin: 0;
+	padding: 0;
+	font:bold 2em georgia, Times, serif;
+	list-style-type:none;
+}
+
+#menu a
+{
+	display: block;
+	margin: 5px 0;
+	color:green;
+	text-decoration: none;
+	line-height: 50px;
+	width: 150px;
+	border: 1px solid black;
+	background: #fc0;
+	text-align: center;
+}
+
+#menu a:hover
+{
+	color:orange;
+	background: green;
+}

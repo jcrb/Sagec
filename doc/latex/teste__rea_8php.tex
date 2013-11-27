@@ -1,0 +1,59 @@
+\hypertarget{teste__rea_8php}{
+\section{R\'{e}f\'{e}rence du fichier teste\_\-rea.php}
+\label{teste__rea_8php}\index{teste_rea.php@{teste\_\-rea.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{teste__rea_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{teste__rea_8php_a1}{\$liste} = \char`\"{}(67,68)\char`\"{}
+\item 
+\hyperlink{teste__rea_8php_a2}{\$requete}
+\item 
+\hyperlink{teste__rea_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{teste__rea_8php_a0}{
+\index{teste_rea.php@{teste\_\-rea.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!teste_rea.php@{teste\_\-rea.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{teste__rea_8php_a0}
+
+
+\hypertarget{teste__rea_8php_a1}{
+\index{teste_rea.php@{teste\_\-rea.php}!$liste@{\$liste}}
+\index{$liste@{\$liste}!teste_rea.php@{teste\_\-rea.php}}
+\subsubsection[\$liste]{\setlength{\rightskip}{0pt plus 5cm}\$liste = \char`\"{}(67,68)\char`\"{}}}
+\label{teste__rea_8php_a1}
+
+
+\hypertarget{teste__rea_8php_a2}{
+\index{teste_rea.php@{teste\_\-rea.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!teste_rea.php@{teste\_\-rea.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{teste__rea_8php_a2}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "SELECT service_nom,Hop_nom,SUM(lits_dispo),ville_nom,ville_LambertX, ville_LambertY
+                FROM service,hopital,lits,ville,adresse
+                WHERE service.type_ID = '2'
+                AND service.hop_ID = hopital.Hop_ID
+                AND lits.service_ID = service.service_ID
+                AND ville.ville_ID = adresse.ville_ID
+                AND adresse.ad_ID = hopital.adresse_ID
+                AND ville.departement_ID IN $liste
+                GROUP BY ville_nom
+                "
+\end{verbatim}\normalsize 
+\hypertarget{teste__rea_8php_a3}{
+\index{teste_rea.php@{teste\_\-rea.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!teste_rea.php@{teste\_\-rea.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{teste__rea_8php_a3}
+
+

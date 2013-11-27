@@ -1,0 +1,55 @@
+\hypertarget{assu__a__appeler_8php}{
+\section{R\'{e}f\'{e}rence du fichier assu\_\-a\_\-appeler.php}
+\label{assu__a__appeler_8php}\index{assu_a_appeler.php@{assu\_\-a\_\-appeler.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{assu__a__appeler_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{assu__a__appeler_8php_a1}{\$requete} = \char`\"{}SELECT MAX(ordre) FROM apa\_\-tour\char`\"{}
+\item 
+\hyperlink{assu__a__appeler_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{assu__a__appeler_8php_a3}{\$max} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{assu__a__appeler_8php_a4}{\$rub} = Ligne\-Suivante(\$resultat)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{assu__a__appeler_8php_a0}{
+\index{assu_a_appeler.php@{assu\_\-a\_\-appeler.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!assu_a_appeler.php@{assu\_\-a\_\-appeler.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{assu__a__appeler_8php_a0}
+
+
+\hypertarget{assu__a__appeler_8php_a3}{
+\index{assu_a_appeler.php@{assu\_\-a\_\-appeler.php}!$max@{\$max}}
+\index{$max@{\$max}!assu_a_appeler.php@{assu\_\-a\_\-appeler.php}}
+\subsubsection[\$max]{\setlength{\rightskip}{0pt plus 5cm}\$max = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{assu__a__appeler_8php_a3}
+
+
+\hypertarget{assu__a__appeler_8php_a1}{
+\index{assu_a_appeler.php@{assu\_\-a\_\-appeler.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!assu_a_appeler.php@{assu\_\-a\_\-appeler.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT MAX(ordre) FROM apa\_\-tour\char`\"{}}}
+\label{assu__a__appeler_8php_a1}
+
+
+\hypertarget{assu__a__appeler_8php_a2}{
+\index{assu_a_appeler.php@{assu\_\-a\_\-appeler.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!assu_a_appeler.php@{assu\_\-a\_\-appeler.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{assu__a__appeler_8php_a2}
+
+
+\hypertarget{assu__a__appeler_8php_a4}{
+\index{assu_a_appeler.php@{assu\_\-a\_\-appeler.php}!$rub@{\$rub}}
+\index{$rub@{\$rub}!assu_a_appeler.php@{assu\_\-a\_\-appeler.php}}
+\subsubsection[\$rub]{\setlength{\rightskip}{0pt plus 5cm}\$rub = Ligne\-Suivante(\$resultat)}}
+\label{assu__a__appeler_8php_a4}
+
+

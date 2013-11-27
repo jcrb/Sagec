@@ -1,0 +1,37 @@
+\hypertarget{requete__sup_8php}{
+\section{R\'{e}f\'{e}rence du fichier requete\_\-sup.php}
+\label{requete__sup_8php}\index{requete_sup.php@{requete\_\-sup.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{requete__sup_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{requete__sup_8php_a1}{\$a} = \char`\"{}$<$a href=$\backslash$\char`\"{}../../administrateur\_\-menu.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-parent$\backslash$\char`\"{}$>$\char`\"{}.\$string\_\-lang\mbox{[}'RETOUR'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{}$<$/a$>$\char`\"{}
+\item 
+\hyperlink{requete__sup_8php_a2}{\$menu} = \$a.\char`\"{} $|$ \char`\"{}.\$b.\char`\"{} $|$ \char`\"{}.\$c
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{requete__sup_8php_a1}{
+\index{requete_sup.php@{requete\_\-sup.php}!$a@{\$a}}
+\index{$a@{\$a}!requete_sup.php@{requete\_\-sup.php}}
+\subsubsection[\$a]{\setlength{\rightskip}{0pt plus 5cm}\$a = \char`\"{}$<$a href=$\backslash$\char`\"{}../../administrateur\_\-menu.php$\backslash$\char`\"{} target=$\backslash$\char`\"{}\_\-parent$\backslash$\char`\"{}$>$\char`\"{}.\$string\_\-lang\mbox{[}'RETOUR'\mbox{]}\mbox{[}\$langue\mbox{]}.\char`\"{}$<$/a$>$\char`\"{}}}
+\label{requete__sup_8php_a1}
+
+
+\hypertarget{requete__sup_8php_a0}{
+\index{requete_sup.php@{requete\_\-sup.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!requete_sup.php@{requete\_\-sup.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{requete__sup_8php_a0}
+
+
+\hypertarget{requete__sup_8php_a2}{
+\index{requete_sup.php@{requete\_\-sup.php}!$menu@{\$menu}}
+\index{$menu@{\$menu}!requete_sup.php@{requete\_\-sup.php}}
+\subsubsection[\$menu]{\setlength{\rightskip}{0pt plus 5cm}\$menu = \$a.\char`\"{} $|$ \char`\"{}.\$b.\char`\"{} $|$ \char`\"{}.\$c}}
+\label{requete__sup_8php_a2}
+
+

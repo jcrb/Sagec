@@ -1,0 +1,60 @@
+\hypertarget{classIXR__Error}{
+\section{R\'{e}f\'{e}rence de la classe IXR\_\-Error}
+\label{classIXR__Error}\index{IXR_Error@{IXR\_\-Error}}
+}
+\subsection*{Fonctions membres publiques}
+\begin{CompactItemize}
+\item 
+\hyperlink{classIXR__Error_a0}{IXR\_\-Error} (\$code, \$message)
+\item 
+\hyperlink{classIXR__Error_a1}{get\-Xml} ()
+\end{CompactItemize}
+\subsection*{Attributs publics}
+\begin{CompactItemize}
+\item 
+\hyperlink{classIXR__Error_o0}{\$code}
+\item 
+\hyperlink{classIXR__Error_o1}{\$message}
+\end{CompactItemize}
+
+
+\subsection{Documentation des contructeurs et destructeur}
+\hypertarget{classIXR__Error_a0}{
+\index{IXR_Error@{IXR\_\-Error}!IXR_Error@{IXR\_\-Error}}
+\index{IXR_Error@{IXR\_\-Error}!IXR_Error@{IXR\_\-Error}}
+\subsubsection[IXR\_\-Error]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Error::IXR\_\-Error (\$ {\em code}, \$ {\em message})}}
+\label{classIXR__Error_a0}
+
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classIXR__Error_a1}{
+\index{IXR_Error@{IXR\_\-Error}!getXml@{getXml}}
+\index{getXml@{getXml}!IXR_Error@{IXR\_\-Error}}
+\subsubsection[getXml]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Error::get\-Xml ()}}
+\label{classIXR__Error_a1}
+
+
+
+
+\subsection{Documentation des donn\'{e}es membres}
+\hypertarget{classIXR__Error_o0}{
+\index{IXR_Error@{IXR\_\-Error}!$code@{\$code}}
+\index{$code@{\$code}!IXR_Error@{IXR\_\-Error}}
+\subsubsection[\$code]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Error::\$code}}
+\label{classIXR__Error_o0}
+
+
+\hypertarget{classIXR__Error_o1}{
+\index{IXR_Error@{IXR\_\-Error}!$message@{\$message}}
+\index{$message@{\$message}!IXR_Error@{IXR\_\-Error}}
+\subsubsection[\$message]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Error::\$message}}
+\label{classIXR__Error_o1}
+
+
+
+
+La documentation de cette classe a \'{e}t\'{e} g\'{e}n\'{e}r\'{e}e \`{a} partir du fichier suivant:\begin{CompactItemize}
+\item 
+\hyperlink{IXR__Library_8inc_8php}{IXR\_\-Library.inc.php}\end{CompactItemize}

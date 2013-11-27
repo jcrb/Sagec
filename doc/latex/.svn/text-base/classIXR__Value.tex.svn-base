@@ -1,0 +1,78 @@
+\hypertarget{classIXR__Value}{
+\section{R\'{e}f\'{e}rence de la classe IXR\_\-Value}
+\label{classIXR__Value}\index{IXR_Value@{IXR\_\-Value}}
+}
+\subsection*{Fonctions membres publiques}
+\begin{CompactItemize}
+\item 
+\hyperlink{classIXR__Value_a0}{IXR\_\-Value} (\$data, \$type=false)
+\item 
+\hyperlink{classIXR__Value_a1}{calculate\-Type} ()
+\item 
+\hyperlink{classIXR__Value_a2}{get\-Xml} ()
+\item 
+\hyperlink{classIXR__Value_a3}{is\-Struct} (\$array)
+\end{CompactItemize}
+\subsection*{Attributs publics}
+\begin{CompactItemize}
+\item 
+\hyperlink{classIXR__Value_o0}{\$data}
+\item 
+\hyperlink{classIXR__Value_o1}{\$type}
+\end{CompactItemize}
+
+
+\subsection{Documentation des contructeurs et destructeur}
+\hypertarget{classIXR__Value_a0}{
+\index{IXR_Value@{IXR\_\-Value}!IXR_Value@{IXR\_\-Value}}
+\index{IXR_Value@{IXR\_\-Value}!IXR_Value@{IXR\_\-Value}}
+\subsubsection[IXR\_\-Value]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Value::IXR\_\-Value (\$ {\em data}, \$ {\em type} = {\tt false})}}
+\label{classIXR__Value_a0}
+
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classIXR__Value_a1}{
+\index{IXR_Value@{IXR\_\-Value}!calculateType@{calculateType}}
+\index{calculateType@{calculateType}!IXR_Value@{IXR\_\-Value}}
+\subsubsection[calculateType]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Value::calculate\-Type ()}}
+\label{classIXR__Value_a1}
+
+
+\hypertarget{classIXR__Value_a2}{
+\index{IXR_Value@{IXR\_\-Value}!getXml@{getXml}}
+\index{getXml@{getXml}!IXR_Value@{IXR\_\-Value}}
+\subsubsection[getXml]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Value::get\-Xml ()}}
+\label{classIXR__Value_a2}
+
+
+\hypertarget{classIXR__Value_a3}{
+\index{IXR_Value@{IXR\_\-Value}!isStruct@{isStruct}}
+\index{isStruct@{isStruct}!IXR_Value@{IXR\_\-Value}}
+\subsubsection[isStruct]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Value::is\-Struct (\$ {\em array})}}
+\label{classIXR__Value_a3}
+
+
+
+
+\subsection{Documentation des donn\'{e}es membres}
+\hypertarget{classIXR__Value_o0}{
+\index{IXR_Value@{IXR\_\-Value}!$data@{\$data}}
+\index{$data@{\$data}!IXR_Value@{IXR\_\-Value}}
+\subsubsection[\$data]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Value::\$data}}
+\label{classIXR__Value_o0}
+
+
+\hypertarget{classIXR__Value_o1}{
+\index{IXR_Value@{IXR\_\-Value}!$type@{\$type}}
+\index{$type@{\$type}!IXR_Value@{IXR\_\-Value}}
+\subsubsection[\$type]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Value::\$type}}
+\label{classIXR__Value_o1}
+
+
+
+
+La documentation de cette classe a \'{e}t\'{e} g\'{e}n\'{e}r\'{e}e \`{a} partir du fichier suivant:\begin{CompactItemize}
+\item 
+\hyperlink{IXR__Library_8inc_8php}{IXR\_\-Library.inc.php}\end{CompactItemize}

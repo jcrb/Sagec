@@ -1,0 +1,28 @@
+\hypertarget{superviseur__service_8php}{
+\section{R\'{e}f\'{e}rence du fichier superviseur\_\-service.php}
+\label{superviseur__service_8php}\index{superviseur_service.php@{superviseur\_\-service.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{superviseur__service_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{superviseur__service_8php_a1}{\$mot} = \$string\_\-lang\mbox{[}'SELECTIONNER\_\-SERVICE'\mbox{]}\mbox{[}\$langue\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{superviseur__service_8php_a0}{
+\index{superviseur_service.php@{superviseur\_\-service.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!superviseur_service.php@{superviseur\_\-service.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{superviseur__service_8php_a0}
+
+
+\hypertarget{superviseur__service_8php_a1}{
+\index{superviseur_service.php@{superviseur\_\-service.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!superviseur_service.php@{superviseur\_\-service.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'SELECTIONNER\_\-SERVICE'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{superviseur__service_8php_a1}
+
+

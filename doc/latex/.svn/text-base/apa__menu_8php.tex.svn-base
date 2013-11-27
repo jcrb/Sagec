@@ -1,0 +1,28 @@
+\hypertarget{apa__menu_8php}{
+\section{R\'{e}f\'{e}rence du fichier apa\_\-menu.php}
+\label{apa__menu_8php}\index{apa_menu.php@{apa\_\-menu.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{apa__menu_8php_a0}{\$\_\-SESSION} \mbox{[}\char`\"{}langue\char`\"{}\mbox{]} = 'FR'
+\item 
+\hyperlink{apa__menu_8php_a1}{\$mot} = \char`\"{}Vous \^{e}tes enregistr\'{e} en tant qu'utilisateur \hyperlink{utilitaires_2html_8php_a0}{n}176\char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{apa__menu_8php_a0}{
+\index{apa_menu.php@{apa\_\-menu.php}!$_SESSION@{\$\_\-SESSION}}
+\index{$_SESSION@{\$\_\-SESSION}!apa_menu.php@{apa\_\-menu.php}}
+\subsubsection[\$\_\-SESSION]{\setlength{\rightskip}{0pt plus 5cm}\$\_\-SESSION\mbox{[}\char`\"{}langue\char`\"{}\mbox{]} = 'FR'}}
+\label{apa__menu_8php_a0}
+
+
+\hypertarget{apa__menu_8php_a1}{
+\index{apa_menu.php@{apa\_\-menu.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!apa_menu.php@{apa\_\-menu.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \char`\"{}Vous \^{e}tes enregistr\'{e} en tant qu'utilisateur \hyperlink{utilitaires_2html_8php_a0}{n}176\char`\"{}}}
+\label{apa__menu_8php_a1}
+
+

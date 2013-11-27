@@ -1,0 +1,19 @@
+\hypertarget{export__fichier__sagec_8php}{
+\section{R\'{e}f\'{e}rence du fichier export\_\-fichier\_\-sagec.php}
+\label{export__fichier__sagec_8php}\index{export_fichier_sagec.php@{export\_\-fichier\_\-sagec.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{export__fichier__sagec_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{export__fichier__sagec_8php_a0}{
+\index{export_fichier_sagec.php@{export\_\-fichier\_\-sagec.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!export_fichier_sagec.php@{export\_\-fichier\_\-sagec.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{export__fichier__sagec_8php_a0}
+
+

@@ -1,0 +1,19 @@
+\hypertarget{medicament__liste_8php}{
+\section{R\'{e}f\'{e}rence du fichier medicament\_\-liste.php}
+\label{medicament__liste_8php}\index{medicament_liste.php@{medicament\_\-liste.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{medicament__liste_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{medicament__liste_8php_a0}{
+\index{medicament_liste.php@{medicament\_\-liste.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!medicament_liste.php@{medicament\_\-liste.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{medicament__liste_8php_a0}
+
+

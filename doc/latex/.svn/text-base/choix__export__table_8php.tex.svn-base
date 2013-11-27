@@ -1,0 +1,33 @@
+\hypertarget{choix__export__table_8php}{
+\section{R\'{e}f\'{e}rence du fichier choix\_\-export\_\-table.php}
+\label{choix__export__table_8php}\index{choix_export_table.php@{choix\_\-export\_\-table.php}}
+}
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespacechoix__export__table_1_1php}{choix\_\-export\_\-table::php}
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{choix__export__table_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{choix__export__table_8php_a1}{\$connect} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{choix__export__table_8php_a1}{
+\index{choix_export_table.php@{choix\_\-export\_\-table.php}!$connect@{\$connect}}
+\index{$connect@{\$connect}!choix_export_table.php@{choix\_\-export\_\-table.php}}
+\subsubsection[\$connect]{\setlength{\rightskip}{0pt plus 5cm}\$connect = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{choix__export__table_8php_a1}
+
+
+\hypertarget{choix__export__table_8php_a0}{
+\index{choix_export_table.php@{choix\_\-export\_\-table.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!choix_export_table.php@{choix\_\-export\_\-table.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{choix__export__table_8php_a0}
+
+

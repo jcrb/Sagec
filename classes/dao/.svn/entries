@@ -1,0 +1,64 @@
+8
+
+dir
+16836
+http://subversion/dev/applications/metier/sagec/branches/dev/SAGEC67/classes/dao
+http://subversion/dev
+
+
+
+2009-11-18T14:25:26.636901Z
+16723
+nolddomi
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+66cce6ef-e1d4-0310-aa0e-9de41584db37
+
+Filtre.class.php
+file
+
+
+
+
+2009-11-27T19:53:12.968750Z
+e8b9dfdc81e6ac1061071b1af88c3c6c
+2009-11-16T08:38:42.815826Z
+16633
+nolddomi
+
+structure
+dir
+
+veille
+dir
+
+pool.class.php
+file
+
+
+
+
+2009-11-27T19:53:12.984375Z
+567695c0b63959d58c1b5342c98b3af8
+2009-03-24T12:39:03.678367Z
+13579
+nolddomi
+
+personne
+dir
+
+util
+dir
+

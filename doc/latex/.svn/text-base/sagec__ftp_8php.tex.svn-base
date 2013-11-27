@@ -1,0 +1,29 @@
+\hypertarget{sagec__ftp_8php}{
+\section{R\'{e}f\'{e}rence du fichier sagec\_\-ftp.php}
+\label{sagec__ftp_8php}\index{sagec_ftp.php@{sagec\_\-ftp.php}}
+}
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespaceSagec67}{Sagec67}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classsagec__ftp}{sagec\_\-ftp}
+\end{CompactItemize}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{sagec__ftp_8php_a0}{send\_\-file} (\$local, \$remote)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{sagec__ftp_8php_a0}{
+\index{sagec_ftp.php@{sagec\_\-ftp.php}!send_file@{send\_\-file}}
+\index{send_file@{send\_\-file}!sagec_ftp.php@{sagec\_\-ftp.php}}
+\subsubsection[send\_\-file]{\setlength{\rightskip}{0pt plus 5cm}send\_\-file (\$ {\em local}, \$ {\em remote})}}
+\label{sagec__ftp_8php_a0}
+
+

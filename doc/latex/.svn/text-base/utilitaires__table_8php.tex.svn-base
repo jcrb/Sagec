@@ -1,0 +1,24 @@
+\hypertarget{utilitaires__table_8php}{
+\section{R\'{e}f\'{e}rence du fichier utilitaires\_\-table.php}
+\label{utilitaires__table_8php}\index{utilitaires_table.php@{utilitaires\_\-table.php}}
+}
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespacechoix__export__table_1_1php}{choix\_\-export\_\-table::php}
+\end{CompactItemize}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{utilitaires__table_8php_a0}{listetable} (\$connect)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{utilitaires__table_8php_a0}{
+\index{utilitaires_table.php@{utilitaires\_\-table.php}!listetable@{listetable}}
+\index{listetable@{listetable}!utilitaires_table.php@{utilitaires\_\-table.php}}
+\subsubsection[listetable]{\setlength{\rightskip}{0pt plus 5cm}listetable (\$ {\em connect})}}
+\label{utilitaires__table_8php_a0}
+
+

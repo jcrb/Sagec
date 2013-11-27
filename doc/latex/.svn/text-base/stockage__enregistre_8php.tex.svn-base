@@ -1,0 +1,37 @@
+\hypertarget{stockage__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier stockage\_\-enregistre.php}
+\label{stockage__enregistre_8php}\index{stockage_enregistre.php@{stockage\_\-enregistre.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{stockage__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{stockage__enregistre_8php_a1}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{stockage__enregistre_8php_a2}{\$maj} = mysql\_\-insert\_\-id()
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{stockage__enregistre_8php_a0}{
+\index{stockage_enregistre.php@{stockage\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!stockage_enregistre.php@{stockage\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{stockage__enregistre_8php_a0}
+
+
+\hypertarget{stockage__enregistre_8php_a2}{
+\index{stockage_enregistre.php@{stockage\_\-enregistre.php}!$maj@{\$maj}}
+\index{$maj@{\$maj}!stockage_enregistre.php@{stockage\_\-enregistre.php}}
+\subsubsection[\$maj]{\setlength{\rightskip}{0pt plus 5cm}\$maj = mysql\_\-insert\_\-id()}}
+\label{stockage__enregistre_8php_a2}
+
+
+\hypertarget{stockage__enregistre_8php_a1}{
+\index{stockage_enregistre.php@{stockage\_\-enregistre.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!stockage_enregistre.php@{stockage\_\-enregistre.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{stockage__enregistre_8php_a1}
+
+

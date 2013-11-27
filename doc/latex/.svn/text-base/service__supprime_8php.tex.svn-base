@@ -1,0 +1,55 @@
+\hypertarget{service__supprime_8php}{
+\section{R\'{e}f\'{e}rence du fichier service\_\-supprime.php}
+\label{service__supprime_8php}\index{service_supprime.php@{service\_\-supprime.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{service__supprime_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{service__supprime_8php_a1}{\$mot} = \char`\"{}Supprimer un service\char`\"{}
+\item 
+\hyperlink{service__supprime_8php_a2}{\$requete} = \char`\"{}DELETE FROM service WHERE service\_\-ID = '\$\_\-GET\mbox{[}ttservice\mbox{]}'\char`\"{}
+\item 
+\hyperlink{service__supprime_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{service__supprime_8php_a4}{\$\_\-GET} \mbox{[}'service\_\-ID'\mbox{]} = \char`\"{}\char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{service__supprime_8php_a4}{
+\index{service_supprime.php@{service\_\-supprime.php}!$_GET@{\$\_\-GET}}
+\index{$_GET@{\$\_\-GET}!service_supprime.php@{service\_\-supprime.php}}
+\subsubsection[\$\_\-GET]{\setlength{\rightskip}{0pt plus 5cm}\$\_\-GET\mbox{[}'service\_\-ID'\mbox{]} = \char`\"{}\char`\"{}}}
+\label{service__supprime_8php_a4}
+
+
+\hypertarget{service__supprime_8php_a0}{
+\index{service_supprime.php@{service\_\-supprime.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!service_supprime.php@{service\_\-supprime.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{service__supprime_8php_a0}
+
+
+\hypertarget{service__supprime_8php_a1}{
+\index{service_supprime.php@{service\_\-supprime.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!service_supprime.php@{service\_\-supprime.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \char`\"{}Supprimer un service\char`\"{}}}
+\label{service__supprime_8php_a1}
+
+
+\hypertarget{service__supprime_8php_a2}{
+\index{service_supprime.php@{service\_\-supprime.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!service_supprime.php@{service\_\-supprime.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}DELETE FROM service WHERE service\_\-ID = '\$\_\-GET\mbox{[}ttservice\mbox{]}'\char`\"{}}}
+\label{service__supprime_8php_a2}
+
+
+\hypertarget{service__supprime_8php_a3}{
+\index{service_supprime.php@{service\_\-supprime.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!service_supprime.php@{service\_\-supprime.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{service__supprime_8php_a3}
+
+

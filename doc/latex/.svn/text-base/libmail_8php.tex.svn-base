@@ -1,0 +1,9 @@
+\hypertarget{libmail_8php}{
+\section{R\'{e}f\'{e}rence du fichier libmail.php}
+\label{libmail_8php}\index{libmail.php@{libmail.php}}
+}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classMail}{Mail}
+\end{CompactItemize}

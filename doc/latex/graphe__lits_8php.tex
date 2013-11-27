@@ -1,0 +1,165 @@
+\hypertarget{graphe__lits_8php}{
+\section{R\'{e}f\'{e}rence du fichier graphe\_\-lits.php}
+\label{graphe__lits_8php}\index{graphe_lits.php@{graphe\_\-lits.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{graphe__lits_8php_a14}{grille\-H} (\$d, \$ymax, \$ymin, \$yinc, \$yinter, \$xmin, \$xmax, \$c1, \$c2)
+\item 
+\hyperlink{graphe__lits_8php_a15}{grille\-V} (\$d, \$xmin, \$xmax, \$xinc, \$xinter, \$ymin, \$ymax, \$c1, \$c2)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{graphe__lits_8php_a0}{\$image\_\-width} = 900
+\item 
+\hyperlink{graphe__lits_8php_a1}{\$image\_\-heigth} = 200
+\item 
+\hyperlink{graphe__lits_8php_a2}{\$U\_\-haut} = 100
+\item 
+\hyperlink{graphe__lits_8php_a3}{\$U\_\-bas} = 0
+\item 
+\hyperlink{graphe__lits_8php_a4}{\$U\_\-gauche} = 0
+\item 
+\hyperlink{graphe__lits_8php_a5}{\$U\_\-droit} = 365
+\item 
+\hyperlink{graphe__lits_8php_a6}{\$dfc} = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$U\_\-haut,\$U\_\-gauche,\$U\_\-bas,\$U\_\-droit)
+\item 
+\hyperlink{graphe__lits_8php_a7}{\$vert\_\-clair} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x99,0xff,0x66)
+\item 
+\hyperlink{graphe__lits_8php_a8}{\$vert} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0xff,0x00)
+\item 
+\hyperlink{graphe__lits_8php_a9}{\$orange} = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x66,0x00)
+\item 
+\hyperlink{graphe__lits_8php_a10}{\$xinc} = 30
+\item 
+\hyperlink{graphe__lits_8php_a11}{\$xinter} = 15
+\item 
+\hyperlink{graphe__lits_8php_a12}{\$ferme} = explode(\char`\"{}$|$\char`\"{}, \$\_\-GET\mbox{[}ferme\mbox{]})
+\item 
+\hyperlink{graphe__lits_8php_a13}{\$essai} = \$\_\-GET\mbox{[}'essai'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{graphe__lits_8php_a14}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!grilleH@{grilleH}}
+\index{grilleH@{grilleH}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[grilleH]{\setlength{\rightskip}{0pt plus 5cm}grille\-H (\$ {\em d}, \$ {\em ymax}, \$ {\em ymin}, \$ {\em yinc}, \$ {\em yinter}, \$ {\em xmin}, \$ {\em xmax}, \$ {\em c1}, \$ {\em c2})}}
+\label{graphe__lits_8php_a14}
+
+
+Dessine une grillehorizontale \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em \$d}]adresse de la zone de dessin \item[{\em \$ymax}]ordonn\'{e}e la plus haute \item[{\em \$ymin}]ordonn\'{e}e la plus basse \item[{\em \$yinc}]incr\'{e}ment entre 2 lignes \item[{\em \$yinter}]ligne horizontale interm\'{e}diaire plus \'{e}paisse. 0 pour ne pas en mettre \item[{\em \$xmin}]abcisse minimale du trait \item[{\em \$xmax}]abcisse maximale du trait \item[{\em \$c1}]couleur du trait usuel \item[{\em \$c2}]couleur du trait \'{e}pais \end{description}
+\end{Desc}
+\hypertarget{graphe__lits_8php_a15}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!grilleV@{grilleV}}
+\index{grilleV@{grilleV}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[grilleV]{\setlength{\rightskip}{0pt plus 5cm}grille\-V (\$ {\em d}, \$ {\em xmin}, \$ {\em xmax}, \$ {\em xinc}, \$ {\em xinter}, \$ {\em ymin}, \$ {\em ymax}, \$ {\em c1}, \$ {\em c2})}}
+\label{graphe__lits_8php_a15}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{graphe__lits_8php_a6}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!$dfc@{\$dfc}}
+\index{$dfc@{\$dfc}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[\$dfc]{\setlength{\rightskip}{0pt plus 5cm}\$dfc = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$U\_\-haut,\$U\_\-gauche,\$U\_\-bas,\$U\_\-droit)}}
+\label{graphe__lits_8php_a6}
+
+
+\hypertarget{graphe__lits_8php_a13}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!$essai@{\$essai}}
+\index{$essai@{\$essai}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[\$essai]{\setlength{\rightskip}{0pt plus 5cm}\$essai = \$\_\-GET\mbox{[}'essai'\mbox{]}}}
+\label{graphe__lits_8php_a13}
+
+
+\hypertarget{graphe__lits_8php_a12}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!$ferme@{\$ferme}}
+\index{$ferme@{\$ferme}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[\$ferme]{\setlength{\rightskip}{0pt plus 5cm}\$ferme = explode(\char`\"{}$|$\char`\"{}, \$\_\-GET\mbox{[}ferme\mbox{]})}}
+\label{graphe__lits_8php_a12}
+
+
+\hypertarget{graphe__lits_8php_a1}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!$image_heigth@{\$image\_\-heigth}}
+\index{$image_heigth@{\$image\_\-heigth}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[\$image\_\-heigth]{\setlength{\rightskip}{0pt plus 5cm}\$image\_\-heigth = 200}}
+\label{graphe__lits_8php_a1}
+
+
+\hypertarget{graphe__lits_8php_a0}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!$image_width@{\$image\_\-width}}
+\index{$image_width@{\$image\_\-width}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[\$image\_\-width]{\setlength{\rightskip}{0pt plus 5cm}\$image\_\-width = 900}}
+\label{graphe__lits_8php_a0}
+
+
+\hypertarget{graphe__lits_8php_a9}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!$orange@{\$orange}}
+\index{$orange@{\$orange}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[\$orange]{\setlength{\rightskip}{0pt plus 5cm}\$orange = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0xff,0x66,0x00)}}
+\label{graphe__lits_8php_a9}
+
+
+\hypertarget{graphe__lits_8php_a3}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!$U_bas@{\$U\_\-bas}}
+\index{$U_bas@{\$U\_\-bas}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[\$U\_\-bas]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-bas = 0}}
+\label{graphe__lits_8php_a3}
+
+
+\hypertarget{graphe__lits_8php_a5}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!$U_droit@{\$U\_\-droit}}
+\index{$U_droit@{\$U\_\-droit}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[\$U\_\-droit]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-droit = 365}}
+\label{graphe__lits_8php_a5}
+
+
+\hypertarget{graphe__lits_8php_a4}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!$U_gauche@{\$U\_\-gauche}}
+\index{$U_gauche@{\$U\_\-gauche}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[\$U\_\-gauche]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-gauche = 0}}
+\label{graphe__lits_8php_a4}
+
+
+\hypertarget{graphe__lits_8php_a2}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!$U_haut@{\$U\_\-haut}}
+\index{$U_haut@{\$U\_\-haut}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[\$U\_\-haut]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-haut = 100}}
+\label{graphe__lits_8php_a2}
+
+
+\hypertarget{graphe__lits_8php_a8}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!$vert@{\$vert}}
+\index{$vert@{\$vert}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[\$vert]{\setlength{\rightskip}{0pt plus 5cm}\$vert = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x00,0xff,0x00)}}
+\label{graphe__lits_8php_a8}
+
+
+\hypertarget{graphe__lits_8php_a7}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!$vert_clair@{\$vert\_\-clair}}
+\index{$vert_clair@{\$vert\_\-clair}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[\$vert\_\-clair]{\setlength{\rightskip}{0pt plus 5cm}\$vert\_\-clair = imagecolor\-Allocate(\$dfc $\rightarrow$ pic,0x99,0xff,0x66)}}
+\label{graphe__lits_8php_a7}
+
+
+\hypertarget{graphe__lits_8php_a10}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!$xinc@{\$xinc}}
+\index{$xinc@{\$xinc}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[\$xinc]{\setlength{\rightskip}{0pt plus 5cm}\$xinc = 30}}
+\label{graphe__lits_8php_a10}
+
+
+\hypertarget{graphe__lits_8php_a11}{
+\index{graphe_lits.php@{graphe\_\-lits.php}!$xinter@{\$xinter}}
+\index{$xinter@{\$xinter}!graphe_lits.php@{graphe\_\-lits.php}}
+\subsubsection[\$xinter]{\setlength{\rightskip}{0pt plus 5cm}\$xinter = 15}}
+\label{graphe__lits_8php_a11}
+
+

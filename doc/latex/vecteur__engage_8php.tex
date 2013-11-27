@@ -1,0 +1,91 @@
+\hypertarget{vecteur__engage_8php}{
+\section{R\'{e}f\'{e}rence du fichier vecteur\_\-engage.php}
+\label{vecteur__engage_8php}\index{vecteur_engage.php@{vecteur\_\-engage.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{vecteur__engage_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}langue\mbox{]}
+\item 
+\hyperlink{vecteur__engage_8php_a1}{\$mot} = \$string\_\-lang\mbox{[}'LANGUE'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{vecteur__engage_8php_a2}{\$date\-FR} = str\-FTime(\char`\"{}\%A \%d \%B \%Y\char`\"{})
+\item 
+\hyperlink{vecteur__engage_8php_a3}{\$heure} = date(\char`\"{}H:i\char`\"{})
+\item 
+\hyperlink{vecteur__engage_8php_a4}{\$mot2} = \$string\_\-lang\mbox{[}'A'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{vecteur__engage_8php_a5}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{vecteur__engage_8php_a6}{\$requete} = \char`\"{}SELECT Vec\_\-Type,Vec\_\-Engage FROM vecteur WHERE Vec\_\-Engage='o'\char`\"{}
+\item 
+\hyperlink{vecteur__engage_8php_a7}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{vecteur__engage_8php_a8}{\$max} = 0
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{vecteur__engage_8php_a5}{
+\index{vecteur_engage.php@{vecteur\_\-engage.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!vecteur_engage.php@{vecteur\_\-engage.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{vecteur__engage_8php_a5}
+
+
+\hypertarget{vecteur__engage_8php_a2}{
+\index{vecteur_engage.php@{vecteur\_\-engage.php}!$dateFR@{\$dateFR}}
+\index{$dateFR@{\$dateFR}!vecteur_engage.php@{vecteur\_\-engage.php}}
+\subsubsection[\$dateFR]{\setlength{\rightskip}{0pt plus 5cm}\$date\-FR = str\-FTime(\char`\"{}\%A \%d \%B \%Y\char`\"{})}}
+\label{vecteur__engage_8php_a2}
+
+
+\hypertarget{vecteur__engage_8php_a3}{
+\index{vecteur_engage.php@{vecteur\_\-engage.php}!$heure@{\$heure}}
+\index{$heure@{\$heure}!vecteur_engage.php@{vecteur\_\-engage.php}}
+\subsubsection[\$heure]{\setlength{\rightskip}{0pt plus 5cm}\$heure = date(\char`\"{}H:i\char`\"{})}}
+\label{vecteur__engage_8php_a3}
+
+
+\hypertarget{vecteur__engage_8php_a0}{
+\index{vecteur_engage.php@{vecteur\_\-engage.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!vecteur_engage.php@{vecteur\_\-engage.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}langue\mbox{]}}}
+\label{vecteur__engage_8php_a0}
+
+
+\hypertarget{vecteur__engage_8php_a8}{
+\index{vecteur_engage.php@{vecteur\_\-engage.php}!$max@{\$max}}
+\index{$max@{\$max}!vecteur_engage.php@{vecteur\_\-engage.php}}
+\subsubsection[\$max]{\setlength{\rightskip}{0pt plus 5cm}\$max = 0}}
+\label{vecteur__engage_8php_a8}
+
+
+\hypertarget{vecteur__engage_8php_a1}{
+\index{vecteur_engage.php@{vecteur\_\-engage.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!vecteur_engage.php@{vecteur\_\-engage.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'LANGUE'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{vecteur__engage_8php_a1}
+
+
+\hypertarget{vecteur__engage_8php_a4}{
+\index{vecteur_engage.php@{vecteur\_\-engage.php}!$mot2@{\$mot2}}
+\index{$mot2@{\$mot2}!vecteur_engage.php@{vecteur\_\-engage.php}}
+\subsubsection[\$mot2]{\setlength{\rightskip}{0pt plus 5cm}\$mot2 = \$string\_\-lang\mbox{[}'A'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{vecteur__engage_8php_a4}
+
+
+\hypertarget{vecteur__engage_8php_a6}{
+\index{vecteur_engage.php@{vecteur\_\-engage.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!vecteur_engage.php@{vecteur\_\-engage.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT Vec\_\-Type,Vec\_\-Engage FROM vecteur WHERE Vec\_\-Engage='o'\char`\"{}}}
+\label{vecteur__engage_8php_a6}
+
+
+\hypertarget{vecteur__engage_8php_a7}{
+\index{vecteur_engage.php@{vecteur\_\-engage.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!vecteur_engage.php@{vecteur\_\-engage.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{vecteur__engage_8php_a7}
+
+

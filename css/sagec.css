@@ -1,0 +1,44 @@
+/* tableau action + nombre de résultats */
+.table_action{
+}
+
+/* tableau pour encadrer les résultats */
+.table_border{
+	background-color: rgb(255, 198, 176);
+}
+/* tableau de resultats */
+.table_result{
+	background-color: rgb(255, 198, 176);
+	border-spacing: 0px;
+	border-collapse: collapse;
+	font-size: 9pt;
+	border-color:black;
+}
+
+/* intitule colonne */
+.tr_result_header{
+	border-bottom: 2px solid;
+	font-weight: bold;
+}
+
+/* intitule colonne avec separation vertical */
+.tr_result_header_v{
+	border-bottom: 2px solid;
+	border-left: 2px solid;
+	font-weight: bold;
+}
+
+
+/* ligne sombre */
+.tr_result_0{
+}
+
+/* ligne clair */
+.tr_result_1{
+	background-color: rgb(255, 255, 255);
+}
+
+/* separation de colonne */
+.td_vertical {
+	border-left: 2px solid;
+}

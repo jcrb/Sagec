@@ -1,0 +1,72 @@
+\hypertarget{organisme__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier organisme\_\-enregistre.php}
+\label{organisme__enregistre_8php}\index{organisme_enregistre.php@{organisme\_\-enregistre.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{organisme__enregistre_8php_a3}{organisme\_\-existe} (\$nom, \$connexion)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{organisme__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{organisme__enregistre_8php_a1}{\$requete}
+\item 
+\hyperlink{organisme__enregistre_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{organisme__enregistre_8php_a3}{
+\index{organisme_enregistre.php@{organisme\_\-enregistre.php}!organisme_existe@{organisme\_\-existe}}
+\index{organisme_existe@{organisme\_\-existe}!organisme_enregistre.php@{organisme\_\-enregistre.php}}
+\subsubsection[organisme\_\-existe]{\setlength{\rightskip}{0pt plus 5cm}organisme\_\-existe (\$ {\em nom}, \$ {\em connexion})}}
+\label{organisme__enregistre_8php_a3}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{organisme__enregistre_8php_a0}{
+\index{organisme_enregistre.php@{organisme\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!organisme_enregistre.php@{organisme\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{organisme__enregistre_8php_a0}
+
+
+\hypertarget{organisme__enregistre_8php_a1}{
+\index{organisme_enregistre.php@{organisme\_\-enregistre.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!organisme_enregistre.php@{organisme\_\-enregistre.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{organisme__enregistre_8php_a1}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}"UPDATE organisme SET   org_ID = '$_GET[maj]',
+                                                                        org_nom = '$_GET[nom]',
+                                                                        organisme_type_ID = '$_GET[organisme_type]',
+                                                                        contact_ID = '',
+                                                                        adresse_ID = '',
+                                                                        ville_id = '$_GET[id_ville]',
+                                                                        ad_zone1 = '$_GET[ad1]',
+                                                                        ad_zone2 = '$_GET[ad2]',
+                                                                        com_ID = '$_GET[commune_id]',
+                                                                        tel1 = '$_GET[tel1]',
+                                                                        tel2 = '$_GET[tel2]',
+                                                                        tel3 = '$_GET[tel3]',
+                                                                        fax = '$_GET[fax1]',
+                                                                        mail1 = '$_GET[mail1]',
+                                                                        mail2 = '$_GET[mail2]',
+                                                                        bip = '$_GET[bip]'
+                                                        WHERE   org_ID = '$_GET[maj]'"
+\end{verbatim}\normalsize 
+\hypertarget{organisme__enregistre_8php_a2}{
+\index{organisme_enregistre.php@{organisme\_\-enregistre.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!organisme_enregistre.php@{organisme\_\-enregistre.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{organisme__enregistre_8php_a2}
+
+

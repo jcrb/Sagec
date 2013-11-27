@@ -1,0 +1,43 @@
+\hypertarget{dossier__menu_8php}{
+\section{R\'{e}f\'{e}rence du fichier dossier\_\-menu.php}
+\label{dossier__menu_8php}\index{dossier_menu.php@{dossier\_\-menu.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{dossier__menu_8php_a2}{select\_\-dossier} (\$connexion, \$langue, \$item\_\-select, \$on\-Change)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{dossier__menu_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{dossier__menu_8php_a1}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{dossier__menu_8php_a2}{
+\index{dossier_menu.php@{dossier\_\-menu.php}!select_dossier@{select\_\-dossier}}
+\index{select_dossier@{select\_\-dossier}!dossier_menu.php@{dossier\_\-menu.php}}
+\subsubsection[select\_\-dossier]{\setlength{\rightskip}{0pt plus 5cm}select\_\-dossier (\$ {\em connexion}, \$ {\em langue}, \$ {\em item\_\-select}, \$ {\em on\-Change})}}
+\label{dossier__menu_8php_a2}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{dossier__menu_8php_a0}{
+\index{dossier_menu.php@{dossier\_\-menu.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!dossier_menu.php@{dossier\_\-menu.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{dossier__menu_8php_a0}
+
+
+\hypertarget{dossier__menu_8php_a1}{
+\index{dossier_menu.php@{dossier\_\-menu.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!dossier_menu.php@{dossier\_\-menu.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{dossier__menu_8php_a1}
+
+

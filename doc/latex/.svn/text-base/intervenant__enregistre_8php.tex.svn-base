@@ -1,0 +1,86 @@
+\hypertarget{intervenant__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier intervenant\_\-enregistre.php}
+\label{intervenant__enregistre_8php}\index{intervenant_enregistre.php@{intervenant\_\-enregistre.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{intervenant__enregistre_8php_a4}{intervenant\_\-existe} (\$nom, \$connexion)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{intervenant__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{intervenant__enregistre_8php_a1}{\$maj} = \$\_\-GET\mbox{[}'maj'\mbox{]}
+\item 
+\hyperlink{intervenant__enregistre_8php_a2}{\$requete}
+\item 
+\hyperlink{intervenant__enregistre_8php_a3}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{intervenant__enregistre_8php_a4}{
+\index{intervenant_enregistre.php@{intervenant\_\-enregistre.php}!intervenant_existe@{intervenant\_\-existe}}
+\index{intervenant_existe@{intervenant\_\-existe}!intervenant_enregistre.php@{intervenant\_\-enregistre.php}}
+\subsubsection[intervenant\_\-existe]{\setlength{\rightskip}{0pt plus 5cm}intervenant\_\-existe (\$ {\em nom}, \$ {\em connexion})}}
+\label{intervenant__enregistre_8php_a4}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{intervenant__enregistre_8php_a0}{
+\index{intervenant_enregistre.php@{intervenant\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!intervenant_enregistre.php@{intervenant\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{intervenant__enregistre_8php_a0}
+
+
+\hypertarget{intervenant__enregistre_8php_a1}{
+\index{intervenant_enregistre.php@{intervenant\_\-enregistre.php}!$maj@{\$maj}}
+\index{$maj@{\$maj}!intervenant_enregistre.php@{intervenant\_\-enregistre.php}}
+\subsubsection[\$maj]{\setlength{\rightskip}{0pt plus 5cm}\$maj = \$\_\-GET\mbox{[}'maj'\mbox{]}}}
+\label{intervenant__enregistre_8php_a1}
+
+
+\hypertarget{intervenant__enregistre_8php_a2}{
+\index{intervenant_enregistre.php@{intervenant\_\-enregistre.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!intervenant_enregistre.php@{intervenant\_\-enregistre.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{intervenant__enregistre_8php_a2}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}"UPDATE personnel SET   Pers_ID = '$_GET[maj]',
+                                                                Pers_Nom = '$_GET[nom]',
+                                                                Pers_Prenom = '$_GET[prenom]',
+                                                                civilite_ID = '$_GET[civilite_type]',
+                                                                perso_cat_ID = '$_GET[prof_type]',
+                                                                Pers_fonction = '',
+                                                                org_ID = '$_GET[org_type]',
+                                                                service_ID = '$_GET[the_service]',
+                                                                tel1 = '$_GET[tel1]',
+                                                                tel2 = '$_GET[tel2]',
+                                                                tel3 = '$_GET[tel3]',
+                                                                fax = '$_GET[fax]',
+                                                                mail1 = '$_GET[mail1]',
+                                                                mail2 = '$_GET[mail2]',
+                                                                bip = '$_GET[bip]',
+                                                                Pers_Maj = '$date_maj',
+                                                                delai_route = '$_GET[delai_route]',
+                                                                localisation_ID = '$_GET[localisation_type]',
+                                                                portatif1 = '$_GET[radio1]',
+                                                                portatif2 = '$_GET[radio2]',
+                                                                tel_crise1 = '$_GET[tel_crise1]'
+                                                        WHERE Pers_ID = '$_GET[maj]'"
+\end{verbatim}\normalsize 
+\hypertarget{intervenant__enregistre_8php_a3}{
+\index{intervenant_enregistre.php@{intervenant\_\-enregistre.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!intervenant_enregistre.php@{intervenant\_\-enregistre.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{intervenant__enregistre_8php_a3}
+
+

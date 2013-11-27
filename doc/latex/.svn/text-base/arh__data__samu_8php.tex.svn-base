@@ -1,0 +1,81 @@
+\hypertarget{arh__data__samu_8php}{
+\section{R\'{e}f\'{e}rence du fichier arh\_\-data\_\-samu.php}
+\label{arh__data__samu_8php}\index{arh_data_samu.php@{arh\_\-data\_\-samu.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{arh__data__samu_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{arh__data__samu_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{arh__data__samu_8php_a2}{\$d1} = date(\char`\"{}j/m/Y\char`\"{})
+\item 
+\hyperlink{arh__data__samu_8php_a3}{\$service} = 'tous'
+\item 
+\hyperlink{arh__data__samu_8php_a4}{\$requete}
+\item 
+\hyperlink{arh__data__samu_8php_a5}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{arh__data__samu_8php_a6}{\$d} = \$rub\mbox{[}'nb\_\-tot\_\-dcd'\mbox{]}-\$rub\mbox{[}'nb\_\-dcd\_\-sup75'\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{arh__data__samu_8php_a1}{
+\index{arh_data_samu.php@{arh\_\-data\_\-samu.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!arh_data_samu.php@{arh\_\-data\_\-samu.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{arh__data__samu_8php_a1}
+
+
+\hypertarget{arh__data__samu_8php_a6}{
+\index{arh_data_samu.php@{arh\_\-data\_\-samu.php}!$d@{\$d}}
+\index{$d@{\$d}!arh_data_samu.php@{arh\_\-data\_\-samu.php}}
+\subsubsection[\$d]{\setlength{\rightskip}{0pt plus 5cm}\$d = \$rub\mbox{[}'nb\_\-tot\_\-dcd'\mbox{]}-\$rub\mbox{[}'nb\_\-dcd\_\-sup75'\mbox{]}}}
+\label{arh__data__samu_8php_a6}
+
+
+\hypertarget{arh__data__samu_8php_a2}{
+\index{arh_data_samu.php@{arh\_\-data\_\-samu.php}!$d1@{\$d1}}
+\index{$d1@{\$d1}!arh_data_samu.php@{arh\_\-data\_\-samu.php}}
+\subsubsection[\$d1]{\setlength{\rightskip}{0pt plus 5cm}\$d1 = date(\char`\"{}j/m/Y\char`\"{})}}
+\label{arh__data__samu_8php_a2}
+
+
+\hypertarget{arh__data__samu_8php_a0}{
+\index{arh_data_samu.php@{arh\_\-data\_\-samu.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!arh_data_samu.php@{arh\_\-data\_\-samu.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{arh__data__samu_8php_a0}
+
+
+\hypertarget{arh__data__samu_8php_a4}{
+\index{arh_data_samu.php@{arh\_\-data\_\-samu.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!arh_data_samu.php@{arh\_\-data\_\-samu.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{arh__data__samu_8php_a4}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}"SELECT date,veille_samu.service_ID,nb_affaires,nb_primaires,nb_secondaires,nb_neonat,nb_tiih,nb_apa,nb_vsav,conseils,nb_med,service_nom
+                FROM veille_samu, service
+                WHERE service.service_ID = veille_samu.service_ID
+                AND date BETWEEN '$date1' AND '$date2'
+                ORDER BY service_ID,date DESC"
+\end{verbatim}\normalsize 
+\hypertarget{arh__data__samu_8php_a5}{
+\index{arh_data_samu.php@{arh\_\-data\_\-samu.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!arh_data_samu.php@{arh\_\-data\_\-samu.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{arh__data__samu_8php_a5}
+
+
+\hypertarget{arh__data__samu_8php_a3}{
+\index{arh_data_samu.php@{arh\_\-data\_\-samu.php}!$service@{\$service}}
+\index{$service@{\$service}!arh_data_samu.php@{arh\_\-data\_\-samu.php}}
+\subsubsection[\$service]{\setlength{\rightskip}{0pt plus 5cm}\$service = 'tous'}}
+\label{arh__data__samu_8php_a3}
+
+

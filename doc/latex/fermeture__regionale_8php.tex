@@ -1,0 +1,100 @@
+\hypertarget{fermeture__regionale_8php}{
+\section{R\'{e}f\'{e}rence du fichier fermeture\_\-regionale.php}
+\label{fermeture__regionale_8php}\index{fermeture_regionale.php@{fermeture\_\-regionale.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{fermeture__regionale_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{fermeture__regionale_8php_a1}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{fermeture__regionale_8php_a2}{\$mot} = \char`\"{}Etat des fermetures de lits par sp\'{e}cialit\'{e}s\char`\"{}
+\item 
+\hyperlink{fermeture__regionale_8php_a3}{\$pfin} = strtotime(\$\_\-GET\mbox{[}'fin'\mbox{]})
+\item 
+\hyperlink{fermeture__regionale_8php_a4}{\$requete}
+\item 
+\hyperlink{fermeture__regionale_8php_a5}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{fermeture__regionale_8php_a6}{\$num\_\-lignes} = mysql\_\-num\_\-rows(\$resultat2)
+\item 
+\hyperlink{fermeture__regionale_8php_a7}{\$tot\_\-autorises} = \$rub\mbox{[}lits\_\-sp\mbox{]}
+\item 
+\hyperlink{fermeture__regionale_8php_a8}{\$tot\_\-fermes} = \$rub2\mbox{[}nb\_\-lits\_\-fermes\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{fermeture__regionale_8php_a1}{
+\index{fermeture_regionale.php@{fermeture\_\-regionale.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!fermeture_regionale.php@{fermeture\_\-regionale.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{fermeture__regionale_8php_a1}
+
+
+\hypertarget{fermeture__regionale_8php_a0}{
+\index{fermeture_regionale.php@{fermeture\_\-regionale.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!fermeture_regionale.php@{fermeture\_\-regionale.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{fermeture__regionale_8php_a0}
+
+
+\hypertarget{fermeture__regionale_8php_a2}{
+\index{fermeture_regionale.php@{fermeture\_\-regionale.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!fermeture_regionale.php@{fermeture\_\-regionale.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \char`\"{}Etat des fermetures de lits par sp\'{e}cialit\'{e}s\char`\"{}}}
+\label{fermeture__regionale_8php_a2}
+
+
+\hypertarget{fermeture__regionale_8php_a6}{
+\index{fermeture_regionale.php@{fermeture\_\-regionale.php}!$num_lignes@{\$num\_\-lignes}}
+\index{$num_lignes@{\$num\_\-lignes}!fermeture_regionale.php@{fermeture\_\-regionale.php}}
+\subsubsection[\$num\_\-lignes]{\setlength{\rightskip}{0pt plus 5cm}\$num\_\-lignes = mysql\_\-num\_\-rows(\$resultat2)}}
+\label{fermeture__regionale_8php_a6}
+
+
+\hypertarget{fermeture__regionale_8php_a3}{
+\index{fermeture_regionale.php@{fermeture\_\-regionale.php}!$pfin@{\$pfin}}
+\index{$pfin@{\$pfin}!fermeture_regionale.php@{fermeture\_\-regionale.php}}
+\subsubsection[\$pfin]{\setlength{\rightskip}{0pt plus 5cm}\$pfin = strtotime(\$\_\-GET\mbox{[}'fin'\mbox{]})}}
+\label{fermeture__regionale_8php_a3}
+
+
+\hypertarget{fermeture__regionale_8php_a4}{
+\index{fermeture_regionale.php@{fermeture\_\-regionale.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!fermeture_regionale.php@{fermeture\_\-regionale.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{fermeture__regionale_8php_a4}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "SELECT service.service_ID,service_nom,org_nom,lits_sp
+                FROM service, organisme,lits
+                WHERE Type_ID = '$_GET[type_s]'
+                AND organisme.org_ID = service.org_ID
+                AND lits.service_ID = service.service_ID
+                "
+\end{verbatim}\normalsize 
+\hypertarget{fermeture__regionale_8php_a5}{
+\index{fermeture_regionale.php@{fermeture\_\-regionale.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!fermeture_regionale.php@{fermeture\_\-regionale.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{fermeture__regionale_8php_a5}
+
+
+\hypertarget{fermeture__regionale_8php_a7}{
+\index{fermeture_regionale.php@{fermeture\_\-regionale.php}!$tot_autorises@{\$tot\_\-autorises}}
+\index{$tot_autorises@{\$tot\_\-autorises}!fermeture_regionale.php@{fermeture\_\-regionale.php}}
+\subsubsection[\$tot\_\-autorises]{\setlength{\rightskip}{0pt plus 5cm}\$tot\_\-autorises = \$rub\mbox{[}lits\_\-sp\mbox{]}}}
+\label{fermeture__regionale_8php_a7}
+
+
+\hypertarget{fermeture__regionale_8php_a8}{
+\index{fermeture_regionale.php@{fermeture\_\-regionale.php}!$tot_fermes@{\$tot\_\-fermes}}
+\index{$tot_fermes@{\$tot\_\-fermes}!fermeture_regionale.php@{fermeture\_\-regionale.php}}
+\subsubsection[\$tot\_\-fermes]{\setlength{\rightskip}{0pt plus 5cm}\$tot\_\-fermes = \$rub2\mbox{[}nb\_\-lits\_\-fermes\mbox{]}}}
+\label{fermeture__regionale_8php_a8}
+
+

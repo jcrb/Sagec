@@ -1,0 +1,195 @@
+\hypertarget{classIXR__Message}{
+\section{R\'{e}f\'{e}rence de la classe IXR\_\-Message}
+\label{classIXR__Message}\index{IXR_Message@{IXR\_\-Message}}
+}
+\subsection*{Fonctions membres publiques}
+\begin{CompactItemize}
+\item 
+\hyperlink{classIXR__Message_a0}{IXR\_\-Message} (\$message)
+\item 
+\hyperlink{classIXR__Message_a1}{parse} ()
+\item 
+\hyperlink{classIXR__Message_a2}{tag\_\-open} (\$parser, \$tag, \$attr)
+\item 
+\hyperlink{classIXR__Message_a3}{cdata} (\$parser, \$cdata)
+\item 
+\hyperlink{classIXR__Message_a4}{tag\_\-close} (\$parser, \$tag)
+\end{CompactItemize}
+\subsection*{Attributs publics}
+\begin{CompactItemize}
+\item 
+\hyperlink{classIXR__Message_o0}{\$message}
+\item 
+\hyperlink{classIXR__Message_o1}{\$message\-Type}
+\item 
+\hyperlink{classIXR__Message_o2}{\$fault\-Code}
+\item 
+\hyperlink{classIXR__Message_o3}{\$fault\-String}
+\item 
+\hyperlink{classIXR__Message_o4}{\$method\-Name}
+\item 
+\hyperlink{classIXR__Message_o5}{\$params}
+\item 
+\hyperlink{classIXR__Message_o6}{\$\_\-arraystructs} = array()
+\item 
+\hyperlink{classIXR__Message_o7}{\$\_\-arraystructstypes} = array()
+\item 
+\hyperlink{classIXR__Message_o8}{\$\_\-current\-Struct\-Name} = array()
+\item 
+\hyperlink{classIXR__Message_o9}{\$\_\-param}
+\item 
+\hyperlink{classIXR__Message_o10}{\$\_\-value}
+\item 
+\hyperlink{classIXR__Message_o11}{\$\_\-current\-Tag}
+\item 
+\hyperlink{classIXR__Message_o12}{\$\_\-current\-Tag\-Contents}
+\item 
+\hyperlink{classIXR__Message_o13}{\$\_\-parser}
+\end{CompactItemize}
+
+
+\subsection{Documentation des contructeurs et destructeur}
+\hypertarget{classIXR__Message_a0}{
+\index{IXR_Message@{IXR\_\-Message}!IXR_Message@{IXR\_\-Message}}
+\index{IXR_Message@{IXR\_\-Message}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[IXR\_\-Message]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::IXR\_\-Message (\$ {\em message})}}
+\label{classIXR__Message_a0}
+
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classIXR__Message_a3}{
+\index{IXR_Message@{IXR\_\-Message}!cdata@{cdata}}
+\index{cdata@{cdata}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[cdata]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::cdata (\$ {\em parser}, \$ {\em cdata})}}
+\label{classIXR__Message_a3}
+
+
+\hypertarget{classIXR__Message_a1}{
+\index{IXR_Message@{IXR\_\-Message}!parse@{parse}}
+\index{parse@{parse}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[parse]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::parse ()}}
+\label{classIXR__Message_a1}
+
+
+\hypertarget{classIXR__Message_a4}{
+\index{IXR_Message@{IXR\_\-Message}!tag_close@{tag\_\-close}}
+\index{tag_close@{tag\_\-close}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[tag\_\-close]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::tag\_\-close (\$ {\em parser}, \$ {\em tag})}}
+\label{classIXR__Message_a4}
+
+
+\hypertarget{classIXR__Message_a2}{
+\index{IXR_Message@{IXR\_\-Message}!tag_open@{tag\_\-open}}
+\index{tag_open@{tag\_\-open}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[tag\_\-open]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::tag\_\-open (\$ {\em parser}, \$ {\em tag}, \$ {\em attr})}}
+\label{classIXR__Message_a2}
+
+
+
+
+\subsection{Documentation des donn\'{e}es membres}
+\hypertarget{classIXR__Message_o6}{
+\index{IXR_Message@{IXR\_\-Message}!$_arraystructs@{\$\_\-arraystructs}}
+\index{$_arraystructs@{\$\_\-arraystructs}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[\$\_\-arraystructs]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::\$\_\-arraystructs = array()}}
+\label{classIXR__Message_o6}
+
+
+\hypertarget{classIXR__Message_o7}{
+\index{IXR_Message@{IXR\_\-Message}!$_arraystructstypes@{\$\_\-arraystructstypes}}
+\index{$_arraystructstypes@{\$\_\-arraystructstypes}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[\$\_\-arraystructstypes]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::\$\_\-arraystructstypes = array()}}
+\label{classIXR__Message_o7}
+
+
+\hypertarget{classIXR__Message_o8}{
+\index{IXR_Message@{IXR\_\-Message}!$_currentStructName@{\$\_\-currentStructName}}
+\index{$_currentStructName@{\$\_\-currentStructName}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[\$\_\-currentStructName]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::\$\_\-current\-Struct\-Name = array()}}
+\label{classIXR__Message_o8}
+
+
+\hypertarget{classIXR__Message_o11}{
+\index{IXR_Message@{IXR\_\-Message}!$_currentTag@{\$\_\-currentTag}}
+\index{$_currentTag@{\$\_\-currentTag}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[\$\_\-currentTag]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::\$\_\-current\-Tag}}
+\label{classIXR__Message_o11}
+
+
+\hypertarget{classIXR__Message_o12}{
+\index{IXR_Message@{IXR\_\-Message}!$_currentTagContents@{\$\_\-currentTagContents}}
+\index{$_currentTagContents@{\$\_\-currentTagContents}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[\$\_\-currentTagContents]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::\$\_\-current\-Tag\-Contents}}
+\label{classIXR__Message_o12}
+
+
+\hypertarget{classIXR__Message_o9}{
+\index{IXR_Message@{IXR\_\-Message}!$_param@{\$\_\-param}}
+\index{$_param@{\$\_\-param}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[\$\_\-param]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::\$\_\-param}}
+\label{classIXR__Message_o9}
+
+
+\hypertarget{classIXR__Message_o13}{
+\index{IXR_Message@{IXR\_\-Message}!$_parser@{\$\_\-parser}}
+\index{$_parser@{\$\_\-parser}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[\$\_\-parser]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::\$\_\-parser}}
+\label{classIXR__Message_o13}
+
+
+\hypertarget{classIXR__Message_o10}{
+\index{IXR_Message@{IXR\_\-Message}!$_value@{\$\_\-value}}
+\index{$_value@{\$\_\-value}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[\$\_\-value]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::\$\_\-value}}
+\label{classIXR__Message_o10}
+
+
+\hypertarget{classIXR__Message_o2}{
+\index{IXR_Message@{IXR\_\-Message}!$faultCode@{\$faultCode}}
+\index{$faultCode@{\$faultCode}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[\$faultCode]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::\$fault\-Code}}
+\label{classIXR__Message_o2}
+
+
+\hypertarget{classIXR__Message_o3}{
+\index{IXR_Message@{IXR\_\-Message}!$faultString@{\$faultString}}
+\index{$faultString@{\$faultString}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[\$faultString]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::\$fault\-String}}
+\label{classIXR__Message_o3}
+
+
+\hypertarget{classIXR__Message_o0}{
+\index{IXR_Message@{IXR\_\-Message}!$message@{\$message}}
+\index{$message@{\$message}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[\$message]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::\$message}}
+\label{classIXR__Message_o0}
+
+
+\hypertarget{classIXR__Message_o1}{
+\index{IXR_Message@{IXR\_\-Message}!$messageType@{\$messageType}}
+\index{$messageType@{\$messageType}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[\$messageType]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::\$message\-Type}}
+\label{classIXR__Message_o1}
+
+
+\hypertarget{classIXR__Message_o4}{
+\index{IXR_Message@{IXR\_\-Message}!$methodName@{\$methodName}}
+\index{$methodName@{\$methodName}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[\$methodName]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::\$method\-Name}}
+\label{classIXR__Message_o4}
+
+
+\hypertarget{classIXR__Message_o5}{
+\index{IXR_Message@{IXR\_\-Message}!$params@{\$params}}
+\index{$params@{\$params}!IXR_Message@{IXR\_\-Message}}
+\subsubsection[\$params]{\setlength{\rightskip}{0pt plus 5cm}IXR\_\-Message::\$params}}
+\label{classIXR__Message_o5}
+
+
+
+
+La documentation de cette classe a \'{e}t\'{e} g\'{e}n\'{e}r\'{e}e \`{a} partir du fichier suivant:\begin{CompactItemize}
+\item 
+\hyperlink{IXR__Library_8inc_8php}{IXR\_\-Library.inc.php}\end{CompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{lot__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier lot\_\-enregistre.php}
+\label{lot__enregistre_8php}\index{lot_enregistre.php@{lot\_\-enregistre.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{lot__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{lot__enregistre_8php_a1}{\$requete}
+\item 
+\hyperlink{lot__enregistre_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{lot__enregistre_8php_a3}{\$c} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{lot__enregistre_8php_a4}{\$conteneur} = \$c\mbox{[}'conteneur\_\-ID'\mbox{]}
+\item 
+\hyperlink{lot__enregistre_8php_a5}{\$maj} = mysql\_\-insert\_\-id()
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{lot__enregistre_8php_a3}{
+\index{lot_enregistre.php@{lot\_\-enregistre.php}!$c@{\$c}}
+\index{$c@{\$c}!lot_enregistre.php@{lot\_\-enregistre.php}}
+\subsubsection[\$c]{\setlength{\rightskip}{0pt plus 5cm}\$c = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{lot__enregistre_8php_a3}
+
+
+\hypertarget{lot__enregistre_8php_a0}{
+\index{lot_enregistre.php@{lot\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!lot_enregistre.php@{lot\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{lot__enregistre_8php_a0}
+
+
+\hypertarget{lot__enregistre_8php_a4}{
+\index{lot_enregistre.php@{lot\_\-enregistre.php}!$conteneur@{\$conteneur}}
+\index{$conteneur@{\$conteneur}!lot_enregistre.php@{lot\_\-enregistre.php}}
+\subsubsection[\$conteneur]{\setlength{\rightskip}{0pt plus 5cm}\$conteneur = \$c\mbox{[}'conteneur\_\-ID'\mbox{]}}}
+\label{lot__enregistre_8php_a4}
+
+
+\hypertarget{lot__enregistre_8php_a5}{
+\index{lot_enregistre.php@{lot\_\-enregistre.php}!$maj@{\$maj}}
+\index{$maj@{\$maj}!lot_enregistre.php@{lot\_\-enregistre.php}}
+\subsubsection[\$maj]{\setlength{\rightskip}{0pt plus 5cm}\$maj = mysql\_\-insert\_\-id()}}
+\label{lot__enregistre_8php_a5}
+
+
+\hypertarget{lot__enregistre_8php_a1}{
+\index{lot_enregistre.php@{lot\_\-enregistre.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!lot_enregistre.php@{lot\_\-enregistre.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{lot__enregistre_8php_a1}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}"SELECT conteneur_ID FROM stock_conteneur
+                WHERE med_localisation = '$_GET[ID_medlocal]'
+                AND conteneur_nom = '$_GET[ID_psm]'
+                AND conteneur_no = '$_GET[identifiant]'"
+\end{verbatim}\normalsize 
+\hypertarget{lot__enregistre_8php_a2}{
+\index{lot_enregistre.php@{lot\_\-enregistre.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!lot_enregistre.php@{lot\_\-enregistre.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{lot__enregistre_8php_a2}
+
+

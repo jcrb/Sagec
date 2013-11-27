@@ -1,0 +1,421 @@
+\hypertarget{apa__zone_8php}{
+\section{R\'{e}f\'{e}rence du fichier apa\_\-zone.php}
+\label{apa__zone_8php}\index{apa_zone.php@{apa\_\-zone.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{apa__zone_8php_a38}{ouvre\_\-fichier} (\$nom\_\-fichier)
+\item 
+\hyperlink{apa__zone_8php_a39}{fichier2array} (\$fp, \&\$nom\_\-tableau)
+\item 
+\hyperlink{apa__zone_8php_a40}{mousemove} (\hyperlink{apa__zone_8php_a37}{e})
+\item 
+\hyperlink{apa__zone_8php_a41}{init2} ()
+\item 
+\hyperlink{apa__zone_8php_a42}{mousex} (\hyperlink{apa__zone_8php_a37}{e})
+\item 
+\hyperlink{apa__zone_8php_a43}{mousey} (\hyperlink{apa__zone_8php_a37}{e})
+\item 
+\hyperlink{apa__zone_8php_a44}{coord} (\hyperlink{apa__zone_8php_a37}{e})
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{apa__zone_8php_a0}{\$nb\_\-sommets} = 0
+\item 
+\hyperlink{apa__zone_8php_a1}{\$U\_\-gauche} = (double)100000
+\item 
+\hyperlink{apa__zone_8php_a2}{\$U\_\-droit} = (double)0
+\item 
+\hyperlink{apa__zone_8php_a3}{\$U\_\-haut} = (double)0
+\item 
+\hyperlink{apa__zone_8php_a4}{\$U\_\-bas} = (double)100000
+\item 
+\hyperlink{apa__zone_8php_a5}{\$i} = (double)0
+\item 
+\hyperlink{apa__zone_8php_a6}{\$zone1} = array()
+\item 
+\hyperlink{apa__zone_8php_a7}{\$zone2} = array()
+\item 
+\hyperlink{apa__zone_8php_a8}{\$zone3} = array()
+\item 
+\hyperlink{apa__zone_8php_a9}{\$zone4} = array()
+\item 
+\hyperlink{apa__zone_8php_a10}{\$zone5} = array()
+\item 
+\hyperlink{apa__zone_8php_a11}{\$zone6} = array()
+\item 
+\hyperlink{apa__zone_8php_a12}{\$zone7} = array()
+\item 
+\hyperlink{apa__zone_8php_a13}{\$zone8} = array()
+\item 
+\hyperlink{apa__zone_8php_a14}{\$zone9} = array()
+\item 
+\hyperlink{apa__zone_8php_a15}{\$zom} = 0
+\item 
+\hyperlink{apa__zone_8php_a16}{\$image\_\-width} = 650
+\item 
+\hyperlink{apa__zone_8php_a17}{\$image\_\-heigth} = 800
+\item 
+\hyperlink{apa__zone_8php_a18}{\$marge\_\-haute} = 20
+\item 
+\hyperlink{apa__zone_8php_a19}{\$marge\_\-basse} = 20
+\item 
+\hyperlink{apa__zone_8php_a20}{\$marge\_\-gauche} = 20
+\item 
+\hyperlink{apa__zone_8php_a21}{\$marge\_\-droite} = 20
+\item 
+\hyperlink{apa__zone_8php_a22}{\$C\_\-haut} = \$marge\_\-haute
+\item 
+\hyperlink{apa__zone_8php_a23}{\$C\_\-bas} = \$image\_\-heigth - \$marge\_\-basse
+\item 
+\hyperlink{apa__zone_8php_a24}{\$C\_\-gauche} = \$marge\_\-gauche
+\item 
+\hyperlink{apa__zone_8php_a25}{\$C\_\-droit} = \$image\_\-width - \$marge\_\-droite
+\item 
+\hyperlink{apa__zone_8php_a26}{\$a8} = (\$C\_\-droit - \$C\_\-gauche) / (\$U\_\-droit - \$U\_\-gauche)
+\item 
+\hyperlink{apa__zone_8php_a27}{\$b8} = (\$C\_\-gauche $\ast$ \$U\_\-droit - \$C\_\-droit $\ast$ \$U\_\-gauche) / (\$U\_\-droit - \$U\_\-gauche)
+\item 
+\hyperlink{apa__zone_8php_a28}{\$a9} = (\$C\_\-haut - \$C\_\-bas) / (\$U\_\-haut - \$U\_\-bas)
+\item 
+\hyperlink{apa__zone_8php_a29}{\$b9} = (\$C\_\-bas $\ast$ \$U\_\-haut - \$C\_\-haut $\ast$ \$U\_\-bas) / (\$U\_\-haut - \$U\_\-bas)
+\item 
+document \hyperlink{apa__zone_8php_a30}{onmousemove} = mousemove
+\item 
+$<$/script $>$$<$ scripttype=\char`\"{}text/javascript\char`\"{}language=\char`\"{}Java\-Script\char`\"{}$>$ var \hyperlink{apa__zone_8php_a31}{Coordx} = 0
+\item 
+\hyperlink{apa__zone_8php_a32}{Coordy} = 0
+\item 
+\hyperlink{apa__zone_8php_a33}{ville} = new Array()
+\item 
+\hyperlink{apa__zone_8php_a34}{vx} = new Array()
+\item 
+\hyperlink{apa__zone_8php_a35}{vy} = new Array()
+\item 
+\hyperlink{apa__zone_8php_a36}{compteur} = 0
+\item 
+\hyperlink{apa__zone_8php_a37}{e} = window.event
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{apa__zone_8php_a44}{
+\index{apa_zone.php@{apa\_\-zone.php}!coord@{coord}}
+\index{coord@{coord}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[coord]{\setlength{\rightskip}{0pt plus 5cm}coord (\hyperlink{apa__zone_8php_a37}{e})}}
+\label{apa__zone_8php_a44}
+
+
+\hypertarget{apa__zone_8php_a39}{
+\index{apa_zone.php@{apa\_\-zone.php}!fichier2array@{fichier2array}}
+\index{fichier2array@{fichier2array}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[fichier2array]{\setlength{\rightskip}{0pt plus 5cm}fichier2array (\$ {\em fp}, \&\$ {\em nom\_\-tableau})}}
+\label{apa__zone_8php_a39}
+
+
+\hypertarget{apa__zone_8php_a41}{
+\index{apa_zone.php@{apa\_\-zone.php}!init2@{init2}}
+\index{init2@{init2}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[init2]{\setlength{\rightskip}{0pt plus 5cm}init2 ()}}
+\label{apa__zone_8php_a41}
+
+
+\hypertarget{apa__zone_8php_a40}{
+\index{apa_zone.php@{apa\_\-zone.php}!mousemove@{mousemove}}
+\index{mousemove@{mousemove}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[mousemove]{\setlength{\rightskip}{0pt plus 5cm}mousemove (\hyperlink{apa__zone_8php_a37}{e})}}
+\label{apa__zone_8php_a40}
+
+
+\hypertarget{apa__zone_8php_a42}{
+\index{apa_zone.php@{apa\_\-zone.php}!mousex@{mousex}}
+\index{mousex@{mousex}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[mousex]{\setlength{\rightskip}{0pt plus 5cm}mousex (\hyperlink{apa__zone_8php_a37}{e})}}
+\label{apa__zone_8php_a42}
+
+
+\hypertarget{apa__zone_8php_a43}{
+\index{apa_zone.php@{apa\_\-zone.php}!mousey@{mousey}}
+\index{mousey@{mousey}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[mousey]{\setlength{\rightskip}{0pt plus 5cm}mousey (\hyperlink{apa__zone_8php_a37}{e})}}
+\label{apa__zone_8php_a43}
+
+
+\hypertarget{apa__zone_8php_a38}{
+\index{apa_zone.php@{apa\_\-zone.php}!ouvre_fichier@{ouvre\_\-fichier}}
+\index{ouvre_fichier@{ouvre\_\-fichier}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[ouvre\_\-fichier]{\setlength{\rightskip}{0pt plus 5cm}ouvre\_\-fichier (\$ {\em nom\_\-fichier})}}
+\label{apa__zone_8php_a38}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{apa__zone_8php_a26}{
+\index{apa_zone.php@{apa\_\-zone.php}!$a8@{\$a8}}
+\index{$a8@{\$a8}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$a8]{\setlength{\rightskip}{0pt plus 5cm}\$a8 = (\$C\_\-droit - \$C\_\-gauche) / (\$U\_\-droit - \$U\_\-gauche)}}
+\label{apa__zone_8php_a26}
+
+
+\hypertarget{apa__zone_8php_a28}{
+\index{apa_zone.php@{apa\_\-zone.php}!$a9@{\$a9}}
+\index{$a9@{\$a9}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$a9]{\setlength{\rightskip}{0pt plus 5cm}\$a9 = (\$C\_\-haut - \$C\_\-bas) / (\$U\_\-haut - \$U\_\-bas)}}
+\label{apa__zone_8php_a28}
+
+
+\hypertarget{apa__zone_8php_a27}{
+\index{apa_zone.php@{apa\_\-zone.php}!$b8@{\$b8}}
+\index{$b8@{\$b8}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$b8]{\setlength{\rightskip}{0pt plus 5cm}\$b8 = (\$C\_\-gauche $\ast$ \$U\_\-droit - \$C\_\-droit $\ast$ \$U\_\-gauche) / (\$U\_\-droit - \$U\_\-gauche)}}
+\label{apa__zone_8php_a27}
+
+
+\hypertarget{apa__zone_8php_a29}{
+\index{apa_zone.php@{apa\_\-zone.php}!$b9@{\$b9}}
+\index{$b9@{\$b9}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$b9]{\setlength{\rightskip}{0pt plus 5cm}\$b9 = (\$C\_\-bas $\ast$ \$U\_\-haut - \$C\_\-haut $\ast$ \$U\_\-bas) / (\$U\_\-haut - \$U\_\-bas)}}
+\label{apa__zone_8php_a29}
+
+
+\hypertarget{apa__zone_8php_a23}{
+\index{apa_zone.php@{apa\_\-zone.php}!$C_bas@{\$C\_\-bas}}
+\index{$C_bas@{\$C\_\-bas}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$C\_\-bas]{\setlength{\rightskip}{0pt plus 5cm}\$C\_\-bas = \$image\_\-heigth - \$marge\_\-basse}}
+\label{apa__zone_8php_a23}
+
+
+\hypertarget{apa__zone_8php_a25}{
+\index{apa_zone.php@{apa\_\-zone.php}!$C_droit@{\$C\_\-droit}}
+\index{$C_droit@{\$C\_\-droit}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$C\_\-droit]{\setlength{\rightskip}{0pt plus 5cm}\$C\_\-droit = \$image\_\-width - \$marge\_\-droite}}
+\label{apa__zone_8php_a25}
+
+
+\hypertarget{apa__zone_8php_a24}{
+\index{apa_zone.php@{apa\_\-zone.php}!$C_gauche@{\$C\_\-gauche}}
+\index{$C_gauche@{\$C\_\-gauche}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$C\_\-gauche]{\setlength{\rightskip}{0pt plus 5cm}\$C\_\-gauche = \$marge\_\-gauche}}
+\label{apa__zone_8php_a24}
+
+
+\hypertarget{apa__zone_8php_a22}{
+\index{apa_zone.php@{apa\_\-zone.php}!$C_haut@{\$C\_\-haut}}
+\index{$C_haut@{\$C\_\-haut}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$C\_\-haut]{\setlength{\rightskip}{0pt plus 5cm}\$C\_\-haut = \$marge\_\-haute}}
+\label{apa__zone_8php_a22}
+
+
+\hypertarget{apa__zone_8php_a5}{
+\index{apa_zone.php@{apa\_\-zone.php}!$i@{\$i}}
+\index{$i@{\$i}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$i]{\setlength{\rightskip}{0pt plus 5cm}\$i = (double)0}}
+\label{apa__zone_8php_a5}
+
+
+\hypertarget{apa__zone_8php_a17}{
+\index{apa_zone.php@{apa\_\-zone.php}!$image_heigth@{\$image\_\-heigth}}
+\index{$image_heigth@{\$image\_\-heigth}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$image\_\-heigth]{\setlength{\rightskip}{0pt plus 5cm}\$image\_\-heigth = 800}}
+\label{apa__zone_8php_a17}
+
+
+\hypertarget{apa__zone_8php_a16}{
+\index{apa_zone.php@{apa\_\-zone.php}!$image_width@{\$image\_\-width}}
+\index{$image_width@{\$image\_\-width}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$image\_\-width]{\setlength{\rightskip}{0pt plus 5cm}\$image\_\-width = 650}}
+\label{apa__zone_8php_a16}
+
+
+\hypertarget{apa__zone_8php_a19}{
+\index{apa_zone.php@{apa\_\-zone.php}!$marge_basse@{\$marge\_\-basse}}
+\index{$marge_basse@{\$marge\_\-basse}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$marge\_\-basse]{\setlength{\rightskip}{0pt plus 5cm}\$marge\_\-basse = 20}}
+\label{apa__zone_8php_a19}
+
+
+\hypertarget{apa__zone_8php_a21}{
+\index{apa_zone.php@{apa\_\-zone.php}!$marge_droite@{\$marge\_\-droite}}
+\index{$marge_droite@{\$marge\_\-droite}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$marge\_\-droite]{\setlength{\rightskip}{0pt plus 5cm}\$marge\_\-droite = 20}}
+\label{apa__zone_8php_a21}
+
+
+\hypertarget{apa__zone_8php_a20}{
+\index{apa_zone.php@{apa\_\-zone.php}!$marge_gauche@{\$marge\_\-gauche}}
+\index{$marge_gauche@{\$marge\_\-gauche}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$marge\_\-gauche]{\setlength{\rightskip}{0pt plus 5cm}\$marge\_\-gauche = 20}}
+\label{apa__zone_8php_a20}
+
+
+\hypertarget{apa__zone_8php_a18}{
+\index{apa_zone.php@{apa\_\-zone.php}!$marge_haute@{\$marge\_\-haute}}
+\index{$marge_haute@{\$marge\_\-haute}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$marge\_\-haute]{\setlength{\rightskip}{0pt plus 5cm}\$marge\_\-haute = 20}}
+\label{apa__zone_8php_a18}
+
+
+\hypertarget{apa__zone_8php_a0}{
+\index{apa_zone.php@{apa\_\-zone.php}!$nb_sommets@{\$nb\_\-sommets}}
+\index{$nb_sommets@{\$nb\_\-sommets}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$nb\_\-sommets]{\setlength{\rightskip}{0pt plus 5cm}\$nb\_\-sommets = 0}}
+\label{apa__zone_8php_a0}
+
+
+\hypertarget{apa__zone_8php_a4}{
+\index{apa_zone.php@{apa\_\-zone.php}!$U_bas@{\$U\_\-bas}}
+\index{$U_bas@{\$U\_\-bas}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$U\_\-bas]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-bas = (double)100000}}
+\label{apa__zone_8php_a4}
+
+
+\hypertarget{apa__zone_8php_a2}{
+\index{apa_zone.php@{apa\_\-zone.php}!$U_droit@{\$U\_\-droit}}
+\index{$U_droit@{\$U\_\-droit}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$U\_\-droit]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-droit = (double)0}}
+\label{apa__zone_8php_a2}
+
+
+\hypertarget{apa__zone_8php_a1}{
+\index{apa_zone.php@{apa\_\-zone.php}!$U_gauche@{\$U\_\-gauche}}
+\index{$U_gauche@{\$U\_\-gauche}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$U\_\-gauche]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-gauche = (double)100000}}
+\label{apa__zone_8php_a1}
+
+
+\hypertarget{apa__zone_8php_a3}{
+\index{apa_zone.php@{apa\_\-zone.php}!$U_haut@{\$U\_\-haut}}
+\index{$U_haut@{\$U\_\-haut}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$U\_\-haut]{\setlength{\rightskip}{0pt plus 5cm}\$U\_\-haut = (double)0}}
+\label{apa__zone_8php_a3}
+
+
+\hypertarget{apa__zone_8php_a15}{
+\index{apa_zone.php@{apa\_\-zone.php}!$zom@{\$zom}}
+\index{$zom@{\$zom}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$zom]{\setlength{\rightskip}{0pt plus 5cm}\$zom = 0}}
+\label{apa__zone_8php_a15}
+
+
+\hypertarget{apa__zone_8php_a6}{
+\index{apa_zone.php@{apa\_\-zone.php}!$zone1@{\$zone1}}
+\index{$zone1@{\$zone1}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$zone1]{\setlength{\rightskip}{0pt plus 5cm}\$zone1 = array()}}
+\label{apa__zone_8php_a6}
+
+
+\hypertarget{apa__zone_8php_a7}{
+\index{apa_zone.php@{apa\_\-zone.php}!$zone2@{\$zone2}}
+\index{$zone2@{\$zone2}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$zone2]{\setlength{\rightskip}{0pt plus 5cm}\$zone2 = array()}}
+\label{apa__zone_8php_a7}
+
+
+\hypertarget{apa__zone_8php_a8}{
+\index{apa_zone.php@{apa\_\-zone.php}!$zone3@{\$zone3}}
+\index{$zone3@{\$zone3}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$zone3]{\setlength{\rightskip}{0pt plus 5cm}\$zone3 = array()}}
+\label{apa__zone_8php_a8}
+
+
+\hypertarget{apa__zone_8php_a9}{
+\index{apa_zone.php@{apa\_\-zone.php}!$zone4@{\$zone4}}
+\index{$zone4@{\$zone4}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$zone4]{\setlength{\rightskip}{0pt plus 5cm}\$zone4 = array()}}
+\label{apa__zone_8php_a9}
+
+
+\hypertarget{apa__zone_8php_a10}{
+\index{apa_zone.php@{apa\_\-zone.php}!$zone5@{\$zone5}}
+\index{$zone5@{\$zone5}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$zone5]{\setlength{\rightskip}{0pt plus 5cm}\$zone5 = array()}}
+\label{apa__zone_8php_a10}
+
+
+\hypertarget{apa__zone_8php_a11}{
+\index{apa_zone.php@{apa\_\-zone.php}!$zone6@{\$zone6}}
+\index{$zone6@{\$zone6}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$zone6]{\setlength{\rightskip}{0pt plus 5cm}\$zone6 = array()}}
+\label{apa__zone_8php_a11}
+
+
+\hypertarget{apa__zone_8php_a12}{
+\index{apa_zone.php@{apa\_\-zone.php}!$zone7@{\$zone7}}
+\index{$zone7@{\$zone7}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$zone7]{\setlength{\rightskip}{0pt plus 5cm}\$zone7 = array()}}
+\label{apa__zone_8php_a12}
+
+
+\hypertarget{apa__zone_8php_a13}{
+\index{apa_zone.php@{apa\_\-zone.php}!$zone8@{\$zone8}}
+\index{$zone8@{\$zone8}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$zone8]{\setlength{\rightskip}{0pt plus 5cm}\$zone8 = array()}}
+\label{apa__zone_8php_a13}
+
+
+\hypertarget{apa__zone_8php_a14}{
+\index{apa_zone.php@{apa\_\-zone.php}!$zone9@{\$zone9}}
+\index{$zone9@{\$zone9}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[\$zone9]{\setlength{\rightskip}{0pt plus 5cm}\$zone9 = array()}}
+\label{apa__zone_8php_a14}
+
+
+\hypertarget{apa__zone_8php_a36}{
+\index{apa_zone.php@{apa\_\-zone.php}!compteur@{compteur}}
+\index{compteur@{compteur}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[compteur]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{apa__zone_8php_a36}{compteur} = 0}}
+\label{apa__zone_8php_a36}
+
+
+\hypertarget{apa__zone_8php_a31}{
+\index{apa_zone.php@{apa\_\-zone.php}!Coordx@{Coordx}}
+\index{Coordx@{Coordx}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[Coordx]{\setlength{\rightskip}{0pt plus 5cm}$<$/script$>$$<$scripttype=\char`\"{}text/javascript\char`\"{}language=\char`\"{}Java\-Script\char`\"{}$>$ var \hyperlink{apa__zone_8php_a31}{Coordx} = 0}}
+\label{apa__zone_8php_a31}
+
+
+\hypertarget{apa__zone_8php_a32}{
+\index{apa_zone.php@{apa\_\-zone.php}!Coordy@{Coordy}}
+\index{Coordy@{Coordy}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[Coordy]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{apa__zone_8php_a32}{Coordy} = 0}}
+\label{apa__zone_8php_a32}
+
+
+\hypertarget{apa__zone_8php_a37}{
+\index{apa_zone.php@{apa\_\-zone.php}!e@{e}}
+\index{e@{e}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[e]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{apa__zone_8php_a37}{e} = window.event}}
+\label{apa__zone_8php_a37}
+
+
+\hypertarget{apa__zone_8php_a30}{
+\index{apa_zone.php@{apa\_\-zone.php}!onmousemove@{onmousemove}}
+\index{onmousemove@{onmousemove}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[onmousemove]{\setlength{\rightskip}{0pt plus 5cm}document \hyperlink{apa__zone_8php_a30}{onmousemove} = mousemove}}
+\label{apa__zone_8php_a30}
+
+
+\hypertarget{apa__zone_8php_a33}{
+\index{apa_zone.php@{apa\_\-zone.php}!ville@{ville}}
+\index{ville@{ville}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[ville]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{apa__zone_8php_a33}{ville} = new Array()}}
+\label{apa__zone_8php_a33}
+
+
+\hypertarget{apa__zone_8php_a34}{
+\index{apa_zone.php@{apa\_\-zone.php}!vx@{vx}}
+\index{vx@{vx}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[vx]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{apa__zone_8php_a34}{vx} = new Array()}}
+\label{apa__zone_8php_a34}
+
+
+\hypertarget{apa__zone_8php_a35}{
+\index{apa_zone.php@{apa\_\-zone.php}!vy@{vy}}
+\index{vy@{vy}!apa_zone.php@{apa\_\-zone.php}}
+\subsubsection[vy]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{apa__zone_8php_a35}{vy} = new Array()}}
+\label{apa__zone_8php_a35}
+
+

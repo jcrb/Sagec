@@ -1,0 +1,91 @@
+\hypertarget{export__table_8php}{
+\section{R\'{e}f\'{e}rence du fichier export\_\-table.php}
+\label{export__table_8php}\index{export_table.php@{export\_\-table.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{export__table_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+\hyperlink{export__table_8php_a1}{\$tab} = \char`\"{}$\backslash$t\char`\"{}
+\item 
+\hyperlink{export__table_8php_a2}{\$connect} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{export__table_8php_a3}{\$racine} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{export__table_8php_a4}{\$v} = \$racine.\$\_\-GET\mbox{[}'table'\mbox{]}.\char`\"{}.txt\char`\"{}
+\item 
+\hyperlink{export__table_8php_a5}{\$fp} = fopen(\$v,\char`\"{}w\char`\"{})
+\item 
+\hyperlink{export__table_8php_a6}{\$requete} = \char`\"{}SHOW COLUMNS FROM \$\_\-GET\mbox{[}table\mbox{]}\char`\"{}
+\item 
+\hyperlink{export__table_8php_a7}{\$resultat} = Exec\-Requete(\$requete,\$connect)
+\item 
+\hyperlink{export__table_8php_a8}{\$num\_\-rows} = mysql\_\-num\_\-rows(\$resultat)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{export__table_8php_a2}{
+\index{export_table.php@{export\_\-table.php}!$connect@{\$connect}}
+\index{$connect@{\$connect}!export_table.php@{export\_\-table.php}}
+\subsubsection[\$connect]{\setlength{\rightskip}{0pt plus 5cm}\$connect = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{export__table_8php_a2}
+
+
+\hypertarget{export__table_8php_a5}{
+\index{export_table.php@{export\_\-table.php}!$fp@{\$fp}}
+\index{$fp@{\$fp}!export_table.php@{export\_\-table.php}}
+\subsubsection[\$fp]{\setlength{\rightskip}{0pt plus 5cm}\$fp = fopen(\$v,\char`\"{}w\char`\"{})}}
+\label{export__table_8php_a5}
+
+
+\hypertarget{export__table_8php_a0}{
+\index{export_table.php@{export\_\-table.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!export_table.php@{export\_\-table.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{export__table_8php_a0}
+
+
+\hypertarget{export__table_8php_a8}{
+\index{export_table.php@{export\_\-table.php}!$num_rows@{\$num\_\-rows}}
+\index{$num_rows@{\$num\_\-rows}!export_table.php@{export\_\-table.php}}
+\subsubsection[\$num\_\-rows]{\setlength{\rightskip}{0pt plus 5cm}\$num\_\-rows = mysql\_\-num\_\-rows(\$resultat)}}
+\label{export__table_8php_a8}
+
+
+\hypertarget{export__table_8php_a3}{
+\index{export_table.php@{export\_\-table.php}!$racine@{\$racine}}
+\index{$racine@{\$racine}!export_table.php@{export\_\-table.php}}
+\subsubsection[\$racine]{\setlength{\rightskip}{0pt plus 5cm}\$racine = \char`\"{}\char`\"{}}}
+\label{export__table_8php_a3}
+
+
+\hypertarget{export__table_8php_a6}{
+\index{export_table.php@{export\_\-table.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!export_table.php@{export\_\-table.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SHOW COLUMNS FROM \$\_\-GET\mbox{[}table\mbox{]}\char`\"{}}}
+\label{export__table_8php_a6}
+
+
+\hypertarget{export__table_8php_a7}{
+\index{export_table.php@{export\_\-table.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!export_table.php@{export\_\-table.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connect)}}
+\label{export__table_8php_a7}
+
+
+\hypertarget{export__table_8php_a1}{
+\index{export_table.php@{export\_\-table.php}!$tab@{\$tab}}
+\index{$tab@{\$tab}!export_table.php@{export\_\-table.php}}
+\subsubsection[\$tab]{\setlength{\rightskip}{0pt plus 5cm}\$tab = \char`\"{}$\backslash$t\char`\"{}}}
+\label{export__table_8php_a1}
+
+
+\hypertarget{export__table_8php_a4}{
+\index{export_table.php@{export\_\-table.php}!$v@{\$v}}
+\index{$v@{\$v}!export_table.php@{export\_\-table.php}}
+\subsubsection[\$v]{\setlength{\rightskip}{0pt plus 5cm}\$v = \$racine.\$\_\-GET\mbox{[}'table'\mbox{]}.\char`\"{}.txt\char`\"{}}}
+\label{export__table_8php_a4}
+
+

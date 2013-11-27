@@ -1,0 +1,118 @@
+\hypertarget{gnuPG__example_8php}{
+\section{R\'{e}f\'{e}rence du fichier gnu\-PG\_\-example.php}
+\label{gnuPG__example_8php}\index{gnuPG_example.php@{gnuPG\_\-example.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{gnuPG__example_8php_a0}{\$gpg} = new \hyperlink{classgnuPG}{gnu\-PG}(/usr/local/bin/gpg, /var/www/html/SAGEC67\_\-v3/veille\_\-sanitaire)
+\item 
+\hyperlink{gnuPG__example_8php_a1}{\$filename} = \char`\"{}../test.xml\char`\"{}
+\item 
+\hyperlink{gnuPG__example_8php_a2}{\$f} = fopen(\$filename,\char`\"{}r\char`\"{})
+\item 
+\hyperlink{gnuPG__example_8php_a3}{\$acoder} = fread(\$f,filesize (\$filename))
+\item 
+\hyperlink{gnuPG__example_8php_a4}{\$Key\-ID} = \char`\"{}31CBF89DBCB3E59E\char`\"{}
+\item 
+\hyperlink{gnuPG__example_8php_a5}{\$Public\-Block} = \$gpg $\rightarrow$ Encrypt(\$Key\-ID, 'truc', \$Key\-ID, \$acoder)
+\item 
+\hyperlink{gnuPG__example_8php_a6}{\$site\_\-ftp} = 'ftpperso.free.fr'
+\item 
+\hyperlink{gnuPG__example_8php_a7}{\$username} = 'jeanclaude.bartier'
+\item 
+\hyperlink{gnuPG__example_8php_a8}{\$password} = 'marion'
+\item 
+\hyperlink{gnuPG__example_8php_a9}{\$local} = \char`\"{}../test.xml.gpg\char`\"{}
+\item 
+\hyperlink{gnuPG__example_8php_a10}{\$remote} = \char`\"{}test.xml.gpg\char`\"{}
+\item 
+\hyperlink{gnuPG__example_8php_a11}{\$c} = ftp\_\-connect(\$site\_\-ftp) or die(\char`\"{}Connection impossible\char`\"{})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{gnuPG__example_8php_a3}{
+\index{gnuPG_example.php@{gnu\-PG\_\-example.php}!$acoder@{\$acoder}}
+\index{$acoder@{\$acoder}!gnuPG_example.php@{gnu\-PG\_\-example.php}}
+\subsubsection[\$acoder]{\setlength{\rightskip}{0pt plus 5cm}\$acoder = fread(\$f,filesize (\$filename))}}
+\label{gnuPG__example_8php_a3}
+
+
+\hypertarget{gnuPG__example_8php_a11}{
+\index{gnuPG_example.php@{gnu\-PG\_\-example.php}!$c@{\$c}}
+\index{$c@{\$c}!gnuPG_example.php@{gnu\-PG\_\-example.php}}
+\subsubsection[\$c]{\setlength{\rightskip}{0pt plus 5cm}\$c = ftp\_\-connect(\$site\_\-ftp) or die(\char`\"{}Connection impossible\char`\"{})}}
+\label{gnuPG__example_8php_a11}
+
+
+\hypertarget{gnuPG__example_8php_a2}{
+\index{gnuPG_example.php@{gnu\-PG\_\-example.php}!$f@{\$f}}
+\index{$f@{\$f}!gnuPG_example.php@{gnu\-PG\_\-example.php}}
+\subsubsection[\$f]{\setlength{\rightskip}{0pt plus 5cm}\$f = fopen(\$filename,\char`\"{}r\char`\"{})}}
+\label{gnuPG__example_8php_a2}
+
+
+\hypertarget{gnuPG__example_8php_a1}{
+\index{gnuPG_example.php@{gnu\-PG\_\-example.php}!$filename@{\$filename}}
+\index{$filename@{\$filename}!gnuPG_example.php@{gnu\-PG\_\-example.php}}
+\subsubsection[\$filename]{\setlength{\rightskip}{0pt plus 5cm}\$filename = \char`\"{}../test.xml\char`\"{}}}
+\label{gnuPG__example_8php_a1}
+
+
+\hypertarget{gnuPG__example_8php_a0}{
+\index{gnuPG_example.php@{gnu\-PG\_\-example.php}!$gpg@{\$gpg}}
+\index{$gpg@{\$gpg}!gnuPG_example.php@{gnu\-PG\_\-example.php}}
+\subsubsection[\$gpg]{\setlength{\rightskip}{0pt plus 5cm}\$gpg = new \hyperlink{classgnuPG}{gnu\-PG}(/usr/local/bin/gpg, /var/www/html/SAGEC67\_\-v3/veille\_\-sanitaire)}}
+\label{gnuPG__example_8php_a0}
+
+
+\hypertarget{gnuPG__example_8php_a4}{
+\index{gnuPG_example.php@{gnu\-PG\_\-example.php}!$KeyID@{\$KeyID}}
+\index{$KeyID@{\$KeyID}!gnuPG_example.php@{gnu\-PG\_\-example.php}}
+\subsubsection[\$KeyID]{\setlength{\rightskip}{0pt plus 5cm}\$Key\-ID = \char`\"{}31CBF89DBCB3E59E\char`\"{}}}
+\label{gnuPG__example_8php_a4}
+
+
+\hypertarget{gnuPG__example_8php_a9}{
+\index{gnuPG_example.php@{gnu\-PG\_\-example.php}!$local@{\$local}}
+\index{$local@{\$local}!gnuPG_example.php@{gnu\-PG\_\-example.php}}
+\subsubsection[\$local]{\setlength{\rightskip}{0pt plus 5cm}\$local = \char`\"{}../test.xml.gpg\char`\"{}}}
+\label{gnuPG__example_8php_a9}
+
+
+\hypertarget{gnuPG__example_8php_a8}{
+\index{gnuPG_example.php@{gnu\-PG\_\-example.php}!$password@{\$password}}
+\index{$password@{\$password}!gnuPG_example.php@{gnu\-PG\_\-example.php}}
+\subsubsection[\$password]{\setlength{\rightskip}{0pt plus 5cm}\$password = 'marion'}}
+\label{gnuPG__example_8php_a8}
+
+
+\hypertarget{gnuPG__example_8php_a5}{
+\index{gnuPG_example.php@{gnu\-PG\_\-example.php}!$PublicBlock@{\$PublicBlock}}
+\index{$PublicBlock@{\$PublicBlock}!gnuPG_example.php@{gnu\-PG\_\-example.php}}
+\subsubsection[\$PublicBlock]{\setlength{\rightskip}{0pt plus 5cm}\$Public\-Block = \$gpg $\rightarrow$ Encrypt(\$Key\-ID, 'truc', \$Key\-ID, \$acoder)}}
+\label{gnuPG__example_8php_a5}
+
+
+\hypertarget{gnuPG__example_8php_a10}{
+\index{gnuPG_example.php@{gnu\-PG\_\-example.php}!$remote@{\$remote}}
+\index{$remote@{\$remote}!gnuPG_example.php@{gnu\-PG\_\-example.php}}
+\subsubsection[\$remote]{\setlength{\rightskip}{0pt plus 5cm}\$remote = \char`\"{}test.xml.gpg\char`\"{}}}
+\label{gnuPG__example_8php_a10}
+
+
+\hypertarget{gnuPG__example_8php_a6}{
+\index{gnuPG_example.php@{gnu\-PG\_\-example.php}!$site_ftp@{\$site\_\-ftp}}
+\index{$site_ftp@{\$site\_\-ftp}!gnuPG_example.php@{gnu\-PG\_\-example.php}}
+\subsubsection[\$site\_\-ftp]{\setlength{\rightskip}{0pt plus 5cm}\$site\_\-ftp = 'ftpperso.free.fr'}}
+\label{gnuPG__example_8php_a6}
+
+
+\hypertarget{gnuPG__example_8php_a7}{
+\index{gnuPG_example.php@{gnu\-PG\_\-example.php}!$username@{\$username}}
+\index{$username@{\$username}!gnuPG_example.php@{gnu\-PG\_\-example.php}}
+\subsubsection[\$username]{\setlength{\rightskip}{0pt plus 5cm}\$username = 'jeanclaude.bartier'}}
+\label{gnuPG__example_8php_a7}
+
+

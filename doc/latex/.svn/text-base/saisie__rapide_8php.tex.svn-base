@@ -1,0 +1,107 @@
+\hypertarget{saisie__rapide_8php}{
+\section{R\'{e}f\'{e}rence du fichier saisie\_\-rapide.php}
+\label{saisie__rapide_8php}\index{saisie_rapide.php@{saisie\_\-rapide.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{saisie__rapide_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{saisie__rapide_8php_a1}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{saisie__rapide_8php_a2}{\$requete}
+\item 
+\hyperlink{saisie__rapide_8php_a3}{\$mot} = \$string\_\-lang\mbox{[}'LISTE\_\-SERVICE\_\-HOPITAL'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{saisie__rapide_8php_a4}{\$date} = date(\char`\"{}j/m/Y H:i:s\char`\"{})
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{saisie__rapide_8php_a5}{\$\_\-style} = \char`\"{}A5\char`\"{}
+\item 
+\hyperlink{saisie__rapide_8php_a6}{\$identifiant} = \$i $\rightarrow$ service\_\-ID
+\item 
+\hyperlink{saisie__rapide_8php_a7}{\$type} = \$i $\rightarrow$ Type\_\-ID
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{saisie__rapide_8php_a8}{\$d} = date(\char`\"{}j/m/Y H:i\char`\"{},\$i $\rightarrow$ date\_\-maj)
+\item 
+\hyperlink{saisie__rapide_8php_a9}{\$total} \mbox{[}\$i $\rightarrow$ type\_\-nom\mbox{]} = \$total\mbox{[}\$i $\rightarrow$ type\_\-nom\mbox{]} + \$i $\rightarrow$ lits\_\-dispo
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{saisie__rapide_8php_a5}{
+\index{saisie_rapide.php@{saisie\_\-rapide.php}!$_style@{\$\_\-style}}
+\index{$_style@{\$\_\-style}!saisie_rapide.php@{saisie\_\-rapide.php}}
+\subsubsection[\$\_\-style]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$\_\-style = \char`\"{}A5\char`\"{}}}
+\label{saisie__rapide_8php_a5}
+
+
+\hypertarget{saisie__rapide_8php_a0}{
+\index{saisie_rapide.php@{saisie\_\-rapide.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!saisie_rapide.php@{saisie\_\-rapide.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{saisie__rapide_8php_a0}
+
+
+\hypertarget{saisie__rapide_8php_a8}{
+\index{saisie_rapide.php@{saisie\_\-rapide.php}!$d@{\$d}}
+\index{$d@{\$d}!saisie_rapide.php@{saisie\_\-rapide.php}}
+\subsubsection[\$d]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$d = date(\char`\"{}j/m/Y H:i\char`\"{},\$i $\rightarrow$ date\_\-maj)}}
+\label{saisie__rapide_8php_a8}
+
+
+\hypertarget{saisie__rapide_8php_a4}{
+\index{saisie_rapide.php@{saisie\_\-rapide.php}!$date@{\$date}}
+\index{$date@{\$date}!saisie_rapide.php@{saisie\_\-rapide.php}}
+\subsubsection[\$date]{\setlength{\rightskip}{0pt plus 5cm}\$date = date(\char`\"{}j/m/Y H:i:s\char`\"{})}}
+\label{saisie__rapide_8php_a4}
+
+
+\hypertarget{saisie__rapide_8php_a6}{
+\index{saisie_rapide.php@{saisie\_\-rapide.php}!$identifiant@{\$identifiant}}
+\index{$identifiant@{\$identifiant}!saisie_rapide.php@{saisie\_\-rapide.php}}
+\subsubsection[\$identifiant]{\setlength{\rightskip}{0pt plus 5cm}\$identifiant = \$i $\rightarrow$ service\_\-ID}}
+\label{saisie__rapide_8php_a6}
+
+
+\hypertarget{saisie__rapide_8php_a3}{
+\index{saisie_rapide.php@{saisie\_\-rapide.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!saisie_rapide.php@{saisie\_\-rapide.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'LISTE\_\-SERVICE\_\-HOPITAL'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{saisie__rapide_8php_a3}
+
+
+\hypertarget{saisie__rapide_8php_a2}{
+\index{saisie_rapide.php@{saisie\_\-rapide.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!saisie_rapide.php@{saisie\_\-rapide.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{saisie__rapide_8php_a2}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "UPDATE lits SET
+                                lits_dispo = '$l[$i]',
+                                date_maj = '$date'
+                                WHERE service_ID = '$s[$i]'"
+\end{verbatim}\normalsize 
+\hypertarget{saisie__rapide_8php_a1}{
+\index{saisie_rapide.php@{saisie\_\-rapide.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!saisie_rapide.php@{saisie\_\-rapide.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{saisie__rapide_8php_a1}
+
+
+\hypertarget{saisie__rapide_8php_a9}{
+\index{saisie_rapide.php@{saisie\_\-rapide.php}!$total@{\$total}}
+\index{$total@{\$total}!saisie_rapide.php@{saisie\_\-rapide.php}}
+\subsubsection[\$total]{\setlength{\rightskip}{0pt plus 5cm}\$total\mbox{[}\$i $\rightarrow$ type\_\-nom\mbox{]} = \$total\mbox{[}\$i $\rightarrow$ type\_\-nom\mbox{]} + \$i $\rightarrow$ lits\_\-dispo}}
+\label{saisie__rapide_8php_a9}
+
+
+\hypertarget{saisie__rapide_8php_a7}{
+\index{saisie_rapide.php@{saisie\_\-rapide.php}!$type@{\$type}}
+\index{$type@{\$type}!saisie_rapide.php@{saisie\_\-rapide.php}}
+\subsubsection[\$type]{\setlength{\rightskip}{0pt plus 5cm}\$type = \$i $\rightarrow$ Type\_\-ID}}
+\label{saisie__rapide_8php_a7}
+
+

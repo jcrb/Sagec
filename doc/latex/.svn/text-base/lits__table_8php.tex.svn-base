@@ -1,0 +1,19 @@
+\hypertarget{lits__table_8php}{
+\section{R\'{e}f\'{e}rence du fichier lits\_\-table.php}
+\label{lits__table_8php}\index{lits_table.php@{lits\_\-table.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{lits__table_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{lits__table_8php_a0}{
+\index{lits_table.php@{lits\_\-table.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!lits_table.php@{lits\_\-table.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{lits__table_8php_a0}
+
+

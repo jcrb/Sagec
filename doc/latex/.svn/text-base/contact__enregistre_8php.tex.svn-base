@@ -1,0 +1,46 @@
+\hypertarget{contact__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier contact\_\-enregistre.php}
+\label{contact__enregistre_8php}\index{contact_enregistre.php@{contact\_\-enregistre.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{contact__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{contact__enregistre_8php_a1}{\$num\_\-rows} = mysql\_\-num\_\-rows(\$resultat)
+\item 
+\hyperlink{contact__enregistre_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{contact__enregistre_8php_a3}{\$f} = fopen(test.txt','w)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{contact__enregistre_8php_a0}{
+\index{contact_enregistre.php@{contact\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!contact_enregistre.php@{contact\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{contact__enregistre_8php_a0}
+
+
+\hypertarget{contact__enregistre_8php_a3}{
+\index{contact_enregistre.php@{contact\_\-enregistre.php}!$f@{\$f}}
+\index{$f@{\$f}!contact_enregistre.php@{contact\_\-enregistre.php}}
+\subsubsection[\$f]{\setlength{\rightskip}{0pt plus 5cm}\$f = fopen(test.txt','w)}}
+\label{contact__enregistre_8php_a3}
+
+
+\hypertarget{contact__enregistre_8php_a1}{
+\index{contact_enregistre.php@{contact\_\-enregistre.php}!$num_rows@{\$num\_\-rows}}
+\index{$num_rows@{\$num\_\-rows}!contact_enregistre.php@{contact\_\-enregistre.php}}
+\subsubsection[\$num\_\-rows]{\setlength{\rightskip}{0pt plus 5cm}\$num\_\-rows = mysql\_\-num\_\-rows(\$resultat)}}
+\label{contact__enregistre_8php_a1}
+
+
+\hypertarget{contact__enregistre_8php_a2}{
+\index{contact_enregistre.php@{contact\_\-enregistre.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!contact_enregistre.php@{contact\_\-enregistre.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{contact__enregistre_8php_a2}
+
+

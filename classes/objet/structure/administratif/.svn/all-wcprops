@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure/administratif
+END
+Departement.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure/administratif/Departement.class.php
+END
+Pays.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure/administratif/Pays.class.php
+END
+Commune.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure/administratif/Commune.php
+END
+Canton.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure/administratif/Canton.class.php
+END
+Region.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure/administratif/Region.class.php
+END

@@ -1,0 +1,73 @@
+\hypertarget{table_8php}{
+\section{R\'{e}f\'{e}rence du fichier table.php}
+\label{table_8php}\index{table.php@{table.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{table_8php_a0}{Tbl\-Fin} ()
+\item 
+\hyperlink{table_8php_a1}{Tbl\-Debut\-Ligne} (\$classe=-1)
+\item 
+\hyperlink{table_8php_a2}{Tbl\-Fin\-Ligne} ()
+\item 
+\hyperlink{table_8php_a3}{Tbl\-Entete} (\$contenu, \$nb\-Lig=1, \$nb\-Col=1)
+\item 
+\hyperlink{table_8php_a4}{Tbl\-Debut\-Cellule} (\$classe=-1)
+\item 
+\hyperlink{table_8php_a5}{Tbl\-Fin\-Cellule} ()
+\item 
+\hyperlink{table_8php_a6}{Tbl\-Cellule} (\$contenu, \$nb\-Lig=1, \$nb\-Col=1, \$classe=-1)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{table_8php_a6}{
+\index{table.php@{table.php}!TblCellule@{TblCellule}}
+\index{TblCellule@{TblCellule}!table.php@{table.php}}
+\subsubsection[TblCellule]{\setlength{\rightskip}{0pt plus 5cm}Tbl\-Cellule (\$ {\em contenu}, \$ {\em nb\-Lig} = {\tt 1}, \$ {\em nb\-Col} = {\tt 1}, \$ {\em classe} = {\tt -1})}}
+\label{table_8php_a6}
+
+
+\hypertarget{table_8php_a4}{
+\index{table.php@{table.php}!TblDebutCellule@{TblDebutCellule}}
+\index{TblDebutCellule@{TblDebutCellule}!table.php@{table.php}}
+\subsubsection[TblDebutCellule]{\setlength{\rightskip}{0pt plus 5cm}Tbl\-Debut\-Cellule (\$ {\em classe} = {\tt -1})}}
+\label{table_8php_a4}
+
+
+\hypertarget{table_8php_a1}{
+\index{table.php@{table.php}!TblDebutLigne@{TblDebutLigne}}
+\index{TblDebutLigne@{TblDebutLigne}!table.php@{table.php}}
+\subsubsection[TblDebutLigne]{\setlength{\rightskip}{0pt plus 5cm}Tbl\-Debut\-Ligne (\$ {\em classe} = {\tt -1})}}
+\label{table_8php_a1}
+
+
+\hypertarget{table_8php_a3}{
+\index{table.php@{table.php}!TblEntete@{TblEntete}}
+\index{TblEntete@{TblEntete}!table.php@{table.php}}
+\subsubsection[TblEntete]{\setlength{\rightskip}{0pt plus 5cm}Tbl\-Entete (\$ {\em contenu}, \$ {\em nb\-Lig} = {\tt 1}, \$ {\em nb\-Col} = {\tt 1})}}
+\label{table_8php_a3}
+
+
+\hypertarget{table_8php_a0}{
+\index{table.php@{table.php}!TblFin@{TblFin}}
+\index{TblFin@{TblFin}!table.php@{table.php}}
+\subsubsection[TblFin]{\setlength{\rightskip}{0pt plus 5cm}Tbl\-Fin ()}}
+\label{table_8php_a0}
+
+
+\hypertarget{table_8php_a5}{
+\index{table.php@{table.php}!TblFinCellule@{TblFinCellule}}
+\index{TblFinCellule@{TblFinCellule}!table.php@{table.php}}
+\subsubsection[TblFinCellule]{\setlength{\rightskip}{0pt plus 5cm}Tbl\-Fin\-Cellule ()}}
+\label{table_8php_a5}
+
+
+\hypertarget{table_8php_a2}{
+\index{table.php@{table.php}!TblFinLigne@{TblFinLigne}}
+\index{TblFinLigne@{TblFinLigne}!table.php@{table.php}}
+\subsubsection[TblFinLigne]{\setlength{\rightskip}{0pt plus 5cm}Tbl\-Fin\-Ligne ()}}
+\label{table_8php_a2}
+
+

@@ -1,0 +1,151 @@
+\hypertarget{bolus_8php}{
+\section{R\'{e}f\'{e}rence du fichier bolus.php}
+\label{bolus_8php}\index{bolus.php@{bolus.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{bolus_8php_a14}{select\_\-voie} (\$connexion, \$langue, \$item\_\-select, \$on\-Change)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{bolus_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{bolus_8php_a1}{\$langue} = \$\_\-SESSION\mbox{[}'langue'\mbox{]}
+\item 
+global \hyperlink{bolus_8php_a2}{\$ordre} = \$\_\-GET\mbox{[}'ordre'\mbox{]}
+\item 
+\hyperlink{bolus_8php_a3}{\$requete} = \char`\"{}INSERT INTO dm\_\-med VALUES('','\$date\_\-unix','\$\_\-GET\mbox{[}dossier\mbox{]}','\$\_\-GET\mbox{[}ID\_\-med\mbox{]}','\$\_\-GET\mbox{[}dose\mbox{]}','\$\_\-GET\mbox{[}voie\mbox{]}')\char`\"{}
+\item 
+\hyperlink{bolus_8php_a4}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{bolus_8php_a5}{\$maintenant} = strtotime(\char`\"{}now\char`\"{})
+\item 
+\hyperlink{bolus_8php_a6}{\$date} = date(\char`\"{}d/m/Y\char`\"{},\$maintenant)
+\item 
+\hyperlink{bolus_8php_a7}{\$heure} = date(\char`\"{}H:i:s\char`\"{},\$maintenant)
+\item 
+\hyperlink{bolus_8php_a8}{\$tri} = \char`\"{}date\char`\"{}
+\item 
+\hyperlink{bolus_8php_a9}{break}
+\item 
+case \hyperlink{bolus_8php_a10}{\_\-med}
+\item 
+default \hyperlink{bolus_8php_a11}{\_\-\_\-pad3\_\-\_\-}
+\item 
+\hyperlink{bolus_8php_a12}{\$fdate} = u\-Date2French(\$rub\mbox{[}'date'\mbox{]})
+\item 
+\hyperlink{bolus_8php_a13}{\$fheure} = u\-Date2Frenchtime(\$rub\mbox{[}'date'\mbox{]})
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{bolus_8php_a14}{
+\index{bolus.php@{bolus.php}!select_voie@{select\_\-voie}}
+\index{select_voie@{select\_\-voie}!bolus.php@{bolus.php}}
+\subsubsection[select\_\-voie]{\setlength{\rightskip}{0pt plus 5cm}select\_\-voie (\$ {\em connexion}, \$ {\em langue}, \$ {\em item\_\-select}, \$ {\em on\-Change})}}
+\label{bolus_8php_a14}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{bolus_8php_a0}{
+\index{bolus.php@{bolus.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!bolus.php@{bolus.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{bolus_8php_a0}
+
+
+\hypertarget{bolus_8php_a6}{
+\index{bolus.php@{bolus.php}!$date@{\$date}}
+\index{$date@{\$date}!bolus.php@{bolus.php}}
+\subsubsection[\$date]{\setlength{\rightskip}{0pt plus 5cm}\$date = date(\char`\"{}d/m/Y\char`\"{},\$maintenant)}}
+\label{bolus_8php_a6}
+
+
+\hypertarget{bolus_8php_a12}{
+\index{bolus.php@{bolus.php}!$fdate@{\$fdate}}
+\index{$fdate@{\$fdate}!bolus.php@{bolus.php}}
+\subsubsection[\$fdate]{\setlength{\rightskip}{0pt plus 5cm}\$fdate = u\-Date2French(\$rub\mbox{[}'date'\mbox{]})}}
+\label{bolus_8php_a12}
+
+
+\hypertarget{bolus_8php_a13}{
+\index{bolus.php@{bolus.php}!$fheure@{\$fheure}}
+\index{$fheure@{\$fheure}!bolus.php@{bolus.php}}
+\subsubsection[\$fheure]{\setlength{\rightskip}{0pt plus 5cm}\$fheure = u\-Date2Frenchtime(\$rub\mbox{[}'date'\mbox{]})}}
+\label{bolus_8php_a13}
+
+
+\hypertarget{bolus_8php_a7}{
+\index{bolus.php@{bolus.php}!$heure@{\$heure}}
+\index{$heure@{\$heure}!bolus.php@{bolus.php}}
+\subsubsection[\$heure]{\setlength{\rightskip}{0pt plus 5cm}\$heure = date(\char`\"{}H:i:s\char`\"{},\$maintenant)}}
+\label{bolus_8php_a7}
+
+
+\hypertarget{bolus_8php_a1}{
+\index{bolus.php@{bolus.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!bolus.php@{bolus.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}'langue'\mbox{]}}}
+\label{bolus_8php_a1}
+
+
+\hypertarget{bolus_8php_a5}{
+\index{bolus.php@{bolus.php}!$maintenant@{\$maintenant}}
+\index{$maintenant@{\$maintenant}!bolus.php@{bolus.php}}
+\subsubsection[\$maintenant]{\setlength{\rightskip}{0pt plus 5cm}\$maintenant = strtotime(\char`\"{}now\char`\"{})}}
+\label{bolus_8php_a5}
+
+
+\hypertarget{bolus_8php_a2}{
+\index{bolus.php@{bolus.php}!$ordre@{\$ordre}}
+\index{$ordre@{\$ordre}!bolus.php@{bolus.php}}
+\subsubsection[\$ordre]{\setlength{\rightskip}{0pt plus 5cm}\$ordre = \$\_\-GET\mbox{[}'ordre'\mbox{]}}}
+\label{bolus_8php_a2}
+
+
+\hypertarget{bolus_8php_a3}{
+\index{bolus.php@{bolus.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!bolus.php@{bolus.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}INSERT INTO dm\_\-med VALUES('','\$date\_\-unix','\$\_\-GET\mbox{[}dossier\mbox{]}','\$\_\-GET\mbox{[}ID\_\-med\mbox{]}','\$\_\-GET\mbox{[}dose\mbox{]}','\$\_\-GET\mbox{[}voie\mbox{]}')\char`\"{}}}
+\label{bolus_8php_a3}
+
+
+\hypertarget{bolus_8php_a4}{
+\index{bolus.php@{bolus.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!bolus.php@{bolus.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{bolus_8php_a4}
+
+
+\hypertarget{bolus_8php_a8}{
+\index{bolus.php@{bolus.php}!$tri@{\$tri}}
+\index{$tri@{\$tri}!bolus.php@{bolus.php}}
+\subsubsection[\$tri]{\setlength{\rightskip}{0pt plus 5cm}\$tri = \char`\"{}date\char`\"{}}}
+\label{bolus_8php_a8}
+
+
+\hypertarget{bolus_8php_a11}{
+\index{bolus.php@{bolus.php}!__pad3__@{\_\-\_\-pad3\_\-\_\-}}
+\index{__pad3__@{\_\-\_\-pad3\_\-\_\-}!bolus.php@{bolus.php}}
+\subsubsection[\_\-\_\-pad3\_\-\_\-]{\setlength{\rightskip}{0pt plus 5cm}default \hyperlink{bolus_8php_a11}{\_\-\_\-pad3\_\-\_\-}}}
+\label{bolus_8php_a11}
+
+
+\hypertarget{bolus_8php_a10}{
+\index{bolus.php@{bolus.php}!_med@{\_\-med}}
+\index{_med@{\_\-med}!bolus.php@{bolus.php}}
+\subsubsection[\_\-med]{\setlength{\rightskip}{0pt plus 5cm}case \hyperlink{bolus_8php_a10}{\_\-med}}}
+\label{bolus_8php_a10}
+
+
+\hypertarget{bolus_8php_a9}{
+\index{bolus.php@{bolus.php}!break@{break}}
+\index{break@{break}!bolus.php@{bolus.php}}
+\subsubsection[break]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{lits__fermes__nouveau_8php_a0}{break}}}
+\label{bolus_8php_a9}
+
+

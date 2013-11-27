@@ -1,0 +1,183 @@
+\hypertarget{carto__base_8php}{
+\section{R\'{e}f\'{e}rence du fichier carto\_\-base.php}
+\label{carto__base_8php}\index{carto_base.php@{carto\_\-base.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{carto__base_8php_a0}{\$liste} = explode(\char`\"{}$|$\char`\"{}, \$\_\-GET\mbox{[}\char`\"{}depart2\char`\"{}\mbox{]})
+\item 
+\hyperlink{carto__base_8php_a1}{\$in\-Liste} = \char`\"{}(\char`\"{}
+\item 
+\hyperlink{carto__base_8php_a2}{\$zone} = array(array())
+\item 
+\hyperlink{carto__base_8php_a3}{\$image\_\-width} = 660
+\item 
+\hyperlink{carto__base_8php_a4}{\$image\_\-heigth} = 800
+\item 
+\hyperlink{carto__base_8php_a5}{\$univers\_\-h} = \$U\_\-haut - \$U\_\-bas
+\item 
+\hyperlink{carto__base_8php_a6}{\$univers\_\-w} = \$U\_\-droit - \$U\_\-gauche
+\item 
+\hyperlink{carto__base_8php_a7}{\$d} = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$U\_\-haut,\$U\_\-gauche,\$U\_\-bas,\$U\_\-droit)
+\item 
+\hyperlink{carto__base_8php_a8}{\$peachpuff} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0xda,0x\-B9)
+\item 
+\hyperlink{carto__base_8php_a9}{\$moccasin} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0x\-E4,0x\-B5)
+\item 
+\hyperlink{carto__base_8php_a10}{\$bleu} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x00,0x00,0xff)
+\item 
+\hyperlink{carto__base_8php_a11}{\$rouge} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0xff,0x00,0x00)
+\item 
+\hyperlink{carto__base_8php_a12}{\$blanc} = imagecolor\-Allocate(\$d $\rightarrow$ pic,0xff,0xff,0xff)
+\item 
+\hyperlink{carto__base_8php_a13}{\$couleur} = \$moccasin
+\item 
+\hyperlink{carto__base_8php_a14}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{carto__base_8php_a15}{\$requete}
+\item 
+\hyperlink{carto__base_8php_a16}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{carto__base_8php_a17}{\$color} = \$bleu
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{carto__base_8php_a12}{
+\index{carto_base.php@{carto\_\-base.php}!$blanc@{\$blanc}}
+\index{$blanc@{\$blanc}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$blanc]{\setlength{\rightskip}{0pt plus 5cm}\$blanc = imagecolor\-Allocate(\$d $\rightarrow$ pic,0xff,0xff,0xff)}}
+\label{carto__base_8php_a12}
+
+
+\hypertarget{carto__base_8php_a10}{
+\index{carto_base.php@{carto\_\-base.php}!$bleu@{\$bleu}}
+\index{$bleu@{\$bleu}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$bleu]{\setlength{\rightskip}{0pt plus 5cm}\$bleu = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x00,0x00,0xff)}}
+\label{carto__base_8php_a10}
+
+
+\hypertarget{carto__base_8php_a17}{
+\index{carto_base.php@{carto\_\-base.php}!$color@{\$color}}
+\index{$color@{\$color}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$color]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$color = \$bleu}}
+\label{carto__base_8php_a17}
+
+
+\hypertarget{carto__base_8php_a14}{
+\index{carto_base.php@{carto\_\-base.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{carto__base_8php_a14}
+
+
+\hypertarget{carto__base_8php_a13}{
+\index{carto_base.php@{carto\_\-base.php}!$couleur@{\$couleur}}
+\index{$couleur@{\$couleur}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$couleur]{\setlength{\rightskip}{0pt plus 5cm}\$couleur = \$moccasin}}
+\label{carto__base_8php_a13}
+
+
+\hypertarget{carto__base_8php_a7}{
+\index{carto_base.php@{carto\_\-base.php}!$d@{\$d}}
+\index{$d@{\$d}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$d]{\setlength{\rightskip}{0pt plus 5cm}\$d = new \hyperlink{classCDessin}{CDessin}(\$image\_\-heigth,\$image\_\-width,\$U\_\-haut,\$U\_\-gauche,\$U\_\-bas,\$U\_\-droit)}}
+\label{carto__base_8php_a7}
+
+
+\hypertarget{carto__base_8php_a4}{
+\index{carto_base.php@{carto\_\-base.php}!$image_heigth@{\$image\_\-heigth}}
+\index{$image_heigth@{\$image\_\-heigth}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$image\_\-heigth]{\setlength{\rightskip}{0pt plus 5cm}\$image\_\-heigth = 800}}
+\label{carto__base_8php_a4}
+
+
+\hypertarget{carto__base_8php_a3}{
+\index{carto_base.php@{carto\_\-base.php}!$image_width@{\$image\_\-width}}
+\index{$image_width@{\$image\_\-width}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$image\_\-width]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$image\_\-width = 660}}
+\label{carto__base_8php_a3}
+
+
+\hypertarget{carto__base_8php_a1}{
+\index{carto_base.php@{carto\_\-base.php}!$inListe@{\$inListe}}
+\index{$inListe@{\$inListe}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$inListe]{\setlength{\rightskip}{0pt plus 5cm}\$in\-Liste = \char`\"{}(\char`\"{}}}
+\label{carto__base_8php_a1}
+
+
+\hypertarget{carto__base_8php_a0}{
+\index{carto_base.php@{carto\_\-base.php}!$liste@{\$liste}}
+\index{$liste@{\$liste}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$liste]{\setlength{\rightskip}{0pt plus 5cm}\$liste = explode(\char`\"{}$|$\char`\"{}, \$\_\-GET\mbox{[}\char`\"{}depart2\char`\"{}\mbox{]})}}
+\label{carto__base_8php_a0}
+
+
+\hypertarget{carto__base_8php_a9}{
+\index{carto_base.php@{carto\_\-base.php}!$moccasin@{\$moccasin}}
+\index{$moccasin@{\$moccasin}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$moccasin]{\setlength{\rightskip}{0pt plus 5cm}\$moccasin = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0x\-E4,0x\-B5)}}
+\label{carto__base_8php_a9}
+
+
+\hypertarget{carto__base_8php_a8}{
+\index{carto_base.php@{carto\_\-base.php}!$peachpuff@{\$peachpuff}}
+\index{$peachpuff@{\$peachpuff}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$peachpuff]{\setlength{\rightskip}{0pt plus 5cm}\$peachpuff = imagecolor\-Allocate(\$d $\rightarrow$ pic,0x\-FF,0xda,0x\-B9)}}
+\label{carto__base_8php_a8}
+
+
+\hypertarget{carto__base_8php_a15}{
+\index{carto_base.php@{carto\_\-base.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{carto__base_8php_a15}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "SELECT SUM(lits_dispo),ville_nom,ville_LambertX, ville_LambertY
+                FROM service,hopital,lits,ville,adresse
+                WHERE service.type_ID = '$type'
+                AND service.hop_ID = hopital.Hop_ID
+                AND lits.service_ID = service.service_ID
+                AND ville.ville_ID = adresse.ville_ID
+                AND adresse.ad_ID = hopital.adresse_ID
+                AND ville.departement_ID IN ".$inListe." GROUP BY ville_nom"
+\end{verbatim}\normalsize 
+\hypertarget{carto__base_8php_a16}{
+\index{carto_base.php@{carto\_\-base.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{carto__base_8php_a16}
+
+
+\hypertarget{carto__base_8php_a11}{
+\index{carto_base.php@{carto\_\-base.php}!$rouge@{\$rouge}}
+\index{$rouge@{\$rouge}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$rouge]{\setlength{\rightskip}{0pt plus 5cm}\$rouge = imagecolor\-Allocate(\$d $\rightarrow$ pic,0xff,0x00,0x00)}}
+\label{carto__base_8php_a11}
+
+
+\hypertarget{carto__base_8php_a5}{
+\index{carto_base.php@{carto\_\-base.php}!$univers_h@{\$univers\_\-h}}
+\index{$univers_h@{\$univers\_\-h}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$univers\_\-h]{\setlength{\rightskip}{0pt plus 5cm}\$univers\_\-h = \$U\_\-haut - \$U\_\-bas}}
+\label{carto__base_8php_a5}
+
+
+\hypertarget{carto__base_8php_a6}{
+\index{carto_base.php@{carto\_\-base.php}!$univers_w@{\$univers\_\-w}}
+\index{$univers_w@{\$univers\_\-w}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$univers\_\-w]{\setlength{\rightskip}{0pt plus 5cm}\$univers\_\-w = \$U\_\-droit - \$U\_\-gauche}}
+\label{carto__base_8php_a6}
+
+
+\hypertarget{carto__base_8php_a2}{
+\index{carto_base.php@{carto\_\-base.php}!$zone@{\$zone}}
+\index{$zone@{\$zone}!carto_base.php@{carto\_\-base.php}}
+\subsubsection[\$zone]{\setlength{\rightskip}{0pt plus 5cm}\$zone = array(array())}}
+\label{carto__base_8php_a2}
+
+

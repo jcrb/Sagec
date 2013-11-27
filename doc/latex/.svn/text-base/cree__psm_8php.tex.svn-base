@@ -1,0 +1,52 @@
+\hypertarget{cree__psm_8php}{
+\section{R\'{e}f\'{e}rence du fichier cree\_\-psm.php}
+\label{cree__psm_8php}\index{cree_psm.php@{cree\_\-psm.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{cree__psm_8php_a3}{polyvalent} (\$lot, \$malle, \$m, \$\hyperlink{utilitaires_2html_8php_a0}{n}, \$connexion)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{cree__psm_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{cree__psm_8php_a1}{\$requete} = \char`\"{}DROP TABLE IF EXISTS `psm2`\char`\"{}
+\item 
+\hyperlink{cree__psm_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{cree__psm_8php_a3}{
+\index{cree_psm.php@{cree\_\-psm.php}!polyvalent@{polyvalent}}
+\index{polyvalent@{polyvalent}!cree_psm.php@{cree\_\-psm.php}}
+\subsubsection[polyvalent]{\setlength{\rightskip}{0pt plus 5cm}polyvalent (\$ {\em lot}, \$ {\em malle}, \$ {\em m}, \$ {\em n}, \$ {\em connexion})}}
+\label{cree__psm_8php_a3}
+
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{cree__psm_8php_a0}{
+\index{cree_psm.php@{cree\_\-psm.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!cree_psm.php@{cree\_\-psm.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{cree__psm_8php_a0}
+
+
+\hypertarget{cree__psm_8php_a1}{
+\index{cree_psm.php@{cree\_\-psm.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!cree_psm.php@{cree\_\-psm.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}DROP TABLE IF EXISTS `psm2`\char`\"{}}}
+\label{cree__psm_8php_a1}
+
+
+\hypertarget{cree__psm_8php_a2}{
+\index{cree_psm.php@{cree\_\-psm.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!cree_psm.php@{cree\_\-psm.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{cree__psm_8php_a2}
+
+

@@ -1,0 +1,107 @@
+\hypertarget{services_2epidemio_2test_8php}{
+\section{R\'{e}f\'{e}rence du fichier test.php}
+\label{services_2epidemio_2test_8php}\index{test.php@{test.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{services_2epidemio_2test_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{services_2epidemio_2test_8php_a1}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{services_2epidemio_2test_8php_a2}{\$requete}
+\item 
+\hyperlink{services_2epidemio_2test_8php_a3}{\$mot} = \$string\_\-lang\mbox{[}'LISTE\_\-SERVICE\_\-HOPITAL'\mbox{]}\mbox{[}\$langue\mbox{]}
+\item 
+\hyperlink{services_2epidemio_2test_8php_a4}{\$date} = date(\char`\"{}j/m/Y H:i:s\char`\"{})
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{services_2epidemio_2test_8php_a5}{\$\_\-style} = \char`\"{}A5\char`\"{}
+\item 
+\hyperlink{services_2epidemio_2test_8php_a6}{\$identifiant} = \$i $\rightarrow$ service\_\-ID
+\item 
+\hyperlink{services_2epidemio_2test_8php_a7}{\$type} = \$i $\rightarrow$ Type\_\-ID
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{services_2epidemio_2test_8php_a8}{\$d} = date(\char`\"{}j/m/Y H:i\char`\"{},\$i $\rightarrow$ date\_\-maj)
+\item 
+\hyperlink{services_2epidemio_2test_8php_a9}{\$total} \mbox{[}\$i $\rightarrow$ type\_\-nom\mbox{]} = \$total\mbox{[}\$i $\rightarrow$ type\_\-nom\mbox{]} + \$i $\rightarrow$ lits\_\-dispo
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{services_2epidemio_2test_8php_a5}{
+\index{services/epidemio/test.php@{services/epidemio/test.php}!$_style@{\$\_\-style}}
+\index{$_style@{\$\_\-style}!services/epidemio/test.php@{services/epidemio/test.php}}
+\subsubsection[\$\_\-style]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$\_\-style = \char`\"{}A5\char`\"{}}}
+\label{services_2epidemio_2test_8php_a5}
+
+
+\hypertarget{services_2epidemio_2test_8php_a0}{
+\index{services/epidemio/test.php@{services/epidemio/test.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!services/epidemio/test.php@{services/epidemio/test.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{services_2epidemio_2test_8php_a0}
+
+
+\hypertarget{services_2epidemio_2test_8php_a8}{
+\index{services/epidemio/test.php@{services/epidemio/test.php}!$d@{\$d}}
+\index{$d@{\$d}!services/epidemio/test.php@{services/epidemio/test.php}}
+\subsubsection[\$d]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$d = date(\char`\"{}j/m/Y H:i\char`\"{},\$i $\rightarrow$ date\_\-maj)}}
+\label{services_2epidemio_2test_8php_a8}
+
+
+\hypertarget{services_2epidemio_2test_8php_a4}{
+\index{services/epidemio/test.php@{services/epidemio/test.php}!$date@{\$date}}
+\index{$date@{\$date}!services/epidemio/test.php@{services/epidemio/test.php}}
+\subsubsection[\$date]{\setlength{\rightskip}{0pt plus 5cm}\$date = date(\char`\"{}j/m/Y H:i:s\char`\"{})}}
+\label{services_2epidemio_2test_8php_a4}
+
+
+\hypertarget{services_2epidemio_2test_8php_a6}{
+\index{services/epidemio/test.php@{services/epidemio/test.php}!$identifiant@{\$identifiant}}
+\index{$identifiant@{\$identifiant}!services/epidemio/test.php@{services/epidemio/test.php}}
+\subsubsection[\$identifiant]{\setlength{\rightskip}{0pt plus 5cm}\$identifiant = \$i $\rightarrow$ service\_\-ID}}
+\label{services_2epidemio_2test_8php_a6}
+
+
+\hypertarget{services_2epidemio_2test_8php_a3}{
+\index{services/epidemio/test.php@{services/epidemio/test.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!services/epidemio/test.php@{services/epidemio/test.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = \$string\_\-lang\mbox{[}'LISTE\_\-SERVICE\_\-HOPITAL'\mbox{]}\mbox{[}\$langue\mbox{]}}}
+\label{services_2epidemio_2test_8php_a3}
+
+
+\hypertarget{services_2epidemio_2test_8php_a2}{
+\index{services/epidemio/test.php@{services/epidemio/test.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!services/epidemio/test.php@{services/epidemio/test.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$requete}}
+\label{services_2epidemio_2test_8php_a2}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim} "UPDATE lits SET
+                                lits_dispo = '$l[$i]',
+                                date_maj = '$date'
+                                WHERE service_ID = '$s[$i]'"
+\end{verbatim}\normalsize 
+\hypertarget{services_2epidemio_2test_8php_a1}{
+\index{services/epidemio/test.php@{services/epidemio/test.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!services/epidemio/test.php@{services/epidemio/test.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{services_2epidemio_2test_8php_a1}
+
+
+\hypertarget{services_2epidemio_2test_8php_a9}{
+\index{services/epidemio/test.php@{services/epidemio/test.php}!$total@{\$total}}
+\index{$total@{\$total}!services/epidemio/test.php@{services/epidemio/test.php}}
+\subsubsection[\$total]{\setlength{\rightskip}{0pt plus 5cm}\$total\mbox{[}\$i $\rightarrow$ type\_\-nom\mbox{]} = \$total\mbox{[}\$i $\rightarrow$ type\_\-nom\mbox{]} + \$i $\rightarrow$ lits\_\-dispo}}
+\label{services_2epidemio_2test_8php_a9}
+
+
+\hypertarget{services_2epidemio_2test_8php_a7}{
+\index{services/epidemio/test.php@{services/epidemio/test.php}!$type@{\$type}}
+\index{$type@{\$type}!services/epidemio/test.php@{services/epidemio/test.php}}
+\subsubsection[\$type]{\setlength{\rightskip}{0pt plus 5cm}\$type = \$i $\rightarrow$ Type\_\-ID}}
+\label{services_2epidemio_2test_8php_a7}
+
+

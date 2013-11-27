@@ -1,0 +1,28 @@
+\hypertarget{constantes__enregistre2_8php}{
+\section{R\'{e}f\'{e}rence du fichier constantes\_\-enregistre2.php}
+\label{constantes__enregistre2_8php}\index{constantes_enregistre2.php@{constantes\_\-enregistre2.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{constantes__enregistre2_8php_a0}{\$date} = strtotime(\$\_\-GET\mbox{[}'date'\mbox{]}.\char`\"{} \char`\"{}.\$\_\-GET\mbox{[}heure\mbox{]})
+\item 
+\hyperlink{constantes__enregistre2_8php_a1}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{constantes__enregistre2_8php_a0}{
+\index{constantes_enregistre2.php@{constantes\_\-enregistre2.php}!$date@{\$date}}
+\index{$date@{\$date}!constantes_enregistre2.php@{constantes\_\-enregistre2.php}}
+\subsubsection[\$date]{\setlength{\rightskip}{0pt plus 5cm}\$date = strtotime(\$\_\-GET\mbox{[}'date'\mbox{]}.\char`\"{} \char`\"{}.\$\_\-GET\mbox{[}heure\mbox{]})}}
+\label{constantes__enregistre2_8php_a0}
+
+
+\hypertarget{constantes__enregistre2_8php_a1}{
+\index{constantes_enregistre2.php@{constantes\_\-enregistre2.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!constantes_enregistre2.php@{constantes\_\-enregistre2.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{constantes__enregistre2_8php_a1}
+
+

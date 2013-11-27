@@ -1,0 +1,46 @@
+\hypertarget{utilisateurs__ajout_8php}{
+\section{R\'{e}f\'{e}rence du fichier utilisateurs\_\-ajout.php}
+\label{utilisateurs__ajout_8php}\index{utilisateurs_ajout.php@{utilisateurs\_\-ajout.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{utilisateurs__ajout_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{utilisateurs__ajout_8php_a1}{\$i} = Ligne\-Suivante(\$resultat)
+\item 
+\hyperlink{utilisateurs__ajout_8php_a2}{\$organisme} = \$i $\rightarrow$ org\_\-ID
+\item 
+\hyperlink{utilisateurs__ajout_8php_a3}{\$check} = \char`\"{}\char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{utilisateurs__ajout_8php_a3}{
+\index{utilisateurs_ajout.php@{utilisateurs\_\-ajout.php}!$check@{\$check}}
+\index{$check@{\$check}!utilisateurs_ajout.php@{utilisateurs\_\-ajout.php}}
+\subsubsection[\$check]{\setlength{\rightskip}{0pt plus 5cm}\$check = \char`\"{}\char`\"{}}}
+\label{utilisateurs__ajout_8php_a3}
+
+
+\hypertarget{utilisateurs__ajout_8php_a0}{
+\index{utilisateurs_ajout.php@{utilisateurs\_\-ajout.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!utilisateurs_ajout.php@{utilisateurs\_\-ajout.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{utilisateurs__ajout_8php_a0}
+
+
+\hypertarget{utilisateurs__ajout_8php_a1}{
+\index{utilisateurs_ajout.php@{utilisateurs\_\-ajout.php}!$i@{\$i}}
+\index{$i@{\$i}!utilisateurs_ajout.php@{utilisateurs\_\-ajout.php}}
+\subsubsection[\$i]{\setlength{\rightskip}{0pt plus 5cm}\$i = Ligne\-Suivante(\$resultat)}}
+\label{utilisateurs__ajout_8php_a1}
+
+
+\hypertarget{utilisateurs__ajout_8php_a2}{
+\index{utilisateurs_ajout.php@{utilisateurs\_\-ajout.php}!$organisme@{\$organisme}}
+\index{$organisme@{\$organisme}!utilisateurs_ajout.php@{utilisateurs\_\-ajout.php}}
+\subsubsection[\$organisme]{\setlength{\rightskip}{0pt plus 5cm}\$organisme = \$i $\rightarrow$ org\_\-ID}}
+\label{utilisateurs__ajout_8php_a2}
+
+

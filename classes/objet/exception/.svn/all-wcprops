@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/dev/!svn/ver/15051/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/exception
+END
+WrongDataException.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/dev/!svn/ver/15051/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/exception/WrongDataException.class.php
+END
+StructureNotFoundException.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/dev/!svn/ver/13579/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/exception/StructureNotFoundException.class.php
+END
+SqlException.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/dev/!svn/ver/15051/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/exception/SqlException.class.php
+END

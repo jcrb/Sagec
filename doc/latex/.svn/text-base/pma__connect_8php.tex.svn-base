@@ -1,0 +1,82 @@
+\hypertarget{pma__connect_8php}{
+\section{R\'{e}f\'{e}rence du fichier pma\_\-connect.php}
+\label{pma__connect_8php}\index{pma_connect.php@{pma\_\-connect.php}}
+}
+\subsection*{\'{E}num\'{e}rations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{pma__connect_8php_a0}{NOM} 
+\item 
+enum \hyperlink{pma__connect_8php_a1}{PASSE} 
+\item 
+enum \hyperlink{pma__connect_8php_a2}{SERVEUR} 
+\item 
+enum \hyperlink{pma__connect_8php_a3}{BASE} 
+\item 
+enum \hyperlink{pma__connect_8php_a4}{NOM2} 
+\item 
+enum \hyperlink{pma__connect_8php_a5}{PASSE2} 
+\item 
+enum \hyperlink{pma__connect_8php_a6}{SERVEUR\_\-DISTANT} 
+\item 
+enum \hyperlink{pma__connect_8php_a7}{BASE2} 
+\end{CompactItemize}
+
+
+\subsection{Documentation du type de l'\'{e}num\'{e}ration}
+\hypertarget{pma__connect_8php_a3}{
+\index{pma_connect.php@{pma\_\-connect.php}!BASE@{BASE}}
+\index{BASE@{BASE}!pma_connect.php@{pma\_\-connect.php}}
+\subsubsection[BASE]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{pma__connect_8php_a3}{BASE}}}
+\label{pma__connect_8php_a3}
+
+
+\hypertarget{pma__connect_8php_a7}{
+\index{pma_connect.php@{pma\_\-connect.php}!BASE2@{BASE2}}
+\index{BASE2@{BASE2}!pma_connect.php@{pma\_\-connect.php}}
+\subsubsection[BASE2]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{pma__connect_8php_a7}{BASE2}}}
+\label{pma__connect_8php_a7}
+
+
+\hypertarget{pma__connect_8php_a0}{
+\index{pma_connect.php@{pma\_\-connect.php}!NOM@{NOM}}
+\index{NOM@{NOM}!pma_connect.php@{pma\_\-connect.php}}
+\subsubsection[NOM]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{pma__connect_8php_a0}{NOM}}}
+\label{pma__connect_8php_a0}
+
+
+\hypertarget{pma__connect_8php_a4}{
+\index{pma_connect.php@{pma\_\-connect.php}!NOM2@{NOM2}}
+\index{NOM2@{NOM2}!pma_connect.php@{pma\_\-connect.php}}
+\subsubsection[NOM2]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{pma__connect_8php_a4}{NOM2}}}
+\label{pma__connect_8php_a4}
+
+
+\hypertarget{pma__connect_8php_a1}{
+\index{pma_connect.php@{pma\_\-connect.php}!PASSE@{PASSE}}
+\index{PASSE@{PASSE}!pma_connect.php@{pma\_\-connect.php}}
+\subsubsection[PASSE]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{pma__connect_8php_a1}{PASSE}}}
+\label{pma__connect_8php_a1}
+
+
+\hypertarget{pma__connect_8php_a5}{
+\index{pma_connect.php@{pma\_\-connect.php}!PASSE2@{PASSE2}}
+\index{PASSE2@{PASSE2}!pma_connect.php@{pma\_\-connect.php}}
+\subsubsection[PASSE2]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{pma__connect_8php_a5}{PASSE2}}}
+\label{pma__connect_8php_a5}
+
+
+\hypertarget{pma__connect_8php_a2}{
+\index{pma_connect.php@{pma\_\-connect.php}!SERVEUR@{SERVEUR}}
+\index{SERVEUR@{SERVEUR}!pma_connect.php@{pma\_\-connect.php}}
+\subsubsection[SERVEUR]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{pma__connect_8php_a2}{SERVEUR}}}
+\label{pma__connect_8php_a2}
+
+
+\hypertarget{pma__connect_8php_a6}{
+\index{pma_connect.php@{pma\_\-connect.php}!SERVEUR_DISTANT@{SERVEUR\_\-DISTANT}}
+\index{SERVEUR_DISTANT@{SERVEUR\_\-DISTANT}!pma_connect.php@{pma\_\-connect.php}}
+\subsubsection[SERVEUR\_\-DISTANT]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{pma__connect_8php_a6}{SERVEUR\_\-DISTANT}}}
+\label{pma__connect_8php_a6}
+
+

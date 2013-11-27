@@ -1,0 +1,88 @@
+\hypertarget{utilisateurs__liste_8php}{
+\section{R\'{e}f\'{e}rence du fichier utilisateurs\_\-liste.php}
+\label{utilisateurs__liste_8php}\index{utilisateurs_liste.php@{utilisateurs\_\-liste.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{utilisateurs__liste_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{utilisateurs__liste_8php_a1}{\$\_\-style} = \char`\"{}A2\char`\"{}
+\item 
+\hyperlink{utilisateurs__liste_8php_a2}{\$modifier} = Str\-To\-Upper(\$string\_\-lang\mbox{[}MODIFIER\mbox{]}\mbox{[}\$langue\mbox{]})
+\item 
+\hyperlink{utilisateurs__liste_8php_a3}{\$supprimer} = Str\-To\-Upper(\$string\_\-lang\mbox{[}SUPPRIMER\mbox{]}\mbox{[}\$langue\mbox{]})
+\item 
+\hyperlink{utilisateurs__liste_8php_a4}{\$mot} = Str\-To\-Upper(\$string\_\-lang\mbox{[}'\hyperlink{pma__connect_8php_a0}{NOM}'\mbox{]}\mbox{[}\$langue\mbox{]})
+\item 
+\hyperlink{utilisateurs__liste_8php_a5}{\$tri} = \$\_\-GET\mbox{[}'tri'\mbox{]}
+\item 
+\hyperlink{utilisateurs__liste_8php_a6}{\$requete}
+\item 
+\hyperlink{utilisateurs__liste_8php_a7}{\$identifiant} = \$i $\rightarrow$ ID\_\-utilisateur
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{utilisateurs__liste_8php_a1}{
+\index{utilisateurs_liste.php@{utilisateurs\_\-liste.php}!$_style@{\$\_\-style}}
+\index{$_style@{\$\_\-style}!utilisateurs_liste.php@{utilisateurs\_\-liste.php}}
+\subsubsection[\$\_\-style]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$\_\-style = \char`\"{}A2\char`\"{}}}
+\label{utilisateurs__liste_8php_a1}
+
+
+\hypertarget{utilisateurs__liste_8php_a0}{
+\index{utilisateurs_liste.php@{utilisateurs\_\-liste.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!utilisateurs_liste.php@{utilisateurs\_\-liste.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{utilisateurs__liste_8php_a0}
+
+
+\hypertarget{utilisateurs__liste_8php_a7}{
+\index{utilisateurs_liste.php@{utilisateurs\_\-liste.php}!$identifiant@{\$identifiant}}
+\index{$identifiant@{\$identifiant}!utilisateurs_liste.php@{utilisateurs\_\-liste.php}}
+\subsubsection[\$identifiant]{\setlength{\rightskip}{0pt plus 5cm}\$identifiant = \$i $\rightarrow$ ID\_\-utilisateur}}
+\label{utilisateurs__liste_8php_a7}
+
+
+\hypertarget{utilisateurs__liste_8php_a2}{
+\index{utilisateurs_liste.php@{utilisateurs\_\-liste.php}!$modifier@{\$modifier}}
+\index{$modifier@{\$modifier}!utilisateurs_liste.php@{utilisateurs\_\-liste.php}}
+\subsubsection[\$modifier]{\setlength{\rightskip}{0pt plus 5cm}\$modifier = Str\-To\-Upper(\$string\_\-lang\mbox{[}MODIFIER\mbox{]}\mbox{[}\$langue\mbox{]})}}
+\label{utilisateurs__liste_8php_a2}
+
+
+\hypertarget{utilisateurs__liste_8php_a4}{
+\index{utilisateurs_liste.php@{utilisateurs\_\-liste.php}!$mot@{\$mot}}
+\index{$mot@{\$mot}!utilisateurs_liste.php@{utilisateurs\_\-liste.php}}
+\subsubsection[\$mot]{\setlength{\rightskip}{0pt plus 5cm}\$mot = Str\-To\-Upper(\$string\_\-lang\mbox{[}'\hyperlink{pma__connect_8php_a0}{NOM}'\mbox{]}\mbox{[}\$langue\mbox{]})}}
+\label{utilisateurs__liste_8php_a4}
+
+
+\hypertarget{utilisateurs__liste_8php_a6}{
+\index{utilisateurs_liste.php@{utilisateurs\_\-liste.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!utilisateurs_liste.php@{utilisateurs\_\-liste.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{utilisateurs__liste_8php_a6}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}"SELECT nom,prenom,email,ID_utilisateur,org_nom
+                FROM utilisateurs,organisme
+                WHERE organisme.org_ID = utilisateurs.org_ID "
+\end{verbatim}\normalsize 
+\hypertarget{utilisateurs__liste_8php_a3}{
+\index{utilisateurs_liste.php@{utilisateurs\_\-liste.php}!$supprimer@{\$supprimer}}
+\index{$supprimer@{\$supprimer}!utilisateurs_liste.php@{utilisateurs\_\-liste.php}}
+\subsubsection[\$supprimer]{\setlength{\rightskip}{0pt plus 5cm}\$supprimer = Str\-To\-Upper(\$string\_\-lang\mbox{[}SUPPRIMER\mbox{]}\mbox{[}\$langue\mbox{]})}}
+\label{utilisateurs__liste_8php_a3}
+
+
+\hypertarget{utilisateurs__liste_8php_a5}{
+\index{utilisateurs_liste.php@{utilisateurs\_\-liste.php}!$tri@{\$tri}}
+\index{$tri@{\$tri}!utilisateurs_liste.php@{utilisateurs\_\-liste.php}}
+\subsubsection[\$tri]{\setlength{\rightskip}{0pt plus 5cm}\$tri = \$\_\-GET\mbox{[}'tri'\mbox{]}}}
+\label{utilisateurs__liste_8php_a5}
+
+

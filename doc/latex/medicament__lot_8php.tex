@@ -1,0 +1,71 @@
+\hypertarget{medicament__lot_8php}{
+\section{R\'{e}f\'{e}rence du fichier medicament\_\-lot.php}
+\label{medicament__lot_8php}\index{medicament_lot.php@{medicament\_\-lot.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{medicament__lot_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{medicament__lot_8php_a1}{\$lot} = mysql\_\-fetch\_\-array(\$resultat)
+\item 
+\hyperlink{cron_8php_a9}{else} \hyperlink{medicament__lot_8php_a2}{\$val} = \char`\"{}aaaa-mm-jj\char`\"{}
+\item 
+\hyperlink{medicament__lot_8php_a3}{\$requete}
+\item 
+\hyperlink{medicament__lot_8php_a4}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{medicament__lot_8php_a5}{\$local} = mysql\_\-fetch\_\-array(\$resultat)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{medicament__lot_8php_a0}{
+\index{medicament_lot.php@{medicament\_\-lot.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!medicament_lot.php@{medicament\_\-lot.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{medicament__lot_8php_a0}
+
+
+\hypertarget{medicament__lot_8php_a5}{
+\index{medicament_lot.php@{medicament\_\-lot.php}!$local@{\$local}}
+\index{$local@{\$local}!medicament_lot.php@{medicament\_\-lot.php}}
+\subsubsection[\$local]{\setlength{\rightskip}{0pt plus 5cm}\$local = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{medicament__lot_8php_a5}
+
+
+\hypertarget{medicament__lot_8php_a1}{
+\index{medicament_lot.php@{medicament\_\-lot.php}!$lot@{\$lot}}
+\index{$lot@{\$lot}!medicament_lot.php@{medicament\_\-lot.php}}
+\subsubsection[\$lot]{\setlength{\rightskip}{0pt plus 5cm}\$lot = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{medicament__lot_8php_a1}
+
+
+\hypertarget{medicament__lot_8php_a3}{
+\index{medicament_lot.php@{medicament\_\-lot.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!medicament_lot.php@{medicament\_\-lot.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete}}
+\label{medicament__lot_8php_a3}
+
+
+{\bf Valeur initiale:}
+
+\footnotesize\begin{verbatim}"SELECT med_localisation, conteneur_nom, conteneur_no
+                FROM  stock_conteneur
+                WHERE conteneur_ID = '$lot[conteneur_ID]'
+                "
+\end{verbatim}\normalsize 
+\hypertarget{medicament__lot_8php_a4}{
+\index{medicament_lot.php@{medicament\_\-lot.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!medicament_lot.php@{medicament\_\-lot.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{medicament__lot_8php_a4}
+
+
+\hypertarget{medicament__lot_8php_a2}{
+\index{medicament_lot.php@{medicament\_\-lot.php}!$val@{\$val}}
+\index{$val@{\$val}!medicament_lot.php@{medicament\_\-lot.php}}
+\subsubsection[\$val]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{cron_8php_a9}{else} \$val = \char`\"{}aaaa-mm-jj\char`\"{}}}
+\label{medicament__lot_8php_a2}
+
+

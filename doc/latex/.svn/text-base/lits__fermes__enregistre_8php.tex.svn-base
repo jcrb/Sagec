@@ -1,0 +1,120 @@
+\hypertarget{lits__fermes__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier lits\_\-fermes\_\-enregistre.php}
+\label{lits__fermes__enregistre_8php}\index{lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{lits__fermes__enregistre_8php_a10}{chevauchement} (\$d, \$f, \$s, \$connexion)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{lits__fermes__enregistre_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{lits__fermes__enregistre_8php_a1}{\$today} = mktime()
+\item 
+\hyperlink{lits__fermes__enregistre_8php_a2}{\$nom} = \$\_\-GET\mbox{[}'nom'\mbox{]}
+\item 
+\hyperlink{lits__fermes__enregistre_8php_a3}{\$erreur} = 0
+\item 
+\hyperlink{lits__fermes__enregistre_8php_a4}{\$\_\-service} = \$\_\-GET\mbox{[}'\_\-service'\mbox{]}
+\item 
+\hyperlink{lits__fermes__enregistre_8php_a5}{\$debut} = f\-Date2unix(\$\_\-GET\mbox{[}debut\mbox{]})
+\item 
+\hyperlink{lits__fermes__enregistre_8php_a6}{\$fin} = f\-Date2unix(\$\_\-GET\mbox{[}'fin'\mbox{]})
+\item 
+\hyperlink{lits__fermes__enregistre_8php_a7}{\$lits\_\-fermes} = \$\_\-GET\mbox{[}'lits\_\-fermes'\mbox{]}
+\item 
+\hyperlink{lits__fermes__enregistre_8php_a8}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{lits__fermes__enregistre_8php_a9}{\$f} = u\-Date2French(\$fin)
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{lits__fermes__enregistre_8php_a10}{
+\index{lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}!chevauchement@{chevauchement}}
+\index{chevauchement@{chevauchement}!lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}}
+\subsubsection[chevauchement]{\setlength{\rightskip}{0pt plus 5cm}chevauchement (\$ {\em d}, \$ {\em f}, \$ {\em s}, \$ {\em connexion})}}
+\label{lits__fermes__enregistre_8php_a10}
+
+
+v\'{e}rifie si il n'y a pas d\'{e}j\`{a} des lits ferm\'{e}s pour ce service \begin{Desc}
+\item[Param\`{e}tres:]
+\begin{description}
+\item[{\em \$d}]date de d\'{e}but \item[{\em \$f}]date de fin \item[{\em \$s}]id du service \end{description}
+\end{Desc}
+
+
+\subsection{Documentation des variables}
+\hypertarget{lits__fermes__enregistre_8php_a4}{
+\index{lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}!$_service@{\$\_\-service}}
+\index{$_service@{\$\_\-service}!lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}}
+\subsubsection[\$\_\-service]{\setlength{\rightskip}{0pt plus 5cm}\$\_\-service = \$\_\-GET\mbox{[}'\_\-service'\mbox{]}}}
+\label{lits__fermes__enregistre_8php_a4}
+
+
+\hypertarget{lits__fermes__enregistre_8php_a0}{
+\index{lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{lits__fermes__enregistre_8php_a0}
+
+
+\hypertarget{lits__fermes__enregistre_8php_a5}{
+\index{lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}!$debut@{\$debut}}
+\index{$debut@{\$debut}!lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}}
+\subsubsection[\$debut]{\setlength{\rightskip}{0pt plus 5cm}\$debut = f\-Date2unix(\$\_\-GET\mbox{[}debut\mbox{]})}}
+\label{lits__fermes__enregistre_8php_a5}
+
+
+\hypertarget{lits__fermes__enregistre_8php_a3}{
+\index{lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}!$erreur@{\$erreur}}
+\index{$erreur@{\$erreur}!lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}}
+\subsubsection[\$erreur]{\setlength{\rightskip}{0pt plus 5cm}\$erreur = 0}}
+\label{lits__fermes__enregistre_8php_a3}
+
+
+\hypertarget{lits__fermes__enregistre_8php_a9}{
+\index{lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}!$f@{\$f}}
+\index{$f@{\$f}!lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}}
+\subsubsection[\$f]{\setlength{\rightskip}{0pt plus 5cm}\$f = u\-Date2French(\$fin)}}
+\label{lits__fermes__enregistre_8php_a9}
+
+
+\hypertarget{lits__fermes__enregistre_8php_a6}{
+\index{lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}!$fin@{\$fin}}
+\index{$fin@{\$fin}!lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}}
+\subsubsection[\$fin]{\setlength{\rightskip}{0pt plus 5cm}\$fin = f\-Date2unix(\$\_\-GET\mbox{[}'fin'\mbox{]})}}
+\label{lits__fermes__enregistre_8php_a6}
+
+
+\hypertarget{lits__fermes__enregistre_8php_a7}{
+\index{lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}!$lits_fermes@{\$lits\_\-fermes}}
+\index{$lits_fermes@{\$lits\_\-fermes}!lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}}
+\subsubsection[\$lits\_\-fermes]{\setlength{\rightskip}{0pt plus 5cm}\$lits\_\-fermes = \$\_\-GET\mbox{[}'lits\_\-fermes'\mbox{]}}}
+\label{lits__fermes__enregistre_8php_a7}
+
+
+\hypertarget{lits__fermes__enregistre_8php_a2}{
+\index{lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}!$nom@{\$nom}}
+\index{$nom@{\$nom}!lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}}
+\subsubsection[\$nom]{\setlength{\rightskip}{0pt plus 5cm}\$nom = \$\_\-GET\mbox{[}'nom'\mbox{]}}}
+\label{lits__fermes__enregistre_8php_a2}
+
+
+\hypertarget{lits__fermes__enregistre_8php_a8}{
+\index{lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{lits__fermes__enregistre_8php_a8}
+
+
+\hypertarget{lits__fermes__enregistre_8php_a1}{
+\index{lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}!$today@{\$today}}
+\index{$today@{\$today}!lits_fermes_enregistre.php@{lits\_\-fermes\_\-enregistre.php}}
+\subsubsection[\$today]{\setlength{\rightskip}{0pt plus 5cm}\$today = mktime()}}
+\label{lits__fermes__enregistre_8php_a1}
+
+

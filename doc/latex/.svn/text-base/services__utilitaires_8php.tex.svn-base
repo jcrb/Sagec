@@ -1,0 +1,46 @@
+\hypertarget{services__utilitaires_8php}{
+\section{R\'{e}f\'{e}rence du fichier services\_\-utilitaires.php}
+\label{services__utilitaires_8php}\index{services_utilitaires.php@{services\_\-utilitaires.php}}
+}
+\subsection*{Fonctions}
+\begin{CompactItemize}
+\item 
+\hyperlink{services__utilitaires_8php_a0}{explode\_\-dpt2} (\$dpt)
+\item 
+\hyperlink{services__utilitaires_8php_a1}{explode\_\-pays} (\$dpt)
+\item 
+\hyperlink{services__utilitaires_8php_a2}{select\_\-services} (\$connexion, \$hop\-ID=\char`\"{}0\char`\"{}, \$type\_\-service=\char`\"{}0\char`\"{}, \$dpt=\char`\"{}\char`\"{}, \$tri)
+\item 
+\hyperlink{services__utilitaires_8php_a3}{Table\_\-Lits3} (\$connexion, \$hop\-ID=\char`\"{}0\char`\"{}, \$type\_\-service=\char`\"{}0\char`\"{}, \$langue, \$back=\char`\"{}\char`\"{}, \$dpt=\char`\"{}\char`\"{}, \$tri=\char`\"{}\char`\"{})
+\end{CompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{services__utilitaires_8php_a0}{
+\index{services_utilitaires.php@{services\_\-utilitaires.php}!explode_dpt2@{explode\_\-dpt2}}
+\index{explode_dpt2@{explode\_\-dpt2}!services_utilitaires.php@{services\_\-utilitaires.php}}
+\subsubsection[explode\_\-dpt2]{\setlength{\rightskip}{0pt plus 5cm}explode\_\-dpt2 (\$ {\em dpt})}}
+\label{services__utilitaires_8php_a0}
+
+
+\hyperlink{services__utilitaires_8php}{services\_\-utilitaires.php} / Utilitaires pour l'affichage des services \hypertarget{services__utilitaires_8php_a1}{
+\index{services_utilitaires.php@{services\_\-utilitaires.php}!explode_pays@{explode\_\-pays}}
+\index{explode_pays@{explode\_\-pays}!services_utilitaires.php@{services\_\-utilitaires.php}}
+\subsubsection[explode\_\-pays]{\setlength{\rightskip}{0pt plus 5cm}explode\_\-pays (\$ {\em dpt})}}
+\label{services__utilitaires_8php_a1}
+
+
+\hypertarget{services__utilitaires_8php_a2}{
+\index{services_utilitaires.php@{services\_\-utilitaires.php}!select_services@{select\_\-services}}
+\index{select_services@{select\_\-services}!services_utilitaires.php@{services\_\-utilitaires.php}}
+\subsubsection[select\_\-services]{\setlength{\rightskip}{0pt plus 5cm}select\_\-services (\$ {\em connexion}, \$ {\em hop\-ID} = {\tt \char`\"{}0\char`\"{}}, \$ {\em type\_\-service} = {\tt \char`\"{}0\char`\"{}}, \$ {\em dpt} = {\tt \char`\"{}\char`\"{}}, \$ {\em tri})}}
+\label{services__utilitaires_8php_a2}
+
+
+\hypertarget{services__utilitaires_8php_a3}{
+\index{services_utilitaires.php@{services\_\-utilitaires.php}!Table_Lits3@{Table\_\-Lits3}}
+\index{Table_Lits3@{Table\_\-Lits3}!services_utilitaires.php@{services\_\-utilitaires.php}}
+\subsubsection[Table\_\-Lits3]{\setlength{\rightskip}{0pt plus 5cm}Table\_\-Lits3 (\$ {\em connexion}, \$ {\em hop\-ID} = {\tt \char`\"{}0\char`\"{}}, \$ {\em type\_\-service} = {\tt \char`\"{}0\char`\"{}}, \$ {\em langue}, \$ {\em back} = {\tt \char`\"{}\char`\"{}}, \$ {\em dpt} = {\tt \char`\"{}\char`\"{}}, \$ {\em tri} = {\tt \char`\"{}\char`\"{}})}}
+\label{services__utilitaires_8php_a3}
+
+

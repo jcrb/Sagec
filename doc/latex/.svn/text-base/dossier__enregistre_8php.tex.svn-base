@@ -1,0 +1,19 @@
+\hypertarget{dossier__enregistre_8php}{
+\section{R\'{e}f\'{e}rence du fichier dossier\_\-enregistre.php}
+\label{dossier__enregistre_8php}\index{dossier_enregistre.php@{dossier\_\-enregistre.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{dossier__enregistre_8php_a0}{\$tab} = \$\_\-GET\mbox{[}t\mbox{]}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{dossier__enregistre_8php_a0}{
+\index{dossier_enregistre.php@{dossier\_\-enregistre.php}!$tab@{\$tab}}
+\index{$tab@{\$tab}!dossier_enregistre.php@{dossier\_\-enregistre.php}}
+\subsubsection[\$tab]{\setlength{\rightskip}{0pt plus 5cm}\$tab = \$\_\-GET\mbox{[}t\mbox{]}}}
+\label{dossier__enregistre_8php_a0}
+
+

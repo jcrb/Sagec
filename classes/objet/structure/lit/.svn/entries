@@ -1,0 +1,52 @@
+8
+
+dir
+16836
+http://subversion/dev/applications/metier/sagec/branches/dev/SAGEC67/classes/objet/structure/lit
+http://subversion/dev
+
+
+
+2009-11-19T11:32:28.982704Z
+16747
+nolddomi
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+66cce6ef-e1d4-0310-aa0e-9de41584db37
+
+Uf.class.php
+file
+
+
+
+
+2009-11-27T19:53:13.265625Z
+5d0e526b13262bdb462fde114396cf70
+2009-03-24T12:39:03.678367Z
+13579
+nolddomi
+
+Service.class.php
+file
+
+
+
+
+2009-11-27T19:53:13.265625Z
+52fd037010f167f247d41a96f407e422
+2009-11-19T11:32:28.982704Z
+16747
+nolddomi
+

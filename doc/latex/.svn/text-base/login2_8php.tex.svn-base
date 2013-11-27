@@ -1,0 +1,37 @@
+\hypertarget{login2_8php}{
+\section{R\'{e}f\'{e}rence du fichier login2.php}
+\label{login2_8php}\index{login2.php@{login2.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{login2_8php_a0}{\$langue} = \$\_\-SESSION\mbox{[}\char`\"{}langue\char`\"{}\mbox{]}
+\item 
+\hyperlink{login2_8php_a1}{\$\_\-SESSION} \mbox{[}\char`\"{}langue\char`\"{}\mbox{]} = \$langue
+\item 
+$<$/td $>$$<$ tdbgcolor=\char`\"{}\#CCCCFF\char`\"{}$>$$<$ divalign=\char`\"{}right\char`\"{}$>$$<$ inputtype=\char`\"{}submit\char`\"{}name=\char`\"{}Submit\char`\"{}value=\char`\"{}$<$?phpecho\$string\_\-lang\mbox{[}'VALIDER'\mbox{]}\mbox{[}\$langue\mbox{]};?$>$$<$/div$>$$<$/td$>$$<$/tr$>$$<$/table$>$$<$/form$>$$<$/td$>$$<$/tr$>$$<$tr$>$$<$td$>$$<$palign=\char`\"{}center\char`\"{}class=\char`\"{}Style21\char`\"{}$>$$<$imgsrc=\char`\"{}images/Ligne\%20Horiz\%20Bordeau.gif\char`\"{}width=\char`\"{}340\char`\"{}height=\char`\"{}4\char`\"{}$>$$<$/p$>$$<$palign=\char`\"{}left\char`\"{}class=\char`\"{}Style22\char`\"{}$>$$<$?phpecho\$string\_\-lang\mbox{[}'ECHEC\_\-CONNEXION'\mbox{]}\mbox{[}\$langue\mbox{]};?$>$$<$/p$>$$<$palign=\char`\"{}left\char`\"{}class=\char`\"{}Style21\char`\"{}$>$ \& \hyperlink{login2_8php_a2}{nbsp}
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{login2_8php_a1}{
+\index{login2.php@{login2.php}!$_SESSION@{\$\_\-SESSION}}
+\index{$_SESSION@{\$\_\-SESSION}!login2.php@{login2.php}}
+\subsubsection[\$\_\-SESSION]{\setlength{\rightskip}{0pt plus 5cm}\$\_\-SESSION\mbox{[}\char`\"{}langue\char`\"{}\mbox{]} = \$langue}}
+\label{login2_8php_a1}
+
+
+\hypertarget{login2_8php_a0}{
+\index{login2.php@{login2.php}!$langue@{\$langue}}
+\index{$langue@{\$langue}!login2.php@{login2.php}}
+\subsubsection[\$langue]{\setlength{\rightskip}{0pt plus 5cm}\$langue = \$\_\-SESSION\mbox{[}\char`\"{}langue\char`\"{}\mbox{]}}}
+\label{login2_8php_a0}
+
+
+\hypertarget{login2_8php_a2}{
+\index{login2.php@{login2.php}!nbsp@{nbsp}}
+\index{nbsp@{nbsp}!login2.php@{login2.php}}
+\subsubsection[nbsp]{\setlength{\rightskip}{0pt plus 5cm}$<$/p$>$$<$p$>$ \& \hyperlink{login2_8php_a2}{nbsp}}}
+\label{login2_8php_a2}
+
+

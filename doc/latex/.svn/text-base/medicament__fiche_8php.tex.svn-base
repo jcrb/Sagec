@@ -1,0 +1,55 @@
+\hypertarget{medicament__fiche_8php}{
+\section{R\'{e}f\'{e}rence du fichier medicament\_\-fiche.php}
+\label{medicament__fiche_8php}\index{medicament_fiche.php@{medicament\_\-fiche.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hyperlink{medicament__fiche_8php_a0}{\$connexion} = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})
+\item 
+\hyperlink{medicament__fiche_8php_a1}{\$requete} = \char`\"{}SELECT local\_\-ID,local\_\-nom,med\_\-stock\_\-ID FROM med\_\-localisation ORDER BY local\_\-nom\char`\"{}
+\item 
+\hyperlink{medicament__fiche_8php_a2}{\$resultat} = Exec\-Requete(\$requete,\$connexion)
+\item 
+\hyperlink{medicament__fiche_8php_a3}{\$i} = 0
+\item 
+\hyperlink{medicament__fiche_8php_a4}{\$med} = mysql\_\-fetch\_\-array(\$resultat)
+\end{CompactItemize}
+
+
+\subsection{Documentation des variables}
+\hypertarget{medicament__fiche_8php_a0}{
+\index{medicament_fiche.php@{medicament\_\-fiche.php}!$connexion@{\$connexion}}
+\index{$connexion@{\$connexion}!medicament_fiche.php@{medicament\_\-fiche.php}}
+\subsubsection[\$connexion]{\setlength{\rightskip}{0pt plus 5cm}\$connexion = Connexion(\hyperlink{pma__connect_8php_a0}{NOM},\hyperlink{pma__connect_8php_a1}{PASSE},\hyperlink{pma__connect_8php_a3}{BASE},\hyperlink{pma__connect_8php_a2}{SERVEUR})}}
+\label{medicament__fiche_8php_a0}
+
+
+\hypertarget{medicament__fiche_8php_a3}{
+\index{medicament_fiche.php@{medicament\_\-fiche.php}!$i@{\$i}}
+\index{$i@{\$i}!medicament_fiche.php@{medicament\_\-fiche.php}}
+\subsubsection[\$i]{\setlength{\rightskip}{0pt plus 5cm}\$i = 0}}
+\label{medicament__fiche_8php_a3}
+
+
+\hypertarget{medicament__fiche_8php_a4}{
+\index{medicament_fiche.php@{medicament\_\-fiche.php}!$med@{\$med}}
+\index{$med@{\$med}!medicament_fiche.php@{medicament\_\-fiche.php}}
+\subsubsection[\$med]{\setlength{\rightskip}{0pt plus 5cm}\$med = mysql\_\-fetch\_\-array(\$resultat)}}
+\label{medicament__fiche_8php_a4}
+
+
+\hypertarget{medicament__fiche_8php_a1}{
+\index{medicament_fiche.php@{medicament\_\-fiche.php}!$requete@{\$requete}}
+\index{$requete@{\$requete}!medicament_fiche.php@{medicament\_\-fiche.php}}
+\subsubsection[\$requete]{\setlength{\rightskip}{0pt plus 5cm}\$requete = \char`\"{}SELECT local\_\-ID,local\_\-nom,med\_\-stock\_\-ID FROM med\_\-localisation ORDER BY local\_\-nom\char`\"{}}}
+\label{medicament__fiche_8php_a1}
+
+
+\hypertarget{medicament__fiche_8php_a2}{
+\index{medicament_fiche.php@{medicament\_\-fiche.php}!$resultat@{\$resultat}}
+\index{$resultat@{\$resultat}!medicament_fiche.php@{medicament\_\-fiche.php}}
+\subsubsection[\$resultat]{\setlength{\rightskip}{0pt plus 5cm}\$resultat = Exec\-Requete(\$requete,\$connexion)}}
+\label{medicament__fiche_8php_a2}
+
+
